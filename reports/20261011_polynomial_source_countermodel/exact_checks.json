@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "exact polynomial identities and elementary rational inequalities only",
+  "P2": "8*u**3 - 56*u**2 + 165*u/2 - 75/4",
+  "P4": "32*u**5 - 528*u**4 + 2588*u**3 - 4256*u**2 + 15465*u/8 - 1875/16",
+  "R": "32*u**5 - 528*u**4 + 4188*u**3 - 15456*u**2 + 307481*u/8 - 541923/16",
+  "R_at_u_v_plus_3_positive_decomposition": "v**3*(32*(v - 3/4)**2 + 714) + 2364*v**2 + 117689*v/8 + 326643/16",
+  "normalization": "160817/16",
+  "fourier_multiplier": "(z**2 - 100)**2 + 1",
+  "added_roots": "z = +/- sqrt(100 +/- i)",
+  "imaginary_part_exact": "1/sqrt(2*(sqrt(10001)+100))",
+  "imaginary_part_bound": "0 < abs(Im z) < 1/20 < 1/2",
+  "RH_conclusion": "No RH counterexample or unconditional RH theorem is claimed."
+}
