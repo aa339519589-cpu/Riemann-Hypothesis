@@ -4,10 +4,12 @@
 
 - Part I：精确 Möbius 尺度变换与未标记主修正的无零性。
 - Part II：逐个物理频率的有限除数表示，及全部移动 numerator 行的修正因子全纯域。
-- Part III：原 selected 因子的剩余角向通道；新 core 标记后的完整有限 slot 主修正无零，并分成固定 Mellin 主因子和依赖 Z 的小余量。
+- Part III：原 selected 因子的剩余角向通道；新 core 标记的固定主因子与小余量；完整孤立 principal 三重积分的幂次比较。
 - Part IV：新 core 标记及变换保持既有有限窗 sextic 大筛能量界。
+- Part V：全部 numerator 行的精确 core-selected 局部式、反射域及保留未使用短多项式的乘积控制。
+- Part VI：在原 buffered reflected numerator 输入下，z≥1/4 的联合误差槽估计。
 
-各 Part 的公式编号独立。完整高端比较及负指数低端线性相关仍未证明；本稿不证明 RH。原用户 marked-row 结果保留其来源归属，外部大筛仅在 Part IV 的既有输入中使用。
+各 Part 的公式编号独立。孤立 principal 行的高端比较已完成；全部非principal 行的总高端比较及负指数低端线性相关仍未证明。本稿不证明 RH。原用户 marked-row 结果保留其来源归属，外部大筛仅在 Part IV 的既有输入中使用。
 
 # Part I. Exact Euler decompletion
 
@@ -293,7 +295,7 @@ The product over p not dividing u converges normally with a uniform bound by (B4
 This domain controls the holomorphic correction only. It neither removes the denominator L(x,eta conjugate chi_u) nor proves a permissible global movement of the high contour with a power-saving error. The original low correlation target must also be rebuilt for the exact finite row (A2).
 
 
-# Part III. The selected-prime interface and revised core marking
+# Part III. The selected-prime interface and principal contour comparison
 
 ## 真实补偿主乘子的剩余角向通道及 sextic-core 标记修复
 
@@ -502,7 +504,7 @@ A_T(Z)=(-1)^K Z^{-\ell/6}\prod_iN_i(Z),\qquad \ell=\sum_i\ell_i=1/6.
 \[
 X^{1/3}Z^{x-5/6}Z^{\ell/6}=Z^{x-11/16}.
 \]
-(5.7) 是全虚部一致的局部 residue 因子误差；完整 principal 三重积分的轮廓移动与余项估计尚须单独验证。尤其本稿没有由 (5.7) 直接宣称全 probe 与固定 Mellin 信号已满足高比较。
+(5.7) 是全虚部一致的局部 residue 因子误差，本身不蕴含完整 principal 三重积分的轮廓移动与余项估计。§8 将单独完成这一 principal 积分步骤；全 probe 与固定 Mellin 信号的高比较仍须控制非principal 行。
 
 ### 6. 新物理 row 的有限除数形式
 
@@ -522,10 +524,153 @@ X^{1/3}Z^{x-5/6}Z^{\ell/6}=Z^{x-11/16}.
 
 ### 7. 已解决与未解决的目标
 
-(5.5)–(5.8) 为新、完整、真实补偿探针建立了临界线右侧的 principal 局部 correction 无零性，并将其分成固定全纯无零主乘子与全虚部一致的幂次小余量。它修复了仅作去卷积时 (2.3) 的实际 selected 角向通道；完整 principal 积分及 continuation criterion 的全部条件并未因此完成。
+(5.5)–(5.8) 为新、完整、真实补偿探针建立了临界线右侧的 principal 局部 correction 无零性，并将其分成固定全纯无零主乘子与全虚部一致的幂次小余量。它修复了仅作去卷积时 (2.3) 的实际 selected 角向通道。后面的 §8 将独立完成 principal 积分；continuation criterion 的全部条件仍未完成。
 
 原 R4 针对旧标记，不能未经证明转用于 (3.2)。新 row 虽有相同点态绝对界及有限除数表达，仍须重建负指数低端线性相关；原完整反射估计也不能因子和变小便自动用于带符号平方范数。所有非principal \(u\) 的全局高比较、可统一的余量以及合法整体 contour 仍未证明。故这不是 RH 证明，也未给出原 R4 的严格反例。
 
+### 8. 整个 principal 三重积分的两极点提取
+
+本节进一步完成独立 principal 行与固定 Mellin 信号的比较；不移动或估计非principal 行的总和。
+采用原全族零点上确界 \(\beta_*\)，只在 \(1/2<\beta_*\le1\) 情形讨论。这个上确界无需被某个零点取到。取
+\[
+\delta=\min\{(\beta_*-1/2)/2,1/4\}>0,
+\qquad 0<e<\delta/100,
+\]
+并保留原固定有限 slots、几何 \(l_x=17/48,l_y=23/48,\ell=1/6,h=13/16\)。
+记 \(\mathscr P_{\eta,Z}^{\rm core,\flat}\) 为 (3.2) 的绝对高表示中单独 \(u=1\) 项。定义
+\[
+ f_\eta^{\rm core,\flat}(Z)=\frac1{2\pi i}\int_{(2)}
+ Z^{x-11/16}e^{(x-5/6)^2}
+ \frac{H_{\eta,\mathrm{fixed}}^{\rm core,\flat}(x)}{L_F^S(x,\eta)}\,dx.
+\tag{8.1}
+\]
+原 scalar residue 常数为
+\[
+ c_S=\widehat W_1(1)M(1/6)
+   \left(\operatorname*{Res}_{v=1}\zeta_F^S(v)\right)^2/6>0.
+\]
+该常数与原数据相同，core marking 及去卷积不改变原外部 Mellin tests。
+
+#### 8.1 全 principal 矩形上的完整 correction
+
+在 \(u=1\) 的一般 \((x,w,z)\) 处，置
+\[
+ d=\eta(p)P^{-x},\quad W=P^{-w},\quad V=P^{-6z},
+ \quad R=\kappa(p)P^{4-6x-6z}.
+\]
+从原 local table 中移除 §4 的整族，得到
+\[
+ (1-R)P_{p,\rm core}^*
+   =-d-\eta(p)(P-1)P^{-x-w}\frac V{1-V}.
+\]
+marked-minus-rescaled 的准确局部式是
+\[
+ G_{p,\rm core}^\flat
+ =\overline{\eta(p)}P^x
+    \frac{(1-V)(1-W)}{1-d}(1-R)P_{p,\rm core}^*
+       -P^{-w}H_p^\flat.
+\]
+注意最后一项仍是未标记 \(H_p^\flat\)。相消后得到
+\[
+\boxed{G_{p,\rm core}^\flat
+ =-\frac{1-W}{1-d}\{1-V+(P-1)WV\}-WH_p^\flat.}
+\tag{8.2}
+\]
+这个式子没有 \(1-R\)、\(P_p\) 或 \(H_p\) 分母。
+
+在已证局部域
+\[
+ \Omega_\delta:\quad \Re x\ge1/2+\delta,\quad
+ \Re w\ge1-\delta/4,\quad
+ \Re z\ge1/6-\delta/12
+\]
+内，\(|1-d|\) 统一离零，\(|W|,|V|<1\)，且
+\[
+ |PWV|\le P^{-1+3\delta/4}\le1.
+\]
+已证的未标记局部估计 \(H_p^\flat=1+O_\delta(P^{-1-2\delta})\)
+在 \(u=1\) 对全部好 primes 成立。因此 (8.2) 给
+\[
+ |G_{p,\rm core}^\flat|\ll_\delta1.
+\tag{8.3}
+\]
+不作任何局部商，全 tuple correction 为
+\[
+ \sum_{\mathbf p}\prod_i
+ [W_i(q_{p_i}/P_i)q_{p_i}^{z-1}G_{p_i,\rm core}^\flat]
+ \prod_{p\notin S\cup\{p_i\}}H_p^\flat.
+\]
+未标记积的正 majorant 正常收敛，删除任意有限 selected 集不增加该 majorant。
+每个 annular slot 的 prime 数由理想计数为 \(O(P_i)\)，故在任意固定实参数盒内
+\[
+ \boxed{|\mathfrak H_{\eta,1,Z}^{\rm core,\flat}(x,w,z)|
+    \ll_{\delta,\mathrm{data}}Z^{\ell\Re z}}
+\tag{8.4}
+\]
+一致于全部虚部。它在 \(\Omega_\delta\) 邻域全纯；本证明没有把 selected 商在零点处作未经证明的除法。
+
+#### 8.2 轮廓与三个精确余项
+
+对任意 \(\varepsilon>0\)，充分大 \(Z\) 有
+\[
+\begin{split}
+\boxed{\left|\frac{\mathscr P_{\eta,Z}^{\rm core,\flat}}{c_SA_T(Z)}
+                -f_\eta^{\rm core,\flat}(Z)\right|
+ \ll_{\eta,e,\varepsilon,\mathrm{data}}{}&
+ Z^{\beta_*-11/16+(1+h)e-l_y\delta/8+\varepsilon}\\
+ &+Z^{\beta_*-11/16+e-h\delta/24+\varepsilon}\\
+ &+Z^{\beta_*-11/16+e-\ell_{\min}/2+\varepsilon}.}
+\end{split}
+\tag{8.5}
+\]
+
+证明直接针对本行重做轮廓步骤，而不引用原 principal 提取引理的 \(\sigma_0\ge7/8\) 限制。其绝对起始积分为
+\[
+ \frac1{(2\pi i)^3}\int_{(3)}\int_{(3)}\int_{(2)}
+ X^{1/2-z}Z^{x+z-1}Y^{w-1}e^{(x+z-1)^2}
+ M(z)\widehat W_1(w)
+ \frac{\zeta_F^S(6z)\zeta_F^S(w)}{L_F^S(x,\eta)}
+ \mathfrak H_{\eta,1,Z}^{\rm core,\flat}(x,w,z)\,dz\,dw\,dx.
+\tag{8.6}
+\]
+先移至 \(\Re x=\beta_*+e,\Re w=1+e,\Re z=1/6+e\)。
+这条路在 \(\Omega_\delta\) 内，分母倒数在 \(\Re x>\beta_*\) 全纯。
+随后将 \(w\) 移至 \(1-\delta/8\)，跨过唯一的 \(w=1\) 极点。
+在其留数中再将 \(z\) 移至 \(1/6-\delta/24\)，跨过唯一的 \(z=1/6\) 极点。
+未取 \(w\) 留数的积分保持 \(\Re z=1/6+e\)。所有这些实参数仍严格位于所需局部域内；\(M(z)\) 在 \(\Re z>0\) 全纯。
+
+原固定目标 reciprocal 的 logarithmic-control 引理，在零点上确界右侧固定距离 \(e\) 给出固定多项式高度界。主字符情形 \(1/L\) 在一处有零而非极点。两个 zeta 因子在未取留数的最终直线上也有固定多项式高度界。另一方面
+\[
+ e^{-(\Im(x+z))^2}|M(z)|\,|\widehat W_1(w)|
+\]
+在每个固定实参数盒上关于三个高度联合任意幂快速衰减；换元
+\((\Im x,\Im z,\Im w)\mapsto(\Im(x+z),\Im z,\Im w)\)
+的行列式为一。配合 (8.4)，原 integrated/trace-tail 证明逐字给出水平边趋零及绝对积分界。取 \(w\) 留数后同理使用二维核；因此不存在未处理的无限高度轮廓步骤。
+
+外部权与 (8.4) 的真实 \(Z\) 指数为
+\[
+ l_x/2+\Re x-1+h\Re z+l_y(\Re w-1).
+\]
+在两个余积分的线上代入，分别得到 (8.5) 的前两项。除以 \(A_T\) 只消耗任意小的 \(Z^\varepsilon\)。
+除以 \(c_SA_T(Z)\) 后，双留数恰为
+\[
+ \frac1{2\pi i}\int_{(\beta_*+e)}Z^{x-11/16}e^{(x-5/6)^2}
+ \frac{H_{\eta,\mathrm{fixed}}^{\rm core,\flat}(x)}{L_F^S(x,\eta)}
+ \{1+\mathcal R_{\eta,Z}^{\rm core}(x)\}\,dx.
+\]
+(5.7)、固定距离 reciprocal 界及 Gaussian 直接给 (8.5) 的第三项。
+最后只将无余量的主积分右移至 \(\Re x=2\)：沿途无分母零点，固定 \(H\) 全纯且在该闭实条带高度一致有界，Gaussian 杀掉水平边。所得正是 (8.1)，证明 (8.5)。
+
+因为 \(l_y\delta/8,h\delta/24,\ell_{\min}/2\) 都严格为正，先把 \(e\)、再把 \(\varepsilon\) 取得足够小，(8.5) 推出某个 \(\sigma_{\rm pr}>0\) 的真正幂次比较
+\[
+ \frac{\mathscr P_{\eta,Z}^{\rm core,\flat}}{c_SA_T(Z)}
+       -f_\eta^{\rm core,\flat}(Z)
+ =O_{\eta,\mathrm{data}}(Z^{\beta_*-11/16-\sigma_{\rm pr}}).
+\tag{8.7}
+\]
+这里 \(e,\varepsilon,\sigma_{\rm pr}\) 可依 \(\beta_*-1/2\) 及固定 slot 长度，均不依高度和 \(Z\)。
+
+因此，整个 principal 积分步骤已由本节闭合。仍未闭合的是同一新物理 probe 的负指数低端线性相关，以及所有非principal 行的总高比较；两者均不能由 (8.7) 推出。
 
 # Part IV. Coarse finite-window energy of the revised probe
 
@@ -623,3 +768,396 @@ Formulae (4) and (8) are estimates on actual finite windows with every sixth-pow
 - The audited full-frequency sextic large-sieve transfer and fixed-row dilation version, [published full-frequency sixth-sieve theorem](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/b8df3dbbeeeb7c93816e8ba2c7ce8e7970ed11b8/reports/20261011_qrh_selection_bridge/SIXTH_SIEVE_DETECTOR.md), based on de Faveri's Theorem 1.1 and the verified fixed-ray family.
 - The audited [published positive Gauss-divisor transfer](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/b8df3dbbeeeb7c93816e8ba2c7ce8e7970ed11b8/reports/20261011_qrh_selection_bridge/SIXTH_SIEVE_DETECTOR.md) (included in the same published sixth-sieve report).
 - The exact physical Mellin cancellation in Part II, Appendix A.
+
+# Part V. All-row core-selected factors and finite-slot savings
+
+## Core-selected local factors on all numerator rows
+
+This appendix extends the exact core marking and Möbius decompletion to every original sixth-power-free numerator row. It retains the original auxiliary character, all nonunit zero extensions, and all physical prime slots. It is an exact local and finite-slot result; the global sum over numerator rows and the critical low correlation remain separate estimates.
+
+### 1. Source table and the exact deletion
+
+Use the fixed QRH source [`openai/math`](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex) commit `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`, local-family-table at lines 4075–4140 and the quotient-free selected operation at lines 8657–8730. Write P=q_p, j=v_p(u) in {0,...,5}, rho=chi_p(u/p^j), and
+\[
+ V=P^{-6z},\quad R=\kappa(p)P^{4-6x-6z},\quad
+ W=\chi_p(u)P^{-w},\quad D=\eta(p)\overline{\chi_p(u)}P^{-x}.
+\]
+Thus W=D=0 at primes dividing u, while rho is always a unit phase. Put
+\[
+ a_p=\overline{\alpha(p)}^3\eta(p)^3,\quad
+ b_p=\overline{\alpha(p)}^2\eta(p)^2\overline{\chi_p(4)},
+ \qquad a_p^2=b_p^3=\kappa(p).
+\]
+The original completed-index marked local sum is P_p^*. The core marker keeps exactly the families with e_0=v_p(c)=1 or odd v_p(n). It therefore deletes the entire family e_0=0, v_p(n)=2r+2, r>=0. Summing the source's entries of that family gives
+\[
+ \frac{1}{1-R}\left[
+ \frac{R(1-P^{-1})}{1-V}
+ +1_{j=0}\rho P^{-w}R
+ +1_{j=5}(-\kappa(p)P^{3-6x})\right].                 \tag{1}
+\]
+In particular the j=5 deletion cannot be omitted. All shared c,n prime cases belong to retained families.
+
+Consequently the exact new local marked sum is
+\[
+ P_{p,\mathrm{core}}^*=
+ \frac{1}{1-R}\left[
+ -\frac{\eta(p)(P-1)P^{-x-w}V^{1_{j\le1}}}{1-V}
+ +J_{j,\mathrm{core}}\right],                         \tag{2}
+\]
+with the complete table
+\[
+\begin{array}{c|l}
+ j&J_{j,\mathrm{core}}\\\hline
+0&-\eta(p)\rho^{-1}P^{-x}\\
+1&\eta(p)P^{-x-w}\\
+2&a_p\rho^{-3}P^{3/2-3x}\\
+3&-\eta(p)b_p\rho^{-2}P^{2-3x-w}
+             +b_p^2\rho^{-4}P^{2-4x}\\
+4&-\eta(p)a_p\rho^{-3}P^{5/2-4x-w}\\
+5&0.
+\end{array}                                             \tag{3}
+\]
+These are identities initially on the original absolute lines. They follow by deleting a specified physical parity family, not by redefining local Euler coefficients arbitrarily.
+
+Let H_p^flat=(1-R)H_p be the unmarked decompleted correction, which was proved holomorphic in Part II. Set
+\[
+ M_{p,j}=-\eta(p)(P-1)P^{-x-w}V^{1_{j\le1}}
+                         +(1-V)J_{j,\mathrm{core}}.
+\]
+The precise core-selected factor after the same two-term physical compensation is
+\[
+ \boxed{G_{p,\mathrm{core}}^\flat
+ =\overline{\eta(p)}P^x\frac{1-W}{1-D}M_{p,j}
+                           -P^{-w}H_p^\flat.}           \tag{4}
+\]
+The last term is the rescaled unmarked probe and must remain. Formula (4) follows directly by multiplying
+\(\overline\eta(p)P^xP_{p,\mathrm{core}}^*-P^{-w}P_p\)
+by \((1-R)(1-V)(1-W)/(1-D)\). In particular it has no P_p or H_p denominator, so it is valid through zeros of either correction.
+
+For p not dividing u, put d=D. Then (4) becomes the especially useful identity
+\[
+ \boxed{G_{p,\mathrm{core}}^\flat
+ =-\overline\rho\frac{1-W}{1-d}
+       [1-V+(P-1)WV]-P^{-w}H_p^\flat.}                 \tag{5}
+\]
+If H_p^flat=N_p/(1-d), with N_p the polynomial in Part I, the exact compensation error is
+\[
+ E_p:=G_{p,\mathrm{core}}^\flat+
+                 \overline{\chi_p(u)}H_p^\flat
+ =\overline\rho\frac{1-W}{1-d}
+                 \{N_p-[1-V+(P-1)WV]\}.               \tag{6}
+\]
+Here we used P^{-w}=overline(rho)W. At p dividing u, E_p=G_p by the original zero extension.
+
+For explicit use at the ramified row primes, (4) reads
+\[
+\begin{array}{c|l}
+j&G_{p,\mathrm{core}}^\flat\\\hline
+1&P^{-w}(1-PV-H_p^\flat)\\
+2&-(P-1)P^{-w}+\overline\eta(p)a_p\rho^{-3}(1-V)P^{3/2-2x}-P^{-w}H_p^\flat\\
+3&-(P-1)P^{-w}+(1-V)[-b_p\rho^{-2}P^{2-2x-w}
+ +\overline\eta(p)b_p^2\rho^{-4}P^{2-3x}]-P^{-w}H_p^\flat\\
+4&-(P-1)P^{-w}-a_p\rho^{-3}(1-V)P^{5/2-3x-w}-P^{-w}H_p^\flat\\
+5&-(P-1)P^{-w}-P^{-w}H_p^\flat.
+\end{array}                                                    \tag{7}
+\]
+
+### 2. A reflected tube for the unmarked and selected corrections
+
+Fix 0<delta<1/4 and e>0. Consider the real tube
+\[
+ \mathcal T_{\delta,e}:\qquad
+ \tfrac12+\delta\le\sigma:=\Re x\le1-\delta,
+ \quad\Re w\ge1-\sigma+e,
+ \quad\Re z\ge\tfrac16+e.                              \tag{8}
+\]
+All constants concerning finite slots below are uniform on a fixed compact box of real parts inside this tube, and in all imaginary parts and unit phases. The real box restriction only accounts for fixed annular support ratios raised to Re z.
+
+The same unmarked decompleted product converges normally on a neighborhood of each point of (8). More precisely, if nu=min(e,delta)>0, then
+\[
+ H_p^\flat=1+O_{\delta,e}(P^{-1-\nu})\ (p\nmid u),
+ \qquad H_p^\flat=1+O_{\delta,e}(P^{-\nu})\ (p\mid u).
+                                                               \tag{9}
+\]
+To verify the first assertion directly, the ten monomials of N_p-(1-d), in the order of the main note, have decay exponents at least
+\[
+ 2-\sigma+8e,\quad3-\sigma+8e,\quad1+7e,
+ \quad\sigma+1+6e,\quad1+e,
+ \quad4\sigma+14e,\quad4\sigma-1+8e,
+ \quad5\sigma-1+7e,\quad6\sigma-2+6e,
+ \quad2-\sigma+7e.                                      \tag{10}
+\]
+They all exceed 1 by at least nu. At p dividing u, use the earlier exact formula
+\[
+ H_p^\flat=1-R/P-\eta(p)(P-1)P^{-x-w}V^{1_{j\le1}}
+                                     +(1-V)J_j,
+\]
+where J_j is the original table, including J_5. The common marked term has decay at least e. The six possible J_j monomials have respective lower decay bounds
+\[
+ 1+e,\quad3\delta,\quad2\delta+e,
+            \quad4\delta,\quad3\delta+e,\quad6\delta.
+\]
+Also R/P decays by at least 1+6delta+6e. This proves (9). The usual positive divisor-product bound therefore yields, also after omitting any chosen finite prime tuple,
+\[
+ \prod_{p\notin S,\ p\notin\mathcal P}|H_p^\flat|
+                 \ll_{\delta,e,\epsilon}q_u^\epsilon.  \tag{11}
+\]
+No nonvanishing for arbitrary u is needed.
+
+Equations (5)–(7) give the sharper, quotient-free local estimates
+\[
+\begin{array}{c|cc}
+ &|G_{p,\mathrm{core}}^\flat|&|E_p|\\\hline
+p\nmid u&O_{\delta,e}(1)&O_{\delta,e}(P^{-\delta})\\
+p\mid u&O_{\delta,e}(P^{\sigma})&O_{\delta,e}(P^{\sigma}).
+\end{array}                                                    \tag{12}
+\]
+Indeed, at unramified p the term PVW has decay 6Re z+Re w-1>=1-sigma+7e>=delta; V and d decay more rapidly than P^{-delta}, while N_p-(1-d) has (9). Formula (6) proves its error estimate. In (7), the common growth is P^{1-Re w}<=P^{sigma-e}. The remaining possible growth exponents are
+\[
+ 3/2-2\sigma,\quad2-2\sigma-\Re w,
+ \quad2-3\sigma,\quad5/2-3\sigma-\Re w,
+\]
+all at most sigma when sigma>1/2 and Re w>=1-sigma+e. For j=1, PV has modulus <=P^{-6e}, so that entry is bounded. This proves (12) with the true ramified support retained.
+
+### 3. Finite-slot dynamic expansion with an explicit power saving
+
+Fix the original disjoint annular prime slots, their bounded smooth weights W_i, and positive lengths ell_i. Put P_i=Z^{ell_i}, ell=sum_i ell_i, ell_min=min_i ell_i. Define the exact full correction without any local quotient by
+\[
+ \mathfrak H_{\eta,u,Z}^{\mathrm{core},\flat}
+ =\sum_{(p_i)}\prod_i[W_i(q_{p_i}/P_i)q_{p_i}^{z-1}
+                          G_{p_i,\mathrm{core}}^\flat]
+       \prod_{p\notin S,\ p\notin\{p_i\}}H_p^\flat.   \tag{13}
+\]
+Let
+\[
+ S_i(u;z)=\sum_{p\in\mathcal P_i(Z)}
+ W_i(q_p/P_i)q_p^{z-1}\overline{\chi_p(u)}.
+\]
+On each real box specified above, for every epsilon>0 and Z>=2,
+\[
+ \boxed{|\mathfrak H_{\eta,u,Z}^{\mathrm{core},\flat}|
+       \ll_{\delta,e,\epsilon}q_u^\epsilon Z^{\ell\Re z},}
+                                                               \tag{14}
+\]
+\[
+ \boxed{\mathfrak H_{\eta,u,Z}^{\mathrm{core},\flat}
+ =(-1)^K\mathcal H_{\eta,u}^\flat\prod_iS_i(u;z)
+  +O_{\delta,e,\epsilon}
+       (q_u^\epsilon Z^{\ell\Re z-\delta\ell_{\min}}).} \tag{15}
+\]
+Constants also depend on the fixed slots and their weights. Uniformity in all imaginary parts is unchanged.
+
+For completeness, on slot i ideal counting and (12) give a total unramified error mass O(P_i^{Re z-delta}). There are at most O(log(2q_u)) prime divisors of u, so the ramified error mass is
+\[
+ O_{\delta,e}(\log(2q_u)P_i^{\Re z-1+\sigma})
+ \ll_{\epsilon}q_u^\epsilon P_i^{\Re z-\delta}.
+\]
+The non-error local factor has total positive mass O(P_i^{Re z}), by (9) and the original zero extension; the all-G mass has the same bound up to q_u^epsilon. The unselected product is bounded by (11). Expand each selected factor as
+\(G_p=-\overline{\chi_p(u)}H_p^\flat+E_p\).
+The zero-error term is exactly the main term of (15), since every H_p appears once. Every other term contains at least one slot error, giving the displayed saving. Choose the small divisor-product exponents initially as epsilon/(2K+2), so that all finite products of losses are at most q_u^epsilon. This proof never divides by H_p, including at ramified primes or zeros of the full correction.
+
+### 4. Stronger near-residue bounds
+
+In the previously audited region
+\[
+ \Omega_\delta:\quad\Re x\ge1/2+\delta,
+ \quad\Re w\ge1-\delta/4,
+ \quad\Re z\ge1/6-\delta/12,\quad0<\delta\le1/4,
+\]
+again restricted to any fixed real box for slot constants, (5)–(7) give
+\[
+ |E_p|\ll_\delta P^{-1/2-\delta}\quad(p\nmid u).
+\tag{16}
+\]
+For the ramified rows, the respective growth bounds for j=1,...,5 are
+\[
+ 1,\quad P^{\max(\delta/4,1/2-2\delta)},
+ \quad P^{\max(\delta/4,1/2-3\delta)},
+ \quad P^{\delta/4},\quad P^{\delta/4}.                 \tag{17}
+\]
+All are at most P^{1/2}. Consequently (14) holds in this region and the error in (15) improves to
+\[
+ O_{\delta,\epsilon}(q_u^\epsilon
+                      Z^{\ell\Re z-\ell_{\min}/2}).    \tag{18}
+\]
+The proof is the same sparse-divisor versus full-slot count. For (16), the three extra errors beyond H_p^flat-1 in (6) have decay exponents Re x, 6Re z, and 6Re z+Re w-1, bounded below respectively by 1/2+delta, 1-delta/2, and 1-3delta/4. The latter two exceed the first for delta<=1/4.
+
+The gain in (15) or (18) is an actual finite-slot estimate. It does not by itself control the sum over u with reciprocal L-functions, establish a shifted high integral for all rows, or supply the missing negative low-probe exponent. Those budgets must use the exact main polynomials S_i and the displayed ramified exponents.
+
+### 5. A product majorant retaining every unused short polynomial
+
+There is a stronger form useful for numerator moment estimates. For all sufficiently large Z, depending only on the fixed real box, delta,e and the slots,
+\[
+ \boxed{|\mathfrak H_{\eta,u,Z}^{\mathrm{core},\flat}|
+ \ll_{\delta,e,\epsilon}q_u^\epsilon
+       \prod_i\bigl(|S_i(u;z)|+P_i^{\Re z-\delta}\bigr)}  \tag{19}
+\]
+in the reflected tube. In Omega_delta the exponent delta in every slot on the right can be replaced by 1/2. This estimate keeps the moment savings from every slot in which an error has not been used.
+
+Here is a safe factorization proof, distinct from dividing the whole correction by H. By (9), for all sufficiently large unramified selected primes, |H_p^flat-1|<=1/2. Only at these primes define
+\[
+ e_i(u;x,w,z)=\sum_{\substack{p\in\mathcal P_i(Z)\\p\nmid u}}
+ W_i(q_p/P_i)q_p^{z-1}E_p/H_p^\flat.
+\]
+Thus |e_i|<=C P_i^{Re z-delta}; in Omega_delta it is <=C P_i^{Re z-1/2-delta}. No division is made at a prime of u, whether its local factor vanishes or not.
+
+Partition the finite tuple sum (13) by the subset R of slots whose chosen prime divides u. For a fixed tuple of such ramified primes let H^{(R tuple)} be the unmarked Euler product with just these primes omitted. Its absolute value is <=C_epsilon q_u^epsilon by (11). All remaining selected primes are unramified, so the sum over them factors exactly as
+\[
+ \prod_{i\notin R}[-S_i(u;z)+e_i(u;x,w,z)].             \tag{20}
+\]
+The remaining coefficient is H^{(R tuple)} times the selected G factors at the ramified tuple. Taking its absolute value and summing those finitely many primes gives a factor at most
+\[
+ C_\epsilon q_u^\epsilon
+ \prod_{i\in R}P_i^{\Re z-\delta}.
+\]
+The near-residue bound replaces delta here by 1/2, as before. Summing over R yields (19), allocating the small epsilon losses before the finite subset expansion. The identities are exact prior to these upper bounds; arbitrary ramified zeros are preserved. This product majorant is still only a local/slot ingredient for a full numerator estimate.
+
+# Part VI. Reflected joint-numerator error estimate
+
+## Core-marked joint numerator estimate on reflected contours
+
+This is a companion to Part V of this report. All factors below are its exact core-selected, Möbius-decompleted factors. We retain every physical sixth-power-free row, original nonunit zero, and strict ramified local term. The only analytic hypothesis is the same buffered reflected numerator estimate used in the fixed QRH source, Proposition `probe-errors` (lines 8853–9055). No RH or new uniform zero-free hypothesis is assumed.
+
+### 1. Precise statement
+
+Fix (0<\delta<1/4), (0<e<\delta/100), and a bounded range (1/4\le z_r\le z_{\max}). For
+\[
+ \tfrac12+\delta\le a\le1-\delta,
+ \qquad x_r=a+16e,\quad w_r=1-a-6e,\quad \Re z=z_r,                 \tag{1}
+\]
+let (u\ne0) be an original sixth-power-free physical row, (q_u\asymp U\ge1), ((u,S)=1). Let (\psi_u^*) be the primitive character inducing the numerator (\chi_\bullet(u)), and assume it is nonprincipal. At the retained points (w), suppose, as supplied by the source's buffered numerator bin estimate, that
+\[
+ |L(1-w,\overline{\psi_u^*})|\ll_{\epsilon}U^\epsilon
+ \quad (|\Im w|\le T_1).                                         \tag{2}
+\]
+The implied constants in (2) are uniform over the specified retained family. All statements below are uniform in (u), these retained heights, and the other imaginary parts. They include fixed arithmetic and finite weight-seminorm constants.
+
+For sufficiently large (Z), depending on the fixed data, (e,\delta) and the positive slot lengths, every slot prime has (H_p^\flat\ne0). Only at these selected primes define
+\[
+ B_{p,\mathrm{core}}^\flat=G_{p,\mathrm{core}}^\flat/H_p^\flat,
+ \qquad
+ Q_i(u;z)=-\sum_{p\in\mathcal P_i(Z)}W_i(q_p/P_i)q_p^{z-1}
+                          \overline{\chi_p(u)},
+\]
+\[
+ D_i^{\mathrm{core},\flat}(u)
+ =\sum_{p\in\mathcal P_i(Z)}W_i(q_p/P_i)q_p^{z-1}
+       \{B_{p,\mathrm{core}}^\flat+\overline{\chi_p(u)}\}.
+                                                                    \tag{3}
+\]
+The original slot annuli are disjoint and (P_i=Z^{\ell_i}), with fixed (\ell_i>0). For every subset (I) of the slots,
+\[
+ \boxed{\left|L^S(w,\chi_\bullet(u))
+             \prod_{i\in I}D_i^{\mathrm{core},\flat}(u)\right|
+ \ll U^{a-1/2+6e+\epsilon}(3+T_1)^C
+                \prod_{i\in I}P_i^{z_r-1/2}.}                        \tag{4}
+\]
+Here (C<\infty) is fixed on the indicated bounded real ranges. Arbitrarily small powers used in divisor bounds are included once in the displayed (U^\epsilon). A harmless additional (\prod_iP_i^\epsilon) may instead be retained if desired.
+
+Consequently the **same** exact correction has the pointwise dynamic decomposition
+\[
+ \mathfrak H_{\eta,u,Z}^{\mathrm{core},\flat}
+ =\mathcal H_{\eta,u}^\flat
+       \sum_{I\subseteq\{1,\ldots,K\}}
+       \prod_{i\in I}D_i^{\mathrm{core},\flat}
+       \prod_{i\notin I}Q_i .                                      \tag{5}
+\]
+No division by the global (\mathcal H_{\eta,u}^\flat) is used, and it need not be nonzero. Equation (5) follows algebraically from the quotient-free tuple identity and the nonvanishing of its finitely many selected local factors only.
+
+The reflected (z) line may therefore be taken at (1/4), rather than the original (17/50), in this local joint-numerator estimate. This is not by itself a global contour shift: the full bin contours, their joins and reciprocal denominator still need their own bounds.
+
+### 2. Local nonvanishing and the unramified cancellation
+
+Write (P=q_p), (V=P^{-6z}), (R=\kappa(p)P^{4-6x-6z}),
+(W=\chi_p(u)P^{-w}), (d=\eta(p)\overline{\chi_p(u)}P^{-x}).
+For (p\nmid u), the exact unmarked correction is (H_p^\flat=N_p/(1-d)), with
+\[
+\begin{split}
+N_p={}&1-d+dVW^2P-dVW^2-dVWP+dV+dW\\
+ &+RVW^2-RW^2+RW/P-R/P-VW .                           \tag{6}
+\end{split}
+\]
+At (1), every monomial of (N_p-(1-d)) decays by (P^{-1-\nu}), where one can take (\nu=\min(10e,\delta)>0). The potentially tight monomial is (dW), whose decay is (x_r+w_r=1+10e). The terms involving (R) have strictly larger margins when (z_r\ge1/4). Hence
+\[
+ H_p^\flat=1+O(P^{-1-\nu})\quad(p\nmid u).                          \tag{7}
+\]
+At (p\mid u), the exact formula is
+\[
+ H_p^\flat=1-R/P-\eta(p)(P-1)P^{-x-w}V^{1_{j\le1}}
+                       +(1-V)J_j,\qquad j=v_p(u),                   \tag{8}
+\]
+with the original (J_j), including (J_5=-\kappa(p)P^{3-6x}). The common term decays at least (P^{-10e}); the (J_j) boundary terms decay at least (P^{-2\delta}), except (J_1), which is smaller still. Thus
+\[
+ H_p^\flat=1+O(P^{-\nu})\quad(p\mid u).                             \tag{9}
+\]
+All constants are uniform in phases and heights. Taking the slot primes sufficiently large makes (|H_p^\flat-1|<1/2), and gives the stated local quotients. Equations (7)–(9) also give the usual bound (|\mathcal H_{\eta,u}^\flat|\ll_\epsilon U^\epsilon).
+
+Put (E_p=G_{p,\mathrm{core}}^\flat+\overline{\chi_p(u)}H_p^\flat). For (p\nmid u), the exact identity is
+\[
+ E_p=\overline\rho\frac{1-W}{1-d}
+       \{N_p-[1-V+(P-1)WV]\},\qquad \rho=\chi_p(u).                \tag{10}
+\]
+In deriving (10), (P^{-w}=\overline\rho W). In particular, there is **no bare (W) error**. The difference in braces consists of the monomials already in (6), together with (V) and (-PVW), and its leading (d) term. Their smallest decay is at least
+\[
+ \min\{a+16e,\,6z_r-a-6e\}
+ \ge\tfrac12+\delta-6e>\frac12+\delta/2.                         \tag{11}
+\]
+Every other monomial has a larger decay exponent. Also (w_r\ge\delta-6e>0), so the prefactors in (10) are bounded. Dividing by (7),
+\[
+ |B_{p,\mathrm{core}}^\flat+\overline{\chi_p(u)}|
+                  \ll P^{-1/2-\delta/2}\quad(p\nmid u).           \tag{12}
+\]
+Elementary ideal counting in each annular prime slot now bounds the sum of these unramified error labels by (O(P_i^{z_r-1/2-\delta/2})). No prime cancellation is used for error labels.
+
+### 3. Ramified boundary terms and the strict family
+
+At (p\mid u), the main character is exactly zero. From the exact core-selected table, after multiplying by (P^{z-1}), separating (P^z), and dividing by the bounded (H_p^\flat), all non-strict boundary terms have the following exponents (bounded factors (1-V) are suppressed):
+\[
+\begin{array}{c|ccccc}
+j&1&2&3&4&5\\\hline
+ &-1-w_r,\ 1-w_r-6z_r-1
+ &\tfrac12-2x_r
+ &1-2x_r-w_r,\ 1-3x_r
+ &\tfrac32-3x_r-w_r
+ &\text{none}.
+\end{array}                                                       \tag{13}
+\]
+The entry (1-w_r-6z_r-1=-w_r-6z_r) in the (j=1) column is the (PV) term after normalization. Each entry in (13) is at most (-1/2-c\delta), for a fixed positive (c). The common rescaling term (-P^{-w}H_p^\flat) has normalized exponent (-1-w_r<-1).
+
+The only term not bounded this way is
+\[
+ -(P-1)P^{-w},\qquad j\ge2,                                      \tag{14}
+\]
+coming from the actual local family ((e_0,l,k,m)=(1,0,1,0)). Its normalized exponent is (-w_r). Core marking retains this family. The removed square-layer family and removed (J_5) do not create replacements for it.
+
+For the primitive numerator conductor (\mathfrak f_u), the exact Kummer/reciprocity argument in the source gives
+\[
+ q_{\mathfrak f_u}\ll_S q_{\operatorname{rad}(u)}
+ \le C_S U\prod_{p\in J_0}P^{-(j_p-1)}                            \tag{15}
+\]
+for any set (J_0) of distinct selected ramified labels. Every good (p\mid u) has conductor exponent one, since the local character (\chi_p^{j_p}) has nontrivial order (6/\gcd(6,j_p)). This input is unchanged by the new core marking.
+
+Let (A_*=1/2-w_r=a-1/2+6e>0). The primitive functional equation, (2), and Stirling yield
+\[
+ |L(w,\psi_u^*)|\ll q_{\mathfrak f_u}^{A_*}
+                       U^\epsilon(3+T_1)^C.                       \tag{16}
+\]
+Restoring the original zero-extended numerator costs (U^\epsilon): the fixed deleted factors and the factors at row primes have bounded positive product because (w_r>0); the character is already zero at every good ramified conductor prime. Fixed normalizing factors are included in the constant.
+
+For a tuple of strict labels (J_0), apply (15) **once to the entire set**, before summing any labels. Each has (j_p\ge2), so
+\[
+ -w_r-(j_p-1)A_*\le-w_r-A_*=-\tfrac12.                            \tag{17}
+\]
+Combining (14)–(17) gives the simultaneous factor
+\[
+ U^{A_*+\epsilon}(3+T_1)^C\prod_{p\in J_0}P^{z_r-1/2}.            \tag{18}
+\]
+Distinctness is guaranteed by the original disjoint slot annuli. Thus the same conductor factor is not spent twice.
+
+Expand the product of error slots into unramified labels, non-strict ramified terms, and strict terms. Equations (12)–(13) give the required slot factor for the first two types. Equation (18) supplies it for all strict labels together. Each ramified slot has only divisor-many possible labels, whose total cost is (U^\epsilon) after fixing the preliminary losses. This proves (4), including (I=\varnothing). The tuple-independent unmarked product is then bounded by (7)–(9), and (5) follows as stated.
+
+### 4. Exact scope
+
+This establishes the reflected local error interface for the newly defined full core probe. It permits the original detector main-slot polynomial and preserves its row-independent coefficients and all masks. It does not yet prove a row-count estimate outside its stated source hypotheses, the global nonprincipal high comparison, or the low R4 correlation. In particular, moving the real (z) contour in the full integral still requires a separate contour-accounting proof.
+
+Fixed source: [QRH paper at fd4aeeb2](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex), Proposition `probe-errors`, lines 8853–9055, for the unchanged primitive-conductor and reflected-functional-equation inputs. The exact new local factors are proved in the companion Part V of this report from that source's local-family table.

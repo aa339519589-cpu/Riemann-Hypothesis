@@ -173,3 +173,156 @@ the corresponding Part IV manuscript passes with its stated Z>=2, Q>=1 and, in t
 
 The stated single-row and actual Gauss-weighted double mean-square estimates are therefore valid. They do not inherit the stronger old reflected completed-row theorem or sum all compensation labels with the correlation savings needed for R4.
 
+
+# Review of Part III, Section 8
+
+## Referee addendum: complete principal-row contour comparison
+
+### Verdict and quantifiers
+
+Section 8 of Part III of the report passes. It proves a genuine power-saving comparison for the isolated u=1 contribution of the new core-marked, decompleted probe. Assume 1/2<beta_*<=1, where beta_* is the original supremum over the finite-order Hecke family; no zero is assumed to attain that supremum. With fixed positive slot exponents and the original geometry, there is sigma_pr>0 such that
+
+P_pr(Z)/(c_S A_T(Z)) - f_fixed(Z)
+ = O_{eta,data}(Z^{beta_*-11/16-sigma_pr}).
+
+The choice of the small parameters and sigma_pr may depend on beta_*-1/2 and the fixed slot exponents. This theorem does not estimate the sum of nonprincipal rows or the new probe's negative low correlation.
+
+### General principal local replacement
+
+Deleting the original e_0=0, positive-even-l family gives, at u=1 and general x,w,z,
+
+(1-R)P_core^*=-d-eta(p)(P-1)P^{-x-w}V/(1-V).
+
+Substitution into the exact marked-minus-rescaled operation yields equation (8.2):
+
+G_core^flat=-(1-W)/(1-d) [1-V+(P-1)WV] - W H_p^flat.
+
+There is no denominator 1-R, P_p or H_p. On Omega_delta, |PWV|<=P^{-1+3delta/4} and 1-d is bounded away from zero. Hence G_core^flat is uniformly bounded. Normal positive majorants for the unselected product and elementary slot ideal counts give the full correction bound C Z^{ell Re z} on every fixed real parameter box, uniformly at all heights. The manuscript explicitly includes the required real-box qualification.
+
+### Reciprocal input and contour legality
+
+The original source's Logarithmic Control lemma was read directly. Its global conclusion holds to the right of every b>=beta_* at a fixed positive distance, not only in the old 7/8 range. The fixed target reciprocal therefore has a polynomial height bound on Re x=beta_*+e and the intervening right-hand strip. The finite deleted Euler factors are nonzero on positive real half-planes and have fixed uniform bounds here. For a principal target, the pole of L at one becomes a zero of 1/L and creates no residue.
+
+The original M(z) is holomorphic for Re z>0 and rapidly decreasing on closed positive real strips; W_1's Mellin transform has the corresponding vertical decay. Their product with exp(-(Im x+Im z)^2) is rapidly decreasing jointly in all three heights, by the determinant-one linear change (Im x,Im z,Im w)->(Im x+Im z,Im z,Im w). This absorbs the reciprocal and zeta polynomial bounds and justifies horizontal boundaries and all contour exchanges. The same reasoning applies after taking each residue.
+
+The starting lines (3,3,2), the intermediate lines (beta_*+e,1+e,1/6+e), and the final w,z lines all lie in the proved correction domain. Lowering w crosses only w=1; in that residue lowering z crosses only z=1/6. The unreduced w remainder keeps z above 1/6. No nonprincipal row is moved in this argument.
+
+### Constants and the three errors
+
+The two scalar zeta residues give exactly
+
+c_S=widehat W_1(1) M(1/6) [Res zeta_F^S]^2/6.
+
+After division by c_S A_T, the double residue is the one-dimensional integral displayed in the manuscript, including its factor 1+R_Z(x). The three error exponents are precisely
+
+beta_*-11/16+(1+h)e-l_y delta/8,
+beta_*-11/16+e-h delta/24,
+beta_*-11/16+e-ell_min/2,
+
+up to an arbitrary positive epsilon. They follow from the exact exponent l_x/2+Re x-1+h Re z+l_y(Re w-1), with h=13/16 and l_y=23/48. The normalization A_T costs only a logarithmic power. The last error uses the independently proved all-height bound for R_Z.
+
+The error-free principal integral can be moved rightward to Re x=2: the reciprocal has no intervening pole, the fixed multiplier is holomorphic and uniformly bounded on the relevant closed strip, and its Gaussian kills the horizontal boundaries. This is exactly f_fixed, not a Z-dependent surrogate.
+
+Finally choose e small relative to all three positive gains, then epsilon smaller still. This proves sigma_pr>0. No angular L zero-free assertion, hidden residue from the removed factor, or attainment of beta_* is used.
+
+The resulting principal integral step is now established. The remaining overall high comparison and low-side correlation require separate estimates.
+
+# Review of Part V
+
+## Referee: all-row core-selected factors and finite-slot savings
+
+### Verdict
+
+Part V of the report passes. It gives exact local identities for every actual sixth-power-free numerator row, a reflected holomorphy tube, and a quotient-free finite-slot dynamic expansion with a power saving. The result is uniform in all heights and moving rows, on the declared fixed real parameter boxes. It does not estimate the complete high integral summed over numerator rows.
+
+### Exact parity deletion
+
+The core mark removes e_0=0 and positive even v_p(n). Direct use of the original prime-power Gauss support gives its three contributions: R(1-P^{-1})/(1-V), the j=0 term rho P^{-w}R, and the j=5 term -kappa(p)P^{3-6x}, all divided by 1-R. In particular the j=5 term is indispensable. For j=5 it comes from the endpoint valuation where the principal-character Gauss sum is -P^{t-1}; for the other nonzero families the usual positive tail begins one six-step later.
+
+Subtracting this family from the original local table yields exactly J_core,0=-D, J_core,5=0 and the unchanged four middle entries. The selected replacement is obtained by the same physical marked-minus-rescaled operation, with its unmarked rescaling term retained. Equations (4)–(7), including every ramified j entry, agree with direct substitution. There is no division by a potentially vanishing P_p or H_p.
+
+### Reflected tube
+
+For 0<delta<1/4 and e>0, take
+
+1/2+delta<=sigma=Re x<=1-delta,
+Re w>=1-sigma+e, Re z>=1/6+e.
+
+The ten unramified correction exponents in (10) were checked individually. Each exceeds one by at least nu=min(e,delta). At row primes, the original J_j terms, including J_5, have decay at least nu; the common term has decay at least e and R/P at least 1+6delta+6e. Thus the unmarked product converges normally and has the stated q_u^epsilon positive-product bound, also after arbitrary selected factors are omitted. Strict margins give a neighborhood of each real-tube point.
+
+The exact unramified error is equation (6). Its extra terms are bounded by d, V and PVW, giving O(P^{-delta}) throughout the tube. At p|u, the true selected terms can grow: j=2 contains P^{3/2-2sigma} and j=3 contains P^{2-3sigma}. They are not discarded. Every term in the full table is nevertheless O(P^sigma) on this tube, including the common P^{1-Re w} term. This distinction between local growth and the aggregate saving is essential.
+
+### Finite-slot expansion
+
+In an annular slot of scale P_i, unramified errors have total absolute weighted mass O(P_i^{Re z-delta}). Ramified errors occur at only O(log(2q_u)) prime divisors of u. Their weighted mass is therefore at most
+
+C log(2q_u) P_i^{Re z-1+sigma}
+ <= C_epsilon q_u^epsilon P_i^{Re z-delta}.
+
+This sparse count, rather than a false local decay claim, handles the ramified growth. The zero-extended character makes every ramified non-error term zero; unramified non-error mass is O(P_i^{Re z}).
+
+Expanding G_p=-conjugate(chi_p(u))H_p^flat+E_p in the finite tuple gives the main term exactly as the full unmarked product times the K slot character polynomials. Every remaining term has at least one error slot. Positive majorants control the omitted unselected product, and initially allocating epsilon/(2K+2) controls all finite products of divisor losses. Thus equations (14)–(15), with saving delta ell_min, follow without dividing by H_p or assuming its nonvanishing for arbitrary u.
+
+The fixed real-box condition is necessary and correctly stated: q_p^{Re z-1} and P_i^{Re z-1} have comparison constants depending on an upper bound for Re z on a fixed annular support. All imaginary parts remain unrestricted.
+
+### Stronger near-residue region
+
+On the earlier Omega_delta, the unramified error is O(P^{-1/2-delta}). The three extra exponents are at least 1/2+delta, 1-delta/2 and 1-3delta/4, and the latter two exceed the first for delta<=1/4. The ramified bounds in (17) were checked from the same exact table; all are at most P^{1/2}. The identical sparse-count argument gives the stronger ell_min/2 slot saving in (18).
+
+The new expansion is a valid arithmetic input to later numerator-row summation. It supplies no automatic bound for the reciprocal L-functions, the main character polynomials, or the full compensated low correlation. Those separate budgets remain explicit.
+
+### Product majorant in the final Section 5
+
+The additional bound (19) also passes. For sufficiently large unramified selected primes the uniform local estimate gives |H_p^flat-1|<=1/2, so and only so E_p/H_p^flat is safely defined. No division is made at ramified primes or by the full Euler product.
+
+Partitioning tuples by their ramified-slot subset R, and then fixing those primes, leaves the unmarked Euler product with exactly those primes omitted. Its positive majorant is uniformly O(q_u^epsilon). The remaining unramified slot sums factor exactly as -S_i+e_i. The polynomials S_i need no adjustment because their original character is already zero at row primes. The omitted-product factor is independent of all those remaining unramified choices, so this step retains their actual cancellation.
+
+The selected ramified sums have the same sparse-divisor bounds as above. Summing over R therefore gives the product of |S_i| plus its corresponding error mass, with delta in the reflected tube and 1/2 near the residue. Fixed constants inside the K factors can be absorbed in a fixed exterior constant. Epsilon allocation before the finite subset expansion keeps the claimed uniform q_u^epsilon dependence.
+
+This stronger majorant genuinely preserves every unused slot polynomial. It remains a pointwise local/slot input, not a proved global numerator moment bound.
+
+# Review of Part VI
+
+## Referee: reflected joint numerator bound for the exact core probe
+
+### Verdict
+
+Part VI of the report passes on its stated retained family and conditional buffered reflected-numerator hypothesis (2). The source's original Proposition `probe-errors` was read directly for the unchanged conductor and functional-equation inputs. The new local argument permits Re z>=1/4 on a bounded real range, and yields
+
+|L^S(w,chi_u) product_{i in I} D_i^{core,flat}|
+ <= C U^{a-1/2+6e+epsilon}(3+T_1)^C
+       product_{i in I} P_i^{Re z-1/2}.
+
+Here 1/2+delta<=a<=1-delta, 0<e<delta/100, Re x=a+16e and Re w=1-a-6e. All original zeros and all strict ramified terms remain. This is a local retained-height joint estimate, not a proved global contour move or an unconditional numerator smallness estimate.
+
+### 1. Local factors and admissible division
+
+The exact unmarked polynomial was checked on these new lines. The bottleneck unramified monomial dW has exponent 1+10e; all other terms have larger than one margins, uniformly for Re z>=1/4. At row primes the common term has exponent at least 10e, and the J_j terms have margins at least 2delta, except the smaller J_1 term. Thus H_p^flat=1+O(P^{-nu}) even at row primes, nu=min(10e,delta), and the stronger unramified estimate holds.
+
+Consequently all sufficiently large selected local factors, including ramified ones, are nonzero and have uniformly bounded inverses. The threshold is uniform in moving u and all phases. Division is only performed at these finitely selected factors. No nonvanishing of the whole Euler product or of unselected small-prime factors is required for the exact finite-slot factorization.
+
+For p not dividing u, the exact compensation identity (10) cancels the bare W term. Its potentially leading errors are d and PVW, with decay at least min(a+16e,6 Re z-a-6e)>1/2+delta/2. Every remaining polynomial term has greater decay. This proves (12) with all original unit phases retained.
+
+### 2. Ramified table and the strict term
+
+After the slot weight is included and P^{Re z} is factored out, the non-strict exponents in (13) are correct. In particular the two j=1 terms have exponents -1-Re w and -Re w-6 Re z; the j=2, j=3 and j=4 exponents are respectively bounded above by -1/2-2delta, -1/2-delta and -1/2-2delta, with additional favorable e margins. The common rescaling term is also harmless.
+
+The remaining strict term is exactly -(P-1)P^{-w} for j>=2. It is not removed by core marking and cannot be bounded by the unramified error estimate. Its normalized exponent is -Re w, as the manuscript records.
+
+### 3. One simultaneous conductor allocation
+
+The original Kummer/reciprocity construction gives conductor exponent exactly one at each good p|u, because the local character has order 6/gcd(6,j)>1. Therefore for any distinct selected strict labels J_0,
+
+q_f <= C_S U product_{p in J_0} P^{-(j_p-1)}.
+
+The primitive functional equation, the assumed reflected bound, and Stirling give conductor cost q_f^{A_*}, A_*=1/2-Re w=a-1/2+6e>0. Because Re w>=delta-6e>0, restoring fixed and imprimitive deleted Euler factors costs only U^epsilon; the old extra cost needed when Re w could be negative is not imported.
+
+Applying the conductor inequality once to the entire strict tuple produces, at every strict label,
+
+-Re w-(j_p-1)A_* <= -Re w-A_* = -1/2.
+
+This supplies all central slot exponents simultaneously without spending the same conductor saving twice. Disjoint slots guarantee distinct primes. Divisor counts of ramified labels consume only a previously allocated U^epsilon; unramified labels have elementary positive mass with a strictly better exponent. Expanding any subset of error slots proves (4), including the empty subset.
+
+### Scope
+
+The exact dynamic decomposition (5) follows from local selected nonvanishing and the quotient-free tuple identity. Main slot polynomials retain row-independent coefficients and every original character mask. The bound assumes the source's reflected small-value hypothesis at the retained heights and does not prove it for all rows. No total row-count estimate, global numerator/reciprocal integral, or negative low correlation is inferred.
