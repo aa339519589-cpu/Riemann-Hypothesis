@@ -1,6 +1,6 @@
 # 真实低态的近指数 Fourier 刚性：Γ 对数阶被对数权交换子准确抵消
 
-2026-10-11。保留完整 theta、全部素数幂移位和原 Γ 乘子，证明真实亚临界本征态的近指数 Fourier 衰减。**RH 与亚临界谱排除均未证明。**
+2026-10-11。保留完整 theta、全部素数幂移位和原 Γ 乘子，证明真实亚临界本征态的近指数 Fourier 衰减，并结合已发表的 ζ 零自由区推出每阶导数的近指数空间尾。**RH 与亚临界谱排除均未证明。**
 
 ## 1. 固定真实对象与结论
 
@@ -235,7 +235,7 @@ e^{2\tau\omega(K)}\|v\|_2^2<\infty.
 
 ## 6. 源的水平复条带估计及完整零点尾
 
-对 \(|b|\le B\)，令 \(a_b(x)=e^{-bx}m(x)\)。同一 theta 条带移线证明给 \(|\widehat{a_b}(t)|\le C_Be^{-a|t|}\)，必要时把最初固定 \(a\) 缩小一次，仍对全部有限固定 \(B\) 可用。
+对 \(|b|\le B\)，令 \(a_b(x)=e^{-bx}m(x)\)。最初即固定小于 theta 零自由条带宽度的 a。同一距离 a 的移线对每个固定有限 B 都成立，给 \(|\widehat{a_b}(t)|\le C_Be^{-a|t|}\)；仅 C_B 随 B 改变，a 与已选 c_* 不再改变。
 
 卷积先由 L² Fourier 恒等式成立；绝对收敛与 L² 平移连续性给出连续函数，因此该式与真正连续的 F 在每个实 t 一致，可以代入每个复零点。因为 \(\omega\) 次可加，
 
@@ -259,7 +259,132 @@ m_w(1+|w|)^k|F(w)|
 
 证明只需把 (1.5) 的指数拆成两半，一半控制 \(T\)，余下加权和绝对收敛。全零点展开 \(\varepsilon g=-\sum_wm_wF(w)e^{-iwx}\)、\(g=2hq\)，因此其 \(k\) 阶导数尾另乘 \(e^{|x|/2}/\varepsilon\) 即得。
 
-## 7. 本结果可用来做什么，以及还缺什么
+## 7. 算术零自由区给出的空间尾推论
+
+第 6 节已证：存在仅依赖真实算子的 \(c_*>0\)，对任意固定阶 \(k\)，令 \(b=c_*\varepsilon/2>0\)，有
+
+\[
+\sum_{w\in Z,\ |\Re w|>T}
+m_w(1+|w|)^k|F(w)|\le C_{k,q,\varepsilon}e^{-b\omega(T)}.
+\tag{7.1}
+\]
+
+总加权和同样有限。所有重数包含在该和与零点计数中。固定 \(\varepsilon\ge\varepsilon_0>0\)、\(\|v\|_2=1\) 时，可将 b 换为 \(c_*\varepsilon_0/2\)，常数统一。
+
+这里使用已发表的算术定理，不将其记为本文证明或最新常数：[Mossinghoff–Trudgian–Yang, Explicit zero-free regions for the Riemann zeta-function](https://arxiv.org/pdf/2212.06867)，其 Theorem 1.2（式 1.6）给某个足够大而固定的 \(T_{\rm VK}\ge3\)，在 \(|t|\ge T_{\rm VK}\) 时
+
+\[
+\zeta(\sigma+it)\ne0\quad\text{若}\quad
+\sigma\ge1-\eta(|t|),\qquad
+\eta(t)=\frac{c_{\rm VK}}{(\log t)^{2/3}(\log\log t)^{1/3}},
+\quad c_{\rm VK}=1/48.1588.
+\tag{7.2}
+\]
+
+这是真实 ζ 的零自由区输入，不是一般正核性质。
+
+### 坐标与低高度处理
+
+对于 \(w=\gamma+i\delta\)，有
+
+\[
+\Xi(w)=\xi(1/2+iw)=\xi(1/2-\delta+i\gamma).
+\]
+
+利用真实零点的函数方程对称，(7.2) 同时约束两侧，得到
+
+\[
+|\delta|\le1/2-\eta(|\gamma|)\qquad(|\gamma|\ge T_{\rm VK}).
+\tag{7.3}
+\]
+
+不存在 \(|\delta|=1/2\) 的非平凡零点。\(|\gamma|<T_{\rm VK}\) 的零点集合有限（也可以为空），故它们与边界的最小距离严格正。由于 \(\eta(T)\downarrow0\)，存在固定足够大的 \(T_0\)，使全部 \(|\gamma|\le T\) 的真实零点均满足
+
+\[
+|\delta|\le1/2-\eta(T)\qquad(T\ge T_0).
+\tag{7.4}
+\]
+
+因此无需在此使用额外的有限高度数值零点核验。
+
+### 完整分割不等式
+
+任取 \(x\ge0\)、\(T\ge T_0\)。对全零点展开逐项求 k 阶导数，用低频的 (7.4) 与高频的 (7.1)，得到
+
+\[
+\boxed{
+|g^{(k)}(x)|\le C_{k,q,\varepsilon}e^{x/2}
+\left[e^{-x\eta(T)}+e^{-b\omega(T)}\right].
+}\tag{7.5}
+\]
+
+常数不依赖 x 或 T。低频部分以整个有限总加权和控制，未出现随 T 增长的错误零点数因子；高频部分保持全部剩余项。
+
+### 优化与结论
+
+设
+
+\[
+D(x)=(\log x)^{2/3}(\log\log x)^{1/3},\qquad x\gg1.
+\]
+
+固定任意 \(A>c_{\rm VK}/b\)，取
+
+\[
+T(x)=Ax\left(\frac{\log x}{\log\log x}\right)^{1/3}.
+\tag{7.6}
+\]
+
+因为 \(\omega(T)\sim T/\log T\)，\(\log T/\log x\to1\) 且 \(\log\log T/\log\log x\to1\)，有
+
+\[
+D(x)\eta(T(x))\longrightarrow c_{\rm VK},
+\qquad
+\frac{D(x)b\omega(T(x))}{x}\longrightarrow bA>c_{\rm VK}.
+\tag{7.7}
+\]
+
+于是对任意固定 \(0<c<c_{\rm VK}\)、任何固定整数 \(k\ge0\)，存在有限常数，使
+
+\[
+|g^{(k)}(x)|\le C_{k,c,q,\varepsilon}
+\exp\!\left(\frac{|x|}{2}-\frac{c|x|}{D(|x|)}\right)
+\quad(|x|\ \text{充分大}).
+\tag{7.8}
+\]
+
+负半轴使用 g 的偶性及其导数奇偶性。对任意固定 j，
+
+\[
+\left|\frac{d^j}{dx^j}\frac1{2\cosh(x/2)}\right|
+\le C_je^{-|x|/2}
+\quad(|x|\ge1).
+\]
+
+Leibniz 公式因此得到正向空间尾推论
+
+\[
+\boxed{
+|q^{(k)}(x)|\le C_{k,c,q,\varepsilon}
+\exp\!\left[-\frac{c|x|}{(\log|x|)^{2/3}(\log\log|x|)^{1/3}}\right]
+\quad\text{对任意 }0<c<1/48.1588.
+}\tag{7.9}
+\]
+
+等价地，约定 \(\log0=-\infty\)，
+
+\[
+\limsup_{|x|\to\infty}\frac{D(|x|)}{|x|}
+\log|q^{(k)}(x)|\le-1/48.1588.
+\tag{7.10}
+\]
+
+(7.10) 不宣称 (7.9) 可直接取端点常数 \(c=1/48.1588\) 且无更小阶损失。固定 \(\varepsilon\ge\varepsilon_0>0\) 的归一真实本征态，可以共同选择 b、A、尾常数及起始门槛；没有取得 \(\varepsilon\downarrow0\) 一致结论。
+
+用较弱经典零自由区 \(\eta(t)=c_0/\log t\) 同理可得任意 \(c<c_0\) 的 \(e^{-c|x|/\log|x|}\) 界。本节采用 VK 输入给出的 (7.9) 更强。
+
+
+## 8. 本结果可用来做什么，以及还缺什么
 
 正向新增的是一个真实本征态必须满足的近指数频率条件，指数率可取固定常数乘谱距 \(\varepsilon\)。因此它比仅知任意幂衰减更适合对真实全零点选择方程的无限高频部分作严格估计。固定距离阈值的归一态还有统一版本。
 
@@ -270,7 +395,7 @@ m_w(1+|w|)^k|F(w)|
 
 故本稿没有把近指数正则性称为 RH 证明，也没有把它重写成 RH 等价的“全部活动系数消失”假设。下一承重步骤仍须把完整真实算术方程与这个频率约束结合，取得跨越 \(\varepsilon\downarrow0\) 的符号控制或活动系数消失定理。
 
-## 8. 自足性与继承边界
+## 9. 自足性与继承边界
 
 本稿新的对数权差商、双向交换子、全部真实移位求和、共轭域、吸收和复 Fourier 推导均已写出；仅继承此前独立审核过的准确算子、\(H^\infty\) 与 Gårding 输入；theta 条带引理在附录 A 完整证明。尚未进行形式化内核验证，不主张新文献优先权。
 
