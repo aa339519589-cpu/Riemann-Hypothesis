@@ -1,0 +1,337 @@
+\documentclass[UTF8,fontset=none,11pt,a4paper]{ctexart}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{Latin Modern Mono}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,longtable,array}
+\usepackage{xcolor,hyperref,fancyhdr,enumitem,microtype}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue!50!black,pdftitle={黎曼猜想：2026年10月10日直接研究记录},pdfauthor={研究工作记录}}
+\pagestyle{fancy}\fancyhf{}\lhead{黎曼猜想研究记录}\rhead{2026-10-10}\cfoot{\thepage}
+\setlength{\parindent}{2em}\setlength{\parskip}{4pt}
+\renewcommand{\baselinestretch}{1.13}
+\newtheorem{prop}{命题}[section]
+\newtheorem{lemma}[prop]{引理}
+\newtheorem{cor}[prop]{推论}
+\newtheorem*{criterion}{条件性判据}
+\newcommand{\R}{\mathbb R}\newcommand{\C}{\mathbb C}\newcommand{\N}{\mathbb N}
+\newcommand{\XiR}{\Xi}\newcommand{\Dom}{\mathfrak D}\newcommand{\PW}{\mathrm{PW}}
+\newcommand{\dd}{\,\mathrm d}\newcommand{\e}{\mathrm e}\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1,#2\right\rangle}
+\newcommand{\src}[1]{\textsuperscript{[#1]}}
+\begin{document}
+\begin{center}
+{\sffamily\LARGE 黎曼猜想：直接研究记录}\par\vspace{5pt}
+{\large 谱变分、零点翻转与独立数值复算}\par\vspace{5pt}
+2026 年 10 月 10 日
+\end{center}
+
+\noindent\textbf{研究目标：}证明每个非平凡零点 $\rho$ 都满足 $\Re\rho=1/2$。\par
+\noindent\textbf{本次结果：}没有得到完整证明。下文给出实际完成的推导、可复算实验，以及仍未证明的具体不等式。本文没有证明新的无条件零点排除区域，也没有证明真实 $\Xi$ 系数的全阶 Toeplitz 正性。
+
+本次直接计算发现，上一次提出的原始“算子残差除以谱隙”指标，在所计算的真实 Weil 有限截面中随窗口扩大急剧恶化，而试探态与最低态的夹角同时缩小。因此不能把该指标未经试验地当成有利的主攻估计。另一个完成的推导是：利用全实零整函数的正规族性质，复条带上的幂次加权收敛条件可替换为对数加权的二次型能量条件。后一个条件本身仍需证明。
+
+\section{对象、归一化和历史边界}
+固定
+\[
+ \xi(s)=\frac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s),\qquad
+ \XiR(t)=\xi\!\left(\frac12+it\right).
+\]
+采用 Fourier 变换 $\widehat f(z)=\int_{\R}f(x)\e^{izx}\dd x$。
+
+Connes 综述所印的函数为
+\[
+ h(u)=\frac\pi2u^2(2\pi u^2-3)\e^{-\pi u^2},\qquad
+ k(u)=u^{1/2}\sum_{n\ge1}h(nu). \tag{1.1}
+\]
+直接 Mellin 积分给出
+\begin{align*}
+ \int_0^\infty h(u)u^{s-1}\dd u
+ &=\pi^{-s/2}\Gamma(s/2)
+   \left(\frac{s(s+2)}8-\frac{3s}8\right)\\
+ &=\frac{s(s-1)}8\pi^{-s/2}\Gamma(s/2).
+\end{align*}
+因此，在上述 $\xi$ 归一化下，$(1.1)$ 的乘法 Fourier 变换是 $\XiR/4$，而不是 $\XiR$。这只改变常数，不改变零点。后文需要与 $\XiR$ 比较时乘回 $4$。
+
+相应的正确加法核是
+\[
+ \Phi(x)=4k(\e^x)
+ =\sum_{n\ge1}\left(4\pi^2n^4\e^{9x/2}
+                  -6\pi n^2\e^{5x/2}\right)
+                       \e^{-\pi n^2\e^{2x}},\qquad
+ \widehat\Phi=\XiR. \tag{1.2}
+\]
+核的偶性来自 Jacobi 关系；并不能据此把其 Fourier 变换的全部零点判为实数。
+
+恢复的项目总账中，Round 102 已明确区分：显式试探函数的变换趋于 $\Xi$，与真实最低本征函数的变换趋于 $\Xi$，是两个不同命题。2026-09-01 增补还撤回了未经完整误差传播审计的全范围正性认证。本文不继续使用旧聊天里较大的认证范围。
+
+\section{真实 Weil 有限截面：不输入零点的构造}
+取 $c>1$，$L=\log c$，$\lambda=\sqrt c$。区间 $[0,L]$ 与居中的 $[-L/2,L/2]$ 通过平移等价。基为
+\[
+ U_n(x)=L^{-1/2}\e^{2\pi inx/L}\mathbf1_{[0,L]}(x).
+\]
+以下矩阵由素数幂 $p^m\le c$、Gamma 因子和端点极项构造；构造过程中没有调用已知黎曼零点。
+
+设 $J_L(z)$ 为单边 Weil 分布作用在 $\e^{zx}\mathbf1_{[0,L]}$ 上的值。由显式公式可化成
+\begin{align}
+ J_L(z)={}&\frac{\e^{(z+1/2)L}-1}{z+1/2}
+          +\frac{\e^{(z-1/2)L}-1}{z-1/2}
+          +\frac12\bigl(\psi(1/4-z/2)-\log\pi\bigr)\notag\\
+ &+\sum_{q=0}^{\infty}
+       \frac{\e^{-(1/2-z+2q)L}}{1/2-z+2q}
+   -\sum_{p^m\le c}\frac{\log p}{p^{m/2}}\e^{zm\log p}. \tag{2.1}
+\end{align}
+实现中只在 $\Re z=0$ 上使用此式，并对 $z$ 求导。这里的无穷级数是几何收敛的 Gamma 尾项，不是对高频积分施加的截断。
+
+令
+\[
+ a_n=2\Re\left[J_L(2\pi in/L)-L^{-1}J_L'(2\pi in/L)\right],
+ \qquad b_n=-\pi^{-1}\Im J_L(2\pi in/L).
+\]
+则 $a_{-n}=a_n$、$b_{-n}=-b_n$，且
+\[
+ T_{ij}=\begin{cases}a_i,&i=j,\\
+ (b_i-b_j)/(i-j),&i\ne j.
+ \end{cases} \tag{2.2}
+\]
+偶、奇子空间的矩阵由 $T_{ij}\pm T_{i,-j}$ 得到，常数基与其余偶基之间有 $\sqrt2$ 归一化因子。
+
+\subsection*{独立核对}
+另外写了一份实空间积分程序，直接把基的自相关代入显式公式，而不经过 $(2.1)$。特别保留了 Gamma 减项在 $x>L$ 上的贡献 $F(0)\operatorname{arctanh}(\e^{-L})$。漏掉此项会改变矩阵。
+
+在 70 位工作精度下，检查 $(c,i,j)=(4,0,0),(4,0,1),(4,-2,3),(8,7,7),(8,2,9)$，两种计算的绝对差最大为 $1.27\times10^{-70}$。这核对的是有限计算公式，不是对连续算子谱的区间认证。
+
+当 $z=i\omega$，从 $q=K$ 开始的 $(2.1)$ 级数余项满足解析上界
+\[
+ \left|\sum_{q\ge K}\frac{\e^{-(1/2-i\omega+2q)L}}{1/2-i\omega+2q}\right|
+ \le\frac{\e^{-(1/2+2K)L}}
+ {(1/2+2K)(1-\e^{-2L})}. \tag{2.3}
+\]
+导数尾项用 $L/(1/2+2K)+(1/2+2K)^{-2}$ 代替分母因子即可。该上界不涵盖浮点运算本身的舍入误差。
+
+\section{Prolate 试探态与最低态：实际复算}
+使用偶 Legendre 基求解 prolate 微分算子
+\[
+ -\frac{\dd}{\dd x}\left((\lambda^2-x^2)\frac{\dd}{\dd x}\right)
+ +(2\pi\lambda x)^2.
+\]
+取最低与第四阶偶态的线性组合 $h_\lambda$，使其积分为零，再构造
+\[
+ k_\lambda(x)=\e^{x/2}\sum_{n\e^x\le\lambda}h_\lambda(n\e^x),
+ \qquad |x|\le\log\lambda. \tag{3.1}
+\]
+积分按 $x=\log\lambda-\log n$ 分段。设 $N$ 是 Fourier 截面半宽，$M$ 是偶 Legendre 项数，$Q$ 是每段积分节点数。试探态在有限截面中归一化为 $\norm{k}=1$。
+
+记有限矩阵最低态为 $v_0$，最低两个本征值之差为 $g$，并定义
+\[
+ d=\norm{k-\inner{k}{v_0}v_0},\quad
+ R=\norm{(T-\mu_0)k},\quad
+ E=\inner{k}{Tk}-\mu_0.
+\]
+\begin{center}\small
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+$c$ & $N$ & 工作位数 & $d$ & $R/g$ & $E/g$\\
+\midrule
+4 &30 &80  &$1.24477\,10^{-3}$ &$1.32210\,10^{3}$ &$1.12179\,10^{-3}$\\
+6 &45 &100 &$3.57293\,10^{-4}$ &$4.44509\,10^{7}$ &$3.97747\,10^{-4}$\\
+8 &60 &120 &$2.57252\,10^{-4}$ &$3.36744\,10^{12}$ &$2.35511\,10^{-4}$\\
+8 &80 &160 &$2.34203\,10^{-4}$ &$3.97990\,10^{12}$ &$2.18552\,10^{-4}$\\
+12&90 &180 &$1.02344\,10^{-4}$ &$4.44714\,10^{22}$ &$8.52532\,10^{-5}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+对应 $(M,Q)$ 依次是 $(40,64),(55,96),(65,112),(85,160),(95,160)$。完整精度的本征值、投影损失和试探态端点值均在 JSON 文件中。
+
+这些数据表明：在已算实例中，$R/g$ 不是一个接近有效夹角估计的量。它对高能量方向的微小分量极为敏感。在 $c=8$ 的增大截面复算中，这一现象依然存在，但本征值和夹角也确有截面依赖。
+
+不能从这五行数据推出 $R/g$ 在连续模型中的渐近发散，也不能据 $E/g$ 下降推出其极限为零。尤其不能把有限矩阵的正本征值当作完整 Weil 形式正性的证明。
+
+\section{完成的解析推导：零点翻转与最低谱空间}
+对固定窗口 $[-a,a]$，真实 Weil 闭二次型的定义域可用 Fourier 侧的对数权控制：
+\[
+ f\in L^2(-a,a),\qquad
+ \int_\R\log(2+|t|)|\widehat f(t)|^2\dd t<\infty. \tag{4.1}
+\]
+在固定窗口上，素数移位及极项是有界二次型。Gamma 主部给出对数权。也可以使用 Suzuki 的窗口依赖 Fourier 权表示。这里没有把随窗口变化的权误当作全局 Fourier 乘子。
+
+\begin{lemma}[翻转保持真实二次型]
+设 $f$ 在上述定义域中，$F=\widehat f$，且 $F(w)=0$，$w\notin\R$。定义
+\[
+ G(z)=F(z)\frac{z-\overline w}{z-w}. \tag{4.2}
+\]
+则存在同一窗口内的 $g$，满足 $\widehat g=G$，并且
+\[
+ \norm g_2=\norm f_2,\qquad Q_a[g]=Q_a[f]. \tag{4.3}
+\]
+\end{lemma}
+\begin{proof}
+分母的极点被 $F(w)=0$ 消去，故 $G$ 是整函数；有理因子不增加指数型。对实数 $t$，$|G(t)|=|F(t)|$。Paley--Wiener 定理给出同窗口的 $L^2$ 逆变换，$(4.1)$ 也保持。
+
+另外，令 $F^\#(z)=\overline{F(\bar z)}$，则
+\[
+ G(z)G^\#(z)=F(z)F^\#(z).
+\]
+因此两者的自相关相同，Weil 分布作用于自相关所得的值也相同。等价地，在固定窗口的 Fourier 权表示中直接使用 $|G|^2=|F|^2$ 即得 $(4.3)$。
+\end{proof}
+
+\begin{prop}[最低本征空间中的非实零点数]
+设 $A_a$ 的最低本征值为 $\mu$，最低本征空间为 $\mathcal E$，维数为 $d<\infty$。则任意非零 $f\in\mathcal E$ 的 Fourier 变换至多有 $d-1$ 个非实零点，按重数计算。特别地，最低本征值单重时，最低本征函数的 Fourier 变换只有实零点；这个结论不需要另加偶性假设。
+\end{prop}
+\begin{proof}
+由翻转引理，$(4.2)$ 对应的 $g$ 具有与 $f$ 相同的范数和最低 Rayleigh 商，所以 $g\in\mathcal E$。又
+\[
+ \frac{G-F}{w-\overline w}=\frac{F(z)}{z-w},
+\]
+故删除一个非实零点后所得函数仍是某个最低态的 Fourier 变换。
+
+若存在 $d$ 个这样的零点 $w_1,\ldots,w_d$，连续删除得到
+\[
+ F(z),\ \frac{F(z)}{z-w_1},\ \ldots,
+ \frac{F(z)}{\prod_{j=1}^{d}(z-w_j)}.
+\]
+这 $d+1$ 个函数线性无关：把线性关系乘以公共分母并除去 $F$，会得到次数分别为 $d,d-1,\ldots,0$、首项系数为 $1$ 的多项式之间的关系。与 $\dim\mathcal E=d$ 矛盾。
+\end{proof}
+
+\begin{cor}[不要求最低态单重的实零选择]
+如果 $\mathcal E$ 中的实点值泛函 $f\mapsto\widehat f(t_0)$ 不恒为零，取其中使 $|\widehat f(t_0)|/\norm f_2$ 最大的函数。其 Fourier 变换只有实零点。
+\end{cor}
+\begin{proof}
+有限维 Hilbert 空间中，该最大化向量由值泛函的 Riesz 向量给出，除复常数外唯一。零点翻转保持范数，也保持实点 $t_0$ 的值的绝对值。因此翻转后的向量必须与原向量成比例。但若存在非实零点，$(4.2)$ 的比值不是常数，矛盾。
+\end{proof}
+
+这一选择结论没有证明所选函数趋于 $\Xi$。缺失的谱识别不能由“能选择全实零函数”替代。
+
+\section{完成的解析推导：不再需要复条带幂次损失}
+\begin{lemma}[偶实零整函数的实轴收敛提升]
+设 $F_j$ 是偶实整函数，每个都为有限指数型，全部零点为实数，且 $F_j(0)=1$。若 $F_j$ 在原点附近某个实区间上一致趋于非零函数，则该列在全复平面上局部有界。若实轴极限来自某个整函数 $F$，则 $F_j\to F$ 在复平面紧集上一致成立。
+\end{lemma}
+\begin{proof}
+缩小实区间，取 $r>0$，使充分大的 $j$ 在 $[-r,r]$ 上满足 $F_j(t)>1/2$。偶性与指数型给出 Hadamard 配对乘积
+\[
+ F_j(z)=\prod_{\ell}\left(1-\frac{z^2}{x_{j,\ell}^2}\right),
+ \qquad x_{j,\ell}>r.
+\]
+由于这些因子在 $z=r$ 时均属于 $(0,1)$，
+\[
+ r^2\sum_\ell x_{j,\ell}^{-2}
+ \le -\log F_j(r)\le\log2.
+\]
+故对所有 $z\in\C$，
+\[
+ |F_j(z)|\le\prod_\ell\left(1+\frac{|z|^2}{x_{j,\ell}^2}\right)
+ \le\exp\!\left(\frac{\log2}{r^2}|z|^2\right). \tag{5.1}
+\]
+这给出局部一致有界性。Montel 定理给出子列极限；恒等定理使每个子列极限都与给定整函数 $F$ 相同，从而整列收敛。有限多个最初的 $F_j$ 不影响结论。
+\end{proof}
+
+设 $a_j\to\infty$，$A_j$ 是窗口 $[-a_j,a_j]$ 上的真实 Weil 算子；最低值 $\mu_j$ 单重，下一本征值与其之差为 $g_j>0$。取真实试探函数 $k_j\in\Dom(Q_j)$，并记
+\[
+ \mathcal E_j=Q_j[k_j]-\mu_j\norm{k_j}_2^2\ge0. \tag{5.2}
+\]
+\begin{criterion}
+若 $k_j$ 为实函数，$\widehat{k_j}\to\Xi$ 在每个紧实区间上一致成立，而且
+\[
+ \boxed{\displaystyle a_j\frac{\mathcal E_j}{g_j}\longrightarrow0,} \tag{5.3}
+\]
+则 RH 成立。
+\end{criterion}
+\begin{proof}
+设 $P_j$ 是最低谱投影，$u_j=P_jk_j$。谱定理给出
+\[
+ \norm{k_j-u_j}_2^2\le\frac{\mathcal E_j}{g_j}.
+\]
+对实数 $t$，Cauchy--Schwarz 不等式于是给出
+\[
+ |\widehat{k_j}(t)-\widehat{u_j}(t)|
+ \le\sqrt{2a_j}\norm{k_j-u_j}_2
+ \le\sqrt{2a_j\mathcal E_j/g_j}\longrightarrow0. \tag{5.4}
+\]
+特别地 $\widehat u_j(0)\to\Xi(0)>0$，故 $u_j$ 充分晚时不为零。
+
+算子与复共轭、反射相交换；单重性保证最低态有确定奇偶性。由于奇态在零点的 Fourier 值为零，$(5.4)$ 排除了奇态。因此 $u_j$ 为偶实函数。第四节命题给出 $\widehat u_j$ 的全部零点为实数。
+
+将 $\widehat u_j$ 除以 $\widehat u_j(0)$，第五节引理把实轴收敛提升为全复平面紧集收敛，极限为 $\Xi/\Xi(0)$。由 Hurwitz 定理，极限在上、下半平面均无零点。这就是 RH。
+\end{proof}
+
+在原参数中 $a_j=\log\lambda_j$。因此 $(5.3)$ 只含对数权，不需要上一轮 $\lambda^\alpha R/g$ 中的幂次权，也不调用 $7/8$ 无零点结果。
+
+\subsection*{为什么这个条件严格弱于原始残差条件}
+只比较谱估计，取三维模型
+\[
+ A_n=\operatorname{diag}(0,\e^{-2n},1),\qquad
+ k_n=(\sqrt{1-\e^{-3n}},0,\e^{-3n/2}).
+\]
+则 $g_n=\e^{-2n}$、$\mathcal E_n=\e^{-3n}$，所以
+\[
+ n\mathcal E_n/g_n=n\e^{-n}\to0,
+ \qquad R_n/g_n=\e^{n/2}\to\infty.
+\]
+这个例子只比较估计强弱，不充当 Weil 算子或 RH 的模型。
+
+\subsection*{仍未闭合的承重项}
+对真实、无限维的 $A_j$，本文没有证明一条无界窗口序列上的最低值单重性，也没有证明 $(5.3)$。有限矩阵中的正谱隙不能直接替代连续谱隙。第四节的非单重实零选择可以免去某些构造上的单重要求，却没有给出它与 $k_j$ 的收敛。因此不能据本节的完整条件性证明宣称 RH 已解决。
+
+\section{另一条实质检查：无限对数凹性不能替代 PF$_\infty$}
+2026-10-04 的 Liu--Mao 论文证明了
+\[
+ F(x)=\xi(1/2+\sqrt x)=\sum_{n\ge0}\lambda_nx^n
+\]
+的系数在迭代 $\mathcal L(a)_n=a_n^2-a_{n-1}a_{n+1}$ 下保持严格正性。该结果的对象与全部 Toeplitz 子式正性不同。这里使用论文给出的严格不等式；未重新运行其完整区间认证。
+
+最简单的区别可完全手算。序列 $(1,b,b,1)$ 在 $\mathcal L$ 下变为 $(1,b(b-1),b(b-1),1)$。取 $b=5/2$，迭代参数始终大于 $2$，故所有迭代非零项均为正。但是
+\[
+ 1+\frac52x+\frac52x^2+x^3
+ =(1+x)\left(1+\frac32x+x^2\right)
+\]
+含有一对非实零点。
+
+\subsection*{更贴近真实 $\xi$ 的扰动检验}
+由该论文的严格闭合机制还可以推出下面的结论。
+
+\begin{prop}[常数项扰动仍保留无限对数凹性]
+以 Liu--Mao 论文命题 3.5、4.5 中的严格不等式为输入，存在 $\varepsilon_*>0$，使得对所有 $0<\varepsilon<\varepsilon_*$，
+\[
+ F_\varepsilon(x)=F(x)+\varepsilon
+\]
+的系数仍严格无限对数凹；但是 $F_\varepsilon$ 有无穷多个非实零点。
+\end{prop}
+\begin{proof}
+令 $A_{m,n}=\mathcal L^m(\lambda)_n$。$A_{m,n}$ 只依赖原始指标在 $[\max(0,n-m),n+m]$ 中的系数，因而修改 $\lambda_0$ 不影响 $n>m$ 的 $A_{m,n}$。
+
+论文在 $n\ge12000$ 时，只需验证到 $m=\lceil\log_2n\rceil$，并在该处得到比率大于 $e$；这些初段及相邻项完全不受常数项扰动影响。在低指标区，只需验证到 $m=14$，到该层的比率严格大于 $10$。这里只有有限多个多项式不等式；它们在扰动为零时严格成立，所以在某个 $\varepsilon$ 邻域中仍成立。实际上，初段受扰动的格点都位于 $n\le m$，第十四层的比率只有 $n\le15$ 需要重新考虑。
+
+论文的闭合引理使用阈值 $r_*=(3+\sqrt5)/2$。一旦达到该阈值，下一层比率满足 $r_{m+1,n}\ge(r_{m,n}-1)^2\ge r_*$。上述严格入口条件保留，故同一个闭合论证适用于扰动后的系数。
+
+另一方面，$F_\varepsilon(x)>0$ 对 $x\ge0$ 成立，而
+\[
+ F_\varepsilon(-t^2)=\Xi(t)+\varepsilon\longrightarrow\varepsilon>0
+ \quad(t\to\infty).
+\]
+所以 $F_\varepsilon$ 只有有限多个实零点。它仍是阶为 $1/2$ 的非多项式整函数。若其全部零点只有有限多个，Hadamard 分解会迫使它成为多项式，矛盾。因此它有无穷多个非实零点。
+\end{proof}
+
+这不是 RH 的反例：$F_\varepsilon$ 不是原来的 $F$，也没有原来的 Euler 乘积。它说明，连“与真实系数只相差一个任意小的常数项、并保留全部无限对数凹不等式”都不足以强制全实零点。把这类不等式直接接到旧 PF$_\infty$ 主线，缺失的不是一个可省略的形式步骤。
+
+\section{可复算交付物与结论}
+附件源代码包含三个程序：\texttt{weil\_matrix.py}、\texttt{prolate\_compare.py}、\texttt{validate\_matrix.py}。依赖为 Python 与 \texttt{mpmath}；本次使用 Python 3.13.5、\texttt{mpmath} 1.3.0。所有 JSON 保存了精度和截面参数。
+
+本文没有完成以下任何一项：真实 Weil 形式的全窗口非负性、真实最低谱的统一单重／分离估计、$(5.3)$ 的无条件极限、或 $D_\beta(n,r)$ 的全量词正性。已经完成的是公式归一化核对、真实有限截面的独立实现和复算、第四至第五节的解析推导，以及第六节的扰动检验。
+
+因此，本次工作不能登记为 RH 证明。上一次的残差指标仍是逻辑上成立的充分条件，但现有实际试验不支持把它作为一个已经找到突破口的估计。
+
+\section*{参考材料与依赖定位}
+\small
+\begin{enumerate}[label={[\arabic*]},leftmargin=2.4em,itemsep=6pt]
+\item A. Connes, \href{https://arxiv.org/html/2602.04022v1}{The Riemann Hypothesis: Past, Present and a Letter Through Time}, arXiv:2602.04022v1，\S6。用于核对试探态定义及其与真实最低态的区别。
+\item A. Connes, C. Consani, H. Moscovici, \href{https://alainconnes.org/wp-content/uploads/zeta-spectral-triples-1.pdf}{Zeta Spectral Triples}，\S3 及有限截面矩阵公式。第二节实现从显式公式独立推导。
+\item A. Connes, W. D. van Suijlekom, \href{https://alainconnes.org/wp-content/uploads/quadraticforms-1.pdf}{Quadratic Forms, Real Zeros and Echoes of the Spectral Action}，定理6.1。第四节给出零点翻转的另一种直接论证，不主张该一般现象的优先权。
+\item M. Suzuki, \href{https://arxiv.org/html/2606.09096v3}{Weil's quadratic form via the screw function}, arXiv:2606.09096v3，2026-09-23，\S2--4。固定窗口形式域、Fourier 表示和连续性；\S7 的极限构造含猜想性步骤。
+\item A. Groskin, \href{https://arxiv.org/html/2605.20224v4}{Connes 谱方法的数值实现}, arXiv:2605.20224v4。只作已有数值工作的对照；本文没有复制其数值作为自己的结果。
+\item B. Liu, \href{https://arxiv.org/html/2610.12234v1}{Slightly improved zero-free half-planes for the quasi-Riemann hypothesis}, arXiv:2610.12234v1，2026-10-08。本次检索发现的 $7/8$ 后续改进；本文第五节的判据不依赖它。
+\item Y. Liu, J. Mao, \href{https://arxiv.org/html/2610.04972v1}{Infinite log-concavity of the Taylor coefficients of the Riemann xi-function}, arXiv:2610.04972v1，2026-10-04。第六节具体使用命题3.5、4.5和引理5.1的严格入口条件。
+\item 项目文件：\texttt{RH\_全台账\_纯文本合集.txt}，Round 102 和 2026-09-01 $D_\beta$ 增补；原文 \texttt{pasted-text(1).txt}，Round 13。后来的纠错优先于早先的过度认证。
+\end{enumerate}
+\end{document}
