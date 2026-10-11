@@ -1,4 +1,4 @@
-# Independent review: complete physical quadratic and cubic dual sectors
+# Independent review: physical nonprincipal dual-sector estimates
 
 Companion: [QUADRATIC_DUAL_N1.md](QUADRATIC_DUAL_N1.md).
 
@@ -342,3 +342,250 @@ preserves x=0. The denominator is row-independent and uniformly nonzero for Re s
 The selected Möbius Dirichlet-series identity in (8) is exact in its absolute region, with selected D coprime to the good part of M. Its nonunit zero masks remain exact. The normalized scalar length is (L/P)^{sigma-1}; the remaining multiplier is precisely E_v(s), rather than arbitrary extra coefficients. The displayed Hölder estimate over R exceptional rows is valid.
 
 This certificate establishes the genuine selected multiplier moment. A density theorem, inverse-L control, the free-s moments and the complete physical divisor/slot budget must still be combined before asserting a bound for the full low probe.
+
+# Review of Part IX: complete pure fifth-power sector
+
+## Audit of the complete pure fifth-power sextic-core sector
+
+Part IX of the companion report passes in its exact scope H=epsilon v^5 a^6, v nonunit squarefree, all physical n, original/core markings and both first-decompleted versions. It proves the claimed S exponent 133/480-d/2 and compensated exponent -67/480. It does not include mixed sextic cores, unit-only cores, or the full low target.
+
+The sixth-order sieve's four reciprocal-column norm terms and the complete all-power smooth-column decomposition are correct. The sixth-power layer has summable norm powers -3,-6,-4,-11/2. Primitive Poisson applies to the actual nonprincipal character. The smooth norm transitions at S=V^{1/2}, V^{7/8}, V are the stated ones. Multiplying the four column terms and summing only the finite physical e range gives respectively V, V^{17/16}(Y_*/C_*f)^{1/2}, V^{9/8}(Y_*/C_*f)^{1/3}, V^{35/32}(Y_*/C_*f)^{1/12}. The borderline constant segment incurs only a finite logarithm.
+
+The actual n=1 completion retains the true common c/s characters, eta(e), all reciprocal and gcd masks, and the marked-slot organization. No row-dependent inner coefficients are substituted.
+
+The source local scalar table forces every physical n in this sector to be a square r^2. At p^b||r, no frequency valuation below 6b-1 survives. Above that boundary the exact comparison with the n=1 coefficient is P^{6b} times
+
+\[
+ M_p=1_{p^2\nmid s}\bigl(1-P^{-1}1_{p\nmid c,p\nmid s}\bigr).
+\]
+
+The cases e_0,k_s=(0,0),(0,1),(1,0),(1,1), and k_s>=2 agree individually with this formula. At the sole lower boundary j'=6b-1, e_0=k_s=0 and the scalar is exactly -P^{6b-1}. Thus the exceptional product h_0 divides both rad(r) and v, with a=(r/h_0)a' and (h_0,a'cs)=1. The coefficient is kappa(r)q_r^{-2}mu(h_0)q_{h_0}^{-1}.
+
+The phase restoration is exact. Relative to H_eff=Hh_0/r^6, the unit factor chi_q^{k-t}(H/q^{j_q}) at other primes supplies chi_c(h_0) on the free c column and conjugate chi_s(h_0) on the free s column. Shared g factors cancel. Together with the ordinary sixth-power covariance these restore the full v character, including the original bad character; no character is evaluated at a forced nonunit.
+
+The mask also has the exact expansion 1-1_{p^2|s}-P^{-1}1_{p\nmid c}1_{p\nmid s}. Hence only fixed c-unit conditions and fixed s-divisor extractions are needed. After splitting fixed-prime valuations in g,e,f, extracting a divisor from the free s variable reduces its scale. The outside Q/Y'^{3/2} normalization stays unchanged, and every term of the analytic bound is nondecreasing in that reduced scale. This justifies the common-column interface with at most C^{omega(r)} fixed choices.
+
+Crucially, the actual Gaussian annulus q_c q_r^6~C_l implies q_r<=O(C_l^{1/6}). After the full Fourier moments and h_0<=r, the four r powers are -3,0,-1,-5/2. The second term therefore costs C_l^{1/6}, converting its apparent C_l^{-1/2} into C_l^{-1/3}; the third costs only logarithms. Empty subunit annuli stay empty. Gaussian summation preserves the resulting bound at every T>0 with the original windows fixed.
+
+The four powers of C in the final positive envelope give exact outer Möbius exponents -16/5,-51/40,-27/20,-45/16. All are strictly below -1, so first decompletion is absolutely legitimate even with the exceptional fifth-power boundary. The redundant frequency lift preserves this pure core and unit.
+
+The displayed original-scale exponent arithmetic is correct: the first envelope term dominates, gives S=133/480-d/2, and the original normalization/finite compensation gives -67/480. The remaining gap to -3/16 is 23/480 for this type, with other types still untreated.
+
+The finalized square-layer normalization uses g=(c,rad(H_eff))=(c,rad(v a')), with H_eff=Hh_0/r^6. It need not equal (c,rad(H)) before removing ordinary sixth-power r primes. The latter primes are retained through the exact fixed multiplier M_p. This distinction is required by the common-column reduction and has been incorporated in the final text.
+
+# Review of Part X: genuine smooth direct and dual moments
+
+## Audit of the two-sided high moments of the true smooth quadratic column
+
+Part X of the companion report passes on its stated domain: nonunit good squarefree rows q_v~V, actual nonprincipal fixed-ray twists with conductor comparable to V, 1<=S<=V, common smooth weights, and any fixed integer k>=1. No Q or Burgess input is required.
+
+The k-th power of the original smooth column is a common polynomial of norm length O_k(S^k), with divisor-bounded coefficients. Its product indices are not assumed squarefree. Splitting n=b ell^2, retaining the induced row zero mask and enlarging only the positive norm, gives the exact bound sqrt(VN)+N up to small powers. Taking the k-th root yields V^{1/(2k)}sqrt(S)+S.
+
+The actual primitive Poisson formula gives a unit-modulus root number times S/sqrt(q_f) and a conjugate common-character sum at scale q_f/S. Fixed deleted primes have a fixed finite decomposition. There is no zero Fourier term. Since q_f/V lies in a compact positive interval, a common cutoff in its logarithm and Fourier separation give integrable coefficient measures with uniform Schwartz seminorms. The root number and separated imaginary powers are row factors; no supremum over unrelated row-dependent dual weights is introduced.
+
+The dual scale V/S is at least one. On its bounded main range the same moment proof applies even though the dual weight need not vanish at zero, because its coefficients remain bounded and supported in a polynomial of length O(V/S). Large dual annuli have arbitrarily rapid decay. Minkowski sums those tails and the common separation. Thus the dual bound is V^{1/(2k)}sqrt(S)+sqrt(V). Taking the minimum proves
+
+\[
+ \|B(S)\|_{2k}\ll (VS)^\epsilon
+ \left[V^{1/(2k)}\sqrt S+\min(S,\sqrt V)\right].
+\]
+
+For nonradial weights the conductor-generator rotation is also separated by angular Fourier modes, with the corresponding unit phases absorbed into the row. Polynomial mode seminorm costs are summed against the original rapid angular decay. This preserves common dual columns.
+
+Hölder over any R-row subset gives the displayed exceptional-set estimate, regardless of whether that subset depends on S. The alternative R min(S,sqrt(V)) is the genuine pointwise length/Poisson bound.
+
+For the illustrative R<=V^{1/3} calculation, the fourth norm reduces to V^{1/4}sqrt(S) throughout 1<=S<=V. Combining fourth, sixth and pointwise bounds, then multiplying by S^{-1/8}, has maximum V^{53/72}, at S=V^{7/9}. The earlier intersection S=V^{5/9} gives only V^{17/24} and is not the global maximum. No complete marked physical exponent is inferred from this illustrative maximum alone.
+
+# Review of Part XI: Q-conditional complete nonprincipal quadratic closure
+
+## Independent referee: the complete nonprincipal quadratic sector
+
+### Verdict
+
+The theorem in Part XI of the companion report passes, conditional on its explicitly stated input Q and on the source-backed analytic inputs identified below. The complete nonprincipal quadratic type, with all physical indices and either original or core marking, has compensated bound
+
+\[
+ I_{\rm quad}=O_\epsilon(Z^{-439/2304+\epsilon}).
+\]
+
+The same conclusion holds for each exact first Möbius-flat operation. The margin below the required exponent \(-3/16\) is \(7/2304\). The statement concerns this complete dual type alone. It supplies neither a bound for the other dual types nor a proof of RH or of the full low comparison.
+
+The proof does not use Burgess. In particular, no superseded pointwise-Burgess budget enters this verdict.
+
+### 1. Inputs and quantifiers
+
+The input Q is the user's fixed finite-order Hecke zero-free half-plane \(\Re s>7/8\), with the public provenance recorded in the accompanying density manuscript. This review does not claim an independent rerun of the user's Lean build. The true-column density theorem, its finite-height reciprocal estimate, the exact selected-prime Euler-multiplier moments, and the genuine direct/dual smooth quadratic moments have separate independent referee certificates.
+
+After a fixed finite ray decomposition, the Möbius column really is the reciprocal of \(L(s,\eta\psi_v)\), with fixed finite-order \(\eta\). Common deleted Euler factors have only a small-power cost. The moving squarefree quadratic index remains the actual \(v\), and the smooth free column is not replaced by arbitrary coefficients before Poisson is used.
+
+For density-bin endpoint \(b\), put \(a=1-b\) and \(d(a)=3a/(1+a)\). A bin contains at most a small-power factor times \(V^{d(a)}\). Contours lie strictly to the right of the upper bin endpoints. Consequently endpoints displaced by the fixed bin width change powers by \(O(h)\); the final positive margin permits choosing this width and every analytic epsilon loss sufficiently small. No estimate is asserted on a zero itself.
+
+### 2. The full smooth-column scale
+
+For \(R=V^{d(a)}\), the eighth moment and the pointwise bound give
+\[
+ \sum_{v\in\mathcal E}|B_v(S)|
+ \ll Z^\epsilon\min\{R\min(S,\sqrt V),
+ R^{7/8}\max(V^{1/8}\sqrt S,\min(S,\sqrt V))\}.
+\]
+The weighted expression \(S^{-a}\) times this bound has its first candidate maximum at \(S=V^{1/2}\), with exponent
+\[
+ F(a)=7d(a)/8+1/2-a/2.
+\]
+The second candidate maximum occurs at \(S=V^{(3+d(a))/4}\). Its difference from the first exponent is exactly
+\[
+ \frac{a(1-8a)}{8(1+a)}\le0
+ \qquad(1/8\le a\le1/2).
+\]
+All smaller scales are covered by the increasing short-scale power pieces, and the genuine primitive-Poisson long-scale tail decreases rapidly. At \(a=1/8\) both maxima must be retained: they occur at \(V^{1/2}\) and \(V^{5/6}\), and both give \(F=35/48\). Thus the proof takes the maximum over the whole scale range.
+
+### 3. Selected slots and actual common coefficients
+
+Hölder with the selected multiplier's \(2k\)-moment applies to both terms of the preceding minimum. The remaining counting exponent is nonnegative because \(1/(2k)+1/8\le1\). Relative to the unweighted bound its factor is
+\[
+ R^{-1/(2k)}(1+V/P_c^k)^{1/(2k)}.
+\]
+For \(P_c\le\sqrt V\), write \(t=\log V/\log P_c\), \(m=\lfloor t\rfloor\ge2\). The choice \(k=m\) has no positive exponent if \(t\le m(1+a)\); the choice \(k=m+1\) has no positive exponent if \(t\ge2(m+1)(1+a)/3\). The intervals cover \([m,m+1]\), since \(m\ge2\). Tiny \(P_c\) is handled by its normalized pointwise bound. For \(P_c\ge\sqrt V\), \(k=2\) suffices. Therefore the total selected cost is
+\[
+ \ll V^\epsilon\{1+P_c^aV^{-d(a)/4}\}.
+\]
+Only finitely many fixed moments, depending on the chosen epsilon, are required.
+
+The inherited priority assignment of original slots to \(r,n_0,g,e,c_2\) preserves common coefficients in the \(c_2\)-slot sum. The exclusions involving the variable divisors \(n_0\) and the \(v\)-part of \(g\) are already enforced by the original quadratic zero extension. The remaining exclusions involve fixed \(r,e,a'\) masks. Thus the selected multiplier in this argument is the genuine common-coefficient Euler multiplier, rather than a family of arbitrary row-dependent selected sums. Pooling the divisors \(n_0,E,g\) creates only a divisor-bounded row weight.
+
+### 4. Odd physical branches and finite inclusion-exclusion
+
+The inherited exact identities give the outside coefficient \((NB)^{-1}\) and the two lengths
+\[
+ L=\frac{U}{N^3BGq_e},\qquad
+ S=\frac{Y'B}{NGq_j^2q_eq_f}.
+\]
+Hence \(L/S=Uq_j^2q_f/(Y'N^2B^2)\), independent of \(e\). The actual finite \(e\)-cutoff and reciprocal ideal mass reduce its dyadic summation to logarithms. The remaining bound is
+\[
+ V^{F(a)}(Y'/U)^a(NB)^{-1+2a}q_j^{-2a}q_f^{-a}
+ \{1+P_c^aV^{-d(a)/4}\},
+\]
+up to small powers. Since \(-1+2a\le0\), all \(N,B\) dyads are harmless, including their logarithmic endpoint. The smooth \(s_2\) column retains the exact common smooth/ray form needed for the high-moment input. No signed mask was deleted inside a mixed product.
+
+### 5. All Fourier, square, and flat tails
+
+The two row exponents are
+\[
+ \kappa_0=F(a),\qquad \kappa_1=F(a)-d(a)/4.
+\]
+Their minima are respectively \(35/48\) and \(31/48\), both strictly greater than \(1/2\). The full Fourier envelope therefore gives a convergent \(a'\)-sum with weight \(q_{a'}^{-2\kappa}\), and a factor \((U/X')^{\kappa/3}\) for \(U/X'\ge1\). For \(U/X'\le1\), any prescribed sufficiently large positive power is available from the original Schwartz envelope. Gaussian annuli control both signs of the scale parameter.
+
+Combining the physical square factor and an optional first flat factor as \(\rho=r\delta\) leaves coefficient \(q_\rho^{-2+\epsilon}\). At \(U_0=ZP\), the large-scale part is exactly bounded by
+\[
+ Y'^aU_0^{\kappa/3-a}X'^{-\kappa/3}
+ \sum_{q_\rho\le(U_0/X')^{1/6}}
+ q_\rho^{-2-2\kappa+6a+\epsilon}.
+\]
+For the first branch this exponent increases to \(-5/4\), so the series is genuinely absolutely summable. The second branch can reach \(-3/4\); its finite cutoff must be used. It contributes the boundary expression
+\[
+ P^aY'^aU_0^{-1/6}X'^{1/6-a}.
+\]
+Directly summing the complementary small-scale tail gives the same boundary bound: choosing \(M\) large in the small-scale Fourier bound gives a tail of \(q_\rho^{-2-6M+6a}\). Thus no divergent infinite series is suppressed. The core-preserving redundant-frequency lift for each exact flat operation is the already audited identity; it applies equally to original and core markings.
+
+### 6. Exact normalization and exponents
+
+After the original normalization and compensation, the two main exponents are
+\[
+ G_0(a)=-\frac{316a^2+107a+64}{384(a+1)},\qquad
+ G_1(a)=-\frac{252a^2+121a+64}{384(a+1)}.
+\]
+Both are strictly decreasing:
+\[
+ G_0'=-\frac{316a^2+632a+43}{384(a+1)^2}<0,
+ \qquad
+ G_1'=-\frac{84a^2+168a+19}{128(a+1)^2}<0.
+\]
+The exact subset parameter adds \(-da\) to the second expression, so discarding it is safe. At \(a=1/8\),
+\[
+ G_0=-439/2304,\qquad G_1=-443/2304.
+\]
+The exact boundary exponent is \(-7/16+7a/24-da\le-7/24\). Restoring the unnormalized factor gives \(521/2304-d/2\) as stated. The final compensation removes the original subset's \(d/2\) exactly as in the previously audited normalization.
+
+This verifies the claimed positive margin \(7/2304\), subject to the explicit Q input and only for the stated complete nonprincipal quadratic type.
+
+### 7. Consistency with the user's new joint-Möbius interface
+
+The user's commit `bbb8bba6f6a678848a270a4c950568a672cc975f`, `QUADRATIC_MOBIUS_GAIN.md` Sections 3--5, was independently read after the initial review. Its three structural requirements are consistent with this stronger mean proof and are now explicit in the revised manuscript:
+
+1. Joint logarithmic Fourier separation retains fixed product cutoffs equal to one on the joint profile support. Each separated column is therefore still a compactly supported smooth sum. This justifies both the true Möbius Mellin shift and primitive smooth-column Poisson. Fourier constants must of course follow the chosen transform normalization.
+2. Reciprocal estimates retain the actual imprimitive modulus, including every deleted prime, particularly h. The intrinsic character zero handles the v-supported factors; e,h,a' and the selected-slot restrictions are retained as their correct common masks or Euler factors. No arbitrarily large deleted modulus is hidden in a fixed primitive-conductor constant.
+3. On compatible squarefree support, \(\mu(e)\mu(\operatorname{lcm}(e,D_0))=\mu(D_0/(D_0,e))\). In the priority assignment this is exactly the one-time cancellation producing the c_2 Möbius column and its selected Euler multiplier. There is no second free Möbius e sum; the proof bounds the actual finite e-sum in absolute value.
+
+The added paragraph on the ambient size is also necessary and correct: before infinite sums it contains Z,V,q_rho,q_{a'},exp(|ell|), and separated heights. The initially arbitrary small powers of those labels are absorbed only afterward, using the strict a' margin, the first rho branch's -5/4 exponent, the second branch's actual finite cutoff and boundary term, and the full Schwartz/Gaussian tails.
+
+These clarifications preserve the user's attribution and do not change the theorem or the exponent. The revised manuscript with SHA-256 `012219599c2e57a73cd1ab93e5b8e3a29d54d426d6271ecb2629bcfe9bd39705` was read back and passes with these explicit interpretations. The user's pointwise-column result and its warning about direct minimum bounds are not contradicted: the stronger argument additionally uses zero-density exceptional-row sizes and joint high moments, rather than multiplying two separate savings.
+
+# Review of Part XII: Q-conditional complete cubic mean bound
+
+## Independent referee: true Möbius mean for the complete cubic sector
+
+### Verdict and scope
+
+The revised Part XII of the companion report passes, conditional on the explicitly attributed Q input. For the complete nonprincipal cubic type, including all physical n, original or core marking, and either exact first flat operation, the compensated bound is
+\[
+ I_{\rm cub}(Z)\ll_\varepsilon Z^{2/45+\varepsilon}.
+\]
+It improves the preceding \(5/48\) exponent by \(43/720\). It remains \(167/720\) above the required \(-3/16\). This is an upper bound for this type alone, not a main-term asymptotic, a counterexample, a full low comparison, or an RH conclusion.
+
+### Density input and actual characters
+
+I checked the statement and proof of Corollary 1.5 in [de Faveri's original preprint](https://arxiv.org/html/2610.04045v1). At n=3 its middle interval collapses. Specialization gives precisely the two formulas D_* in the manuscript. The index is the norm of the actual cube-free ideal w, not the possibly smaller primitive conductor. The source allows cube-free outer rows and cube-free columns.
+
+The fixed target twist can be inserted into the source proof: inverse-detector coefficients, its polynomial tail, and the approximate-functional-equation coefficients remain common coefficients. At the half-line the AFE length is at most \(M^{1/2}\) times a fixed height power. The cubic sieve's mixed term at that length is at most M. Cube layers have convergent weights; primitive root numbers are bounded row factors. Thus the required second moment and detector inequalities retain the cited M-exponents, with fixed-twist constants and polynomial height costs. This does not justify replacing a moving second character by a fixed twist.
+
+The piecewise-linear majorant D in the draft is valid. On the last two intervals its differences from D_* are, with x=1-b,
+\[
+ \frac{(1-6x)^2}{3(1+6x)},\qquad
+ \frac{(1-6x)^3}{6(1-12x^2)}.
+\]
+The first interval uses the trivial row count. The true-column finite-height inverse lemma is inherited with its strictly buffered contours, all actual deleted Euler factors, and explicit Q cap at 7/8. All c are good ideals and the common mask is replaced by its part outside the fixed excluded set. Q is an external user-supplied theorem with the previously recorded source-level and formal-verification scope; this review does not claim a new Lean build.
+
+### Marked column and every free-column scale
+
+Forcing the selected squarefree D_c gives its exact \(\mu(D_c)\eta(D_c)\overline{\psi_w(D_c)}/q_{D_c}\) factor and a true Möbius sum of length L/q_D. Summing the fixed slots gives the legitimate scalar \((L/P_c)^{b-1}\). Nonunit cases remain zero. This step is not valid for arbitrary divisor-bounded column coefficients; the manuscript uses the actual arithmetic column.
+
+For R=M^D rows the positive restricted smooth-column norm yields
+\[
+ \sum|B_w(S)|\ll\min\{M^D\min(S,\sqrt M),M^{D/2}B_3(M,S)\}.
+\]
+Here the inherited genuine smooth B_3 has the three pieces \(\sqrt{MS}\), \(M^{1/3}S^{5/6}\), and M, with transitions \(M^{1/2}\) and \(M^{4/5}\); the actual long-column Poisson estimate controls the remaining scales.
+
+After multiplication by \(S^{b-1}\), both short-scale pieces are nondecreasing. In the middle range the increasing moment bound meets the decreasing pointwise bound at
+\[
+ S_0=M^{(3D+1)/5}.
+\]
+Since \(1/2\le D\le1\), this point belongs to that middle range. The complete maximum is
+\[
+ M^{J(b,D)},\qquad J=\frac{D(2+3b)}5+\frac{3+2b}{10}.
+\]
+The capped range and long-column tail give no larger value. Consequently the actual finite reciprocal e-sum is bounded by this maximum times the fixed length-ratio factor and logarithms. This includes ranges where a formal transition would lie below the first nonempty ideal scale. No second free Möbius e cancellation is used.
+
+### All physical branches and tails
+
+The previously audited cubic identities give outside weight N^{-3/2}, lengths \(C_*=U/(N^3B)\), \(Y_*=Y'/(Bq_j^2)\), and hence
+\[
+ N^{-3/2}(C_*q_f/(Y_*P_c))^{b-1}
+ =N^{3/2-3b}(U/(Y'P_c))^{b-1}(q_j^2q_f)^{b-1}.
+\]
+All variable divisors n_0,E_4,g are pooled as bounded row coefficients after the exact common-weight separation. The N exponent is nonpositive. The actual slot priority assignment preserves common column coefficients; replacing \(P_c\) by P is a safe upper bound and does not omit the marked-column cost.
+
+The Fourier envelope depends on \(X'M^2q_{a'}^6/U\), so frequency summation gives \((U/X')^{J/2}\) and the convergent ideal weight \(q_{a'}^{-3J}\). Throughout the interval J>0.97. Combining the physical square coefficient with the scale dependence gives
+\[
+ q_r^{4-6b-3J(b)}\le q_r^{-23/10}.
+\]
+This is uniformly absolutely summable, and the same calculation applies to the first flat coefficient and sixth-power scale change. Arbitrary decay of the full Fourier envelope and Gaussian annuli handles every small scale. All unbounded labels must first enter the ambient modulus/height size; their arbitrarily small powers are then absorbed by these strict summability margins and the original tails, as the revised manuscript explicitly requires.
+
+### Exact exponent maximization
+
+The three J-polynomials in the manuscript were checked directly. The compensated exponent is
+\[
+ E(b)=-29/96+13J(b)/32+25(b-1)/48.
+\]
+On the first interval its derivative is 203/240. On the second it decreases from 47/240 to 1/30 and remains positive. On the third it is negative throughout, beginning at -319/960. Therefore the unique endpoint maximum is b=5/6, where D=2/3, J=16/15, and E=2/45. The residual subset term d(b-1) is nonpositive. The complete finite-e maximum here occurs at \(S=M^{3/5}\), not at the convenient clean scale S=M.
+
+The stated improvement and remaining gap follow exactly. All Q, fixed-twist, nonprincipal-type, and full-tail qualifications must accompany the result.
