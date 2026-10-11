@@ -1123,3 +1123,175 @@ These checks establish the complete two-marker, all-n, two-first-flat estimate. 
 The final author text was read back with the explicit reverse common-column allocation: the w part of g is covered by chi_w zero extension, the v part by fixed chi_v zero extension, and the a' part by the original fixed mask; n_0,E are fixed v-divisors in the reverse family and their w-symbols are bounded row factors. The same text includes the explicit clean envelope B_alpha=Z^{7/48+11alpha/16} and its polynomial extension above K_0. These additions agree with the proof audited above.
 
 Audited author SHA-256: 5273afbb8268424df9f9d46b94bea81c65a05284ad50b6f8c7412a16170bd867.
+
+# Review of Part XVIII: joint exceptional rows and the complete mixed(3,5) bound
+
+## A. Joint analytic theorem
+
+### Independent referee: joint quadratic–sextic detector and moments
+
+#### Verdict and scope
+
+The analytic assertions in Part XVIII A of the companion report pass, with the selected multiplier's real part in a fixed compact interval starting at 1/2, and constants allowed to depend on the original fixed arithmetic data and that interval. In particular, the genuine joint family with V=W=N has exceptional-row count at b=7/8 bounded by N^(7/5+epsilon) times a polynomial in the height. No Q hypothesis is required for this zero-density result. Q enters only in a later inverse-column application. No complete physical mixed bound follows from the detector alone.
+
+The family is the original product eta psi_v chi_w (or its sixth-factor conjugate), with v,w good, squarefree, nonunit and coprime. Its conductor has norm comparable to VW because the moving local components have different disjoint supports and are ramified there. The fixed bad conductor is partitioned into finitely many possibilities. The proof never absorbs a moving prime into fixed S.
+
+#### 1. Common-coefficient joint sieve
+
+Freezing w gives W(V+B); freezing v gives V Theta_6(W,B). The former uses Goldmakher–Louvel's squarefree quadratic large sieve; the latter uses the sixth-power-free large sieve, in which the actual squarefree rows and columns form permitted subfamilies. The two positive norms may each be enlarged after forming them. Taking their minimum is valid:
+
+K(B)=min{W(V+B), V[W+B+W^(5/6)B^(1/3)+W^(1/3)B^(5/6)]}.
+
+For bounded common full-column coefficients, n=c ell^2 with c squarefree is a valid reduction even though chi_w is sixth order: chi_w(ell^2) is retained as a modulus-at-most-one joint-row factor, not set equal to one. The psi_v square is the appropriate row unit mask. Minkowski gives sqrt(B K(B)) times the ideal harmonic sum in ell, which is logarithmic. This proves only the claimed bounded-coefficient consequence, not an arbitrary all-column operator bound.
+
+#### 2. The actual L moments and detector
+
+The AFE lengths for L and L^2 are respectively sqrt(VW) and VW up to polynomial height. In each square layer their coefficients have an ell^(-1) factor and squarefree harmonic mass. The layer sum is logarithmic and gives J_2=K(sqrt(VW)) and J_4=K(VW). Primitive dual root numbers are pure joint-row factors. The normalized conductor ratio lies in a compact interval, so one common Mellin separation retains common inner coefficients; angular modes are similarly pure row phases. Differentiating the AFE and applying Sobolev to L or L^2 yields the asserted finite-height suprema without assuming an independent fourth moment of L'. Fixed deleted Euler factors are harmless finite arithmetic factors on these lines; the primitive zero set in Re s>1/2 is the same for the corresponding incomplete function.
+
+The truncated inverse is the actual squarefree Mobius polynomial, so its second moment is K(X). Its product with the original incomplete L-function has common divisor-bounded tail coefficients. The Gamma detector therefore has the two alternatives
+
+Y^(1/2-b) (J_2 K(X))^(1/2),
+
+Y^((2-4b)/3) J_4^(1/3) K(X)^(2/3),
+
+and the same nonnegative tail sup_{X<=U<=Y} U^(1-2b) K(U). In the fourth-moment alternative the intermediate R^(1/4) is retained and only then eliminated from R<=A R^(1/4)+tail. It is not replaced by the full row count. Actual varying zero ordinates and real parts are handled by the height supremum and partial summation. The full Gamma tail is controlled by exponential decay against the established polynomial height losses.
+
+For V=W=N, K(B)<=C(N^2+NB). Taking X=N, Y=N^(2/(3-2b)) in the second-moment alternative gives the exponent (7-6b)/(3-2b)=1+4(1-b)/(3-2b). The remaining term has exponent 3-2b, smaller by 2(2b-1)(1-b)/(3-2b). Thus the stated 7/5 at b=7/8 is exact.
+
+#### 3. Smooth moments and exact selected multipliers
+
+Expanding the k-th power of the common smooth sum creates a bounded-divisor common full-column polynomial at length S^k. The preceding full-column estimate and k-th root give sqrt(S) K(S^k)^(1/(2k)). Genuine primitive Poisson contributes S/sqrt(VW) and dual length VW/S, producing sqrt(S) K((VW/S)^k)^(1/(2k)). The minimum of these two complete expressions is legitimate. Conductor ratios, rotations, the bounded dual weight near zero and its full large-frequency tail are all retained through common Mellin/angular separation. No zero dual term survives the nonprincipal family. The stated range 1<=S<=VW avoids a subunit dual length; the actual long-Poisson tail handles S>VW.
+
+For the normalized rational selected multiplier, freezing w uses the exact quadratic two-cycle identity including x=0; freezing v uses the exact sixth-cycle identity and all four sparse-column terms. Summing the positive row moments gives exactly the minimum in (13). This retains the true Euler denominators and zero masks. Constants are uniform only on the stated fixed real-part box. The exceptional-set Holder exponent is nonnegative by 1/(2k)+1/(2l)<=1. No density count is divided by V or W.
+
+#### 4. Homogeneity of the analytic upper bounds
+
+For B<=m=min(V,W), Q<=K(B)<=2Q. Hence in optimizing the detector, imposing X>=m loses at most an absolute constant. This is also valid when the original Y<m, by increasing both cutoffs to m and bounding the new decreasing-power tail by the previous one.
+
+Under (V,W,S,X,Y)->(tV,tW,t^2 S,tX,tY), with nonempty row ranges and fixed actual slots, the two direct kernel inequalities in (16) hold term by term. The cross terms in K(tB) have degree 13/6>=2; in K(B) every term has degree at least one. J_2,J_4,K(X) therefore contract by at least t^2. The detector alternatives contract respectively by t^(3/2+a), t^(4/3+4a/3), and t^(1+2a), for a=1-b. The first two powers are at least the third for 0<a<1/2; the trivial cap has power two. Taking admissible optimized minima preserves the bound.
+
+The selected moment contracts by at least t, and its 2k norm by t^(1/(2k)). The full smooth norm contracts by at least t^(1+1/(2l)), since its dual length ratio is unchanged and the direct length decreases. The weighted Holder expression thus contracts by
+
+t^[2-2a(1/(2k)+1/(2l))] <= t^(2-2a).
+
+This is a comparison of explicit positive analytic majorants. It is not an assertion that actual ideal or zero sets rescale, and it does not independently establish the required physical reindexing.
+
+#### Sources and limits
+
+Primary inputs were checked against Goldmakher–Louvel, Theorem 1.1 and primitive Poisson, https://arxiv.org/pdf/1112.1642 ; and de Faveri, Theorem 1.1 and the fixed-family definitions, https://arxiv.org/html/2610.04045v1 . The Gamma detector is the already audited BGL Section 5 construction. The author's fixed ray data, original masks and common-coefficient hypotheses are essential.
+
+The balanced exceptional-row improvement and joint analytic contraction pass. Any complete signed or full physical mixed application requires a separate budget and arithmetic verification.
+
+Final readback confirms the author now restricts (13) to 1/2<=Re(s)<=1 and explicitly permits dependence only on fixed eta/S/ray data and fixed smooth seminorms, not moving conductor sizes. Audited SHA-256: 754788a8b73771d8bb82e2e85848736cedffca4a56ab5a5612c3abee40b6d503.
+
+## B. Complete physical transfer and finite rational certificate
+
+### Independent referee: complete joint mixed (3,5) budget
+
+#### Verdict
+
+Part XVIII B of the companion report passes, conditional on the explicitly attributed Q input and the separately audited joint analytic theorem. The complete mixed type H=epsilon v^3 w^5 a^6, with v,w nonunit, good squarefree and coprime, satisfies the compensated bound Z^(-1/6+epsilon). All physical n, original and core marking, and each exact first Mobius-flat operation are included. The gain over the preceding complete -5/32 is 1/96; the remaining gap to -3/16 is 1/48. Other types and the complete signed probe are not included.
+
+#### 1. Joint family and common arithmetic
+
+The actual inverse-column family eta psi_v chi_w and smooth-column family psi_v conjugate(chi_w) need not be equal; Holder uses their moments on the same joint index set, which suffices. Each joint sieve is proved by freezing one coordinate, but the actual exceptional set is retained jointly afterward. The pooled n_0,E,g divisor choices are bounded joint-row factors after common norm separation. Their moving column unit masks are already in the original v,w zero extensions; r,a',e masks are fixed. The c_2 selected multiplier has common coefficients. The local restoration at h_0 takes place before the positive extension: its additional cs-unit mask is redundant on actual h_0|w support. It must not be retained as an arbitrary rough mask in a fictitious smooth Poisson theorem.
+
+The user's fixed product cutoffs remain in every joint Fourier mode, all imprimitive deleted Euler primes are retained, and the e coefficient is the actual eta(e)/q_e after its one Mobius cancellation. The new joint moments therefore apply to the same common columns as the previously audited physical transfer.
+
+#### 2. Explicit density choices, including the interior tail maximum
+
+Set a=1/8 and v=(13/16-5w)/3. In the first range w<=13/128 one has w<=v. With X=V and Y=V^(8/5), the quadratic side gives J_2=K(X)=Z^(v+w), so the integral and terminal tail exponent equal w+2v/5. The initial tail w+v/4 is smaller.
+
+In the second range v<=w<=12v/11, J_2 has exponent v/2+3w/2 and K(X) has exponent v+w. Choosing y=2(3v+w)/5 gives the exponent 3v/10+11w/10 for both the integral and terminal tail.
+
+In the third range 12v/11<=w<=7v/5 choose y=2w-6v/11. The first integral is bounded by A=21v/22+w/2. For the entire tail u in [v,y], the quadratic term is w+u/4. The sixth-side decreasing cross term v+5w/6-5u/12 meets it at u=3v/2-w/4, with value B=3v/8+15w/16. The other increasing sixth cross term has terminal value A. The common initial term is at most w+v/4<=A on this range, and v+u/4 has terminal value below A. Thus the full tail is bounded by max(A,B); the genuine interior peak is included.
+
+The fourth range uses the separately proved reverse-family density summed over frozen v: v+(55/118)(w+v/6). This is a legitimate joint row upper bound, not a division of a density count by either family size.
+
+Keeping these admissible X,Y choices fixed for larger a, their detector slopes are at most 2y. The stated maxima 37/75, 13/40 and 403/1100 are each below 25/48. The reverse derivative is bounded by (9816/3481)(3/25+17/1440)<25/48. After adding the actual selected P_c^a, S^(-a) and column ratio, every complete Holder expression decreases with a. The remaining density exponent in Holder is nonnegative and at most one. The endpoint a=1/2 is used only as a continuous positive-envelope endpoint for buffered bins, not an extension of a b>1/2 zero detector to the critical line itself.
+
+#### 3. Independent exact finite verification
+
+I independently expanded the actual joint K kernel into the direct and dual smooth affine groups and the selected Euler affine groups. For each group the exponent formulas are exactly (7)–(8). A k,l pair always has 1/(2k)+1/(2l)<=1, including k=l=1, so independently minimizing the selected and smooth norms is allowed. Their remaining common row power is nonnegative.
+
+The maximum of a finite minimum of finite affine maxima occurs at an interval endpoint or an intersection of constituent affine lines. A separate implementation was written and executed independently of the author's companion checker. It builds the groups directly from K, clears denominators, enumerates every rational intersection, and compares values by exact integers/Fractions.
+
+It read the 23 intervals in [joint_mixed_rational_intervals.txt](joint_mixed_rational_intervals.txt), checked exact adjacency and coverage from 7/100 through 3/25, and independently reproduced every stated fraction. All 23 passed the -1/6 target; their exact maximum was -105837/634880. This is an exhaustive finite rational certificate, not a sampled grid or floating-point optimization.
+
+For each interval the independent bound uses v at its left endpoint, w at its right endpoint and the maximum endpoint row exponent. In the third region the row bound is a maximum of affine functions, so this is still an upper bound everywhere. Each full Holder expression is nondecreasing in V,W,R because its net count power is nonnegative. The deliberate frequency-edge inflation is therefore valid.
+
+The two complementary ranges also check exactly. The old forward all-slot bound at w=7/100 is -1607/9600 and is no larger below that endpoint. The old reverse monotonicity gives -321/2048-(2/3)(3/25-5/48)=-77089/460800 at w=3/25 and a smaller value afterward. Both lie strictly below -1/6. Long smooth scales are covered by the actual nonzero Poisson tail.
+
+#### 4. Complete physical transfer
+
+The joint analytic theorem permits optimizing with X>=min(V,W). Under (V,W,S,X,Y)->(tV,tW,t^2 S,tX,tY), its detector contracts by at least t^(1+2a). The reverse alternative allowed in the fourth range contracts by t^(1+7D_6/6), which is at least t^(1+2a) for a in [1/8,1/4]. Selected and smooth norms contract by t^(1/(2k)) and t^(1+1/(2l)); with S^(-a) and Holder, the full positive bound contracts by at least t^(2-2a). Pointwise alternatives have the same or stronger contraction. Actual ideal or zero sets are not being rescaled.
+
+The clean CDF therefore gains (U/K_0)^gamma, gamma=(1-a)/4, for U<=K_0. With the new -1/6 clean bound one can explicitly take B_a=Z^(13/96+11a/16), up to small powers, after removing the common physical prefactor and ratio. For U>=K_0, replacing the analytic reference Z by Z(U/K_0)^(16/13) gives a finite polynomial continuation while leaving the actual selected slots fixed. The full Schwartz integral and Gaussian annuli are consequently justified exactly as in the preceding complete transfer, including effective scales below one and above K_0.
+
+The inherited physical factor is (Y'/C_l)^a R^(6a-2) H_0^(-1), with full frequency V^3W^5(R/H_0)^6 q_a'^6. Odd n_0/E choices contribute at most (NB)^(-1+2a)<=1. The CDF bound gives strictly summable r, a' and external flat weights bounded by R^(-3/2), q_a'^(-9/8) and q_delta^(-13/8). No reverse density count is divided by H_0. All actual unbounded ambient labels are introduced before, and absorbed only after, these strict margins and the original rapid tails.
+
+For a in [1/4,1/2] the already audited complete physical pointwise-density bound -323/1920 is stronger than -1/6. It covers those bins without a new endpoint summation. Both flat operations keep X',Y' and all slots fixed and preserve the numerator type under their exact sixth-power lift.
+
+Audited author SHA-256: 916c4b27ceb34746565cd054a5f911631de13350fc8a847618b696667679c17d.
+
+# Review of Part XIX: complete cubic–fifth mixed sector
+
+## Independent referee: complete cubic–fifth mixed sector
+
+### Verdict and exact scope
+
+Part XIX of the companion report passes conditional on the user's attributed Q input and the previously audited arithmetic and analytic inputs. For H=epsilon u^2 w^5 a^6, u nonunit good cube-free, w nonunit good squarefree and (u,w)=1, the complete compensated bound is Z^(-133/34560+epsilon). All physical n, both original and core markings, and both exact first Mobius-flat operations are included. This covers the (2,4,5) type and remains 6347/34560 above -3/16; it is not a complete low comparison or an RH proof.
+
+### 1. Exact local completion and common columns
+
+Writing u=v_1 v_2^2, the actual local C table gives n=n_0 r^2 with n_0=F_2 E_4, F_2|v_1 and E_4|v_2. At the two odd branches one has respectively j=2, c and s units, or j=4, c and s each divisible once. The outside completed factor is the inherited q_n0^(-3/2). The extra rho^(-3) now contains a genuine fifth-twist residue symbol. It is kept as a bounded u-row factor at fixed w, not replaced by fixed ray data.
+
+At a prime dividing n_0, increasing the physical square-layer exponent by b increases the relevant nonprincipal Gauss modulus by 6b and multiplies its exact value by P^(6b). There is no ordinary 1-P^(-1) term at such a prime. This independently checks the important j=2 case where c and s are units. Ordinary M_p factors occur only at p|r outside n_0 h_0. Boundary h_0 primes, including those dividing r to higher powers, are also excluded.
+
+The lower boundary is only in the fifth part: h_0|rad(r), h_0|w, a=(r/h_0)a', (h_0,a'cs)=1, coefficient mu(h_0)/q_h0. The odd equality also forces (n_0,a')=1. The square factor is kappa(r)/q_r^2. The reduced frequency is H_eff=Hh_0/r^6, and the corrected shared divisor is g=(c/E_4,rad H_eff), with (g,n_0)=1. Removed square-layer primes cannot remain in g by fiat.
+
+Restored covariance factors give the full mixed character pair; the redundant h_0-unit masks are then handled by its original zeros. Ordinary masks are expanded into fixed divisor extractions. The genuine free c_2 coefficient remains mu(c_2)eta(c_2)/q_c2, and the free s_2 column remains common smooth. The e coefficient is eta(e)/q_e with only its original one Mobius cancellation. Moving u,w column masks come from their actual zeros; all remaining deleted primes stay in the imprimitive modulus. Every logarithmically separated mode retains fixed compact product cutoffs.
+
+The true ratio L/S=C_l q_f/(R^6 N^3 Y_*) with Y_*<=Y' gives the total odd factor N^(-3/2+3alpha)<=1. These choices can thus be pooled as divisor-bounded row weights while retaining the exact selected multiplier.
+
+### 2. Moving-conductor density and moment transport
+
+At fixed w, first split by the actual primitive conductor C<=C_0 MW. For W<=M^3, the AFE half-length is at most sqrt(MW) and
+
+Theta_3(M,sqrt(MW)) <= small power * [M+sqrt(MW)+M W^(1/3)] <= small power * M',
+
+where M'=M W^(1/3). The actual conductor also satisfies MW<=(M')^2 in precisely this range. Every other detector sieve input increases when M is replaced by M'. Hence the original cubic detector applies with this enlarged parameter and yields M^D W^(D/3). For W>=M^3 that expression exceeds M because D>=13/24>1/2, so the same capped statement follows from the actual trivial row count, without using an invalid AFE estimate there.
+
+The piecewise convenient D is exactly the previously audited cubic density envelope. Finite heights, fixed twists and all deleted factors have their genuine ambient dependence; no W-dependent constant is hidden.
+
+For smooth moments, the text now explicitly splits the actual conductor before enlarging C to MW. The common dual norm is used only when C/S>=1. For C/S<1 the genuine nonzero Poisson tail supplies the first positive monomial; no subunit dual large sieve is invoked. Nonprincipality follows from the nonunit fifth support, which fixed bad data cannot cancel. With S=W S_0, every direct monomial is at most W times the pure cubic monomial; every dual one is at most W^(1/2) times it. The pointwise and long-Poisson bounds have the same comparison. At S_0<1 this is merely a comparison of positive algebraic envelopes, not a fictitious arithmetic sum. The exact cubic rational-slot moments have unchanged bounds because the fixed fifth values enter common coefficients with all zero masks retained.
+
+In the full reciprocal-e sum these facts cost at most W^(1-alpha+D/3). They preserve both the pointwise and eighth-moment alternatives before taking their minimum. The inherited full-e exponent is J=max(J_1,J_2) in (15). For P_c<=sqrt(M), the finite-choice selected moment has no power loss. For arbitrary P_c the actual k=1 moment gives all three factors (16); Holder remains legal because 1/2+1/8<1. The same factors may multiply the pointwise alternative as well, so the minimum still applies.
+
+### 3. Normal column slots and complete tails
+
+Actual frozen twists satisfying h_0|w are counted by O(W/H_0); no zero-density count is divided by H_0. The weighted M moment of the full Fourier envelope gives the stated K^(J/2) W^(-5J/2)(H_0/R)^(3J) q_a'^(-3J). Writing B=2-alpha+D/3, I independently recomputed the piecewise expressions in (17)–(18):
+
+B-5J/2 <= -257/1152,
+
+r exponent <= -95/48,
+
+a' exponent <= -175/64,
+
+external flat exponent <= -19/8.
+
+For the r bound the expression is nonincreasing in J and the lower substitute J_1 has positive boundary correction, giving exactly the three rational affine expressions in the manuscript. All sums have strict margins. The remaining normalized exponent is at most the inherited -11/2304. The M range is enlarged only after applying its valid slot condition.
+
+### 4. Oversized slots, the genuine finite harmonic range, and exact endpoints
+
+If P_c>sqrt(M), then M<=O(Z^(1/3)). Summing W first against the full Schwartz envelope gives (20), including subunit effective cutoffs. Its H_0 exponent 6B/5-2 is positive. Using H_0<=R leaves r exponent 6alpha-4, at worst -1. This last endpoint is genuinely harmonic, not absolutely summable. The actual Gaussian annular decomposition imposes R^6<=O(C_l) on a nonempty c annulus; the remaining annuli retain their original rapid Gaussian decay. This yields only the permitted logarithmic/small-power loss. The a' exponent is at most -11/5, and the external flat exponent at most -6/5, both strict.
+
+For m_0=log M/log Z and p=log P_c/log Z, the range is the triangle 0<=m_0<=1/3, m_0/2<=p<=1/6. Each of the three actual slot terms is affine in these two variables. Optimizing first in p, according to its sign, and then in m_0 leaves the two displayed endpoint functions E_0,E_1 or smaller values. This also retains negative slot powers; none is improperly enlarged by replacing its lower endpoint with P.
+
+I independently recomputed all three E_0 formulas and all six E_1 formulas symbolically from (15)–(16), rather than relying on the author's checker. Each is decreasing on its stated alpha interval. The largest is the first interval's J_2 expression at alpha=1/8, exactly -133/34560. The other main endpoint, -11/2304, is smaller. Original subset-length terms are nonpositive with the correct selected endpoint choices.
+
+### 5. Uniformity and final readback
+
+All unbounded u,w,n_0,r,h_0,a',e, flat, Gaussian and Mellin labels enter the ambient size before summation. Strict summability and the genuinely finite harmonic r range absorb the small powers afterward. The complete original Fourier/Gaussian tails, fixed physical windows and exact sixth-power flat lift are retained. Boundary alpha endpoints are only positive-envelope limits of the buffered inverse bins.
+
+Final readback confirmed the exact g=(c/E_4,rad H_eff), the odd (n_0,a') condition, and the C/S<1 branch. Audited author SHA-256: 70b127f3a7dd4185538c88162f8a76ef04bfc045347563c964a125dc58c72938.
