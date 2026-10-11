@@ -16,11 +16,13 @@
 
 Part XXI 另证明一个不依赖 Q 的精确相消：固定原频率单位 ε=1、H=w²、n=a=1、w 为非单位平方自由，并保留全部原 shared g 时，原窗口与全部实际 good/bad dual h、e 卷积、标记重组后的指定迭代双极贡献恰为零。两项 nonpolar 余项及其他单位、物理层未受此定理控制，完整 cubic 指数不因此改变。
 
-Part XXIV 进一步在 η=1、ε 为全部六单位、H=εw²a⁶ 且 w 为任意非单位 cube-free 核的范围内，证明指定第二 nonpolar 余项 O(Z^(−19/480+ε))：涵盖全部物理 n、a、g、h，原/core 两标记、各自第一 flat 及原有限补偿，不依赖 Q。这里先对整个物理 e 列作其真实有限截取，再在 w=v₁v₂² 的固定 v₂ 行上定义相应两次极项分解；三负单位的指定第一 Gauss 极项逐配置为零，故其指定 secondary 贡献为零；第一 nonpolar 余项尚未控制，完整 cubic 指数保持上列结果。Part XXV 对真实截断 inverse 系数另证：Gauss 极项的精确乘子身份及 Q 条件 X^(−1/8+ε) 衰减，以及不依赖 Q 的全 cutoff Gauss 重赋相列 Siegel–Walfisz 消去。光滑 projection 的 level 与删素集仍固定，XXV C 另证真实截断 inverse 的 squarefree/cubic 列在 B^(1+δ)≤A≤B^(2−δ) 的正二次型幂次节省，所有 cutoff 统一且不依赖 Q；κ>0 仅证明存在，其基础证明先保留 squarefree 列；XXV D 用真实 rad(n) 分解、统一 common holes 与含unit短列界将其扩到全部 n，仍仅固定 cubic twist 与严格 off-balanced 域。κ 未数值化，balanced 与完整 detector tail 尚未闭合。
+Part XXIV 进一步在 η=1、ε 为全部六单位、H=εw²a⁶ 且 w 为任意非单位 cube-free 核的范围内，证明指定第二 nonpolar 余项 O(Z^(−19/480+ε))：涵盖全部物理 n、a、g、h，原/core 两标记、各自第一 flat 及原有限补偿，不依赖 Q。这里先对整个物理 e 列作其真实有限截取，再在 w=v₁v₂² 的固定 v₂ 行上定义相应两次极项分解；三负单位的指定第一 Gauss 极项逐配置为零，故其指定 secondary 贡献为零；第一 nonpolar 余项尚未控制，完整 cubic 指数保持上列结果。Part XXV 对真实截断 inverse 系数另证：Gauss 极项的精确乘子身份及 Q 条件 X^(−1/8+ε) 衰减，以及不依赖 Q 的全 cutoff Gauss 重赋相列 Siegel–Walfisz 消去。光滑 projection 的 level 与删素集仍固定，XXV C 另证真实截断 inverse 的 squarefree/cubic 列在 B^(1+δ)≤A≤B^(2−δ) 的正二次型幂次节省，所有 cutoff 统一且不依赖 Q；κ>0 仅证明存在，其基础证明先保留 squarefree 列；XXV D 用真实 rad(n) 分解、统一 common holes 与含unit短列界将其扩到全部 n，仍仅固定 cubic twist 与严格 off-balanced 域。κ 未数值化；该无 Q 定理不覆盖 balanced，完整 detector tail 也未闭合。Q 条件下的指定 balanced 与 large-cutoff 结果另见 Part XXIX。
 
 Part XXVI 对原三重 Mellin 表达式的真实联合极面 q=x+y=1 另给无 Q 的留数界 O(Z^(−37/192+ε))，比 −3/16 低 1/192。这里 η=1，完整 cubic good-core 为 u=εv₁²v₂⁴、v₁v₂ 非单位，保留全部六单位、所有物理 n、a、两种标记、各自第一 flat 与原有限补偿。该留数由合法移线提取，Hecke 功能方程在极面上精确消去 L 比值；剩余完整 q=1−δ 积分仍未估计。此留数不等于 Part XXIV 的第一 nonpolar 余项，也不改变上述完整 cubic 指数。
 
 Part XXVII 自足证明实际 norm-four 非三次角色在所有固定 λ-cusp 的常数项相消，并给固定完整 bad period L、移动 good squarefree cubic 参数 u 在指定 Gauss/移动 cubic 共轭方向的统一界 (NL)^(3/4)(Nu)^(1/4)(1+|t|)^3，Re s≥1/2+ε，公共删素集付费 (NM)^ε。有限 λ 函数的字符展开 l1 范数单独保留；此结论不使用 Q，并为上述负单位极项为零提供合法 λ 接口。用户 d4 的 prime-to-three 定性结果与 7a7 的一般 noncubic Q^(3/4)、A(M) 删素代价及插值方法仍归用户；新 moving-cubic 小幂删素代价来自本稿额外 Ramanujan 变换，不改写用户原量词。上述各分解的未界余积分保持不变。
+
+Part XXIX 在原有限阶 Q 条件下，证明真实 shifted-inverse Gauss 列 b_δ(n)G(n)（Re δ=15/64）及真实 μ(n)G(n) 列的完整正二次型界 AB^(1+ε)+A^(2/3)B^(5/3−κ)，包含 A≈B：实际域为 B^(1−η)≤A≤B^(2−d₀)，d₀∈(0,1) 固定，η、κ>0 仅证明存在；norm 高度与额外 cubic numerator 只在明确的小多项式窗口，共同孔可有固定多项式范数。证明保 squarefree Euler correction、principal/cube 贡献及真实补偿后的 Poisson 系数。XXIX D 另给无 Q 的固定 norm-four/λ 非三次角色真实 inverse 全 cutoff 小窗口输入；E 在 Q 条件下将实际 sharp inverse a_n(X) 的全部列推进到 U^(2/3+ρ)≤X≤2U、U^(1−η)≤A≤U^(1+η) 的 balanced 域，并经真实有限积分得到 Reδ 位于固定正紧区间的完整 raw b_δ(n) 列的同类节省。ρ∈(0,1/3) 固定；a_n 允许指定 cubic 或 norm-four/λ 角色，raw bδ 推论此处只取同一固定 cubic twist；共同孔及小 height 窗口均保留；不覆盖任意小 cutoff 或任意移动角色。这些正二次型仍未给整个物理 coupled 余面积分的负幂界。
 
 上述完整类型估计均未覆盖 principal/unit 核及其余混合 sextic good-core，也未证明整个符号配对的目标界或 RH。
 
@@ -9612,3 +9614,702 @@ Thus the high and small index ranges together prove (1). The application and its
 #### Scope
 
 The improvement is for the complete previously defined cubic type. It uses an unconditional new actual-inverse density detector together with the user's unchanged finite-order Q in the physical inverse-L step. It does not settle the remaining difference from -3/16, any first-residue/signed nonpolar component, or RH. The completion-tail lemma from the separate balanced investigation is not needed for (1), and no unproved low-k completion estimate has entered this proof.
+
+
+# Part XXIX. Balanced positive forms for the actual shifted-inverse and Mobius–Gauss columns
+
+These results are conditional on the user's finite-order input Q in its existing scope; they do not use Q for nonzero angular infinity type. Section A gives the exact coefficient and buffered analytic inputs. Section B proves a complete positive form including balanced lengths. Section C verifies the same proof's actual hypotheses for μ, rather than transferring a coefficient-specific inequality to arbitrary vectors. The [pinned September-25 dispersion source](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/dispersion.tex) supplies the exact Gauss-corrected Poisson identity, with the arithmetic normalization retained in Part XXV C. The complementary physical contour of Part XXVI remains unestimated. Equation numbers are local to each section.
+
+## A. The genuine coefficient and its analytic bounds
+
+### The genuine shifted-inverse coefficient on squarefree columns
+
+Status: independently reviewed and frozen. This analytic input retains the actual coefficient of L(s+delta,chi)/L(s,chi). It is intended for the genuine coupled-contour remainder and its Gauss-weighted column, not for a new probe.
+
+#### 1. Coefficient, squarefree restriction, and exact Euler factor
+
+Work with good Eisenstein ideals in a fixed primary/ray convention; the fixed excluded set S contains primes over 3 and all fixed bad conductors. Let
+
+    b_delta(n)=sum_(d|n) mu(d) (Nn/Nd)^(-delta),
+    beta_delta(n)=mu(n)^2 b_delta(n),
+    0<delta_0<=Re(delta)<=delta_1<1/4.
+
+The coefficients are multiplicative, and
+
+    b_delta(p^j)=P^(-(j-1)delta)(P^(-delta)-1), j>=1,
+    beta_delta(p)=P^(-delta)-1, beta_delta(p^j)=0, j>=2.       (1)
+
+For any finite-order Hecke character psi, including its genuine zero extension, the squarefree Dirichlet series is
+
+    F_delta,psi(s)=sum_n beta_delta(n)psi(n)/(Nn)^s
+      = L^S(s+delta,psi)/L^S(s,psi) H_delta,psi(s),             (2)
+
+where, writing r=P^(-delta) and z=psi(p)P^(-s),
+
+    H_p(s)=1+r(1-r)z^2/(1-z).                                 (3)
+
+Indeed (1+(r-1)z)(1-rz)/(1-z) equals (3). In particular one must not replace the squarefree series by the bare L-ratio. The product H converges normally and is bounded on every closed half-plane Re(s)>=1/2+h, h>0. These bounds are uniform in Im(delta), because |r|<=1. Fixed deleted Euler factors stay deleted.
+
+For a common good hole K, replace (2) by its exact product over p not dividing K. On Re(s)>=1/2+h, the removed local factors are uniformly bounded away from zero: good Eisenstein prime norms are at least 4, and
+
+    |(P^(-delta)-1)psi(p)P^(-s)|<=2P^(-1/2-h)<1.
+
+Thus their product and inverse cost (NK)^epsilon, with constants depending on h and epsilon. This claim uses the good-prime convention; no missing small prime is silently restored.
+
+If d is squarefree and (d,K)=1, its forced-divisor sum is exactly
+
+    sum_(d|n,(n,K)=1) beta_delta(n)psi(n)(Nn)^(it)W(Nn/B)
+      =beta_delta(d)psi(d)(Nd)^(it)
+         sum_(m,dK)=1 beta_delta(m)psi(m)(Nm)^(it)
+                          W(Nm/(B/Nd)).                       (4)
+
+If d is not squarefree or conflicts with the hole, the left side is zero. Here |beta_delta(d)|<=2^omega(d)<<epsilon (Nd)^epsilon. Therefore forced squarefree divisors are handled by the same common-hole estimate at length B/Nd; there is no new moving character or arbitrary row-dependent coefficient.
+
+#### 2. Input Q and a uniform smooth Siegel--Walfisz bound
+
+Use the user's input Q in its already reviewed finite-order scope: the relevant Hecke L-functions have no zeros in Re(s)>7/8. Norm twists only shift the complex argument of such an L-function. No nonzero infinity-type character is included in Q.
+
+Let W be smooth on a fixed positive compact annulus, B>=2, and let the conductor of psi, NK, and Nd be bounded by fixed powers of an ambient arithmetic size. On any fixed line sigma>7/8, the reviewed finite-height inverse-L argument, or its full-height version using Q, gives subpower reciprocal bounds, with polynomial height seminorms. The argument first bounds log L by Borel--Caratheodory and then uses the two-constants/three-lines estimate inside a buffered strip; Borel--Caratheodory alone is not claimed to give a subpower bound.
+
+Choose
+
+    sigma=max(7/8,1-Re(delta))+rho, rho>0 fixed.                (5)
+
+The numerator of (2) is then absolutely convergent, uniformly even when psi is principal; its pole is to the left of the contour. Mellin inversion, (2)--(3), and the true common-hole factors give
+
+    sum_(n,K)=1 beta_delta(n)psi(n)(Nn)^(it) W(Nn/B)
+      << B^(max(7/8,1-delta_0)+epsilon)
+         [cond(psi) NK]^epsilon (1+|t|+|Im(delta)|)^C.          (6)
+
+The epsilon in (6) includes a sufficiently small choice of rho. Constants can depend on delta_0, delta_1, epsilon, S and fixed smooth seminorms. Formula (6) also holds for the principal character. It does not require evaluation of 1/L at the numerator's possible pole s=1-delta.
+
+For every fixed conductor/height logarithmic window and every D>0, (6) implies O(B(log B)^(-D)). For holes bounded by B^A, first fix A and choose the initial epsilon sufficiently small. It also supplies some fixed power saving in sufficiently small polynomial conductor/height windows. The saving is not uniform as Re(delta) tends to zero. Applying (4) proves the corresponding forced-divisor statement at length B/Nd, with the explicit factor beta_delta(d) and the enlarged common hole dK. In applications that need B/Nd to remain a fixed positive power of B, impose Nd<=B^theta with fixed theta<1.
+
+#### 3. The actual zero-bin bound and the numerator cost
+
+For the sharper density-bin estimate, psi is nonprincipal. Suppose it belongs to a buffered finite-height zero box whose rightmost zero has real part at most b, with 1/2<=b<=7/8. The actual contour is b+O(h), h>0 fixed, and all relevant Mellin frequencies are within a fixed fraction of that box. Let C be its actual primitive conductor. The reviewed finite-height inverse argument bounds the denominator on that contour by an ambient small power. Ordinary degree-two convexity bounds the numerator and gives
+
+    sum_(n,K)=1 beta_delta(n)psi(n)(Nn)^(it)W(Nn/B)
+      << ambient^epsilon B^(b+O(h))
+           C^((1-b-Re(delta))_+/2+O(h))
+           (1+|t|+|Im(delta)|)^C_0.                            (7)
+
+The same estimate with B replaced by B/Nd, and the explicit factor in (4), holds for a forced squarefree d. A bin beginning at 1/2 uses the positive h buffer also for H. The truncation height is chosen at least four times all center shifts, and the Mellin integral is truncated within half that height; the rapid discarded tail is estimated separately.
+
+In particular the numerator in (7) is free of a conductor power only when b+Re(delta)>=1, up to the buffer. A zero-free rectangle for the denominator alone does not provide this for arbitrary small delta. Principal rows are excluded from (7) and are handled by (6); they are absent in the two large primitive cubic exceptional configurations under sufficiently small fixed twists.
+
+For small polynomial height windows, the polynomial constants in the density theorem and (7) must be paid before asserting a final power saving. These statements do not automatically inherit a source theorem's much larger height range.
+
+#### 4. Meaning for the actual Gauss-weighted column
+
+In the corrected-dispersion notation F(a)=sum_n beta(n)G(n)bar(chi_n(a)), choose beta=beta_delta. Equations (4), (6), and (7) are then statements about the genuine coefficient before the column Gauss factor; they do not insert or erase that Gauss factor. For a squarefree row parameter arising on the physical q=1-delta contour, the local factor 1-P^delta equals P^delta b_delta(p). This is only a coefficient identity; the full physical Euler factors, root numbers, all indices and marked operators must still be matched separately.
+
+The proof above concerns finite-order common twists, norm-Mellin heights, and genuine squarefree forced divisors. It does not assert the rough support or prime-convolution hypotheses of the September-25 source, nor a complete balanced dispersion or physical remainder estimate.
+
+
+## B. The complete balanced shifted-inverse form
+
+### A balanced quadratic form for the genuine shifted-inverse Gauss column
+
+Status: independently reviewed and accepted. Q denotes only the user's original finite-order Hecke zero-free half-plane Re s>7/8. The coefficient below is the exact shifted inverse on the original coupled remainder, not an alternative mollifier. The theorem supplies a complete positive quadratic form in a range including equal row and column lengths. It is not a bound for the complete physical coupled remainder.
+
+#### 1. Statement
+
+Work over the Eisenstein field with the original good-primary conventions. Fix the finite bad data, a finite-order character xi, a nonnegative smooth radial annular planar weight W, and a compact smooth norm test w supported in [1,2]. Let G(n) be the normalized cubic Gauss sum used in the pinned September-25 Poisson identity. Put
+
+    b_delta(n)=sum_(d|n) mu(d) N(n/d)^(-delta),
+    Re delta=15/64.                                               (1)
+
+Let K be a common deleted ideal with NK<=B^C, where C is fixed first. For every fixed 0<d_0<1 there exist eta,kappa>0 such that, for
+
+    B>=2,  B^(1-eta)<=A<=B^(2-d_0),
+    |Im delta|+|u|<=B^eta,
+
+one has
+
+ sum_(a primary) W(a/sqrt A)
+   |sum_(n primary,sf,(n,K)=1)
+       b_delta(n) G(n) xi(n) (Nn)^(iu) w(Nn/B) bar(chi_n(a))|^2
+   << A B^(1+epsilon)+A^(2/3)B^(5/3-kappa).                        (2)
+
+If the displayed A interval is empty there is nothing to assert. Constants depend on d_0,C,epsilon and the fixed bad/weight data. The small eta is chosen only after all finite-height and weight polynomial degrees are fixed. Thus (2) does not assert a power gain uniformly for an independently imposed height as large as B^0.36. In a Mellin application the actual outer weights must pay the complementary height range.
+
+The statement also permits xi=xi_0 chi_v with xi_0 the fixed finite-order character and Nv<=B^eta, after decreasing eta. This is a uniform short cubic numerator window, justified by the canonical-index and hole decomposition in Section 3, not an arbitrary moving finite-order twist.
+
+The diagonal can be retained exactly instead of the first term in (2). In particular A about B is included. The theorem retains the column Gauss factor; it is not asserted for the original finite inverse a_n(X) or for an arbitrary divisor-bounded coefficient.
+
+#### 2. The actual squarefree shifted inverse
+
+The companion Section A of this Part proves the precise common-hole and forced-divisor statements used here. For completeness the local calculation is
+
+ F_delta,psi(s)=sum_(n sf) b_delta(n)psi(n)/(Nn)^s
+       =L(s+delta,psi)/L(s,psi) H_delta,psi(s),
+ H_delta,p=1+r(1-r)z^2/(1-z),
+       r=P^(-delta), z=psi(p)P^(-s).                              (3)
+
+The product H is normal on every closed half-plane Re s>1/2. Its bounds on buffered strips are uniform in Im delta. The exact local factor deleted by a hole is
+
+       [1+(P^(-delta)-1)psi(p)P^(-s)]^(-1).                       (4)
+
+For good prime norms P>=4 and a line Re s>=1/2+h, the term added to 1 has modulus strictly below one. The complete hole product costs (NK)^epsilon after C and the buffer are fixed.
+
+For squarefree d, (d,n)=1,
+
+       b_delta(dn)=b_delta(d)b_delta(n),
+       |b_delta(d)|<=2^omega(d).                                (5)
+
+Non-squarefree forced d contributes zero to a squarefree column. Thus the forced f,l subsequences of the genuine coefficient are reduced to (3), with their actual shortened length and enlarged common hole. No Gauss phase is added to or removed from (3).
+
+The companion also gives, uniformly for finite-order common twists, the smooth estimate
+
+       sum_(n sf,(n,K)=1) b_delta(n)psi(n) v(Nn/L)
+          << ambient^epsilon L^(7/8+epsilon)
+             (1+norm heights)^C_0,                              (6)
+
+in a sufficiently small polynomial height window. This includes principal psi: its possible numerator pole has real part 1-15/64<7/8, to the left of the chosen contour.
+
+#### 3. A strict mean for all actual primitive frequencies of length at most the column
+
+Let L>=2 denote the true free column length. Let M be the canonical cube-free index bound of a family psi=xi chi_h, Nh<=M, with the same fixed finite-order xi and original zeros. Principal rows are kept separate. The characters have bounded primitive multiplicity after the fixed ray partition; their actual conductor is at most a constant times M, but the density theorem is applied to the canonical index M.
+
+For a buffered actual zero bin b, put a=1-b. The reviewed finite-height inverse argument and ordinary Hecke convexity applied to (3) give
+
+ |sum_(n sf,(n,K)=1) b_delta(n)psi(n) v(Nn/L)|
+    << ambient^epsilon L^(b+O(h))
+          C(psi)^((1-b-15/64)_+/2+O(h)).                          (7)
+
+Norm-Mellin heights and Im delta are included in the zero box, with the requisite height margin, and their polynomial constants are paid below. Crucially, the numerator L(s+delta) conductor cost in (7) has not been erased by a zero-free assertion about the denominator.
+
+The existing exact density exponent for a>=1/6 is
+
+       D_ex(a)=8a/(1+6a).                                       (8)
+
+This is the reviewed fixed-twist form of de Faveri's Corollary 1.5, recorded in Part XII. For 1/8<=a<=1/6 its previously used valid majorant is D0=1/6+3a. The new actual pair-Gram detector improves the majorants on [1/8,9/50] to
+
+       Dp(a)=2a(37-60a)/(3(5+2a-24a^2)).                          (9)
+
+For a buffered finite-height family, the number of rows in the bin is at most M^(D(a)+epsilon) times the stated polynomial height factor. Use (9) on [1/8,7/40] and (8) thereafter. Q provides the endpoint a>=1/8, with the original buffer convention. Rows with no zero to the right of 1/2 are bounded on a line just to its right.
+
+The following strict inequality is the bearing input:
+
+       D(a)+2-2a+(a-15/64)_+ <= 7/3-1/2460
+                           for 1/8<=a<=1/2.                    (10)
+
+Here is a complete elementary certificate. On [1/8,1/6], let D0=1/6+3a, and on [1/6,7/40] let D0=1/3+2a. Set Delta=D0-Dp and d(a)=5+2a-24a^2. Then Delta>1/200 on both intervals. In fact the stronger inequalities
+
+       Delta>1/200                         (1/8<=a<=1/6),
+       Delta-(2/3)(a-1/6)>1/200            (1/6<=a<=7/40)
+
+have, after multiplication by 6d(a), positive Bernstein coefficients
+
+       [379/400,5509/7200,2287/3600,79/150],
+       [79/150,20267/54000,122149/540000,4753/60000],
+
+respectively. Thus the gap in (10) is at least 1/200 there. For 7/40<=a<=15/64, exact simplification gives
+
+       7/3-[D_ex(a)+2-2a]
+           =(6a-1)^2/[3(6a+1)] >=1/2460.                       (11)
+
+The expression is increasing for a>=1/6. For 15/64<=a<=1/2 the gap after the numerator cost is at least
+
+       15/64-(7-4sqrt(2))/6 > 199/19008 >1/2460,                (12)
+
+using sqrt(2)>140/99. These prove (10), without a numerical optimization.
+
+At the ideal geometric scales M=L^m, 0<=m<=1, the squared contribution of a bin in (7) has exponent
+
+       2-2a+m[D(a)+(a-15/64)_+].                                (13)
+
+Relative to L^2 M^(1/3), the saving is affine in m. At m=0 it is 2a>=1/4, and at m=1 it is at least 1/2460 by (10). Therefore, after choosing all geometric/buffer/height losses sufficiently small, there exist eta_1>0 and a fixed kappa_1>0 such that uniformly for 1<=M<=L^(1+eta_1),
+
+ sum_(h cube-free, Nh<=M, psi nonprincipal)
+   |sum_(n sf,(n,K)=1) b_delta(n)psi(n)(Nn)^(iu)v(Nn/L)|^2
+       << L^(2-kappa_1) M^(1/3).                               (14)
+
+One may reserve a gap kappa_1 smaller than 1/10000. Fixed unit-scale M blocks are covered directly by (6). The constants in the density theorem and in (7) permit (14) first in a sufficiently small polynomial height window; the parameter eta_1 is chosen after these degrees, not before. Common holes of fixed polynomial norm remain allowed.
+
+A short moving cubic numerator is incorporated into the canonical index before using (14). Multiplication of local exponents modulo 3 is bijective; primes whose exponent becomes zero retain their original unit masks. Partition their finite states and keep the corresponding common hole. The new index is at most the old M times a fixed power of the short numerator norm. Thus sufficiently short f,m factors change (14) only within its permitted small eta_1 neighborhood. They are not hidden in a fixed-twist constant.
+
+#### 4. The complete corrected Poisson quadratic form
+
+Write beta_n=b_delta(n)xi(n)(Nn)^(iu)w(Nn/B)1_(n,K)=1. Then the column in (2) is exactly beta_n G(n). Open its square and use the actual September-25 CRT/Poisson identity, as in the reviewed Part XXV C. The exact diagonal is O(AB^(1+epsilon)). For an unequal pair n_i=f p_i retain its common mask by m|f; the exact dual scale and amplitude are
+
+       H=B^2/A,   H'=H Nm/(Nf)^2,
+       amplitude about A Nf/(Nm B).                              (15)
+
+The zero frequency vanishes. The common-divisor and finite-inversion steps preserve all original CRT phases. For small f, after p_i=l n_i the common inner sums are precisely the actual forced subsequences beta_(fln), twisted by the true cubic frequency h/(fm). If fl is squarefree, (5) reduces them to (7) at the real length
+
+       L=B/(Nf Nl),                                             (16)
+
+with hole flK times the frequency cube masks; otherwise the squarefree support makes them zero. Their scalar coefficients are divisor-small. There is no artificial replacement coefficient.
+
+The restriction-free large-f and large-l reductions used in the reviewed off-balanced proof still apply here. They use only divisor bounds and the ordinary full-column cubic sieve, not the source's roughness or prime-convolution hypotheses. Choose a small fixed removal width lambda>0 and remove Nf>=B^lambda and then Nl>=B^lambda. For every divisor E>=B^lambda in the first removal, A>=B^(1-eta)>=B/E once eta<lambda, so the source's absorption of the third full-row sieve term remains valid. The first removal saves through H^(-1/3) and E^(-2/3), and H>=B^d_0. The large-l costs retain respectively a B^(-1/3+O(eta)) gap, an (Nl)^(-2/3) gain with the possible B^(O(eta)) endpoint enlargement, and an (Nl)^(-1) gain. Taking the statement's eta much smaller than lambda preserves all these strict gaps. These are the same positive divisor-inversion estimates, with unchanged coefficient bounds.
+
+For the remaining Nf,Nl<B^lambda, truncate only the original rapidly decaying Fourier and Mellin tails at an arbitrarily small power of B. The retained frequency norm J satisfies J<=L^(1+eta_1), after lambda, the truncation width, and the statement's eta have been chosen sufficiently small in terms of eta_1. The short numerator fm is also within the last paragraph of Section 3.
+
+Factor a nonzero true frequency into its fixed unit/bad alternatives, a good cube-free h0, and a cube j^3. For a dyad Nh0 about M, its cube multiplicity is O((J/M)^(1/3)), and (n,j)=1 is kept as the actual common hole. Apply (14) for each fixed j and the fixed bad alternatives. This yields the entire nonprincipal frequency estimate
+
+       sum_(h about J) |inner(h)|^2
+           << J^(1/3) L^(2-kappa_1+epsilon).                    (17)
+
+Principal primitive frequencies, including the actual cubes, are bounded by (6); their O(J^(1/3)) multiplicity gives an even stronger saving L^(7/4+epsilon). Short numerator factors may create additional principal labels, but their exact finite local-state count is divisor-small and the same estimate applies. No cube main term is discarded.
+
+For completeness the weight restoring (17) to the original quadratic form is the exact one from the reviewed Poisson calculation. If k=J/H', its benchmark, divided by
+
+       Q0=A B H^(1/3)=A^(2/3)B^(5/3),
+
+is
+
+       k^(1/3) (Nm)^(-2/3) (Nf)^(-5/3) (Nl)^(-2).               (18)
+
+These weights give convergent f,m sums and a convergent retained l sum after divisor-small losses. Since L>=B^(1-2lambda), the gain in (17) remains a fixed B power. The actual Fourier tail and common Mellin tails are summed with their original rapid envelopes. This proves (2), with kappa smaller than the retained-frequency and removal gaps.
+
+The constants are chosen in order: fix d_0,C and the seminorm class; establish the fixed ideal gap in (10) and choose the permitted small height/index neighborhood of (14); choose lambda sufficiently smaller; then choose eta and the transform truncation width sufficiently smaller again; choose all divisor epsilon losses last. No saving is obtained from a circular choice of a frequency window.
+
+#### 5. Actual coupled-contour meaning and remaining scope
+
+The original q=1-delta ramified table has, coefficientwise,
+
+       (1-R)H_p=P^delta b_delta(p)+P^(delta-1)-R/P+(1-V)J_j,
+       J_2=a_p rho^(-3)P^(3/2-3x),
+       J_4=-a_p rho^(-3)P^(3/2-3x+delta).                        (19)
+
+This identity follows directly from the original ramified table used in Part XXVI: substitute q=1−delta into 1−R/P−(P−1)P^(−q), and use P^delta b_delta(p)=1−P^delta. Expand its alternatives prime by prime; never divide by b_delta(p), which may vanish at complex heights. The pure first-orientation main branch carries b_delta(w) times its actual primitive cubic Hecke root, hence the Gauss-weighted column of (2), with all fixed bad factors and norm powers retained. The other Dirichlet column is the actual b_delta(n) from L(x+delta)/L(x).
+
+Therefore (2) is a new full quadratic-form input for a real signed part of the coupled remainder, including the previously missing balanced length regime. It does not complete the sums over all ramified alternatives, mixed orientations, selected operators or Dirichlet length blocks in the physical probe. It does not move an inverse L contour through unaccounted zeros and does not assert a stronger zero-free region. The exact physical recombination and resulting final exponent remain to be proved.
+
+#### Inputs and reproducibility
+
+- Section A of this Part: the exact sf Euler series, holes, forced divisors, Q mean and finite-height bin estimate, independently reviewed and frozen.
+- Part XXVIII A–B: independently reviewed genuine density curve (9).
+- Part XII, Section 1(2)--(3), with its independent certificate: the exact curve (8) for the fixed-twist cube-free cubic family.
+- Part XXV C: the already reviewed exact Poisson normalization, large-f/l positive reductions and weight (18), drawn from the pinned September-25 dispersion source.
+- [check_balanced_shifted_inverse_gap.py](check_balanced_shifted_inverse_gap.py) checks the displayed Bernstein coefficients by exact rational arithmetic. Equations (11)--(13) are elementary exact identities, with no numerical fitting.
+
+
+## C. The direct Mobius–Gauss consequence
+
+### Direct Mobius--Gauss consequence of the new cubic density
+
+Status: independently reviewed and frozen. This is a direct reuse of the complete source-transfer proof in Section B of this Part. No single-row Gauss estimate is asserted.
+
+#### 1. Statement
+
+Use the fixed bad data, normalized cubic Gauss sum G, primary conventions and smooth weights of that theorem. Let xi=xi_0 chi_v, where xi_0 is a fixed finite-order character and v is an allowed short moving good cubic numerator. Keep its original zero masks. Fix 0<d_0<1 and a common-hole exponent C. Under the user's finite-order input Q, there are eta,kappa>0 such that, for
+
+    B>=2, B^(1-eta)<=A<=B^(2-d_0),
+    Nv<=B^eta, |u|<=B^eta, NK<=B^C,
+
+one has
+
+ sum_(a primary) W(a/sqrt A)
+   |sum_(n primary,(n,K)=1) mu(n)G(n)xi(n)(Nn)^(iu)
+                           w(Nn/B)bar(chi_n(a))|^2
+       << A B^(1+epsilon)+A^(2/3)B^(5/3-kappa).                (1)
+
+As in the main theorem, all small conductor/height parameters are chosen after the fixed polynomial costs, and the divisor epsilon losses are chosen last. Fixed nonzero infinity-type twists are not included in Q.
+
+This conclusion follows by verifying the same proof's actual coefficient hypotheses for beta=mu. It is not obtained by declaring that a norm inequality for beta=b_delta applies to arbitrary coefficients.
+
+#### 2. Exact smooth and forced-divisor inputs
+
+The coefficient mu is already squarefree supported. Its exact twisted Dirichlet series is
+
+    sum_n mu(n)psi(n)/(Nn)^s=1/L^S(s,psi).                       (2)
+
+A common good hole K multiplies (2) by
+
+    product_(p|K,p notin S) [1-psi(p)P^(-s)]^(-1).             (3)
+
+These factors cost (NK)^epsilon on each buffered positive strip used in the main theorem. There is no extra squarefree Euler product and no numerator L-function.
+
+If d is squarefree and compatible with K, the forced subsequence is exactly mu(d) times the same mu column at length B/Nd with hole dK; otherwise it vanishes. The original norm twist and fixed character contribute only their genuine multiplicative factors at d. Thus all source subsequences beta_(fln) retain exactly the required common-column structure and true length B/(Nf Nl).
+
+Q and the already reviewed reciprocal-L argument give the smooth estimate
+
+    sum_(n,K)=1 mu(n)psi(n)(Nn)^(iu)w(Nn/L)
+      << ambient^epsilon L^(7/8+epsilon)(1+heights)^C_0.        (4)
+
+This includes the principal character: its reciprocal has a zero, rather than a pole, at s=1. In an actual nonprincipal zero bin with rightmost zero b and the standard height/real-part buffer, the stronger bin estimate is
+
+    |sum_(n,K)=1 mu(n)psi(n)(Nn)^(iu)w(Nn/L)|
+         << ambient^epsilon L^(b+O(h)).                       (5)
+
+In particular the conductor factor paid for the shifted-inverse numerator is absent here.
+
+#### 3. Uniform primitive-frequency second moment
+
+Let M denote the canonical cube-free index bound, not a substituted radical-conductor bound. The density curve D(a), a=1-b, is exactly the one used and certified in the main theorem: the new pair-detector curve around a=1/6, and the original exact curve 8a/(1+6a) on the remaining lower-zero bins. That proof established
+
+    D(a)+2-2a+(a-15/64)_+ <=7/3-1/2460,
+                                      1/8<=a<=1/2.            (6)
+
+Dropping the nonnegative last term makes (6) only stronger. Therefore (5) and the very same affine comparison in log M/log L give, after the same small buffer/height/index payments,
+
+ sum_(Nh<=M, psi=xi_0 chi_h nonprincipal)
+   |sum_(n,K)=1 mu(n)psi(n)(Nn)^(iu)w(Nn/L)|^2
+       << L^(2-kappa_1) M^(1/3),   1<=M<=L^(1+eta_1).          (7)
+
+Principal primitive frequencies satisfy the stronger L^(7/4+epsilon) squared bound by (4). Short moving cubic numerators are incorporated into the canonical index using the main theorem's exact local-state partition; cancellation primes stay as common holes. Hence no moving twist is hidden in a fixed-character constant.
+
+#### 4. Finish by the complete Poisson proof
+
+Apply Sections 4 and 5 of Section B’s source-transfer proof with beta_n=mu(n)xi(n)(Nn)^(iu)w(Nn/B) and with (4)--(7). The diagonal is O(AB^(1+epsilon)). The restriction-free large-f/l reductions still use only divisor bounds and the ordinary cubic sieve, and therefore are unchanged. The small f,l rows use their true length L=B/(Nf Nl), their exact enlarged holes and their original CRT phases. Every primitive frequency block uses (7); every cube/principal block uses (4). The cube multiplicity, the exact restoration weights and the rapid Fourier/Mellin tails are identical to the complete reviewed calculation. Its constant-selection order is unchanged. This proves (1).
+
+The result concerns the actual Mobius--Gauss column and the full stated row/column range. It can be used in a further genuine bilinear or truncated-inverse argument only after matching its row product, common coefficients and masks. It alone gives neither a pointwise improvement to the C^(5/6) Mobius--Gauss bound nor a complete physical remainder estimate.
+
+
+## D. The actual noncubic all-cutoff input
+
+### The actual norm-four noncubic twist in the true inverse's Gauss column
+
+Status: independently reviewed mathematical input. This supplements the audited all-cutoff inverse-Gauss input and its off-balanced quadratic-form application. The coefficient a_n(X) is unchanged. The new input is the independently reviewed quantitative norm-four/all-lambda moving-cubic lemma. No balanced estimate or complete signed remainder bound is asserted.
+
+#### 1. Fixed noncubic data and exact assertion
+
+Use the same Eisenstein primary generators, normalized cubic Gauss coefficient G, and original excluded primes. Write rho_n for the cubic residue symbol, with its zero extension. Fix a multiplicative primary residue/ray character
+
+    tau(n)=psi_4(n)rho_2(n)tau_odd(n)tau_lambda(n),
+    psi_4(n)=chi_4(Nn),
+
+with primitive norm-four quadratic times cubic 2-component. The other factors and their presentation zero masks are fixed. In particular this covers the negative-unit character chi_n(-epsilon_+) for epsilon_+ in{1,omega,omega^2}, with its actual lambda factor, after multiplication by any fixed cubic bad factor. No archimedean angle character is included. Let L_0 be its actual defining period with the primary mask, whose 2-part is4.
+
+Put
+
+    a_n(X)=sum_(d|n,Nd<=X)mu(d).
+
+For V>=2 and each fixed polynomial hole range NK<=V^C and fixed compact smooth norm-seminorm class there exist eta_0,kappa_0>0 such that
+
+    sum_(n,(n,K)=1) a_n(X)bar G(n)tau(n)xi(n)(Nn)^(it)W(Nn/V)
+                          << V^(1-kappa_0)                         (1)
+
+uniformly in every cutoff X, every finite cubic residue character xi at a good modulus R of norm at most V^eta_0, and |t|<=V^eta_0. Its true zero extension is retained. All fixed bad components of xi may instead be joined to tau. The implied constant depends on the fixed tau, C and the weight class, and is uniform in X,R,xi,t,K within the stated ranges.
+
+As usual, X<1 gives zero. For X beyond the support endpoint a_n(X)=0 on n>1; the unit-scale exception is finite and handled directly. G(n) itself restricts (1) to squarefree n. A fixed finite nonmultiplicative lambda function may replace tau_lambda by expanding it in its finite multiplicative character basis and paying its l1 norm.
+
+Consequently the all-log-power cutoff/character/height Siegel--Walfisz form holds for this actual noncubic column, with every prescribed log saving. This is a new use of the norm-four theorem, rather than an invocation of a cubic-only DDDS estimate on a noncubic character.
+
+#### 2. The two genuine noncubic Gauss inputs
+
+The audited quantitative all-lambda theorem, with the conjugated chirality, gives for squarefree u coprime to the actual fixed and xi support
+
+    sum_(n,(n,K)=1)bar G(n)tau(n)xi(n)rho_u(n)F(Nn/B)
+       <<_(epsilon,F) (N(L_0 R))^(3/4)
+                             B^(1/2+epsilon)(Nu)^(1/4)(NK)^epsilon.  (2)
+
+Replacing L_0 R by its least common period can only improve this displayed safe bound. Norm heights have polynomial cost, of degree3 for the Dirichlet-series input. Character zeros at u, R and all presentation primes remain part of the coefficient. This input has no pole term. Its applicability does not require tau to be cubic; its primitive psi_4 component is precisely what removes the constants.
+
+The corresponding signed Mobius--Gauss input is
+
+    sum_(n,(n,Ku)=1)mu(n)bar G(n)tau(n)xi(n)rho_u(n)F(Nn/B)
+      << (N(L_0 R))^(C_1)(B Nu NK)^epsilon
+                        {B^(5/6)+B^(4/5)(Nu)^(1/10)}.              (3)
+
+Here C_1 is fixed, and the dependence on a finite set of smooth seminorms and on norm height is polynomial. This follows by the same exact finite Mobius identity and Type I/II proof as the previously audited signed cubic column, with the following explicit replacements.
+
+For coprime squarefree a,b, the signed coefficient factorizes as
+
+    mu(ab)bar G(ab)tau(ab)xi(ab)rho_u(ab)
+     =[mu(a)bar G(a)tau(a)xi(a)rho_u(a)]
+      [mu(b)bar G(b)tau(b)xi(b)rho_u(b)]rho_a(b).          (4)
+
+Every factor is multiplicative on its true unit support, and the normalized Gauss CRT introduces exactly rho_a(b). The true common hole stays in both factors. Type II therefore uses the ordinary cubic large sieve with these unchanged coefficient phases. On AB comparable to B_total and B_total^delta<=A,B<=B_total^(1-delta), it gives
+
+    B_total^epsilon {B_total^(1-delta/2)+B_total^(5/6)}.              (5)
+
+For a Type I long unrestricted factor b, its complementary squarefree a satisfies Na<=B_total^delta and (a,u)=1. Its character is precisely tau*xi*rho_(ua), not an unrelated finite-order twist. Formula (2) bounds its b-row by
+
+    (N(L_0 R))^(3/4) (B_total/Na)^(1/2+epsilon)
+                                               (Nu Na)^(1/4).
+
+Summing a gives a Type I total
+
+    (N(L_0 R))^(3/4) B_total^(1/2+3delta/4+epsilon)(Nu)^(1/4).       (6)
+
+The old cubic pole term is absent. Combine (5)--(6): for Nu<=B_total^(1/3), choose delta=1/3; for B_total^(1/3)<Nu<B_total^2 choose delta=(2-log(Nu)/log(B_total))/5; beyond that the second term of (3) already dominates the trivial bound. As in the original audited proof, a fixed finite delta grid after epsilon is chosen makes the finite Mobius identity and seminorm degrees uniform. Thus (3) follows, even with the same conservative B^(5/6) term. The primitive norm-four factor remains in every Type I long row and is only used as a bounded coefficient in Type II.
+
+#### 3. Small inverse cutoff
+
+Suppose 1<=X<=sqrt V. Expand the original a_n(X), and put n=dm. The squarefree Gauss support forces d,m squarefree and coprime. Its exact coefficient identity is
+
+    bar G(dm)tau(dm)xi(dm)
+      =bar G(d)tau(d)xi(d) bar G(m)tau(m)xi(m)rho_d(m).              (7)
+
+If d meets a character zero mask the block is zero; otherwise d is a permitted moving squarefree parameter in (2). The outside coefficient, including mu(d), has modulus at most one. With m at length V/Nd, (2) yields
+
+    |sum a_n(X)bar G(n)tau(n)xi(n)(Nn)^(it)W(Nn/V)|
+      << (N(L_0 R))^(C_2) V^epsilon (NK)^epsilon
+           (1+|t|)^(C_2) V^(1/2) X^(3/4).                        (8)
+
+The exact d weight is (Nd)^(-1/2+1/4)=(Nd)^(-1/4), whose ideal sum up to X is O(X^(3/4)). Thus the unperturbed exponent is7/8, uniformly in the actual sharp cutoff. No noncubic pole has been introduced.
+
+#### 4. Complementary cutoff, with the actual Mobius sign
+
+For n>1,
+
+    a_n(X)=-sum_(d|n,Nd>X)mu(d).                                  (9)
+
+When X>=sqrt V and Nn belongs to the support[V,2V], the complementary m=n/d has Nm<=2V/X. Fix m and apply (3) to the d-row, retaining both (7) and the genuine mu(d). Before the sharp boundary is smoothed, the dyadic total is
+
+    (N(L_0 R))^(C_3)V^epsilon(NK)^epsilon(1+|t|)^(C_3)
+             {V X^(-1/6)+V^(11/10)X^(-3/10)}.                    (10)
+
+Indeed its two m sums are V^(5/6)sum_(m<=2V/X)(Nm)^(-5/6) and V^(4/5)sum_(m<=2V/X)(Nm)^(-7/10). Their worst powers at X=sqrt V are11/12 and19/20. The finite support boundary X>=2V gives zero directly.
+
+Smooth the exact inequality Nd>X only in relative width delta=V^(-beta). This introduces a fixed polynomial seminorm cost in V^beta in (10). For each m, the affected d lie in a norm annulus with O(delta X+sqrt X) ideals. The total discrepancy, before any character estimate, is
+
+    O(delta V log V+V X^(-1/2)log V)
+      =O(V^(1-beta)log V+V^(3/4)log V).                            (11)
+
+Each actual pair(d,m) has coefficient of modulus at most one; there is no added divisor coefficient in this count. Common holes and original character zeros only reduce the count.
+
+Choose beta>0 smaller than the reciprocal of every fixed seminorm degree times the initial1/20 margin in (10). Next choose eta_0>0 sufficiently smaller, to absorb the polynomial modulus and height costs. Finally choose all epsilon losses small enough for the fixed polynomial mask range NK<=V^C. Both (8) and(10), and the discrepancy(11), then have some common power saving kappa_0>0. This proves(1). The order of constants is noncircular, and no numerical value of kappa_0 is claimed.
+
+#### 5. Forced divisors and what the off-balanced proof inherits
+
+If q is squarefree, (n,q)=1, and Nq<=V^eta_1 for a sufficiently smaller fixed eta_1, then the exact formulas are
+
+    a_(qn)(X)=sum_(e|q)mu(e)a_n(X/Ne),
+    bar G(qn)=bar G(q)bar G(n)rho_q(n),
+    tau(qn)xi(qn)=tau(q)xi(q)tau(n)xi(n).                         (12)
+
+A character zero at q makes the block zero. Otherwise the new small character is still tau times a cubic character, with its cubic conductor multiplied by at most Nq. Its added hole q and finite divisor count fit the same polynomial mask range and a smaller positive power margin. Thus(1) applies uniformly to the actual subsequence
+
+    beta_(qn),  beta_b=a_b(X)bar G(b)tau(b)xi(b)w(Nb/B).             (13)
+
+This includes the principal moving cubic twist: the fixed primitive noncubic tau remains.
+
+The independently reviewed squarefree off-balanced proof may therefore take exactly this beta in place of its former cubic-only coefficient. Its Poisson identity, diagonal, large-common-divisor removals, large-primitive-frequency cubic/all-character sieves, and transform-tail estimates require only divisor-bounded beta, common masks and its actual Gauss rephasing; all remain unchanged. For small primitive frequencies, the former linear power input and its forced-divisor version are replaced by(1) and(12). In particular the cube frequencies are included, not discarded.
+
+The exact identity beta_b G(b)=a_b(X)tau(b)xi(b)w(Nb/B) on squarefree support is preserved. Thus for every fixed0<d<1/2 there exists kappa>0 such that
+
+    B^(1+d)<=A<=B^(2-d)
+
+implies
+
+    sum_(a primary)W(a/sqrt A)
+        |sum_(n sf,primary)a_n(X)tau(n)xi(n)w(Nn/B)bar rho_n(a)|^2
+      << A B^(1+epsilon)+A^(2/3)B^(5/3-kappa).                    (14)
+
+The fixed noncubic period is paid in the implied constant. Uniformity in a moving extra cubic xi holds in a sufficiently small conductor window after all the previous power gaps have been fixed. It is not permission to call an unrestricted moving v_2 twist fixed. The common-hole and arbitrary-cutoff quantifiers are unchanged.
+
+Finally, the reviewed full-column decomposition n=a b^2 c^3 uses the extra twist only via
+
+    tau(n)xi(n)=tau(gb^2c^3)xi(gb^2c^3)tau(v)xi(v),
+    a=g v,  g=(a,rad(bc)),  (v,rad(bc))=1.
+
+This identity requires multiplicativity, not cubic order. Its remaining cube and exponent-two factors are common row multipliers of modulus at most one; they are removed only after freezing their blocks. Its positive summations and long-free-column power margin therefore apply unchanged to(14), giving its full-column analogue with the same form and a possibly smaller positive kappa.
+
+#### 6. Exact bearing and dependencies
+
+This removes the fixed primitive norm-four noncubic-target exclusion from the stated off-balanced true-inverse input, including the actual negative-unit lambda twist. It does not supply balanced A comparable to B, the outer moving-v_2 tail, a truncation of an analytic L-function quotient, or a bound for the whole signed first nonpolar/coupled remainder. It retains the user's original a_n(X), all unit/ray masks, and the true Gauss chirality.
+
+Inputs:
+
+- The newly reviewed Part XXVII B and its self-contained all-lambda-cusp proof: the user's d4f8dfe noncubic input and7a7c2dec growth/interpolation contribution retain their attribution there.
+- The independently reviewed Part XXV B, Part XXIV, Part I §1, Part XXV C and Part XXV D. This note gives the explicit missing noncubic long-row input rather than silently extending their previous stated scope.
+- The unconditional cubic large sieve and the pinned original September25 source's coefficientwise Poisson/common-divisor identities. No Q or GRH input is used.
+
+
+## E. The original large-cutoff inverse and complete raw shifted inverse
+
+### A balanced full-column quadratic form for the original large-cutoff inverse
+
+Status: independently reviewed and accepted. The coefficient is exactly the original finite inverse a_n(X). The proof uses its complementary divisor identity, the newly reviewed Mobius--Gauss quadratic form, and the original corrected Poisson normalization. No replacement mollifier is introduced.
+
+#### 1. Statement
+
+Use the same Eisenstein good-primary conventions, fixed exclusions, radial nonnegative row weight W and compact smooth norm-column test w as in the published Part XXV D. The character chi_n is the cubic residue symbol, with its genuine zero extension. Let xi be a fixed finite cubic character. The same conclusion also holds for the fixed noncubic bad character tau and short moving good cubic-twist family specified in the independently reviewed Section D of this Part: the actual primitive norm-four factor, its fixed cubic/odd bad factors, and any of its fixed lambda-ray components. Finite nonmultiplicative bad vectors are expanded into those actual characters before applying the theorem. No arbitrary finite-order or angular extension is implicit here.
+
+Put
+
+    a_n(X)=sum_(d|n,Nd<=X)mu(d).
+
+Fix 0<rho<1/3 and a common column hole K of norm at most U^C, with C fixed first. Under the user's original finite-order input Q, there exist eta,kappa>0 such that
+
+    U>=2,  U^(2/3+rho)<=X<=2U,
+    U^(1-eta)<=A<=U^(1+eta),  |u|<=U^eta
+
+implies
+
+ sum_(a primary) W(a/sqrt A)
+  |sum_(n primary,(n,K)=1)
+       a_n(X)xi(n)(Nn)^(iu)w(Nn/U)bar(chi_n(a))|^2
+     << A U^(1+epsilon)+A^(2/3)U^(5/3-kappa).             (1)
+
+The n sum in (1) contains all columns, including exponent-two and cube layers. X is the actual sharp cutoff and the estimate is uniform throughout the stated interval. If X exceeds the upper support endpoint, the nonunit column is zero and is covered directly. Constants retain the original finite-data, hole-range and fixed seminorm dependence.
+
+At A about U this supplies a strict improvement on the cubic cross term U^(7/3) in the previously missing balanced range, for the actual large-cutoff inverse. It does not cover arbitrary small X, the whole zero-detector tail, or the whole physical q-contour. All height losses are restricted to a sufficiently small polynomial window; an external Mellin application must pay its other heights.
+
+#### 2. The Mobius--Gauss input, including sharp norm truncations
+
+The independently reviewed direct corollary mobius_gauss_direct_density_corollary.md of Sections B–C of this Part states that, for every fixed d_0>0, there are eta_mu,kappa_mu>0 such that
+
+ || sum_(d sf,(d,K0)=1) mu(d)bar G(d)xi(d)(Nd)^(it)
+                 v(Nd/D)chi_d(a) ||_(A1)^2
+    << A1 D^(1+epsilon)+A1^(2/3)D^(5/3-kappa_mu)          (2)
+
+whenever D^(1-eta_mu)<=A1<=D^(2-d_0), |t|<=D^eta_mu. Here ||.||_(A1) is the full positive row norm, K0 is a common polynomial-size hole, and the conjugate Gauss orientation is obtained by conjugating the full coefficients and characters. Fixed finite-order xi and uniformly short moving cubic numerators are permitted by that theorem. In the application below no large moving m is put into xi.
+
+We need (2) with the sharp common restriction Nd>X. This is a genuine consequence, with a smaller positive saving and a smaller near-balanced lower window. On a fixed D annulus, smooth the step at X in log norm on width D^(-theta), where theta>0 is fixed sufficiently small after the input constants. A common log-Mellin representation expresses the smoothed step times the fixed test as an integral of the same fixed compact test times (Nd)^(it). Its transform has L1 norm O(log D), and after truncating |t|<=D^(2theta) its tail is arbitrarily power-small. Choose 2theta<eta_mu and keep the actual common column test fixed when applying (2); no large derivative seminorm is substituted into a theorem for fixed tests.
+
+The remaining thin band contains O(D^(1-theta)+D^(1/2)) primary ideals by planar lattice counting. Its coefficient square mass obeys the same bound. Apply the ordinary full-row cubic sieve
+
+       [A1+A1^(1/3)D+(A1 D)^(2/3)] sum_d |c_d|^2        (3)
+
+to this band. After making the lower window A1>=D^(1-eta') smaller than theta, its middle term is absorbed into a strictly smaller cross term; its diagonal is at most A1D. Thus (2) holds for the sharp restriction with a possibly smaller kappa_mu. The transform tails are paid by a trivial polynomial row/column bound and enough fixed integrations by parts. All choices are uniform in the location X/D of the step.
+
+This smoothing is used only to justify the original sharp boundary. It does not change a_n(X).
+
+#### 3. Exact complementary factorization and the common row product
+
+First prove the squarefree-column version of (1), writing its column scale as B. In the corrected Poisson identity its exact coefficient before the Gauss factor is
+
+       beta_n=a_n(X)bar G(n)xi(n)(Nn)^(iu)w(Nn/B).
+
+For n>1 the true complementary identity is
+
+       a_n(X)=-sum_(d|n,Nd>X)mu(d).                     (4)
+
+In a squarefree n column write n=dm. Then d,m are squarefree and coprime. The exact source multiplication rule gives
+
+       bar G(dm)=bar G(d)bar G(m)chi_d(m),
+       chi_(dm)(h)=chi_d(h)chi_m(h).                   (5)
+
+Consequently the d column in a frequency sum is precisely
+
+       mu(d)bar G(d)xi(d)chi_d(mh),                    (6)
+
+with the original norm weights and sharp Nd>X. The remaining factor bar G(m)xi(m)chi_m(h) has modulus at most one. Most importantly, (d,m)=1 is already enforced by chi_d(mh). After retaining that original zero, the d column in (6) can be defined with only the common hole K0. There is no remaining moving-m coefficient or hole in this common column.
+
+Freeze a dyad Nd about D>X and Nm about B/D. On these fixed norm annuli the original product weight w(Nd Nm/B) is separated by common log-Mellin transforms, always retaining compact cutoffs equal to one on its support. Every separated column uses the fixed-test and sharp-cutoff estimate of Section 2. Cauchy in m then bounds the square-norm over Nh about J by O(B/D) times the sum of |F(mh)|^2. On writing a=mh, the number of representations is at most an ideal divisor function. All relevant a lie in a fixed norm annulus of length
+
+       A1=BJ/D.                                       (7)
+
+A fixed positive radial majorant therefore yields the genuine complete-row norm in (2), up to arbitrarily small powers. The row product, not a uniformity claim for a long moving character, is what makes this application valid.
+
+It follows that the entire D block has frequency square-norm at most
+
+       B^epsilon [B^2 J/D+B^(5/3)J^(2/3)D^(-kappa_mu)]. (8)
+
+All original exclusions are retained before positive enlargement. A frequency cube may add a common hole, but it is of polynomial size and fits the input after its allowed range is fixed.
+
+#### 4. A strict true-frequency estimate near balance
+
+Suppose
+
+       B^(1-zeta)<=J<=B^(1+zeta),
+       X>=B^(2/3+rho),                                 (9)
+
+where zeta is sufficiently small after rho and the input constants. For every D between X and the original support endpoint O(B), (7) lies in the actual range of (2). At its lower end, A1>=D^(1-O(zeta)); at its upper end, D>=B^(2/3+rho) gives A1<=D^(2-d_0) for a fixed positive d_0 chosen in terms of rho. The hole and height ranges are adjusted before the input constants are fixed.
+
+Relative to the true benchmark J^(1/3)B^2, the terms of (8) are bounded by
+
+       J^(2/3)/D <= B^(-rho+2zeta/3),
+       (J/B)^(1/3)D^(-kappa_mu)
+                    <=B^(zeta/3-(2/3+rho)kappa_mu).    (10)
+
+Both save a fixed power once zeta is chosen small enough. Summing D by Minkowski costs only dyadic logarithms (the displayed negative D powers also give convergent dyadic sums). This proves, for some c>0,
+
+ sum_(h about J)
+    |sum_(n sf,(n,K0)=1) a_n(X)bar G(n)xi(n)(Nn)^(iu)
+                           w(Nn/B)chi_n(h)|^2
+       << J^(1/3) B^(2-c)                              (11)
+
+throughout (9), with the actual sharp X. The thin-boundary error from Section 2 has an independent ordinary-sieve saving; it is not assumed to inherit a new arithmetic cancellation.
+
+#### 5. Restore the whole original squarefree quadratic form
+
+Open the positive square with the original raw a_n(X) column and use the pinned September-25 CRT/Poisson formula exactly as in Part XXV C. The column Gauss rephasing is only beta_n=a_n(X)bar G(n), so the polynomial being estimated is unchanged. Keep the exact diagonal O(AB^(1+epsilon)). Separate unequal pairs by f, the original common-unit mask by m|f, and the finite mutual-coprimality inversion by l.
+
+The large-f and large-l reductions are the same restriction-free positive sieve steps as in the newly reviewed balanced shifted-inverse theorem. They hold for A in a sufficiently small power neighborhood of B: for the first removal A>=B/E once the removal width exceeds that neighborhood, while the second incurs only an additional B^O(eta) factor, absorbed by its fixed removal gap. No prime-convolution or rough support is assumed.
+
+For the retained f,l, the actual free column length is L=B/(Nf Nl). The forced coefficient is handled by the exact identity
+
+       a_(fln)(X)=sum_(e|fl)mu(e)a_n(X/Ne)              (12)
+
+on its actual squarefree support (fl,n)=1. A sufficiently small removal width, chosen in terms of rho, ensures
+
+       X/Ne >= L^(2/3+rho/2).
+
+The accompanying Gauss factor and the true frequency h/(fm) give only the short cubic numerator and common masks already retained in the original proof. They are separated with the original compact common profiles; the normalized ratio cutoffs and their Fourier envelopes are kept before pooling arithmetic labels.
+
+Choose the retained Fourier cutoff and the f/l removal width so that their parameters lambda,eta are sufficiently smaller than zeta; the original Fourier scale then gives J<=L^(1+zeta). For retained frequencies J in a sufficiently small power neighborhood of L, apply (11), including (12) and its finitely many actual shortened cutoffs. For J<=L^(1-zeta), use Sections 3--4 of the reviewed original inverse off-balanced proof: the restriction-free large primitive-frequency bounds and the true all-cutoff inverse--Gauss power estimate for the small primitive frequencies give a strict saving over J^(1/3)L^2. This use concerns precisely beta=a_n bar G and either the stated fixed cubic twist or the explicitly reviewed noncubic extension of that same all-cutoff power input. It includes the actual cube frequencies and their common polynomial holes. The source's large B^0.36 height range is not imported; the original common Mellin tails are truncated and paid in the permitted small window.
+
+The exact benchmark-restoring factor is
+
+       k^(1/3) (Nm)^(-2/3) (Nf)^(-5/3) (Nl)^(-2),
+       k=J/H', H'=B^2 Nm/(A(Nf)^2).                    (13)
+
+Its convergent divisor sums and the genuine Fourier/Mellin envelopes retain the new power saving. This proves the squarefree-column case of (1). Constants are chosen without circularity: first rho and the Mobius--Gauss input, then the near-frequency window and the small-frequency inverse input, then the f/l removal widths, then the final A/height window, and finally divisor-small losses.
+
+#### 6. Every original column, including exponent-two and cube layers
+
+Use the exact decomposition from the reviewed full-column extension:
+
+       n=a b^2 c^3,  a,b squarefree, (a,b)=1,
+       q=rad(bc),  g=(a,q),  a=g v.
+
+Then v is squarefree, (v,q)=1, g|q, (g,b)=1, and
+
+       rad(n)=qv,
+       a_n(X)=sum_(e|q)mu(e)a_v(X/Ne),
+       chi_n(row)=chi_v(row)chi_g(row)chi_b(row)^2
+                                      1_(c,row)=1.    (14)
+
+These are exact with all zero masks. For fixed b,c,g, the true free column length is V=U/(Ng (Nb)^2(Nc)^3). The row-only factor in (14) has modulus at most one and is removed only in the complete positive norm. A common hole K either kills the block or becomes the actual v-hole qK.
+
+Choose a small fixed tau>0 after the squarefree theorem's rho/2 and aspect-ratio constant eta_sf, with tau<=eta_sf/4 and the final eta<=tau/4. For long V>=U^(1-tau), the identity Ng(Nb)^2(Nc)^3=U/V gives
+
+       Nq<=Nb Nc<=sqrt(U/V)<=U^(tau/2),
+       X/Ne>=U^(2/3+rho-tau/2)>=V^(2/3+rho/2)
+
+when tau is small enough. The true row scale A stays within the squarefree theorem's permitted power neighborhood of V after making the final eta smaller than tau. Its common hole is polynomial in V. Apply that theorem to each actual term of (14); when X/Ne exceeds its nonunit support endpoint, that term is exactly zero instead. Unit-scale terms are treated below. The diagonal norm sum is O(A^(1/2)U^(1/2+epsilon)); the saving cross norms sum to O(A^(1/3)U^(5/6-kappa_sf/2+epsilon)), since their b,c powers are strictly summable.
+
+For short V<U^(1-tau), retain the actual coefficients and use the ordinary full-row cubic sieve, since A>=V after eta is reduced. The standard inequality
+
+       V^(5/6)<=U^((1-tau)/4)V^(7/12)
+
+and the summable b,c powers -7/6,-7/4 give a norm bound
+
+       A^(1/3)U^(5/6-tau/4+epsilon).
+
+This short-V estimate simultaneously retains the diagonal norm O(A^(1/2)U^(1/2+epsilon)); only its cross term was displayed above. Unit V blocks are included directly; no vanishing formula for a_1 is substituted. Minkowski, followed by squaring, proves (1) with a smaller positive kappa. All original column layers, full cutoff and actual hole are thus retained.
+
+#### 7. A useful complete raw shifted-inverse consequence
+
+Fix a complex delta with Re delta=r>0 in a fixed compact positive interval. Its |Im delta| and all common norm-Mellin heights lie in a sufficiently small polynomial window after the statement's height parameter is decreased again. All seminorm and O_delta factors below retain their polynomial height dependence; none asserts uniformity over arbitrary unbounded Im delta. For n>1, partial summation gives the exact finite identity
+
+       b_delta(n)=-delta (Nn)^(-delta)
+                      integral_1^(Nn) a_n(X)X^(delta-1)dX.        (15)
+
+For n in [U,2U], replace the upper limit by 2U, since a_n(X)=0 for X>=Nn. Write (Nn)^(-delta)=U^(-delta)(Nn/U)^(-delta), keeping the latter as a common norm test with its actual polynomial height dependence.
+
+Split this genuine integral at U^theta with any fixed 2/3<theta<1. In the upper portion, (1) applies uniformly, with rho<theta-2/3; the total absolute integral mass is bounded in U. In the lower portion its mass is at most
+
+       O_delta(U^(-r(1-theta))).                       (16)
+
+The ordinary complete-row/full-column cubic estimate and the divisor bound for a_n(X) give the squared norm of this lower portion at most U^(-2r(1-theta)+epsilon) times [AU+A^(1/3)U^2+A^(2/3)U^(5/3)]. This ordinary estimate follows from the exact column-layer decomposition with its three summable norm terms. For A within the reduced power neighborhood of U, its middle term is at most U^(eta/3) times the cubic cross term; choose eta smaller than the fixed mass saving. The lower portion therefore has a fixed power saving over that cross term. This is an estimate of the actual low-cutoff portion, not a deletion of it. The n=1 term is outside the compact annulus for U>=2 and can otherwise be separated explicitly.
+
+Consequently the raw complete column b_delta(n), with the same fixed cubic twist and all its exponent-two/cube layers, also has a strictly improved balanced quadratic form. One may state it as
+
+ sum_(a) W(a/sqrt A)
+   |sum_n b_delta(n)xi(n)w(Nn/U)bar chi_n(a)|^2
+       << A U^(1+epsilon)+A^(2/3)U^(5/3-kappa_delta)     (17)
+
+after reducing the A neighborhood, height window, and positive kappa_delta. This is distinct from the Gauss-weighted squarefree theorem used in Section 2. Together they provide two real quadratic-form inputs for the two actual columns of the original coupled remainder. No claim about its complete ramified/selected recombination or final Z exponent is made here.
+
+#### Dependencies and status
+
+- The independently reviewed balanced shifted-inverse Gauss theorem and its direct Mobius--Gauss corollary, with genuine common-hole and short-twist uniformity.
+- The original independently reviewed all-cutoff inverse--Gauss power input, its reviewed fixed norm-four/lambda-ray noncubic extension, the exact off-balanced Poisson proof, and its full-column extension.
+- The original fixed finite-order Q hypothesis, with no infinity-type extension.
+
+The role of Q is inherited through the Mobius--Gauss theorem. The complementary identity (4), sharp cutoff, complete column decomposition (14), and finite integral (15) are exact. The proof does not replace any of these objects by a rough or prime-convolution model.
+
+
+## Supplementary source clarification: the user's nine lambda-ray theorem
+
+The user's [bed10bb2 theorem](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/bed10bb2cf3f55ce5b66233614733a9acbbf0ac4/reports/20261011_qrh_selection_bridge/CUBIC_NONCUBIC_LAMBDA.md) extends general primitive prime-to-three residue twists with nonprincipal cube to all nine stated primary modulo-nine ray characters. Its unconditional Q^(3/4)(1+|t|)^3 bound and explicit sum over d|rad(M) of (Nd)^(1/4) remain the user's contribution, with Q here denoting the residue-modulus norm. The original source files are preserved.
+
+For its exact label coordinates, Tr(lambda T)=−3B and Tr(T)=2A−B for T=A+B omega. Consequently the main formula (3) correctly has coordinates (+B,2A−B). The accompanying audit and the checker's unused label-set coordinate instead write −B in the first component; both maps are bijective, but +B is the one matching the actual trace formula. This does not change the theorem, cusp classification or 288 matrix checks. The separate [actual-label checker](check_actual_ray_labels.py) directly verifies +B, multiplicativity, the primary-cube and source-phase identities and the two lower-translation words. It does not certify automorphy or the analytic continuation; those are treated in the supplementary source review.
