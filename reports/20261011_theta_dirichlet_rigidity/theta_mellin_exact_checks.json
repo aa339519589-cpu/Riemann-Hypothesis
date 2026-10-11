@@ -1,0 +1,26 @@
+{
+  "status": "EXACT_FINITE_ALGEBRA_ONLY",
+  "scope": "Checks finite symbolic identities used in theta/Mellin rigidity. Does not certify the infinite distribution proof, Dirichlet convergence, spectral conclusions, or RH.",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "checks": {
+    "exact_seed_second_order_identity": true,
+    "exact_Gamma_recurrence_normalization": true,
+    "zero_mass_removes_ODE_reflection_defect": true,
+    "four_pole_Laplace_formula": true,
+    "all_four_residues_equal_one_quarter": true,
+    "Fourier_to_Mellin_polynomial_argument": true
+  },
+  "example_poles": [
+    "-1/4 - 3*I",
+    "-1/4 + 3*I",
+    "1/4 - 3*I",
+    "1/4 + 3*I"
+  ],
+  "example_residues": [
+    "1/4",
+    "1/4",
+    "1/4",
+    "1/4"
+  ]
+}
