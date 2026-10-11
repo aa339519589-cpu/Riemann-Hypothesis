@@ -1,10 +1,14 @@
-# 原线性探针的完整非主二次 dual 核：全部物理 n
+# 完整非主二次 dual 核的真实双线性节省
 
-本稿保持用户原 R4 的真实线性 s–m 配对。Part I 证明 n=1 粗糙残余子层的任意幂次快速衰减；Part II 建立不加粗糙限制的 n=1 二次核层上界；Part III 把它扩展到全部物理 n，覆盖原 completed-index 标记、新 core 标记及其第一层 Möbius 去卷积。
+本稿保持用户原 R4 的线性 s–m 配对及全部物理 n。Part V 的最终结论覆盖原 completed-index 标记、新 core 标记，以及两种标记各自的第一层 Möbius 去卷积：在原尺度上，该完整核型的线性和为 O(Z^(37/96−d/2+ε))；计入原归一与全部有限补偿后为 O(Z^(−1/32+ε))。
 
-完整非主二次核在原尺度上的上界是 Z^(25/48−d/2+ε)，计入原完整补偿后为 Z^(5/48+ε)。Part III 还给出固定 X′、Y′、slots 下每个 0<T≤Z 的正平方根尺度界，因而严格允许第一层去卷积。仍未控制 principal/unit 核或 generic cubic/sextic 核；现有界距完整负低目标差 7/24，不证明 R4 或 RH。
+这一结论严格改善 Part III 的 O(Z^(5/48+ε))。关键是准确保相位地把真实物理系数整理成两列公共系数，再使用平方自由 quadratic 大筛与长光滑列 Poisson。仍未控制 principal/unit 核和 generic cubic/sextic 核；现有节省距完整负低目标 −3/16 尚差 5/32，不证明完整 R4 或 RH。
 
-各 Part 的公式编号独立。第一 Poisson 与 Gauss 局部身份继承用户报告及固定源稿；新增部分为第二次 Poisson、真实 slot LCM 密度、完整平方层的相位与双频标签保持，以及所得全核型界。
+- Parts I–III 保留 n=1、完整平方层及尺度一致性的已证算术接口。
+- Part IV 给出独立解析双列引理，明确公共系数、实际非主字符与有限除数范围。
+- Part V 给出完整真实探针的还原、双线性估计、全部尾及精确去卷积传递。
+
+各 Part 的公式编号独立。第一 Poisson 与 Gauss 局部身份继承用户报告及固定源稿；外部解析输入为 Goldmakher–Louvel 的 quadratic Hecke 大筛，准确来源及家族匹配见 Part IV。
 
 # Part I. Rough residual columns
 
@@ -652,3 +656,353 @@ The original Q^{-1/2} factor gives 5/48+d/2; the original q_rho^{-3/2} finite co
 - The explicit unit-covariant square-layer completion in §§1–2 above. All row primes, fixed auxiliary xi, and every zero extension remain present.
 
 No QRH/GRH zero-free input, conjectural Möbius cancellation, moving-numerator R2 uniformity, or unproved cubic dispersion estimate is used. This establishes a complete partial-core estimate, not the missing whole-probe correlation.
+
+# Part IV. A common-coefficient quadratic two-column estimate
+
+## A common-coefficient quadratic two-column estimate
+
+This is an analytic interface for the actual quadratic branch of the Poisson calculation. It does not by itself establish that every remaining physical phase has the required coefficient separation. The latter is a separate arithmetic identity.
+
+Let \(K=\mathbb Q(\sqrt{-3})\), \(q_{\mathfrak a}=N\mathfrak a\), with the original primary generators and fixed excluded set \(S\). Write
+\(\psi_v(n)=\chi_v(n)^3=(n/v)_2\), including its zero extension. The row \(v\) is squarefree, good, and \(q_v\asymp V\ge1\). We allow a fixed finite decomposition by ray classes and fixed ray twists. The estimates apply to an arbitrary subset of the rows.
+
+For the long smooth column below, require that its **actual character after all fixed twists** is nonprincipal and has conductor comparable to \(q_v\), with fixed comparison constants. This is automatic for nonunit good squarefree \(v\), since a fixed \(S\)-twist cannot remove its good ramified primes. Unit rows or fixed-conductor exceptional pieces must be kept separately unless their actual nonprincipal character is retained before taking absolute values.
+
+### 1. Two separate column norms
+
+Let \(L\ge1\), and let \(\lambda_c\) be coefficients independent of \(v\), supported on good squarefree \(c\), \(q_c\asymp L\), with
+\[
+ \sum_c|\lambda_c|^2\ll_\epsilon L^{-1+\epsilon}.
+ \tag{1}
+\]
+Thus divisor-bounded weights divided by \(q_c\) are allowed. Fixed conditions such as \((c,a e)=1\), or finitely many prescribed column divisors, may be included if (1) is checked for the resulting common coefficients. Goldmakher–Louvel gives
+\[
+ \left(\sum_{v\asymp V}\left|\sum_c\lambda_c\psi_v(c)\right|^2\right)^{1/2}
+ \ll_\epsilon(VL)^\epsilon\sqrt{1+V/L}.
+ \tag{2}
+\]
+The exact squarefree quadratic input is Theorem 1.1 of [GL]; primary symbols are matched after fixed ray separation as in the source lemma quadratic, fixed QRH October 5 manuscript, lines 1886–1920. The character family and its transpose have the same bound. No arbitrary row-dependent inner coefficients are permitted.
+
+Let \(S_0\ge1\), and let
+\[
+ B_v(S_0)=\sum_{s\ {\rm good}}\rho(s)\psi_v(s)W(q_s/S_0),
+ \tag{3}
+\]
+where \(\rho\) is a fixed ray character (or fixed finite combination), \(W\) is a common smooth annular test, and all nonprincipal conditions above hold for each retained component when Poisson is used. Unlike the \(c\)-column, this sum allows arbitrary powers in \(s\).
+
+For every \(A>1\), uniformly over common tests with the requisite fixed seminorm bounds,
+\[
+ \left(\sum_{v\asymp V}|B_v(S_0)|^2\right)^{1/2}
+ \ll_{\epsilon,A}(VS_0)^\epsilon
+ \mathcal B_A(V,S_0),
+ \tag{4}
+\]
+where
+\[
+ \mathcal B_A(V,S_0)=
+ \begin{cases}
+  \sqrt{VS_0},&1\le S_0\le V,\\
+  S_0(S_0/V)^{-A},&S_0\ge V .
+ \end{cases}
+ \tag{5}
+\]
+
+For the first line, uniquely write \(s=t\ell^2\), \(t\) squarefree. At each fixed \(\ell\),
+\(\psi_v(s)=\psi_v(t)1_{(v,\ell)=1}\); this is a restriction of the positive outer row sum. The common \(t\)-coefficient mass is \(O(S_0/q_\ell^2)\), up to small powers. Applying [GL] and Minkowski gives
+\[
+ \sqrt{VS_0}\sum_{q_\ell\ll\sqrt{S_0}}q_\ell^{-1}
+ +S_0\sum_\ell q_\ell^{-2}
+ \ll \sqrt{VS_0}\log(2+S_0)+S_0.
+ \tag{6}
+\]
+For \(S_0\le V\), this is (4). This square-layer step cannot be omitted by pretending the original \(s\)-column is squarefree.
+
+For the second line of (5), use two-dimensional smooth Poisson for the actual nonprincipal character of conductor norm \(\asymp V\). Its zero Fourier frequency vanishes; its nonzero finite Fourier coefficients have modulus at most a fixed multiple of \(\sqrt V\). Fourier decay and lattice counting therefore give, for each row,
+\[
+ |B_v(S_0)|\ll_A
+ (S_0/\sqrt V)(S_0/V)^{-A}\qquad(S_0\ge V),
+ \tag{7}
+\]
+after taking sufficiently many derivatives. There are \(O(V)\) rows. This proves (4). Fixed excluded primes only cause a fixed finite decomposition. Formula (7) is not asserted for arbitrary divisor-bounded coefficients in the \(s\)-sum.
+
+### 2. The finite divisor-scale sum
+
+Let \(C,Y,G,f,V\ge1\). At each good ideal \(e\), put
+\[
+ L_e=\frac C{Gq_e},\qquad S_e=\frac Y{Gf q_e}.
+ \tag{8}
+\]
+Only the actual finite range
+\[
+ 1\le q_e\le E,\qquad
+ E\ll\min\{C/G,Y/(Gf)\}
+ \tag{9}
+\]
+is used. Fixed annular comparison constants may enlarge this cutoff; scales between a fixed positive constant and one are handled by a fixed rescaling. In particular, (9) is essential: an unrestricted infinite \(e\)-sum would contain a divergent harmonic term.
+
+Suppose the true \(e\)-piece, after a common smooth separation, is
+\[
+ \frac{\omega_e}{q_e}
+ \sum_{v\asymp V} a_{v,e}
+ \left(\sum_{c\ {\rm sf}}\lambda_{e,c}\psi_v(c)\right)
+ B_{v,e}(S_e),
+ \tag{10}
+\]
+or its conjugate orientation, where
+\(|\omega_e|,|a_{v,e}|\ll\mathfrak X^\epsilon\), the common column \(\lambda_{e,c}\) satisfies (1) at \(L_e\), and \(B_{v,e}\) is of the precise smooth type (3). The ambient \(\mathfrak X\ge2\) bounds all parameters by fixed powers. Row restrictions depending on \(e\), such as \((v,e)=1\), are harmless. Cauchy, (2) and (4) bound (10) by small powers times
+\[
+ q_e^{-1}\sqrt{1+VGq_e/C}\,
+            \mathcal B_A(V,Y/(Gf q_e)).
+ \tag{11}
+\]
+
+#### Proposition
+
+For \(A>1\),
+\[
+\boxed{
+ \sum_{1\le q_e\le E}\frac1{q_e}
+ \sqrt{1+\frac{VGq_e}{C}}\,
+ \mathcal B_A\!\left(V,\frac Y{Gf q_e}\right)
+ \ll_A
+ V\left(1+\sqrt{\frac Y{Cf}}\right)\log(2+E).}
+ \tag{12}
+\]
+Consequently the sum of the actual pieces (10) is bounded by
+\(\mathfrak X^\epsilon V(1+\sqrt{Y/(Cf)})\), after choosing the initial small powers appropriately.
+
+**Proof.** Put \(E_0=Y/(GfV)\).
+For \(q_e\ge E_0\), the summand is at most a fixed multiple of
+\[
+ \sqrt{\frac{VY}{Gf}}
+ \left(q_e^{-3/2}+\sqrt{\frac{VG}{C}}q_e^{-1}\right).
+ \tag{13}
+\]
+Ideal counting gives
+\(\sum_{R\le q_e\le E}q_e^{-3/2}\ll R^{-1/2}\) for \(R\ge1\), and
+\(\sum_{q_e\le E}q_e^{-1}\ll\log(2+E)\).
+If \(E_0\ge1\), the first coefficient times \(E_0^{-1/2}\) is exactly \(V\); if \(E_0<1\), its value is at most \(V\). The second coefficient is \(V\sqrt{Y/(Cf)}\). This bounds the short-column range.
+
+For \(q_e\le E_0\), necessarily \(E_0\ge1\), the summand is at most
+\[
+ V E_0^{1-A}
+ \left(q_e^{A-2}+\sqrt{VG/C}\,q_e^{A-3/2}\right).
+ \tag{14}
+\]
+Since \(A>1\), ideal counting gives respective sums
+\(O_A(E_0^{A-1})\) and \(O_A(E_0^{A-1/2})\). Thus this range costs
+\[
+ O_A\{V(1+\sqrt{VG E_0/C})\}
+ =O_A\{V(1+\sqrt{Y/(Cf)})\}.
+ \tag{15}
+\]
+This proves (12), including empty ranges. QED.
+
+### 3. How a moving gcd is allowed, and what must be checked
+
+One may absorb an entire finite sum over \(g\mid\operatorname{rad}(v a)\), \(q_g\asymp G\), into \(a_{v,e}\), provided:
+
+1. all surviving \(g\)-dependence outside the smooth weights is independent of both inner columns \(c,s\);
+2. its total absolute coefficient mass is divisor-bounded;
+3. the weights admit a common Mellin/Fourier separation with uniformly integrable seminorm majorants;
+4. all remaining zero masks in \(c\) are either the true \(\psi_v(c)\) zero extension or fixed common column conditions, and the \(s\)-column retains precisely the common smooth fixed-character form required for (7).
+
+Fixed dyadic ratios \(q_g/G\) can then be separated into bounded row multipliers. A common separated integral is handled by Minkowski before applying (2)–(4). There is no factor \(G^{1/2}\) merely because \(g\) varies with the row: its divisor-many choices have already been summed in the row coefficient. Conversely, if a residual phase or mask couples \(g\) to either inner column and cannot be separated with these properties, (12) alone does not control that physical expression.
+
+This proposition validates the analytic budget and common-coefficient large-sieve step. It does not certify an unproved CRT cancellation or automatically establish the claimed full quadratic R4 exponent.
+
+### Primary sources
+
+[GL] Goldmakher–Louvel, [A quadratic large sieve inequality over number fields, arXiv:1112.1642v2](https://arxiv.org/pdf/1112.1642), Definition 1, Theorem 1.1 and Corollary 1.2. Both large-sieve indices there are squarefree.
+
+The matching to primary \(\chi_v^3\) is also explicitly given in the [fixed October 5 QRH manuscript](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/build/paper2.tex), lemma quadratic, lines 1886–1920. That manuscript's global \(11/12\) conclusion is not a new input to this argument; only its explicit fixed-ray normalization is used.
+
+# Part V. Bilinear saving for the complete physical quadratic sector
+
+## A genuine bilinear saving for the complete quadratic dual sector
+
+### Claim and scope
+
+Keep the objects, scales, original prime slots and all normalizations of Part III of this report. Its nonprincipal quadratic sector is the entire set H=epsilon v^3 a^6, v nonunit squarefree, with all physical indices n and their original zero extensions. The two admissible markings are the original D|cn and the explicitly changed core marker D|c n_0, n=n_0r^2.
+
+**Theorem (independently reviewed).** For both markings at the original scale,
+\[
+ |S_{\rm quad}(Z)|\ll_\epsilon(1+|\nu|)^{C_\epsilon}
+ Z^{37/96-d/2+\epsilon}.                              \tag{1}
+\]
+The exact Möbius-decompleted core-marked probe and the original-marked Möbius-decompleted probe both satisfy the same bound. After the original Q^{-1/2} normalization and finite signed compensation, this complete dual type contributes
+\[
+ \boxed{O_\epsilon(Z^{-1/32+\epsilon}).}               \tag{2}
+\]
+This gains 13/96 over the earlier complete quadratic-sector estimate. The principal/unit-core and generic cubic/sextic dual types are outside (1), and the whole-probe negative target is still 5/32 stronger.
+
+The proof keeps the actual linear s--m pairing. Its new input is the quadratic large sieve applied after an exact common-coefficient reorganization; no stronger full positive Gram is substituted for the R4 target.
+
+### 1. The analytic common-coefficient lemma
+
+Let chi_v^3 be the exact primitive quadratic Hecke family on squarefree primary good ideals v in a norm interval V<=q_v<=2V, V>=1, with a fixed finite ray partition if needed. Goldmakher--Louvel gives
+\[
+ \sum_v\left|\sum_{c\ {\rm sf}} a_c\chi_v(c)^3\right|^2
+ \ll_\epsilon(VL)^\epsilon(V+L)\sum_c|a_c|^2           \tag{3}
+\]
+when the columns have norm O(L). All allowed column coefficients below are independent of v.
+
+For squarefree columns of norm about L and coefficients a_c/c with divisor-bounded a_c, the resulting norm is
+\[
+ \ll_\epsilon(VL)^\epsilon(1+V/L)^{1/2}.              \tag{4}
+\]
+Fixed column masks are allowed, as are bounded row weights. For a smooth sum over all primary s of norm about S, with only a fixed ray factor and fixed smooth weight, squarefree decomposition s=t ell^2 and Minkowski give
+\[
+ \Big\|\sum_s F(q_s/S)\chi_v(s)^3\Big\|_{\ell^2(v)}
+ \ll_\epsilon(VS)^\epsilon(\sqrt{VS}+S).              \tag{5}
+\]
+The ell-induced row restriction (v,ell)=1 is deleted only inside its positive norm. Indeed the two sums in Minkowski are bounded by sqrt(VS) sum_{q_ell<=sqrt S}q_ell^{-1} and S sum_ell q_ell^{-2}.
+
+For S>=V, the actual primitive smooth Poisson estimate is sharper than (5): each row is O(S/sqrt V (S/V)^{-A}), and the row norm is
+\[
+ O_A(S(S/V)^{-A}).                                   \tag{6}
+\]
+Thus one may use B(V,S)=sqrt(VS) for S<=V and B(V,S)=S(S/V)^{-A} for S>=V, with harmless small powers. This use of (6) requires the s coefficients to remain common smooth/ray coefficients, not arbitrary divisor coefficients.
+
+Here is the summation form used below. Put L=C_*/(Gq_e), S=Y_*/(Gq_eq_f), where f is fixed. On nonempty physical annuli L,S are bounded below by a fixed positive constant. Then
+\[
+ \sum_e q_e^{-1}(1+VGq_e/C_*)^{1/2}
+ B\left(V,\frac{Y_*}{Gq_eq_f}\right)
+ \ll V\left(1+\sqrt{\frac{Y_*}{C_*q_f}}\right)
+       (1+\log(2+Y_*)).                              \tag{7}
+\]
+Explicitly, the sum is finite: q_e is at most a fixed constant times min(C_*/G,Y_*/(Gq_f)). The sum only uses these actual nonempty ranges. To prove (7), split at E_0=Y_*/(Gq_fV). Above E_0 the two elementary reciprocal ideal sums are bounded by
+sqrt(VY_*/(Gq_f)) sum q_e^{-3/2} and
+V sqrt(Y_*/(C_*q_f)) sum q_e^{-1}.
+Below E_0 use (6) with A>1. If E_0<1 start at q_e=1; the first contribution is smaller than V. This proves the same bound in every case. Powers and logarithms of the original bounded physical ranges will be absorbed into Z^epsilon below.
+
+### 2. First verify the common coefficients at n=1
+
+Set H'=epsilon v^3(a')^6 and g=(c,rad H'). In the audited first completion, c=g c_1, s=g t, and the Ramanujan factor is exactly phi(g): at every prime of g the exponent of H'/g is at least two. The completed arithmetic coefficient, apart from original smooth weights and fixed constants, is
+\[
+ \frac{\mu(c)\eta(c)}{q_c}
+ \phi(g)\chi_t(H')\overline{\chi_{c_1}(H')}.
+\]
+Expand the remaining (t,c_1)=1 mask with e|c_1, and the sixth-power mask with f|rad a'. Write c_1=e c_2 and t=e f s_2. All nonzero terms have (e,H')=1. The exact algebra is
+\[
+ \mu(c)\mu(e)=\mu(g)\mu(c_2),\qquad
+ \chi_e(H')\overline{\chi_e(H')}=1.
+\]
+Consequently the remaining coefficient is
+\[
+ \underbrace{\mu(g)\eta(g)\phi(g)/q_g}_{\rm row}
+ \underbrace{\eta(e)/q_e}_{\rm fixed\ e}
+ \underbrace{\mu(c_2)\eta(c_2)/q_{c_2}}_{\rm column}
+ \chi_f(\epsilon v^3)\,
+ \chi_v(s_2)^3\chi_v(c_2)^3,                          \tag{8}
+\]
+up to explicitly retained fixed bad-ray factors. The conjugate quadratic symbol equals the same quadratic symbol. In particular eta(e) is not dropped.
+
+The c_2 conditions are: c_2 squarefree, (c_2,e)=1 and (c_2,a')=1. Any coprimality with the part of g dividing v is already enforced by chi_v(c_2)=0; the other part of g divides a' and is covered by the fixed a' mask. The row condition (e,v)=1 is a bounded row mask. The free s_2 sum has only its common smooth weight and fixed ray data: its a' mask was expanded exactly over f. It has no unexpanded divisor-dependent column coefficient.
+
+It follows that g must not be bounded one value at a time. On a dyadic interval q_g about G, its entire sum over g|rad(v a') can be placed in a v-row coefficient of size O_epsilon(q_{va'}^epsilon), once the smooth norm-ratio weights have been Mellin separated. This preserves the large sieve's common column coefficients.
+
+### 3. Actual prime slots also have common coefficients
+
+For n=1, each selected slot prime dividing c=g e c_2 belongs to exactly one of g,e,c_2. Split the finitely many original slots into these three classes. Primes assigned to g are summed as divisors inside the row coefficient, primes assigned to e give a fixed-e scalar, and primes assigned to c_2 form the column coefficient. The latter is divisor-bounded and independent of v. Its reciprocal-column square mass in a norm interval L is O_epsilon(L^{-1+epsilon}), not an absolute count of the whole marking family.
+
+The Gaussian dependence on D is separated on the zero real Mellin line: W_G(q_c/(Tq_D)) uses q_D^{it}, so no unaccounted real power of q_D enters. All original slot weights, including bar eta(D), factor over the fixed slots. Conditions attached to the finite ray groups are handled by a finite partition, not suppressed.
+
+For general physical n=n_0r^2, use the audited square-layer and odd-branch decomposition. Thus h|rad r, j=(h,rad s), k=h/j; nonzero terms have (h,cn_0)=1, j^2|s and (s,k)=1. The exact full-frequency identity H=(r^6/k)L, and then H=r^6H', L=kH', cancels every k phase, leaving q_r^{-2}q_k^{-1}. The two odd branches give n_0|v, (n_0,a')=1 and n_0=EF with E=(c,n_0). Write
+\[
+ c=E g e c_2,\qquad s=F g j^2 e f s_2.                \tag{9}
+\]
+The additional positive prefactor is 1/(q_{n_0}q_E). The Ramanujan contribution is still phi(g), and only that g is canceled against the c denominator. The original coefficientwise CRT identity leaves exactly the same primitive chi_v^3 kernel in c_2 and s_2. The two n_0 phases rho^{-2}/rho^{-4} are row coefficients, never characters evaluated at a forced nonunit.
+
+The square-layer divisor j is disjoint from cn_0. At its primes the base completion is therefore the free-s character branch: its original zero extension makes every term with (j,H')!=1 zero. On the surviving terms the fixed j^2 character factor has modulus one and belongs to the row coefficient. This j support is distinct from the forced F primes of n_0, whose nonzero values are supplied by the two special odd branches and are not evaluated as chi_F(H').
+
+All new good-prime masks can be assigned exactly as follows:
+
+- h and e restrictions on c_2, and the a' restriction, are fixed column masks;
+- n_0 and the v part of g are handled by chi_v(c_2)'s original zero extension;
+- the remaining part of g divides a' and is already excluded by the fixed a' mask;
+- the k and a' masks on s are expanded over f|rad(k a'); coefficients meeting v remain zero row coefficients;
+- the remaining ray restrictions are handled by a fixed finite partition.
+
+In particular the s_2 sum still has the smooth/ray form required by (6).
+
+For original marking D|cn_0r, assign each chosen prime to the first applicable factor in the ordered list r,n_0,g,e,c_2. For core marking omit r from this list. The r and e divisor selections are fixed scalars, the n_0,g selections belong to the v-row coefficient, and the c_2 selections belong to the common column coefficient. The exclusions imposed by this priority assignment either involve fixed r,e,a' or are already enforced by the quadratic column zero. This keeps the exact marking, including all shared primes. Its scalar and row bounds cost only (q_rq_eq_{H'})^epsilon.
+
+### 4. Uniform Mellin separation and the cancellation of n_0 E
+
+For fixed r,h,j,a', use Gaussian annuli
+\[
+ q_c q_{n_0}^3\asymp U_l=e^l TP/q_r^6,
+\]
+and dyadic intervals q_{n_0} about N, q_E about B, q_g about G, q_v about V. Here B is a norm scale, not a character row. The normalized c and s variables lie in fixed compact positive intervals. Separate the joint smooth factors in their logarithmic variables by Fourier/Mellin inversion on real part zero. The original Gaussian, first Fourier transform, slot weights and finite ray splits produce absolutely integrable separation coefficients. Uniform derivative bounds give an envelope
+\[
+ C_{A,M}(1+|\nu|)^{C_{A,M}}e^{-c l^2}
+ \left(1+\frac{X'V^3q_{a'}^6}{U_l}\right)^{-M},       \tag{10}
+\]
+after absorbing any fixed polynomial in l. All separated powers of n_0,E,g,D have modulus one; bounded ratios of their dyadic norm scales are harmless. The normalized s derivative argument is exactly the already audited one: chain-rule powers of the first Fourier argument are absorbed by its Schwartz decay.
+
+For each separated term the v-row coefficient is divisor-bounded, uniformly in all Mellin frequencies up to polynomial seminorm costs absorbed in (10). It includes the whole sum over n_0,E,g in their current dyadic blocks. Thus (3) is applied to common c_2 coefficients, not separately to a family depending on v.
+
+The two physical column scales are
+\[
+ L=\frac{U_l}{N^3 B G q_e}=\frac{C_*}{Gq_e},\qquad
+ S=\frac{Y'B}{N G q_j^2q_eq_f}=\frac{Y_*}{Gq_eq_f},
+\quad C_*=\frac{U_l}{N^3B},\quad Y_*=\frac{Y'B}{Nq_j^2}.
+\]
+Their outside factor is 1/(NB). Applying (7) gives
+\[
+ \frac{V}{NB}\left(1+\sqrt{\frac{Y_*}{C_*q_f}}\right)
+ =V\left(\frac1{NB}+\frac1{q_j}\sqrt{\frac{Y'}{U_lq_f}}\right).
+                                                               \tag{11}
+\]
+This exact cancellation is why the physical odd branches can be included without degrading the new estimate. The number of N,B,G blocks and the f choices costs arbitrarily small divisor powers; summing the first term's 1/(NB) over dyadic N,B is bounded. All actual masks and signs were retained before applying positive norm inequalities.
+
+### 5. Fourier tails, square layers and a useful uniform scale bound
+
+Weighted dyadic V summation in (10), then summation over a', gives the factor
+\[
+ \mathcal P_M(K)=\begin{cases}K^{1/3},&K\ge1,\\K^M,&0<K\le1,\end{cases}
+ \qquad K=U_l/X',                                    \tag{12}
+\]
+with any fixed sufficiently large M, up to arbitrarily small powers. For K>=1 the a' sum is bounded by K^{1/3} sum_{a'}q_{a'}^{-2}; for K<=1 retain the arbitrarily high original Fourier decay. This is a bound on the full frequency tail, not a sharp cutoff.
+
+Combining (10)--(12), the contribution for fixed r,h,j before Gaussian summation is bounded by the common Q/Y'^{3/2}, the exact q_r^{-2}q_k^{-1}, and
+\[
+ e^{-c l^2}\mathcal P_M(U_l/X')
+       (1+\sqrt{Y'/U_l}),                            \tag{13}
+\]
+with small divisor powers. The h,j count is at most 3^{omega(r)}. If U_l/X'>=1, the first term in (13) gives q_r^{-4}, which is summable. Its second term gives q_r^{-1}, but only until q_r^6<=e^l TP/X'; this is a logarithmic ideal sum. Beyond that point use the second line of (12); for M>1 the remaining r sums converge, including the apparent square-root factor U_l^{-1/2}. Small divisor powers and all logarithms are absorbed into Z^epsilon, since T<=Z. Gaussian summation also covers every negative or positive l tail.
+
+Consequently, if K_0=TP/X', the following uniform bound holds for any fixed M>1, after possibly increasing derivative orders:
+\[
+ |S_{\rm quad}(T)|\ll_{\epsilon,M}
+ (1+|\nu|)^{C_{\epsilon,M}}Z^\epsilon\frac{Q}{Y'^{3/2}}
+ \begin{cases}
+ K_0^{1/3}(1+\sqrt{Y'/(TP)}),&K_0\ge1,\\
+ K_0^M(1+\sqrt{Y'/(TP)}),&0<K_0\le1.
+ \end{cases}                                         \tag{14}
+\]
+When K_0 is small, the Gaussian annuli for which e^lK_0>=1 are absorbed by their Gaussian tail; this yields any prescribed fixed power K_0^M. Thus (14) does not assume a coupled-scale theorem at a different T.
+
+At T=Z, one has ZP>>Y', K_0=Z^{13/16} up to fixed constants, and
+\[
+ \frac{Q}{Y'^{3/2}}K_0^{1/3}
+ \asymp Z^{11/96-d/2+13/48}=Z^{37/96-d/2}.
+\]
+This proves (1).
+
+### 6. Exact decompletion and normalization
+
+The core-marked Möbius operation sums T=Z/q_d^6 with coefficient mu(d)kappa(d)/q_d^2 and keeps all physical slots, X',Y' fixed. It preserves the numerator core because its redundant-modulus lift multiplies the frequency by d^6. Apply the uniform bound (14).
+
+For q_d<=K_0^{1/6}, its first term has d^{-4} and is absolutely summable. The second term has d^{-1}; its truncated sum is logarithmic and its outside size relative to the main term is sqrt(Y'/(ZP))<<1. For q_d>K_0^{1/6}, the small-K line gives convergent powers d^{-2-6M} and d^{1-6M}. Their tail is bounded by the same main term, for M>1. This proves (1) for the exact core-flat sector, without assuming convergence of an unproved negative low exponent.
+
+The identical argument also applies to the original-marked flat operation: (14) holds for that original completed marker with the same fixed X',Y' and slots. This is precisely the original-marked transform in the user's commit 56c6cf64, `MARKED_ROW_REFLECTION.md` §7, not a substitution of the core marker for it. Its pointwise reflection estimate is the user's separate result; no part of that new estimate is needed in this bilinear proof.
+
+Finally Q^{-1/2} gives -1/32+d/2. The original rescaling coefficient and tuple count remove d/2, giving (2). The original Mellin weight absorbs every polynomial in nu.
+
+### Dependencies and remaining burden
+
+The exact arithmetic is inherited from the audited complete-quadratic-sector proof and the source coefficientwise local table, not from a new formal spectral equivalence. The only new analytic input is the fixed-ray Goldmakher--Louvel quadratic sieve, already stated and verified for the genuine characters in the original source, plus ordinary primitive smooth Poisson. The separate analytic lemma and this complete arithmetic interface have both passed independent review.
+
+The proof must be read with its exact common-coefficient interface: moving masks are not deleted from mixed products, and the s sum is not replaced by arbitrary coefficients before (6). The result treats a complete nonprincipal quadratic kernel type. It leaves all other types and the stronger complete-probe correlation unresolved.

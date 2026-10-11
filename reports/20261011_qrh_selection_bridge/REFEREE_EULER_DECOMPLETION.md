@@ -326,3 +326,29 @@ This supplies all central slot exponents simultaneously without spending the sam
 ### Scope
 
 The exact dynamic decomposition (5) follows from local selected nonvanishing and the quotient-free tuple identity. Main slot polynomials retain row-independent coefficients and every original character mask. The bound assumes the source's reflected small-value hypothesis at the retained heights and does not prove it for all rows. No total row-count estimate, global numerator/reciprocal integral, or negative low correlation is inferred.
+
+# Review of Part VII
+
+## Audit of the exact completed-to-core-flat reflection transfer
+
+The full note Part VII of the companion report passes. Its external reflection estimate is the user's result at [user commit 56c6cf64ac7e683e02e2a6fbf0f57f8004e24102](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/56c6cf64ac7e683e02e2a6fbf0f57f8004e24102/reports/20261011_qrh_selection_bridge/MARKED_ROW_REFLECTION.md), already independently audited. The new contribution is the exact change-of-marker identity, not another derivation of the user's completed reflection theorem.
+
+For (D,m)=1, the completed k-series at fixed squarefree c,v is L^{S union supp(m)}(2+6t,kappa) times the product of r_p=kappa(p)P^{-2-6t} over marked primes missing from cv. The inverse product outside the whole D leaves the stated finite denominators. The finite sum over F|D has local factor 1-r_p at a prime of cv and r_p-r_p at a missing prime. Thus it cancels exactly to the core marker. The external indicator is required for shared (D,m)>1. No character of the scaling variable is inserted.
+
+Gaussian inversion and all exchanges are legal by the independent physical majorant
+
+\[
+ C\frac{\sqrt U}{q_D}\sum_{F\mid D}q_F^{-4}\sum_aq_a^{-5}.
+\]
+
+In particular the identity is absolutely convergent at every U>0 and permits common factors in c,v,k.
+
+For fixed F, discard (a,D)=1 only in the positive upper bound and apply the user's two-bound balance to D'=D/F, U'=U/q_F^6. Multiplication by q_F^{-2} produces respectively sqrt(U)q_D^{-1}q_F^{-4} and H(m)^{2/3}U^{-1/6}q_F^{-1}. Summing gives exactly
+
+\[
+ |B_{D,core}^{flat}(U;m,s)|\ll
+ \min\{\sqrt U/q_D,
+ R(m)^{2/3}U^{-1/6}\prod_{p\mid D}(1+1/q_p)\}.
+\]
+
+The product is not an absolute constant for unrestricted squarefree D. It is uniformly bounded in the actual fixed finite K-slot family, which is the stated application. This supplies a legitimate full-scale pointwise bound for the changed core-flat row. It does not transfer the entire slot-summed reflected theorem or prove the full low correlation.

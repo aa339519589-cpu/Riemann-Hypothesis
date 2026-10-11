@@ -8,6 +8,7 @@
 - Part IV：新 core 标记及变换保持既有有限窗 sextic 大筛能量界。
 - Part V：全部 numerator 行的精确 core-selected 局部式、反射域及保留未使用短多项式的乘积控制。
 - Part VI：在原 buffered reflected numerator 输入下，z≥1/4 的联合误差槽估计。
+- Part VII：以用户新 completed-row 反射为输入，通过精确改标记恒等式获得 core-flat 的全尺度反射界。
 
 各 Part 的公式编号独立。孤立 principal 行的高端比较已完成；全部非principal 行的总高端比较及负指数低端线性相关仍未证明。本稿不证明 RH。原用户 marked-row 结果保留其来源归属，外部大筛仅在 Part IV 的既有输入中使用。
 
@@ -1161,3 +1162,107 @@ Expand the product of error slots into unramified labels, non-strict ramified te
 This establishes the reflected local error interface for the newly defined full core probe. It permits the original detector main-slot polynomial and preserves its row-independent coefficients and all masks. It does not yet prove a row-count estimate outside its stated source hypotheses, the global nonprincipal high comparison, or the low R4 correlation. In particular, moving the real (z) contour in the full integral still requires a separate contour-accounting proof.
 
 Fixed source: [QRH paper at fd4aeeb2](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex), Proposition `probe-errors`, lines 8853–9055, for the unchanged primitive-conductor and reflected-functional-equation inputs. The exact new local factors are proved in the companion Part V of this report from that source's local-family table.
+
+# Part VII. Exact transfer of the user’s completed reflection to core-flat rows
+
+## An exact bridge from core-flat rows to the user's completed reflection
+
+### Input and attribution
+
+The reflected completed-row estimate in this note is the user's [completed-row reflection theorem at commit 56c6cf64ac7e683e02e2a6fbf0f57f8004e24102](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/56c6cf64ac7e683e02e2a6fbf0f57f8004e24102/reports/20261011_qrh_selection_bridge/MARKED_ROW_REFLECTION.md). It is not claimed as our new theorem. We use its original completed marker D|cn^3 and its all-scale estimate
+\[
+ |B_D(U;m,s)|\le C\min\left\{\frac{\sqrt U}{q_D},
+                  \frac{H(m)\sqrt{q_D}}{\sqrt U}\right\},          \tag{1}
+\]
+where H(m)<=C R(m) and R(m) is the norm of the good-prime radical of m. All original coefficients, ray data and nonunit zero extensions are retained. The new step below is an exact finite-marker identity that makes (1) applicable to the different core-flat row; there is no direct comparison between two oscillating marked rows.
+
+### 1. Exact physical identity
+
+Let D be good and squarefree, U>0, m!=0, and let s be an original allowed row parameter. Write n=v k^2 with v squarefree. The core marker is D|cv. Its first Möbius scale transform is denoted B_{D,core}^flat. Then
+\[
+\boxed{\begin{split}
+ B_{D,\mathrm{core}}^\flat(U;m,s)
+ =1_{(D,m)=1}\sum_{F\mid D}\frac{\mu(F)\kappa(F)}{q_F^2}
+ \sum_{\substack{a\ \mathrm{good}\\(a,D)=1}}
+ \frac{\mu(a)\kappa(a)}{q_a^2}
+ B_{D/F}\left(\frac{U}{q_F^6q_a^6};m,s\right).
+\end{split}}                                                    \tag{2}
+\]
+The B on the right is the user's original completed marked row. The second sum excludes every prime of the full D, not just the primes of F. No chi_a(m) or chi_F(m) is inserted. The external indicator is necessary: without it, (2) need not hold when a marked prime divides m.
+
+Here is a proof retaining the global phases. The already verified coefficient identity
+\[
+ b(c,vk^2;s)=b(c,v;s)\kappa(k)
+\]
+holds without any coprimality assumption among c,v,k. Work first on the original absolute Mellin line Re t=4 and set
+\[
+ r_p=\kappa(p)P^{-2-6t},\qquad
+ M_D(c,v)=D/\gcd(D,cv).
+\]
+For (D,m)=1, the k-series of the completed D-row is exactly
+\[
+ L^{S\cup\operatorname{supp}(m)}(2+6t,\kappa)
+                                  \prod_{p\mid M_D(c,v)}r_p.
+\]
+For the core row it is that same L-series times 1_{D|cv}. The sum over a in (2) gives the inverse Euler product over good primes outside D. Its ratio with the displayed k-series leaves
+\[
+ \prod_{p\mid\operatorname{rad}_S(m)}(1-r_p)
+                                  \prod_{p\mid D}(1-r_p)^{-1}.
+\]
+For each fixed c,v, the remaining finite sum over F factors primewise:
+\[
+ \sum_{F\mid D}\mu(F)\prod_{p\mid F}r_p
+                 \prod_{p\mid M_{D/F}(c,v)}r_p
+ =\begin{cases}
+ \prod_{p\mid D}(1-r_p),&D\mid cv,\\
+ 0,&D\nmid cv.
+ \end{cases}                                                     \tag{3}
+\]
+At a prime of cv, the local sum is 1-r_p. At a prime not dividing cv, it is r_p-r_p=0. This cancels the unwanted finite inverse product exactly, leaving the previously proved core-flat Mellin row. Inverting the Gaussian proves (2). When (D,m)!=1 the original core row is zero termwise, so the stated external indicator gives the full identity.
+
+All exchanges can also be checked directly after inversion. The absolute majorant from the first term of (1) is
+\[
+ \frac{C\sqrt U}{q_D}
+               \sum_{F\mid D}q_F^{-4}\sum_aq_a^{-5}<\infty.       \tag{4}
+\]
+This is independent of omega(D); c and v may share primes throughout. Thus (2) is an absolutely convergent physical identity at every positive scale, not just a formal Euler calculation.
+
+### 2. The reflected bound actually transferred
+
+Define the explicit marker factor
+\[
+ K(D)=\sum_{F\mid D}q_F^{-1}
+                       =\prod_{p\mid D}(1+q_p^{-1}).
+\]
+Then (1)–(2) imply
+\[
+ \boxed{|B_{D,\mathrm{core}}^\flat(U;m,s)|
+ \le C\min\left\{\frac{\sqrt U}{q_D},
+                H(m)^{2/3}U^{-1/6}K(D)\right\}.}                  \tag{5}
+\]
+In particular H(m) may be replaced by C R(m).
+
+To see this without assuming scale covariance, fix F and put D'=D/F, U'=U/q_F^6. The partial inverse transform
+\[
+ \sum_{(a,D)=1}\mu(a)\kappa(a)q_a^{-2}B_{D'}(U'/q_a^6;m,s)
+\]
+is estimated by taking absolute values and using (1). The restriction (a,D)=1 can be dropped in this positive upper bound. Exactly the user's optimized split then gives
+\[
+ C\min\{\sqrt{U'}/q_{D'},\ H(m)^{2/3}(U')^{-1/6}\}.
+\]
+For clarity, its summands are at most min(A q_a^{-5},B q_a), with A=sqrt(U')/q_D' and B=H(m)sqrt(q_D')/sqrt(U'). Splitting at q_a=(A/B)^{1/6} when that number is >=1, and otherwise using the first bound, proves the displayed estimate for every U'>0.
+
+After multiplication by q_F^{-2}, the two alternatives are
+\[
+ C\frac{\sqrt U}{q_D}q_F^{-4},\qquad
+ C H(m)^{2/3}U^{-1/6}q_F^{-1}.
+\]
+Summing either alternative over F gives (5). We do not silently replace K(D) by an omega(D)-uniform constant.
+
+For the actual fixed finite slot family, D contains at most K fixed slot primes. Then K(D)<= (3/2)^K, and hence
+\[
+ |B_{D,\mathrm{core}}^\flat(U;m,s)|
+ \ll_{\mathrm{slots}}\min\{\sqrt U/q_D,\ R(m)^{2/3}U^{-1/6}\}.
+                                                               \tag{6}
+\]
+At U=Zq_D this supplies the same reflected scale as the user's original-marked flat estimate, now rigorously for the different core marker. Its original-window pointwise exponent is 13/36-7d/6 when R(m)<=q_m is used. This is a fixed-row estimate: it does not by itself preserve the original full reflected B^J theorem, sum the signed compensation, or prove the missing low linear correlation.
