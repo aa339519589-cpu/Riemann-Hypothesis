@@ -1295,3 +1295,14 @@ I independently recomputed all three E_0 formulas and all six E_1 formulas symbo
 All unbounded u,w,n_0,r,h_0,a',e, flat, Gaussian and Mellin labels enter the ambient size before summation. Strict summability and the genuinely finite harmonic r range absorb the small powers afterward. The complete original Fourier/Gaussian tails, fixed physical windows and exact sixth-power flat lift are retained. Boundary alpha endpoints are only positive-envelope limits of the buffered inverse bins.
 
 Final readback confirmed the exact g=(c/E_4,rad H_eff), the odd (n_0,a') condition, and the C/S<1 branch. Audited author SHA-256: 70b127f3a7dd4185538c88162f8a76ef04bfc045347563c964a125dc58c72938.
+
+
+# Supplement: explicit row tails, tuple ratios and boundary counts
+
+The three clarifications in Parts XIV B, XVI 1 and XIX 5 have passed a separate mathematical review. They clarify the existing sector estimates and do not extend their scope to the full probe.
+
+In XIV B, the needed long-column assertion is per row: primitive nonprincipal Poisson has no zero frequency and, after one extra Schwartz decay absorbs its S/sqrt(W) prefactor, gives C_A sqrt(W)(S/W)^(-A) for every A>0. Apply this to the genuine smooth column after fixed divisor extraction and compact common-weight separation, before taking the supremum over the e-dependent scale. A row-norm estimate alone would be insufficient at this step.
+
+In XVI 1, compact prime windows give c<=q_D/P<=C uniformly before pooling tuples and divisor choices. Derivatives of the joint profile in this ratio and the normalized column variables have polynomial seminorms in the retained heights and Gaussian label. The Gaussian/Schwartz envelope absorbs these powers uniformly. A zero real Mellin part alone does not give this uniform tail.
+
+In XIX 5, the frozen-w count O(W/H_0) and the physical boundary coefficient mu(h_0)/q_h0 supply two distinct H_0^(-1) factors. Formula (20) now displays the former; the latter is still outside. Thus the post-W boundary power is H_0^(6B/5-2), and H_0<=R gives R^(6alpha-4), with the stated finite harmonic endpoint. This correction leaves the exponent -133/34560 unchanged.

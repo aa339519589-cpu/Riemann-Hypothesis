@@ -3136,7 +3136,9 @@ For a rightmost-zero bin b=1-alpha, 1/8<=alpha<=1/2, let D_6(b) be the audited s
 
 If a selected product D_c of norm about P_c is forced into c_2, extract it exactly before any bound. Its outside factor is mu(D_c)eta(D_c)chi_w(D_c)/q_Dc and its new column scale is L/q_Dc; its coprimality Euler factors are included in the actual imprimitive modulus. On the bin's contour this gives L^{-alpha}q_Dc^{alpha-1}. Summing over the actual fixed slots gives at most ambient^epsilon (L/P_c)^{-alpha}. The count is the elementary reciprocal-prime-slot mass, not an independence assertion. We use P_c<=O(P). All moving common mask primes remain in the imprimitive modulus; they are never made part of a fixed S.
 
-The free s column has the actual nonprincipal primitive character of conductor about W, so its genuine pointwise smooth estimate is min(S,sqrt W), with rapid decay for S>=W. Consequently the full finite e sum, including every true inclusion-exclusion term, is bounded by
+The free s column has the actual nonprincipal primitive character of conductor about W, so its genuine pointwise smooth estimate is min(S,sqrt W), with rapid decay for S>=W.
+
+Before this estimate is summed in e, the long-column assertion is used in its per-row form: for every A>0, the genuinely smooth column satisfies |B_w(S)|<=C_A sqrt(W)(S/W)^(-A) when S>=W. This is the primitive nonzero-frequency Poisson estimate after the fixed divisor extractions and compact common-weight separation. Its constants are uniform in w; the separated smooth seminorms remain polynomial in the retained heights. An estimate only for the positive row norm would not justify the same supremum over the e-dependent S scale. Together with the short bound min(S,sqrt W), this per-row estimate bounds the full finite e sum, including every true inclusion-exclusion term, by
 \[
  \mathrm{ambient}^{\epsilon}
  \left({Y'P_c q_r^6\over C_l}\right)^{\alpha}W^{F(\alpha)},
@@ -3435,6 +3437,7 @@ A useful precision about separation is retained throughout. On each normalized c
  (1+X'M^2q_{a'}^6/U_l)^{-A},\qquad q_w\asymp M.      \tag{4}
 \]
 All Gaussian slot separation remains on zero real Mellin part. This preserves both the genuine Möbius contour shift and the compact smooth Poisson estimate used below.
+The seminorm assertion in (4) is uniform also in the tuple norm ratio d_slot=q_D/P, before pooling the D,n_0,g choices. The original compact prime windows put d_slot in a fixed interval [c,C] with c>0. Derivatives in its logarithm, together with those in the normalized c,s variables, give only fixed-degree polynomials in l and the separated heights; the Gaussian absorbs these polynomials, uniformly on that interval. Thus their joint Fourier coefficient retains the displayed Gaussian/Schwartz envelope before the arithmetic choices are pooled. Taking a zero real Mellin part alone would not establish this uniform envelope.
 
 ### 2. A common smooth column and its genuine eighth moment
 
@@ -4814,9 +4817,10 @@ It remains to consider P_c>sqrt M. Since P_c<=P<=O(Z^{1/6}), this forces M<=O(Z^
 
 Summing W first against (8), with B from (17), yields
 \[
- (C_l/X')^{B/5}M^{-2B/5}(H_0/R)^{6B/5}
+ H_0^{-1}(C_l/X')^{B/5}M^{-2B/5}(H_0/R)^{6B/5}
  q_{a'}^{-6B/5}.                                    \tag{20}
 \]
+The H_0^{-1} in (20) is the frozen-w count factor from O(W/H_0); the separate boundary coefficient in (6) still contributes another H_0^{-1}. Thus the full post-W expression carries H_0^{6B/5-2} times R^{6alpha-2-6B/5}, as used in the next step. These two factors have different arithmetic origins and are both retained.
 The lower support W>=H_0 can be dropped at this step. Since 6B/5-2>0, using H_0<=R makes the remaining physical r exponent 6alpha-4<=-1. The endpoint -1 has only a logarithmic loss: a nonempty Gaussian annulus requires R^6<=O(C_l), while its complementary annuli have the original rapid Gaussian decay. The a' exponent is at most -11/5. For the first flat the external ideal exponent is
 \[
  -2+6\alpha-6B/5\le-6/5.                            \tag{21}
