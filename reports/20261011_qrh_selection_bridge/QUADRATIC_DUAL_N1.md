@@ -18,6 +18,8 @@ Part XXI 另证明一个不依赖 Q 的精确相消：固定原频率单位 ε=1
 
 Part XXIV 进一步在 η=1、ε∈{1,ω,ω²}、H=εw²a⁶ 且 w 为任意非单位 cube-free 核的范围内，证明指定第二 nonpolar 余项 O(Z^(−19/480+ε))：涵盖全部物理 n、a、g、h，原/core 两标记、各自第一 flat 及原有限补偿，不依赖 Q。这里先对整个物理 e 列作其真实有限截取，再在 w=v₁v₂² 的固定 v₂ 行上定义相应两次极项分解；第一 nonpolar 余项与三负单位尚未控制，完整 cubic 指数保持上列结果。Part XXV 对真实截断 inverse 系数另证：Gauss 极项的精确乘子身份及 Q 条件 X^(−1/8+ε) 衰减，以及不依赖 Q 的全 cutoff Gauss 重赋相列 Siegel–Walfisz 消去。光滑 projection 的 level 与删素集仍固定，XXV C 另证真实截断 inverse 的 squarefree/cubic 列在 B^(1+δ)≤A≤B^(2−δ) 的正二次型幂次节省，所有 cutoff 统一且不依赖 Q；κ>0 仅证明存在，其基础证明先保留 squarefree 列；XXV D 用真实 rad(n) 分解、统一 common holes 与含unit短列界将其扩到全部 n，仍仅固定 cubic twist 与严格 off-balanced 域。κ 未数值化，balanced 与完整 detector tail 尚未闭合。
 
+Part XXVI 对原三重 Mellin 表达式的真实联合极面 q=x+y=1 另给无 Q 的留数界 O(Z^(−37/192+ε))，比 −3/16 低 1/192。这里 η=1，完整 cubic good-core 为 u=εv₁²v₂⁴、v₁v₂ 非单位，保留全部六单位、所有物理 n、a、两种标记、各自第一 flat 与原有限补偿。该留数由合法移线提取，Hecke 功能方程在极面上精确消去 L 比值；剩余完整 q=1−δ 积分仍未估计。此留数不等于 Part XXIV 的第一 nonpolar 余项，也不改变上述完整 cubic 指数。
+
 上述完整类型估计均未覆盖 principal/unit 核及其余混合 sextic good-core，也未证明整个符号配对的目标界或 RH。
 
 Parts I–III 保留 n=1、完整平方层及尺度一致性的已证算术接口；Part IV 给出独立解析双列引理；Parts V–VI 完整证明真实公共系数还原、尾估计及精确去卷积传递。Part VII 给出依赖用户固定输入 Q 的真实 Möbius 列均值；Part VIII 给出真实 selected Euler 乘子矩。这些解析引理本身不直接给完整物理指数；Parts X–XI 将它们与真实双向高矩、全部物理除数和补偿结合，证明上述 Q 条件的 quadratic 强化。各 Part 的公式编号独立。首个 Poisson、Gauss 局部身份与原探针归用户报告及固定源稿；外部解析大筛来源分别在相关 Part 中注明。
@@ -8629,3 +8631,146 @@ arbitrary sextic target twist or the balanced zero-detector tail.
   input published in [Parts XXV B and XXIV](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/26e68e2490f9d7d5ac780c6b3ab95330dc9aaac7/reports/20261011_qrh_selection_bridge/QUADRATIC_DUAL_N1.md).
 - The ordinary full-row cubic large sieve used in the fixed-source
   dispersion proof cited by the squarefree companion.
+
+
+# Part XXVI. The genuine coupled-wall residue of the complete cubic core
+
+## The genuine coupled c/s pole of the complete cubic core
+
+Independently reviewed and frozen mathematical report. This uses the original probe and its actual finite selected-prime compensation. It extracts a different pole from the two successive cubic-Gauss poles of the published secondary theorem. The remaining coupled contour is retained and is not estimated here.
+
+### 1. Exact object and notation
+
+Use the fixed original source
+https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex
+at its exact Poisson identity, scalar Euler identity, full local family table and quotient-free selected operation (source equations `probe-poisson-identity`, `probe-high`, `old-eq:5.13a`, `local-family-table`, `selected-local-operation`). All variables retain their original zero masks and primary generators.
+
+Set eta=1. Rename the source's three Mellin variables (x,w,z) as (x,y,t), and put q=x+y. Retain every physical c,n,s,a and select the actual sixth-power-free numerator
+
+u=epsilon v_1^2 v_2^4,
+
+where epsilon is any of the six original units, v_1,v_2 are good primary, squarefree and coprime, and v_1v_2 is nonunit. Thus the actual frequency is H=u a^6. The finite-order Hecke character chi_u=chi_bullet(u) is nonprincipal, with genuine good conductor v_1v_2; its bad conductor belongs to a fixed finite set. Neither additive conventions nor Gauss symbols are changed in this argument.
+
+For p outside the original S write P=q_p, j=v_p(u), rho=chi_p(u/p^j), a_p=bar(alpha(p))^3, and
+
+V=P^(-6t), R=a_p^2 P^(4-6x-6t),
+D=bar(chi_u(p))P^(-x), W=chi_u(p)P^(-y).
+
+At ramified p, D=W=0 by the original zero extension. The source gives
+
+F_u(x,y,t)=zeta_F^S(6t) L^S(y,chi_u)/L^S(x,bar(chi_u)) times product H_p(x,y,t).       (1)
+
+The Gaussian/radial Mellin factor is exactly
+
+X^(1/2-t) Z^(x+t-1) Y^(y-1) Phi(x+t-1) M(t) What_1(y).                              (2)
+
+The original compensated slot p replaces H_p by P^(t-1)G_p, with its original smooth weight. The core marker replaces G_p by G_p,core. The original first scale transform multiplies the full identity by 1/L^S(6x+6t-4,kappa), kappa=bar(alpha)^6. Equivalently it multiplies H_p and each selected G_p by 1-R. No angular zero-free input is used below: at the contours used this L-series and its reciprocal converge absolutely.
+
+### 2. Extract the actual coupled pole
+
+At an unramified p the source's exact numerator identity is
+
+(1-R)H_p=N_p/(1-D),
+
+N_p=1-D + D V W^2 P-D V W^2-D V W P+D V+D W
+             +R V W^2-R W^2+R W/P-R/P-V W.                                      (3)
+
+Since D W=P^(-q), this gives the genuine leading term H_p=1+P^(-q)+smaller terms. Define, without division by H_p or G_p,
+
+E_p(x,q,t)=(1-P^(-q)) H_p(x,q-x,t),
+E_p,selected(x,q,t)=(1-P^(-q)) G_p(x,q-x,t).                                    (4)
+
+The analogous definitions apply to core and first-flat factors. In an open neighborhood of q=1, x=5/8+delta, t=3/8+delta, with fixed delta>0 sufficiently small, the product of unramified E_p converges normally. To check this directly, cancel the displayed D W against P^(-q); the remaining contribution from that term is O(P^(-q-x)+P^(-2q)). Every other monomial of (3), and R, is absolutely summable at this box. For example the closest further term D V W P has exponent 6t+q-1>9/4, and R has exponent 6x+6t-4>2. The denominator 1-D is uniformly nonzero. The same conclusions hold after multiplying by 1-R.
+
+Consequently the actual Euler product factors as zeta_F^S(q) times the product in (4), including at every selected prime. The pole at q=1 is an actual pole of a meromorphic continuation of the original triple integral; it is not obtained by imposing a Mellin equality on a finite weight.
+
+One safe extraction starts at Re x=3, Re t=2, changes variable y=q-x, and shifts Re q from 6 to 1-delta_0 for fixed 0<delta_0<1/4. At these x,t the product after removal of zeta_F^S(q) converges normally throughout this shift. The characters chi_u are nonprincipal, L(x,bar chi_u) has its absolutely convergent inverse, and no y=1 pole occurs. The u sum is absolutely convergent on the shifted line as well: the Hecke functional equation bounds its conductor factor by q_(v_1v_2)^(x+1/2-Re q), and the radial factor q_u^(-2) dominates even the off-wall ramified growth P^max(0,1-Re q). In particular the unselected v_1 prime weight on the new line is O(P^(-3/2+2delta_0)); the v_2 weight is smaller. These prime sums converge for 0<delta_0<1/4, with room for divisor-small factors. All selected tuples are finite. The original Mellin weights give the required height decay. This extracts a residue R_wall and leaves its full q=1-delta_0 contour. That remaining contour is not bounded by the estimate below.
+
+### 3. The Hecke ratio cancels exactly on the pole
+
+At q=1 one has y=1-x as a complex identity, including imaginary parts. The primitive finite-order Hecke functional equation, with the original fixed bad Euler factors restored and removed exactly, gives
+
+L^S(1-x,chi_u)/L^S(x,bar chi_u)
+ = epsilon(chi_u) C(chi_u)^(x-1/2) Gamma_ratio(x) B_u(x).                         (5)
+
+Here epsilon(chi_u) is its actual unit-modulus root number, C(chi_u) is its actual conductor including the fixed discriminant convention, Gamma_ratio is the standard degree-two gamma ratio, and B_u consists only of original S Euler factors. C(chi_u) is comparable to q_(v_1v_2), with only finitely many fixed bad possibilities. B_u is holomorphic and bounded on fixed positive x strips, up to harmless fixed height powers. Thus the denominator L-function has disappeared identically; no Q, GRH, or bound for its reciprocal is needed on this residue.
+
+The gamma ratio is holomorphic for positive Re x; its zeros at positive integers are harmless. Formula (5) therefore also justifies moving the residue's x contour through possible zeros of the original displayed denominator: after exact cancellation there is no such denominator.
+
+The scalar scale factor remaining from (2) is
+
+X^(1/2-t) Z^(x+t-1) Y^(-x).                                                      (6)
+
+### 4. Signed ramified factors, retaining all physical n and a
+
+For j=2 or 4, the complete source table gives on y=1-x the exact identity
+
+H_p = P^(-1) + sign_j (1-V)/(1-R) a_p rho^(-3) P^(3/2-3x),
+sign_2=+1, sign_4=-1.                                                            (7)
+
+Indeed the common shared-divisor term is -(P-1)P^(-x-y)=-(1-P^(-1)). Together with 1-R/P it leaves (1-R)/P. The odd physical-n entry is J_2=a_p rho^(-3)P^(3/2-3x), while J_4=-a_p rho^(-3)P^(5/2-4x-y) is its negative on this wall. These are the actual all-n/all-a entries; no odd layer is deleted or replaced by an absolute moment.
+
+The first-flat factor is exactly
+
+H_p^flat=(1-R)/P + sign_j (1-V)a_p rho^(-3)P^(3/2-3x).                            (8)
+
+For the original marker, because the unmarked t_completed=0 family contributes exactly 1 to H_p at a ramified prime, the selected factor on the wall is
+
+G_p=P^x[(1-P^(-1))H_p-1].                                                        (9)
+
+For the core marker, deletion of the true even physical-n family changes this by
+
+G_p,core=G_p-P^x R(1-P^(-1))/(1-R).                                               (10)
+
+Multiplication by 1-R gives the respective first-flat selected factors. Equations (9)--(10) retain the finite compensation term -P^(-y)H_p; it is essential to the displayed formula.
+
+At an unramified prime the same exact table gives G_p=O(1), and G_p,core=O(1), at the contour box below. For instance P_p^*=-D+O(P^(-1-c)) there, after its denominators, and the extracted factor P^x converts its leading term to -bar(chi_u(p)); the compensated term P^(-y)H_p is bounded. More explicitly the error terms R/(1-V), P^(1-q)V, and W R in P_p^* have exponents at least 2, 9/4 and 19/8 at the center, whereas x=5/8. All bounds are uniform in the actual character phases, and the finite core deletion is smaller. These assertions remain true with the first-flat multiplier.
+
+### 5. Full row and slot summation at the balanced signed wall
+
+Choose
+
+sigma=Re x=5/8+delta, zeta=Re t=3/8+delta, Re y=3/8-delta.                        (11)
+
+Then sigma+zeta=1+2delta, 6zeta>1 and 6sigma+6zeta-4>2. The residue's x,t contours reach this box by first lowering x from 3 while keeping t=2, then lowering t with x fixed. Throughout, all Euler products and the u sum converge normally. The two actual ramified convergence conditions obtained from (7) are 2 Re t-Re x>-1/2 and Re x+Re t>1. The first move satisfies the stronger 2 Re t-Re x>1/2, and also Re x+Re t>1. The second move satisfies both actual conditions, ending at 2zeta-sigma=1/8+delta and sigma+zeta=1+2delta.
+
+At an unselected prime in v_1, equations (5) and (7) imply that the absolute local row weight is
+
+P^(-2zeta) P^(sigma-1/2) O(P^(3/2-3sigma)+P^(-1))
+ =O(P^(-1-4delta)).                                                               (12)
+
+At a prime in v_2 the corresponding weight is O(P^(-7/4-6delta)). Constants per prime are absorbed by the strict exponent room. Together with the normally convergent unramified product, the sum over every coprime squarefree v_1,v_2 is therefore absolutely convergent. All six epsilon are retained in (5), (7), xi(u) and rho; none is replaced by a cubic ray convention.
+
+Now retain the original disjoint fixed number of prime slots. In slot i, P_i is the original norm scale and each prime weight is bounded and smooth on a fixed annulus. The slot prime has exactly three possibilities:
+
+* It does not divide u. Its row factor G_p is bounded, so P^(zeta-1) and elementary prime-ideal counting cost O(P_i^zeta).
+* It divides v_1. Use the actual zero extension and replace H_p by G_p=O(P^sigma), rather than divide by H_p. The full factor including its forced u valuation, conductor factor, and selected scale is
+  P^(-2zeta)P^(sigma-1/2)P^sigma P^(zeta-1)
+  =P^(2sigma-zeta-3/2).
+  Summing that prime costs O(P_i^(2sigma-zeta-1/2))=O(P_i^(3/8+delta)).
+* It divides v_2. The same calculation has -4zeta in place of -2zeta and costs O(P_i^(2sigma-3zeta-1/2))=O(P_i^(-3/8-delta)).
+
+Thus every actual slot costs at most P_i^(3/8+delta). The residual v_1,v_2 sums, with those finitely many primes removed, are bounded by the same positive convergent products as in (12). There is no ratio by a potentially vanishing local H_p, and no claim that a marked prime remains unramified. The original priority distinction of core marking has been included by (10). The genuine product of the original slot scales is P=product_i P_i, so the total cost is P^(3/8+delta). This argument directly treats the original finite compensated operator; it does not estimate its rescaled subset terms separately or drop any of them.
+
+Combining (6), (11) and the height integrals proves the bound
+
+|R_wall| <<_epsilon Z^epsilon X^(1/8) Y^(-5/8) P^(3/8)                            (13)
+
+at the original fixed-power scale ranges. The same proof applies separately to original/core marking and each marker's original first scale transform. The small delta is selected after the desired epsilon; its scalar cost is explicit in (6), namely X^(-delta)Z^(2delta)Y^(-delta)P^delta.
+
+At the actual leading scales X=Z^(17/48), Y=Z^(23/48), P=Z^(1/6),
+
+1/8*(17/48) -5/8*(23/48) +3/8*(1/6) = -37/192.                                  (14)
+
+This is below -3/16 by 1/192. It is a bound for the explicitly extracted coupled residue, not for the full cubic sector or the previously defined first nonpolar remainder. The q-shifted integral from Section 2 remains part of the exact original probe and requires a genuine new estimate. No RH proof or improved complete-sector exponent follows from (13) alone.
+
+
+## Source clarification: the user's noncubic-twist theorem
+
+The qualitative noncubic-twist holomorphy theorem in the user's [fixed source](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/d4f8dfe5b487cfa2cafb606bb067b7e8bfe39e66/reports/20261011_qrh_selection_bridge/CUBIC_NONCUBIC_TWIST.md) remains the user's contribution and is not needed for the coupled-wall proof above. Its main theorem, fixed-hole extension and conjugated-coefficient version pass the supplementary source review in the companion REFEREE. The original source files are preserved.
+
+For subsequent use of its finite CRT calculation, the standard cubic Jacobi notation is
+
+    theta_w(4) = (4/w)_3 = (w/4)_3 = (w/(-2))_3^2,
+
+not (w/4)_3 squared. For the primary prime w=-2-3 omega of norm seven, omega=4 modulo w, so (4/w)_3=4^2=2=omega^2. Modulo -2 one has w=omega, hence (w/(-2))_3=omega and (w/4)_3=omega^2; the extra square would instead give omega. The source's later CRT identity already uses the unambiguous theta_w(4), and its qualitative no-pole conclusion is unchanged. No moving-level or additional lambda-ray estimate is inferred from that qualitative result here.

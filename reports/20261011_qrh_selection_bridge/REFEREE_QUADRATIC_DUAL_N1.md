@@ -2242,3 +2242,86 @@ The scales V in [1/2,2], including v=1, are treated directly by the finite colum
 #### Consequence
 
 The former squarefree-column restriction is removed for this specific true inverse coefficient. This is not an arbitrary-coefficient saving or a balanced detector-tail estimate. The character throughout is the source cubic residue symbol; a general fixed sextic or quadratic target twist has not been included.
+
+
+# Review of Part XXVI: the actual coupled residue
+
+## Independent review: the actual coupled pole of the complete cubic core
+
+### Decision and exact object
+
+The coupled-wall proof in Part XXVI passes independent review. For eta=1 and the actual nonunit cubic good core u=epsilon v1^2 v2^4, it extracts the genuine pole q=x+y=1 from the original triple Mellin identity. All six units, all physical n/a, the two actual marker conventions, both first-scale transforms and the original finite compensated slot operator are retained. The resulting coupled residue satisfies O(Z^(-37/192+epsilon_loss)) at the original leading geometry, with no Q input. The entire shifted q contour remains in the exact identity. This residue is not identified with the previously defined first nonpolar remainder, and the bound gives no complete-cubic improvement by itself.
+
+### 1. Genuine extraction and complete convergence
+
+The pinned original source's exact Poisson identity supplies the three Mellin weights, q_u^(-t), and the full scalar Euler identity. At an unramified prime the numerator (3) is the original complete local polynomial. Removing (1-P^(-q)) cancels its genuine leading D W=P^(-q). The remaining term from this cancellation is bounded by P^(-q-x)+P^(-2q); the other monomials and R are strictly summable in the stated box. The denominators 1-D and 1-R are nonzero there. The finite selected factors are treated without any H_p or G_p division.
+
+At x=3,t=2, moving q from 6 to 1-delta0 with 0<delta0<1/4 is legitimate. The local product after the zeta(q) extraction remains normally convergent along the shift. Since v1v2 is nonunit, every character has a genuinely ramified good prime and is nonprincipal, so no y=1 pole is crossed. The inverse L(x) is on its absolute line. On the new q line, the functional equation and the complete ramified table give a v1 prime weight O(P^(-3/2+2delta0)); the v2 weight is smaller. Hence the u sum is normally convergent, including small divisor losses. Original Mellin decay handles all heights and the horizontal contour sides. This establishes a residue plus the full remaining contour, rather than imposing a diagonal equality on independent height variables.
+
+### 2. Exact functional equation on the residue
+
+On q=1 the equality y=1-x is a complex equality. Applying the genuine finite-order Hecke functional equation, with the fixed S factors restored and removed explicitly, cancels the displayed L(x,bar chi_u) denominator exactly. The remaining conductor power has exponent x-1/2, with good conductor v1v2 and only finitely many bad conductor possibilities. The root number is retained; taking its modulus later costs one. The gamma ratio is holomorphic for positive real part of x, including its harmless zeros at positive integers. The deleted factors have nonzero denominators on this positive strip and only fixed height costs. Thus moving this two-dimensional residue through the former L zeros is justified by an actual identity, not a reciprocal-L bound.
+
+### 3. Full ramified arithmetic and both markers
+
+The original local family table was reread. For j=2,4 the zero extension sets D=W=0. The shared-divisor term on q=1 combines with 1-R/P to give (1-R)/P, while the odd entries are respectively plus and minus a_p rho^(-3)P^(3/2-3x). This proves (7) and its first-flat version (8), without deleting physical odd layers.
+
+In the original marked operation, the t_completed=0 family is (1-V)^(-1), whose contribution after the ramified normalization is exactly one. The compensated operation therefore gives P^x[(1-P^(-1))H_p-1], including its rescaled term. The core operation removes precisely R(1-P^(-1))/[(1-R)(1-V)] from the raw marked local factor. After normalization this is the subtraction in (10). These formulas hold through zeros of H_p and use no ratio by it. At unramified selected primes the raw leading term -D becomes bounded after multiplication by P^x; all the remaining table monomials are smaller in the final box. The first-flat multiplier 1-R preserves these conclusions.
+
+### 4. Residue contours and all prime rows
+
+The exact unselected ramified convergence conditions are 2 Re(t)-Re(x)>-1/2 and Re(x)+Re(t)>1. The prescribed path first lowers x at t=2 and then lowers t at fixed x=5/8+delta; both conditions hold throughout. The unramified corrected product is normally convergent along this path, and t stays strictly above the zeta(6t) pole. At the final box the v1 local absolute weight is O(P^(-1-4delta)) and the v2 weight O(P^(-7/4-6delta)). Fixed constants per prime are harmless with this strict room. All six original unit factors retain their actual character phases.
+
+### 5. Every forced slot is paid
+
+The slot supports are disjoint and finite in number. For a slot prime not dividing u, the local selected factor is bounded and elementary prime-ideal counting costs P_i^t. For a slot forced into v1, use G_p=O(P^x), not H_p or a divided quotient. Including q_u^(-t), the conductor power, and P^(t-1), the summed cost is P_i^(2 sigma-zeta-1/2)=P_i^(3/8+delta). For a prime forced into v2 it is P_i^(2 sigma-3 zeta-1/2)=P_i^(-3/8-delta). Hence the full compensated slot operator costs at most P^(3/8+delta), while the remaining row primes still have the convergent products above. No ramified selected prime has been treated as unramified.
+
+The residue scale is exactly X^(1/2-t) Z^(x+t-1)Y^(-x). At sigma=5/8+delta,zeta=3/8+delta this gives the displayed bound X^(1/8)Y^(-5/8)P^(3/8), with the explicit delta loss absorbed after choosing delta against the final epsilon. Substituting 17/48,23/48,1/6 gives -37/192 and margin 1/192 below -3/16. For each first-scale transform, its reciprocal angular Euler factor is absolutely convergent throughout the path, since 6 Re(x+t)-4>1; this uses no zero-free assertion for an angular L-function.
+
+Pinned source: https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex , the labelled exact Poisson identity, local family table, scalar Euler factorization and quotient-free selected operation. The shifted surface is an essential remaining part of the original probe.
+
+
+# Supplementary source review: the user’s noncubic-twist theorem
+
+## Independent audit of the user's noncubic cubic-Gauss twist result
+
+### Verdict and attribution
+
+The main qualitative theorem in the user's [fixed source](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/d4f8dfe5b487cfa2cafb606bb067b7e8bfe39e66/reports/20261011_qrh_selection_bridge/CUBIC_NONCUBIC_TWIST.md) is correct: a primitive finite residue character phi modulo a primary r prime to 3, with phi cubed nonprincipal, gives a normalized cubic-Gauss Dirichlet series holomorphic throughout Re(s)>1/2. Fixed common holes and the conjugated coefficient version are also valid. This is the user's mathematical input. It does not settle a row with an additional lambda-ray multiplier, supply moving-conductor/height bounds, or prove a full negative-unit ordered residue assertion.
+
+One cubic-symbol notation correction is necessary in the introduction and the corresponding final paragraph of the user's referee file. Under the standard Jacobi-symbol convention used in the cited source,
+
+    theta_w(4)=(4/w)_3=(w/4)_3=(w/(-2))_3^2,
+
+not (w/4)_3 squared. The later actual CRT formula written with theta_w(4), and its expression in terms of the chosen xi at the norm-four prime, are correct. This correction does not alter the qualitative no-pole result because all the indicated fixed factors are cubic.
+
+### 1. Source hypotheses and finite transform
+
+Dunn--Radziwill, arXiv:2109.07463v3, Section 5.3, Corollary 5.1 and Proposition 5.1 were independently read. Their input is a periodic sequence at a primary modulus r prime to 3, with finite Fourier transform supported on units. A primitive multiplicative residue character satisfies this condition, including at nonsquarefree r. This does not assert that the character induced on primary ideal generators has exactly the same Hecke conductor.
+
+Use the general finite transform (5.42), not the later cubic-only formula. At zero it gives a nonzero fixed scalar times the sum of phi-hat(d) times the conjugate cubic Jacobi character rho_r(d). Primitive Gauss scaling makes this proportional to the group sum of the conjugate of phi*rho_r. Since rho_r cubed is principal, this group sum vanishes whenever phi cubed is nonprincipal.
+
+The completed source series consequently has its only possible pole removed. Lemma 5.3 expresses the uncompleted source series as that entire completion times reciprocal Gamma factors, which are entire. There is no additional independent zero-index term in the nonzero S-supported Dirichlet series.
+
+### 2. The denominator is retained correctly
+
+Expanding the actual source indices mu=lambda^(-3)e f^3 gives
+
+    D(s)=3^(5/2+3s) phi(lambda) R_phi(s)
+                    L_(3r)(3s-1/2,phi^3).
+
+The squarefree e coefficient and unrestricted f factor are exactly those in the source theta expansion. Their multiplicativity does not require (e,f)=1. The direct factorization is initially absolutely convergent for Re(s)>1. The partial L-series is defined by its primary-generator values and deleted primes, without an incorrect exact-conductor identification. For Re(s)>1/2 its argument has real part greater than one, so its Euler product is holomorphic and nonzero. Also phi(lambda) is nonzero. Dividing proves the claimed continuation in that open half-plane. Replacing s by u-1/2 gives the unnormalized region Re(u)>1 and removes its candidate at 4/3.
+
+### 3. Fixed holes and conjugation
+
+For d squarefree dividing a fixed hole radical and coprime to 3r, the exact Gauss CRT relation inserts bar(chi_d) in the residual normalized series. Its zero extension is precisely the necessary (c0,d)=1 mask. The product phi*bar(chi_d) is primitive modulo rd, and its cube remains nonprincipal on the original r-component. The finite inclusion-exclusion therefore proves the hole version. Conjugating the Gauss coefficient reverses this cubic factor to chi_d, as stated. No uniform estimate in the hole or conductor follows just from this finite identity.
+
+### 4. The norm-four calculation and its orientation
+
+The script was inspected and independently executed. All sixteen residue classes, multiplicativity, primitive support, both additive conventions, all three cubic character projections and fixed-mod-2 fiber cancellations passed with integer arithmetic. Its original-character Gauss sum is 4 psi(h); the literal trace-character sum is -4 psi(h). The prime norm is four, the residue modulus (4) has norm sixteen, and the distinction is maintained.
+
+CRT with a good squarefree w gives exactly the displayed factor psi(w)*theta_w(4) and the corresponding h characters. The bad quadratic character remains after either possible cubic factor. This is a finite identity and does not remove a separate lambda-ray dependence.
+
+For a concrete check of the notation correction, take the primary prime w=-2-3 omega of norm seven. In O/(w), omega=4 modulo 7, so (4/w)_3=4^2=2=omega^2. In O/(-2), w=omega and (w/(-2))_3=omega. Therefore (w/4)_3=omega^2, while its square is omega. Thus the extra square in the introduction cannot be used with the standard denominator-Jacobi convention. If a different primitive cubic character modulo 4 were intended, it would have to be separately defined; the unambiguous correct expression is theta_w(4) or (w/(-2))_3^2.
+
+Primary source: https://arxiv.org/html/2109.07463v3 , equations (5.7), (5.42), (5.44)--(5.52), and Lemma 5.3. The argument avoids extending the cubic-only hypothesis of Lemma 5.4.
