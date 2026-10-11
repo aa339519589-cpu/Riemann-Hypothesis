@@ -40,11 +40,19 @@ threshold = -F(49, 440640) / (1 - h / 4)
 assert threshold == -F(49, 351135)
 assert -F(49, 440640) - F(51, 64) * threshold == 0
 
+# Uniform marked row: exponent vectors in U, q_E, q_F, with D=EF.
+marked_prefactor = (F(0), F(-1, 2), F(-1))
+residual_scale = (F(1), F(-1), F(-3))
+marked_piece = add(marked_prefactor, scale(F(1, 2), residual_scale))
+assert marked_piece == (F(1, 2), F(-1), F(-5, 2))
+assert marked_piece == add((F(1, 2), F(-1), F(-1)), (F(0), F(0), F(-3, 2)))
+
 print(json.dumps({
     "C_squared_norm_X_Y_qR": [str(x) for x in add(scale(2, C_amplitude), domain_count)],
     "pair_support_count_X_Y_qR": [str(x) for x in overlap_count],
     "finite_domain_Gram_energy_target": "7/12",
     "resulting_low_target": "-3/16",
     "formal_high_endpoint_threshold": str(threshold),
+    "uniform_marked_piece_U_qE_qF": [str(x) for x in marked_piece],
     "scope": "algebra and local support only; Gram saving and high extension unproved",
 }, indent=2))
