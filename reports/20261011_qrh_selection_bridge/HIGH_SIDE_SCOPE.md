@@ -89,7 +89,8 @@ J_\eta(Z)-f_\eta(Z)=O_\eta(Z^{C(\beta_*)-\delta}),
 [Q] *The Quasi-Riemann Hypothesis*，`openai/math` 固定提交
 [`fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` 的 paper.tex](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex)：
 第 6812–6825 行的 Part II 范围；第 16085–16110 行的适应性端点；
-第 16174–16187 行的统一高低余量；第 15686–15696 行的高端误差接口。相同固定版本的
+第 16174–16187 行的统一高低余量；第 15686–15696 行的高端误差接口；
+第 400–429 行的延拓判据和 (5) 所需量词。相同固定版本的
 [`FinalAssemblyCertifiedBands.lean`](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/DirichletL/Detector/FinalAssemblyCertifiedBands.lean)，
 `detectorMesh_pos` 与 `DetectorCertifiedBands`。
 
