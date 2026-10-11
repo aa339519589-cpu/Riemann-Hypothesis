@@ -1,8 +1,10 @@
-# 原线性探针的非主二次 dual：完整 n=1 层与粗糙子层
+# 原线性探针的完整非主二次 dual 核：全部物理 n
 
-本稿保持用户原 R4 的真实线性 s–m 配对，不改变标记。Part I 在粗糙残余列中证明任意幂次快速衰减；Part II 取消粗糙限制，得到完整 n=1 非主二次核层的上界 Z^(25/48−d/2+ε)，计入原完整补偿后为 Z^(5/48+ε)。后者仍距所需负指数目标差 7/24。两条结论均不覆盖 n>1、generic cubic/sextic 核或 principal 核。
+本稿保持用户原 R4 的真实线性 s–m 配对。Part I 证明 n=1 粗糙残余子层的任意幂次快速衰减；Part II 建立不加粗糙限制的 n=1 二次核层上界；Part III 把它扩展到全部物理 n，覆盖原 completed-index 标记、新 core 标记及其第一层 Möbius 去卷积。
 
-各 Part 的公式编号独立。第一 Poisson 与 Gauss 局部身份继承用户及固定原稿；新增部分为第二次 Poisson、真实 slot LCM 密度拼合与所得界。
+完整非主二次核在原尺度上的上界是 Z^(25/48−d/2+ε)，计入原完整补偿后为 Z^(5/48+ε)。Part III 还给出固定 X′、Y′、slots 下每个 0<T≤Z 的正平方根尺度界，因而严格允许第一层去卷积。仍未控制 principal/unit 核或 generic cubic/sextic 核；现有界距完整负低目标差 7/24，不证明 R4 或 RH。
+
+各 Part 的公式编号独立。第一 Poisson 与 Gauss 局部身份继承用户报告及固定源稿；新增部分为第二次 Poisson、真实 slot LCM 密度、完整平方层的相位与双频标签保持，以及所得全核型界。
 
 # Part I. Rough residual columns
 
@@ -460,3 +462,193 @@ O\left(\frac{Q}{Y'^{3/2}}\right)
 尚未控制的部分包括 \(n>1\) 的局部两支相消、generic cubic/sextic \(H\)-核以及 \(H=\varepsilon a^6\) 主行。即使将这一个层的界计入全部原补偿，它仍没有达到 \(Z^{-3/16+\epsilon}\) 的完整低端目标。
 
 来源与原 Fourier 身份同配套 Part I of this report；其中第一 Poisson/CRT 归一已独立审核。本稿新增的是不加粗糙限制的二次核总量上界及 (13) 的真实 slot LCM 密度拼合。
+
+# Part III. The complete quadratic dual sector for all physical n
+
+## The complete nonprincipal quadratic dual sector, with all physical square layers
+
+### Result and scope
+
+Fix the original rescaling J, ray class sigma and Mellin parameter nu. Write
+\[
+ X'\asymp Z^{17/48-d},\quad Y'\asymp Z^{23/48-d},\quad
+ q_D\asymp P=Z^{1/6-d},\quad Q=q_bX'Y',\quad0\le d\le1/6.
+\]
+The remaining original prime slots and their bounded weights are fixed at this Z. For a second positive parameter 0<T<=Z, change only the marked row's Gaussian argument from q_c q_n^3/(Zq_D) to q_c q_n^3/(Tq_D). Keep X',Y', every original auxiliary character, every Gauss factor, every zero extension and every slot unchanged.
+
+After exact m-Poisson using the original full modulus bscn^3, select the entire set of frequencies
+\[
+ H=\varepsilon v^3a^6,\qquad v\ne1\text{ good squarefree},\quad
+ a\text{ good},                                       \tag{1}
+\]
+with arbitrary unit epsilon and with no coprimality required between v and a. Let S_quad(T) denote this contribution to the true linear R4 pairing, summed over **all** original physical n. The same definition can instead use the changed core marker D|c n_0, where n=n_0r^2 with n_0 squarefree.
+
+**Theorem.** For either of these two precisely stated markings,
+\[
+ \boxed{|S_{\rm quad}(T)|\ll_\epsilon
+ (1+|\nu|)^{C_\epsilon}Z^\epsilon
+ \frac{Q}{Y'^{3/2}}\left(\frac{TP}{X'}\right)^{1/2},
+ \qquad0<T\le Z.}                                    \tag{2}
+\]
+In particular, the original T=Z contribution is
+\[
+ O_\epsilon((1+|\nu|)^{C_\epsilon}Z^{25/48-d/2+\epsilon}). \tag{3}
+\]
+The exact Möbius-decompleted core-marked probe has the same bound for its complete nonprincipal quadratic dual sector. Its normalized finite compensation, and that of the original probe for this sector, are O_epsilon(Z^{5/48+epsilon}). These are bounds for one complete nonzero numerator-core type. They do not estimate the principal/unit-core, generic cubic/sextic types, or the whole R4 pairing; they remain 7/24 short of the critical low target.
+
+### 1. Remove the infinite physical square layer without discarding its masks
+
+Write the old physical index uniquely as n=n_0r^2, n_0 squarefree. The exact coefficient identity, already proved from the original alpha, eta, Xi, R and G conventions, is
+\[
+ b(c,n_0r^2;s)=b(c,n_0;s)\kappa(r),\qquad
+ \chi_{cn_0^3r^6}(m)=\chi_{cn_0^3}(m)1_{(r,m)=1}.
+\]
+Here \(\kappa(r)=\eta(r)^6\overline{\alpha(r)}^6\). No coprimality among c,n_0,r is assumed. Consequently this layer has coefficient kappa(r)/q_r^2 and Gaussian W_G(q_c q_{n_0}^3 q_r^6/(Tq_D)). Expand its remaining unit mask exactly:
+\[
+ 1_{(r,m)=1}=\sum_{h\mid\operatorname{rad}r,\ h\mid m}\mu(h).
+                                                               \tag{4}
+\]
+A term with (h,cn_0)!=1 is zero by the character already present, and is kept as zero.
+
+For a surviving term put j=(h,rad s), k=h/j. The prime-power Gauss formula shows that any p|j with v_p(s)=1 contributes zero. If v_p(s)>=2, the Gauss sum is already supported on p|m, including the v_p(s)=0 mod 6 Ramanujan case. The surviving s therefore satisfy
+\[
+ j^2\mid s,\quad(s,k)=1,\quad(h,cn_0)=1,              \tag{5}
+\]
+and (4)'s m restriction reduces to k|m. Write m=k m'. Its precise arithmetic multiplier is
+\[
+ \xi(k)\chi_{cn_0^3}(k)\overline{\chi_s(k)}.           \tag{6}
+\]
+It has modulus one because (k,bscn_0)=1.
+
+Use the full base modulus M=bscn_0^3 for m'. If L is its frequency, the original full modulus Mr^6 for m has frequency
+\[
+ H=(r^6/k)L.                                          \tag{7}
+\]
+This includes all redundant-period divisibility conditions. At p|r, b_p=v_p(r), the exponent of H is at least 6b_p-1. An exponent of a quadratic core as in (1) is 0 or 3 modulo 6, so it is at least 6b_p. Thus r|a. Write
+\[
+ H'=H/r^6=\varepsilon v^3(a')^6,\quad a'=a/r,
+ \qquad L=kH'.                                       \tag{8}
+\]
+Substitution of L=kH' cancels (6) exactly in the finite Fourier coefficient. This also follows directly from the unit covariance f(km')=(6)f(m') of the entire original periodic arithmetic function: its normalized Fourier coefficient at kH' is multiplied by the inverse of (6). The Fourier argument after m=k m' is sqrt Q L/(kM), hence becomes sqrt Q H'/M. The only remaining change in the completion prefactor is q_k^{-1}.
+
+This argument retains the unit of H and its sixth-power-free core. It does not relabel an unrelated Fourier sum. All squarefree-n_0 computations below are therefore in the true core (1), with a' in place of a, a row scale T/q_r^6, and the exact additional support (5).
+
+### 2. The two physical squarefree-n branches on a quadratic core
+
+We record the needed consequence of the source's coefficientwise Gauss/CRT identity, including its ray cancellation. If p|n_0, the local table for a quadratic frequency has exactly two nonzero choices:
+
+- p does not divide c, v_p(s)=1 and v_p(H')=3;
+- p divides c, v_p(s)=0 and v_p(H')=3.
+
+There is no case v_p(H')=3+6b with b>0. Thus
+\[
+ n_0\mid v,\qquad(n_0,a')=1.                         \tag{9}
+\]
+Put E=(c,n_0), F=n_0/E. Both are squarefree, and (E,F)=1. The E branch is shared with c; the F branch forces s once. Their normalized completed local magnitudes are respectively
+\[
+ P^{-2}=P^{-1}_{\ c}\,P^{-1}_{\ n_0},\qquad
+ P^{-3/2}=P^{-1/2}_{\ s}\,P^{-1}_{\ n_0}.             \tag{10}
+\]
+For an independent check directly from the original local scalar C: the F branch has t=3,k_s=1,j'=3 and C=G_1P^2G_2 of magnitude P^3; the E branch has t=4,k_s=0,j'=3 and C=P^3G_4 of magnitude P^{7/2}. Division by the source's exact q_c^{1/2}q_{n_0}q_A normalization gives (10), retaining the separate s^{-1/2} factor.
+
+At all other primes the audited n=1 completion applies. Define
+\[
+ g=(c,\operatorname{rad}H')/E,\qquad
+ c=Egc_1,\qquad s=Fg j^2t.
+\]
+Every surviving term has (g,n_0h)=1, (c_1,n_0hH')=1, and the required coprimality of the remaining free s variable is retained. The Gauss support forces s once at g. Its Ramanujan factor has magnitude at most q_g, **not** q_{Fg}. The latter distinction is essential.
+
+The original coefficientwise cancellation of all CRT and fixed-ray factors leaves the free-t character chi_t(H'), multiplied by a uniformly bounded function of one fixed bad modulus and by phases independent of t. In particular its moving good-prime part is precisely the primitive quadratic chi_v(t)^3. It does not turn into a cubic character at the forced F primes: those primes have already been extracted from s, and their rho^{-2}/rho^{-4} factors are fixed coefficients of the row H'. Zeros when t meets H', or when j meets H', are retained. This assertion is the coefficient identity behind the source's scalar Euler product, not an assumption that its finite-ray refinement G is multiplicative.
+
+The completed coefficient has absolute prefactor
+\[
+ \frac{Q}{\sqrt{q_b}\sqrt{q_s}\,q_cq_{n_0}}
+   |\mathfrak c_g|,
+\]
+besides q_r^{-2}q_k^{-1}, the original weights and unit phases. After q_c=q_Eq_gq_{c_1}, the Ramanujan bound cancels only q_g, leaving the useful factor
+\[
+ \frac1{q_{n_0}q_E}\,\frac1{q_{c_1}}.                \tag{11}
+\]
+
+### 3. Second Poisson and the true marked-column density
+
+Expand the c_1 coprimality mask with the free t over e|c_1. The remaining k and sixth-power-a' masks can be expanded over f|rad(k a'). Their coefficients are zero if they meet v. Since e is coprime to hH', no hidden shared e mask occurs. After t=efz the s norm scale is
+\[
+ V=Y'/(q_Fq_gq_j^2q_eq_f).
+\]
+The primitive quadratic smooth character bound O(sqrt(q_v)) holds for every positive V, including short scales. Nonempty s support gives q_Fq_gq_eq_j^2q_f<<Y'. All derivatives are in the normalized variable q_s/Y' on a fixed positive annulus. The original Fourier weight retains
+\[
+ (1+X'q_{H'}/(Cq_{n_0}^3))^{-N}
+\]
+when q_c is in an annulus C; all chain-rule powers are absorbed by Schwartz decay.
+
+For the original completed-index marking D|cn, the condition is D|cn_0r. Hence the reciprocal c_1 column mass is at most a constant times
+\[
+ q_{\operatorname{lcm}(e,D/(D,gn_0r))}^{-1}.          \tag{12}
+\]
+For core marking replace gn_0r by gn_0. This reciprocal ideal-count bound is uniform in every positive column scale, including empty or subunit annuli.
+
+For all Fourier frequencies, without a hard H' cutoff, the actual slot sum satisfies
+\[
+ \sum_D\frac{|w_D|}{q_{\operatorname{lcm}(e,D/(D,gn_0r))}}
+ \ll_{\epsilon,\rm slots}\frac{(q_rq_{H'})^\epsilon}{q_e}.
+                                                               \tag{13}
+\]
+Indeed the extra local factor of a slot prime is one if it divides egn_0r and 1/q_p otherwise. The reciprocal sum over the whole prime window is O(1). The number of its prime divisors in egn_0r is
+\[
+ O_{\rm slots}\!\left(1+
+    \frac{\log(2q_rq_{H'})}{\log Z}\right),
+\]
+since q_ge<<Y' and q_{n_0}<=q_v<=q_{H'}^{1/3}. The product over finitely many fixed slots is bounded by the displayed arbitrarily small power. This proves (13) for the genuine Gaussian/Fourier tails too. Summing e costs O(log Z).
+
+The remaining g and f choices cost only (q_rq_{H'})^epsilon. Finally the **weighted** sum of both squarefree-n_0 branches is
+\[
+ \sum_{n_0\mid v}\sum_{E\mid n_0}\frac1{q_{n_0}q_E}
+ =\prod_{p\mid v}(1+q_p^{-1}+q_p^{-2})
+ \ll_\epsilon q_v^\epsilon.                          \tag{14}
+\]
+Constraints such as (n_0,a')=1 merely delete positive terms in this majorant. This is where both original j=3 branches are retained, rather than charging a forced divisor to the s length and discarding its companion branch.
+
+### 4. Simultaneous physical and Fourier tails
+
+For fixed n_0,r take Gaussian annuli
+\[
+ C_l=e^l TP/(q_{n_0}^3q_r^6).
+\]
+Their common Gaussian bound is O(exp(-c l^2)), uniformly over the original D. Crucially
+\[
+ K_l=C_lq_{n_0}^3/X'=e^l TP/(q_r^6X')
+\]
+is independent of n_0. Thus the weighted n_0 sum (14) can be performed before the quadratic frequency count. With all its small divisor powers included, that count is O(K_l^{1/2+epsilon}) for K_l>=1 and O(K_l^{1/2}) for K_l<=1. It follows from sum_{q_v<=B}sqrt(q_v)=O(B^{3/2}) and the convergent ideal sum sum_{a'}q_{a'}^{-3}; Schwartz tails are retained, not discarded.
+
+Since 0<T<=Z and the original X',P are fixed powers of Z, all positive small powers of K_l are absorbed by Z^epsilon exp(O(epsilon|l|)). Gaussian summation in l is uniform, including q_r^6>TP. We obtain for fixed r,h,j, k=h/j,
+\[
+ \ll_\epsilon(1+|\nu|)^{C_\epsilon}Z^\epsilon
+ \frac{q_r^{-5+\epsilon}}{q_k}
+ \frac{Q}{Y'^{3/2}}\left(\frac{TP}{X'}\right)^{1/2}.   \tag{15}
+\]
+The power q_r^{-5} consists of the exact q_r^{-2} coefficient and q_r^{-3} from the Gaussian scale. The number of pairs h|rad r, j|h is at most 3^{omega(r)}<<q_r^epsilon. Therefore their complete sum and then the r sum converge absolutely, proving (2).
+
+### 5. Core marking, exact decompletion and the original normalization
+
+The proof of (2) applied directly to core marking, with its stated condition D|c n_0. No inequality between two oscillatory marked rows was used. The decompleted probe is the exact sum over external d of the same core-marked probe with T=Z/q_d^6 and coefficient mu(d)kappa(d)/q_d^2. On the original absolute lines this is its defining arithmetic operation. Lifting each original modulus by d^6 multiplies the dual index by d^6, preserving the unit and the sixth-power-free core; hence the sector (1) commutes with this operation. Equation (2) is uniform for these T, so its sector sum is bounded by
+\[
+ \sum_dq_d^{-2}q_d^{-3}<\infty
+\]
+times (3). This also gives absolute justification after completion. This use of the positive column-scale exponent 1/2 does not presume transfer of the unproved negative critical low exponent.
+
+Finally
+\[
+ \frac{Q}{Y'^{3/2}}\left(\frac{ZP}{X'}\right)^{1/2}
+ \asymp Z^{25/48-d/2}.
+\]
+The original Q^{-1/2} factor gives 5/48+d/2; the original q_rho^{-3/2} finite compensation coefficient and its Z^d tuple count remove this d/2, leaving 5/48. Here rho denotes the original rescaling product, distinct from the physical square variable r used above. The original Mellin weight absorbs the polynomial dependence on nu.
+
+### Exact dependencies
+
+- The [fixed source QRH paper](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex), commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb: exact Poisson series and coefficientwise unit cancellation, local scalar and family tables (source lines 3735–4145). In particular both j=3 physical odd branches are used.
+- The audited Part II of this report: full-modulus n=1 normalization, all-scale quadratic Poisson bound, reciprocal column count and weighted Fourier/Gaussian tails.
+- The audited arithmetic coefficient identity and exact Möbius operation in [EULER_DECOMPLETION.md, Parts II and IV](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/dfc211e29c3ac231ada82a640601753c9a119695/reports/20261011_qrh_selection_bridge/EULER_DECOMPLETION.md).
+- The explicit unit-covariant square-layer completion in §§1–2 above. All row primes, fixed auxiliary xi, and every zero extension remain present.
+
+No QRH/GRH zero-free input, conjectural Möbius cancellation, moving-numerator R2 uniformity, or unproved cubic dispersion estimate is used. This establishes a complete partial-core estimate, not the missing whole-probe correlation.
