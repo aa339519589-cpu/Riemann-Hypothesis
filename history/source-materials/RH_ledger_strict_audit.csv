@@ -1,0 +1,353 @@
+index,seq,round,start,end,title,verdict,certification,note,rh_progress
+0,1,12,1,249,Bombieri null-cone audit,REJECTED — ledger自身错误/过度闭合,独立公式/源方向复核,Section 11 的质量锥方向写反：源侧是离线质量至少一半；本块据此声称纯临界核满足源条件，源归属结论错误。,0
+1,2,13,250,369,semilocal ground-state branch: exact obstruction,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,3×3 反例重算成立：反射对称/秩二交换关系不能强制最低态既简单又偶；Rayleigh 小能量也不能在无谱隙时控制角度。,0
+2,3,14,370,436,the Krein–Rutman compactness claim fails in the continuum,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,平移算子有限和的非紧性证明成立：可取弱收敛到 0 的局部振荡序列，而至少一个移位分量范数保持正下界。,0
+3,4,15,437,507,the claimed polar-term scaling is contradicted by the constant mode,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,常数偶模代入极项给出范数至少 ~lambda/log lambda，和 O(log lambda) 不相容；计算成立。,0
+4,5,16,508,556,a fixed compact window cannot close the all-scale criterion,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,窗口增大使最低 Rayleigh 商单调不增；一个固定窗口的正性不能给大窗口下界，逻辑成立。,0
+5,6,17,557,713,the unweighted Bombieri mass cone can be inflated inside the critical kernel,REJECTED — ledger自身错误/过度闭合,独立公式/源方向复核,沿用了错误的“临界侧半质量”方向；临界核膨胀的抽象结论可成立，但不是 Bombieri Section 11 的源质量锥。,0
+6,7,143,714,794,a rigorous toy model of high-frequency local cancellation,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,toy model 的局部精确抵消与质量 ~1/2 极限可由 Fourier 系数直接核算；它只否定纯紧性/权重直觉。,0
+7,8,142,795,855,explicit noncompactness of the infinite-off-line branch,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,权重 d_xi^{-1}~|xi|^{-2} 与 N(T)=O(TlogT) 给尾平方和 <<logR/R^3；高频 l2 质量在固定窗口可不可见，成立。,0
+8,9,141,856,978,a finite-off-line contradiction via boundary annihilation,REJECTED — ledger自身错误/过度闭合,独立公式/源方向复核,“若 λ=0 关系在 t_n→∞ 持续则矛盾”的有限维子引理成立；但用“小支撑时 λ<0 不可能”拼接成“所有有限离线零点已闭合”没有跨 t 的分支控制，最终闭合结论不成立。,0
+9,10,127,979,1062,"fixed-window Weil positivity is a finite certificate, not a global closure",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+10,11,128,1063,1154,the Shimizu v2.4 scalar-to-cyclic trace bridge is not independently established,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+11,12,117,1155,1268,exact unweighted regularization criterion for the Section-11 critical block,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,Tikhonov 正则化一阶变分与比较不等式重算成立；缺的是选定分支的 sqrt(epsilon_N) 级残差率。,0
+12,13,86,1269,1321,a model shows that real frequencies and the Bombieri weight do not force range exclusion,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+13,14,84,1322,1411,Abe's claimed zero-free region loses a tangent-intercept factor,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+14,15,91,1412,1448,shrinking the prime scale for higher moments does not automatically bootstrap the finite certificate to RH,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+15,16,90,1449,1486,"Burnol's completeness theorem concerns all zeros, not the critical subset needed by Bombieri",SUPERSEDED / PARTIAL,独立复核 + 后文勘误,“Burnol 只给全零点，不能得到临界子集”说得过宽：若离线集合有限，Burnol 的有限删除完备性可给临界系统密度；Round 92 已修正。,0
+16,17,89,1487,1522,the Gaussian--Perron local profile does not give an unconditional zero exclusion,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+17,18,88,1523,1556,"the new two-thirds theorem is a certified finite-moment bound, with an explicit ceiling below RH",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+18,19,87,1557,1613,the curvature--homology manuscript confuses a jet's spectrum with the full distribution's spectrum,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+19,20,83,1614,1692,a \(1\times1\) countermodel invalidates the scalar trace inference,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,1×1 线性泛函模型 c=2 而 mu(Omega^2)=3、tr(K^2)=4，直接否定“线性 readout 自动变成平方 trace”；成立。,0
+20,21,78,1693,1786,"the Xi-kernel log-concavity manuscript proves at most a TP2 condition, and its global tail step is not closed",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+21,22,79,1787,1845,the Robin-criterion manuscript promotes two endpoint estimates to all exponents,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+22,23,80,1846,1913,the approximated-\(\xi\) limit argument confuses exact symmetry with symmetry of truncations,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+23,24,63,1914,2000,"critical exponentials are dense, while the weighted range is dense and nonclosed",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,临界零点正比例 + Cartwright 零点计数给有限窗口完备性；加权合成 Hilbert–Schmidt，因此稠密但非闭范围，逻辑成立。,0
+24,25,61,2001,2093,Fourier interpolation uses all zero locations and does not close the critical-only range,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+25,26,62,2094,2140,the matching \(\zeta'\) negative-moment results do not supply an unconditional closure,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+26,27,64,2141,2189,"the August 2026 rank--trace result is a proportion theorem, not RH",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+27,28,65,2190,2231,even density one would not be the pointwise RH conclusion,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,密度 1 仍允许有限或 o(N) 离线零点；严格弱于逐点 RH，成立。,0
+28,29,52,2232,2354,an analytic-continuation threshold for the zero-collapse relation,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,若临界系数拥有任一正宽度指数矩，则局部恒等式可解析延拓到整条实轴并由增长率排除非实指数；条件定理成立。,0
+29,30,53,2355,2452,explicit weighted-range countermodel with boundary correction,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,整数频率 + 边界校正可构造精确 weighted-l2 局部表示；这是有效结构反模型，不是 zeta 反例。,0
+30,31,54,2453,2544,the tangent-intercept error in Abe v26,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+31,32,55,2545,2593,the eta-function nonvanishing claim is circular,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+32,33,56,2594,2669,repairing Abe's intercept makes the geometric equation tautological,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+33,34,57,2670,2729,the prolate approximation is not the Weil minimizer,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+34,35,58,2730,2799,finite algebraic asymptotics cannot see the xi remainder,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+35,36,59,2800,2881,explicit counterexample to the Fourier/Paley--Wiener lemma,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,高斯显式反例 f(v)=e^{-v^2}(v^2-3/4) 直接使所声称的普遍非零积分为 0；反例成立。,0
+36,37,60,2882,2936,\(\Xi\) is not of finite exponential type,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,沿 Xi(-iR) 用 Stirling 得 log|Xi(-iR)|=(R/2)log R+O(R)，故 Xi 不是有限指数型；成立。,0
+37,38,50,2937,3000,audit of the Zenodo 20518741 self-adjoint determinant claim,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+38,39,51,3001,3053,what critical-line completeness does and does not prove,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+39,40,44,3054,3147,"correction: Fatou restores weighted-ℓ² membership, but not norm conservation",SUPERSEDED / PARTIAL,独立复核 + 后文勘误,Fatou 修正确实恢复 l2 且有限异常质量保留；其中 d_gamma≥1/4 的措辞只对实临界坐标成立，Round 48 已收窄。,0
+40,41,43,3148,3224,an explicit weighted-ℓ∞ local-null countermodel,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,整数频率 toy model 本身成立，但它只反驳较弱的 weighted-l∞ 类；Round 44 后不能再拿它反驳 Section 10 的实际 l2 极限。,0
+41,42,42,3225,3304,"the Section 10 limit is weighted-ℓ∞, not weighted-ℓ²",REJECTED — ledger自身错误/过度闭合,独立公式/源方向复核,声称坐标极限甚至不必属于 l2，遗漏 Fatou；Round 44 已明确撤回。,0
+42,43,41,3305,3381,direct countermodel to the real-locus topology argument,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+43,44,37,3382,3463,audit of the vorton/FUP scattering proof claim,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+44,45,36,3464,3527,audit of the parameter-limit \(\xi\)-function proof claim,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+45,46,35,3528,3598,direct counterexample to the Tope-operator uniqueness lemma,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+46,47,34,3599,3691,audit of the Robin-criterion proof claim,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+47,48,32,3692,3776,the cited source identifies positivity as the missing assertion,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+48,49,31,3777,3884,audit of the semilocal spectral-descent proof claim,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+49,50,28,3885,3992,source-problem correction: Bombieri's Sections 8 and 11 are different,CERTIFIED CORRECTION,源/公式交叉复核,源问题分离核对正确：Section 11 是纯未加权局部 Gram；Sections 8/10 是带 d_gamma 权重和边界校正的第一变分问题。,0
+50,51,29,3993,4106,source mass-direction correction for Bombieri's Section 11,CERTIFIED CORRECTION,源/公式交叉复核,源质量方向修正正确：Section 11 负特征向量的至少一半 l2 质量在离线坐标；并明确撤回早期相反表述。,0
+51,52,30,4107,4231,the corrected off-line mass cone is also locally realizable,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,局部可实现性结论可由 Littlewood 的最终网格 + Kadec 修复；本轮原证明把 Riemann–von Mangoldt 单独用于“每个固定长度区间都有零点”，该理由本身不足。,0
+52,53,26,4232,4457,finite-section stability turns the Bombieri gap into an exact range test,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,有限截面稳定性估计的算子论部分可用；源归属需按后续问题分离重新解释。,0
+53,54,21,4458,4590,"the real finite-\(N\) target is an upper bound, not the half-mass inequality",REJECTED — ledger自身错误/过度闭合,独立公式/源方向复核,把有限负分支的质量方向/目标解释成了错误方向，并且混入了后来被区分出去的加权模型；源忠实结论失败。,0
+54,55,19,4591,4724,the exact finite-\(N\) Schur complement isolates the surviving arithmetic estimate,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,抽象 Schur 消元是对的，但当时使用的质量解释/源坐标后来被 Round 28–29 修正。,0
+55,56,18,4725,4849,finite-section residual convergence still does not select the Bombieri representative,REJECTED — ledger自身错误/过度闭合,独立公式/源方向复核,有限残差 no-go 的抽象构造可成立，但源质量方向沿用旧错误；不能作为 Section 11 源忠实结论。,0
+56,57,20,4850,4998,"coordinate correction: the exact Bombieri Schur complement is generalized, not ordinary self-adjoint",SUPERSEDED / PARTIAL,独立复核 + 后文勘误,加权广义 Schur 代数可作辅助模型，但后来确认它属于 Sections 8–10 的第一变分问题，不能当作 Section 11 的源忠实模型。,0
+57,58,22,4999,5119,the exceptional cross-block is uniformly bounded; vanishing exceptional mass is a critical near-kernel effect,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,交叉块上界作为固定有限异常集合的分析可用，但它依附于后来被重新区分的加权模型；只能保留为辅助结论。,0
+58,59,23,5120,5258,a weighted approximation-at-the-eigenvalue-scale criterion preserves exceptional mass,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,加权近似率判据的算子估计可用；不能直接归于 Section 11，故只保留为辅助充分条件。,0
+59,60,24,5259,5372,the weighted critical synthesis has dense nonclosed range,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,加权合成 Hilbert–Schmidt/稠密非闭范围的结论可用；这是辅助加权模型，不是 Section 11 直接闭合。,0
+60,61,25,5373,5499,exact spectral characterization of the weighted-range target,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,理想加权算子的谱测度判据是标准算子论结论；源归属需服从 Round 28/116 的问题分离。,0
+61,62,27,5500,5626,zero counting gives the universal finite-section tail envelope,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,零点计数给出的 Hilbert–Schmidt 尾上界可用；它不是实际特征值下界，也不是 RH 闭合。,0
+62,63,33,5627,5679,form convergence is stronger than Fejér convergence,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+63,64,38,5680,5745,audit of the Heegner/Arakelov spectral-compactification claim,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+64,65,39,5746,5765,source-faithful correction to the form-core statement,CERTIFIED CORRECTION,源/公式交叉复核,form-core 的 liminf/核心表述修正方向正确：任意 Fejér 截断不自动给表值收敛。,0
+65,66,40,5766,5815,finite Galerkin data do not close the continuum Weil form,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+66,67,45,5816,5911,nonzero-eigenvalue branch is compact; only the zero-collapse branch survives,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+67,68,46,5912,5977,even weighted-ℓ² range membership does not give generic uniqueness,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+68,69,47,5978,6121,zero-collapse automatically yields a weighted-range relation,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+69,70,48,6122,6149,scope correction for the \(d_\gamma\geq\tfrac14\) estimate,CERTIFIED CORRECTION,源/公式交叉复核,范围修正正确：d_gamma≥1/4 只对实临界坐标成立；有限离线坐标只需 d_gamma≠0。,0
+70,71,49,6150,6272,audit of the Zenodo 22113226 polylogarithm/Herglotz proof claim,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+71,72,66,6273,6379,the curvature-homology manuscript does not lift a prime-side statement to the Weil identity,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+72,73,67,6380,6484,audit of the “Overdetermined Weil Systems” preprint,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+73,74,68,6485,6582,the Tope-operator proof fails at its pairwise monotonicity lemma,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+74,75,69,6583,6678,the vorton/FUP program does not establish the arithmetic resonance gap,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+75,76,70,6679,6777,the real-locus proof does not control global components or crossings,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+76,77,71,6778,6827,the modular-KMS claim substitutes the Robin equivalence for a proof,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+77,78,72,6828,6931,the updated semilocal Weil-positivity manuscript assumes its Hilbert norm,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+78,79,73,6932,7021,the Arakelov compactification candidate fails at the spectral determinant identity,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+79,80,74,7022,7106,the thermodynamic/Arakelov version states its missing closure as an axiom,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+80,81,75,7107,7197,the latest Pólya-kernel version analyzes the wrong kernel,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+81,82,76,7198,7240,"the transition-layer sequel identifies, but does not solve, the global positivity problem",NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+82,83,77,7241,7307,the Nyman--Beurling candidate misdefines its generating functions and then argues circularly,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+83,84,81,7308,7393,the Shimizu determinant route does not establish the scalar-to-trace bridge,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+84,85,82,7394,7444,"the new Liouville--Riesz criterion is a one-way sign test, not an unconditional sign proof",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+85,86,85,7445,7529,Beurling--Malliavin completeness cannot replace exact weighted range exclusion,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+86,87,92,7530,7560,"finite off-line support can give critical-system density, but not the required coefficient control",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+87,88,94,7561,7602,the 600-cell Dirac-operator manuscript does not define the claimed operator or determinant,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,600-cell 定义项的权重 exp(-theta_p/c)→1，而系数 ~log p，不趋 0；算子级数的声称收敛已在第一步失败。,0
+88,89,95,7603,7649,the Nicolas-criterion descent has the wrong error logic,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+89,90,96,7650,7669,finite-interval self-adjointness does not identify the zeta spectrum,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+90,91,97,7670,7731,the scalar-to-cyclic trace bridge is not proved,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+91,92,98,7732,7770,the Gram-Jacobi determinant argument fails before the spectral conclusion,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,log(1-E/z) 随 E 增长为 log E，不可能是 O(1/k)；同时把所有 centered zeros 写成实 gamma 已预设 RH。,0
+92,93,99,7771,7790,the new Liouville--Riesz criterion is one-way,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+93,94,100,7791,7831,the finite-\(S\) trace formula does not give the claimed global Weil norm,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+94,95,101,7832,7876,the Heegner potential confines a cusp mode but does not identify the zeta determinant,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+95,96,102,7877,7901,Connes' 2026 prolate strategy still requires convergence of the actual minimizers,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+96,97,103,7902,7964,exact dual criterion for the Bombieri weighted range,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,Hilbert 空间 range theorem 给出的加权采样不等式与 h∈Ran A 等价；这是精确且有用的 reformulation，但不证明该不等式。,0
+97,98,104,7965,7989,the two-thirds theorem cannot be amplified to RH,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+98,99,105,7990,8014,"the \(\ell\)-totient construction is an RH-equivalent error criterion, not an estimate",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+99,100,106,8015,8044,the real-locus proof fails at the claimed monotonicity and component topology,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+100,101,107,8045,8106,Pavesi v7 has a factor-of-\(x\) error before the finite computation,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+101,102,108,8107,8154,the finite Guinand--Weil dictionary is exact at finite level but does not globalize,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+102,103,109,8155,8206,"dense range of the critical synthesis is unconditional, but exact weighted range is not",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,正比例的不同临界零点已给每个有限窗口的未加权完备性；weighted exact range 仍是紧算子非闭范围问题。,0
+103,104,110,8207,8267,zero-count density alone cannot imply weighted range exclusion,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+104,105,111,8268,8321,zeta Fourier interpolation does not supply the fixed-interval weighted dual,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+105,106,112,8322,8466,"a restricted inverse theorem for the finite dictionary, without global positivity",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+106,107,113,8467,8519,the new Suzuki numerical realization proves only the easy implication,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+107,108,114,8520,8599,correction of the gap-to-Kadec bridge,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,对“仅有 liminf 小间隙不能推出 Kadec”的反驳正确；但把它当成 Littlewood 实际定理太弱，Round 115 已修正为连续零点间隙最终趋零。,0
+108,109,115,8600,8673,correction of Round 114: Littlewood gives eventual mesh,CERTIFIED CORRECTION,源/公式交叉复核,Littlewood/Titchmarsh 的实际结论——连续零点纵坐标间隙趋于 0——足以修复固定有限窗口的 Kadec 选点。,0
+109,110,116,8674,8765,source-faithful separation of Bombieri's two variational problems,CERTIFIED CORRECTION,源/公式交叉复核,Bombieri 两个变分问题的源忠实分离正确，阻止后续把 weighted 与 Section 11 unweighted 质量混用。,0
+110,111,118,8766,8867,audit of the overdetermined Weil-system claim,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+111,112,119,8868,8919,the Krein--Marchenko appendix does not identify the zeta zeros,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+112,113,120,8920,9017,semilocal spectral reality does not imply Weil positivity,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+113,114,121,9018,9186,two local repairs: the coefficient nonvanishing calculation and the logarithmic sampling lemma,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+114,115,122,9187,9258,why nested Section-11 truncations do not give eigenvalue monotonicity,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,不同 N 的 Section-11 矩阵既非同一自伴算子的嵌套主子矩阵，也未给 Loewner 单调；不能套 Cauchy interlacing。,0
+115,116,123,9259,9369,"the finite Guinand–Weil dictionary closes a finite bridge, not global positivity",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+116,117,124,9370,9438,the infinite off-line branch is not closed by growing negative inertia,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+117,118,125,9439,9500,rapid-decay local kernels show that coefficient growth alone cannot restore uniqueness,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+118,119,126,9501,9577,a concrete finite-dimensional obstruction to transferring weighted to unweighted branches,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+119,120,129,9578,9648,the Robin-criterion manuscript reverses its decisive implication,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+120,121,130,9649,9735,the semilocal trace shortcut does not prove positivity of the full Weil form,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+121,122,131,9736,9806,Makraini Paper 4 imports the coercive hypotheses and has a non-uniform density passage,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+122,123,132,9807,9869,the Suzuki prime-power certificate closes a finite interval only,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+123,124,133,9870,9947,Velez's completed-kernel factorization assumes the missing positive vector,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+124,125,134,9948,10015,a direct finite-cutoff sign countercheck targets Proposition 6.1,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,这是有限符号诊断而非正式反例；Round 135 修正尾项，Round 136 才形成严格区间证书。,0
+125,126,135,10016,10056,correction of the compact-support sign diagnostic,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,修正了 Round 134 的尾项处理，仍属到 Round 136 严格证书之前的过渡版本。,0
+126,127,136,10057,10151,interval arithmetic plus smoothing formally refutes Velez's printed finite positivity,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,我独立高精度重算 D_infty(F0)=-0.4648317325976807...，落在文中 Arb 负区间；mollification 连续性足以把负号转移到 C_c^infty。,0
+127,128,137,10152,10239,"the adelic fixed-point manuscript is an equivalence sketch, not a global proof",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+128,129,138,10240,10329,Bombieri's λ_N→0 branch is an explicit linear-dependence obstruction,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+129,130,139,10330,10470,"an exact weighted-mass identity on the ideal lattice, and the transfer theorem it demands",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+130,131,140,10471,10550,the full critical-zero family is not a Riesz sequence,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,存在任意接近的临界频率时，两个归一指数列差的 L2 范数趋 0；全临界系统不可能有统一 Riesz 下界。,0
+131,132,144,10551,10666,audit of the 2026 “Overdetermined Weil Systems” claim,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+132,133,145,10667,10707,the \(\log n\) zero-set argument in the same preprint,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+133,134,146,10708,10800,a symmetric high-frequency model with \(T\log T\) critical density,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+134,135,147,10801,10923,the finite-section provenance condition is an exact Schur-complement problem,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+135,136,148,10924,11031,the scalar-to-cyclic trace bridge remains an asserted map,SUPERSEDED / PARTIAL,独立复核 + 后文勘误,早期对 Shimizu 的批评范围过宽；Round 149 修正为：有限矩阵/循环张量 trace 计算可成立，缺的是 ordinary scalar 输入。,0
+136,137,149,11032,11116,"correction: the finite matrix trace calculation is valid, but its scalar input is not identified",CERTIFIED CORRECTION,源/公式交叉复核,修正正确：有限 matrix readout 与 cyclic tensor trace 可成立；ordinary scalar coefficient 与该 trace 的识别仍缺桥。,0
+137,138,150,11117,11211,"latest v2.4 audit: conjugation is correct, while the scalar expansion is still omitted",CERTIFIED CORRECTION,源/公式交叉复核,修正正确：共轭/抽取本身不是决定性错误；承重点仍是 scalar expansion / pullback。,0
+138,139,151,11212,11293,“ledger exhausts” is not a defined projection or density theorem,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+139,140,152,11294,11337,visual correction: the determinant central subtraction is at \(w=0\),CERTIFIED CORRECTION,源/公式交叉复核,行列式中心减法点的视觉/变量修正正确，不改变 scalar-to-trace 缺桥。,0
+140,141,153,11338,11431,the scalar trace contraction is not implied by matrix readout data,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,Hahn–Banach 与一维 smooth model 都说明 matrix readout 数据不决定 ordinary scalar coefficient；成立。,0
+141,142,154,11432,11506,Lemma 6.129 has an unresolved scalar/cyclic type bridge,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+142,143,155,11507,11540,the current public v8 still states the same unproved bridge,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+143,144,156,11541,11611,the missing scalar bridge has the full strength of the determinant conclusion,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+144,145,157,11612,11699,direct Taylor expansion shows what the ordinary scalar coefficients are,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+145,146,158,11700,11759,the gap is already present at the quadratic coefficient,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+146,147,159,11760,11834,Proposition 6.83 does not supply the scalar-to-trace map it claims,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+147,148,160,11835,11905,Theorem 6.144 explicitly depends on the unproved scalar pullback,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+148,149,161,11906,11972,finite-dimensional hostile model for the missing restriction,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+149,150,162,11973,12015,an independent finite-interval operator route leaves the same global limit open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+150,151,163,12016,12075,the alleged scalar restriction changes the data source,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+151,152,164,12076,12159,the direct quadratic calculation isolates the missing map,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+152,153,165,12160,12217,a purported Bombieri-extrema proof fails at its first logarithmic asymptotic,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+153,154,166,12218,12265,exact finite Guinand--Weil dictionaries do not supply global positivity,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+154,155,167,12266,12311,the prolate/Weil route still lacks the eigenvector-to-\(\Xi\) passage,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+155,156,168,12312,12364,"v2.4's own change log confirms the scalar bridge was clarified, not proved",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+156,157,169,12365,12426,the universal coefficient object does not identify its two evaluations,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+157,158,170,12427,12506,the full-source scan finds no earlier scalar-to-readout bridge,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+158,159,171,12507,12594,compact weighted synthesis identifies the infinite escape condition,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,紧加权合成把“高频逃逸”精确表达为弱收敛但像强收敛的紧算子现象；成立。,0
+159,160,172,12595,12684,Pavesi v7 has a variable mismatch before the concavity test,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+160,161,173,12685,12746,the Robin-criterion manuscript assumes its decisive converse,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+161,162,174,12747,12797,the new geometric and finite-field claims remain programmatic or conditional,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+162,163,175,12798,12857,"Groskin v3 closes finite certification, not the all-band Weil criterion",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+163,164,176,12858,12936,Velez v5 replaces Connes' asymptotic semilocal trace formula by the missing global norm identity,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+164,165,177,12937,13025,Polson's Thorin interpolation proof contains a false kernel identity and an invalid Mellin strip,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+165,166,178,13026,13116,the completion-locked Hilbert–Pólya manuscript assumes the prime-spectrum bridge it later declares proved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+166,167,179,13117,13197,the current completion-locked v3 preserves the M4 dependency cycle,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+167,168,180,13198,13303,"the Fredholm--scattering branch is retained, with its closure obligations made explicit",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+168,169,181,13304,13409,direct derivation of the \(\Gamma_0(163)\) scattering determinant keeps the matrix channel active,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,按标准 Eisenstein 常数项归一，Gamma_0(N) 散射行列式必须包含 cusp/Dirichlet 因子；单一 zeta 比值不能凭空等同完整多 cusp determinant。,0
+169,170,182,13410,13522,"the Heegner/DSM metric route remains active, and its positivity bridge is explicitly repairable",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+170,171,183,13523,13633,"the CM-potential/Bessel branch stays active, but its exact ODE and global operator must be repaired",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,变量代换重算得到 Bessel 阶数 2ir，衰减解是 K_{2ir}，不是 K_{2r}；局部 ODE 修正成立。,0
+171,172,184,13634,13758,"the projection-valued-defect/GNS route supplies valid algebra, but keeps the arithmetic inputs open",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,有界自伴 nilpotent 必为 0，缺陷分解代数成立；把其 determinant 识别为 |Xi|^2 仍是额外算术假设。,0
+172,173,185,13759,13884,the Kulik truncated-Weil route confirms a finite criticality theorem but leaves the continuum bridge open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+173,174,186,13885,14000,Velez v2 has an internal half-density algebra error in Proposition 3.5,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,直接换元给 h(e^a)=e^{-a/2}C_F(a)，所以成对 prime 系数是 (p^{-k/2}+p^{k/2})C，不是 2p^{-k/2}C；打印身份错误。,0
+174,175,187,14001,14044,status correction: Proposition 6.1 is unproved,CERTIFIED CORRECTION,源/公式交叉复核,状态修正正确：Proposition 6.1 仍是未证明承重命题，且打印的 prime-side 身份有直接代数不匹配。,0
+175,176,188,14045,14070,A/B result: no new unconditional RH proof progress,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+176,177,189,14071,14131,A/B result: the approximated-\(\xi\) limit argument does not produce RH progress,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+177,178,190,14132,14220,A/B result: the Nicolas-criterion induction does not prove RH,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+178,179,191,14221,14293,A/B result: the 600-cell manuscript fails at its operator and trace definitions,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+179,180,364,14294,14360,正确 Ξ 核的正性可由 Jacobi 自对偶和逐项符号严格证明,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,Jacobi 自对偶 P(x)=pi^(5/2)x^(-5/2)P(pi^2/x) 重算成立；x≥3/2 逐项非负并严格正，故 P(x)>0 对所有 x>0。,0
+180,181,363,14361,14427,正确 Ξ 核的对数曲率可化为一个精确的 theta 和式不等式,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,P=2xS4-3S2、P′=5S4-2xS6、P″=-7S6+2xS8 及 log-curvature 公式逐项重算一致。,0
+181,182,316,14428,14468,Meghani completion-locked Hilbert–Pólya manuscript audit,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+182,183,300,14469,14500,Mittermeier Part 5 explicitly leaves the RH-strength clause open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+183,184,291,14501,14561,Chen's newest angular-monotonicity manuscript has a sign error and an unproved off-line zero bound,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+184,185,289,14562,14616,The newest Aksman vorton/FUP submission still fails at porosity and at the required gap size,NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+185,186,280,14617,14675,Abe Version 26 miscounts the poles in the final contradiction,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+186,187,279,14676,14722,Abe Version 26 still has a direct tangent-intercept algebra error,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+187,188,278,14723,14772,"SAM public verifier validates finite custody, not the infinite Weil form",NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+188,189,261,14773,14859,"A/B result: PIHR-XV's boundary Riesz decay is valid at the (o(\sqrt{x})) scale, not at the RH sign scale",NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+189,190,262,14860,14947,"A-result: the large-prime positive-part memory estimate can be completed unconditionally, but it does not close RH",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+190,191,261,14948,15066,"A/B result: the PIHR-XV boundary Riesz decay theorem is valid, but is below the RH-sensitive scale",NOT CERTIFIED AS RH STEP,严格保守审核,未发现可独立闭合为 RH 的新承重定理；即使本块的局部/来源性判断成立，也不足以构成无条件完整证明，因此按严格标准不认证为 RH 步骤。,0
+191,192,192,15067,15095,A/B result: Migdal's turbulence manuscript explicitly conditions its zeta analysis on RH,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+192,193,193,15096,15177,A/B result: Yang's Euler-product matrix construction fails before the limit operator,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+193,194,194,15178,15214,A/B result: Jaiswal's claimed disproof supplies no off-critical zero,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+194,195,195,15215,15255,A/B result: the source-native arithmetic/gauge paper is conditional on an admitted source system,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+195,196,196,15256,15321,A/B result: Proposition 6.1 has no complete unconditional proof,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+196,197,197,15322,15379,A/B result: the cited semilocal theorem does not prove Proposition 6.1,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+197,198,198,15380,15432,"A/B result: support exhaustion is algebraic, while Proposition 6.1 carries full Weil positivity",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+198,199,199,15433,15479,A/B result: the stated graph-energy diagonal asymptotic is false,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,由 PNT，sum_{p^k≤X} log p p^{-k/2} 的 k=1 主项 ~2sqrt X，绝非 log X；所引 graph-energy 对角渐近错误。,0
+199,200,200,15480,15549,A/B result: the printed \(q_X\) is not symmetric on the stated cross-correlation domain,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,"对一般交叉相关 C_{F,G}，C_{G,F}(a)=conj(C_{F,G}(-a))，不是 C_{F,G}(a)；打印的 q_X 未经对称化并非所称 Hermitian form。",0
+200,201,201,15550,15574,"A/B result: the source gives no hidden symmetrization of \(C_{F,G}\)",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+201,202,202,15575,15604,A/B result: the contradicted Proposition 6.1 breaks every dependent conclusion,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+202,203,203,15605,15656,A/B result: the semilocal spectral-descent manuscript removes essential hypotheses,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+203,204,204,15657,15697,A/B result: the semilocal manuscript discards the \(\epsilon_N\) shift,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+204,205,205,15698,15743,A/B result: Abe v26's zero-free-region proof loses a factor in (5.5),CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+205,206,206,15744,15795,A/B result: Shimizu v2.4 does not prove the scalar-to-trace bridge,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+206,207,207,15796,15833,A/B result: Kubalalika v2 cannot apply its Dirichlet-polynomial approximation on the contour,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+207,208,208,15834,15884,"A/B result: Oukil v17 gives a conditional rigidity implication, not universal zero exclusion",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+208,209,209,15885,15961,A/B result: Farrell v1's local projection is undefined on the off-critical quartet defect,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+209,210,210,15962,15990,A/B result: Derscariu--von Mangoldt v9 explicitly leaves finite off-line exceptions unresolved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+210,211,211,15991,16029,A/B result: Tope v1's algebraic pair inequality has an explicit counterexample,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+211,212,212,16030,16076,A/B result: Aksman's vorton--FUP chain fails at uniform porosity and at the resonance-strip transfer,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+212,213,213,16077,16115,A/B result: Kulik's prime-field closure remains an unproved global frame/determinant condition,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+213,214,214,16116,16178,"A/B result: Morató de Dalmases's 600-cell Dirac manuscript fails at operator existence, trace class, and determinant steps",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+214,215,215,16179,16220,"A/B result: Aksman's Fredholm-scattering causality manuscript asserts, but does not prove, the pole-exclusion theorem",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+215,216,216,16221,16266,A/B result: Aksman's Heegner-orbifold manuscript assumes finite spectral capacity and an invalid prime/geodesic correspondence,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+216,217,217,16267,16308,A/B result: Aksman's revised vorton--FUP manuscript still contradicts its own positive-core geometry and lacks a valid resonance limit,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+217,218,218,16309,16341,A/B result: PIHR--RH XV proves decay below the RH-sensitive scale and explicitly leaves the sharp barrier open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+218,219,219,16342,16396,A/B result: Paltoo's adelic SSBF manuscript is undefined on its quotient and uses the zero--spectrum correspondence circularly,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+219,220,220,16397,16449,A/B result: Aksman's DSM--861 obstruction-class manuscript has an impossible finite-dimensional bridge and an internally inconsistent spectral map,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+220,221,221,16450,16483,A/B result: Döring's projection synopsis confuses real zero ordinates with the real parts of zeros,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+221,222,222,16484,16524,A/B result: Aksman's Heegner-surface scattering note misuses unitarity and loses the extra Dedekind-zeta factor,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+222,223,223,16525,16584,A/B result: Bonelli's Kaleidoscopic Filter fails at root confinement and never proves the discrete-to-zeta bijection,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+223,224,224,16585,16624,A/B result: Yang--Yang's density-one theorem does not imply the Riemann Hypothesis,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+224,225,225,16625,16670,A/B result: Mittermeier's terminal-episode theorem removes only a reduction branch and leaves the RH-strength universal inequality open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+225,226,226,16671,16714,A/B result: PIHR Part V states its decisive macro-cycle inequality as a conjecture,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+226,227,227,16715,16753,A/B result: PIHR Part XII derives an exact prime-flow recursion but leaves the Bellman barrier unproved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+227,228,228,16754,16800,A/B result: PIHR Part IX closes fixed-parameter asymptotics but leaves the critical boundary layer unresolved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+228,229,229,16801,16838,"A/B result: Devine's 67.3399% theorem is a proportion bound, not a zero-location theorem",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+229,230,230,16839,16880,A/B result: Zhou--Zhou's claimed off-line-zero disproof depends on an unproved permanent upper bound,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+230,231,231,16881,16957,A/B result: Kubalalika's off-line-zero disproof fails in the exponential-sum step,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+231,232,232,16958,17002,A/B result: the well-ordering/symmetry manuscript reverses the meaning of minimality,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+232,233,233,17003,17053,A/B result: the finite-field realization relocates RH to an unproved completeness condition,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+233,234,234,17054,17104,A/B result: Aksman's thermodynamic Weil argument assumes the full positivity bridge,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+234,235,235,17105,17174,A/B result: the Heegner/Lax--Phillips manuscript does not construct the required symmetrizing operator,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+235,236,236,17175,17230,A/B result: Tope v7's central pair inequality is algebraically false,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+236,237,237,17231,17273,A/B result: finite spectral capacity does not imply the claimed zero-location constraint,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+237,238,238,17274,17339,A/B result: Sharma's S-decomposition drops the horizontal-path contribution that detects off-line zeros,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+238,239,239,17340,17409,A/B result: Aksman's vorton/FUP manuscript does not establish the geometric-to-arithmetic implication,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+239,240,240,17410,17479,A/B result: Grant's geometric manuscript has no prime-error bridge and uses an invalid harmonic substitution,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+240,241,241,17480,17528,A/B result: Mittermeier's Suzuki checkpoint paper explicitly leaves the infinite RH tail open,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+241,242,242,17529,17575,A/B result: Mittermeier's tail-completion paper leaves its all-event inequality unproved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+242,243,243,17576,17641,"A result: the terminal-episode exclusion is a verified unconditional subtheorem, not an RH closure",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,两种可积性分支的 Mellin/Landau 矛盾可重做，terminal episode 排除是成立的无条件子定理；它不等于所有 recovery reserve 非负。,0
+243,244,244,17642,17681,A/B result: the PIHR macro-cycle manuscript leaves its critical inequality unproved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+244,245,245,17682,17729,A/B result: Shimizu's determinant closure assumes the missing equality of the two comparison functionals,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+245,246,246,17730,17777,A/B result: the 600-cell manuscript's regularized Dirac operator is not defined as claimed,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+246,247,247,17778,17825,A/B result: Pavesi's real-locus proof reverses the local behavior at transverse critical points,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+247,248,248,17826,17870,A/B result: Chua's Robin-criterion manuscript assumes an unproved all-exponent propagation,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+248,249,249,17871,17922,A/B result: Abe's circle-tangent calculation drops a factor and invalidates its zero-free region,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+249,250,309,17923,17936,Part 4 update confirmed at the actual latest file boundary,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+250,251,250,17937,17990,A/B result: Franchi's semilocal spectral-descent manuscript does not establish finite or global Weil positivity,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+251,252,251,17991,18037,A/B result: Cadeddu's parametric-limit argument confuses big-O error bounds with asymptotic equivalence,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+252,253,252,18038,18113,A/B result: Ip's self-adjoint-operator manuscript assumes the spectral correspondence and is internally inconsistent,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+253,254,253,18114,18150,A/B result: Stone's hardware-stability manuscript has no mathematical bridge to the zeta zeros,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+254,255,254,18151,18228,"A/B result: PIHR Stage VIII yields a verified local kernel theorem, but not the global production-dominance inequality",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,"归一正核的参数导数给 m′=Var(beta)，beta∈[0,1/2] 导出 m′≤m(1/2-m)；局部核定理成立。",0
+255,256,255,18229,18292,"A/B result: Part 3 supplies a verified smoothed-cost identity, while the capacity comparison remains open",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,smoothed cost 的积分恒等式可由 Fubini/分部积分重导；真正 RH 承重点仍是 capacity 比较。,0
+256,257,256,18293,18367,A/B result: the exact active-reserve balance (V_q=C_q-J_q) is fully rederived,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,活动 reserve 的账本恒等式 V_q=C_q-J_q 是纯代数恒等式，重导成立；符号未由恒等式决定。,0
+257,258,257,18368,18420,A-result: the pre-event front-loading bound for \(J_q\) is exact,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,前事件 front-loading 上界及其 deficit 分解由单调核直接得到；是上界，不是 J_q≤C_q。,0
+258,259,258,18421,18486,B-result: the thermodynamic positivity manuscript assumes its cycle-cone closure,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+259,260,259,18487,18574,"A/B result: Part 4 yields an exact recovery-window theorem, but leaves the area inequality open",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,A″>0 时每个事件区间 Y 严减，0<Y_j<delta_j 与唯一 recovery crossing 等价；成立，但不控制面积。,0
+260,261,260,18575,18651,B-result: the local recovery window does not imply \(J_q\le C_q\),CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,抽象数值反模型可直接算得 J>C，说明“局部 crossing”逻辑上不推出 capacity inequality。,0
+261,262,263,18652,18689,"B-result: the quantum-enhanced candidate is a proposal, not an RH theorem",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+262,263,264,18690,18729,B-result: the Fredholm--scattering candidate does not construct the claimed operator or causality bridge,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+263,264,265,18730,18834,A-result: the checkpoint potential has an exact smoothed von Mangoldt representation,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+264,265,266,18835,18876,A-result: there is no unconditional positive reserve floor,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,在 RH 下 reserve 可有 liminf 0，因此任何统一正 reserve floor 都不是必要条件；结论成立。,0
+265,266,267,18877,18970,A-result: finite verified spectral data yields a valid pinned upper bound for \(J_q\),CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,有限已验证谱信息确实只能给 pinned one-sided bound，剩余未验证尾部留下正 slack；不可能自动闭合。,0
+266,267,268,18971,19010,Connes 2026 finite-prime approximation: the explicit convergence gap remains open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+267,268,269,19011,19049,the updated zeta-spectral-triple paper leaves the same two load-bearing steps open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+268,269,270,19050,19096,Shimizu v2.4 does not prove the operator-convergence bridge needed for its determinant identity,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+269,270,271,19097,19125,Chua v5: Nicolas-criterion halving induction is not established,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+270,271,272,19126,19155,Cadeddu v5: 截断误差不能决定零点处的相对极限,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+271,272,273,19156,19185,Aksman unified architecture: the operator-limit bridge is stated as a conjecture,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+272,273,274,19186,19211,"Covei Riccati--Gamma paper: local curvature is proved, global hypotheses are not",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+273,274,275,19212,19232,Anthropic 2026 zero-proportion result does not close the remaining fraction,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+274,275,276,19233,19277,SAM canonical record: the installed Theta completion is sign-independent,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+275,276,277,19278,19317,"SAM full proof-claim manuscript states, but does not prove, the completed norm identity",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+276,277,281,19318,19337,Current status snapshot after independent hostile checks,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+277,278,282,19338,19369,Finite positivity does not imply the missing infinite-dimensional positivity,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+278,279,283,19370,19416,Velez Version 5 still assumes the load-bearing semilocal norm identity,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+279,280,284,19417,19458,Velez v5 cites the wrong Hilbert-space object for the needed Gram identity,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+280,281,285,19459,19513,Pavesi v7 has a kernel-variable mismatch and does not prove its global interval bound,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+281,282,286,19514,19548,Aksman v2 leaves the geometric-to-arithmetic scattering step unproved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+282,283,287,19549,19581,Mittermeier Part 3 explicitly records the remaining all-event obligation,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+283,284,288,19582,19608,The latest 79.62% zero result is explicitly not an RH claim,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+284,285,290,19609,19643,Independent algebra check confirms the newest Aksman gap is not a closed RH implication,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+285,286,293,19644,19667,Chen's latest submission: the claimed $g'_K$ lower bound is not derived from $N(T)$ alone,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+286,287,294,19668,19702,"Han's latest Riesz criterion is an implication, with its converse explicitly conditional on RH",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+287,288,295,19703,19715,External status cross-check: Clay still classifies RH as unsolved,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+288,289,296,19716,19743,The Vidal KMS submission asserts Robin's criterion instead of proving its inequality,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+289,290,297,19744,19781,Chen v3's own $K$-derivation admits that the unconditional constant is not proved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+290,291,298,19782,19814,The newest PIHR-XV and quantum entries explicitly remain a reduction or an algorithm proposal,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+291,292,299,19815,19853,Verified auxiliary identities do not form a verified RH proof chain,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+292,293,301,19854,19873,Mittermeier Part 5 audit is now the latest recorded status,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+293,294,302,19874,19901,Reproducibility package confirms the remaining obligation,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+294,295,303,19902,19916,Independent current-record scan finds no closure,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+295,296,304,19917,19942,Claimed disproof has elementary logical failures,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+296,297,305,19943,19960,Current arXiv scan yields only conditional or equivalent results,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+297,298,306,19961,19987,Updated Mittermeier Part 3 still labels the active-state theorem open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+298,299,307,19988,20002,The finite-spectral coefficient leaves a growing slack,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+299,300,308,20003,20029,Updated Part 4 reduces the quantifier but proves no sign,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+300,301,310,20030,20043,Latest append-only checkpoint for the Part 4 audit,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+301,302,311,20044,20062,"Guth–Maynard improves density, not zero confinement",CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+302,303,312,20063,20081,Part 3 v3 reproducibility contract keeps G1 open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+303,304,314,20082,20098,"Salem-equation paper is an equivalence, not a closure",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+304,305,313,20099,20111,Official status cross-check remains “Unsolved”,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+305,306,315,20112,20125,Latest exact status after all cross-checks,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+306,307,317,20126,20144,Exact status after the Meghani v2 audit,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+307,308,318,20145,20185,Aksman Heegner spectral compactification audit,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+308,309,319,20186,20230,Angular-monotonicity GRH candidate audit,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+309,310,320,20231,20270,Yu Pan energy-integral candidate audit,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+310,311,321,20271,20309,Yu Pan uniform-clustering candidate audit,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,把“所有成员都挤在均值附近”当成零点横坐标结论时，显式 cross-term/定义并未给该统一聚类；承重推理不成立。,0
+311,312,322,20310,20352,Tope operator v7 direct countercheck,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+312,313,323,20353,20378,Recent Weil/Hankel results: finite theorem and explicit open step,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+313,314,324,20379,20423,Semilocal spectral descent claim: missing spectral limit,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+314,315,325,20424,20468,Zhang Ising candidate: the zeta partition function is assumed,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+315,316,326,20469,20497,Danesh–Bianchetti spectral program is explicitly conditional,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+316,317,327,20498,20531,Alarcón correlation claim does not exclude a sparse off-line set,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+317,318,328,20532,20570,Elliptic-complex candidate has a direct contradiction,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,若一个非临界零经所有 q 的缩放都被迫为同一点/趋到 1/2，会给整函数零点有限聚点；和 Xi 非零整函数矛盾，候选内部自相矛盾。,0
+318,319,329,20571,20600,Latest arXiv scan: withdrawn proof claim and a finite-window result,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+319,320,330,20601,20629,Holland’s Jensen-polynomial wedge is only a partial region,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+320,321,331,20630,20657,"Colombeau–Beurling is an equivalence criterion, not an unconditional construction",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+321,322,332,20658,20695,Chua’s Nicolas-criterion descent does not prove its two lemmas,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+322,323,333,20696,20742,New vorton–FUP poster does not establish the scattering transfer,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+323,324,334,20743,20784,Latest PIHR XII still leaves the half-mode inequality open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+324,325,335,20785,20803,Official status cross-check remains “Unsolved”,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+325,326,336,20804,20840,PIHR X proves only an Abel-smoothed boundary statement,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+326,327,337,20841,20864,Toeplitz-minor result is only an explicit cubic tail,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+327,328,338,20865,20885,Current Velez record is unchanged; Proposition 6.1 is still an assertion,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+328,329,339,20886,20919,Connes Theorem 4 does not supply Velez’s Gram factorization,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+329,330,340,20920,20945,Velez’s stated pole subspace is not a subspace of the stated \(L^2\) space,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,若 Hilbert 空间沿 dr/r 的非紧模方向，常数与 r 型“pole characters”均不在 L2；所谓 pole subspace 不是所声明的 L2 子空间。,0
+330,331,341,20946,20967,The cited Connes semilocal space has no Velez pole subtraction,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+331,332,342,20968,20982,Clay’s current official page still marks RH “Unsolved”,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+332,333,343,20983,21008,Velez has a Fourier-sign equality that requires an unstated evenness assumption,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,实 F 只给 Fhat(-t)=conj(Fhat(t))；要写成 Fhat(-t)=Fhat(t) 必须额外偶性。,0
+333,334,344,21009,21032,Proposition 6.1 already contains the full Weil-positivity conclusion,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,若 Proposition 6.1 真给所有测试函数 q_X=||Phi_X||^2≥0，再结合 support exhaustion，已经就是完整 Weil positivity；它不是一个“小局部引理”。,0
+334,335,345,21033,21056,Han’s Liouville criterion is one-way; its required sign is not proved,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+335,336,346,21057,21075,"Contour-Hankel dynamics is explicitly a local reformulation, not a proof",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+336,337,347,21076,21090,The supplied canonical record independently reports no RH closure,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+337,338,348,21091,21105,Fresh arXiv feed scan finds no new direct RH closure,META / STATUS ONLY,结构与当前状态核对,本块是状态、扫描、版本或检查点记录，不提供新的承重数学定理；在严格 RH 目标下进展为 0。,0
+338,339,349,21106,21139,Velez’s Bochner–Schwartz corollary lacks temperedness,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,按打印的对称 prime distribution，平移正测试可得到指数增长的分布响应，和 temperedness 冲突；因此不能直接用 Bochner–Schwartz。,0
+339,340,350,21140,21166,"Chuk certifies one compact window, while the global limit is conjectural",SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+340,341,351,21167,21187,A two-thirds zero-density result does not confine the remaining zeros,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+341,342,352,21188,21214,Fixed-window positivity cannot be extrapolated by support decomposition,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,固定窗口正性并不通过分割/支撑分解给全局正性，因为 Weil 形式有跨块交叉项；反模型逻辑成立。,0
+342,343,353,21215,21238,Latest PIHR XV explicitly leaves the sharp-barrier theorem open,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+343,344,354,21239,21281,Connes 的渐近截断公式不能推出 Velez 的有限截断 Gram 等式,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+344,345,355,21282,21314,近似 \(\xi\) 函数稿件把零点处的 \(0/0\) 误当成比值极限,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,本块的承重公式、反例或逻辑不充分性可独立重算成立；它至多给辅助定理或否定候选路线，不推出 RH。,0
+345,346,356,21315,21348,Aksman 稿件把 Weil 全空间覆盖作为未证明的闭合定理,SOURCE/SCOPE VERIFIED,原文范围/逻辑依赖核对,本块的承重结论是“来源只给条件、有限范围、等价判据或程序性步骤”；该范围判断与来源/所列前提一致，未得到无条件 RH 闭合。,0
+346,347,357,21349,21381,Aksman 稿件的 Eisenstein 散射系数按其自身约定写反,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,在所声明 Eisenstein 常数项约定下标准系数为 completed ratio Λ(2s-1)/Λ(2s)；倒写会交换 poles/zeros。,0
+347,348,358,21382,21421,vorton-FUP 候选未证明多孔性，也未推出临界轴右侧无共振,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,固定正半径 tubular thickening 在亚核心尺度有内部，因此不可能对所有小尺度统一 porous；无全频率几何定理就不能推出所需 resonance-free 半平面。,0
+348,349,359,21422,21452,Liflandsky 的 Möbius--Laplace 判据未证明其核心衰减界,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,Möbius/Laplace 衰减若达到所需指数可推出 RH，但稿件没有无条件证明该衰减；只是判据。,0
+349,350,360,21453,21482,高频 resolvent 衰减本身不能排除有限位置的极点,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,R(s)=1/(s-s0) 已给最简单反例：高频沿竖线可衰减，却仍在有限 s0 有极点；高频 resolvent bound 不能单独排除所有极点。,0
+350,351,361,21483,21529,有限谱自伴性只给出平移后的正性，不给出 Weil 形式正性,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,对任意自伴有限矩阵，T-epsilon_min I≥0 是定义性事实；它不推出 epsilon_min≥0，也不推出原 Weil form 正。,0
+351,352,362,21530,21584,从 theta 和式定义出发，\(\Xi\) 的核是二阶校正后的核,CERTIFIED AUX/NEGATIVE,独立重算承重公式/反例,从 theta 和直接微分，真正 Xi Fourier kernel 是对基础 theta 核施加二阶校正后的对象；计算成立。,0
