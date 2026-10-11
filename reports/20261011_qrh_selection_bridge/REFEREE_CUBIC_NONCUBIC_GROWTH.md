@@ -1,0 +1,16 @@
+# Independent review of the noncubic Gauss-twist growth bound
+
+The reviewed theorem is [CUBIC_NONCUBIC_GROWTH](CUBIC_NONCUBIC_GROWTH.md). Its no-pole and finite-hole identities are the preceding [CUBIC_NONCUBIC_TWIST](CUBIC_NONCUBIC_TWIST.md). The primary analytic source is [Dunn--Radziwill, Sections 5.3--5.4](https://arxiv.org/html/2109.07463v3).
+
+
+**Verdict: accept; I found no actual mathematical or uniformity error in this compact draft.** The reviewed proof includes the conductor-balanced interpolation and the necessary original-series estimate to the right of its strip.
+
+The primary-source inputs match Dunn–Radziwiłł v3 §5: the periodic Fourier transform and unit-support hypothesis are (5.21)–(5.23) and Lemma 5.2; the opened transform is (5.42); the Mellin completion and absolute convergence for `Re(s)>1` are Lemma 5.3/(5.45); the general functional equation is (5.48); and the split integral used for fixed-character vertical growth is (5.53), with the exponential-decay justification immediately following (5.52). The note correctly avoids applying the paper's cubic-only Lemma 5.4 to arbitrary primitive noncubic characters.
+
+The primitive finite-transform argument is sound: the trace pairing is nondegenerate for `(r,3)=1`; primitivity kills nonunit Fourier modes; substitution gives the unit-mode Gauss identity; Parseval gives modulus `Q^(1/2)`; and (5.42) then has at most `Q` unit terms, each of size `Q^(1/2)`. This yields `||tilde(phi)||_infinity <= Q^(3/2)` without assuming multiplicativity of the dual transform. The FE gamma quotient on `s=-delta+it` has degree `2+4delta`, and the level factor contributes `Q^(2delta)`, giving the left edge in (7).
+
+For PL, dividing by `(s-2)^3` makes the left boundary bounded because `2+4delta <= 3`; the strip is contained in `[-1/4,5/4]`, where the stated cosine barrier has positive real part and damps the fixed-character `e^(pi|t|)` growth from reciprocal gamma factors. The conductor normalization cancels the left-edge power and is 1 on the right edge. Although the preliminary vertical-growth constants depend on `(r,phi)`, the maximum-principle bound depends only on the uniform boundary constants, so the final interpolation is uniform. The exact exponent deficit (10) is positive for `epsilon>0`; the companion rational ledger also passes.
+
+The right-half-plane repair is correct and essential: the note uses the dual-series bound only on `Re(s)=1+delta`, then obtains the target `R_phi` estimate farther right from its original normalized Gauss series. In the PL portion, the reciprocal partial Hecke Euler product is absolutely bounded at `Re(3s-1/2)>=1+3epsilon`. The finite-hole exponent is `N(d)^(3/4-sigma) <= N(d)^(1/4)`, and the stated mask factor and Mellin shift follow. The assertions that each residual twist is primitive modulo `rd` and retains nonprincipal cube are properly attributed to the preceding note's CRT setup, not to Dunn–Radziwiłł.
+
+The companion `check_cubic_noncubic_growth.py` reports `ALL_PASS` for the exact interpolation deficit, strip/height margins, mask cost, and normalization ledger. As the script itself says, this is an arithmetic check only; the analytic review above is separate.
