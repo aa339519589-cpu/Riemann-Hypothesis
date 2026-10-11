@@ -1800,7 +1800,7 @@ For every original subset of exponent d_slot, the extra term is exactly -d_slot(
 
 ## Independent referee: specified secondary cubic remainder
 
-The consolidated theorem passes independent review for η=ε=1, squarefree nonunit w in H=w²a⁶, every physical n/a/g/h, the original finite compensation, and separately the original/core markers and each exact first Möbius scale transform. The specified secondary nonpolar term is O(Z^(−19/480+ε)), without Q. Its finite-physical-e-first decomposition is part of the assertion. The first nonpolar contribution, other units and mixed cube-free w remain unestimated. The following base calculations and successive extensions together certify this precise scope, rather than a whole-cubic bound.
+The four-part base theorem passes independent review for η=ε=1, squarefree nonunit w in H=w²a⁶, every physical n/a/g/h, the original finite compensation, and separately the original/core markers and each exact first Möbius scale transform. The specified secondary nonpolar term is O(Z^(−19/480+ε)), without Q. Its finite-physical-e-first decomposition is part of the assertion. The first nonpolar contribution, other units and mixed cube-free w remain unestimated. The following base calculations and successive extensions certify that scope. The separately audited cube-free extension below adds the complete nonunit cube-free w range, still only for the specified secondary contribution.
 
 ### Base calculation: signed column and n=a=1
 
@@ -1966,6 +1966,48 @@ The norm-four second-pole zero holds separately for each b, since the physical-e
 
 The final self-contained Parts I–IV were read back together. Their conventions, finite-e ordering, true j phase, joint short-column tail, core-prime reassignment and convergent external sum agree with the separately checked calculations above. No interchange of an uncontrolled first-remainder integral is required.
 
+
+## Complete cube-free extension of the specified secondary term
+
+### Independent audit: the unit-one complete cube-free cubic secondary term
+
+The cube-free extension in internal Part V of the companion Part XXIV passes independent review as an extension of the specified secondary contribution. Its target and original unit remain eta=epsilon=1. It includes w=v1 v2^2 with v1,v2 coprime squarefree and w nonunit, every original physical n and sixth-power factor, both exact markings, their first-flat operations and the original finite compensation. The first nonpolar contribution is still unestimated. In particular this is not a stronger bound for the whole cubic probe.
+
+#### 1. Primitive and odd local arithmetic
+
+The two primitive cubic CRT cross factors cancel by reciprocity, giving gamma_D(v1)bar(gamma_D(v2)). The primitive conductor is v1v2, not the cube-free index v1v2^2. The conversion from the original additive Gauss convention and the primary Poisson factor at 3 cancel componentwise. The Poisson factor in (1) is therefore correct, including its square-root norm.
+
+The original local-P table was independently reread at j'=2 and j'=4. For the latter, e0=l=k=1 gives the exact coefficient -a_p rho^(-3)P^4 before the original norm weight. Its product with P^(-3/2)P^(-4) is -a_p rho^(-3)P^(-3/2). The j'=2 branch gives the positive counterpart. For unit epsilon=1 the moving good part of rho^(-3) equals one, since the actual cubic-core exponents are even. Thus the remaining phases depend on the fixed odd factors, not on the later source variables. The n_- divisor is present in both c and s; its additional inverse norm from the second Poisson is mandatory and retained.
+
+The earlier exact square reduction retains its j character and cancels only the k unit multiplier. It yields precisely (2)--(4), including the physical-e cutoff. No ordinary square-layer mask has been replaced by a forced odd-prime character value.
+
+#### 2. The two source residues
+
+At fixed v2 the first source is the actual v1 family. v2 is a coprimality hole, not an exponent-two numerator in that first source. The added fixed conjugate Gauss factor and character remain outside it. The first residue's j/f/h allocation is unchanged. Its c0 column acquires exactly the squarefree, disjoint numerator v2 j0 f2 u; (8) is the signed column to which the proved lemma applies. Its second bound must carry the factor L^(1/10).
+
+For the second u residue, the genuine zero mask is K in (9); J controls the different finite weight. The new numerator v2 is squarefree and lies in K. The extra gamma_D(v2) from that residue cancels the outside conjugate Gauss sum. The CRT factor cancels theta_v2(zeta a0 j0 f2 c0), with its actual conjugate direction. All remaining new factors are good. Consequently the bad-prime d/tau scalar has precisely the previously proved local norm-four zero. The physical-e cutoff is fixed before these operations and independent of those bad allocations.
+
+Only v2=1 requires the old entire unit-row subtraction. When v2 is nonunit, rho=1 is a genuine allowed term and is retained. The revised manuscript makes this distinction explicit.
+
+#### 3. Independent norm check
+
+The three actual scales in (10) follow respectively from the original c n^3 Gaussian, q_H=q_v1^2 q_v2^4 q_a'^6, and the primitive conductor in the second Poisson. In particular the first-residue scale contains L^(-2), whereas the u scale contains L^(-1).
+
+Before the signed estimate the n_- power is -5/2. In the first term it receives +4/3 from C^(-1/3), +5/6 from the u sum and -1/6 from the finite E endpoint, giving -1/2. In the second term the corresponding additions are +22/15,+14/15,-3/10, giving -2/5. The n_+ powers remain -3/2 and -7/5.
+
+The L exponents are respectively -1/2-2/3-5/6=-2 and -1/2-2/3-14/15+1/10=-2. Thus the stated uniform L^(-2) is exact. Omitting the moving-numerator loss would be incorrect. The residual g coefficient is phi(g)/(G G_+); its g_- part and the n_- choices are true divisors of v2 and have only divisor-small cost. This leaves a strictly summable v2 norm series. The earlier a', physical-r and n_+ margins remain unchanged.
+
+In the short selected-column range, the E cutoff gives (13). The exact trivial weights are N_+^(-2)N_-^(-1)L^(-2). Summing N_+ jointly with its V tail, rather than summing a divergent isolated N_+ power, gives (14). Its N_- factor cancels the preceding inverse power. The resulting geometric error is therefore exactly (15), and its r power remains -5/2.
+
+#### 4. Complete scope and limits
+
+The revised common-mode paragraph charges the moving v2 holes and scales to the ambient parameter first. Actual joint compact q_D/P derivatives and individual long-column tails are retained before pooling. The new small powers are absorbed by L^(-2) and the existing strictly convergent tails. The original marker is redistributed only among its actual factors; no unmarked v2 prime is turned into a selected slot. The core priority list retains primes shared with r and c n0 by their later allowed assignment.
+
+The three positive-scale geometric terms are unchanged. Therefore the original compensation still gives the exponent -19/480, and the same exact inner-physical-e-first definition followed by the absolutely convergent first-scale sum gives both first-flat secondary pieces. Their first remainders are defined by subtracting this convergent contribution from the corresponding full sectors; no interchange of an unestimated first remainder is invoked. Other original units remain outside this theorem.
+
+
+The final self-contained five-part report was read back. Its original four-part mathematical proof is retained, with local scope sentences referring to the new Part V. The introduction defines the first v1 pole at fixed v2; the same positive-scale estimates and exact first-flat decomposition remain. The first nonpolar term and other units are still excluded.
+
 # Review of Part XXV: genuine truncated-inverse results
 
 ## A. Exact inverse Gauss projection
@@ -2052,3 +2094,57 @@ Choose the logarithmic-width exponent after D. Its derivative costs remain logar
 
 The two representations used are the original a_n(X) and its exact complementary divisor sum. The result therefore concerns the unchanged detector column, not an optimized replacement. The source's additional roughness and prime-convolution hypotheses have not been established by this argument. No corresponding gain for its full corrected dispersion form is certified here.
 
+
+## C. Genuine inverse off-balanced cubic quadratic form
+
+### Independent audit: the genuine inverse's off-balanced cubic quadratic form
+
+The corresponding off-balanced proof in Part XXV C passes independent review. The relevant complete paragraphs of the pinned September 25 `dispersion.tex`, and its actual `outer-extension` bound in `background-type1.tex`, were reread.
+
+For each fixed 0<delta<1/2 it gives some kappa>0 in the stated range B^(1+delta)<=A<=B^(2-delta), uniformly in the genuine inverse cutoff 1<=X<=2B:
+
+    sum_a W(a/sqrt A) |sum_n,sf a_n(X)w(Nn/B)bar(chi_n(a))|^2
+      << A B^(1+epsilon)+A^(2/3)B^(5/3-kappa).
+
+Here chi is the source's cubic symbol. The n column is squarefree; the a sum is not assumed squarefree. Fixed cubic column twists are allowed. No Q assumption is used. The full detector's other power classes, balanced range and noncubic target twists are outside this assertion.
+
+#### 1. True-coefficient power cancellation
+
+The already checked all-cutoff proof has strict 7/8 and 19/20 smooth exponents. All its finite decomposition, test and fixed finite-conductor dependencies are polynomial in finitely many seminorms and parameters. Taking the boundary smoothing width to be V^(-eta), rather than a log-power, yields the displayed discrepancy V^(1-eta)log V+V^(3/4)log V. Choosing eta against every polynomial cost, then a smaller conductor/height window and sufficiently small initial mask losses, gives (2) with positive constants. This is an existence assertion and does not provide their numerical values.
+
+On (n,q)=1 with q squarefree, both identities in (3) are exact. They preserve the actual sharp cutoff and Gauss CRT factor. The new character is cubic and its conductor is bounded by the stated small product. A cutoff outside the surviving norm support contributes zero and creates no missing endpoint case. Thus the forced-divisor version applies uniformly to the genuine beta_(fln), including a principal frequency twist.
+
+#### 2. Source restrictions and the large divisors
+
+With beta_b=a_b(X)bar(G(b))w(Nb/B), the identity beta_b G(b)=a_b(X)w(Nb/B) holds exactly on squarefree support. The source's Poisson formula with d=1 therefore applies to this unchanged coefficient. Its common-divisor CRT and zero-frequency cancellation do not use roughness, a prime convolution or SW.
+
+The large-f paragraph uses positive divisor inversion, divisor bounds and the actual outer cubic sieve only. It bounds each divisor dyad by AB plus Q0 F^(-2/3), up to arbitrarily small powers. In this application H=B^2/A>=B^delta, so the AB term is smaller than Q0 by H^(-1/3). Its removed artificial diagonal has the same margin. The extra fixed exclusions can be retained in the coefficients or treated by their finite masks; they do not introduce a coefficient hypothesis.
+
+For small f, the finite l inversion is applied to the displayed Poisson expression, not to a false Poisson identity on artificial noncoprime pairs. Mellin separation produces precisely (6). Its benchmark ratio (7) was recomputed from amplitude AF/(MB), J=kHM/F^2 and B'=B/(FL). The resulting f,m weights are summable.
+
+The source outer-extension bound is valid for full nonzero frequency rows and squarefree n coefficients. Its three ratios to J^(1/3)B'^2 are exactly those stated. Summing the l dyad gives the three claimed saving factors. Here A>=B^(1+delta) and H<=B^(1-delta) are stronger than the coarse inequalities used in that source reduction. No use of the source's restricted final dispersion theorem is required.
+
+#### 3. Every large primitive frequency
+
+The actual factorization h=zeta lambda^i p q^2 j^3 has bounded multiplicity, with coprime squarefree p,q. The cube part is kept as a common unit mask. Fixing q or p and applying the ordinary cubic sieve gives the respective three ratios in Section 3.
+
+When P dominates Q, the strict PQ^2<=(B')^(1-delta/2) range and the fixed exponent separation give a positive gap in each ratio. The reversed case is analogous. Near equality, the ordinary all-character sieve is applicable to the true primitive characters, with conductor O(PQ) and bounded multiplicity. Its second ratio is
+
+    (PQ^2)/B' * (P/Q)^(2/3),
+
+so it has a fixed gap when the near-equality width is chosen below the delta margin. Its first ratio saves on the chosen positive primitive-frequency threshold. Hence neither exceptional limiting configuration requiring prime-convolution input occurs here.
+
+#### 4. Small primitive frequencies, including cube rows
+
+In the remaining actual separated form the twist conductor is bounded by O(FLPQ). The inverse fm has the same radical support as f and does not cost F^2 in the conductor; the two possible cubic exponents simply distinguish the f and m portions. The cube divisor and other unit masks have polynomial norm and remain within the already fixed mask range.
+
+The forced true-coefficient bound applies to every inner sum. It remains valid at p=q=1, since beta retains its Gauss phase; those cube rows are not discarded as a main term. Their dyadic ratio is exactly (B')^(-2c2)P^(2/3)Q^(1/3), bounded by (B')^(-2c2+2theta/3). Counting the genuine cube parts restores the benchmark with the already summable weights (7).
+
+The revised order of constants is noncircular: first fix the power-cancellation window and its saving, next its forced-divisor saving, then the primitive threshold and the small f/l/transform ranges within that fixed window, and finally the original sieve losses. All transform tails retain their arbitrarily rapid decay. Taking kappa below the resulting finite list of positive gaps proves the asserted bound.
+
+#### Exact bearing
+
+This is a positive quadratic-form gain for the genuine finite inverse, not only a separate linear Gauss projection. It does not give an arbitrary-coefficient large sieve, a balanced estimate, or the missing full detector decomposition. The squarefree column and the cubic nature of the allowed fixed twists are indispensable in the proof as stated.
+
+Pinned source:
+https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/dispersion.tex .
