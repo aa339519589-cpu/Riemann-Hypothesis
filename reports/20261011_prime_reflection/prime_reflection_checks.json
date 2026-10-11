@@ -1,0 +1,254 @@
+{
+  "status": "NUMERICAL_ONLY",
+  "scope": "Fourier normalization, one finite divisor/reflection identity, and finite Euler factor asymptotics. Not interval certified; no zero-exclusion or RH result.",
+  "environment": {
+    "python": "3.12.14",
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "mp_dps": 65
+  },
+  "normalization": [
+    {
+      "z": {
+        "real": "0.0",
+        "imag": "0.0"
+      },
+      "full_kernel_minus_xi_over_4_abs": "0.0",
+      "seed_integral_minus_gamma_abs": "3.4020647e-35",
+      "finite_integration_windows": {
+        "full": [
+          -3,
+          3
+        ],
+        "seed": [
+          -16,
+          3
+        ]
+      },
+      "theta_modes": 10
+    },
+    {
+      "z": {
+        "real": "1.0",
+        "imag": "0.2"
+      },
+      "full_kernel_minus_xi_over_4_abs": "7.2445433e-68",
+      "seed_integral_minus_gamma_abs": "8.511139e-34",
+      "finite_integration_windows": {
+        "full": [
+          -3,
+          3
+        ],
+        "seed": [
+          -16,
+          3
+        ]
+      },
+      "theta_modes": 10
+    },
+    {
+      "z": {
+        "real": "2.0",
+        "imag": "0.5"
+      },
+      "full_kernel_minus_xi_over_4_abs": "1.4838636e-67",
+      "seed_integral_minus_gamma_abs": "1.0297044e-31",
+      "finite_integration_windows": {
+        "full": [
+          -3,
+          3
+        ],
+        "seed": [
+          -16,
+          3
+        ]
+      },
+      "theta_modes": 10
+    }
+  ],
+  "finite_reflection": {
+    "z": {
+      "real": "1.0",
+      "imag": "0.2"
+    },
+    "T": "0.3",
+    "primes": [
+      2,
+      3,
+      5
+    ],
+    "A": {
+      "real": "0.092614909091958245155823724804091904",
+      "imag": "0.0070091744313907159426601021634293882"
+    },
+    "B": {
+      "real": "-0.099157863773104128264268542193191442",
+      "imag": "0.011710000291417449182258748020135815"
+    },
+    "R": {
+      "real": "1.2670705369944185685415183774741346e-19",
+      "imag": "-3.8444488122147670771983231404469786e-20"
+    },
+    "E_Psi": {
+      "real": "-0.0065429546811458829817377636896576806",
+      "imag": "0.018719174722808165086474362061417532"
+    },
+    "identity_residual_abs": "9.987343213e-68",
+    "integration_window": [
+      -8,
+      3
+    ],
+    "status": "NUMERICAL_ONLY"
+  },
+  "oscillation_parameters": {
+    "sigma": 0.5,
+    "tau": 3.0,
+    "max_sieve": 4000000
+  },
+  "oscillation": [
+    {
+      "subsequence": "shrink",
+      "k": 1,
+      "Y": 12,
+      "prime_count": 5,
+      "log_abs_E": 0.3396877227500016,
+      "predicted_log_abs": -0.4458592098733334,
+      "scale_r": 0.4583631320718513,
+      "relative_complex_remainder_over_r": 1.7236786761779126,
+      "sign_matches_asymptotic": false
+    },
+    {
+      "subsequence": "grow",
+      "k": 1,
+      "Y": 36,
+      "prime_count": 11,
+      "log_abs_E": 1.1105347343963619,
+      "predicted_log_abs": 0.5487619835964888,
+      "scale_r": 0.550516930856301,
+      "relative_complex_remainder_over_r": 1.12925799211235,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "shrink",
+      "k": 2,
+      "Y": 105,
+      "prime_count": 27,
+      "log_abs_E": -0.0373478017954045,
+      "predicted_log_abs": -0.7239003541671474,
+      "scale_r": 0.7239375508794761,
+      "relative_complex_remainder_over_r": 0.9677528849365417,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "grow",
+      "k": 2,
+      "Y": 300,
+      "prime_count": 62,
+      "log_abs_E": 1.598470882277168,
+      "predicted_log_abs": 0.9984485577897177,
+      "scale_r": 0.9984511155219434,
+      "relative_complex_remainder_over_r": 0.6282321677754339,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "shrink",
+      "k": 3,
+      "Y": 855,
+      "prime_count": 147,
+      "log_abs_E": -0.7787851873489203,
+      "predicted_log_abs": -1.4240878209987342,
+      "scale_r": 1.4240903892198815,
+      "relative_complex_remainder_over_r": 0.4554357350338856,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "grow",
+      "k": 3,
+      "Y": 2437,
+      "prime_count": 361,
+      "log_abs_E": 2.6830187580141143,
+      "predicted_log_abs": 2.0813456560198462,
+      "scale_r": 2.081347222946463,
+      "relative_complex_remainder_over_r": 0.30533166819801066,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "shrink",
+      "k": 4,
+      "Y": 6947,
+      "prime_count": 891,
+      "log_abs_E": -2.4725390600234958,
+      "predicted_log_abs": -3.097973078423146,
+      "scale_r": 3.0979731363044634,
+      "relative_complex_remainder_over_r": 0.20234050090548483,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "grow",
+      "k": 4,
+      "Y": 19797,
+      "prime_count": 2240,
+      "log_abs_E": 5.284218259171787,
+      "predicted_log_abs": 4.676148250181877,
+      "scale_r": 4.6761482864002195,
+      "relative_complex_remainder_over_r": 0.14843157763281475,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "shrink",
+      "k": 5,
+      "Y": 56416,
+      "prime_count": 5718,
+      "log_abs_E": -6.520729759286683,
+      "predicted_log_abs": -7.138266978459459,
+      "scale_r": 7.138266987357216,
+      "relative_complex_remainder_over_r": 0.08709453578153391,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "grow",
+      "k": 5,
+      "Y": 160768,
+      "prime_count": 14750,
+      "log_abs_E": 11.63914990507628,
+      "predicted_log_abs": 10.99746109281549,
+      "scale_r": 10.997461093894168,
+      "relative_complex_remainder_over_r": 0.07054660665194523,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "shrink",
+      "k": 6,
+      "Y": 458135,
+      "prime_count": 38325,
+      "log_abs_E": -16.491361487972288,
+      "predicted_log_abs": -17.073302170773232,
+      "scale_r": 17.073302170805828,
+      "relative_complex_remainder_over_r": 0.037932220055755986,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "grow",
+      "k": 6,
+      "Y": 1305527,
+      "prime_count": 100411,
+      "log_abs_E": 27.357319100326656,
+      "predicted_log_abs": 26.67805131623336,
+      "scale_r": 26.678051316233507,
+      "relative_complex_remainder_over_r": 0.03854481815639283,
+      "sign_matches_asymptotic": true
+    },
+    {
+      "subsequence": "shrink",
+      "k": 7,
+      "Y": 3720300,
+      "prime_count": 264739,
+      "log_abs_E": -41.4008071422017,
+      "predicted_log_abs": -41.917835916281746,
+      "scale_r": 41.91783591628255,
+      "relative_complex_remainder_over_r": 0.021850215167023918,
+      "sign_matches_asymptotic": true
+    }
+  ],
+  "elapsed_seconds": 20.312824249267578
+}
