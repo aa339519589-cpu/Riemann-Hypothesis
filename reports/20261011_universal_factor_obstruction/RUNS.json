@@ -1,0 +1,43 @@
+{
+  "python": "3.13.5",
+  "arithmetic": "exact rational outward intervals; no third-party dependencies",
+  "runs": [
+    {
+      "file": "certificate_60.json",
+      "grid_digits": 60,
+      "status": "PASS: exact rational outward enclosures; NOT an RH proof",
+      "determinant_enclosure": [
+        "-183.902446912716815977014297400277434716384355048276075724925996",
+        "-183.902446912716815976875736978652790549088525947320582305421867"
+      ]
+    },
+    {
+      "file": "certificate_90.json",
+      "grid_digits": 90,
+      "status": "PASS: exact rational outward enclosures; NOT an RH proof",
+      "determinant_enclosure": [
+        "-183.902446912716815977014297400277422217285099215761144568432896218887242609309277209147427839",
+        "-183.902446912716815976875736978652790645587447207995789449863241265509001619617360049925051265"
+      ]
+    },
+    {
+      "file": "crosscheck_90.json",
+      "grid_digits": 90,
+      "status": "PASS",
+      "determinant_enclosure": [
+        "-183.902446912716815977405751970493453746402420864013869765379916158723822604586166505260587775",
+        "-183.902446912716815976484282408436759116470125619495630266086282156268753881767540461969825829"
+      ]
+    }
+  ],
+  "asserted_moment_boxes": {
+    "4": ["24.217595281065", "24.217595281066"],
+    "5": ["74.323417808078", "74.323417808080"],
+    "6": ["220.503643148115", "220.503643148117"]
+  },
+  "asserted_determinant_box": ["-183.902446914", "-183.902446911"],
+  "common_derivative_tail_bound": "94686468256677579810584082392384404008569332658848963842788296545880193515741981900776026974018875/169230328010303641331690318856389386196071598838855992136870091590247882556495704531248437872567112920983350278405979725889536",
+  "certificate_script_sha256": "0a1c46a8c38c41421dbab926eb928cedabda40a2b0f3f5940c7e9c9679101d1a",
+  "rh_proved": false,
+  "scope": "RUNS.json is an execution summary. Reproduce full derivative enclosures and exact polynomial lists with certify_theta_jet.py."
+}
