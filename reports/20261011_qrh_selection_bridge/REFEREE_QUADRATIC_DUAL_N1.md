@@ -1306,3 +1306,207 @@ In XIV B, the needed long-column assertion is per row: primitive nonprincipal Po
 In XVI 1, compact prime windows give c<=q_D/P<=C uniformly before pooling tuples and divisor choices. Derivatives of the joint profile in this ratio and the normalized column variables have polynomial seminorms in the retained heights and Gaussian label. The Gaussian/Schwartz envelope absorbs these powers uniformly. A zero real Mellin part alone does not give this uniform tail.
 
 In XIX 5, the frozen-w count O(W/H_0) and the physical boundary coefficient mu(h_0)/q_h0 supply two distinct H_0^(-1) factors. Formula (20) now displays the former; the latter is still outside. Thus the post-W boundary power is H_0^(6B/5-2), and H_0<=R gives R^(6alpha-4), with the stated finite harmonic endpoint. This correction leaves the exponent -133/34560 unchanged.
+
+# Review of Part XX: complete mixed cubic–quadratic type
+
+## Independent referee: complete mixed (2,3,4) bound
+
+### Verdict and scope
+
+Part XX of the companion report, including its exact all-n arithmetic, full joint budget, verifier and 489 rational rectangles, passes independent review.
+
+Subject to the user's explicitly attributed Q input, the complete normalized contribution of H=epsilon u^2 v^3 a^6, with nonunit good cube-free u, nonunit good squarefree v and disjoint supports, is O(Z^(-1/512+epsilon)). The statement covers all physical n, original and core marking, and each exact first Mobius-flat operation. The 95/512 gap to the required -3/16 remains. This certificate does not supply a new verification of the user's Lean build or a claim about other frequency types.
+
+### 1. Exact arithmetic and common columns
+
+The four odd physical branches are exactly F2 with c=s=0, F3 with c=0,s=1, E3 with c=1,s=0, and E4 with c=s=1. Their remaining frequency valuations are respectively 2,3,3,4. Thus the odd physical factor is coprime to the remaining sixth-power frequency factor. The local square lift is exactly P^(6b) at an odd physical prime. At other square-layer primes it has the stated ordinary factor M_p; in particular the odd residue-two unit--unit branch does not acquire an extra 1-P^(-1).
+
+There is no residue-five boundary in this type. Hence r divides the sixth-power factor a, and H/r^6 preserves the displayed mixed type. No artificial coprimality of r with the odd factor or c is introduced. The local comparison retains the original rho, gamma_3 and omega phases; only kappa(r)/q_r^2 remains from the square shift.
+
+The mixed odd rho values are genuine joint (u,v) row coefficients. They are not fixed-ray constants and are not replaced by characters evaluated at forced nonunits. The correct shared divisor is g=(c/(E4 E3),rad(H/r^6)), coprime to the odd factor. Only this g contributes its Ramanujan factor phi(g). The actual e coefficient is eta(e)/q_e after one Mobius cancellation. All fixed and moving zero masks are retained before taking a positive norm. Original/core slot priority and common compact cutoffs survive the joint log-Fourier separation.
+
+Writing A=q_Nc, N=q_Nq, B=q_E3 and E=q_E4, the exact outside odd factor and free-column ratio are
+
+    A^(-3/2)/(N B),
+    L/S = C_l q_f q_tau/(R^6 A^3 N^2 B^2 Y').
+
+The inverse-column bin therefore leaves A^(3a-3/2)(N B)^(2a-1)<=1 for a<=1/2. This explicitly pays all four odd branches and justifies absorbing their remaining divisor counts and cross phases into the joint-row coefficients.
+
+### 2. Joint analytic estimates
+
+For common squarefree columns the kernel is
+
+    K(M,V;B)=min{V[M+B+(MB)^(2/3)], M(V+B)}.
+
+Freezing either row parameter makes its actual twist a common column coefficient for the other sieve. For genuinely bounded full coefficients, the decomposition n=c ell^2 and Minkowski gives B K(M,V;B) with only a small-power loss; the ell character is a bounded joint-row factor, including its zero mask. This is not an arbitrary full-column operator bound with unchanged coefficient mass.
+
+The actual conductor is rad(u)v times fixed data, not the cube-free index uv. Splitting actual conductor blocks before AFE and Poisson, then enlarging positive quantities, gives J2=K(sqrt(MV)) and J4=K(MV). The previous true Gamma-detector argument therefore supplies (5) with its full tail supremum and its intermediate restricted fourth-moment count power retained. The selected moments use the separately established genuine rational Euler identities, not the bounded-full-column shortcut.
+
+For the smooth column the direct and dual moments use actual conductor blocks and common Mellin/angular separation. If C/S<1, the nonzero dual Schwartz tail is used separately, yielding the indicated row bound O(sqrt(C)); it is covered by the positive first moment term before C is enlarged to MV. No subunit-length sieve is invoked. In the clean range S<=MV, K(M,V;MV/S)>=MV. The actual long-S tail is handled by nonprincipal Poisson.
+
+The common-column identities, original imprimitive Euler factors and restored compact product cutoffs agree with the inherited user source. All initial small powers include the moving and unbounded physical labels, rather than treating them prematurely as fixed powers of Z.
+
+### 3. Independent verification of the finite rational certificate
+
+Every affine constituent in (9)--(11) was checked against the complete detector, cubic/quadratic selected moments, and direct/dual smooth moments. In particular:
+
+- The detector tail is maximized over its whole interval, including internal affine intersections.
+- The cubic direct smooth third term has slope 5/6-a and the dual third term slope 1/6-a, with the displayed conductor contribution in its intercept.
+- Slot and smooth moment orders may be chosen independently: their reciprocal Holder exponents sum to at most one, so the remaining count power is nonnegative.
+- On each rectangle, increasing the family sizes and using the upper endpoint a1 in the density gives a valid upper row count. With this count fixed, the rest of each full Holder bound has derivative -11/16+p-s<=-25/48, so evaluation at a0 has the correct upper-bound direction.
+
+The author's exact verifier was actually rerun and returned:
+
+    ALL_PASS 489 rectangles; complete rational coverage;
+    maximum -297139/151879680.
+
+An independent verifier was also written and executed. It does not use the author's envelope-intersection algorithm. For a proposed rational level, each complete Holder bound has an interval where all of its affine constituents lie below that level. Taking the exact union of these sublevel intervals proves a uniform bound on the minimum envelope. Rational bisection supplies a slightly weaker rigorous upper bound. This independent method also checks the full detector tail by sublevel covers and verifies the rectangular covering by exact subdivision in both coordinates. It returned:
+
+    INDEPENDENT_SUBLEVEL_COVER_PASS 489 rectangles;
+    upper bound -405692699/207366389760 < -1/512.
+
+The independent verification uses a separately implemented sublevel-cover algorithm. All its arithmetic is integer or Fraction arithmetic. No numerical optimizer or floating-point comparison is an input to acceptance. The strict margin permits the required sufficiently small contour buffers and ambient epsilon losses.
+
+### 4. Low-bin all-physical transfer
+
+For a in [1/8,3/8], the explicit joint analytic bounds contract under (M,V,S,X,Y)->(tM,tV,t^2S,tX,tY) by the claimed powers. The restriction X>=min(M,V) is admissible because MV<=K(B)<=2MV below that minimum. The detector contracts by at least t^(1+2a), the selected norm by t^(1/(2k)), and the smooth norm by t^(1+1/(2l)). With Holder, the complete positive expression contracts by at least t^(2-2a).
+
+This is a scaling assertion for the upper bounds, not for actual zeros or ideals. Since M^2V^3 has degree five, its positive cumulative bound gains gamma=(2-2a)/5, at least 1/4 on the stated interval. The polynomial upper continuation and full Stieltjes/Schwartz integration retain this gain for both small and large effective cutoff, including every Gaussian annulus.
+
+The remaining ideal powers are
+
+    r and first-flat: -2+6a-6gamma=(42a-22)/5 <= -5/4,
+    a': -6gamma <= -3/2.
+
+They have strict convergence margins. The first-flat change is only T=Z/q_delta^6 with the original q_delta^(-2) coefficient; X',Y' and all original slots remain fixed. The full-modulus lift preserves the frequency type. No coupled-window scaling is inserted. The exact odd weights already paid in Section 1 remain nonpositive throughout.
+
+### 5. High-bin bound without a new density estimate
+
+For a in [3/8,1/2], Cauchy using the full joint count, true cubic-side selected second moment, and pointwise smooth bound produces exactly the three row monomials (17). The full reciprocal-e integral peaks at S=sqrt(MV), rather than at an arbitrarily selected scale.
+
+For the first monomial integrate V first against the complete frequency envelope; for the other two integrate M first. The frequency powers are
+
+    1/2-a/6, 3/4-a/4, 2/3-a/4.
+
+The remaining family's dyadic exponents are respectively -a/6, -(3-a)/4 and -1/2+a/4, all negative. The actual r/first-flat powers are
+
+    7a-5, (15a-13)/2, (15a-12)/2,
+
+all at most -3/2. The a' powers are at most -5/2. Thus these are complete physical estimates, including small effective cutoffs through the nonzero Schwartz tail.
+
+For selected-prime powers, positive exponents use P_c<=P<=O(Z^(1/6)), and negative exponents use P_c>=1. Independent simplification gives exactly
+
+    (10-63a)/96,
+    (59-171a)/192,
+    61/288-139a/192.
+
+All decrease with a. Their maximum on the whole high-bin interval is -41/1536, stronger than -1/512. The original subset-length contributions are nonpositive with these choices.
+
+### Conclusion
+
+The low-bin rational certificate and both complete physical-transfer arguments jointly establish the stated Q-conditional complete-type bound. The proof retains all original local branches, actual conductors, masks, common coefficients, physical and flat tails. It does not use either newly proposed general-conductor detector or the primitive-pair Halasz--Montgomery improvement, so its conclusion does not depend on their subsequent applications.
+
+# Review of Part XXI: exact signed unit-one two-polar annihilation
+
+## Independent referee: the original signed cubic two-polar contribution vanishes
+
+### Verdict
+
+The self-contained Part XXI of the companion report has been independently read and checked against all component identities. Its precise unit component is epsilon=1, H=w^2.
+
+The conclusion is unconditional: in the original physical epsilon=1, H=w^2, n=g=a=1 sector with squarefree nonunit cubic row w, the explicitly iterated two-polar contribution is exactly zero after summing all actual good and bad dual valuations, the original e convolution, windows and marks. This conclusion does not use the user's zero-free input Q and does not change the probe. Both genuine nonpolar contributions remain.
+
+### 1. Primary-class Poisson and source conventions
+
+The field, primary generators, original additive character and self-dual measure are kept. Poisson on the primary class modulo 3w contributes S/(9 q_w). Its finite Fourier transform is exactly
+
+    e(h/3) theta_w(3) conjugate(theta_w(h)) sqrt(q_w) gamma_original(w).
+
+Thus the amplitude is S/(9 sqrt(q_w)), with the nonprincipal zero dual frequency absent. The finite original bad-prime mask d|B changes this to S/(9 q_d sqrt(q_w)), and changes the radial Fourier argument to S q_h/(9 q_d q_w). Both changes are essential.
+
+The source convention is not silently identified with the original convention. DDDS uses exp(2 pi i Tr z), while the original source uses exp(2 pi i Tr(z/lambda)). Finite Gauss rescaling gives gamma_original(w)=theta_w(lambda) gamma_DDDS(w). Since theta_w(3)=conjugate(theta_w(lambda)), these factors cancel. The actual DDDS numerator is consequently kappa d^2 c h (eB)^3, with no extra lambda.
+
+The fixed character identity conjugate(xi(w^2))=conjugate(theta_w(kappa)) follows from cubic reciprocity and the original local xi data. Primes with zero kappa exponent remain in B and its masks. Positive cube exponents in a numerator remain unit masks after reduction; they are never replaced by the constant one.
+
+After this conversion the row is gamma_DDDS(w)/sqrt(q_w), so DDDS Lemma 6.7 applies with sigma=1 and its original compact radial test. Its exponent-two obstruction, unit/lambda residue constant, finite Euler ratio P/(P+1), w=1 subtraction and remainder are retained. This establishes the claimed source match, not a bound on that remainder.
+
+### 2. Weighted second residue and signed Gauss cancellation
+
+Write A(j)=product_{p|j} P/(P+1) and H_j=product_{p not dividing 3j}(1-(P+1)^(-2)). In the thin channel the second-row weight satisfies A(ell)=sum_{f|ell} lambda_0(f), where lambda_0(p)=-1/(P+1). Extracting ell=f t retains both the squarefree coprimality and the Gauss CRT phase. The signed identity
+
+    conjugate(gamma(f)) theta_f(zeta a0 c) gtilde(zeta,a0 c f)
+       = gtilde(zeta,a0 c)
+
+is exact. At the pole, q_f^(-5/6) combines with the numerator factor q_f^(-1/6); the remaining Euler sum is H_{mc}. This gives the stated weighted residue, rather than the residue obtained after taking absolute values.
+
+The residue exchange is justified locally. For fixed remaining parameters, the source's coprimality-removal and convexity bounds give a cost at most q_f^(1/4+epsilon) for the pole-subtracted series in a small neighborhood of normalized s=5/6. Together with |lambda_0(f)|<=q_f^(-1), the outer series is normally convergent there. Cauchy's formula then permits extracting the residue termwise. This assertion does not require, or supply, a uniform bound on all nonpolar terms as c and the physical parameters vary.
+
+The first pole contributes the additional q_ell^(-1/6). Therefore the second pole is at 2/3 in the original ell Mellin coordinate. The two coordinates are (1/3,2/3). The two Gauss phases cancel, giving the exact remaining c weight
+
+    |C_zeta|^2 q_a0^(-1/3) A(m)^2 H_m
+       mu(c) eta(c) q_c^(-4/3) product_{p|c} P/(P+2).
+
+### 3. Recombining the actual radial windows
+
+The true joint test is retained rather than replaced by a product. Its Mellin integral at (1/3,2/3) is
+
+    (1/2) (q_e q_c/X)^(1/2)
+      (9 q_e q_d/(Y q_tau))^(2/3) MF(1/2) MG(2/3).
+
+The original sqrt(X) cancels. Both e and c acquire norm exponent -5/6; the d exponent is -1/3. The finite support factor A(eB)^2 H_{eB} becomes A(B)^2 H_B product_{p|e} P/(P+2). Hence the thin-channel allocation at fixed k=ec has the genuine sum sum_{e|k} mu(k/e), retaining D|k and the original Gaussian V_G(q_k/U_D).
+
+These identities use the exact full e-series after Poisson. A physical large-e vanishing statement is not imported as a separate cutoff into a partial dual or polar term. The original norm partitions are recombined, and the Gaussian supplies absolute convergence of the extracted polar e/c sum. The nonpolar terms remain in the original decomposition.
+
+### 4. All good h valuations
+
+The unique decomposition h=tau u v^2 t^3 has u,v squarefree and coprime, with t arbitrary. First-pole support forces v|c and (u,c)=1, so c=v c0. The variable u may share primes with e and t. After extracting A(B e v c0 t), its remaining prime weight is one at p|et and P/(P+1) elsewhere. Its true mask is K=B v c0, not B e v c0 t.
+
+The weighted second residue is therefore exactly
+
+    conjugate(C_zeta) gtilde(zeta,a0 c0) q_(a0 c0)^(-1/6)
+        A(K) H_(B e v c0 t).
+
+Applying the actual joint-window integral leaves e and c0 with exponent -5/6, v with exponent -11/6, and t with exponent -2. At fixed squarefree k=e v c0 the remaining signed allocations have local sum
+
+    1 - P/(P+1) - (1/P) P/(P+1) = 0.
+
+All three allocations are actual original branches. In particular the branch where u shares e is accounted for by its prime weight one. All marks D|k and their original Gaussian depend only on k, not the allocation. Thus every nonunit k vanishes. The remaining t-series is absolutely convergent, with the stated Euler factor 1+[(P+1)/(P+2)] P^(-2)/(1-P^(-2)).
+
+### 5. The mandatory bad prime kills the last unit
+
+It remains to sum the original d|B and bad-supported tau. Their exact norm factors are q_d^(-1/3) q_tau^(-2/3), with q_a0^(-1/3), the first-pole support, e(tau/3) and |C_zeta|^2 retained.
+
+Every B-prime has its primary generator congruent to one modulo three. Its tau valuation therefore changes neither the additive phase e(tau/3) nor the unit/lambda datum zeta. At a B-prime set x=P^(-1/3), j=v_p(kappa) modulo three, and f=(1,x,0). The local sum is
+
+    T_j = sum_{delta=0,1} (-x)^delta sum_{a>=0} x^(2a) f_(j+2delta+a),
+
+and direct geometric summation gives T_0=1, T_1=T_2=0. This combines the original mask sign and the original dual-window scaling; no contour relation is imposed.
+
+At the mandatory prime (2), the residue field has four elements. The original xi is nonprincipal there, hence has order three; its square is still nonprincipal. Thus j is one or two, and this local factor is zero. The finite d sum and the bad-supported norm-geometric tau sum converge absolutely, so this cancellation annihilates the last unmarked unit term as well.
+
+### 6. Precise boundary of the conclusion
+
+The calculation concerns the specified order of two polar extractions. It does not identify those residues with the whole finite probe, exchange arbitrary contour orders, eliminate either nonpolar integral, or establish a bound for g>1, a>1, n>1 or mixed cube-free w.
+
+### Sources checked
+
+- [Original arithmetic source fixed at openai/math commit fd4aeeb2](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex), especially field/primary/Gauss conventions, the original xi construction and full-modulus local tables.
+- David, de Faveri, Dunn and Stucky, arXiv:2410.03048v2, Sections 3.3 and 6, including (3.5), (6.8), the coprimality-removal formulas, convexity estimate and Lemma 6.7: https://arxiv.org/html/2410.03048v2 .
+
+
+The complete publication text preserves the original unit-one restriction, full-e qualification, all good/bad dual valuations, source-convention conversion, weighted second residue, original radial Mellin integral, actual three prime allocations and the norm-four bad-prime cancellation. The two nonpolar remainders and every other physical/unit/core sector remain outside the conclusion.
+
+### Extension retaining every original shared divisor g
+
+
+The appendix to Part XXI also passes independent review. It extends the exact vanishing to every original shared g while still fixing the unit component epsilon=1, n=a=1 and squarefree nonunit w.
+
+The original coefficient is mu(g)eta(g)phi(g)/q_g. With the actual free-column scale S=Y/(q_g q_e), primary Poisson gives the displayed outside q_g^(-2). Writing w=g r retains (r,g)=1 and the original zero forces (h,g)=1. Cubic Gauss CRT supplies conjugate(theta_r(g)), so the first numerator is g kappa d^2 c h. The exact signed identity (7) cancels the original g Gauss factor and every g-dependent character of that numerator. It leaves q_g^(-1/2-1/6)=q_g^(-2/3), not a new oscillating d/tau factor.
+
+The remaining u mask is B g v c0; u still may meet e and the cube factor t. The same weighted-residue argument therefore applies with g genuinely retained in its finite masks. The actual two radial windows are those in (9). Their joint Mellin value contributes q_g^(5/6), hence the final shared-divisor coefficient is precisely mu(g)eta(g)phi(g)q_g^(-11/6).
+
+For each fixed allowed good configuration, all d/tau dependence is now exactly the previously proved bad-prime scalar. The norm-four factor is zero, independently of the original D|g e c mark and its unchanged Gaussian scale. The bad-supported tau geometric sum, the t^(-2) good cube sum and the Gaussian in q_(g e c)/U_D justify the regrouping. No absolute convergence of an unsmoothed q_g^(-5/6) sum is asserted or needed.
+
+The enhanced conclusion covers all shared g in this unit-one, n=a=1, squarefree-w sector. It still concerns only the specified iterated polar contribution; neither nonpolar remainder, any n>1 or a>1 layer, other unit components, nor mixed cube-free w is added by this extension.
+
+The all-g appendix was subsequently frozen by a status-only change; its final SHA-256 is `a72868889558b0a422702a28ba8779f0d42e852f117a6af0058128c39b7c1a9c`. The mathematical content is the audited extension above.
