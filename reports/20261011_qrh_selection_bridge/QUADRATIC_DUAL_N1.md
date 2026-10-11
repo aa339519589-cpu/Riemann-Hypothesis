@@ -6,11 +6,13 @@
 - 以用户固定输入 Q 为条件的同一完整 quadratic 核：原尺度线性和为 O(Z^(521/2304−d/2+ε))，补偿后为 O(Z^(−439/2304+ε))，比该型所需的 −3/16 低 7/2304。证明见 Parts X–XI。覆盖全部物理 n、原/core 标记及各自第一 Möbius-flat；这里只闭合这一非主 quadratic 类型。
 - 完整非主 cubic good-core：包括 H=εw²a⁶、w 非单位 cube-free 的全部混合指数与全部物理 n；线性和为 O(Z^(25/48−d/2+ε))，补偿后为 O(Z^(5/48+ε))，仍高于目标 7/24。不使用 Q 的基础证明见 Part VI。以 Q 为条件，Part XII 的 O(Z^(2/45+ε)) 均值基础保留；Parts XV–XVI 结合真实槽矩、双向光滑矩与完整小指标计数，将同一完整 cubic 类型改善为 O(Z^(−11/2304+ε))，仍高于目标 421/2304。
 - 完整 pure fifth-power 型：H=εv⁵a⁶，v 非单位平方自由，涵盖全部物理 n；线性和为 O(Z^(133/480−d/2+ε))，补偿后为 O(Z^(−67/480+ε))，距目标尚差 23/480。不使用 Q 的基础证明见 Part IX。Part XIV 在用户 Q 输入下将同一完整 pure fifth 类型强化为 O(Z^(−63/320+ε))，比该型目标低 3/320。[PURE_FIFTH_SELECTED_Q_GAIN](PURE_FIFTH_SELECTED_Q_GAIN.md) 再利用真实有限阶素数槽点态界，将同一完整类型改善为 O(Z^(−209/960+ε))，比目标低 29/960；原尺度线性和的统一界为 O(Z^(191/960−d/2+ε))。全部物理 n、两标记和各自第一 flat 均保留。
-- 完整 mixed 3/5 型：H=εv³w⁵a⁶，v,w 互素、非单位、平方自由，涵盖全部物理 n、两标记及两种 first-flat；不使用 Q，补偿后为 O(Z^(−1/32+ε))，基础证明见 Part XIII。Part XVII 在 Q 条件下将同一完整 mixed(3,5) 类型改善为 O(Z^(−5/32+ε))，仍高于目标 1/32。Part XVIII 在同一 Q 条件下利用联合坏行密度进一步改善为 O(Z^(−1/6+ε))，距目标尚差 1/48。
+- 完整 mixed 3/5 型：H=εv³w⁵a⁶，v,w 互素、非单位、平方自由，涵盖全部物理 n、两标记及两种 first-flat；不使用 Q，补偿后为 O(Z^(−1/32+ε))，基础证明见 Part XIII。Part XVII 在 Q 条件下将同一完整 mixed(3,5) 类型改善为 O(Z^(−5/32+ε))，仍高于目标 1/32。Part XVIII 的 O(Z^(−1/6+ε)) 联合密度证明保留为基础。Part XXIII 继承用户 113702 的真实 prime-slot 增益，结合新 pair-Gram 与完整有理证书，将同一完整 mixed(3,5) 型强化为 O(Z^(−3073/16384+ε))，比 −3/16 低 1/16384；Q 的有限阶、radial/norm-mode 适用域保持不变。
 
 - 完整 mixed (2,4,5) 型：H=εu²w⁵a⁶，u 非单位 cube-free、w 非单位平方自由，且 (u,w)=1。Part XIX 在 Q 条件下证明补偿后 O(Z^(−133/34560+ε))，覆盖全部物理 n、两标记及各自第一 flat；距目标尚差 6347/34560。
 
 - 完整 mixed (2,3,4) 型：H=εu²v³a⁶，u 非单位 cube-free、v 非单位平方自由，且 (u,v)=1。Part XX 在 Q 条件下证明补偿后 O(Z^(−1/512+ε))，涵盖全部物理 n、两标记及各自第一 flat；距目标尚差 95/512。
+
+- 完整 three-core (2,3,4,5) 型：H=εu²v³w⁵a⁶，u 非单位 cube-free，v,w 非单位平方自由，三者支持两两不交。Part XXII 在 Q 条件下证明补偿后 O(Z^(−1/512+ε))，涵盖全部物理 n、两标记与各自第一 flat；距目标尚差 95/512，不含残基 1。
 
 Part XXI 另证明一个不依赖 Q 的精确相消：固定原频率单位 ε=1、H=w²、n=a=1、w 为非单位平方自由，并保留全部原 shared g 时，原窗口与全部实际 good/bad dual h、e 卷积、标记重组后的指定迭代双极贡献恰为零。两项 nonpolar 余项及其他单位、物理层未受此定理控制，完整 cubic 指数不因此改变。
 
@@ -5735,3 +5737,960 @@ The regrouping is legitimate: the bad-supported tau sum has q_tau^(-2/3), the go
 This is an extension of the same exactly specified iteration, not a new contour argument for the whole probe. It proves no cancellation or estimate for the two nonpolar remainders. It does not extend the result to a>1, n>1, mixed cube-free w, or unit-epsilon components other than one.
 
 Independently reviewed and frozen. All source conventions and references are those already explicitly matched in the main report; no new external input is used.
+
+# Part XXII. Complete three-core transfer for residues (2,3,4,5)
+
+## A complete three-core transfer for residues (2,3,4,5)
+
+### Independently reviewed theorem and scope
+
+Retain the original physical probe, all finite prime slots, original units/rays and normalizations. Assume precisely the user's input Q, with its existing attribution and source-audit status. Consider
+\[
+ H=\varepsilon u^2v^3w^5a^6,
+ \quad u\ne1\text{ good cube-free},\quad
+ v,w\ne1\text{ good squarefree},\quad (u,vw)=(v,w)=1.
+                                                        \tag{1}
+\]
+The independently reviewed complete bound is
+\[
+ I_{2345}(Z)\ll_\epsilon Z^{-1/512+\epsilon},             \tag{2}
+\]
+including every original physical n, both original and core marking, and each of their exact first Mobius-flat operations. This does not include residue 1, does not meet the global target -3/16, and does not prove RH. It imports the reviewed complete (2,3,4) clean bound and its rational certificate, not a new numerical optimization. The remaining gap in (2) is 95/512.
+
+The proof below has passed independent review in the companion REFEREE, Part XXII. The principal inputs are the reviewed Part XX B and Part XX A, together with the reviewed fifth-boundary identity in Part XIX. The genuine new analytic step is the homogeneous moving-twist comparison in Section 2.
+
+Use the original scales
+\[
+ X'=Z^{17/48-d},\quad Y'=Z^{23/48-d},\quad
+ P\asymp Z^{1/6-d},\quad K_0=ZP/X'=Z^{13/16},
+ \quad ZP/Y'=Z^{11/16},\quad0\le d\le1/6.
+                                                        \tag{3}
+\]
+The normalized common prefactor is Z^{-29/96}. The actual buffered inverse-column bins are alpha=1-b in [1/8,1/2].
+
+### 1. Exact all-n local interface
+
+Write u=u_1u_2^2, with u_1,u_2 squarefree and coprime, and n=n_0r^2. The same four genuine odd local branches as for (2,3,4) give
+\[
+ n_0=N_cN_q,
+ \quad N_c=F_2E_4,\quad F_2\mid u_1,\ E_4\mid u_2,
+ \quad N_q=E_3F_3,\quad E_3F_3\mid v.                 \tag{4}
+\]
+All four factors have mutually disjoint supports. At F_2 the valuations of (c,s) are (0,0); at E_4 they are (1,1); at F_3 they are (0,1); and at E_3 they are (1,0). After removing the square layer, their frequency valuations are exactly 2,4,3,3. Thus (n_0,a')=1 in the notation below. The fifth support has no odd branch.
+
+At a prime p^b exactly dividing r and lying in n_0, the local Gauss lift is exactly P_p^{6b}. There is no additional ordinary multiplier at an odd prime. At the other ordinary primes the multiplier is
+\[
+ M_p(c,s)=1_{p^2\nmid s}
+ [1-P_p^{-1}1_{p\nmid c,\ p\nmid s}].                 \tag{5}
+\]
+The lower j=5 boundary is precisely
+\[
+ h_0\mid\operatorname{rad}r,\quad h_0\mid w,
+ \quad a=(r/h_0)a',\quad(h_0,a'cs)=1.                 \tag{6}
+\]
+Its extra coefficient is mu(h_0)/q_h0. The complete ordinary product (5) is only over p|r with p not dividing n_0h_0; this also excludes a boundary prime with higher valuation in r. The total square-layer coefficient is the original
+\[
+ \kappa(r)q_r^{-2}\mu(h_0)q_{h_0}^{-1},
+ \qquad\kappa=\eta^6\overline\alpha_0^{\,6}.          \tag{7}
+\]
+Here alpha_0 denotes the original fixed angular character, not the inverse-bin parameter alpha.
+
+All crossing phases must remain. At F_2,E_4 the original rho^{-3} contains chi_p(v^3w^5)^{-3}, a genuine quadratic crossing symbol. At F_3,E_3 the original rho^{-2},rho^{-4} contain the corresponding cubic symbols of u^2w^5. These are bounded joint (u,v,w) row factors, not fixed-ray constants. The original coefficientwise CRT and gamma cancellation leaves the full mixed character on the two free columns. No character at a forced nonunit replaces a nonzero odd local Gauss value.
+
+Put
+\[
+ H_{\rm eff}=Hh_0/r^6,
+ \qquad g=(c/(E_4E_3),\operatorname{rad}H_{\rm eff}),
+ \qquad(g,n_0)=1.
+\]
+Then
+\[
+ c=E_4E_3g e c_2,
+ \qquad s=E_4F_3g e f\tau s_2.                       \tag{8}
+\]
+Only g contributes the Ramanujan factor phi(g); no odd forced prime is inserted in it. The symbol h_0 is squarefree even if it shares prime factors with r/h_0. Restoring its covariance phases gives the actual full u,v,w character pair. On the true support h_0|w, the extra h_0-unit condition on c,s is already its character zero. Remove this redundant mask before any positive row enlargement.
+
+The c_2 column has the genuine coefficient mu(c_2)eta(c_2)/q_c2 times that character. The s_2 column is its conjugate character with a common compact smooth/ray weight. The actual e coefficient is eta(e)/q_e, after exactly the one original Mobius cancellation. The u,v,w parts of g are original character zeros; its a' part is a fixed mask. Ordinary (5) is expanded first into common c-unit masks and fixed s-divisor extractions tau. Every original deleted Euler factor is retained. For original marking use the first applicable factor in r,n_0,g,e,c_2; for core marking omit r. Each joint log-Fourier mode keeps the fixed external compact product cutoffs, as in the user's joint Mobius interface. All actual q_D/P ratios lie in a fixed compact positive interval. Before pooling D,n_0,g, differentiate the true joint norm-ratio weight on that compact interval: the resulting seminorms have the same uniform Gaussian and Fourier-Schwartz envelope, after increasing the original decay order. The separated modes retain those compact cutoffs; the slot parameter is not frozen before this derivative check.
+
+Set A=q_Nc, N=q_Nq, B=q_E3, E=q_E4, R=q_r, H_0=q_h0 and C_l=e^lTP, with 0<T<=Z. The exact odd outside weight and column scales are unchanged:
+\[
+ A^{-3/2}(NB)^{-1},\quad
+ L={C_l\over R^6A^3N^3EBGq_e},\quad
+ S={Y'B\over EN Gq_eq_fq_\tau},
+ \quad {L\over S}={C_lq_fq_\tau\over R^6A^3N^2B^2Y'}.
+                                                        \tag{9}
+\]
+Therefore the odd inverse-column weight is
+\[
+ A^{3\alpha-3/2}(NB)^{2\alpha-1}\le1.                 \tag{10}
+\]
+All odd divisor choices and crossing phases may be pooled into divisor-bounded joint row coefficients. The remaining physical scalar is
+\[
+ (Y'/C_l)^\alpha R^{6\alpha-2}H_0^{-1}.                \tag{11}
+\]
+With q_u about M, q_v about V, q_w about W, the complete envelope is
+\[
+ (1+|\nu|)^C e^{-cl^2}
+ \left(1+{M^2V^3W^5(R/H_0)^6q_{a'}^6\over C_l/X'}\right)^{-A_0}.
+                                                        \tag{12}
+\]
+The actual primitive conductor is comparable, up to fixed bad data, to q_rad(u)q_vq_w, so is at most a constant times MVW. It is not identified with the cube-free index norm. Every AFE and Poisson argument below first splits by this actual conductor. The good supports are disjoint and nonunit, so the actual mixed primitive character is nonprincipal.
+
+### 2. Uniform moving-twist payment by enlargement of two parameters
+
+Fix w and W. Define
+\[
+ t=\sqrt W,\quad M'=tM,\quad V'=tV,\qquad M'V'=MVW.
+                                                        \tag{13}
+\]
+These are only positive bound parameters. No actual ideal or conductor index is rescaled. Let
+\[
+ K(M,V;B_0)=\min\{V[M+B_0+(MB_0)^{2/3}],\ M(V+B_0)\}.
+\]
+For every B_0>0, direct comparison of the constituent nonnegative monomials gives
+\[
+ K(M,V;B_0)\le t^{-1}K(M',V';B_0).                  \tag{14}
+\]
+The exponents of t on the first branch are 2,1,5/3; those on the second are 2,1. Thus both branches, and their minimum, satisfy (14).
+
+The fixed fifth character and its zero mask enter common column coefficients in both original sieves. On the actual disjoint-support rows, the primitive conductor C is at most M'V'. The bounded full-column consequence is derived exactly as in the reviewed (2,3,4) argument, using n=c ell^2, with the full character of ell^2 retained as a pure row factor and then removed only in a positive norm. Equation (14) retains its factor t^{-1} throughout this argument; finite reciprocal ell sums cost only an ambient small power. It is not an arbitrary-full-column operator bound with unchanged l2 mass.
+
+Consequently, for the true finite-height L and L^2 moments,
+\[
+ J_{2,w}\ll\mathfrak X^\epsilon t^{-1}
+             K(M',V';\sqrt{M'V'}),\qquad
+ J_{4,w}\ll\mathfrak X^\epsilon t^{-1}
+             K(M',V';M'V').                            \tag{15}
+\]
+The actual conductor blocks, root numbers, angular phases and deleted primes precede the positive enlargement. Every detector kernel K(X) or K(U) likewise has the factor t^{-1}. In the reviewed detector, the main alternatives are proportional to sqrt(J2 K(X)) and J4^{1/3}K(X)^{2/3}, so each has exactly that same factor. The full Gamma tail also has it. The actual row count MV is at most t^{-1}M'V'. Thus for every common admissible detector choice X,Y, and then their positive minimum,
+\[
+ R_w\ll\mathfrak X^\epsilon t^{-1}R_{234}(M',V';\alpha).
+                                                        \tag{16}
+\]
+This counts the actual disjoint-support qualifying rows. Norms may be enlarged to full families only after fixing the common w character; no zero-free assertion about an artificially canceled row is needed.
+
+For the genuine rational selected multiplier, its two positive moment branches are
+\[
+ V[1+M/P_c^k+M^{2/3}/P_c^{k/3}],\qquad
+ M[1+V/P_c^k].
+\]
+Each obeys the analogue of (14). Its finite-period denominators remain uniformly bounded away from zero, with the fixed fifth values in common coefficients and all zeros retained. Hence
+\[
+ \|E_w\|_{2k}\ll\mathfrak X^\epsilon
+             t^{-1/(2k)}\mathcal E_{234,k}(M',V').    \tag{17}
+\]
+For every actual smooth 2l moment, the direct and conductor-normalized dual kernels each obey (14), and C<=M'V'. Therefore
+\[
+ \|B_w(S)\|_{2l}\ll\mathfrak X^\epsilon
+             t^{-1/(2l)}\mathcal B_{234,l}(M',V';S).
+                                                        \tag{18}
+\]
+For an actual block with C/S<1, use the nonzero Poisson Schwartz tail before enlargement. Its actual row count is MV=t^{-2}M'V', which is stronger than the factor needed in (18); the first positive norm monomial covers that tail. No sieve is applied at a subunit dual length. For the e-dependent long-S range, use the nonzero primitive Poisson tail on each actual row and actual conductor block before summing e. Its scale is the true S(e)/C, with arbitrary decay and retained common cutoffs; only then use the positive conductor upper bound and the full reciprocal-e integral. Thus a family norm bound by itself is not being used to justify the actual long-S tail. This ordering is the same as the user's explicit per-row completion in commit 7821372494c3cc9b675f694549ca2550db0ff423. The pointwise bounds for E and B have no additional t power, corresponding to k or l infinite.
+
+For any of the actual Holder candidates let theta=1-1/(2k)-1/(2l)>=0. Equations (16)--(18) give total factor
+\[
+ t^{-\theta}t^{-1/(2k)}t^{-1/(2l)}=t^{-1}=W^{-1/2}.
+                                                        \tag{19}
+\]
+The same is true if either norm is replaced by its pointwise alternative. This is the precise moving-twist payment, uniform in W except for the explicitly retained ambient small powers. There is no hidden fixed-twist constant and no new sieve or density hypothesis. In particular w is never added to the fixed bad set S. Its conductor is paid explicitly in M'V'=MVW; its deleted-prime conditions remain common coefficients or actual row zeros, and all residual losses use the full ambient parameter. The joint q_D/P compact-ratio seminorm bounds and each actual-row long-S Poisson estimate described above are established before pooling any w-dependent divisor choices. Their constants are independent of w except for these explicit conductor and ambient payments.
+
+### 3. Low bins: the full physical transfer
+
+Take 1/8<=alpha<=3/8. Use the reviewed (2,3,4) clean bound, proved by its 489-rectangle exact certificate. Its positive cumulative bound below reference frequency K_0 has gain
+\[
+ (U/K_0)^\gamma,\qquad \gamma=(2-2\alpha)/5\ge1/4,
+                                                        \tag{20}
+\]
+and above K_0 it has a fixed polynomial continuation. The complete proof includes the finite reciprocal-e integral, every allowed column slot P_c, and the full smooth Poisson tail. This is an inequality for the explicit positive envelopes, so applies to the enlarged real parameters (M',V') as well.
+
+The physical frequency in these parameters satisfies
+\[
+ M'^2V'^3=W^{5/2}M^2V^3.
+\]
+Thus (12), (19) and Stieltjes integration of the clean counting bound give, for fixed W,R,H_0,a', the factors
+\[
+ W^{-1/2}
+ \left({C_l/X'\over K_0W^{5/2}}\right)^\gamma
+ (H_0/R)^{6\gamma}q_{a'}^{-6\gamma}.                 \tag{21}
+\]
+Every actual w row satisfies h_0|w. Its shell count is O(W/H_0), with W>=H_0. This is only ideal counting, not a density bound divided by H_0. Multiplying (11) and (21) and this count leaves the W shell power
+\[
+ W^{1/2-5\gamma/2}=W^{\alpha-1/2}.
+\]
+It is at most W^{-1/8}, uniformly. Summing from W>=H_0 contributes H_0^{alpha-1/2}. The remaining physical powers are
+\[
+ R^{6\alpha-2-6\gamma}\,
+ H_0^{6\gamma+\alpha-5/2}\,
+ q_{a'}^{-6\gamma},                                  \tag{22}
+\]
+where
+\[
+ 6\alpha-2-6\gamma=(42\alpha-22)/5\le-5/4,\quad
+ 6\gamma+\alpha-5/2=-1/10-7\alpha/5<0,\quad
+ -6\gamma\le-3/2.                                   \tag{23}
+\]
+The finite h_0 divisor sum is absorbed in an arbitrarily small power. The R and a' ideal sums are strictly convergent.
+
+Here (21) denotes a full Schwartz moment, not a hard cutoff. For effective U<K_0 use (20) and Stieltjes integration directly; for U>=K_0 use its same fixed polynomial continuation and choose the original Schwartz order larger. When C_l/X' exceeds K_0 because of the Gaussian shift, its additional fixed exponential in |l| is absorbed by e^{-cl^2}. An effective subunit frequency has the original arbitrary rapid tail. All actual ambient labels are introduced before selecting the small powers. The strict W,R,a' margins in (23) absorb them.
+
+The first-flat operation changes only T=Z/q_delta^6 with coefficient mu(delta)kappa(delta)/q_delta^2, keeping X',Y' and all original slots. Its ideal exponent is exactly -2+6alpha-6gamma<=-5/4. Its redundant frequency lift changes only the sixth-power part, so preserves this type. The same argument applies to each marker before taking its flat. This proves (2) for the whole low-bin range.
+
+### 4. High bins: the actual three-family count and second slot moment
+
+For 3/8<=alpha<=1/2, no density improvement is required. Put p=(3-alpha)/2. Retain the actual joint count and the cubic-side selected second moment, then the pointwise smooth bound min(S,sqrt(MVW)). For fixed h_0 the allowed w shell count is W/H_0, in both the row count and the selected second moment. Cauchy therefore yields exactly H_0^{-1} times the usual unrestricted three-family monomials. The full finite reciprocal-e integral peaks at S=sqrt(MVW). After the common scalar (11), the three row expressions are
+\[
+ H_0^{-1}\left\{
+ P_c^\alpha M^{1-\alpha/2}(VW)^p,
+ \quad P_c^{\alpha-1/2}(MVW)^p,
+ \quad P_c^{\alpha-1/6}M^{4/3-\alpha/2}(VW)^p
+ \right\}.                                           \tag{24}
+\]
+All masks, crossing phases and compact modes precede this positive inequality.
+
+Apply the complete Fourier envelope (12). In the first monomial integrate V first, then M; in the other two integrate M first, then V. The frequency powers are the reviewed values
+\[
+ \gamma_1=1/2-\alpha/6,\qquad
+ \gamma_2=3/4-\alpha/4,\qquad
+ \gamma_3=2/3-\alpha/4.                              \tag{25}
+\]
+The residual M or V shell powers are, respectively, -alpha/6, -(3-alpha)/4, -1/2+alpha/4. All are strictly negative. The W shell power is p-5gamma_i, also strictly negative in each case. Sum it from W>=H_0. Since (24) contributes H_0^{-1} and the physical boundary contributes a second H_0^{-1}, the final boundary power is
+\[
+ \gamma_i+p-2=
+ -2\alpha/3,\quad(1-3\alpha)/4,\quad1/6-3\alpha/4,
+                                                        \tag{26}
+\]
+respectively. Each is nonpositive on this high-bin interval. The remaining R and first-flat powers are exactly
+\[
+ 7\alpha-5,\quad(15\alpha-13)/2,\quad(15\alpha-12)/2,
+                                                        \tag{27}
+\]
+each at most -3/2; the a' exponents -6gamma_i are at most -5/2. Thus all the physical layers and ambient losses have strict convergence margins, with the same original Schwartz/Gaussian argument as in Section 3.
+
+No W loss remains. Use the actual P_c<=P<=O(Z^{1/6-d}) for positive slot powers and P_c>=1 for negative powers. The normalized finite-compensation exponents are exactly the three reviewed (2,3,4) values
+\[
+ (10-63\alpha)/96,\quad
+ (59-171\alpha)/192,\quad
+ 61/288-139\alpha/192.                              \tag{28}
+\]
+They decrease with alpha and have joint maximum -41/1536 at alpha=3/8. Original subset-length terms are nonpositive with these same endpoint choices. This is stronger than (2).
+
+### 5. Conclusion and boundaries of the claim
+
+Combining the low-bin transfer and high-bin bound gives the independently reviewed complete-type estimate (2). It uses the true physical n and fixed windows, the true cubic and quadratic indices, the primitive-conductor split, all crossing phases, the fifth lower boundary, the original rational slots, and both exact first-flat operations. Input Q is the user's finite-order Hecke result, not an assumed RH for a new character family. The positive envelope comparison never alters the physical probe.
+
+The local identity, analytic enlargement, physical transfer and exact affine exponent checks have passed independent review. No assertion is made here for numerator residue 1 or for the full signed low/high comparison.
+
+Input Q is the user's [FORMAL_INPUT_Q](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/52ee48d3e2e4c5b0beeb3e4880eca86fb2208ce1/reports/20261011_qrh_selection_bridge/FORMAL_INPUT_Q.md), with its existing source-audit and user-build attribution; no independent formal rebuild is claimed here. The actual per-row Poisson tail, compact tuple-ratio envelope and two distinct boundary factors explicitly inherit the user's [782137 clarifications](https://github.com/aa339519589-cpu/Riemann-Hypothesis/commit/7821372494c3cc9b675f694549ca2550db0ff423). The [exact affine checker](check_three_core_exponents.py) verifies the displayed interval inequalities with rational arithmetic; the full arithmetic and analytic proof is given above. The inherited 489-rectangle proof is Part XX and its published companion certificate.
+
+# Part XXIII. Complete mixed (3,5) type below the low-comparison threshold
+
+This Part combines the genuine-conductor long detector, the exact pair-Gram operator, the explicit density contraction and their complete physical application. The previous common-column and full mixed interfaces are Parts XVII–XVIII. The user's [finite-order input Q](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/52ee48d3e2e4c5b0beeb3e4880eca86fb2208ce1/reports/20261011_qrh_selection_bridge/FORMAL_INPUT_Q.md), [actual factorable prime-slot theorem](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/113702dd9ff055b343a89d2667fb9ff72783de97/reports/20261011_qrh_selection_bridge/GENERAL_SELECTED_Q_GAIN.md) and [uniformity corrections](https://github.com/aa339519589-cpu/Riemann-Hypothesis/commit/7821372494c3cc9b675f694549ca2550db0ff423) are inherited with their original attribution. Q is used only for finite-order Hecke characters with norm/radial Mellin modes. The ordinary positive moment estimates may permit more general common coefficients, but this does not extend the domain of the inverse-L input. The source statements have been audited; no independent Lean rebuild is claimed. Formula numbers are local to Sections A–D.
+
+
+## A. Genuine-conductor long detector
+
+### A genuine-conductor large sieve for the long inverse detector
+
+#### Claim, scope, and review status
+
+The long-detector and genuine-conductor assertions retained below have passed independent review; see the companion REFEREE, Part XXIII A. This manuscript uses only the
+original family and the original zero detector. No new physical probe
+is introduced. Write K=Q(sqrt(-3)), O=O_K and q_a=N(a). All constants
+may depend on this fixed field, original finite ray data and fixed eta.
+They do not depend on a moving conductor.
+
+For the joint family lambda_(v,w)=eta psi_v chi_w, v,w good squarefree,
+nonunit and coprime, put Q=VW, with q_v about V and q_w about W. Its
+actual primitive conductor has norm comparable to Q. In addition to
+the previously audited common-column kernel
+
+    K0(B)=min{W(V+B),
+        V[W+B+W^(5/6)B^(1/3)+W^(1/3)B^(5/6)]},
+
+one can use the genuine-conductor kernel Q^2+B, hence
+
+    Knew(B)=min{K0(B), Q^2+B}.                                  (1)
+
+This does not replace the canonical sixth-power-free index by its
+radical in the fixed-order theorem. The new input is the classical
+all-primitive-character large sieve, proved below in the present PID.
+
+A concrete consequence is an unconditional exceptional-row bound
+
+    R(7/8,T) << N^(6/5+epsilon) (1+T)^C,  V=W=N,               (2)
+
+improving the previously proved N^(7/5+epsilon). The fourth-moment
+branch alone gives N^(11/9+epsilon); the second-moment branch gives
+the stated sharper exponent. Input Q in the user's
+notation is not needed for (1)--(2); it is needed if a later physical
+inverse-column comparison caps its zero bins at 7/8.
+
+#### 1. The all-primitive-character inequality in the Eisenstein field
+
+For any complex sequence a_c on integral ideals with q_c<=B,
+
+    sum_(q_f<=Q) sum_(chi primitive mod f)
+        |sum_c a_c chi(c)|^2
+       << (Q^2+B) sum_c |a_c|^2.                               (3)
+
+The sum can include all primitive residue-class characters; restricting
+to those trivial on units, hence finite-order Hecke characters, only
+decreases the positive left side. A fixed bad-conductor factor changes
+Q by only a fixed constant. Each ideal is represented by one generator
+in a fixed fundamental sector. Thus the column support is a subset of
+a fixed two-dimensional lattice ball of radius O(sqrt(B)). All weights,
+including a fixed angular mode or a common norm twist, remain common
+column coefficients.
+
+Here is a direct proof. Choose one generator f per modulus ideal and
+use the standard trace pairing, with the fixed different incorporated
+in the dual lattice. Reduced fractions a/f, a modulo f and (a,f)=1,
+are distinct modulo this fixed lattice, except for the already removed
+associate redundancy. Fractions with q_f,q_g<=Q have mutual torus
+distance at least c_K/Q: a nonzero difference is (ag-bf)/(fg), and a
+nonzero Eisenstein integer has modulus at least one. Reduction of the
+fraction ensures that an identical torus class has the same denominator
+ideal and the same residue class.
+
+For completeness, the two-dimensional additive large sieve for a
+Delta-separated set of torus points has constant O(B+Delta^(-2)) on
+this lattice ball. By duality, majorize its column indicator by a fixed
+constant times exp(-pi |n|^2/R^2), R about sqrt(B). Poisson summation
+makes its dual Gram kernel a constant times
+
+    R^2 sum_m exp(-c R^2 |x_j-x_k-m|^2).
+
+Delta-packing in successive planar annuli bounds every absolute row
+sum by O(R^2+Delta^(-2)). Schur's inequality proves the claim. A fixed
+linear change between O, its trace dual, and Z^2 changes only constants.
+With Delta=c_K/Q this is O(B+Q^2).
+
+For a primitive multiplicative character modulo f, its actual Gauss
+sum has modulus sqrt(q_f), and its Gauss expansion expresses the
+multiplicative column sum as q_f^(-1/2), times a modulus-one factor,
+times the additive Fourier combination with coefficients bar chi(a).
+Sum its squared modulus over primitive characters, enlarge to all
+characters of (O/f)^*, and use exact character orthogonality. This
+bounds the result by
+
+    phi(f)/q_f * sum_(a mod f, (a,f)=1)
+          |sum_c a_c e_K(ac/f)|^2.
+
+Since phi(f)/q_f<=1, summing f and applying the additive bound proves
+(3). The principal modulus-one case is harmless and can be included.
+
+The pair (v,w) produces only bounded repetition in (3). Away from the
+fixed bad set, primes of v have local order two and primes of w have
+local order six. They therefore recover the two disjoint supports from
+the primitive character. The finite ray/bad partitions contribute only
+a fixed multiplicity. Conjugating the sixth factor changes none of
+these facts. Thus (3) applies to the actual joint family, proving (1).
+Unlike the fixed-order kernel, (3) is valid for arbitrary full columns.
+
+#### 2. The actual truncated inverse and its tail
+
+Retain the original M_X(s)=sum_(q_d<=X) mu(d)lambda(d)q_d^(-s).
+The coefficients in L(s,lambda)M_X(s) are exactly
+
+    a_n(X)=sum_(d|n, q_d<=X) mu(d),                              (4)
+
+with the fixed eta factor kept in lambda. They vanish for 1<q_n<=X,
+and are divisor-bounded for all n. The new inequality (3) applies to
+these genuine full-column coefficients without changing their masks
+or replacing the primitive conductor by a canonical index.
+
+Let J=K0(Q), the already audited fourth-moment bound for L on the
+half-line, including polynomial height losses. The existing restricted
+fourth-moment detector therefore gives
+
+ R(b,T) << (QXY)^epsilon(1+T)^C [
+    Y^((2-4b)/3) J^(1/3) Knew(X)^(2/3)
+    + sup_(X<=U<=Y) U^(1-2b) Knew(U)].                         (5)
+
+This uses precisely the same finite-height suprema, Gamma tails and
+true common coefficients as the audited joint detector. No assumption
+on the Mertens function or reciprocal L-function is added.
+
+Put a=1-b and assume 1/8<=a<=1/4. Choose
+
+    X=Q^2,    Y=(J Q^4)^[1/(2(1+a))].                          (6)
+
+Since J>=Q and 4a<=1, Y>=Q^2=X. At U>=Q^2, Knew(U)<=Q^2+U<=2U,
+so the complete detector tail is at most a constant times Y^(2a).
+Also Knew(X)<=2Q^2. The first term in (5) equals the same power.
+Consequently
+
+    R(b,T) << (VW)^epsilon (1+T)^C
+                   min{VW,(J Q^4)^[a/(1+a)]}.                 (7)
+
+All cutoffs in (6) are fixed powers of the actual conductor ranges,
+so the prior arbitrarily small losses retain their intended meaning.
+When V=W=N, J<<N^3 and Q=N^2. Equation (7) is
+N^[11a/(1+a)+epsilon]. This gives 11/9 at the endpoint.
+
+One should also retain the second-moment branch. Write J2=K0(sqrt(Q)).
+Choosing X=Q^2 and Y=(Q^2 J2)^[1/(1+2a)] is admissible for the same
+reason J2>=Q>=Q^(4a). The first detector term
+Y^(a-1/2) Q sqrt(J2) balances its complete tail Y^(2a), giving
+
+    R(b,T) << (VW)^epsilon (1+T)^C
+             min{VW,(Q^2 J2)^[2a/(1+2a)]}.                  (7a)
+
+When V=W=N, J2<<N^2, so (7a) is N^[12a/(1+2a)+epsilon].
+At a=1/8 this is N^(6/5+epsilon), proving (2).
+
+More explicitly one may use
+
+    J << V W^2                       if V>=W,
+    J << V^(11/6) W^(7/6)             if V<=W.                 (8)
+
+In the second line the other three terms of V Theta_6(W,VW) are
+bounded by the displayed one. At a=1/8, the two row exponents, in
+logarithmic variables v=log_Z V, w=log_Z W, are respectively
+
+    (5v+6w)/9,        (35v+31w)/54.                            (9)
+
+These are exceptional-row upper bounds, not asymptotic counts.
+
+#### 3. Genuine smooth norms and detector contraction
+
+The same all-character branch may be inserted into
+the direct and dual smooth moment, whose general form is
+
+    ||B(S)||_(2l) << sqrt(S)
+      min{Knew(S^l),Knew((Q/S)^l)}^[1/(2l)],  1<=S<=Q.           (13)
+
+The true long-S tail, conductor-ratio Mellin separation and angular
+rotation factors are unchanged.
+
+The long-detector branch retains the required convergence. Under
+(V,W,S)->(tV,tW,t^2 S), actual slots fixed, use X->t^4 X and
+Y->t^4 Y in (5), for 0<t<=1. The new X is exactly the square of the
+new conductor range; hence it stays admissible on nonempty rows.
+The all-character kernel at these new cutoffs contracts by t^4.
+The joint second- and fourth-moment bounds contract by at least t^2.
+The second-moment detector term contracts by t^(1+4a). Thus the
+first term of (5) contracts by at least t^[(16a+2)/3], and the complete
+tail by t^(8a). Both are at least a factor t for 1/8<=a<=1/4.
+The trivial count contracts faster. It is enough here to contract the
+chosen positive detector expression; no literal rescaling of zero sets
+is claimed.
+
+For the second-moment first term, the fourth-moment first term and the complete tail, the contraction degrees are respectively 1+4a, (16a+2)/3 and 8a. The first two are at least 8a on 1/8<=a<=1/4. Therefore these positive density bounds contract by t^(8a). A physical application using the new smooth alternatives must separately check their own combined homogeneity; this is done in Section D below.
+
+#### Classical provenance
+
+Inequality (3) is a classical number-field large sieve, not a new
+large-sieve theorem. A historical source is M. N. Huxley, *The large
+sieve inequality for algebraic number fields*, Mathematika 15 (1968),
+178--187, DOI https://doi.org/10.1112/S0025579300002540 . The special
+Eisenstein-field proof in Section 1 is included so the application does
+not depend on an unchecked change of source normalization. The new
+use here is its long-column branch combined with the already reviewed
+thin-family L moments, true inverse detector and true smooth columns.
+
+
+## B. Exact pair-Gram operator and true tail
+
+### The true joint pair Gram matrix and restricted moments
+
+#### Reviewed statements
+
+Independently reviewed; the full physical application appears in Section D. All families, primary conventions,
+zero extensions and fixed eta are those of the reviewed joint family
+lambda_(v,w)=eta psi_v chi_w, with v,w good squarefree, nonunit and
+coprime, norms V,W, and Q=VW. Conjugating the sixth factor is allowed.
+The two parameters are one row. Partition the finitely many fixed bad
+and ray parameters first, so the good pair is injective in the actual
+primitive character. Constants below can depend on these fixed data,
+but never on a moving support.
+
+Write
+
+ K(B)=min{W(V+B),
+         V[W+B+W^(5/6)B^(1/3)+W^(1/3)B^(5/6)]}.
+
+The main statement, for each fixed row i and U>=1, is
+
+ sum_(j!=i) |G_ij(U)|^2
+     << (QU)^epsilon(1+T)^C U K(max(1,Q^2/U)).                  (1)
+
+Here G_ij is the actual smooth primitive-pair Gram sum. It may use
+one common radial Schwartz weight, or the radial annular weights
+(q_n/U)^(2b-beta_i-beta_j-it_i+it_j), b<=beta_i,beta_j<=1,
+|t_i|,|t_j|<=T, occurring in the reviewed true-tail detector. In the
+latter case the beta/height choices may depend arbitrarily on the row.
+Their uniformity is established by common parameter separation below.
+The diagonal is O(U). No root number or CRT phase is replaced by one.
+
+A consequence for any subset E of at most R actual rows is the genuine
+arbitrary-full-column operator bound
+
+ sum_(j in E) |sum_(q_n<=B) a_n lambda_j(n)|^2
+   << (QB)^epsilon D_R(B) sum_n |a_n|^2,
+
+ D_R(B)=B+sqrt[R B K(max(1,Q^2/B))], B>=1.                     (2)
+
+It can be combined by taking the minimum with the already proved
+Knew(B)=min(K(B),Q^2+B) whenever that input's column hypotheses hold.
+For full arbitrary coefficients, only (2) and the all-character branch
+Q^2+B are asserted; the original K branch requires its stated support
+or bounded-coefficient reduction.
+
+#### 1. Exact fixed-row partition and the resulting character family
+
+Use local good-prime exponents 3 at v and 1 at w. At each prime of
+the fixed row i, partition the varying row j into three possibilities:
+it is absent, belongs to v_j, or belongs to w_j. This is at most
+3^omega(v_i w_i), hence an ambient small power, many assignments.
+For a fixed assignment, remove these specified primes from v_j,w_j
+and call the free squarefree coprime parts v_0,w_0. Their norm ranges
+V_0,W_0 are at most constant multiples of V,W.
+
+The local difference in lambda_i bar lambda_j has the following exact
+types:
+
+- equal types (3,3) or (1,1): the local character cancels, but its
+  original nonunit zero remains as a unit mask;
+- crossed types (3,1) or (1,3): local exponent +2 or -2, primitive
+  cubic at that prime;
+- only row i is present: fixed local exponent 3 or 1;
+- only row j is present: free local exponent -3 or -1.
+
+Consequently, on this assignment the product is exactly
+
+    1_(n,g)=1 * theta_fixed(n) * overline(psi_v0 chi_w0)(n),     (3)
+
+with a fixed cancellation ideal g supported on row i. The character
+following the mask is primitive on its good support; theta_fixed is
+fixed and may contain the crossed cubic local components. Its support
+is disjoint from v_0 w_0. Fixed bad components are separately partitioned
+into finitely many possibilities. The ratio is nonprincipal: if its
+good support were empty, the two good labels would be identical,
+which is the excluded diagonal after the fixed partition.
+
+Let f denote its actual primitive conductor, including its fixed bad
+part. Up to a fixed constant,
+
+    q_f q_g^2 <= q_fi q_fj << Q^2.                            (4)
+
+At a crossed prime the left side has exponent one and the product of
+row conductors has exponent two; at a cancelled prime g^2 has exactly
+exponent two. All other good prime exponents agree. Thus (4) follows
+prime by prime, without an assumption that crossed primes cancel.
+
+Expand the actual unit mask as sum_(d|g,d|n) mu(d), then put n=d x.
+The retained extra value of the primitive character at d is a genuine
+modulus-one varying-row scalar. It is not moved into the common
+frequency coefficients. The effective scale is U/q_d.
+
+#### 2. Poisson with every phase and common weight
+
+For this fixed assignment and d, primitive Poisson has amplitude
+
+    A about (U/q_d)/sqrt(q_f),
+
+and dual norm length
+
+    J0 about q_f q_d/U.                                      (5)
+
+Its zero dual frequency is absent. The complete primitive Gauss/root
+factor is a modulus-one row scalar. The remaining frequency character
+is exactly
+
+    overline(theta_fixed(h)) * psi_v0(h) chi_w0(h),             (6)
+
+with all its original zeros. The first factor is a common coefficient
+independent of v_0,w_0. Original finite congruences contribute only
+fixed finite frequency factors and genuine row scalars through CRT;
+retain them rather than setting them equal to one. Their fixed
+modulus can be included before this calculation.
+
+The norm of f is a fixed assignment factor times q_v0 q_w0, with a
+compact normalized ratio on each dyadic free-row block. For radial
+weights there is no moving conductor-angle dependence. Common Mellin
+separation of this ratio gives common frequency coefficients with
+integrable seminorms.
+
+For the detector weights, also separate beta_j and t_j/T by a common
+Fourier expansion on fixed compact parameter intervals. Extend the
+weights smoothly beyond these intervals first. Differentiation with
+respect to these parameters and the normalized conductor ratio costs
+only a polynomial in T and fixed weight seminorms. Fourier decay in
+the common parameters, and the Schwartz decay of the frequency weight,
+therefore hold jointly with an integrable polynomial-in-T envelope.
+The resulting factors exp(i l beta_j) and exp(i m t_j/T) are pure row
+scalars. No supremum of arbitrary row-dependent inner weights is used.
+This proves the same estimate for arbitrary choices beta_j,t_j in the
+stated boxes. The common Gaussian weight used for (2) is an easier
+special case and needs no height parameter.
+
+On a nonzero frequency dyad q_h about J>=1, the previously proved
+bounded-full-column joint inequality bounds the squared v_0,w_0 norm
+by a small power times
+
+    A^2 J K_(V0,W0)(J) (1+J/J0)^(-A0).                        (7)
+
+Unit free factors, when present, are included by their elementary
+one-row bound; the same K expression with scales at least one covers
+them. Its ordinary fixed coprimality restrictions may be enlarged only
+in this positive row norm. The dual coefficient theta_fixed(h), its
+zeros and all fixed frequency factors are kept in the common columns.
+
+Minkowski over frequency dyads and over the common separating
+parameters gives, if J0>=1,
+
+    << (QU)^epsilon(1+T)^C (U/q_d) K_(V0,W0)(J0).              (8)
+
+All powers of J in J K(J) are positive, so the rapid tails give this
+same expression. If J0<1, every nonzero frequency is in the true
+Schwartz tail, and one instead has an arbitrarily high positive power
+of J0 times (U/q_d) K_(V0,W0)(1).
+
+By (4), q_f q_d<=C Q^2, because d|g. The monotonicity of K in both
+family sizes and the frequency argument bounds (8), in both cases, by
+
+    (QU)^epsilon(1+T)^C U K(max(1,Q^2/U)).
+
+Only divisor-small many assignments and d occur for fixed i. Applying
+Cauchy/Minkowski with a smaller initial loss proves (1). This is the
+same gcd--primitive-Poisson structure as the reviewed sextic Gram
+lemma, now with the crossed cubic types and both free indices kept.
+
+#### 3. Restricted full-column operator and smooth moments
+
+Use a common positive radial Gaussian majorant equal to at least one
+on q_n<=B. The resulting ideal Gram diagonal is O(B), and (1) bounds
+each complete off-diagonal row squared mass. Restrict to E and use
+Cauchy in its at most R columns. Schur's test gives the Gram operator
+norm at most D_R(B). Hilbert-space duality proves (2), for arbitrary
+full common coefficients. Passing from elements to ideals costs only
+the fixed unit multiplicity; finite-order Hecke characters and radial
+weights make this legitimate without a sharp sector boundary.
+
+The positive function D_R is nondecreasing and has upper logarithmic
+slope at most one: for c>=1,
+
+    D_R(cB)<=c D_R(B).                                       (9)
+
+Indeed B K(Q^2/B), with the argument clamped at one, is the minimum
+of sums of nonnegative monomials of degrees between zero and one in
+B; each such sum is increasing and at most linear. The same assertions
+hold after the square root and addition of B.
+
+The actual smooth sum on E similarly satisfies
+
+    ||B(S)||_(2l,E) <= (QS)^epsilon sqrt(S)
+       min{D_R(S^l), D_R((Q/S)^l)}^[1/(2l)], 1<=S<=Q.           (11)
+
+First use actual conductor blocks comparable to Q; their normalized
+ratios and pure row root numbers are separated as above. The direct
+power expansion is a common divisor-bounded polynomial of square mass
+O(S^l) up to a small power. The dual has length Q/S and amplitude
+S/sqrt(Q). The zero dual frequency remains absent. Its bounded near-
+zero weight and all Schwartz tails are handled before taking (2).
+The actual long-S tail handles S>Q. The smooth estimate (11) keeps the very
+same exceptional row set; no factor R/V or R/W is invented.
+
+#### 4. The genuine detector tail
+
+Apply (1) to the annular detector Gram weights. Schur with Cauchy over
+its R rows and the actual divisor-bounded tail coefficient mass O(U)
+gives
+
+ R U^(2b) << U^[1+epsilon] [U+sqrt(R U K(max(1,Q^2/U)))].
+
+Solving the quadratic inequality in sqrt(R) yields
+
+    R_tail(U) << U^(2a+epsilon)
+             +U^(4a-1+epsilon) K(max(1,Q^2/U)).               (12)
+
+For 1/8<=a<=1/4 the second term is decreasing in U. Hence the actual
+full detector tail starting at X is bounded by
+
+    Y^(2a+epsilon)+X^(4a-1+epsilon)K(max(1,Q^2/X)),             (13)
+
+with the standard small enlargement of Y and polynomial height losses.
+The first Gamma integral and its true second/fourth moments are
+unchanged. This is an improvement to the actual tail, not a
+change in the coefficients a_n(X).
+
+
+## C. Explicit density and contraction
+
+### A transparent pair-detector branch and its actual contraction
+
+#### Scope
+
+This supplement has passed independent review. Its inputs are the
+reviewed joint pair-Gram theorem, its genuine detector-tail estimate
+(13), and the already reviewed joint second/fourth moment detector.
+It concerns the actual mixed (3,5) family, V,W>=1, Q=VW and
+1/8<=a<=1/4. All fixed-data, height, smooth and ambient small-power
+losses have the same meanings as in those inputs. The complete physical application is Section D below.
+
+#### 1. An explicit fourth-moment branch
+
+Put D=1-a-4a^2, which is positive throughout the displayed interval.
+For X>=V use the elementary, genuine joint bounds
+
+    K(X)<=C W X,             J4<=C V W^2,
+    K(Q^2/X)<=C W(V+Q^2/X).                                 (1)
+
+The fourth-moment bound follows from K(Q)<=W(V+VW)<=2VW^2,
+so it requires no ordering between V and W. The last bound remains
+true with the argument clamped at one, since V>=1. Hence the true fourth-moment first integral and pair-Gram tail
+are bounded, up to the inherited losses, by
+
+ Y^((4a-2)/3) V^(1/3) W^(4/3) X^(2/3)
+ +Y^(2a)+VW X^(4a-1)+V^2 W^3 X^(4a-2).                      (2)
+
+For fixed X, balance the first term and Y^(2a) by setting
+
+ R(X)=(V W^4 X^2)^[a/(1+a)],       Y=R(X)^[1/(2a)].           (3)
+
+The two remaining positive tail terms decrease in X (the first is
+constant at a=1/4). Their intersections with R(X) occur at
+
+ XA=[V W^(1-3a)]^[1/D],
+ XB=[V^(2+a) W^(3-a)]^[1/(2-4a^2)].                          (4)
+
+Choose X=max(XA,XB). Both tail terms are then at most R(X).
+This is a direct bound for the unchanged truncated-inverse detector.
+No coefficients of its tail are discarded or replaced.
+
+These choices are admissible. For XA the V exponent is at least one;
+for XB it is (2+a)/(2-4a^2)>=1. Thus X>=V. Also Y>=X is equivalent to
+2a log X<=log V+4 log W. For XA its tight V-coefficient inequality is
+2a<=D, equivalent to a<=1/4 on this interval. Its W-coefficient
+inequality is immediate. For XB both coefficients satisfy the same
+inequality (the V inequality already holds up to a=1/3).
+
+Consequently an explicit exceptional-row majorant is
+
+    R_exp(V,W)=min{VW,max(RA,RB)},                            (5)
+
+where
+
+ RA=V^[a(3-4a)/D] W^[2a(3-8a)/D],
+ RB=(V W^4 XB^2)^[a/(1+a)].                                 (6)
+
+The maximum, rather than the minimum, is essential: it pays both
+actual pair-tail monomials simultaneously.
+
+#### 2. A proved homogeneous contraction
+
+The simultaneous degrees of RA and RB in V,W are respectively
+
+ delta_A=a(9-20a)/D,
+ delta_B=10a(1-a)/(1-2a^2).                                  (7)
+
+Throughout 1/8<=a<=1/4,
+
+    1<=delta_A<=2,       delta_B>=delta_A.                    (8)
+
+For clarity, exact positive certificates are
+
+ delta_A-1=-(8a-1)(2a-1)/D,
+ 2-delta_A=(4a-1)(3a-2)/D,
+ delta_B-delta_A=a(1-12a^2)/[(1-2a^2)D].                     (9)
+
+Thus for 0<t<=1, while tV>=1 and tW>=1,
+
+    R_exp(tV,tW)<=t^delta_A R_exp(V,W).                      (10)
+
+The trivial family bound in the minimum has degree two and therefore
+respects (10). The initial small-power and polynomial height losses
+are kept outside this identity, not differentiated or silently set to
+one. The usual smaller initial epsilon absorbs their later use.
+
+The stronger degree inequality needed in Section D is also exact:
+
+    delta_A-(4a+1/2)
+       =(8a-1)(4a^2-3a+1)/(2D)>=0.                          (11)
+
+Here D>0 and the quadratic numerator is positive throughout 1/8<=a<=1/4. This concerns the displayed positive density majorants. The complete physical use and every new smooth alternative are proved in Section D; no contraction of a literal set of zeros is assumed.
+
+## D. Complete physical estimate and exact certificate
+
+### A closed complete mixed (3,5) estimate using the user's prime-slot gain
+
+#### Reviewed result and precise scope
+
+Retain exactly the original physical probe, physical windows, finite prime slots, units/rays, both original and core markers, and each exact first Möbius-flat operator. Assume the user's Q input with its existing provenance and source-audit status. For the complete nonprincipal mixed type
+
+    H=epsilon v^3 w^5 a^6,
+    v,w nonunit good squarefree, (v,w)=1,
+
+including every original physical n, the independently reviewed estimate is
+
+    I_(3,5)(Z) <<_epsilon Z^(-3/16-1/16384+epsilon).             (1)
+
+The complete application and exact certificate have passed independent review. The new arithmetic inputs are the reviewed actual pair-Gram energy and restricted smooth moments, their explicit density contraction, and the user's [GENERAL_SELECTED_Q_GAIN](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/113702dd9ff055b343a89d2667fb9ff72783de97/reports/20261011_qrh_selection_bridge/GENERAL_SELECTED_Q_GAIN.md) from commit 113702dd9ff055b343a89d2667fb9ff72783de97. The latter is not a result of this manuscript. No general factorization of arbitrary selected coefficients is assumed.
+
+Estimate (1) settles only this complete frequency type. The other types and the full signed low/high comparison remain separate requirements; no RH conclusion follows from this manuscript alone.
+
+#### 1. The retained physical interface and the user's actual slot theorem
+
+Use the independently reviewed all-n mixed interface and its complete physical transfer. Set
+
+    C0=ZP, K0=C0/X'=Z^(13/16), C0/Y'=Z^(11/16).
+
+The normalized common finite-compensation prefactor is Z^(-29/96). For a rightmost-zero bin write alpha=1-b, 1/8<=alpha<=1/2. All contours have the original small positive buffers. Write R0=q_r and H0=q_h0 to distinguish the physical square variable from a density bound.
+
+The two exact odd physical branches have n0|v, N=q_n0 and B=q_(c,n0). After taking the inverse-column bin their outside weight is (NB)^(-1+2alpha)<=1. The full n0/E/g sums and all crossing phases remain the audited divisor-small joint row coefficients. At the fifth boundary h0|rad(r), h0|w, H0<=R0, and a=(r/h0)a'. The precise remaining physical weight and the complete Fourier envelope are
+
+    (Y'/C_l)^alpha R0^(6alpha-2) H0^(-1),
+    exp(-c l^2) [1+V^3 W^5(R0/H0)^6 q_a'^6/(C_l/X')]^(-A),
+    C_l=e^l T P, 0<T<=Z.                                    (2)
+
+Every original mask and phase is retained before positive row enlargement. On h0|w the restored mixed character already gives the h0-unit mask, so only that redundant copy is deleted before defining a common free smooth column on the whole joint family. Ordinary r-prime masks are expanded into their actual common column masks and fixed s-divisor extractions first.
+
+Here the user's new prime-slot theorem applies to the ACTUAL remaining c-column slots. Freeze the physical divisor choices, finite ray/unit choices and every retained joint log-Fourier mode. On each such mode the original coefficient factors over the disjoint prime slots, with only fixed bad-ray characters in their fixed factors. All moving good characters remain the genuine character lambda_(v,w), and the common holes remain in the actual imprimitive modulus. The user's result then says
+
+    |E_(v,w)(s)| << ambient^epsilon (height and mode)^C
+                         P_c^(-1/8+epsilon).                 (3)
+
+It is not applied to an arbitrary bounded array z_D, an unseparated sum of modes, or a moving good character hidden inside a fixed ray factor. Thus the actual contour extraction pays only P_c^(alpha-1/8), uniformly in the row.
+
+The user's commit 7821372494c3cc9b675f694549ca2550db0ff423 supplies two necessary uniformity details. Every tuple ratio q_D/P lies in a fixed positive compact interval; its joint ratio derivatives are bounded by a common Gaussian/Schwartz envelope BEFORE pooling D,n0,g. Each separated mode retains its compact product cutoffs. Also the e-dependent long-S tail is obtained by actual primitive Poisson on each row before the reciprocal-e sum, rather than inferred merely from a family norm. These facts are inherited here explicitly. The user has supplied (3); its independent source/factorization review is a separate input, not a new Lean build claimed here.
+
+#### 2. Positive density and smooth-moment inputs
+
+Put Qc=VW and
+
+    K(B)=min{W(V+B),
+       V[W+B+W^(5/6)B^(1/3)+W^(1/3)B^(5/6)]}.                 (4)
+
+This is the actual joint quadratic/sextic common-column kernel. For bounded full columns use its previously proved square-layer consequence; it is not an arbitrary full-column operator theorem.
+
+The reviewed primitive-pair Gram theorem gives, on any exceptional subset of at most R rows, the genuine full-column kernel
+
+    D_R(B)=B+sqrt(R B K(max(1,Qc^2/B))).                       (5)
+
+Consequently the true smooth sum has all three complete direct/dual alternatives
+
+    ||B(S)||_(2j,E) << sqrt(S)
+       min{K(S^j),K((Qc/S)^j)}^(1/(2j));
+    ||B(S)||_(2j,E) << sqrt(S)
+       min{Qc^2+S^j,Qc^2+(Qc/S)^j}^(1/(2j));
+    ||B(S)||_(2j,E) << sqrt(S)
+       min{D_R(S^j),D_R((Qc/S)^j)}^(1/(2j)).                  (6)
+
+The first uses positive restriction from the full family. The latter two are the genuine all-character and restricted-row estimates. Actual conductor blocks, root numbers, all zero masks, bounded near-zero dual profiles and complete Schwartz tails remain. The pointwise alternative is min(S,sqrt(Qc)); the actual long-S tail is handled in the order stated in Section 1. We use j>=1 in the first line and j>=2 in the other two. This restriction is important for the full physical contraction.
+
+For 1/8<=alpha<=1/4, a valid joint exceptional-row bound is the minimum of these five quantities:
+
+    Qc;
+    W (V^3 W)^[alpha/(1+alpha)];
+    max(R_A,R_B);
+    (J2 Qc^2)^[2alpha/(1+2alpha)];
+    (J4 Qc^4)^[alpha/(1+alpha)],                              (7)
+
+where J2=K(sqrt(Qc)) and one may use
+
+    J4 << min(VW^2, V^(11/6)W^(7/6)).
+
+The last expression is understood by its valid shape cases; its minimum has exactly this positive exponent envelope. The explicit pair-detector branch has
+
+    d=1-alpha-4alpha^2,
+    X_A=(V W^(1-3alpha))^(1/d),
+    X_B=(V^(2+alpha)W^(3-alpha))^(1/(2-4alpha^2)),
+    max(R_A,R_B)=(V W^4 max(X_A,X_B)^2)^[alpha/(1+alpha)] .    (8)
+
+The proof only uses K(X)<=W(V+X), J4<=2VW^2 and the two genuine pair-tail terms VW X^(4alpha-1), V^2W^3 X^(4alpha-2). Hence (8) is valid for every V,W>=1; it does not require V>=W. X>=V and the resulting Y>=X hold coefficientwise throughout the stated alpha interval. The other branches in (7) are the previously reviewed moving-twist and genuine-conductor detectors.
+
+#### 3. Exact complete low-bin certificate
+
+Use base-Z logarithms v,w,s of V,W,S. The clean frequency domain is
+
+    3v+5w<=13/16,
+    0<=s<=v+w,    1/8<=alpha<=1/4.                            (9)
+
+The scalar P_c^(alpha-1/8) has nonnegative exponent. Since P_c<=P<=O(Z^(1/6)), it contributes at most (alpha-1/8)/6 to the normalized exponent. This includes an empty column-slot set, P_c=1, and does not suppose P_c is comparable to P.
+
+Let r be the logarithm of the bound (7). For each complete moment in (6), Holder and (3) give the normalized exponent
+
+    -29/96-11alpha/16+(alpha-1/8)/6
+        + r - alpha s + log ||B(S)||_(2j,E) - r/(2j).          (10)
+
+For a pointwise smooth alternative omit the last correction. Every remaining row-count power is nonnegative.
+
+The companion exact verifier constructs all affine constituents of (10), using moment orders at most 16, and every direct/dual alternative in (6) in its complete form. For a proposed rational upper level L, one complete moment expression is below L on the interval where ALL its affine constituents are below L. The union of these exact rational intervals over the allowed alternatives proves a uniform bound on their minimum. This checks the entire S interval, not only a numerical grid or its endpoints.
+
+The companion [pair_qslot_rational_rectangles.json](pair_qslot_rational_rectangles.json) covers the entire (alpha,w) rectangle [1/8,1/4] times [0,13/80]. For a box [alpha0,alpha1] times [w0,w1], set
+
+    v+=(13/16-5w0)/3, w+=w1.
+
+Evaluate the valid density (7) at alpha1 and these positive enlarged family parameters. Qualifying row sets are nested as alpha grows. With this row bound fixed, every remaining full expression in (10) has alpha derivative
+
+    -11/16+1/6-s=-25/48-s<0.
+
+Thus evaluation at alpha0 is an upper bound for the entire box. The moment bounds are positive and nondecreasing in the family sizes and the row bound, including after Holder. No actual ideal, conductor or zero is rescaled in this certificate.
+
+The fixed-data verifier [check_pair_qslot_budget.py](check_pair_qslot_budget.py) uses only integer and Fraction arithmetic. It checks the complete rectangular covering, recomputes (7), and proves every full S sublevel cover at the target
+
+    -3/16-1/16384.                                           (11)
+
+Its generation step is a rational subdivision procedure, not a numerical optimizer. The exact rational subdivision has completed with 4351 rectangles. The standalone verifier recomputes their complete covering and every S sublevel cover from these fixed data; no discovery trace or numerical optimizer is an input.
+
+#### 4. Low-bin CDF and every physical tail
+
+The explicit branch (8) contracts under (V,W)->(tV,tW), 0<t<=1, by at least t^deltaA, where
+
+    deltaA=alpha(9-20alpha)/(1-alpha-4alpha^2).
+
+The second monomial has the larger degree
+
+    deltaB=10alpha(1-alpha)/(1-2alpha^2).
+
+The reviewed identities give deltaA>=1 and deltaA>=4alpha+1/2. The true frozen quadratic branch in (7) has degree 1+4alpha/(1+alpha), the total row count has degree 2, and the long genuine-conductor branches can be made to contract by t^(8alpha). Their minimum therefore retains the lower bounds needed below. This concerns explicit positive envelopes, not a scaled set of actual zeros.
+
+The user's slot bound (3) contributes no artificial power of t: P_c is kept fixed. Under S->t^2S, an old joint smooth 2j norm contributes at least t^(1+1/(2j)); a new restricted or general smooth norm contributes at least t. Including the nonnegative Holder row-count power, every permitted expression in (10) contracts by at least t^(3/2): for the new alternatives j>=2 use
+
+    1-2alpha+delta(1-1/(2j))>=3/2;
+
+the old alternatives are stronger. For the new direct restricted norm, expand the positive product B K(Qc^2/B) before scaling B=S^j: all resulting family/column monomials have nonnegative scaling degrees, so the potentially increasing quotient Qc^2/B is not incorrectly treated on its own. The dual length Qc/S is fixed by this contraction. The same conclusion holds for the pointwise smooth bound. All changes of detector choice occur through minima of complete positive bounds with this same lower contraction power.
+
+Since V^3W^5 has degree eight, the clean positive cumulative bound gains gamma=3/16 below reference K0. Above K0 it has a fixed polynomial continuation. The audited Stieltjes integration against the FULL Fourier/Schwartz factor, including every Gaussian annulus and effective subunit cutoff, applies unchanged. It contributes
+
+    (T/Z)^gamma (H0/R0)^(6gamma) q_a'^(-6gamma).
+
+With (2), the remaining square and sixth-power weights are
+
+    R0^(6alpha-2-6gamma) H0^(6gamma-1) q_a'^(-6gamma).
+
+Here 6gamma-1=1/8>0 and H0<=R0. They are bounded by
+
+    R0^(6alpha-3) q_a'^(-9/8),
+
+whose square exponent is at most -3/2 in these low bins. The h0 divisor counts and every ordinary mask count are small powers. For either exact first-flat operator only T=Z/q_delta^6 changes, with its original q_delta^-2 coefficient; the delta exponent is -2+6alpha-6gamma<=-13/8. The original slots and physical windows remain fixed. All these ideal sums have strict margins. Thus the clean bound (11) transfers to the complete low-bin contribution.
+
+#### 5. High bins: the user's slot gain in the existing complete pointwise proof
+
+For 1/4<=alpha<=1/2 retain the previously reviewed full large-bin proof, including the actual frozen w count O(W/H0), every fifth-boundary factor, and the complete weighted V Fourier integral. Put
+
+    D=3alpha/(1+alpha),
+    kappa=D+(1-alpha)/2, lambda=D/3+(1-alpha)/2.
+
+The only replacement is the actual selected scalar P_c^alpha by P_c^(alpha-1/8). Since alpha-1/8>=0, the latter is at most P^(alpha-1/8), even for small or empty column-slot products. No density estimate is divided by H0. The resulting complete all-scale bound is the prior one multiplied by P^(-1/8):
+
+    (Y'/T)^alpha P^(-1/8) (TP/X')^(kappa/3).                  (12)
+
+All original V,W,R0,H0,a' and flat exponents are unchanged. In particular the W shell exponent is at most -1/20, the final H0 exponent is nonpositive, and both square and flat ideal exponents are at most -3/2. The exact full Fourier tail handles small T.
+
+After the original finite compensation the exponent is
+
+    Gnew(alpha)=-29/96+13kappa/48-25alpha/48-1/48.
+
+It decreases on the entire high-bin interval and has maximum
+
+    Gnew(1/4)=-121/640<-3/16-1/16384.                        (13)
+
+For an original subset of length exponent d_slot, the remaining contribution is exactly -d_slot(alpha-1/8), hence nonpositive. This rechecks the full subset ledger rather than subtracting 1/48 only at a guessed maximal slot. The theorem (3) is used on every frozen factorable mode before pooling, as specified in Section 1.
+
+#### 6. Conclusion and limits
+
+Sections 3--5 establish (1) in the exact original/core/all-n/two-first-flat scope. All ambient small powers initially include the actual deleted modulus, physical and flat divisors, row conductors, Gaussian labels and every Mellin/log-Fourier height. They are absorbed only after the strict physical sums and the common differentiated Gaussian/Schwartz bounds.
+
+The user's Q and GENERAL_SELECTED_Q_GAIN inputs retain their original attribution. The new pair-Gram theorem and explicit contraction are separate reviewed analytic inputs. The independent referee additionally wrote and ran a separate direct-operator AST verifier, with the true clamped kernel, and checked all 4351 rectangles and the complete physical application; see the companion REFEREE, Part XXIII D. The remaining frequency types and complete signed comparison are not resolved by this theorem.
