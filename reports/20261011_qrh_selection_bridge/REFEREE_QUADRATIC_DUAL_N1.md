@@ -2054,6 +2054,36 @@ This argument does not invoke finite-order Q, extend it to an angular character,
 
 The six-part unified report was compared with its five-part base and read back. Parts I–V retain their ε=1 proofs; Part VI supplies the reviewed extension. The top-level frequency is H=εw²a⁶, with η=1 and ε∈{1,ω,ω²}. Both exact marker conventions, both first-scale transforms and the full cube-free core remain included; the three nonsquare units and first remainder remain excluded.
 
+
+## All-six-unit extension: the negative-unit polar functional
+
+### Independent audit: the first polar functional for the actual negative units
+
+#### Decision and precise consequence
+
+The negative-unit proof in internal Part VII of Part XXIV passes independent review, using the fixed all-lambda-cusps noncubic theorem proved in Part XXVII A and the already audited exact physical decomposition. For eta=1 and each of the three negative original frequency units, the specified first Gauss residue is zero for every fixed admissible outer configuration. Its ordered first-polar-then-second-remainder functional is therefore zero. Combined with the positive-unit proof this extends the specified secondary estimate to all six units. It does not bound the first nonpolar contribution or identify this decomposition with the coupled Mellin wall.
+
+#### 1. Actual finite bad vector and normalization
+
+The factor chi_c(epsilon) splits as the primitive norm-four quadratic psi_4 times the positive-unit cubic lambda character. The full finite period retains its 2-part equal to 4, all lambda data, primary selection and genuine holes. The bad vector obeys A(qv)=tau_epsilon(q)A(v) for good primary q. CRT modulo Mq, with residues qb+Mr, gives exactly S/(q_M sqrt(q_q)), tau_epsilon(q), chi(M lambda), and the normalized DR Gauss factor in (4). The positive-additive conversion contributes the displayed chi(lambda); the primary mask appears exactly once. Primitive norm-four Fourier support is on 2-units, not a fictitious primitive modulus-two character.
+
+#### 2. The noncubic factor survives every physical phase
+
+Both moving Gauss chiralities in (5) retain psi_4(v_i). Splitting v1=n_+g_+r leaves the genuine moving factor psi_4(r). Gauss CRT, the actual j phase, the original xi contribution and the good numerator supply cubic factors only. At the two odd physical branches j'=2 and 4, the free core enters rho_p^(-3) as r^2, producing chi_p(r)^(-6)=1. Thus no unrecorded physical factor cancels psi_4(r).
+
+The extra q_r^(-1/2) beside normalized gamma_D is absorbed by s=z+1/2. The pole z=1/3 is consequently s=5/6 in the normalized row, not an incorrectly shifted pole. All actual support exclusions remain fixed holes of that row. Its norm-four character is psi_4 times a cubic character factoring through modulo 2, and hence remains nontrivial on 1+2O modulo 4. The separately proved all-lambda-cusp result applies even with the actual fixed lambda-ray factor. If an entire unit-row subtraction is required by the nonunit-core convention, it contributes no residue.
+
+The corrected bad-prime symbol is theta_w(4)=(w/(-2))_3^2. The proof retains this value rather than squaring the Jacobi symbol modulo 4.
+
+#### 3. Quantifiers and the remaining integral
+
+The holomorphic germ at 5/6 is used only after each original outer configuration is fixed. Hence the polar functional is identically zero before summing physical layers, slots or scale transforms. No uniform level estimate or exchange of an uncontrolled infinite first-remainder contour integral is asserted or needed for this zero functional. The first remainder is retained as the actual original sector minus that functional, and the first-flat convention applies this definition to each inner physical sector before its exact scale operator.
+
+The all-six-unit secondary statement inherits the positive-unit exponent -19/480 and its established full-n, full-a, two-marker, two-first-flat and finite-compensation scope. The negative-unit contribution to this particular functional is exactly zero. The complete cubic sector and the first nonpolar term remain open.
+
+Ownership of the prime-to-three noncubic input remains with the user's d4f8dfe theorem. The extra lambda compatibility is the separately audited translated-theta result; it is not inferred by applying DR's prime-to-three theorem outside its domain.
+
+
 # Review of Part XXV: genuine truncated-inverse results
 
 ## A. Exact inverse Gauss projection
@@ -2325,3 +2355,170 @@ CRT with a good squarefree w gives exactly the displayed factor psi(w)*theta_w(4
 For a concrete check of the notation correction, take the primary prime w=-2-3 omega of norm seven. In O/(w), omega=4 modulo 7, so (4/w)_3=4^2=2=omega^2. In O/(-2), w=omega and (w/(-2))_3=omega. Therefore (w/4)_3=omega^2, while its square is omega. Thus the extra square in the introduction cannot be used with the standard denominator-Jacobi convention. If a different primitive cubic character modulo 4 were intended, it would have to be separately defined; the unambiguous correct expression is theta_w(4) or (w/(-2))_3^2.
 
 Primary source: https://arxiv.org/html/2109.07463v3 , equations (5.7), (5.42), (5.44)--(5.52), and Lemma 5.3. The argument avoids extending the cubic-only hypothesis of Lemma 5.4.
+
+
+# Review of Part XXVII: actual lambda cusps and moving cubic levels
+
+
+## A. Independent mathematical review
+
+### Independent audit: norm-four noncubic twists across all fixed lambda cusps
+
+#### Decision and attribution
+
+The proof in Part XXVII A passes independent review. It extends the user's d4f8dfe prime-to-three noncubic result by a new finite translated-theta constant-term calculation. For the primitive norm-four character psi times any cubic character modulo 4, any fixed odd multiplicative residue factor, and an arbitrary fixed multiplicative lambda-ray factor on primary generators, the normalized cubic-Gauss series is holomorphic for Re(s)>1/2. The conjugated version and the stated fixed finite lambda-function corollary also hold. This is qualitative for fixed data; no moving-level, height-uniform or complete signed-row estimate is proved.
+
+#### 1. Exact periodic theta construction
+
+The multiplier Phi is supported on the primary coset and retains the original zero extensions. Its 2-part is primitive modulo 4, so its finite Fourier transform is supported on 2-units and proportional there to the conjugate character. Additive CRT fixes the other components independently. The translated theta sum uses the shift lambda^2 t/L with the original additive convention. Thus Fourier inversion multiplies the source coefficient at mu by Phi(lambda^3 mu), not Phi(lambda^4 mu). Primary support selects exactly mu=lambda^(-3)e f^3 with e,f primary and e squarefree. The source coefficients give 3^(5/2)tilde_g(e)|f|. The infinity constant is killed by Phi(0)=0.
+
+#### 2. Every lambda-cusp constant term vanishes
+
+For fixed non-2 Fourier coordinates the reduced denominator has 2-valuation two and fixed norm. Its normalizing unit and lambda cusp are fixed. At a rational cusp the inverse group action gives height 1/(q_cF v); a constant term has no horizontal additive phase.
+
+The source's three exact cubic multiplier formulas have only cubic dependence on the 2-unit variable. Such dependence factors through modulo 2. In the middle cusp, the actual source congruence b=0 modulo its auxiliary modulus makes a-u0 b agree locally with a, so no extra norm-four character is introduced.
+
+The revised lift argument resolves the higher-lambda issue explicitly. When e=v_lambda(c_F)>=2, the fixed Fourier coordinate fixes a modulo lambda^(e+2), sufficient for the supplementary factors modulo lambda^4. When e=1, it fixes modulo lambda^3 and a permitted lift t -> t+Lk supplies the missing lambda^3 coefficient modulo lambda^4; CRT can keep the other required residues fixed. This changes the theta argument by its genuine period lambda^2 k. The source b congruence then fixes the middle-cusp numerator as well. At e=0 the denominator has no lambda factor and the remaining source cusp and odd residues are already fixed. No circular assumption about an ever-enlarging source modulus is used.
+
+The complete constant contribution on each fixed non-2 fiber is therefore a common cusp constant times sum_(t2 unit mod4) bar(chi2(t2)) K(t2 mod2). Its sums over the four-element fibers above each unit modulo 2 vanish, because the quadratic norm character is nontrivial on 1+2O modulo 4 and the cubic character is trivial there. Every cusp constant is thus killed independently. With finitely many cusps, the remaining Fourier terms decay exponentially in 1/v, while the infinity expansion decays exponentially in v.
+
+#### 3. Entire Mellin numerator and exact quotient
+
+The Mellin transform of the translated sum is entire. The Bessel Mellin identity expresses its Dirichlet numerator through reciprocal Gamma factors, again entire. In the original absolute half-plane its exact factorization is
+
+    D_Phi(s)=3^(5/2+3s) R_chi(s) L_deleted(3s-1/2,chi^3).
+
+There is no evaluation of a lambda-ray character at lambda. The multiplier was applied to the integral primary index e f^3, so multiplicativity gives chi(e)chi(f)^3 directly, without requiring coprimality between e and f. For Re(s)>1/2 the final partial Euler product converges absolutely and is nonzero. Division proves the claimed continuation and agrees with the initial series.
+
+A fixed arbitrary function on the finite primary lambda-unit group can be expanded in its multiplicative character basis. Each character has its own Euler quotient; taking their finite sum gives the additional corollary. A nonmultiplicative finite function is not itself inserted into a putative Euler product.
+
+#### 4. Exact finite check and limitations
+
+The norm-four fiber checker was inspected and independently run. It returned ALL_PASS for all three psi*rho^j characters, nonunit Fourier support and all three unit-fiber sums, using integer arithmetic in Z[zeta_12]. This verifies the finite orthogonality, while the cusp identification and continuation follow from the separate proof above. The result does not apply the source's prime-to-three Proposition 5.1 at an illegal lambda-divisible modulus.
+
+The input being continued is a specified one-variable Gauss series. Identifying a complete physical signed row with it, obtaining conductor/height-uniform estimates, and justifying other infinite contour operations remain separate tasks. The user's original prime-to-three result and its exact coefficient-factorization insight retain their attribution.
+
+Sources: the user's commit d4f8dfe5b487cfa2cafb606bb067b7e8bfe39e66, and the original pinned QRH source's translated theta construction, three cusp multipliers and coefficient expansion. The source theta coefficients and Bessel normalization are those of https://arxiv.org/html/2109.07463v3 , Section 5.
+
+#### Frozen publication snapshot
+
+The self-contained qualitative snapshot is `noncubic_twist_all_lambda_cusps_qualitative_frozen.md`, SHA-256 5206c71a1d9cc175437247287316bce28ce8fd92010c1fbaea4372f9319d5b78. It contains exactly the reviewed Sections 1--6 and their unchanged proof, with the initial status updated. The later exploratory Section 7 in the older working file is not part of this certificate or the publication snapshot. Quantitative polynomial-height control is supplied instead by the separately audited moving-cubic theorem.
+
+## B. Independent mathematical review
+
+### Independent audit: quantitative moving-cubic control through the actual lambda cusps
+
+#### Decision and precise theorem
+
+The proof in Part XXVII B passes independent review. For a fixed defining period L whose 2-part is exactly 4 and whose norm-four character is primitive quadratic times cubic, arbitrary fixed odd and multiplicative lambda-ray factors, and moving good squarefree u coprime to 6L, it proves
+|R_u(sigma+it)| <<_epsilon (NL)^(3/4)U^(1/4)(1+|t|)^3,
+sigma>=1/2+epsilon.
+The moving cubic chirality beside normalized G is bar(rho_u); the conjugated theorem reverses both. Smooth norm sums have B^(1/2+epsilon), common moving holes cost M^epsilon, and a fixed nonmultiplicative lambda function costs its finite character-expansion l1 norm. The actual full period NL is paid explicitly. No Q is used and no whole-sector estimate follows from this lemma alone.
+
+#### 1. Original finite theta source, not an out-of-domain functional equation
+
+The theta multiplier is Phi_u(lambda^3 mu), with all primary and original zero masks. Its infinity coefficients are therefore the actual lambda^(-3)*a*b^3 coefficients. The norm-four primitive Fourier fibers cancel every constant term at every lambda cusp by the separately audited qualitative proof. Adding moving nonzero good Fourier coordinates does not change that fiber argument because the other CRT coordinates are held fixed. Constants are removed only after the common-denominator fiber sums, not individually at each h0.
+
+The original fixed-source cusp construction and local table were reread directly. For fixed h0 and the actual sector of u, the reduced denominator is c0*u, Nc0<=NL. The source congruences fix the bad multiplier and additive phase independently of the moving hp. Its conjugate multiplier contributes chi_p(a)^(-2), with a=sigma_p hp. The Fourier coefficient of bar(rho_p)=chi_p^4 contributes P^(-1/2)gamma_4(p)chi_p(hp)^(-4). These exponents cancel. The inverse-variable sum is exactly c_p(lambda^4 mu), so each moving prime contributes P^(-1/2)c_p, retaining every unit-modulus scalar. This holds in all three actual bad cusp cases. There is no extra choice of inactive primes or exponential-in-omega(u) summation.
+
+#### 2. Exact Mellin level powers and the full dual majorant
+
+Reflection sends height v to 1/(Nc0 U v). Its undifferentiated Mellin transform therefore contributes (Nc0)^(1-2s)U^(1-2s), multiplied by the Fourier factor U^(-1/2). The resulting U^(1/2-2s) in (9) is correct. The matched two Bessel gamma pairs have polynomial vertical ratio; this is not the differentiated angular reflection formula.
+
+For each of the three true cusp coefficient series, the complete squarefree/cube local majorant at z=1+h is (1+P^(-z))/(1-P^(1/2-3z)). A moving prime replaces it by at most 1+P(T_p-1)=1+O_h(P^(-h)). Its product is U^eta for any prescribed eta>0, with the appropriate parameter-dependent constant. The lambda progression and every cube layer converge absolutely. The fixed additive phase has modulus one. Normalized Parseval bounds the bad Fourier l1 mass by sqrt(NL), and Nc0<=NL supplies the remaining period power. This proves the uniform left boundary (NL)^(3/2+2h)U^(1/2+2h+eta). The original right line is uniformly absolutely bounded.
+
+#### 3. Uniform interpolation and attribution
+
+The entire split Mellin representation gives fixed-data finite exponential strip growth, sufficient for the maximum principle. The proof correctly uses the user's 7a7c2dec conductor-balanced argument with denominator (s-2)^3 and the cosine barrier. The barrier controls horizontal sides and does not enlarge vertical bounds, so fixed-data interior constants do not pollute the uniform final estimate.
+
+With h=eta=epsilon/4, the exact deficits at sigma=1/2+epsilon are
+(5epsilon/4+3epsilon^2/8)/(1+epsilon/2)
+and
+(epsilon/8+9epsilon^2/16)/(1+epsilon/2)
+below the desired bad-period exponent 3/4 and moving-cubic exponent 1/4. Both are strictly positive. The left height degree is 2+epsilon<3. The independently inspected and rerun exact checker returned ALL_PASS for these identities. This computation verifies the rational ledger; the source and analytic arguments were separately checked.
+
+The user's general-character growth theorem remains their result, with its own A(M) mask cost. The improved U exponent here comes from the additional actual j=4 Ramanujan transform, and the lambda extension comes from the separate original-cusp construction. Those distinct inputs are accurately attributed.
+
+#### 4. Correct Euler quotient and moving masks
+
+The infinity coefficient identity retains L_deleted(3s-1/2,chi_0^3). There is no chi_0(lambda), since Phi is evaluated at lambda^3 mu. The Euler product and its inverse are uniformly absolutely bounded in the target half-plane. For larger real parts the proof returns to the original R_u series, whose norms are at least one, rather than incorrectly extending a D_u boundary estimate.
+
+Finite lambda functions are first decomposed into multiplicative characters, each with its own Euler quotient. Their l1 coefficients are paid. For common moving holes, the exact finite CRT identity replaces u by ud and contributes d^(-s); its net d exponent is 1/4-sigma<=-1/4-epsilon, giving M^epsilon. These steps do not assume an unproved uniform bound for arbitrary moving noncubic characters or reverse the moving chirality.
+
+Primary sources: the pinned original QRH cusp matrix/multiplier and local j=4 reflection table; https://arxiv.org/html/2109.07463v3 , Section 5 and Appendix A; the user's d4f8dfe qualitative noncubic theorem and 7a7c2dec quantitative interpolation argument. Only unconditional theta and finite-transform identities are used.
+
+
+
+# Review of Part XXVIII: genuine cubic density and complete transfer
+
+
+## A. Independent mathematical review
+
+### Independent audit: the cube-free cubic pair Gram and genuine inverse detector
+
+#### Decision
+
+The true inverse detector in Part XXVIII A passes independent review. For the stated fixed finite-order twist of the canonical cube-free cubic family Na<=M, it proves the actual off-diagonal fixed-row Gram bound
+sum_(j!=i)|G_ij(U)|^2 << (MU)^epsilon (1+T)^C [UM+M^2 U^(1/3)]
+and the genuine zero-detector consequence R(M,T;5/6)<<M^(9/14+epsilon)(1+T)^C. No Q is used. The family remains ordered by its canonical cube-free index, not its radical conductor. Only bounded smooth full-frequency coefficients are used in the Poisson step; no arbitrary full-column sieve operator is asserted.
+
+#### Local quotient and conductor verification
+
+At each prime of the fixed row, the varying exponents 0,1,2 give only divisor-small many assignments. Equal nonzero states cancel as characters but retain their original unit mask. Opposite nonzero states give primitive cubic differences, not cancellation. Once these fixed primes are removed, the free varying index is still cube-free with its actual canonical norm at most M, and its primitive support is disjoint from the remaining fixed conductor. Bounded primitive multiplicity follows from the recoverable good-prime exponents; the diagonal and the fixed possible principal row are treated separately.
+
+The local conductor inequality f*g^2 <= constant*f_i*f_j <= constant*M^2 is correct: cancellation pays two conductor powers through g^2, a crossed prime pays one through f, and disjoint support matches. A further block in the true primitive conductor is necessary and is explicitly retained. It never changes the cube-free index used in the sieve.
+
+#### Poisson, common coefficients and all frequency powers
+
+After the genuine common-unit mask is expanded at d|g, primitive Poisson has amplitude (U/Nd)/sqrt(Nf), dual norm scale J=Nf Nd/U, and exact amplitude squared times J equal to U/Nd. The zero frequency vanishes for the nonprincipal quotient. All normalized Gauss factors and fixed CRT phases are pure row scalars; the fixed dual character is a common frequency coefficient. The conductor ratio, chosen real parts of zeros, and normalized heights are separated by common compact-parameter Mellin/Fourier transforms with polynomial height seminorms.
+
+Theorem 1.1 of de Faveri applies to both canonical cube-free ideal indices, giving K3(M,J)=M+J+(MJ)^(2/3). For the full bounded frequency column, h=h0*l^3 gives a real row zero mask, removable only inside the positive norm after freezing l. Its three Minkowski weights are l^(-3/2), l^(-3) and l^(-5/2), all summable. Thus the squared dual norm is J*K3(M,J), with only small losses. J<1 is handled by the actual nonzero Schwartz tail before clamping, not by invoking a sieve at subunit length. Complete dyad and divisor summation gives U*K3(M,max(1,M^2/U)); its middle M^2 term is absorbed into M^2 U^(1/3) for U>=1. This proves the announced Gram bound, including independently chosen bounded beta/height row parameters.
+
+#### The real inverse coefficient and the detector
+
+The coefficient remains a_n(X)=sum_(d|n,Nd<=X)mu(d). The Gamma-integral identity at an actual zero cancels the s=0 residue and detects a critical-line integral or one of its genuine n>X tail dyads. On a tail dyad, the common coefficient mass is O(U^(1+epsilon)). With the actual beta/height row weights, Halasz--Montgomery and Cauchy on each row's off-diagonal entries give
+R U^(2b) << U^(1+epsilon)[U+sqrt(R U K3(M,max(1,M^2/U)))].
+Solving this inequality gives U^(2a)+U^(4a-1)K3, where a=1-b; no inverse coefficient is replaced or chosen differently on different rows.
+
+At b=5/6 the resulting tail is bounded by Y^(1/3)+M X^(-1/3)+M^2/X. The additional M^2 X^(-4/3) is smaller. Actual conductors are at most a fixed multiple of M, so the ordinary AFE, the same cube-free sieve and complete cube-layer separation give the critical-line L second moment O(M^(1+epsilon)(1+T)^C). Cauchy with the true inverse polynomial gives the unchanged first term Y^(-1/3)sqrt(M K3(M,X)).
+
+At X=M^(19/14), Y=M^(27/14), the cross term gives K3(M,X)<<M^(11/7). The first term, Y^(1/3), and M^2/X are all M^(9/14); M X^(-1/3)=M^(23/42) is smaller. Dyad and height losses have the advertised epsilon and polynomial dependence. Counting one chosen zero per bad primitive row is legitimate; a total count may add the ordinary per-character height/logarithm factor.
+
+Primary source independently checked: https://arxiv.org/html/2610.04045v1 , Theorem 1.1 and its definition of the n-th-power-free ideal family, with n=3. The new fixed-row argument uses its upper bound, not the source's final density corollary. This result alone does not establish a complete physical-probe estimate or exclude individual off-line zeros.
+
+
+## B. Independent mathematical review
+
+### Independent audit: complete cubic gain from the genuine pair-Gram density
+
+#### Decision and retained scope
+
+The proof in Part XXVIII B passes independent review as a full application of the separately audited cube-free cubic pair-Gram detector. It improves the previously defined complete nonprincipal cubic contribution to O(Z^(-271/32256+epsilon)). It retains every original unit, physical n and sixth-power layer, actual selected slot, original/core marker, both exact first flat operations and original finite compensation. The new density input is unconditional, while the physical buffered reciprocal-L step still assumes the user's finite-order Q with its original attribution. It does not reach -3/16 or control the whole probe.
+
+#### Detector interval and exact exponents
+
+On 1/8<=a<=9/50 the proposed X=M^x,Y=M^y satisfy 1<=x<=3/2 and Y>=X. The canonical cubic sieve is dominated by its cross term there. Substitution into the actual first-integral and tail expressions makes the first term, Y^(2a), and M^2 X^(4a-5/3) exactly M^Dp. The remaining M X^(4a-1) term is smaller by 1-2x/3. The original clamping and exponential tail remain legitimate for U>M^2.
+
+The two D0-Dp identities in (7) were independently recomputed. The second numerator has the stated strictly positive Bernstein coefficients; the first factors into (1-4a)(108a^2-36a+5), positive on its interval. At a=1/6, Dp=9/14. No Q-free statement about an individual zero is inferred from this density bound.
+
+#### Every slot and every smooth-column scale
+
+The old proof's actual moment choices and its row exponent D0 are retained in the slot estimate. They are not silently replaced by Dp. For each genuine k>=1, the two restricted-row Holder powers are 1-1/(2k) and 1-1/(2k)-1/8, hence at least 1/2 and 3/8. Replacing only the real bad-row count by M^Dp therefore improves each old envelope by at least M^(-3Delta/8). Empty and tiny slots have no smaller row power. Fixed moments, prime-square branches, repeated-prime masks and common coefficients are unchanged.
+
+This factor is uniform in the actual smooth s-scale, so it may be applied before the complete finite e integration and the genuine rowwise long-S Poisson tail. It improves the already proved all-S exponent J8 by 3Delta/8 without moving a convenient peak or changing the slot lemma's domain. The common compact c/s cutoffs and normalized q_D/P ratios are explicitly retained before pooling.
+
+#### Complete physical transfer and tails
+
+On the new interval, Delta<=1/20 and the stated lower bound on J8 give J8-3Delta/8>9/10. The bound Delta<=1/20 can also be checked directly after clearing its positive denominator: on the second interval the resulting cubic has Bernstein coefficients 22/3, 664/75, 6454/625, 36748/3125, all positive. The first interval reduces to a positive quadratic times 10a-1.
+
+Consequently the full sixth-power a' sum remains strictly convergent, and the physical-square and external-flat exponents 4-6b-3(J8-3Delta/8) remain below -1 with large room. The original n0 factor, fixed divisor assignments and proper-subset compensation do not change. Actual unbounded ambient losses are absorbed by these strict powers and the original Gaussian/Schwartz envelopes. The high-M positive-frequency enlargement is made only after the valid high-M slot estimate; the small-M argument is left intact.
+
+#### Exact maximum
+
+The cutoffs, three balanced detector exponents, both rational differences in (14), and every displayed Bernstein coefficient were independently recomputed using exact rational symbolic arithmetic. The coefficients of PL and -PR are exactly those listed in the proof and positive on the specified intervals. Thus the new high-M maximum is -271/32256 at a=1/6. The inherited decreasing tail beyond a=9/50 is at most -4109/480000, smaller by 3203/20160000. The unchanged complete small-M bound -13/1440 is smaller by 101/161280. These calculations prove the global claimed exponent; no floating grid is used.
+
+The actual balanced cube-completion-tail lemma is not an input here. No unsigned completion, angular Q, or unproved low-k estimate has entered this application.
+
+#### Frozen proof
+
+The mathematical version was read at SHA-256 0b77320539adf198d63977170342248b32342eac5276e02d3a0177f558f9dddc. Its status-only final version is SHA-256 4442e8b60a4adfda9a56a27afc246e75834d958b960494ab598d0c33da47f6d2. The proof, bounds and complete physical scope are unchanged.
