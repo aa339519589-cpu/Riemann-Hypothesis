@@ -16,7 +16,7 @@
 
 Part XXI 另证明一个不依赖 Q 的精确相消：固定原频率单位 ε=1、H=w²、n=a=1、w 为非单位平方自由，并保留全部原 shared g 时，原窗口与全部实际 good/bad dual h、e 卷积、标记重组后的指定迭代双极贡献恰为零。两项 nonpolar 余项及其他单位、物理层未受此定理控制，完整 cubic 指数不因此改变。
 
-Part XXIV 进一步在 η=ε=1、H=w²a⁶ 且 w 为任意非单位 cube-free 核的范围内，证明指定第二 nonpolar 余项 O(Z^(−19/480+ε))：涵盖全部物理 n、a、g、h，原/core 两标记、各自第一 flat 及原有限补偿，不依赖 Q。这里先对整个物理 e 列作其真实有限截取，再在 w=v₁v₂² 的固定 v₂ 行上定义相应两次极项分解；第一 nonpolar 余项尚未控制，完整 cubic 指数保持上列结果。Part XXV 对真实截断 inverse 系数另证：Gauss 极项的精确乘子身份及 Q 条件 X^(−1/8+ε) 衰减，以及不依赖 Q 的全 cutoff Gauss 重赋相列 Siegel–Walfisz 消去。光滑 projection 的 level 与删素集仍固定，XXV C 另证真实截断 inverse 的 squarefree/cubic 列在 B^(1+δ)≤A≤B^(2−δ) 的正二次型幂次节省，所有 cutoff 统一且不依赖 Q；κ>0 仅证明存在，balanced 与其他列幂类仍未覆盖。完整 detector tail 尚未闭合。
+Part XXIV 进一步在 η=1、ε∈{1,ω,ω²}、H=εw²a⁶ 且 w 为任意非单位 cube-free 核的范围内，证明指定第二 nonpolar 余项 O(Z^(−19/480+ε))：涵盖全部物理 n、a、g、h，原/core 两标记、各自第一 flat 及原有限补偿，不依赖 Q。这里先对整个物理 e 列作其真实有限截取，再在 w=v₁v₂² 的固定 v₂ 行上定义相应两次极项分解；第一 nonpolar 余项与三负单位尚未控制，完整 cubic 指数保持上列结果。Part XXV 对真实截断 inverse 系数另证：Gauss 极项的精确乘子身份及 Q 条件 X^(−1/8+ε) 衰减，以及不依赖 Q 的全 cutoff Gauss 重赋相列 Siegel–Walfisz 消去。光滑 projection 的 level 与删素集仍固定，XXV C 另证真实截断 inverse 的 squarefree/cubic 列在 B^(1+δ)≤A≤B^(2−δ) 的正二次型幂次节省，所有 cutoff 统一且不依赖 Q；κ>0 仅证明存在，其基础证明先保留 squarefree 列；XXV D 用真实 rad(n) 分解、统一 common holes 与含unit短列界将其扩到全部 n，仍仅固定 cubic twist 与严格 off-balanced 域。κ 未数值化，balanced 与完整 detector tail 尚未闭合。
 
 上述完整类型估计均未覆盖 principal/unit 核及其余混合 sextic good-core，也未证明整个符号配对的目标界或 RH。
 
@@ -6699,13 +6699,13 @@ The user's Q and GENERAL_SELECTED_Q_GAIN inputs retain their original attributio
 
 # Part XXIV. Signed control of the specified secondary cubic remainder
 
-The following proof uses its own internal Parts I–V and local equation numbers. Its target η=1 and original frequency unit ε=1 are fixed throughout; the original unestimated first remainder is retained. The original probe identities are attributed to the pinned source and the user's preceding physical interface.
+The following proof uses its own internal Parts I–VI and local equation numbers. The target is η=1. The original frequency unit belongs to {1,ω,ω²}; the other three units and the unestimated first remainder remain outside the theorem. Parts I–V give the ε=1 base, and Part VI proves the exact square-unit extension. The original probe identities retain the pinned source and user attribution.
 
 ## Signed Möbius--Gauss control of the secondary cubic remainder
 
 ### Theorem and exact scope
 
-Use the original probe, its original selected-prime slots, original finite compensation, all zero extensions and true conductor masks. Set the target eta=1 and the original frequency unit epsilon=1. In each actual rescaled probe retain every original physical n and select H=w^2a^6, where w=v_1v_2^2 is any nonunit cube-free good primary element, with v_1,v_2 squarefree and coprime, and a is any good primary element. Retain every original shared divisor g and every dual frequency h, including the exact square-layer masks and phases.
+Use the original probe, its original selected-prime slots, original finite compensation, all zero extensions and true conductor masks. Set the target eta=1 and let the original frequency unit epsilon belong to {1,omega,omega^2}. In each actual rescaled probe retain every original physical n and select H=epsilon w^2a^6, where w=v_1v_2^2 is any nonunit cube-free good primary element, with v_1,v_2 squarefree and coprime, and a is any good primary element. Retain every original shared divisor g and every dual frequency h, including the exact square-layer masks and phases.
 
 First restrict the whole physical e-column by its exact W_1 support, and then perform the exact second primary-class Poisson transformation. At fixed v_2, extract the cubic Gauss pole in the remaining squarefree v_1 variable, followed by the conjugate cubic Gauss pole in the good squarefree dual variable. The two corresponding norm-Mellin coordinates are (1/3,2/3). Denote the resulting secondary nonpolar contribution by R_secondary^phys. Its definition includes all the actual marks, full radial weights and complete bad-prime dual valuations.
 
@@ -6716,9 +6716,9 @@ First restrict the whole physical e-column by its exact W_1 support, and then pe
                     \ll_\epsilon Z^{-19/480+\epsilon}.}
 \]
 
-No Q input and no unproved sextic or infinite-type Gauss theorem is used. The first nonpolar term, including its explicit entire unit-row correction, remains unestimated. The theorem does not include other original units. Part IV proves the same bound separately for the explicitly defined core marker and each marker's original first Möbius scale transform; it does not change the original marker in the original-probe assertion. It does not improve the currently established exponent for the whole cubic sector or prove RH.
+No Q input and no unproved sextic or infinite-type Gauss theorem is used. The first nonpolar term, including its explicit entire unit-row correction, remains unestimated. The theorem does not include the three nonsquare original units -1,-omega,-omega^2. Part IV proves the same bound separately for the explicitly defined core marker and each marker's original first Möbius scale transform; it does not change the original marker in the original-probe assertion. It does not improve the currently established exponent for the whole cubic sector or prove RH.
 
-The two mathematical inputs below are a signed estimate for the actual Möbius--cubic-Gauss column and the exact local bad-prime annihilation of the second pole. The bound is first proved for n=a=1 in Part I; Part II preserves the complete a mask, all shared g, and the original proper-subset rescalings at n=1. Part III proves the actual all-n extension, including its moving j character and joint short-column tail. Part IV transfers this estimate through the precise existing first scale operation by an absolutely convergent outer sum. Part V retains the complete mixed cube-free core and its exponent-four odd physical branch. Equation numbers are local to each part.
+The two mathematical inputs below are a signed estimate for the actual Möbius--cubic-Gauss column and the exact local bad-prime annihilation of the second pole. The bound is first proved for n=a=1 in Part I; Part II preserves the complete a mask, all shared g, and the original proper-subset rescalings at n=1. Part III proves the actual all-n extension, including its moving j character and joint short-column tail. Part IV transfers this estimate through the precise existing first scale operation by an absolutely convergent outer sum. Part V retains the complete mixed cube-free core and its exponent-four odd physical branch. Parts I--V use epsilon=1; Part VI proves the exact extension to epsilon=omega and omega^2. Equation numbers are local to each part.
 
 ### 0. Conventions and the local pole cancellation
 
@@ -7562,17 +7562,158 @@ The physical-r coefficient makes its r power -5/2, as before. No prime-sized for
 
 The original marker is D|c_original n_0 r. Reallocate each actual chosen prime with priority r,n_+,n_-,g,e,v,c_0, retaining its old Gaussian U_D. A mark in n_- or g_- is among the genuine divisors of v_2; the v_2 sum above absorbs their divisor multiplicity. A mark is never newly assigned to an unmarked free v_2 prime. Core marking uses its own priority list without r and retains primes simultaneously dividing r and c_original n_0 by assigning them later in that shorter list. The only marks in the signed column are its actual c_0 assignments. All original exclusions remain masks or character zeros until a positive estimate is taken.
 
-The three geometric bounds from the all-n base remain unchanged after summing every cube-free w=v_1v_2^2. The leading exponents are therefore -11/192, -19/480 and -17/192, with the same original finite-compensation bookkeeping and positive-scale first-flat transfer. This covers the whole eta=epsilon=1 nonprincipal cubic core type's specified secondary contribution, not its first remainder. Other units are still excluded.
+The three geometric bounds from the all-n base remain unchanged after summing every cube-free w=v_1v_2^2. The leading exponents are therefore -11/192, -19/480 and -17/192, with the same original finite-compensation bookkeeping and positive-scale first-flat transfer. This covers the whole eta=epsilon=1 nonprincipal cubic core type's specified secondary contribution, not its first remainder. The square-unit extension is proved in Part VI.
 
 
-### Final status
+### Status of the five-part base
 
-All five parts have passed independent mathematical review. This consolidated cube-free version has passed final independent consistency readback and is frozen. The first nonpolar contribution and other original units remain open. This is not an estimate for the entire critical low probe.
+Parts I--V have passed independent mathematical review and final consistency readback. They cover epsilon=1; the square-unit extension is proved in Part VI. The first nonpolar contribution and the three nonsquare units remain open. This is not an estimate for the entire critical low probe.
+
+
+## Part VI. Every square unit in the cubic secondary contribution
+
+The newly covered units are epsilon=omega and omega^2; epsilon=1 is proved in Parts I--V. This argument does not cover the nonsquare units -1,-omega,-omega^2. All other data and the full cube-free core of Part V are unchanged.
+
+### 1. The actual supplementary character and a finite primary Poisson vector
+
+For epsilon in {omega,omega^2}, define on good primary elements
+
+\[
+ \tau(c)=\chi_c(\epsilon)=\theta_c(L),\qquad L=\epsilon^2.
+                                                               \tag{1}
+\]
+
+The equality holds because epsilon has order three and theta_c=chi_c^2. The cubic supplementary law makes tau a character ramified only at lambda. It is nontrivial on primary elements and hence has conductor lambda^a with a>2. Extend it to the units modulo lambda^a by making it trivial on the six global units. Such an extension exists because the units are the six distinct unit classes modulo 3. Denote this extension also by tau.
+
+Let kappa_0 run over the six characters of (O/3)^*. Each tau kappa_0 is primitive at the same modulus m=lambda^a: twisting by a character of conductor dividing lambda^2 cannot remove its higher conductor. For the original self-dual additive character e_o, put
+
+\[
+ \Gamma_{\kappa_0}=q_m^{-1/2}
+          \sum_{x\bmod m}\tau(x)\kappa_0(x)e_o(x/m),
+ \qquad
+ \Phi_\tau(h)=\frac16\sum_{\kappa_0}
+            \Gamma_{\kappa_0}\overline{\tau(h)\kappa_0(h)}.
+                                                               \tag{2}
+\]
+
+Every summand is extended by zero on nonunits at lambda. In particular Phi_tau(h)=0 if lambda|h. For every primary x coprime to lambda, including primary generators of the other bad primes,
+
+\[
+                    \Phi_\tau(xh)=\overline{\tau(x)}\Phi_\tau(h).
+                                                               \tag{3}
+\]
+
+This covariance is more important than replacing the finite vector by an unspecified fixed phase.
+
+Let chi=theta_(v_1) conjugate(theta_(v_2)), q=v_1v_2, with the actual coprime squarefree v_i. Detect primary v by the six kappa_0 characters and apply primitive Poisson modulo m q. Gauss CRT and gamma_o(chi)=chi(lambda)gamma_D(chi) give the exact radial transform
+
+\[
+ \sum_{v\equiv1(3)}\tau(v)\chi(v)F(v/\sqrt S)
+ =\frac{S}{\sqrt{q_m}\sqrt{q_q}}
+       \tau(q)\chi(m\lambda)\gamma_D(\chi)
+       \sum_h\Phi_\tau(h)\overline{\chi(h)}
+       \widehat F\!\left(\frac{\sqrt S h}{m q}\right),
+                                                               \tag{4}
+\]
+
+where gamma_D(chi)=gamma_D(v_1)conjugate(gamma_D(v_2)). The factor 1/6 is inside Phi_tau; it is not multiplied a second time. The norm in the Fourier argument is S q_h/(q_m q_q). All fixed m norms are retained constants. Formula (4) also imposes every true h unit condition at lambda and q. It does not apply the good-primary r congruent 1 modulo 3 functional equation at a modulus divisible by lambda.
+
+Expanding the original mask d|B, with d primary and prime to lambda, contributes exactly mu(d)tau(d)chi(d)/q_d and the scale S/q_d. No condition at norm four is silently removed.
+
+### 2. Restore every unit phase before the residues
+
+Write the original cube-free core w=v_1v_2^2. Its square unit contributes tau(s)conjugate(tau(c)) to the free original columns. The shared e and g factors cancel in this product. In the physical-square decomposition retain the phases tau(j^2 f)conjugate(tau(c_2)); the first odd n_0 phases contain tau(p)^(-3)=1, so the previously audited n_+ and n_- identities remain.
+
+Put A_lambda=m lambda. Let
+
+\[
+                    Z=\kappa d^2 j f^2 c_2 h.
+\]
+
+Using tau(v_i)=theta_(v_i)(L), the two good Gauss factors in (4), including the old fixed xi phase, become
+
+\[
+ \frac{\gamma_D(v_1)}{\sqrt{q_{v_1}}}
+       \overline{\theta_{v_1}(Z/(A_\lambda L))}
+ \frac{\overline{\gamma_D(v_2)}}{\sqrt{q_{v_2}}}
+       \theta_{v_2}((Z/(A_\lambda L))L^2).              \tag{5}
+\]
+
+Fractions at lambda are interpreted on their actual unit support at every good row prime; multiplication by a lambda cube reduces them to the existing DDDS zeta class without changing the row. No extra lambda is lost in (5): A_lambda includes both the fixed bad conductor m and the original-to-DDDS additive conversion lambda.
+
+Take the first pole with the same good support
+
+\[
+ h=\tau_h f_1u j_2^2f_2^2v^2t^3,\qquad c_2=v c_0.
+\]
+
+To avoid confusion, tau_h is the old unit/bad frequency part and tau(\cdot) is the new fixed cubic supplementary character. Formula (3), together with the original outside factors, gives exactly
+
+\[
+ \tau(j^2 f)\overline{\tau(c_2)}\tau(d)\Phi_\tau(h)
+ =\tau(d)\Phi_\tau(\tau_h)
+                    \overline{\tau(j_0f_2c_0u)}.       \tag{6}
+\]
+
+Every cube factor has character one. The additional L^2 in the v_2 part of (5) contributes conjugate(tau(v_2)).
+
+Let zeta_0 a_0 be the reduced bad numerator of the first source in (5). The first good Gauss residue therefore has the old scalar C_(zeta_0), while the actual c_0 and u columns use
+
+\[
+                  \zeta_1=\zeta_0/L\quad\text{modulo cubes}.
+                                                               \tag{7}
+\]
+
+Their true moving numerator is still j_0f_2u v_2 in the c_0 row, and a_0j_0f_2c_0v_2 in the u row. This keeps the signed-column theorem in its original fixed-bad family; it introduces no arbitrary finite or infinite-type twist.
+
+### 3. The norm-four zero survives with its exact character weight
+
+The second numerator Gauss factor now has zeta_1 rather than zeta_0. Their ratio at a_0 is
+
+\[
+ \overline{g_3(\zeta_0,a_0)}g_3(\zeta_1,a_0)/q_{a_0}
+             =\theta_{a_0}(\zeta_0/\zeta_1)=\tau(a_0).
+                                                               \tag{8}
+\]
+
+The other good factors cancel their conjugate tau weights from (6), including v_2: its residual tau(v_2) from the changed Gauss numerator cancels the conjugate(tau(v_2)) in (5). Thus the previous fixed good configuration has bad scalar
+
+\[
+ \mu(d)q_d^{-1/3}\tau(d)\Phi_\tau(\tau_h)
+       C_{\zeta_0}\overline{C_{\zeta_1}}
+                    \tau(a_0)q_{a_0}^{-1/3}q_{\tau_h}^{-2/3},
+                                                               \tag{9}
+\]
+
+times unchanged good factors and fixed m powers. The constants C_(zeta_i) depend on the unit/lambda data but not on the primary bad-prime allocations away from lambda.
+
+At a bad primary prime p of norm P, write t_p=tau(p), x=P^(-1/3), j=k_p, delta=v_p(d) in {0,1}, b=v_p(tau_h), and e=v_p(a_0) in {0,1}. A nonzero residue requires
+
+\[
+                      e\equiv j+2\delta+b\pmod3.
+\]
+
+The extra character weight in (9) at p is t_p^(delta-b+e). Since t_p^3=1,
+
+\[
+                         t_p^{\delta-b+e}=t_p^j.       \tag{10}
+\]
+
+It is common to the complete local sum. Therefore its local factor is exactly t_p^j times the already proved T_j, rather than a newly assumed character-free sum. At the original norm-four prime j is 1 or 2, so it is zero. Equations (3), (8) and (10) preserve the lambda-ray interaction with powers of the primary norm-four generator; one must not assume that generator is 1 modulo the larger lambda conductor.
+
+### 4. Analytic budget and boundary
+
+All new conductors, Gauss constants and Phi_tau coefficients belong to the fixed original unit component. Their norm dilations are fixed constants. The signed c_0 row has the same genuine squarefree moving numerator as in Part V and a fixed reduced bad numerator zeta_1 a_0. The weighted second residue has the same zero masks and normal-convergence proof. The Gaussian, physical-e cutoff, selected-prime slots and long tails are unchanged up to the displayed fixed norm dilation. Consequently the three geometric bounds and all absolutely convergent n/a/v_2/first-flat sums are unchanged.
+
+Equations (1)--(10) have passed independent review. The second-remainder theorem includes every square unit epsilon in {1,omega,omega^2}, including all cube-free w, physical n/a, both exact markers, their first scale transforms and the original finite compensation. The first remainder and the three nonsquare units remain open.
+
+
+Unified report status: all six parts have passed independent mathematical review and final consistency readback. The top-level unit and frequency scopes agree with the six-part proof; see the companion REFEREE, Part XXIV. The first remainder and the three nonsquare original units remain open.
 
 
 # Part XXV. Signed projections of the genuine truncated inverse
 
-These two results retain the unchanged coefficient a_n(X)=sum_(d|n,Nd<=X)mu(d). Section A proves an exact residue identity and, conditional on the user's [fixed input Q](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/52ee48d3e2e4c5b0beeb3e4880eca86fb2208ce1/reports/20261011_qrh_selection_bridge/FORMAL_INPUT_Q.md), sharp inverse-residue decay. The extra moving-level uniformity is only the residue statement; its smooth Type I consequence keeps r and S fixed. Section B proves unconditional all-cutoff Siegel–Walfisz cancellation for the actual Gauss-rephased column using Part XXIV's signed column lemma. Neither result supplies the still-missing corrected quadratic-form decomposition or a bound for the complete detector tail. Q attribution and the distinction between source audit and an independent formal rebuild are unchanged.
+Sections A and B below retain the unchanged coefficient a_n(X)=sum_(d|n,Nd<=X)mu(d). Section A proves an exact residue identity and, conditional on the user's [fixed input Q](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/52ee48d3e2e4c5b0beeb3e4880eca86fb2208ce1/reports/20261011_qrh_selection_bridge/FORMAL_INPUT_Q.md), sharp inverse-residue decay. The extra moving-level uniformity is only the residue statement; its smooth Type I consequence keeps r and S fixed. Section B proves unconditional all-cutoff Siegel–Walfisz cancellation for the actual Gauss-rephased column using Part XXIV's signed column lemma. Neither result supplies the still-missing corrected quadratic-form decomposition or a bound for the complete detector tail. Q attribution and the distinction between source audit and an independent formal rebuild are unchanged. Sections C and D separately prove an unconditional off-balanced quadratic-form gain for this same inverse, first on squarefree columns and then on every column. They retain the fixed finite cubic twist restriction and a strictly off-balanced range; no balanced detector-tail bound is asserted.
 
 ## A. Exact inverse residue and sharp Q-conditional suppression
 
@@ -8287,3 +8428,204 @@ restrictions. This proof uses only the specified restriction-free
 Poisson and sieve steps, then supplies its own true-coefficient
 frequency estimate. It does not cite the source's final corrected
 dispersion theorem outside its hypotheses.
+
+## D. All-column extension for the genuine inverse
+
+### Full-column extension of the true-inverse off-balanced quadratic form
+
+#### Statement and status
+
+This companion proof has passed independent mathematical review. It extends the
+squarefree-column theorem in Section C above; it does
+not change that frozen theorem or claim a balanced estimate.
+
+Write N for Eisenstein ideal norm and use primary generators outside the
+same fixed exclusions. The character chi_n is the cubic symbol, with its
+actual zero extension. Put
+
+    a_n(X)=sum_{d|n, Nd<=X} mu(d).
+
+Let W be a nonnegative smooth radial planar annular weight, w a fixed
+smooth norm weight supported in [1,2], and xi a fixed finite cubic
+character, including the principal character. For every 0<delta<1/2
+there is kappa>0 such that
+
+    U>=2, U^(1+delta)<=A<=U^(2-delta), 1<=X<=2U
+
+implies
+
+ sum_{a primary} W(a/sqrt A)
+   |sum_{n primary} a_n(X) xi(n) w(Nn/U) overline{chi_n(a)}|^2
+       << A U^(1+epsilon) + A^(2/3) U^(5/3-kappa).        (1)
+
+The inner sum now contains every n, including its exponent-two and cube
+layers. Constants depend on delta, the fixed exclusions, xi, and a fixed
+finite weight-seminorm class. The gain kappa is an existence constant;
+no numerical value is asserted. The argument uses no Q input.
+
+#### 1. Uniform common holes in the squarefree theorem
+
+We first explicitly record the extra uniformity needed below. For a
+fixed C>0, a common ideal K with NK<=V^C may be imposed on the squarefree
+column as (v,K)=1. Uniformly in K, all cutoffs T, and the same fixed xi,
+the squarefree theorem gives, whenever
+
+    V>=2, V^(1+d)<=A<=V^(2-d), 0<d<1/2,
+
+    || sum_{v sf,(v,K)=1} a_v(T) xi(v) w(Nv/V) bar chi_v ||_(A)
+       << A^(1/2) V^(1/2+epsilon)
+            + A^(1/3) V^(5/6-kappa_sf/2).               (2)
+
+Here ||F||_(A)^2=sum_a W(a/sqrt A)|F(a)|^2, and kappa_sf>0
+may depend on d and C. If T<1 the coefficient is zero. If T exceeds
+2V it vanishes on v>1; unit-scale terms are dealt with below.
+
+This is a uniform extension of the squarefree theorem's stated
+quantifiers, justified by its proof, rather than an automatic
+interpretation of its fixed exclusions. The changes are as follows.
+Insert 1_(b,K)=1 in the actual coefficient beta_b. In the exact pair
+factorization b_i=f p_i and then p_i=l n_i, the block is zero if
+(fl,K)>1, and otherwise this adds only the same common mask (n_i,K)=1.
+It neither changes the primitive pair character nor the Poisson
+modulus. Large f/l and large primitive-frequency estimates allow
+arbitrary divisor-bounded column coefficients, so retain this mask.
+For the small primitive frequencies, the genuine inverse-Gauss
+power estimate was proved uniformly with a common hole of any fixed
+polynomial norm range. Since retained B'=V/(FL)>=V^(1-2eta), the
+combined hole K times the existing cube and finite factors still
+has a fixed polynomial norm in B'. Apply that input after first
+fixing C. Divisor-small losses (including factors from the extra
+hole) are absorbed by choosing their epsilon last. All fixed power
+gaps in the squarefree proof remain positive. This proves (2).
+
+We also use the ordinary, non-saving estimate, for A>=V>=1/2,
+
+    || sum_{v sf,(v,K)=1} c_v w(Nv/V) bar chi_v ||_(A)
+       << ambient^epsilon
+             [A^(1/2) V^(1/2)+A^(1/3) V^(5/6)] ,         (3)
+
+when |c_v| is divisor bounded. Indeed the full-row cubic large sieve
+has squared bound
+
+    [A+(AV)^(2/3)+A^(1/3)V] V
+
+up to small powers. Its third term is at most the second when A>=V.
+The common mask and fixed twist are column coefficients. For V in
+[1/2,2], the finitely many possible v, including v=1, satisfy (3)
+directly by the weighted row count O(A).
+
+#### 2. Exact decomposition of every column
+
+Uniquely write
+
+    n=a b^2 c^3,   a,b squarefree, (a,b)=1.
+
+The factors a or b may share primes with c. Put
+
+    q=rad(bc),  g=(a,q),  a=g v.
+
+Thus g|q, (g,b)=1, v is squarefree, and (v,q)=1. Conversely these
+conditions reconstruct precisely the allowed columns. In particular
+
+    rad(n)=q v,
+    a_n(X)=a_(qv)(X)=sum_{e|q} mu(e) a_v(X/Ne).          (4)
+
+For fixed b,c,g the column scale is
+
+    V=U/(Ng (Nb)^2 (Nc)^3).
+
+Only V>=1/2 can occur. Its exact character factorization is
+
+    chi_n(a_row)=chi_v(a_row) chi_g(a_row) chi_b(a_row)^2
+                                      1_(c,a_row)=1.   (5)
+
+The extra factor in (5) has absolute value at most one. It can be
+removed from a positive row norm only after b,c,g are frozen; it is
+not discarded from a signed identity. Similarly xi(n) is its fixed
+factor xi(gb^2c^3) times xi(v). The original smooth norm weight is
+exactly w(Nv/V), with no new seminorm cost.
+
+Apply Minkowski to these frozen blocks and to the finite sum (4).
+The number of e|q is divisor-small. Since b^2c^3 divides n,
+
+    Nq<=Nb Nc<=sqrt(2U).                                (6)
+
+#### 3. Long free columns
+
+Set V0=U^(1-delta/4). For V>=V0, (6) is within the fixed polynomial
+hole range Nq<=const V, and the harmless constant can be absorbed
+by, for example, C=2. Moreover
+
+    A>=U^(1+delta)>=V^(1+delta/4),
+    A<=U^(2-delta)<=V^(2-delta/4).
+
+The second inequality follows from
+(1-delta/4)(2-delta/4)=2-3delta/4+delta^2/16>=2-delta.
+Thus (2) applies with d=delta/4 and a common kappa_sf>0.
+Shrink kappa_sf if necessary so that kappa_sf<1/6.
+
+The diagonal norm costs sum to
+
+    sum_(b,c,g|rad(bc)) sqrt(A V)
+       << A^(1/2) U^(1/2+epsilon),                      (7)
+
+because their b powers are (Nb)^-1, their c powers are (Nc)^-3/2,
+and the g/e divisor counts cost arbitrarily small powers. The b
+sum up to sqrt(2U) is logarithmic before these small losses.
+
+The saving terms sum to
+
+    A^(1/3) sum V^(5/6-kappa_sf/2)
+       << A^(1/3) U^(5/6-kappa_sf/2+epsilon).            (8)
+
+Here the b and c exponents are respectively
+-5/3+kappa_sf and -5/2+3kappa_sf/2, both strictly below -1;
+all g/e divisor factors can be absorbed into convergent small-power
+perturbations. Restrictions such as g coprime to b are retained
+in the exact decomposition and may be dropped in these positive
+upper bounds.
+
+#### 4. Short free columns, including the unit
+
+For 1/2<=V<V0 use (3), with the actual coefficient from (4). The
+diagonal terms still satisfy (7). For the cross term write
+
+    V^(5/6)<=V0^(1/4) V^(7/12).
+
+Consequently
+
+    sum_(short blocks) V^(5/6)
+      << U^epsilon V0^(1/4) U^(7/12)
+      = U^(5/6-delta/16+epsilon).                       (9)
+
+The required b,c sums now have exponents -7/6 and -7/4, so they
+converge after all fixed divisor-small losses. This also covers
+V about 1 and v=1. We have not replaced the unit coefficient by the
+vanishing formula for a_v(T) when T exceeds its support endpoint;
+its actual finite value is bounded directly in (3).
+
+Adding (7)--(9) by Minkowski, and then squaring, proves (1), with
+any sufficiently smaller positive kappa than
+
+    min(kappa_sf, delta/8).
+
+Initial small exponents are chosen after delta, C and kappa_sf, so
+they do not consume the strict gain. A common polynomial hole on
+the original full n-column can be handled in the same way if its
+range is fixed first; it is not needed for (1).
+
+#### Scope
+
+This removes the squarefree-column restriction of the audited
+true-inverse off-balanced quadratic form. It still concerns the
+cubic symbol and fixed finite cubic column twists, and the strict
+range U^(1+delta)<=A<=U^(2-delta). It is not a statement about an
+arbitrary sextic target twist or the balanced zero-detector tail.
+
+#### Inputs
+
+- Section C and its independent audit in the companion REFEREE.
+- The genuine inverse-Gauss all-cutoff bound and signed mu--Gauss
+  input published in [Parts XXV B and XXIV](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/26e68e2490f9d7d5ac780c6b3ab95330dc9aaac7/reports/20261011_qrh_selection_bridge/QUADRATIC_DUAL_N1.md).
+- The ordinary full-row cubic large sieve used in the fixed-source
+  dispersion proof cited by the squarefree companion.
