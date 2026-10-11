@@ -6,7 +6,7 @@
 - 以用户固定输入 Q 为条件的同一完整 quadratic 核：原尺度线性和为 O(Z^(521/2304−d/2+ε))，补偿后为 O(Z^(−439/2304+ε))，比该型所需的 −3/16 低 7/2304。证明见 Parts X–XI。覆盖全部物理 n、原/core 标记及各自第一 Möbius-flat；这里只闭合这一非主 quadratic 类型。
 - 完整非主 cubic good-core：包括 H=εw²a⁶、w 非单位 cube-free 的全部混合指数与全部物理 n；线性和为 O(Z^(25/48−d/2+ε))，补偿后为 O(Z^(5/48+ε))，仍高于目标 7/24。不使用 Q 的基础证明见 Part VI。以 Q 为条件，Part XII 的 O(Z^(2/45+ε)) 均值基础保留；Parts XV–XVI 结合真实槽矩、双向光滑矩与完整小指标计数，将同一完整 cubic 类型改善为 O(Z^(−11/2304+ε))，仍高于目标 421/2304。
 - 完整 pure fifth-power 型：H=εv⁵a⁶，v 非单位平方自由，涵盖全部物理 n；线性和为 O(Z^(133/480−d/2+ε))，补偿后为 O(Z^(−67/480+ε))，距目标尚差 23/480。不使用 Q 的基础证明见 Part IX。Part XIV 在用户 Q 输入下将同一完整 pure fifth 类型强化为 O(Z^(−63/320+ε))，比该型目标低 3/320；全部物理 n、两标记和各自第一 flat 均保留。
-- 完整 mixed 3/5 型：H=εv³w⁵a⁶，v,w 互素、非单位、平方自由，涵盖全部物理 n、两标记及两种 first-flat；不使用 Q，补偿后为 O(Z^(−1/32+ε))，仍距该型目标 5/32。证明见 Part XIII。
+- 完整 mixed 3/5 型：H=εv³w⁵a⁶，v,w 互素、非单位、平方自由，涵盖全部物理 n、两标记及两种 first-flat；不使用 Q，补偿后为 O(Z^(−1/32+ε))，基础证明见 Part XIII。Part XVII 在 Q 条件下将同一完整 mixed(3,5) 类型改善为 O(Z^(−5/32+ε))，仍高于目标 1/32。
 
 上述结果均未覆盖 principal/unit 核及其余混合 sextic good-core，也未证明整个符号配对的目标界或 RH。
 
@@ -3619,3 +3619,566 @@ The two ranges §§6--7 establish the theorem. The eighth-moment argument, final
 - User Q, fixed finite-order Hecke zero-free statement and recorded verification scope: https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex .
 
 The user attribution for Q is pinned in [FORMAL_INPUT_Q](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/52ee48d3e2e4c5b0beeb3e4880eca86fb2208ce1/reports/20261011_qrh_selection_bridge/FORMAL_INPUT_Q.md); no independent formal rebuild is claimed here. The joint compact-cutoff convention retains the user's [joint-Möbius interface, §4](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/bbb8bba6f6a678848a270a4c950568a672cc975f/reports/20261011_qrh_selection_bridge/QUADRATIC_MOBIUS_GAIN.md), as in Part XI.
+
+# Part XVII. Q-conditional complete mixed(3,5) density bound
+
+Subsections A–D retain independent equation numbering.
+
+## A. Forward quadratic moving-conductor input
+
+### Quadratic detection with a moving conjugate-sextic twist
+
+#### Scope
+
+This note makes the conductor dependence explicit when the completed quadratic method is applied to the mixed frequency H=epsilon v^3w^5a^6. The variables v,w are good, nonunit, squarefree, coprime, with q_v~V and q_w~W. In this note w is frozen before averaging over v. No dependence on W is hidden in a fixed-character constant. The exact mixed local identities and physical n/r/h_0 boundary are supplied separately by Part XIII of this report.
+
+Let psi_v=chi_v^3. The true Möbius column is twisted by the finite-order character eta chi_w psi_v, and the smooth free-s column by rho bar chi_w psi_v, with the original fixed ray data. Their primitive conductor norms are comparable to VW. All character zeros at primes dividing vw remain in the formulae.
+
+#### 1. Uniform detection, including the W dependence
+
+The approximate functional equation for L(s,eta chi_w psi_v)^2 has length O(VW times a polynomial in the height). After common-weight separation, its coefficients contain the actual chi_w values. They are independent of v. The quadratic large sieve and the full square-layer decomposition therefore give
+\[
+ \sum_{v\asymp V,(v,w)=1}\sup_{|t|\le T}
+ |L(1/2+it,\eta\chi_w\psi_v)|^4
+ \ll_\epsilon (VWT)^\epsilon VW(1+T)^C.              \tag{1}
+\]
+The factor W in (1) is not removed by treating chi_w as a common coefficient: the polynomial length is VW. The actual zero masks of chi_w are retained in that coefficient. The truncated inverse polynomial still has second moment bounded by (V+X) times small powers, since its coefficients also have chi_w as a common factor.
+
+Run the same zero detector as in the audited true quadratic-density lemma. Set a=1-b, 0<a<=1/2, and let R count rows with a qualifying zero of real part at least b at the specified buffered finite height. Its first term is
+\[
+ Y^{a-1/2}R^{1/4}(VW)^{1/4}(V+X)^{1/2},
+\]
+and its squared-polynomial tail is bounded by
+\[
+ VX^{2a-1}+Y^{2a}.
+\]
+Taking X=V and Y=(V^3W)^{1/(2+2a)} gives
+\[
+ \boxed{R\ll (VWT)^\epsilon(1+T)^C
+ \min\{V,(V^3W)^{a/(1+a)}\}.}                     \tag{2}
+\]
+For X<=V the balanced first term already has this power; X>V only enlarges it. Thus changing X alone does not improve the W exponent in this detector.
+
+Input Q and the finite-height inverse-L argument apply to the genuine finite-order character eta chi_w psi_v. Their ambient parameter contains VW, all deleted Euler factors and all actual infinite-tail labels. They give small powers of that ambient parameter, which are only later absorbed. In particular Q does not turn (1) into a bound uniform in W with no displayed power.
+
+#### 2. True smooth direct and dual moments
+
+Let B_v(S) be the common smooth free-s column with its fixed w twist. For every fixed integer l>=1 and 1<=S<=VW,
+\[
+ \boxed{\|B(S)\|_{2l}
+ \ll_\epsilon(VWS)^\epsilon
+ \left[V^{1/(2l)}\sqrt S+\min(S,\sqrt{VW})\right].}  \tag{3}
+\]
+Indeed direct quadratic moments give V^{1/(2l)}sqrt S+S. Primitive Poisson has prefactor S/sqrt(VW) and dual length VW/S. Applying the same common-coefficient moment to that true dual gives V^{1/(2l)}sqrt S+sqrt(VW). The root number is a bounded row factor; the conductor norm and its direction are separated in the actual smooth weights. Fixed excluded primes are treated by finite decompositions. Moving w primes are kept in chi_w's common coefficient, rather than added to a purported fixed excluded set.
+
+Pointwise one has min(S,sqrt(VW)); beyond S=VW the actual smooth sum has arbitrary power decay. These statements do not apply to a free-s sum after arbitrary row-dependent rough coefficients have been inserted.
+
+#### 3. Complete free-s scale with the eighth moment
+
+Put
+\[
+ R_0=\min\{V,V^{3a/(1+a)}W^{a/(1+a)}\},\quad1/8\le a\le1/2.
+\]
+For any exceptional subset of size at most R_0, (3), Holder and the pointwise bound imply
+\[
+ \boxed{\sup_{S>0}S^{-a}
+   \sum_{v\in\mathcal E}|B_v(S)|
+ \ll(VW)^\epsilon R_0^{7/8}(VW)^{(1-a)/2}.}          \tag{4}
+\]
+The left possible peak is at S=sqrt(VW), giving the displayed bound. The right possible peak is at S=R_0^{1/4}V^{3/4}W, and its ratio to the left peak is
+\[
+ R_0^{1/8-a/4}V^{-a/4}W^{-a/2}\le1.                 \tag{5}
+\]
+To check the inequality use R_0<=(V^3W)^{a/(1+a)}. Its V exponent is a(1-8a)/[8(1+a)]<=0, and its W exponent is -a(3+6a)/[8(1+a)]<0. The remaining short/long pieces are monotone or rapidly decaying, as in the complete quadratic scale proof.
+
+The actual selected c-slot Euler multiplier still has the quadratic moments (5) of Part XI of this report: replace its fixed local eta(p) by eta(p)chi_w(p), keeping p|w as a zero. On the surviving primes it has modulus one. The slot coefficients remain independent of v. Since R_0>=V^{3a/(1+a)}, the same floor/ceil choice proves the safe marked version of (4), with its column scalar factor L^{-a}, multiplied by
+\[
+ (VW)^\epsilon\{1+P_c^a R_0^{-1/4}\}.               \tag{6}
+\]
+When P_c is larger than V, the second moment can sometimes improve R_0^{-1/4} to R_0^{-1/2}; no uniform all-slot saving beyond the displayed bounds is claimed here.
+
+#### Proof inputs and attribution
+
+The argument uses the already audited quadratic large sieve, the actual approximate functional equations, primitive two-dimensional Poisson, and the Q-based finite-height reciprocal theorem. The exact mixed phases, odd n branches and exceptional h_0 square boundary remain the responsibility of the complete mixed arithmetic identity. This note supplies the explicit moving-conductor analytic interface and does not replace that identity.
+
+## B. Reverse sextic moving-conductor input
+
+### A uniform reverse-sextic interface with the moving conductor retained
+
+This note supplies analytic inputs for the actual mixed type H=epsilon v^3w^5a^6. It does not assert a complete physical low estimate. It proves the selected-prime multiplier moments as an analytic input, but does not apply them to a complete physical n-layer and slot budget. The companion arithmetic manuscript keeps those exact objects.
+
+Let v,w be good squarefree and coprime, with w nonunit; v is allowed to be the unit ideal. Put q_v about V and q_w about W, V>=1 and W>=2. The fixed excluded set contains the conductors of the fixed eta and ray data. Consequently every w prime supplies a nontrivial sextic local component, so all actual product characters used below are nonprincipal. Fix v and vary w. After the original finite primary/ray partition, write
+\[
+ \lambda_{v,w}=\eta\chi_v^3\chi_w^{\pm1},
+\]
+with the original fixed finite-order eta. The actual primitive conductor norm is comparable to VW. No prime dividing v is added to a supposedly fixed excluded set. Its character values, including zero, remain common column coefficients. The implied constants below depend on the original fixed data but not on v.
+
+#### 1. The finite-height moving-twist zero density
+
+Assume 1<=V<=W. For one selected zero per row in Re(s)>=b and |Im(s)|<=T, let R_v(b,T) be the number of qualifying w~W rows, including arbitrary positive restrictions such as (v,w)=1. Then the independently reviewed uniform estimate is
+\[
+ \boxed{R_v(b,T)\ll_\epsilon
+ (VW)^{\epsilon}(1+T)^{C_\epsilon}
+ \min\{W,(WV^{1/6})^{D_6(b)}\},}
+ \qquad\tfrac12<b\le\tfrac78,                     \tag{1}
+\]
+where
+\[
+ D_6(b)=
+ \begin{cases}
+ \dfrac{11-14b}{10-12b},&\tfrac12<b\le\tfrac23,\\[2mm]
+ \dfrac{216b^2-342b+127}{144b^2-264b+106},
+       &\tfrac23\le b\le\tfrac78.
+ \end{cases}                                       \tag{2}
+\]
+In particular D_6(2/3)=5/6 and D_6(7/8)=55/118. All contours used with (1) stay strictly to the right of the actual zero bin; possible endpoint zeros are not discarded.
+
+##### Proof of the uniform conductor payment
+
+Apply the primitive approximate functional equation on the half-line. Its polynomial length is bounded by (VW)^{1/2} times a fixed height power. Its coefficients are the genuine fixed twist times n^{-1/2}, with common smooth weights after conductor-ratio separation. Root numbers are bounded row factors.
+
+For an individual polynomial of norm length B, write n=t ell^6. The row norm for each ell is at most ell^{-3} times the square root of the true sixth-order large sieve at (W,B/ell^6), with small divisor losses. All four ell sums converge. Hence the row second moment is bounded, up to small powers and polynomial height factors, by
+\[
+ \Theta_6(W,B)\ll W+B+W^{5/6}B^{1/3}+W^{1/3}B^{5/6}.
+\]
+At B=(VW)^{1/2} this becomes
+\[
+ W+(VW)^{1/2}+WV^{1/6}+W^{3/4}V^{5/12}
+ \ll WV^{1/6},\qquad V\le W.                        \tag{3}
+\]
+Differentiating common AFE weights and using one-dimensional Sobolev gives the same conductor powers for finite-height suprema, with polynomial height loss.
+
+Set M=WV^{1/6}. The truncated inverse polynomial has the original coefficients mu(c)eta(c)chi_v(c)^3 and hence its positive row norm is bounded by Theta_6(W,X), which is no larger than Theta_6(M,X). The detector's long tail also has common divisor-bounded coefficients with the same fixed twist. Removing all sixth powers is exactly the original argument, with its genuine zero masks.
+
+Thus every step in the proof of de Faveri Corollary 1.5 is valid with its family-size parameter replaced by M: its half-line second moment is O(M), by (3), and its two large-sieve polynomial estimates are bounded by the corresponding Theta_6(M,.) expressions. More explicitly the original detector upper bound becomes
+\[
+ (MTXY)^\epsilon(1+T)^C\bigg[
+ Y^{1/2-b}M^{1/2}
+ (X+M+X^{1/3}M^{5/6}+X^{5/6}M^{1/3})^{1/2}
+ +Y^{2-2b}+MX^{1-2b}
+ +\sup_{X\le U\le Y}U^{1-2b}
+       (M^{1/3}U^{5/6}+M^{5/6}U^{1/3})\bigg].       \tag{4}
+\]
+Its original optimization therefore gives M^{D_6(b)}. Formula (2) is the n=6 specialization of the published exponent, in the range capped by 7/8. The other bound R<=O(W) is the actual row count. This proves (1), without treating the moving twist as fixed-conductor data.
+
+#### 2. Two-sided smooth high moments for the sixth family
+
+Let B_w(S) be the actual common smooth/ray free column with character chi_v^3 chi_w^{+1} or its conjugate, and let C=VW denote its conductor scale. For every fixed integer k>=1 and 1<=S<=C,
+\[
+ \|B(S)\|_{2k}\ll_\epsilon(VWS)^\epsilon
+ \min\{\mathcal A_k(W,S),\mathcal D_k(W,C,S)\},      \tag{5}
+\]
+where
+\[
+ \mathcal A_k(W,S)=W^{1/(2k)}\sqrt S+S
+                  +W^{5/(12k)}S^{2/3}
+                  +W^{1/(6k)}S^{11/12},
+\]
+\[
+ \mathcal D_k(W,C,S)=W^{1/(2k)}\sqrt S+\sqrt C
+                  +W^{5/(12k)}C^{1/6}S^{1/3}
+                  +W^{1/(6k)}C^{5/12}S^{1/12}.      \tag{6}
+\]
+The minimum is taken between the complete two sums, not termwise. The original pointwise estimate min(S,sqrt C) and the long-S primitive-Poisson rapid decay remain available.
+
+To prove the direct bound, expand B_w(S)^k as a common Dirichlet polynomial of length O_k(S^k), with divisor-bounded coefficients. In the product index n=t ell^6, the true row zero mask (w,ell)=1 may be removed only inside its positive row norm. The sixth-order large sieve and Minkowski give
+\[
+ \|\sum_{q_n\ll N}a_n\chi_w(n)\|_2
+ \ll(WN)^\epsilon
+ [\sqrt{WN}+N+W^{5/12}N^{2/3}+W^{1/6}N^{11/12}].
+\]
+Its four ell powers are -3,-6,-4,-11/2 and are summable. Taking the k-th root yields the first line of (6).
+
+Primitive smooth Poisson has the exact amplitude S/sqrt C and dual norm scale C/S. The conductor ratio q_{f_w}/C lies in a fixed compact interval; its common Mellin separation is absolutely integrable. The normalized root number and imaginary norm powers are bounded row factors. Apply the just-proved direct high moment to the genuine conjugate sixth family at scale C/S, keeping the fixed chi_v twist. Multiplication by S/sqrt C gives the second line of (6). Schwartz tails and common angular components are handled with their actual smooth seminorms, as in the audited quadratic two-sided moment proof.
+
+#### 3. What transfers to the actual Möbius column
+
+If the user-supplied Q input is invoked, the rightmost-zero bins stop at 7/8. The previously audited finite-height inverse-L argument then applies to the true column
+\[
+ \sum_{(c,m_0)=1}{\mu(c)\eta(c)\chi_v(c)^3\chi_w(c)^{\pm1}
+                   \over q_c^{1+it}}\,W_0(q_c/L).
+\]
+For a b bin it gives L^{b-1+O(h)} times ambient small powers and polynomial Mellin-height losses. Here c ranges only over the original good ideals, and m_0 is replaced by its part outside the fixed excluded set S. The common mask m_0 retains its exact deleted Euler factors; its full imprimitive modulus, including every such deleted prime, is included in the ambient small-power loss, not only the primitive conductor. The exceptional-row count is (1), not the quadratic density exponent. This statement does not drop any selected-prime Euler multiplier; such a multiplier must be estimated separately with the true sixth large sieve.
+
+#### 4. The actual selected-prime Euler multiplier in the sixth family
+
+Let a fixed number J of disjoint original prime slots have norm scales P_i, let P=product P_i, and let D select one prime from each slot. The coefficients z_D are bounded common weights, including all original signs, fixed twists and zero-real-part Mellin factors. For sigma=Re(s)>=1/2 in a fixed compact interval, define the actual normalized multiplier
+\[
+ E_w(s)=P^{s-1}\sum_D z_D\prod_{p\mid D}
+ {y_p\chi_w(p)\over1-y_p\chi_w(p)},\qquad
+ y_p=\eta(p)\chi_v(p)^3q_p^{-s}.
+                                                               \tag{7}
+\]
+For each fixed integer k>=1,
+\[
+ \boxed{\sum_{w\asymp W}|E_w(s)|^{2k}
+ \ll_{\epsilon,k,J}(WP)^\epsilon
+ \left[1+{W\over P^k}
+       +{W^{5/6}\over P^{2k/3}}
+       +{W^{1/3}\over P^{k/6}}\right].}             \tag{8}
+\]
+The bound is uniform in v; its character and zero masks are common coefficients. Restricting the positive row sum is allowed. The same bound holds for A_w=sum_D z_D chi_w(D)/q_D.
+
+Here are details accounting for every repetition and denominator. First expand A_w^k and fix an equality pattern of the k occurrences in each slot. At a given slot let z denote the number of distinct primes whose multiplicity is divisible by six, r the number with nonzero residue, and o the sum of their residues in {1,...,5}. Freeze the z zero-residue primes. Their row unit masks can be enlarged only inside the positive norm; their exclusion from the remaining primes is a common column restriction. The residual column index is sixth-power-free, of norm about P_i^o. The pattern has at most O(P_i^z) frozen choices and O(P_i^r) residual columns, and coefficient size O(P_i^{-k}). The sixth-order sieve gives the row norm
+\[
+ \sqrt{\Theta_6(W,R)}\prod_i P_i^{z_i+r_i/2-k},
+ \qquad R=\prod_iP_i^{o_i},                         \tag{9}
+\]
+with small-power losses. Finite equality-pattern multiplicities do not affect the powers. The constant residual column R=1 is handled by its direct row norm.
+
+The four terms of sqrt(Theta_6(W,R)) give, respectively, contributions bounded by
+\[
+ W^{1/2}P^{-k/2},\qquad1,\qquad
+ W^{5/12}P^{-k/3},\qquad W^{1/6}P^{-k/12}.           \tag{10}
+\]
+For example, for a nonzero residue prime of multiplicity m and residue t=m mod 6, the relevant additive pattern costs are 1/2, (1+t)/2, 1/2+t/6, and 1/2+5t/12. They are bounded by m/2, m, 2m/3 and 11m/12, respectively. A zero-residue prime has cost 1 in every case and m>=6, so the same inequalities hold. These are exactly the exponents in (10). Minkowski over the fixed number of patterns and then squaring proves the A_w version of (8).
+
+For the Euler multiplier use the exact identity
+\[
+ {yx\over1-yx}={\sum_{j=1}^{6}y^jx^j\over1-y^6},
+ \qquad x\in\{0\}\cup\mu_6.                       \tag{11}
+\]
+Both sides are zero at x=0. The denominator is common to the rows and uniformly bounded away from zero because |y|<=q_p^{-1/2}. Expand (11) over the fixed slots and first apply the triangle inequality in the row L^{2k} norm to these finitely many branches. In each branch fix the exponent j_i in each slot; only then take its k-th power. Thus the repeated occurrences in that branch genuinely have the same j_i, rather than discarding mixed exponent terms in E_w(s)^k. The normalized coefficient per occurrence is O(P_i^{-kappa_i}),
+\[
+ \kappa_i=1+(j_i-1)\sigma\ge(j_i+1)/2.
+\]
+Repeat the equality-pattern argument, now taking the residual exponent t=j_i m mod 6 and total coefficient exponent k kappa_i. For j_i=1 the preceding bounds apply. For j_i>=2, a nonzero residue has t<=j_i m and m>=1, so the four additive costs obey
+\[
+ \tfrac12\le(\kappa_i-\tfrac12)m,\qquad
+ \tfrac{1+t}{2}\le\kappa_i m,
+\]
+\[
+ \tfrac12+\tfrac t6\le(\kappa_i-\tfrac13)m,
+ \qquad\tfrac12+\tfrac{5t}{12}
+                  \le(\kappa_i-\tfrac1{12})m.
+\]
+At a zero-residue prime the cost is 1, and the same four upper bounds hold because kappa_i>=3/2. Thus (10) still bounds every expanded Euler branch. This proves (8) while keeping all repeated-prime unit masks, every finite denominator and every moving-family zero.
+
+Unlike the quadratic multiplier theorem, (8) contains two real cross terms. They must remain in any subsequent density/high-moment Holder calculation. The selected Möbius column contributes the exact scalar (L/P)^{sigma-1} times this E_w(s); it cannot be replaced by an arbitrary row-independent bound without paying that scale factor.
+
+#### Source and scope
+
+The sole new external density input is de Faveri, *Optimal large sieve for fixed order characters*, Theorem 1.1 and the proof of Corollary 1.5, https://arxiv.org/html/2610.04045v1 . The moving-twist modification is proved by (3)--(4), rather than asserted from the fixed-data wording of the theorem. The conductor and zero extensions are those of the original QRH source family.
+
+The quadratic mixed-type baseline is independent of Q. Any use of this analytic interface with the Q-capped Möbius contour must retain the user's attribution and the previously recorded formal/source-audit distinction. Neither (1) nor (5) alone closes a physical mixed-type low estimate.
+
+## C. Finite two-direction budget
+
+### A finite two-sided certificate for the clean mixed dyadic budget
+
+This is an analytic budget lemma at the original third scale. It is not yet a theorem for every physical n, exceptional h_0 boundary or first flat. Those require the separate exact transfer. The purpose is to give a finite, checkable substitute for numerical optimization of the two audited moving-twist interfaces.
+
+Use logarithms to base Z. Put v=log_Z V, w=log_Z W, p=log_Z P_c, s=log_Z S. Assume
+\[
+ 3v+5w\le13/16,\qquad 0\le p\le1/6,
+ \qquad \log_Z(L/S)=11/16.
+ \tag{1}
+\]
+The original normalized prefactor is Z^{-29/96}. The forward method fixes w and counts it absolutely; the reverse method fixes v and counts it absolutely. The true selected-slot multiplier is estimated by its respective audited moments. All row coefficients have only small-power size. The claim of this lemma is that the sum of these positive dyadic majorants can be bounded by Z^{-5/32+epsilon}, on choosing the better direction. No attainment or lower-bound statement is intended.
+
+#### 1. Forward direction up to w=5/48
+
+The positive majorants are nondecreasing in V and W, so it suffices to use v=(13/16-5w)/3. Write a=1-b, d=3a/(1+a), delta=a/(1+a). The uncapped density majorant has row exponent r=dv+delta w; using it even if it exceeds V is an upper bound. The eighth-moment scale lemma gives the unselected exponent
+\[
+ -29/96-11a/16+
+ [7d/8+(1-a)/2]v+[7delta/8+(1-a)/2]w+w.
+ \tag{2}
+\]
+The final w is the number of frozen twists. For each permitted Holder moment, the derivative of its whole exponent in a is at most
+\[
+ \frac{13}{48}\frac{85}{54}-\frac{11}{16}+\frac16<0.
+ \tag{3}
+\]
+Indeed the maximum of F_v'(a)v+F_w'(a)w along (1) occurs at w=0, and the selected scalar contributes at most p<=1/6. The derivative of the removed row-count factor only helps. Thus the endpoint a=1/8 controls every bin and every selected-slot choice.
+
+At that endpoint the unselected exponent is
+\[
+ -439/2304+(23/72)w.
+ \tag{4}
+\]
+The quadratic selected-slot moments with k=1,2 and the already proved floor/ceil choices bound the additional exponent by
+\[
+ \max\left\{0,\frac{13/16-10w}{144},
+                    -\frac7{288}+\frac29w\right\}.
+ \tag{5}
+\]
+For completeness, p<=v/2 costs no power, up to an arbitrary small loss. For v/2<=p<=v use the smaller of
+\[
+ (a-1/2)p+(v-r)/2,\qquad ap-r/4.
+\]
+Their intersection has value av-(a/2+1/4)r. For p>=v use the second moment, whose cost is ap-r/2. Maximizing these safe bounds over p<=1/6 gives (5).
+
+On 0<=w<=5/48, (4) plus (5) increases piecewise and has its maximum at w=5/48. Both nonzero candidates in (5) are then negative. The result is
+\[
+ -\frac{1087}{6912}<-\frac5{32}.
+ \tag{6}
+\]
+
+#### 2. Reverse direction: reduce to one rational endpoint
+
+For w>=5/48, the frequency boundary has v<=7/72<w, so the audited reverse-sextic density applies. At a=1/8 its row exponent is
+\[
+ r=\frac{55}{118}(w+v/6).
+\]
+The general zero-bin exponent D_6(a) is the one in the reverse interface. The elementary derivative bound
+\[
+ 0\le D_6'(a)\le9816/3481\quad(1/8\le a\le1/2)
+ \tag{7}
+\]
+follows on the first branch from
+\[
+ D_6''(a)=
+ -\frac{648(2a-1)(216a^2-156a+29)}{(72a^2-12a-7)^3}<0.
+\]
+The quadratic numerator factor has discriminant -720 and is positive; on the second branch D_6'(a)=8/(12a-2)^2<=2. Thus (7) shows that each full Holder candidate decreases with a: its derivative is at most
+\[
+ (13/80)(9816/3481)-11/16+1/6<0.
+\]
+Thus this direction also needs only a=1/8.
+
+Along the frequency boundary v=(13/16-5w)/3, each selected-multiplier/smooth-moment Holder exponent decreases with w. The frozen-v count has derivative -5/3. The row exponent has derivative (13/18)(55/118)<1. Direct or dual smooth 2l-moment terms have w derivative at most 1/(2l), and selected 2k-moment terms at most 1/(2k). The row-count Holder exponent is 1-1/(2k)-1/(2l)>=0. Consequently the total derivative is at most -2/3. Pointwise choices have the same or a stronger inequality. The permitted interval 0<=s<=v+w also shrinks as w increases. It therefore suffices to prove the reverse estimate at
+\[
+ w=5/48,\quad v=7/72,\quad c=v+w=29/144,\quad
+ r=715/12744.
+ \tag{8}
+\]
+
+#### 3. No selected-slot loss at (8)
+
+At (8), r/w=286/531>10/21. The true sextic Euler multiplier has normalized 2k-norm exponent
+\[
+ A_k=\frac1{2k}\max\{0,w-kp,5w/6-2kp/3,w/3-kp/6\}.
+ \tag{9}
+\]
+The total multiplier penalty is p/8+A_k-r/(2k). If p<=w, set t=w/p and choose floor(t) or ceil(t), with the arbitrarily tiny-p case handled by a fixed sufficiently high moment. The floor choice works when
+\[
+ t/m\le \frac{5/12}{5/6-r/w};
+\]
+the ceiling choice works when
+\[
+ t/(m+1)\ge\frac{1/12}{r/w-1/3}.
+\]
+Their intervals cover each [m,m+1], m>=1, because r/w>=10/21. These inequalities include the real two cross terms of the sixth-family multiplier; they are not the quadratic moment formula.
+
+If w<=p<=1/6, choose k=1. Here p<=2w, and the largest remaining term gives the cost
+\[
+ p/24+(w/3-r)/2\le1/144+(5/144-715/12744)/2<0.
+\]
+Thus every selected-slot size has no positive power loss, apart from the prescribed epsilon. The same chosen multiplier moment can be combined with every smooth moment below by Holder.
+
+#### 4. Four rational s intervals
+
+At (8), the fixed exponent outside the row sum is
+\[
+ B_0=-29/96+v-11/128=-335/1152.
+\]
+For a dual smooth 2l moment, the remaining exponent is
+\[
+ B_0+r(1-1/(2l))-s/8+
+ \max\left\{
+ \frac{w}{2l}+\frac s2,\frac c2,
+ \frac{5w}{12l}+\frac c6+\frac s3,
+ \frac{w}{6l}+\frac{5c}{12}+\frac s{12}
+ \right\}.                                             \tag{10}
+\]
+Use the following complete cover. Each maximum is verified by the two endpoints of its interval because it is a maximum of affine functions:
+
+- 0<=s<=1/8: dual second moment (l=1), maximum -3619/22656;
+- 1/8<=s<=1/6: dual fourth moment (l=2), maximum -16183/101952;
+- 1/6<=s<=11/60: dual sixth moment (l=3), maximum -96539/611712;
+- 11/60<=s<=29/144: pointwise square-root bound, maximum -159979/1019520.
+
+All four numbers are at most
+\[
+ -321/2048=-5/32-1/2048.
+ \tag{11}
+\]
+The genuine long-S Poisson tail is no larger. This proves the reverse bound, uniformly over the selected slots. Together with (6), it proves the stated clean dyadic budget.
+
+#### Scope of this intermediate lemma
+
+The present clean budget alone does not include physical square boundaries, odd branches or flat operators. Subsection D proves the complete transfer by restoring the genuine character, removing only its redundant boundary-unit mask on the actual support, and then extending positive row norms. No exceptional density count is divided by the boundary divisor.
+
+## D. Complete physical transfer
+
+### The complete mixed (3,5) type: physical transfer of the two-sided budget
+
+#### Theorem and inputs
+
+Use the exact original mixed type
+\[
+ H=\varepsilon v^3w^5a^6,\qquad vw\text{ good squarefree},\quad
+ (v,w)=1,\quad v,w\ne1,
+                                                               \tag{1}
+\]
+with all physical n, the original marker or core marker, and each one's exact first Möbius-flat operator. Retain input Q with its original user attribution and source-audit status. The independently reviewed complete bound is
+\[
+ \boxed{I_{3,5}^{\rm compensated}(Z)
+              \ll_\epsilon Z^{-5/32+\epsilon}.}               \tag{2}
+\]
+This remains 1/32 above the full low target. No other mixed type or principal core is asserted here.
+
+The dependencies are the independently audited exact arithmetic in Part XIII of this report; the two moving-twist density/moment interfaces in subsections A–B; and the independently audited finite clean budget in subsection C. The latter is used only as a positive analytic inequality at fixed physical windows, not as an already proved all-n theorem. The complete transfer below instead uses the restored-character positive-extension argument; no change of the reverse family by w=h_0w_0 is assumed. The two-sided bound and its transfer are separated below.
+
+Put
+\[
+ C_0=ZP,\quad K_0=C_0/X'=Z^{13/16},\quad
+ C_0/Y'=Z^{11/16},\quad P\ll Z^{1/6}.
+                                                               \tag{3}
+\]
+After Q^{-1/2} and the actual finite subset compensation, the common prefactor is Z^{-29/96}. These identities hold for every original subset length; enlarging P to Z^{1/6} in a positive bound does not change any actual slot.
+
+Write alpha=1-b, 1/8<=alpha<=1/2, for a rightmost-zero bin, reserving a' for the actual sixth-power frequency index. All bin widths and finite-height losses are chosen first, within the final epsilon.
+
+#### 1. The exact full physical weight
+
+The inherited local table gives n=n_0r^2 with n_0|v. Its two odd branches are E=(c,n_0), F=n_0/E. With N about q_n0 and B about q_E, the outside factor is 1/(NB), and after the ordinary fixed-prime restrictions the free column ratio is
+\[
+ {L\over S}={C_l q_f\over R^6Y_*N^2B^2},
+ \qquad C_l=e^lTP,\quad R=q_r,\quad0<Y_*\le Y'.     \tag{4}
+\]
+Fixed s-divisor extractions may further reduce Y_*. The positive bin estimate consequently contributes (NB)^{-1+2alpha}<=1, since alpha<=1/2. The full sums over n_0,E,g in their dyadic ranges are the already verified divisor-bounded row factors. Their original w-dependent odd-branch phases remain there.
+
+At the exceptional fifth boundary, h_0|rad(r), h_0|w, and
+\[
+ H_0=q_{h_0}\le R,\qquad
+ a=(r/h_0)a',\qquad (h_0,a'cs)=1.
+\]
+The exact outside coefficient has modulus R^{-2}H_0^{-1}. Restoring the h_0 unit factors gives the full actual v,w character pair, not a character evaluated at a forced nonunit. Ordinary primes are p|r with p not dividing h_0, even when a boundary prime has exponent greater than one in r.
+
+After (4), the precise outside bin weight, apart from the common Q/Y'^{3/2}, is
+\[
+ (Y'/C_l)^{\alpha} R^{6\alpha-2}H_0^{-1},            \tag{5}
+\]
+and the full Fourier/Gaussian envelope is
+\[
+ (1+|\nu|)^Ce^{-cl^2}
+ \left(1+{V^3W^5(R/H_0)^6q_{a'}^6\over C_l/X'}\right)^{-A}.
+                                                               \tag{6}
+\]
+Before any reverse positive extension, work on the actual support h_0|w. The restored full character already vanishes whenever (cs,h_0)>1. Thus the extra h_0-unit mask in the c and s columns is redundant on this support. Define the common smooth column for every w by the restored character without that redundant rough mask, and only then enlarge the positive row norm from h_0|w to all w. This preserves a genuine common smooth column for Poisson; it does not claim uniform Poisson for an arbitrary retained h_0-unit mask. Ordinary r masks are first expanded exactly into the fixed divisor extractions already used in (4). In the reverse common-column organization, the w part of g is enforced by the zero extension of chi_w, its v part by the fixed chi_v zero extension, and its a' part by the original fixed column mask. Since v is frozen there, the actual n_0,E divisors of v are fixed divisor choices; their w-symbols enter only bounded row factors. Their c/s-dependent phases have already been canceled by the exact local identity. Thus the reverse family retains common c coefficients and a genuinely common smooth s column at every physical layer.
+
+All original prime slots remain assigned to r,n_0,g,e,c_2, or with r omitted for the core marker. The actual c_2 slot multiplier is the one in the corresponding audited moment theorem. In particular it is not omitted from the clean budget below.
+
+Joint logarithmic Fourier separation retains fixed product cutoffs in every mode, as in the user's [QUADRATIC_MOBIUS_GAIN.md](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/bbb8bba6f6a678848a270a4c950568a672cc975f/reports/20261011_qrh_selection_bridge/QUADRATIC_MOBIUS_GAIN.md) Section 4 and the audited mixed baseline. All arithmetic masks are fixed or pooled first. The e coefficient is eta(e)/q_e; no second Möbius cancellation in e is assumed.
+
+#### 2. Small bins: a homogeneous contraction of the true clean majorants
+
+Assume 1/8<=alpha<=1/4. For fixed column slots P_c, let A_alpha(U) denote the positive clean analytic majorant summed over dyadic V,W with V^3W^5<=U, including the full S scale (the reciprocal e sum) and using the better of the two proved directions. Factor out (Y'/C_0)^alpha. Each permitted Holder expression has:
+
+- one frozen-twist count V or W;
+- a nonnegative power of the actual density bound R_bin;
+- a selected-multiplier positive norm;
+- a smooth direct/dual positive norm, or its pointwise alternative;
+- S^{-alpha}, and the exact selected scalar P_c^alpha.
+
+For 0<t<=1 apply
+\[
+ (V,W,S)\longmapsto(tV,tW,t^2S),\qquad P_c\text{ fixed}.
+                                                               \tag{7}
+\]
+The frozen count contributes t. Every monomial in either family's direct or dual smooth-moment bound is at most t times its original value. For example the quadratic dual terms are V^{1/(2k)}sqrt(S) and sqrt(VW); the sixth dual terms are
+\[
+ W^{1/(2k)}\sqrt S,\quad\sqrt{VW},\quad
+ W^{5/(12k)}(VW)^{1/6}S^{1/3},\quad
+ W^{1/(6k)}(VW)^{5/12}S^{1/12}.
+\]
+Their respective t exponents are at least one. The direct terms have the same property. The pointwise min(S,sqrt(VW)) and the genuine long-S Poisson bound also contract by at least t; the ratio S/(VW) is unchanged in that tail. The density majorants and the selected positive moments are nondecreasing in their family-size variables, so their nonnegative Holder powers do not increase under (7). Finally S^{-alpha} contributes t^{-2alpha}. Thus every permitted clean majorant contracts by at least
+\[
+ t^{2-2\alpha}.                                      \tag{8}
+\]
+This assertion uses the actual common coefficients and full primitive conductor VW. It neither drops a root number from a signed identity nor rescales the physical probe.
+
+As V^3W^5 contracts by t^8, put
+\[
+ \gamma(\alpha)=(1-\alpha)/4\ge3/16.
+\]
+Inflating an actual pair with V^3W^5<=U<=K_0 by t^{-1}, t=(U/K_0)^{1/8}, keeps its V/W ratio and puts it in the clean frequency range. In particular the reverse condition V<=W, whenever used by the inflated clean choice, remains valid for the original pair. Every original slot is fixed. Taking the same Holder choice and summing the dyadic ranges gives
+\[
+ A_\alpha(U)\ll Z^\epsilon (U/K_0)^{\gamma(\alpha)} B_\alpha,
+ \quad0<U\le K_0,                                  \tag{9}
+\]
+where B_alpha is the clean certificate upper bound at K_0. The harmless logarithmic dyadic counts and fixed-ratio annular endpoints are included in epsilon. Empty subunit ranges remain empty.
+
+For clarity about the complete frequency tail, (9) is a counting-function estimate, not a hard frequency cutoff. For U>=K_0 reapply the clean algebra with the enlarged reference parameter Z_U=Z(U/K_0)^{16/13}. The actual slots still obey P_c<=Z_U^{1/6}; only the explicit factors (Y'/C_0)^alpha and the normalized prefactor need to be restored, giving a fixed polynomial power of U/K_0. Explicitly one may take the common clean upper envelope B_alpha=Z^{7/48+11alpha/16}, which follows from its normalized exponent -5/32 after removing Z^{-29/96}(Y'/C_0)^alpha; substituting Z_U therefore gives a finite power (U/K_0)^{(16/13)(7/48+11alpha/16)} uniformly on this compact alpha interval. This is an application of the clean inequality to larger analytic ranges, not an invocation of a coupled-scale physical theorem. Hence A_alpha(U)<=Z^epsilon B_alpha(U/K_0)^B for a uniform finite B. Here is the precise tail application, including effective cutoffs below one. Put x=(T/Z)(H_0/R)^6 q_a'^{-6}<=1 and E=e^l x K_0. The two counting-function bounds imply, by a dyadic decomposition in U/E (or Stieltjes integration),
+\[
+ \int_0^\infty (1+U/E)^{-A}\,dA_\alpha(U)
+ \ll Z^\epsilon B_\alpha e^{C|l|}x^{\gamma(\alpha)}.
+                                                               \tag{9a}
+\]
+Choose A larger than B and gamma, with a fixed positive margin. For U<=K_0 insert (9); for U>=K_0 insert the polynomial bound, and sum the convergent geometric tails. If E>K_0, its excess power is bounded by e^{C|l|}, since x<=1. If E<1 the counting function vanishes below the first actual ideal range and the same Schwartz inequality still applies. Thus no arithmetic range is replaced by a hard cutoff, and no contraction with t>1 is used. The factor e^{C|l|} is absorbed by the original Gaussian exp(-cl^2).
+
+The clean certificate states that the normalized prefactor times (Y'/C_0)^alpha B_alpha is O(Z^{-5/32+epsilon}). Combining its contraction factor with (5)--(6), the remaining exact square and sixth-power weights are
+\[
+ R^{6\alpha-2-6\gamma}H_0^{6\gamma-1}
+ q_{a'}^{-6\gamma}.
+                                                               \tag{10}
+\]
+Since 6gamma>=9/8 and H_0<=R, their r bound is R^{6alpha-3}<=R^{-3/2}; the a' bound is at most q_a'^{-9/8}. The h_0 divisor count and all ordinary-mask counts are small powers. These are genuine absolutely convergent ideal sums, uniformly on this bin interval.
+
+For the exact first flat, insert T=Z/q_delta^6 with coefficient mu(delta)kappa(delta)/q_delta^2 while X',Y' and all slots remain fixed. The same argument adds the delta power
+\[
+ -2+6\alpha-6\gamma=-7/2+15\alpha/2\le-13/8.         \tag{11}
+\]
+This also converges absolutely. The redundant frequency lift preserves (1). Therefore the whole small-bin part, including all physical layers and both first flats, satisfies (2).
+
+#### 3. Large bins: a simpler marked pointwise calculation
+
+Assume 1/4<=alpha<=1/2. Use only the forward quadratic moving-twist density
+\[
+ R_{\rm bin}\ll V^{D}W^{D/3},\qquad D=3\alpha/(1+\alpha),
+                                                               \tag{12}
+\]
+and the actual pointwise smooth bound min(S,sqrt(VW)). The uncapped density is a valid upper bound even when it exceeds V. Extract every selected column product exactly and sum its actual slot mass in absolute value. This costs P_c^alpha<=O(P^alpha), with every deleted Euler factor still present in the true imprimitive modulus. No selected-slot moment is needed here.
+
+The full finite e sum peaks at S=sqrt(VW). Define
+\[
+ \kappa=D+(1-\alpha)/2,\qquad
+ \lambda=D/3+(1-\alpha)/2.
+\]
+For a fixed w its positive bound is V^kappa W^lambda times (Y'P/C_l)^alpha R^{6alpha-2}H_0^{-1}. Now use the actual support h_0|w: the number of w~W is O(W/H_0). This is ordinary ideal counting of frozen twists, not division of a zero-density row count by H_0.
+
+Weighted V summation in (6) gives
+\[
+ (C_l/X')^{\kappa/3}(H_0/R)^{2\kappa}
+ W^{-5\kappa/3}q_{a'}^{-2\kappa}.
+\]
+Consequently the remaining W power is
+\[
+ m(\alpha)=1+\lambda-5\kappa/3
+   ={\alpha^2-9\alpha+2\over3(1+\alpha)}\le-1/20.
+                                                               \tag{13}
+\]
+Indeed m(1/4)=-1/20 and m'(alpha)=(alpha^2+2alpha-11)/(3(1+alpha)^2)<0 on this interval. Sum the actual dyadic W ranges with W>=H_0. They give at most a fixed constant times H_0^{m(alpha)}. The residual H_0 exponent is
+\[
+ 2\kappa-2+m(\alpha)={2D-1-2\alpha\over3}\le0.       \tag{14}
+\]
+The r and flat exponents are both
+\[
+ 6\alpha-2-2\kappa=7\alpha-3-2D\le-3/2.             \tag{15}
+\]
+For the signs in (14)--(15), their exact factorizations are -(alpha-1)(2alpha-1)/(3(1+alpha)) and (6alpha-2-2kappa)+3/2=(2alpha-1)(7alpha+3)/(2(1+alpha)). Also 2kappa>=39/20>1, so the a' ideal sum converges. Thus all ordinary masks, h_0 divisors, physical square layers and exact flat tails are strictly summable.
+
+The resulting all-scale bound, apart from the common Q/Y'^{3/2} and small powers, is
+\[
+ (Y'/T)^\alpha(TP/X')^{\kappa/3}.                    \tag{16}
+\]
+It is valid also at small T: the weighted V moment was applied to the full Fourier tail, and no nonempty range was extended by a fictitious hard cutoff. Gaussian l summation preserves (16).
+
+At T=Z, the normalized finite-compensation exponent is at most
+\[
+ G(\alpha)=-29/96+13\kappa/48-25\alpha/48.
+\]
+This decreases on [1/4,1/2], since kappa'=3/(1+alpha)^2-1/2 and 13 kappa'<25 throughout the interval. Hence
+\[
+ G(\alpha)\le G(1/4)=-323/1920<-5/32.               \tag{17}
+\]
+The remaining original subset-length term is negative and may be discarded. This proves more than (2) for every large bin.
+
+#### 4. Uniformity, provenance and exact conclusion
+
+In all steps choose the initial ambient small powers using the actual moving norms v,w,r,a',e,h_0,delta and exp(|l|). Only afterward absorb them in the strict r, a', W and delta exponents, and in arbitrarily many Fourier/Gaussian derivatives. Every joint separated mode retains its compact product cutoffs. Original unit/ray phases and zero extensions are unchanged before the positive inequalities. Smooth seminorm and Mellin-height losses remain polynomial and are absorbed by the original outer Mellin weight.
+
+Combining Sections 2 and 3 proves the complete mixed-type estimate (2) in the exact original/core/all-n/two-first-flat scope. The result uses the user's Q theorem through the actual inverse-L/zero-density bins. It improves the earlier Q-free -1/32 for this same mixed type by 1/8, but it does not prove the full low comparison or RH. The complete transfer has passed independent review in the companion REFEREE, Part XVII D; its acceptance is separate from the earlier clean certificate.
+
+Input Q is pinned to the user's [FORMAL_INPUT_Q](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/52ee48d3e2e4c5b0beeb3e4880eca86fb2208ce1/reports/20261011_qrh_selection_bridge/FORMAL_INPUT_Q.md); its build is attributed to the user, and this conditional consequence does not claim an independent formal rerun.
