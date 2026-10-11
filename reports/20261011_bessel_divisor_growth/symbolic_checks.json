@@ -1,0 +1,28 @@
+{
+  "status": "PASS exact symbolic and rational checks",
+  "sympy": "1.14.0",
+  "Q": "-a**5*c + 6*a**4*c**2 + 9*a**4/2 - 30*a**3*c + 45*a**2/2",
+  "Q_at_1": "-a**2*(a - 3)*(2*a**2 - 15*a + 15)/2",
+  "cubic_modulus_difference": "y**2*(d**4 - 2*d**2*y**2 + 3*x**4 + 3*x**2*y**2 + y**4)",
+  "normalized_polynomial_numerator": "R**6 + 2*R**4*d**2 - 3*R**4*x**2 + R**2*d**4 + 3*R**2*x**4 - d**4*x**2 - 2*d**2*x**4 - x**6",
+  "Bessel_seed_even_derivative_ratios": [
+    "c**2 - c - 1",
+    "c**4 - 6*c**3 + 5*c**2 + 5*c - 3",
+    "c**6 - 15*c**5 + 62*c**4 - 60*c**3 - 51*c**2 + 59*c + 3"
+  ],
+  "ratio_lower_bounds": [
+    -1,
+    -91475,
+    -36828851
+  ],
+  "positive_source_example": {
+    "R": 100,
+    "d": "1/4",
+    "C": "16000200000625/16",
+    "margin": "255214446751343/256",
+    "lower_fraction": "99/100"
+  },
+  "scope": "finite algebra only; analytic proofs are in REPORT.md",
+  "rh_proved": false,
+  "script_sha256": "919b30be70929a2fe0b0c6ed2adf52258de6314a2508d33d28d3b9a44654d452"
+}
