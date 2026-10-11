@@ -16,6 +16,8 @@
 
 Part XXI 另证明一个不依赖 Q 的精确相消：固定原频率单位 ε=1、H=w²、n=a=1、w 为非单位平方自由，并保留全部原 shared g 时，原窗口与全部实际 good/bad dual h、e 卷积、标记重组后的指定迭代双极贡献恰为零。两项 nonpolar 余项及其他单位、物理层未受此定理控制，完整 cubic 指数不因此改变。
 
+Part XXIV 进一步在 η=ε=1、H=w²a⁶ 且 w 为非单位平方自由的范围内，证明指定第二 nonpolar 余项 O(Z^(−19/480+ε))：涵盖全部物理 n、a、g、h，原/core 两标记、各自第一 flat 及原有限补偿，不依赖 Q。这里先对整个物理 e 列作其真实有限截取，再定义相应两次极项分解；第一 nonpolar 余项尚未控制，完整 cubic 指数保持上列结果。Part XXV 对真实截断 inverse 系数另证：Gauss 极项的精确乘子身份及 Q 条件 X^(−1/8+ε) 衰减，以及不依赖 Q 的全 cutoff Gauss 重赋相列 Siegel–Walfisz 消去。光滑 projection 的 level 与删素集仍固定，完整 detector tail 尚未闭合。
+
 上述完整类型估计均未覆盖 principal/unit 核及其余混合 sextic good-core，也未证明整个符号配对的目标界或 RH。
 
 Parts I–III 保留 n=1、完整平方层及尺度一致性的已证算术接口；Part IV 给出独立解析双列引理；Parts V–VI 完整证明真实公共系数还原、尾估计及精确去卷积传递。Part VII 给出依赖用户固定输入 Q 的真实 Möbius 列均值；Part VIII 给出真实 selected Euler 乘子矩。这些解析引理本身不直接给完整物理指数；Parts X–XI 将它们与真实双向高矩、全部物理除数和补偿结合，证明上述 Q 条件的 quadratic 强化。各 Part 的公式编号独立。首个 Poisson、Gauss 局部身份与原探针归用户报告及固定源稿；外部解析大筛来源分别在相关 Part 中注明。
@@ -6694,3 +6696,1152 @@ For an original subset of length exponent d_slot, the remaining contribution is 
 Sections 3--5 establish (1) in the exact original/core/all-n/two-first-flat scope. All ambient small powers initially include the actual deleted modulus, physical and flat divisors, row conductors, Gaussian labels and every Mellin/log-Fourier height. They are absorbed only after the strict physical sums and the common differentiated Gaussian/Schwartz bounds.
 
 The user's Q and GENERAL_SELECTED_Q_GAIN inputs retain their original attribution. The new pair-Gram theorem and explicit contraction are separate reviewed analytic inputs. The independent referee additionally wrote and ran a separate direct-operator AST verifier, with the true clamped kernel, and checked all 4351 rectangles and the complete physical application; see the companion REFEREE, Part XXIII D. The remaining frequency types and complete signed comparison are not resolved by this theorem.
+
+# Part XXIV. Signed control of the specified secondary cubic remainder
+
+The following proof uses its own internal Parts I–IV and local equation numbers. Its target η=1 and original frequency unit ε=1 are fixed throughout; the original unestimated first remainder is retained. The original probe identities are attributed to the pinned source and the user's preceding physical interface.
+
+## Signed Möbius--Gauss control of the secondary cubic remainder
+
+### Theorem and exact scope
+
+Use the original probe, its original selected-prime slots, original finite compensation, all zero extensions and true conductor masks. Set the target eta=1 and the original frequency unit epsilon=1. In each actual rescaled probe retain every original physical n and select H=w^2a^6, where w is squarefree and nonunit and a is any good primary element. Retain every original shared divisor g and every dual frequency h, including the exact square-layer masks and phases.
+
+First restrict the whole physical e-column by its exact W_1 support, and then perform the exact second primary-class Poisson transformation. Extract the cubic Gauss pole in the remaining squarefree w variable, followed by the conjugate cubic Gauss pole in the good squarefree dual variable. The two corresponding norm-Mellin coordinates are (1/3,2/3). Denote the resulting secondary nonpolar contribution by R_secondary^phys. Its definition includes all the actual marks, full radial weights and complete bad-prime dual valuations.
+
+**Theorem.** For the original finite signed compensation of precisely these projected rescaled sectors,
+
+\[
+             \boxed{\mathcal R_{\rm secondary}^{\rm phys}(Z)
+                    \ll_\epsilon Z^{-19/480+\epsilon}.}
+\]
+
+No Q input and no unproved sextic or infinite-type Gauss theorem is used. The first nonpolar term, including its explicit entire unit-row correction, remains unestimated. The theorem does not include other original units or mixed cube-free w. Part IV proves the same bound separately for the explicitly defined core marker and each marker's original first Möbius scale transform; it does not change the original marker in the original-probe assertion. It does not improve the currently established exponent for the whole cubic sector or prove RH.
+
+The two mathematical inputs below are a signed estimate for the actual Möbius--cubic-Gauss column and the exact local bad-prime annihilation of the second pole. The bound is first proved for n=a=1 in Part I; Part II preserves the complete a mask, all shared g, and the original proper-subset rescalings at n=1. Part III proves the actual all-n extension, including its moving j character and joint short-column tail. Part IV transfers this estimate through the precise existing first scale operation by an absolutely convergent outer sum. Equation numbers are local to each part.
+
+### 0. Conventions and the local pole cancellation
+
+Let O=Z[omega], lambda=sqrt(-3), and q_z=|z|^2. Primary means congruent to 1 modulo 3. The original additive character is e_o(z)=exp(2 pi i Tr(z/lambda)), with self-dual measure (2/sqrt(3)) dxdy. Let vartheta_w=chi_w^2 be the original cubic residue symbol with all its zero extensions. The normalized original Gauss sum gamma_o and the DDDS sum gamma_D satisfy
+
+\[
+ \gamma_o(w)=\vartheta_w(\lambda)\gamma_D(w),\qquad
+ \vartheta_w(3)=\overline{\vartheta_w(\lambda)}.
+\]
+
+The DDDS additive character is exp(2 pi i Tr z). Below, e(z) abbreviates the original e_o(z). For squarefree nonunit w the exact primary-class Poisson identity is
+
+\[
+ \sum_{v\equiv1\ (3)}\vartheta_w(v)F(v/\sqrt S)
+ =\frac{S}{9\sqrt{q_w}}\gamma_o(w)\vartheta_w(3)
+       \sum_{h\ne0}\overline{\vartheta_w(h)}e_o(h/3)
+           \widehat F\!\left(\frac{\sqrt S h}{3w}\right).
+\]
+
+It follows by summing residues modulo 3w; choosing 3b=1 modulo w gives representatives 3br+w and the displayed finite Gauss transform. In particular the two lambda factors cancel, and no extra lambda is inserted in the source numerator. Expanding the original finite bad mask over d|B contributes mu(d)/q_d and the actual dual dilation by q_d. Here B is the primary product of the original bad primes other than lambda, including the norm-four prime (2).
+
+At p|B let k_p in {0,1,2} be determined by xi_p(v)^2=vartheta_p(v)^(k_p) on units, and put kappa=product p^(k_p). Cubic reciprocity gives conjugate(xi(w^2))=conjugate(vartheta_w(kappa)). At the norm-four prime k_p=1 or 2, since the original xi_p is nonprincipal. These are the original xi data, not newly selected twists.
+
+DDDS Lemma 6.7 says that, after reducing a numerator modulo cubes while retaining all positive prime supports as masks, its first pole survives only when the exponent-two numerator part is empty. With noncube numerator zeta A, zeta|3 and A squarefree good/bad away from lambda, its residue has factor C_zeta conjugate(gtilde_3(zeta,A)) q_A^(-1/6) A_*(mask), where A_*(j)=product_{p|j} q_p/(q_p+1). The source row here has unnormalized weight g_3(w)/q_w, so the first norm-Mellin coordinate is 1/3.
+
+For the second row, factor out the first residue's A_* weight. The numerator A has support in K, and K has support in J. Its local u weight is 1 at primes in a specified set J and q_p/(q_p+1) elsewhere, and its true zero mask is K, not J. Expanding the local weight as 1+lambda'(p), where lambda'(p) is 0 or -1/(q_p+1), gives the exact conjugate residue
+
+\[
+ \overline{C_\zeta}\,
+       \frac{\widetilde g_3(\zeta,A)}{q_A^{1/6}}
+       A_*(K)\prod_{p\nmid3J}(1-(q_p+1)^{-2}).
+\]
+
+Indeed extracting u=fr uses the signed CRT identity
+conjugate(gamma_D(f)) vartheta_f(zeta A) gtilde_3(zeta,Af)=gtilde_3(zeta,A).
+The remaining norm at its normalized pole 5/6 is q_f^(-5/6-1/6)=q_f^(-1). This yields the displayed Euler product. The divisor expansion is normally convergent near that pole: its pole-subtracted inner series costs O(q_f^(1/4+epsilon)), while |lambda'(f)|<=q_f^(-1). The inherited first-pole factor q_u^(-1/6) makes the second original Mellin coordinate 2/3. Thus the two numerator Gauss factors cancel exactly.
+
+For any fixed surviving good configuration, the original joint radial Mellin test then leaves the bad dependence
+
+\[
+ \mu(d)q_d^{-1/3}e_o(\tau/3)|C_\zeta|^2
+                      q_{a_0}^{-1/3}q_\tau^{-2/3},
+\]
+
+where tau is the unit/bad part of h and zeta a_0 is the noncube bad numerator. Primary good factors do not change e_o(tau/3) or zeta. At a bad prime of norm P, put x=P^(-1/3), j=k_p and (f_0,f_1,f_2)=(1,x,0). Its complete local sum is
+
+\[
+ T_j=\sum_{\delta=0}^1(-x)^\delta
+        \sum_{b\ge0}x^{2b}f_{j+2\delta+b\ ({\rm mod}\ 3)}.
+\]
+
+Writing S_j for the inner sum, S_0=(1+x^3)/(1-x^6), S_1=xS_0, S_2=x^2S_0, whence T_j=S_j-xS_{j+2} is respectively 1,0,0. The original norm-four prime therefore kills the second pole. This holds for each fixed good configuration, not merely after a sum over all e allocations. The bad-supported sums are absolutely convergent. Parts I--III identify the actual masks and good factors to which this calculation is applied.
+
+## Part I. The signed column and the a=1 base estimate
+
+### 1. A uniform actual Möbius--Gauss column
+
+Use exactly the DDDS normalization gamma_D(c)=q_c^{-1/2}g_{3,D}(1,c), with additive character exp(2 pi i Tr z); primary means 1 modulo 3. Let vartheta_c be the cubic symbol, zero on nonunits. Let R be a fixed bad-supported numerator, let u be a good squarefree primary element, let K be an arbitrary good mask, and let F be a fixed smooth compact norm test. Then the signed column bound is
+
+\[
+\begin{split}
+ \mathcal M(C,u;K)
+ &=\sum_{c\ {\rm sf,primary}\atop(c,Ku)=1}
+       \mu(c)\overline{\gamma_D(c)}\vartheta_c(Ru)F(q_c/C),\\
+ |\mathcal M(C,u;K)|
+ &\ll_{R,F,\epsilon}(Cq_uq_K)^\epsilon
+        \{C^{5/6}+C^{4/5}q_u^{1/10}\}.                    \tag{1}
+\end{split}
+\]
+
+A fixed finite bad mask can accompany K. If the numerator vanishes at some such prime, the affected terms remain zero. Bounds depend on finitely many seminorms of F, so compact common norm-Mellin separation is permitted. The mask costs a small power, not a replacement of the true conductor.
+
+#### 1.1 Finite Möbius identity
+
+For a fixed integer J and z=(2C)^{1/J}, let mu_z denote mu restricted to q_n<=z, and let 1 be the constant ideal function. For q_c<=2C,
+
+\[
+ \mu(c)=\sum_{j=1}^J(-1)^{j-1}{J\choose j}
+                  (\mu_z^{*j}*1^{*(j-1)})(c).            \tag{2}
+\]
+
+Indeed 1-1*mu_z is supported on norms greater than z. Multiplying the finite polynomial identity for the truncated reciprocal by mu shows that the error is mu*(1-1*mu_z)^{*J}, supported on norms greater than z^J. This is coefficientwise; no analytic continuation is used.
+
+Every factorization contributing to a squarefree c has pairwise coprime squarefree factors. The original gamma_D(c) zero restricts exactly to such products. Its twisted multiplicativity gives
+
+\[
+ \overline{\gamma_D(ab)}\vartheta_{ab}(Ru)
+  =\overline{\gamma_D(a)}\vartheta_a(Ru)
+    \overline{\gamma_D(b)}\vartheta_b(Ru)\vartheta_a(b),
+          \qquad(a,b)=1.                                \tag{3}
+\]
+
+The last cubic character also vanishes when a,b meet, so the coprimality condition is retained by the kernel. The independent restrictions (a,Ku)=(b,Ku)=1 stay in the coefficients.
+
+Fix 0<delta<=1/3, choose J sufficiently large in terms of delta, and dyadically split the factors in (2). If one factor exceeds C^{1-delta}, it is necessarily an unrestricted 1-factor; the complementary product has norm A<=C^delta. This is Type I. Otherwise either one factor already lies between C^delta and C^{1-delta}, or grouping factors smaller than C^delta gives a product in [C^delta,C^{2delta}]. This gives Type II with C^delta<=A,B<=C^{1-delta} and AB comparable to C. Smooth boundaries are handled by a common Mellin separation, with divisor-bounded coefficients.
+
+#### 1.2 Type II keeps the Gauss phase
+
+Equation (3), rather than an absolute value of gamma_D(ab), reduces each Type II term to a genuine bilinear cubic character sum. The cubic large sieve and Cauchy--Schwarz give
+
+\[
+ |T_{\rm II}|
+ \ll (Cq_uq_K)^\epsilon
+       (AB)^{1/2}\{A+B+(AB)^{2/3}\}^{1/2}
+ \ll (Cq_uq_K)^\epsilon
+       \{C^{1-\delta/2}+C^{5/6}\}.                        \tag{4}
+\]
+
+All u phases have modulus one on their actual support and are common row or column coefficients. No numerator-size loss is introduced here.
+
+#### 1.3 Type I uses the published cubic series in its stated family
+
+For fixed a, the long b-row in (3) is a conjugate normalized cubic Gauss row with numerator Rua and zero mask Kau. Since (a,u)=1 and a,u are squarefree, its moving squarefree numerator is ua. DDDS Lemma 6.7, its coprimality-removal formula, and Lemma 6.3 give
+
+\[
+ \sum_{b\ {\rm sf,primary}\atop(b,Kau)=1}
+       \overline{\gamma_D(b)}\vartheta_b(Rua)F_a(q_b/B)
+ \ll (Bq_aq_uq_K)^\epsilon
+       \{B^{5/6}(q_aq_u)^{-1/6}
+                            +B^{1/2}(q_aq_u)^{1/4}\}.    \tag{5}
+\]
+
+The fixed bad exponent-two numerator part can kill the pole; retaining the first term is a safe upper bound. The squarefree moving numerator ua must not be replaced by an arbitrary nonsquarefree twist. The divisor sums in coprimality removal cost only small powers: after convexity their local norms are at most d^{-3/4} for d|ua and e^{-1/4} for e|K. Fixed bad-prime constants are harmless.
+
+Summing the divisor-bounded a coefficients, A<=C^delta and B comparable to C/A, yields
+
+\[
+ |T_{\rm I}|\ll(Cq_uq_K)^\epsilon
+       \{C^{5/6}q_u^{-1/6}+C^{1/2+3\delta/4}q_u^{1/4}\}.
+                                                               \tag{6}
+\]
+
+The first a sum is harmonic: a^{-5/6}a^{-1/6}=a^{-1}. This is where the exact coprime squarefree numerator matters.
+
+For q_u<=C^{1/3}, choose delta=1/3. For C^{1/3}<q_u<C^2 choose delta=(2-log(q_u)/log C)/5. Equations (4)--(6) give (1). Choose delta from a finite sufficiently fine grid after epsilon is fixed; very small delta uses the trivial bound. Thus J never grows with C. For q_u>=C^2 the second term in (1) already dominates C. All logarithmic and grid losses enter epsilon.
+
+#### 1.4 The actual residue weights and selected primes
+
+The same estimate holds after multiplication by
+
+\[
+ A_*(c)=\prod_{p\mid c}\frac{q_p}{q_p+1},                 \tag{7}
+\]
+
+or by the multiplicative variant whose local factor is 1 on any specified mask J and q_p/(q_p+1) elsewhere. The latter is necessary because c_0 may meet the cube factor t in the actual row. In Type II these multiplicative weights stay in the two common coefficients. For the unrestricted long b of Type I, expand its weight as sum_{f|b} lambda(f), with lambda(p) either 0 or -1/(q_p+1). Extract b=fr. Gauss CRT changes the numerator of the r-row from ua to uaf. The two resulting f series in (5) are bounded, respectively, by sum f^{-2} and sum f^{-5/4}, since |lambda(f)|<=q_f^{-1}. They converge uniformly with divisor-small losses. Thus (5), (6) and the marked factor grouping are unchanged. In particular no claimed coprimality of c_0 and t is introduced.
+
+For actual selected primes forced into c, write c=Dr with D the product of those slots and (D,r)=1. Expand mu(r) by (2), retaining each prime factor of D as an additional factor variable with its original bounded smooth coefficient and phase. The original slot variables are independent after the original zero-real-part norm separation; arbitrary row-dependent slot weights are not asserted. On each regrouping, their coefficients are divisor-bounded because a fixed integer has only divisor-many possible selected tuples. If every selected prime has norm <=C^{1-delta}, no large individual factor can be a selected-prime factor. The Type I/II argument is consequently unchanged. In particular, there is **no factor P^{1/6} or P^{3/10}** from first estimating each forced tuple separately. Original priority exclusions remain in K or in the zero-extended cubic kernel.
+
+It is sufficient below to impose C>=C_0 P^{3/2}, since delta<=1/3 and each selected prime has norm O(P). The complementary c range is treated separately, without extending this marked estimate to a prime-sized forced column.
+
+### 2. Exact finite physical-e decomposition of the original probe
+
+Begin with the original physical column, before its second Poisson transformation. For eta=1, n=a=1 and the epsilon=1 squarefree-w sector, the signed identity has c_original=g e c and physical s=g e v. In particular, if W_1 is supported in q_s/Y<=C_1, then
+
+\[
+                         q_gq_e\le C_1Y                 \tag{8}
+\]
+
+is necessary for a nonzero original column. We **first** restrict the original e-series by (8), an exact restriction on the whole physical column, and **then** apply primary Poisson and the two specified cubic pole extractions. The first nonpolar term and the secondary nonpolar term in this note are defined from this finite-e representation. They are not asserted equal termwise to the untruncated-e remainder pieces of the untruncated-e version of the pole calculation.
+
+This order avoids the invalid inference that a polar piece inherits the physical vanishing of a whole column. It does not change the original probe. Both remainder pieces are retained in its exact decomposition.
+
+The second pole still vanishes in this representation. Section 0 establishes the bad norm-four cancellation for **every fixed allowed good configuration** (g,e,v,c_0,t), after summing the original finite d|B and every bad dual valuation tau. The indicator (8) depends only on g,e and is common to that entire bad-prime sum. It therefore preserves the zero. This uses the final bad-prime identity, not the earlier full-e three-allocation cancellation.
+
+Consequently, with this precisely defined order,
+
+\[
+   \mathcal P_{\rm first}^{\rm phys}
+      =\mathcal R_{\rm secondary}^{\rm phys},\qquad
+   I_{\rm sector}=\mathcal R_{\rm first}^{\rm phys}
+                      +\mathcal R_{\rm secondary}^{\rm phys},  \tag{9}
+\]
+
+up to any explicit entire unit-row subtraction carried with the first remainder. No norm cutoffs on h, or hard cutoff on a separately extracted old polar piece, are introduced.
+
+### 3. Estimate the complete first polar contribution in this decomposition
+
+Use exactly the already audited all-g row and its DDDS convention. Write w=gr, h=tau u v^2 t^3, and c=v c_0. First-pole support imposes (u,c)=1 and (uvt,g)=1. All of e,v,c_0 are pairwise coprime, and they avoid g; u may share e,t. Fixed surviving bad data are zeta a_0. The g Gauss phase cancels exactly as in Section 0 and the exact shared-divisor identity below, leaving q_g^{-2/3}.
+
+For clarity use capitals G=q_g, E=q_e, V=q_v, T=q_t, and C approximately q_{c_0}. In an original Gaussian annulus put U_l=e^l U and
+
+\[
+ C\asymp\frac{U_l}{GEV},\qquad
+ M=\sqrt{U_l/X},\qquad
+ R\asymp M/G,\qquad
+ H\asymp\frac{GEM}{Yq_\tau V^2T^3}.                    \tag{10}
+\]
+
+Fixed q_d factors are absorbed only into fixed constants. R is the radial norm scale of r in the first residue's Mellin integral; it is not claimed to be an integer count when below one. Original radial tails allow the displayed scales to be used with arbitrary rapid-decay envelopes. The original Gaussian annulus carries e^{-c l^2} with polynomial seminorms.
+
+Before summing e,g,v,t,tau, the first polar term has outside magnitude
+
+\[
+ \sqrt X\,\phi(g)G^{-8/3}E^{-2}V^{-1}
+       R^{1/3}\,q_u^{-1/6}
+       \frac{\mu(c_0)\overline{\gamma_D(c_0)}
+                 \vartheta_{c_0}(\zeta a_0u)}{q_{c_0}^{7/6}},
+                                                               \tag{11}
+\]
+
+with the original phase of u, the unchanged finite masks and weights A_*(Bgevc_0ut), and both original radial functions. The remaining bad factors have bounded fixed-prime modulus times q_tau dependence displayed in H. Formula (11) is only a magnitude statement for the factors outside the actual signed c_0 row; the mu(c_0) Gauss phase inside that row is not discarded.
+
+After common compact norm separation, (1) and (7) give for that row
+
+\[
+       C^{-1/3}+C^{-11/30}q_u^{1/10},                    \tag{12}
+\]
+
+up to small powers. Summing actual u annuli with the original Schwartz envelope gives respectively H^{5/6} and H^{14/15}. This remains a valid upper bound for H<1 by the rapid nonzero dual tail; no sieve is applied at a subunit physical length.
+
+The number of e in an E block is O(E), even with original selected-divisor weights, which are divisor-bounded. Insert (10)--(12). The two block bounds are
+
+\[
+\begin{split}
+ B_1&\ll \sqrt X M^{7/6}Y^{-5/6}U_l^{-1/3}
+           \phi(g)G^{-11/6}E^{1/6}
+           V^{-7/3}T^{-5/2}q_\tau^{-5/6},\\
+ B_2&\ll \sqrt X M^{19/15}Y^{-14/15}U_l^{-11/30}
+           \phi(g)G^{-17/10}E^{3/10}
+           V^{-5/2}T^{-14/5}q_\tau^{-14/15}.
+                                                               \tag{13}
+\end{split}
+\]
+
+In B_2, the V exponent is -1-28/15+11/30=-5/2. Exact phi(g) has not been replaced prematurely by G.
+
+The finite physical restriction (8) permits E<=C_1Y/G. Summing E dyads in (13) gives respectively factors (Y/G)^{1/6} and (Y/G)^{3/10}. Both g coefficients become exactly phi(g)/G^2, whose sum for G<=C_1Y is logarithmic. The v and t sums are absolutely convergent, and tau is supported on the fixed finite bad-prime set, so its sums are geometric. Thus, in the range where the marked lemma applies,
+
+\[
+ |\mathcal R_{\rm secondary}^{\rm phys}|
+ \ll (X Y U P)^\epsilon
+ \left\{X^{-1/12}U^{1/4}Y^{-2/3}
+              +X^{-2/15}U^{4/15}Y^{-19/30}\right\}.       \tag{14}
+\]
+
+The original D|gec marking is never dropped as an equality. Marks in g/e/v are bounded as divisor weights in their positive sums; marks in c_0 are handled inside the signed estimate in Section 1.4. Priority masks retain their actual zeros. The U_D dependence and compact separations have polynomial height norms absorbed by the original Gaussian/Fourier envelope.
+
+#### 3.1 Small c_0 columns with a potentially dominant forced prime
+
+The marked Type I/II lemma is not used when C<C_0P^{3/2}. By (8) and (10), this range forces
+
+\[
+                      V\gg U_l/(Y P^{3/2}).              \tag{15}
+\]
+
+Use the trivial signed c_0 row bound C^{-1/6} here. The analogue of (13), after summing E and g, is bounded by
+
+\[
+ X^{-1/12}U_l^{5/12}Y^{-5/6}
+           \sum_{q_v\gg U_l/(YP^{3/2})}q_v^{-5/2}.
+\]
+
+Divisor multiplicities are absorbed into epsilon, and the ideal tail is bounded by the threshold to power -3/2. This gives the additional term
+
+\[
+                     X^{-1/12}U^{-13/12}Y^{2/3}P^{9/4}. \tag{16}
+\]
+
+If the threshold is below one this expression is an overestimate, which is still valid. The Gaussian l integral of each fixed power of e^l is finite. This supplies a legitimate bound for the entire complementary range instead of assuming arbitrary prime-restricted long rows satisfy (5).
+
+### 4. Original-scale budget and exact remaining problem
+
+At X=Z^{17/48}, Y=Z^{23/48}, P=Z^{1/6}, U=ZP, the exponents of (14) are
+
+\[
+             -11/192,\qquad -19/480.                     \tag{17}
+\]
+
+The exponent of (16) is -115/192. Hence the stated base bound follows on this explicitly fixed leading-scale geometry.
+
+This is a bound for one actual secondary nonpolar term after an exact finite-physical-e reorganization. It is not a bound for the primary nonpolar term, which still contains the genuinely signed mu(c)-weighted psi(ch,s) kernel. This Part I base calculation fixes eta=1, n=a=1 and the unit-one squarefree-w component. Part II supplies the complete original a range and finite compensation. The actual n extension is proved separately in Part III below; eta and mixed-w extensions are not inferred from this base estimate.
+
+### Primary sources and dependencies
+
+- Original fixed source fd4aeeb2, field/Gauss conventions, original probe, physical W_1 support and full-modulus local table: https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex .
+- David, de Faveri, Dunn and Stucky, arXiv:2410.03048v2, cubic large sieve discussion and Lemmas 6.3, 6.7: https://arxiv.org/html/2410.03048v2 .
+- The independently audited exact primary Poisson, all-good/bad dual valuation, and all-shared-g calculations in Part XXI of this report for the same original sector. Their additive-character conversion and pointwise good-configuration bad-prime annihilation are retained here; their untruncated-e remainder notation is deliberately not reused.
+
+
+## Part II. Every sixth-power factor and the original finite compensation
+
+### 1. Exact a mask and shared divisor
+
+The already audited original n=1 signed identity has g|rad(wa), c and e coprime to wa, and after expanding only the original a mask on the physical free column has f|rad(a), with coefficient mu(f)vartheta_w(f). Terms with (f,w)>1 are zero, not omitted by an absolute estimate. Primary Poisson has true scale Y/(q_gq_eq_f). After converting the additive character exactly as in Section 0, the outside coefficient is
+
+\[
+ \frac{\sqrt X}{9}\frac{\mu(g)\phi(g)}{q_g^2}
+       \frac1{q_e^2}\frac{\mu(c)}{q_c}
+       \frac{\mu(f)}{q_f}\frac{\mu(d)}{q_d}\,e(h/3),
+                                                               \tag{1}
+\]
+
+and the w row has
+
+\[
+ \frac{\gamma_D(w)}{\sqrt{q_w}}
+ \overline{\vartheta_w(\kappa d^2 f^2 c h)}
+ F\!\left(\frac{Xq_w^2q_a^6}{q_gq_eq_c}\right)
+ G\!\left(\frac{Yq_h}{9q_gq_eq_fq_dq_w}\right).         \tag{2}
+\]
+
+The original mark is D|gec with Gaussian V_G(q_gec/U_D). Every e,c exclusion from a remains in place. The f^2 in (2) comes from vartheta_w(f)=conjugate(vartheta_w(f^2)), with the nonunit zeros unchanged.
+
+Decompose the actual shared divisor uniquely as
+
+\[
+ g=g_wg_a,\quad g_w=(g,w),\quad g_a\mid\operatorname{rad}(a),
+       \quad(g_a,w)=1,\quad(g_a,g_w)=1,\qquad w=g_wr.
+                                                               \tag{3}
+\]
+
+The r zero mask includes g_w g_a e B. The original g_w character forces (h,g_w)=1. The f character forces (f,g_w r)=1. No condition (a,w)=1 is imposed.
+
+### 2. Exact first-pole support at f
+
+Write the good dual part initially as u v^2 t^3, with u,v squarefree and coprime. Since c is prime to a and f|rad(a), first-pole support at a prime of f requires its h valuation modulo three to be 1 or 2. Thus there is a unique factorization
+
+\[
+ f=f_1f_2,\qquad
+ h=\tau f_1u_0 f_2^2v_0^2t^3,\qquad c=v_0c_0.           \tag{4}
+\]
+
+The variables f_1,f_2,u_0,v_0 are squarefree with their actual pairwise coprimalities. In particular (u_0v_0,f)=1 and (u_0,c)=1. Also v_0,c_0,e avoid a. The cube factor t is arbitrary and may share primes with all permitted variables. The zero (h,g_w)=1 gives (f_1f_2u_0v_0t,g_w)=1. The variable u_0 need not avoid g_a, e or t.
+
+At f_1 the exponent f^2 h is three, so only the original unit mask remains. At f_2 it is four, so the squarefree numerator gains f_2. The first source numerator therefore has squarefree part
+
+\[
+                             a_0g_wf_2c_0u_0,            \tag{5}
+\]
+
+for the same surviving fixed bad part zeta a_0 as before. The original g_w Gauss factor cancels its g_w part exactly, leaving q_(g_w)^(-2/3). Splitting off f_2 from the remaining normalized Gauss sum leaves a factor of modulus one, the norm factor q_(f_2)^(-1/6), and the c_0 column
+
+\[
+ \frac{\mu(c_0)\overline{\gamma_D(c_0)}
+              \vartheta_{c_0}(\zeta a_0f_2u_0)}{q_{c_0}^{7/6}}.
+                                                               \tag{6}
+\]
+
+Thus the moving numerator in the signed Möbius--Gauss lemma is f_2u_0, which is genuinely squarefree and coprime to c_0. The original c_0 masks, including a, are unchanged. The finite residue weight has local factor 1 where c_0 meets t and q_p/(q_p+1) elsewhere, after its outside factors are removed; this is exactly the variant covered by that lemma.
+
+### 3. The second pole still has the mandatory bad-prime zero
+
+For the weighted u_0 series the genuine mask and the support in the first residue's finite weight are, respectively,
+
+\[
+ K=B g_w f v_0c_0,\qquad
+ J=B g e f v_0c_0t.                                     \tag{7}
+\]
+
+The variable u_0 may meet J outside K, notably g_a,e,t. Its prime weight is 1 on J and q_p/(q_p+1) off J. The weighted second-residue proof applies with exactly these sets and squarefree numerator a_0 f_2c_0. Its Gauss factor cancels the first numerator Gauss factor, leaving a fixed bad dependence |C_zeta|^2 q_(a_0)^(-1/3).
+
+Before any Poisson or residue extraction restrict the whole original physical column by q_gq_e<=C_1Y, just as in Part I. This is exact, since its original physical s contains ge. It is harmless that individual f terms have a still shorter support; no such extra support is needed here. After the original joint-window integral, the entire d,tau dependence is again
+
+\[
+       \mu(d)q_d^{-1/3}e(\tau/3)|C_\zeta|^2
+                     q_{a_0}^{-1/3}q_\tau^{-2/3}.        \tag{8}
+\]
+
+Every additional factor involving a,f_1,f_2,g_a is good and independent of those bad-prime allocations. Hence the original norm-four factor kills this second pole for each fixed good configuration. The finite physical-e restriction is common to that bad-prime sum. The full a range therefore satisfies P_first^phys=R_secondary^phys in this specifically defined decomposition.
+
+### 4. Complete a,f,g budget
+
+Put A=q_a, F_i=q_(f_i), G=q_g, G_w=q_(g_w), G_a=q_(g_a), E=q_e and V=q_(v_0). On the original Gaussian annulus use
+
+\[
+ C\asymp U_l/(GEV),\qquad
+ M=\sqrt{U_l/X}\,A^{-3},\qquad R\asymp M/G_w,
+ \qquad H\asymp\frac{GEM}{Yq_\tau F_2V^2q_t^3}.         \tag{9}
+\]
+
+The f_1 scale cancels in H: its factor in q_f is exactly its factor in q_h. The f_2 scale leaves F_2^(-1), since its h valuation is two. All fixed q_d factors are retained as fixed constants.
+
+The outside factor from (1), (5) and (6) is
+
+\[
+ \sqrt X\phi(g)G^{-2}G_w^{-2/3}E^{-2}V^{-1}
+                  F_1^{-1}F_2^{-7/6}.                   \tag{10}
+\]
+
+Apply the signed c_0 estimate and then sum actual u_0 with the original smooth envelope. The two terms are R^(1/3) C^(-1/3) H^(5/6) and R^(1/3) C^(-11/30) F_2^(1/10) H^(14/15). Including (10) and the E count, both have exactly the same f weight
+
+\[
+                             F_1^{-1}F_2^{-2}.           \tag{11}
+\]
+
+The first has g factor phi(g)G^(-5/6)G_w^(-1)E^(1/6); the second has phi(g)G^(-7/10)G_w^(-1)E^(3/10). Summing E<=C_1Y/G turns both into
+
+\[
+ \frac{\phi(g)}{G G_w}
+       =\frac{\phi(g_w)}{G_w^2}\frac{\phi(g_a)}{G_a}.     \tag{12}
+\]
+
+The sum over g_w is logarithmic. The sum over g_a|rad(a) is divisor-bounded. The f allocations satisfy
+
+\[
+ \sum_{f_1f_2\mid\operatorname{rad}(a)\atop(f_1,f_2)=1}
+       F_1^{-1}F_2^{-2}
+       =\prod_{p\mid a}(1+q_p^{-1}+q_p^{-2})\ll_\epsilon A^\epsilon.
+                                                               \tag{13}
+\]
+
+Actual exclusions may be removed only in this positive upper bound. The original sixth-power window gives A^(-7/2) in the first term and A^(-19/5) in the second. Thus both a sums converge absolutely with ample room for every stated divisor-small loss.
+
+The small-c_0 range where a forced selected prime could dominate is handled by the same V tail as in Part I, because C>=U_l/(C_1YV) still follows from the physical bound GE<=C_1Y. Its trivial c_0 estimate has the same F_1^(-1)F_2^(-2), the same g factor (12), and the summable A^(-7/2). No new slot restriction is introduced.
+
+It follows that the Part I secondary-remainder bound and its three geometric terms remain unchanged after summing every original a. At its stated leading scales this is Z^(-19/480+epsilon). The first nonpolar term remains unbounded by this argument, and the n>1 extension requires Part III below; mixed cube-free w remains outside the theorem.
+
+### 5. Original proper-subset rescalings and their exact compensation
+
+This section concerns the original finite compensation only, not the separate first Möbius-decompleted operation. For each original subset J of the fixed prime slots, let rho be its actual product, q_rho comparable to Z^d, and let D be the product from the remaining slots, q_D comparable to P=Z^{1/6-d}. Use that term's own actual rescaled probe with
+
+\[
+ X'=X/q_\rho\asymp Z^{17/48-d},\quad
+ Y'=Y/q_\rho\asymp Z^{23/48-d},\quad
+ U_D=Zq_D\asymp Z^{7/6-d}.                              \tag{14}
+\]
+
+In its exact full-modulus Poisson expansion select n=1 and the frequencies H=w^2a^6 with squarefree nonunit w and all good primary a. This is the specified projection inside each actual rescaled probe, before taking the original signed finite combination. It is not an assertion that an unrelated projection commutes with a change of labels. The original marker is D|gec. The terms of rho are the original removed slots; no removed prime is newly inserted into D, c, or an Euler mask.
+
+The exact original finite compensation multiplies this rescaled probe by q_rho^(-3/2) times its recorded bounded sign/phase and slot weights. There are O(Z^{d+epsilon}) actual rho tuples. This is the same coefficient-and-count identity used in the independently audited complete cubic compensation, rather than a newly normalized probe. All remaining slot weights and Gaussian U_D are those of that rescaled probe.
+
+Perform the finite physical truncation separately in that probe, with q_gq_e<=C_1Y', then its exact primary Poisson and the specified pole extractions. The whole-column support proof and pointwise good-configuration bad-prime zero are unchanged. Original compact norm modes and masks are those of this probe, with their uniformly controlled seminorms. The estimates above therefore hold with X,Y replaced by X',Y' and U=ZP.
+
+Substitution into the two main geometric terms gives, before the compensation coefficient and rho count,
+
+\[
+       -11/192+d/2,\qquad -19/480+d/2.                  \tag{15}
+\]
+
+For the small-c_0 term the exponent is -115/192-7d/4. The original q_rho^(-3/2) coefficient and O(Z^{d+epsilon}) count supply -d/2, so both main exponents return to their leading values and the small-c_0 term decreases further. Only finitely many subset patterns occur.
+
+Thus the same Z^(-19/480+epsilon) secondary-remainder bound holds for the original finite signed compensation of precisely these projected rescaled sectors, by the exact scope and identities in this section. It still excludes n>1, other units, mixed cube-free w, and the primary nonpolar term. It does not assert the corresponding flat-probe statement without its separate external-divisor calculation.
+
+
+## Part III. Every original physical n layer
+
+This calculation uses the already audited physical square-layer identity from the full-modulus Poisson formula, but restores its moving j phase before applying any signed Gauss-row theorem. No extra local character is replaced by a unit absolute value inside a source row. The scope in this part is the complete theorem above; Parts I--II supplied its n=1 base.
+
+### 1. Exact physical-square reduction and the odd layer
+
+Write the original physical index as n=n_0 r^2, with n_0 squarefree. Use r only for this physical square variable. The original coefficient covariance and zero mask are
+
+\[
+ b(c,n_0r^2;s)=b(c,n_0;s)\kappa(r),\qquad
+ \chi_{cn_0^3r^6}(m)=\chi_{cn_0^3}(m)1_{(r,m)=1},
+ \quad\kappa(r)=\overline{\alpha(r)}^6                 \tag{1}
+\]
+
+for eta=1. Expand the last mask with h_0|rad(r), retaining mu(h_0). Set j=(h_0,rad(s)) and k=h_0/j. The exact support is
+
+\[
+ (h_0,cn_0)=1,\quad j^2\mid s,\quad(s,k)=1.            \tag{2}
+\]
+
+The k=m-unit substitution has the original multiplier xi(k)chi_(cn_0^3)(k)conjugate(chi_s(k)). The actual full-modulus frequency satisfies H=(r^6/k)L. A cubic frequency H=w^2a^6 has valuations 0,2,4 modulo six, so this relation and (2) force r|a. Write a=r a', H=r^6H', H'=w^2(a')^6, and L=kH'. The completed finite Fourier coefficient cancels the complete k-dependent multiplier. The remaining factor is exactly
+
+\[
+                       \mu(h_0)\kappa(r)q_r^{-2}q_k^{-1},
+                                                               \tag{3}
+\]
+
+and the actual Gaussian scale is Z/q_r^6. This is the original first square-layer reduction, not the frozen different joint-scale probe.
+
+For squarefree w the odd n_0 table has only the original j'=2 branch: n_0|w and (n_0,a')=1, while neither c nor s contains a prime of n_0. Its exact norm factor in the restored physical first-Poisson identity is q_(n_0)^(-3/2). Its residual phase is a product of fixed prime phases; the potentially moving core factor rho^(-3) equals one for epsilon=1. Thus this phase depends only on n_0 and is retained as a unit scalar outside all later Gauss rows. No finite-order theorem is applied to that scalar.
+
+At the other primes use the original n=1 completion. Write
+
+\[
+ c=g e c_2,\qquad s=g j^2 e f v,\qquad
+ g\mid\operatorname{rad}(w a'),\quad(g,n_0h_0)=1,
+ \quad f\mid\operatorname{rad}(k a').                    \tag{4}
+\]
+
+The original coefficient signs are mu(g), mu(c_2), mu(f), mu(h_0), with no mu(e). Both c_2 and e avoid h_0 and a'; the free-column character is vartheta_w(v). The original j branch has (j,H')=1, hence j avoids w and a'. Its phase is
+
+\[
+                    \psi_w(j^2)=\overline{\vartheta_w(j)}.
+                                                               \tag{5}
+\]
+
+It is not canceled by (3), which cancels only k. The f phase is vartheta_w(f), so after the matched primary Poisson transformation the actual numerator is
+
+\[
+                         j\,\kappa d^2 f^2 c_2 h,       \tag{6}
+\]
+
+with the exact cubic unit masks, including j, still present. Here h is the new dual frequency, distinct from h_0. The second Poisson scale is Y/(q_gq_j^2q_eq_f); in addition to (3) its amplitude leaves an outside factor q_j^(-2).
+
+The first physical cutoff is made on the whole column before this Poisson transformation:
+
+\[
+                         q_gq_j^2q_e\le C_1Y.            \tag{7}
+\]
+
+This follows directly from the original W_1 support and is independent of the later bad d/tau allocations.
+
+### 2. Retain the new j support, not just its scale
+
+Factor g=g_wg_a, where g_w|w, g_a|rad(a'), and (g_a,w)=1. The sets g_w,g_a,n_0 are pairwise coprime. Write
+
+\[
+                         w=n_0g_w\rho,                  \tag{8}
+\]
+
+with the corresponding squarefree/coprimality mask on the row variable rho. All actual zero extensions are retained.
+
+At f the first-pole support is the previously proved f=f_1f_2 allocation. At j, whose numerator exponent in (6) is one and which is coprime to c_2,f, first-pole support permits h exponent 0 or 2 modulo three, and kills exponent 1. Thus uniquely write
+
+\[
+ j=j_0j_2,\quad f=f_1f_2,\quad
+ h=\tau f_1u\,j_2^2 f_2^2 v_0^2t^3,\qquad c_2=v_0c_0.
+                                                               \tag{9}
+\]
+
+The good u,j,f,v_0 parts are squarefree with their actual disjointness; u avoids jf and c_2. The arbitrary cube factor t may share permitted primes. Original character zeros force (h,n_0g_w)=1. The variable u may meet g_a,e,t. Conditions (j,H')=1, (h_0,cn_0)=1 and all original a',k masks remain.
+
+The first residue's squarefree numerator is
+
+\[
+                     a_0n_0g_wj_0f_2c_0u.               \tag{10}
+\]
+
+The n_0g_w Gauss factor of the original row cancels exactly against its part of the residue, leaving q_(n_0g_w)^(-2/3). The remaining c_0 column is
+
+\[
+ \frac{\mu(c_0)\overline{\gamma_D(c_0)}
+                \vartheta_{c_0}(\zeta a_0j_0f_2u)}{q_{c_0}^{7/6}}.
+                                                               \tag{11}
+\]
+
+Its actual moving numerator j_0f_2u is squarefree and prime to c_0. The outside first-residue norm additionally contains q_(j_0f_2)^(-1/6). Consequently the signed Möbius--Gauss lemma applies in its proved family.
+
+The second u-row has genuine zero mask and first-residue weight support
+
+\[
+ K=B n_0g_wjf v_0c_0,\qquad
+ J=B n_0g e jf v_0c_0t.                                  \tag{12}
+\]
+
+In particular u may meet J outside K, and no false u coprimality with g_a,e,t is imposed. The numerator for the second residue is a_0j_0f_2c_0. The normalized numerator Gauss sums cancel exactly as in the proved weighted-residue formula. The original kappa(r), mu(h_0), n_0 phase and all good variables are independent of bad d/tau. The bad scalar remains the one in Section 0 of this report; its norm-four local factor is zero. Thus the second pole vanishes for every fixed allowed good configuration, also with (7). The first polar contribution equals this physical-decomposition secondary remainder.
+
+### 3. The exact norm budget
+
+Put N=q_(n_0), A=q_(a'), G=q_g, G_w=q_(g_w), E=q_e, V=q_(v_0), J_i=q_(j_i), F_i=q_(f_i), and T=q_t. Set U=ZP/q_r^6, with the original Gaussian annuli U_l=e^lU. Then
+
+\[
+ C\asymp\frac{U_l}{N^3GEV},\quad
+ M=\sqrt{U_l/X}\,A^{-3},\quad
+ R\asymp\frac{M}{NG_w},\quad
+ H\asymp\frac{GEMJ_0^2}{Yq_\tau F_2V^2T^3}.           \tag{13}
+\]
+
+Here R is the first residue's continuous rho norm scale; it is not an integer count at subunit scale. The j_2 powers in the Poisson scale cancel those in h, whereas j_0 leaves its square. As before f_1 cancels from the u scale H.
+
+The additional N powers, before the signed c_0 estimate, are N^(-3/2) from the odd physical branch, N^(-2/3) from its genuine Gauss cancellation, and N^(-1/3) from R^(1/3). Thus they total N^(-5/2). Applying C^(-1/3) or C^(-11/30) gives, respectively,
+
+\[
+                         N^{-3/2},\qquad N^{-7/5}.       \tag{14}
+\]
+
+Both sums over squarefree n_0 converge absolutely. A trivial C^(-1/6) estimate instead gives N^(-2).
+
+The outside q_j^(-2) and residue q_(j_0)^(-1/6) combine with the H powers. The second signed term also has the numerator factor J_0^(1/10). After the E sums under (7), the two surviving j weights are precisely
+
+\[
+ J_0^{-5/6}J_2^{-7/3},\qquad
+ J_0^{-4/5}J_2^{-13/5}.                                  \tag{15}
+\]
+
+Every exponent is negative. The f weights in both terms are again F_1^(-1)F_2^(-2). The g weights after the E sum are again phi(g_w)/G_w^2 times phi(g_a)/G_a. The a' weights are A^(-7/2) and A^(-19/5). Therefore the complete main estimates, before summing the physical r, are the same two geometric terms as in Parts I--II, multiplied by q_r^(-2)q_k^(-1) and summable n_0,a',j,f factors.
+
+Since U=ZP/q_r^6, the two net physical-r powers are
+
+\[
+                              q_r^{-7/2},\qquad q_r^{-18/5}.
+                                                               \tag{16}
+\]
+
+The number of h_0|rad(r), its j/k choices, and every fixed-slot assignment is divisor-bounded. All original mu(h_0), kappa(r) and n_0 phases have been retained until this final positive upper bound. Their small powers fit inside the strict convergence of (14)--(16). There is no unproved angular Gauss-row estimate.
+
+### 4. The short c_0 range must be summed jointly with n_0
+
+When C<C_0P^(3/2), (7) and (13) force
+
+\[
+                        V\gg\frac{U_l q_j^2}{N^3YP^{3/2}}.
+                                                               \tag{17}
+\]
+
+The trivial c_0 estimate gives N^(-2), V^(-5/2), A^(-7/2), and, before this V tail, j factor J_0^(-1/2)J_2^(-2). Put L=U_l q_j^2/(YP^(3/2)). Then the joint positive n_0,V sum is bounded by
+
+\[
+ \sum_N N^{-2+\epsilon}
+            \min\{1,(N^3/L)^{3/2}\}
+                          \ll_\epsilon L^{-1/3+\epsilon}.\tag{18}
+\]
+
+For L>=1 split at N=L^(1/3); both sides have order L^(-1/3), up to small losses. For L<1 this is a harmless overestimate. One must not first take the V tail and then sum a divergent N^(5/2) series.
+
+The extra q_j^(-2/3) from (18) makes both j factors still smaller. The resulting geometric error, before the r factor, is
+
+\[
+                X^{-1/12}U^{1/12}Y^{-1/2}P^{1/2}.         \tag{19}
+\]
+
+The actual q_r^(-2) makes its r weight q_r^(-5/2), hence summable. Full Gaussian annuli absorb the fixed e^l powers. The selected-prime column is used only where its proved size condition holds; this joint tail handles the entire complement.
+
+### 5. Marks and the original finite compensation
+
+The original marker is D|c n_0 r. Assign each selected prime to its first applicable original factor among r,n_0,g,e,v_0,c_0. Only c_0 assignments enter the signed column; assignments to the other factors remain divisor weights in the displayed convergent positive sums. Priority exclusions are kept as masks or character zeros. Original zero-real-part compact norm separation retains the actual U_D and its Gaussian tail, without giving an original mark to a new divisor.
+
+The complete secondary bound for this eta=epsilon=1, squarefree-w sector is therefore
+
+\[
+ X^{-1/12}(ZP)^{1/4}Y^{-2/3}
+  +X^{-2/15}(ZP)^{4/15}Y^{-19/30}
+  +X^{-1/12}(ZP)^{1/12}Y^{-1/2}P^{1/2},                  \tag{20}
+\]
+
+up to arbitrarily small powers. At the leading scales its exponents are -11/192, -19/480, and -17/192.
+
+For each actual original proper-subset rescaled probe, use its X',Y', remaining slots P and U_D=Zq_D, and make its own physical cutoff (7) with Y'. Define the selected full-n/full-a squarefree-w, unit-one sector inside its exact full-modulus Poisson identity, then take the original finite signed combination. As in Parts I--II, X'=Z^(17/48-d), Y'=Z^(23/48-d), P=Z^(1/6-d), and the exact coefficient q_rho^(-3/2) with its O(Z^(d+epsilon)) tuple count supplies -d/2. The first two terms of (20) gain +d/2 before this compensation; the third has zero d increment and hence improves after compensation. This preserves the exponent -19/480 for the original finite compensation.
+
+No claim for the first nonpolar term follows. Other units and mixed cube-free w are still excluded. The separate first Möbius-decompleted operation is not included in the assertion of this part; its separate exact interface is proved in Part IV.
+
+#### Source dependence
+
+The physical identities (1)--(6) follow from the original pinned full-modulus local C/P table and physical-square unit covariance, using its exponent-two odd branch. The remaining analytic input is exactly the signed-column and weighted-residue proof in Parts I--II. No new spectral, Hecke zero-free, or infinite-type theorem is invoked.
+
+
+## Part IV. The exact first Möbius scale operation
+
+Let the base projection have eta=epsilon=1, squarefree nonunit w, every physical n and a, and all actual dual h. For either the original marker D|c n or the already-defined core marker D|c n_0 (n=n_0 r^2), denote its physical-e-first secondary piece at Gaussian parameter T by R_secondary(T). Keep the actual X,Y, selected-prime slots, all auxiliary data and the cutoff G q_j^2 E<=C_1Y fixed. Only the original Gaussian scale changes from Zq_D to Tq_D.
+
+### 1. All positive Gaussian scales
+
+The proof of Part III works for every T>0, with U=T P:
+
+\[
+ |R_{\rm secondary}(T)|\ll Z^\epsilon (1+T+T^{-1})^{\delta}
+ \{X^{-1/12}(TP)^{1/4}Y^{-2/3}
+ +X^{-2/15}(TP)^{4/15}Y^{-19/30}
+ +X^{-1/12}(TP)^{1/12}Y^{-1/2}P^{1/2}\}.             \tag{1}
+\]
+
+Here delta>0 can be prescribed arbitrarily in advance, with the implied constant allowed to depend on delta; choose the initial epsilon and delta sufficiently small. More precisely, at T=Z/q_b^6, the harmless scale loss in (1) may be bounded by Z^epsilon q_b^epsilon after changing the initial small exponents. No fixed negative power of T occurs. The only previous negative U power was the n=1 small-column shortcut. Part III replaced that shortcut by the joint n_0,V sum, leaving U^(1/12).
+
+To check the small-scale endpoint directly, retain the full Gaussian annuli U_l=e^l T P. The signed c estimate is applied only in nonempty physical blocks. The r residue's R scale is a continuous norm-Mellin scale and the nonzero u sum is bounded with its true rapid tail at H<1. The n_0,V comparison min(1,(N^3/L)^(3/2))<=L^(-1/3) after summing N is valid for every L>0. These are all the scale comparisons in Part III. Each fixed e^l power integrates against e^(-c l^2), independently of T. The norms of the masks and fixed divisor coefficients introduce only small powers of the original parameters and q_b.
+
+For the core marker use its own exact priority list n_0,g,e,v_0,c_0 instead of r,n_0,g,e,v_0,c_0. A selected prime dividing r alone is no longer allowed, but a prime dividing both r and c n_0 is retained and assigned to its first applicable factor of the shorter list. Thus one reallocates the original core-marked tuples before applying the signed column argument; one does not delete every old r-assigned tuple. Marks in c_0 still use the proved marked Type I/II lemma; the other allocations still have the displayed positive convergent bounds. There is no inequality between two oscillating marked rows.
+
+### 2. Exact first scale transform and the definition of its piece
+
+Use the already defined operator
+
+\[
+ B_{D,\diamond}^{\flat}(U;m,s)
+ =\sum_{b\ {\rm good}}\frac{\mu(b)\kappa(b)}{q_b^2}
+                    B_{D,\diamond}(U/q_b^6;m,s),        \tag{2}
+\]
+
+where diamond is the original or core marker and kappa(b)=conjugate(alpha(b))^6 for eta=1. No new operation in X or Y is present.
+
+In its initial absolute regime the original full-modulus lift sends H to b^6H. It preserves the actual unit and squarefree w in H=w^2a^6, merely changing a to ba. Hence the selected sector of (2) is the sum of the corresponding inner sectors. Perform the specified whole-physical-e restriction and successive pole decompositions in each inner sector before summing b. Define
+
+\[
+ R_{\rm secondary}^{\flat}
+ =\sum_b\frac{\mu(b)\kappa(b)}{q_b^2}
+                       R_{\rm secondary}(Z/q_b^6).      \tag{3}
+\]
+
+This is a specified decomposition of the actual first-flat probe. It is not a claim that a separately regrouped flat physical formula has termwise identical intermediate residues. The first remainder is the remaining term of this same exact decomposition, including the original entire unit-row correction. At each b the second pole still vanishes by its fixed-good-configuration norm-four identity; the physical-e cutoff is independent of b.
+
+Insert (1) in (3). The three b weights are exactly
+
+\[
+ q_b^{-7/2+\epsilon},\qquad q_b^{-18/5+\epsilon},\qquad
+ q_b^{-5/2+\epsilon}.                                  \tag{4}
+\]
+
+All three converge absolutely over good ideals. This supplies the convergence needed to pass from finite b truncations to the complete secondary contribution. The actual selected first-flat sector has its original defining limit; subtracting this absolutely convergent secondary limit defines its first remainder. No interchange of an unestimated remainder integral with the b sum is required.
+
+### 3. Original finite compensation
+
+Apply this argument separately to each actual original proper-subset rescaling, keeping that probe's X',Y', remaining selected slots P and exact compensation coefficient. Part III's two main d increments are d/2 and its short-column increment is zero. The original tuple count and q_rho^(-3/2) coefficient supply -d/2. Thus both specified first-flat secondary pieces retain Z^(-19/480+epsilon).
+
+The first nonpolar contribution, mixed cube-free w and other units remain open. This note does not establish the critical low estimate for either whole probe.
+
+
+### Final status
+
+All four parts have passed independent mathematical review. The consolidated proof has passed independent consistency readback; see the companion REFEREE, Part XXIV. The primary nonpolar contribution, other units and mixed cube-free frequencies remain open. None of these results is an estimate for the whole critical low probe.
+
+# Part XXV. Signed projections of the genuine truncated inverse
+
+These two results retain the unchanged coefficient a_n(X)=sum_(d|n,Nd<=X)mu(d). Section A proves an exact residue identity and, conditional on the user's [fixed input Q](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/52ee48d3e2e4c5b0beeb3e4880eca86fb2208ce1/reports/20261011_qrh_selection_bridge/FORMAL_INPUT_Q.md), sharp inverse-residue decay. The extra moving-level uniformity is only the residue statement; its smooth Type I consequence keeps r and S fixed. Section B proves unconditional all-cutoff Siegel–Walfisz cancellation for the actual Gauss-rephased column using Part XXIV's signed column lemma. Neither result supplies the still-missing corrected quadratic-form decomposition or a bound for the complete detector tail. Q attribution and the distinction between source audit and an independent formal rebuild are unchanged.
+
+## A. Exact inverse residue and sharp Q-conditional suppression
+
+### Signed suppression of the actual truncated inverse's cubic Gauss projection
+
+#### Result and scope
+
+Let K=Q(sqrt(-3)). Norms are ideal norms; primary generators and the
+cubic Gauss sum G are exactly those in the September 25 source pinned
+below. Fix a squarefree primary level r and a finite set S containing
+the primes above 3 and every prime dividing r. All varying ideals are
+coprime to S. For X>=1 retain the actual zero-detector coefficient
+
+    a_n(X)=sum_{d|n, Nd<=X} mu(d).
+
+No coefficient of the original detector is changed. Put
+
+    F_{X,r,S}(s)=sum_{(n,S)=1} a_n(X) G(rn) (Nn)^(-s).
+
+**Proposition (independently reviewed).** The series
+continues to Re s>1/2, with at most a simple pole at 5/6. If rho_{r,S}
+is the residue of sum_{(n,S)=1}G(rn)(Nn)^(-s), then
+
+    Res_{s=5/6} F_{X,r,S}(s)
+      =rho_{r,S} H_S(X),
+    H_S(X)=sum_{Nd<=X,(d,S)=1} mu(d)/prod_{p|d}(Np+1).       (1)
+
+Subject to the user's input Q for the fixed Dedekind zeta function,
+for every epsilon>0,
+
+    H_S(X) <<_{S,epsilon} X^(-1/8+epsilon).                  (2)
+
+For (1)--(2) alone, the residue estimate also has the uniform form
+
+ |Res F_{X,r,S}| <<_epsilon
+       (Nr)^(-1/6) [N prod_{p in S,p not above 3}p]^epsilon
+                             X^(-1/8+epsilon).             (2a)
+
+Here r may move, S is any finite set containing its support, and
+the constant is independent of r,S,X. No such moving-level
+uniformity is asserted for the smooth Type I estimate below.
+
+The Q input here is just zero-freeness of zeta_K in Re s>7/8;
+no Q statement for infinite-order characters is used.
+
+There is also an actual smooth signed-sum consequence. Fix W in
+C_c^infinity((0,infinity)), and suppose 2<=X<=U^(51/100), U>=2.
+The source's stated Type I comparison implies
+
+ |sum_{(n,S)=1} a_n(X)G(rn)W(Nn/U)|
+   <<_{r,S,W,epsilon}
+       U^(5/6+epsilon) X^(-1/8)
+        +U^(5/6-1/100+epsilon)+U^(1/3+epsilon)X^(1/2).      (3)
+
+In particular, if U^delta<=X<=U^(51/100) for a fixed
+0<delta<=51/100, this is O(U^(5/6-kappa+epsilon)) with
+kappa=min(delta/8,1/100)>0. The estimates concern the displayed
+Gauss projection of the genuine inverse coefficient. They do not
+assert a corresponding arbitrary-row large sieve or full detector
+tail estimate.
+
+#### 1. Exact finite level expansion and the residue
+
+For a squarefree level l, use the genuine level series
+
+    f_l(s)=sum_m G(lm)(Nm)^(-s).
+
+The source proves that it is meromorphic in Re s>1/2, with sole
+possible pole 5/6 and residue
+
+    rho_l=A_0 phi(l)/(Nl)^(7/6)
+                 [sum_{(c,l)=1}(Nc)^(-2)]^(-1).             (4)
+
+The sums in (4) omit the prime above 3, consistently with the
+primary convention. Factoring its absolutely convergent Euler
+product gives, with a fixed nonzero constant C_0,
+
+    rho_l=C_0 (Nl)^(-1/6)
+                       prod_{p|l}(1+1/Np)^(-1).            (5)
+
+For l coprime to the extra excluded primes not already dividing l,
+enforce their unit mask by the finite exact identity
+
+    f_l^{[S]}(s)=sum_{e|prod(S), (e,l)=1}
+                         mu(e)(Ne)^(-s)f_{le}(s).           (6)
+
+Primes above 3 are already omitted, so they are not reinserted in
+(6). Every term with a repeated prime in le is zero. Formula (5)
+shows that each new excluded prime p multiplies the residue by
+
+    1-(Np)^(-5/6)(Np)^(-1/6)(1+1/Np)^(-1)
+       =(1+1/Np)^(-1).
+
+Thus, for squarefree d coprime to S,
+
+    Res f_{rd}^{[S]}(s)
+      =rho_{r,S}(Nd)^(-1/6)
+                              prod_{p|d}(1+1/Np)^(-1).     (7)
+
+In the original absolutely convergent region Re s>1, finite
+interchange of the actual inverse gives exactly
+
+    F_{X,r,S}(s)=sum_{Nd<=X,(d,S)=1}
+                         mu(d)(Nd)^(-s) f_{rd}^{[S]}(s).    (8)
+
+Analytic continuation is now a finite sum, so taking its residue
+at 5/6 is legitimate. Equation (7) proves (1), including all signs.
+Neither positivity nor a divisor majorant was inserted into (8).
+
+#### 2. The sharp inverse residue weight
+
+Define, initially for Re z>0,
+
+    H_S(z)=prod_{p notin S}(1-(Np)^(-z)/(Np+1))
+          =E_S(z)/zeta_K^S(1+z),                            (9)
+
+where
+
+    E_S(z)=prod_{p notin S}
+       [1-(Np)^(-z)/(Np+1)]/[1-(Np)^(-z-1)].               (10)
+
+On every half-plane Re z>=-1+delta, each local ratio differs
+from 1 by O_delta((Np)^(-Re z-2)). Its Dirichlet expansion is
+
+    1+sum_{j>=1} [(Np)^(-j)/(Np+1)] (Np)^(-jz).
+
+Consequently E_S(z)=sum_e b_S(e)(Ne)^(-z), with b_S(e)>=0,
+and its coefficient series is absolutely convergent for Re z>-1.
+In particular sum_e b_S(e)(Ne)^(1/8-epsilon)<infinity.
+This is coefficientwise control, not merely analytic continuation.
+
+For clarity, the standard consequence of Q needed here is the sharp
+Mertens estimate over good ideals
+
+    M_S(t)=sum_{Nd<=t,(d,S)=1}mu(d)
+           <<_{S,epsilon}t^(7/8+epsilon).                  (11)
+
+One can use the finite-height inverse-zeta argument already audited
+for the actual Mobius columns. To recall its extra logarithmic step:
+zero-freeness in the fixed open half-plane, Euler normalization of
+log zeta, and Borel--Caratheodory first give log zeta=O(log T)
+on a buffered left line. The Euler right line is bounded. The
+two-constants theorem for log|log zeta| (equivalently the
+three-lines argument for the analytic log zeta, with buffered
+rectangles) then gives log zeta=O((log T)^c) for some c<1 on a
+strictly interior line. The horizontal harmonic-measure errors
+are negligible by increasing the height buffer. Only this second
+step gives the subpower consequence
+1/zeta_K^S(s)<<_{delta,epsilon}(1+|Im s|)^epsilon on
+Re s>=7/8+delta. Truncated Perron shifted to this line gives
+(11). Take a half-integral cutoff to avoid an ideal norm at the
+Perron boundary, and height a sufficiently large fixed power of t.
+The coefficients grouped by their integer norm are O_epsilon(n^epsilon),
+so the truncation error is negligible; the subpower reciprocal
+bound absorbs the horizontal segments. A general real cutoff has
+exactly the same sum as the corresponding half-integral one.
+
+Partial summation of (11) gives a convergent sum sum mu(d)/Nd=0,
+the value forced by the zero of 1/zeta_K^S(s) at s=1. More precisely,
+
+    M_{1,S}(t)=sum_{Nd<=t,(d,S)=1}mu(d)/Nd
+                  <<_{S,epsilon}t^(-1/8+epsilon).          (12)
+
+Coefficient comparison in (9), followed by finite convolution,
+therefore yields
+
+    H_S(X)=sum_{Ne<=X} b_S(e) M_{1,S}(X/Ne)
+       << X^(-1/8+epsilon)
+                         sum_e b_S(e)(Ne)^(1/8-epsilon),
+
+proving (2) with the actual sharp cutoff. For epsilon>=1/8 the
+claim follows from any smaller positive epsilon.
+
+The dependence on extra deleted primes can be retained explicitly.
+Let S_0 contain only the prime above 3, and let M be the squarefree
+product of primes in S minus S_0. Finite Euler products give the
+exact convolution
+
+ M_{1,S}(t)=sum_{e supported on M, Ne<=t}
+                     (Ne)^(-1) M_{1,S_0}(t/Ne).
+
+By (12), its bound is
+
+ t^(-1/8+epsilon)
+        prod_{p|M}(1-(Np)^(-7/8-epsilon))^(-1)
+                  <<_epsilon (NM)^epsilon t^(-1/8+epsilon),
+
+on choosing the initial small losses smaller if necessary. Each
+factor is at most (Np)^epsilon once Np is sufficiently large in
+terms of epsilon; the finitely many smaller primes cost a fixed
+constant. The positive coefficient moment of E_S is bounded by
+that of E_{S_0}. Finally (5)--(6) give
+|rho_{r,S}|<=C(Nr)^(-1/6). These facts prove (2a).
+
+#### 3. A smooth signed projection bound
+
+The cited source's Type I theorem states, for R T about Z_0,
+R<=Z_0^(51/100), arbitrary divisor-bounded level coefficients,
+and common compact smooth weights of the specified seminorm class,
+
+ sum_l c_l sum_m [G(lm)-c_*mu^2(lm)/(N(lm))^(1/6)]W_l(Nm/T)
+                  << Z_0^(5/6-1/100).                      (13)
+
+Expand a_n as in (8), subdivide Nd<=X into dyads, and take level
+l=rd. The factor r is fixed. The additional fixed S mask in m
+is removed by the finite formula (6). Each resulting level remains
+a fixed multiple of d. In a d-dyad the original test W(N(dm)/U)
+becomes W_d(t)=W((Nd/R)t), whose derivatives are uniformly bounded.
+Hence (13) applies, with constants depending only on the stated
+fixed data. At the endpoint R<=U^(51/100), fixed multiplicative
+constants are allowed by the source's << hypothesis. Summing dyads
+costs a logarithm, absorbed in U^epsilon. We obtain the error term
+U^(5/6-1/100+epsilon) in (3).
+
+It remains to bound the actual squarefree model. The elementary
+squarefree count with a coprimality condition, by the identity
+mu^2(m)=sum_{k^2|m}mu(k) and lattice counting, is
+
+ sum_{(m,Sd)=1}mu^2(m) V(Nm/T)
+   =c_S T prod_{p|d}(1+1/Np)^(-1) integral_0^infty V(t)dt
+      +O_{S,V,epsilon}((Nd)^epsilon T^(1/2+epsilon)).       (14)
+
+Here d is squarefree and good; the formula is uniform for T>=1.
+The same estimate follows by ideal counting in the fixed imaginary
+quadratic field and elementary Mobius inversion. In the present
+range T=U/Nd>=U^(49/100), so no subunit exception is needed.
+Using V(t)=t^(-1/6)W(t) gives
+
+ sum_{(n,S)=1}a_n(X)mu^2(n)(Nn)^(-1/6)W(Nn/U)
+   =c_S U^(5/6) H_S(X) integral_0^infty t^(-1/6)W(t)dt
+       +O_{S,W,epsilon}(U^(1/3+epsilon)X^(1/2)).            (15)
+
+The fixed factor (Nr)^(-1/6) from the source model is harmless.
+Equations (2), (13), and (15) prove (3).
+
+#### 4. Exact remaining interface
+
+This result suppresses a specific, signed metaplectic projection
+of the original detector coefficients. To improve a zero-density
+tail using it, one still needs a corrected quadratic-form estimate
+which isolates precisely these projections and controls its
+nonpolar part with a useful norm bound. A generic large sieve only
+bounds the full form and does not supply such a decomposition.
+
+The level r and excluded set S in the smooth estimate (3) are fixed.
+Its constants cannot be declared uniform for a moving Fourier
+parameter. The exact residue statement has only the uniformity
+explicitly proved in (2a). The physical first nonpolar
+sum mu(c)psi(ch,1+it) uses different variables and is not (8).
+The Type I application covers X<=U^(51/100); no bound for the
+remaining detector dyads is asserted by that application.
+
+#### Pinned source
+
+The residue formula is equation `typeI-residue`, and the comparison
+is Proposition `typeI`, in the OpenAI September 25, 2026 preprint:
+
+https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/background-type1.tex
+
+The Q hypothesis retains the user's recorded attribution and scope.
+This note does not independently rerun the user's formal build and
+does not claim that the displayed projection bound proves RH.
+
+## B. All-cutoff Siegel–Walfisz cancellation for the true column
+
+### All-cutoff cancellation for the true inverse's Gauss-rephased column
+
+#### Statement
+
+Use the Eisenstein primary convention, normalized cubic Gauss sum G,
+and fixed excluded primes of the accompanying projection note. Define
+the unchanged detector coefficient
+
+    a_n(X)=sum_{d|n, Nd<=X}mu(d).
+
+Let W be a fixed smooth compact norm test supported in [1,2]. Fix
+A,B,C>=0. Let xi be any finite-order cubic Hecke character with
+conductor norm at most (log U)^A; its genuine zero extension is kept.
+Let |t|<=(log U)^B and let K be a good mask with NK<=U^C. Then,
+for every D>0, uniformly for 1<=X<=2U,
+
+ sum_{(n,K)=1}a_n(X) overline{G(n)} xi(n)(Nn)^(it)W(Nn/U)
+                <<_{A,B,C,D,W} U(log U)^(-D).               (1)
+
+This includes the principal xi. All fixed bad-ray components remain
+fixed data. The input is the independently reviewed genuine
+Mobius--Gauss column estimate, with its actual mask, and DDDS's
+cubic Gauss row estimates. No Q assumption is required. Arbitrary
+angular twists are not part of (1).
+
+This proof has passed independent review. In the
+terminology of the September 25 source it verifies the SW property
+for the actual column beta_n=a_n(X)overline{G(n)}. It does not
+verify that column's rough support or prime-convolution hypotheses.
+
+#### 1. The two matched Gauss inputs
+
+The actual signed-column theorem proved in
+Part XXIV, internal Part I, Section 1, is
+
+ sum_{d sf,(d,Ku)=1}mu(d)overline{G(d)}theta_d(Ru)F(Nd/C_0)
+   << (C_0 Nu NK)^epsilon (NR)^C_1
+                 [C_0^(5/6)+C_0^(4/5)(Nu)^(1/10)],         (2)
+
+where u is squarefree, R encodes a finite cubic twist, and F is a
+common compact smooth norm test. The seminorm dependence is
+polynomial. For its original fixed bad-supported R this is exactly
+the audited statement. Its following finite-conductor extension
+has the same proof: write R cube-free, remove its actual ramified
+primes by the character's zero extension, and keep the finitely
+many fixed primary components. In Type I, the numerator Rua has
+squarefree moving part ua outside R. DDDS's explicit residue and
+convexity bounds are, respectively,
+
+    (NR)^C_1 (Nu Na)^(-1/6),
+    (NR)^C_1 (Nu Na)^(1/4).
+
+The Type II phase theta_a(b) and the two common coefficient
+families are unchanged. Thus only a fixed polynomial in NR is
+added to the proof of (2). For a cubic Hecke character, Kummer
+parametrization after fixed primary partitions allows NR bounded
+by a fixed constant times the square of its conductor norm. The
+3-adic alternatives are finite because the character order is 3.
+Consequently the extra factor is a log power in the present range.
+
+The corresponding unweighted long-row estimate from DDDS Lemma 6.7,
+with the same coprimality removal, is
+
+ sum_{m sf,(m,Kd)=1}overline{G(m)}theta_m(Rd)F(Nm/T)
+   << (T Nd NK)^epsilon (NR)^C_1
+                [T^(5/6)(Nd)^(-1/6)+T^(1/2)(Nd)^(1/4)]     (3)
+
+for squarefree d outside the ramified support of xi. These are
+actual character sums, with every unit mask retained. Conjugating
+the fixed convention or using an equivalent fixed primary class
+changes no bound. A norm twist of log-power height is included in
+the smooth seminorms.
+
+#### 2. Small cutoff: the original finite inverse
+
+Because G(n) vanishes off squarefree n, all factorizations n=dm
+that remain have d,m squarefree and coprime. Cubic CRT gives
+
+ overline{G(dm)}xi(dm)
+  =overline{G(d)}xi(d) overline{G(m)}xi(m)theta_d(m).         (4)
+
+This phase is essential. Use a_n's defining sum when X<=U^(1/2),
+and apply (3) with T about U/Nd. The d factor outside the m sum
+has modulus at most one. Ideal counting, partial summation, and
+the actual common masks therefore give
+
+ |sum a_n(X)overline{G(n)}xi(n)(Nn)^(it)W(Nn/U)|
+   << U^epsilon (log U)^C_2
+              [U^(5/6)+U^(1/2)X^(3/4)].                  (5)
+
+Indeed the first d weight is d^(-5/6)d^(-1/6)=d^(-1),
+whose ideal sum is logarithmic. The second is d^(-1/2)d^(1/4),
+whose sum up to X is O(X^(3/4)). Equation (5) is
+O(U^(7/8+epsilon)(log U)^C_2) in this range.
+
+#### 3. Large cutoff: the exact complementary inverse
+
+For every n>1 the full ideal-divisor sum of mu is zero, so
+
+    a_n(X)=-sum_{d|n, Nd>X}mu(d).                          (6)
+
+On the support of W, X>=U^(1/2), and therefore the complementary
+factor m=n/d has Nm<=2U/X. Fix m and use (4) with the true mu(d)
+sign retained. Formula (2), with u=m and C_0 about U/Nm, gives
+after dyadic summation in m
+
+   U^epsilon(log U)^C_2
+      [U X^(-1/6)+U^(11/10)X^(-3/10)].                    (7)
+
+Before a sharp boundary is imposed, this is O(U^(19/20+epsilon)
+times a log power). The first term comes from summing
+U^(5/6)(Nm)^(-5/6); the second from
+U^(4/5)(Nm)^(-7/10), up to Nm<=2U/X.
+
+To treat the exact inequality Nd>X, smooth it only within relative
+width delta=(log U)^(-L), where L is chosen after D. In the affected
+dyad C_0 about X, the normalized derivatives grow by log powers,
+which are permitted in (2); other dyads need no smoothing. The
+total discrepancy is bounded absolutely before any character
+estimate. Counting Eisenstein ideals in a norm annulus gives
+O(delta X+sqrt X) ideals d per fixed m. Summing m about U/X,
+or allowing logarithmically many dyads for safety, gives
+
+      O(delta U log U+U X^(-1/2)log U).                    (8)
+
+The second error is O(U^(3/4)log U). No divisor coefficient is
+introduced into this boundary count: it counts the actual pairs
+(d,m), each with coefficient of modulus at most one. All actual
+coprimality restrictions only reduce it. Choose L>D+3. For a
+sufficiently small fixed epsilon in (7), its power margin absorbs
+every fixed log loss from the smoothing and the twist.
+The initial epsilon is chosen after the fixed exponent C in
+NK<=U^C, so that the actual mask's small-power loss also fits
+within this margin.
+
+Equations (5)--(8) prove (1). If X exceeds the support endpoint,
+the original coefficient is identically zero for n>1. Bounded U
+is harmless after enlarging the constant.
+
+#### 4. What this supplies to a true detector argument
+
+The proof retains both exact representations of a_n and exploits
+the true Mobius sign in the complementary range. It establishes
+small-character cancellation for beta, uniformly in the cutoff
+and with original polynomial-size holes. A general divisor-bounded
+column has no such conclusion.
+
+The September 25 corrected dispersion theorem additionally assumes
+rough support in its low-height corrected form, and in its long
+column range a specific independent prime-convolution structure.
+Neither property follows from (1). Its general low-height
+remainder is logarithmic, so even satisfying all its hypotheses
+would not by itself improve a logarithmic-scale detector exponent.
+No complete cubic-sector estimate is claimed here.
+
+#### Sources
+
+- David--de Faveri--Dunn--Stucky, *Non-vanishing for cubic Hecke
+  L-functions*, Lemmas 6.3 and 6.7 and their coprimality-removal
+  formulas: https://arxiv.org/abs/2410.03048 .
+- The actual Mobius--Gauss proof and true physical scope are in
+  the independently reviewed Part XXIV, internal Part I, Section 1 of this report.
+- The precise SW and other restrictions of the comparison theorem
+  are stated in `build/sections/dispersion.tex` at
+  https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026 .
