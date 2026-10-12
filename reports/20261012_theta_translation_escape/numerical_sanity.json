@@ -1,0 +1,31 @@
+{
+  "status": "NONRIGOROUS_SANITY_ONLY",
+  "python": "3.13.5",
+  "mpmath": "1.3.0",
+  "theta_modes": 8,
+  "target_scaled_norm_sq": "3/128=0.0234375",
+  "finite_integration_domains": {
+    "norm": "|x|<=6",
+    "edge": "-4<=x<=4"
+  },
+  "runs": [
+    {
+      "t": "0.3400",
+      "scaled_norm_sq": "0.02704907941464029",
+      "edge_energy": "0.71361102655707096",
+      "normalized_edge_energy": "9.2430572409577512e-5"
+    },
+    {
+      "t": "0.3450",
+      "scaled_norm_sq": "0.025203668925383806",
+      "edge_energy": "0.75809268861929283",
+      "normalized_edge_energy": "2.954525228636951e-6"
+    },
+    {
+      "t": "0.3465",
+      "scaled_norm_sq": "0.023817425811752168",
+      "edge_energy": "0.77186937105445758",
+      "normalized_edge_energy": "1.5055671304694313e-9"
+    }
+  ]
+}
