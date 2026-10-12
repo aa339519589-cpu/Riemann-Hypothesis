@@ -626,3 +626,7 @@ This estimate holds on the full line, not just the central period. It remains va
 The final certificate must still pay: replacing the exact periodized samples P_L f by literal f-samples; finite Fourier alias and truncation errors; all other multiplier/window terms; quadrature and interval arithmetic; and the actual finite signed inertia test. In particular the unweighted eY part of (Dbase+e)Y remains its genuine Gaussian-trigonometric whole-line function. Equation (12) bounds only the indicated m b(D)(mY) periodic-image discrepancy.
 
 The two exact rational constant checks are `full_gamma_certificate/check_theta_strip_constants.py` and `full_gamma_certificate/check_periodization_constants.py`. Their assertions certify the elementary constants; the analytic proofs above establish their domains and uses.
+
+## Explicit omitted-sample and remote-image allowance
+
+[FULL_GAMMA_TINY_TAIL.md](FULL_GAMMA_TINY_TAIL.md) bounds the computed periodized-input cross lattice beyond |x|=4, the input-period images beyond |x|=20, and the Q² C_N remote-output images beyond |x|=24. Their combined norm/Frobenius error is below 2^(-347)<10^(-100); the unweighted eY Gaussian tail remains separately paid by the existing program. Its independent review and exact rational constant checker are linked there. This addition changes no numerical source, data, error threshold or spectral depth.
