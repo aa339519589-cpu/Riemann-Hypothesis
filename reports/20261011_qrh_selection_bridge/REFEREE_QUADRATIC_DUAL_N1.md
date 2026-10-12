@@ -2750,3 +2750,288 @@ Primary source checked: Dunn--Radziwill, arXiv:2109.07463v3, Sections 5.1--5.4, 
 ### Independent exact alignment check
 
 I additionally read and executed `check_actual_ray_labels.py` from the independent local-arithmetic review, SHA-256 `69cbc3973f5cec0b9ba162a71157ee283aa2fc9b5e45046f6170c5fa53b3bd89`. It returned ALL_PASS for the actual +B trace formula in 81 evaluations, the 729 multiplicativity/source-phase identities, primary cube congruence, and both exact lower-translation words. This verifies the corrected coordinate directly without modifying the user's supplied files. The companion independent pressure audit, SHA-256 `91561a5ad1a1c778e5107139699ac41ebe95ae6feede4c8e8af9d77348fbdcde`, agrees on the complete general-phi analytic scope.
+
+
+# Review of Part XXX
+
+The three mathematical proofs below were independently reviewed in full. The original sharp density and its common threshold window are unconditional; the complete physical consequence retains the user-attributed finite-order Q input. The previous physical theorem and all of its actual arithmetic layers remain in force.
+
+
+## A. Original sharp inverse: higher moments, zero-conditioned tails and a strict density gain
+
+### Independent referee report: the literal sharp cubic detector
+
+#### Audited version and verdict
+
+Part XXX A was read in full, including its common-frequency and fixed-twist clarifications.
+
+**Verdict: the stated unconditional strict improvement is supported by the proof.** For the specified fixed-data canonical cube-free Eisenstein cubic family, with principal characters removed and primitive inducing multiplicity bounded,
+
+\[
+ R(M,T;5/6)\ll M^{238/375-\kappa+\varepsilon}(1+T)^C
+\]
+
+holds for some fixed positive \(\kappa\). The constants, including the existence value of \(\kappa\), may depend on the fixed family data. No numerical value of \(\kappa\) is certified. This is a density theorem for the actual sharp inverse detector; it is not a proof of RH or a new bound for a complete physical sector. Neither the user's input Q nor a zero-spacing or derivative lower-bound hypothesis is used.
+
+The comparison baseline is 238/375, with the genuine eighth L-moment and sixth Gram-row moment included in the same proof.
+
+#### 1. Family and external input
+
+The sieve parameter is the norm of the original canonical cube-free index. It is not replaced by the norm of its radical or its actual primitive conductor. The latter is only bounded by a fixed multiple of M and is divided into actual blocks when a functional equation or AFE is used. Fixed ray classes, fixed excluded primes, fixed finite-order twists, and all original nonunit-zero masks are retained.
+
+The cubic large-sieve input is the n=3 specialization of de Faveri's theorem for n-th-power-free ideal rows and columns:
+\[
+ K_3(M,N)=M+N+(MN)^{2/3}.
+\]
+The original theorem and its fixed-data ideal/character hypotheses were independently checked against the primary source, [Theorem 1.1](https://arxiv.org/html/2610.04045v1#Thmtheorem1). Full columns are not declared to satisfy an arbitrary-coefficient cube-free sieve: every required full column is separately decomposed into a cube-free part times a cube.
+
+The existing genuine pair-Gram proof was also checked in the fixed source Part XXVIII A, including its local state decomposition, conductor blocks, cancellation divisors, actual Poisson frequency scale, and varying-height common-coefficient reductions. The new argument uses those identities, rather than a restriction-bearing final theorem with omitted assumptions.
+
+#### 2. Eighth L-moment and coefficient-mass first estimate
+
+The AFE for L(s,chi)^4 has polynomial length at most M^2 times a fixed power of the height. On a dyadic column its coefficient is divisor-bounded times n^(-1/2). Its root number is a unit row scalar. Actual conductor and height parameters can be separated by common transforms before applying the sieve.
+
+For n=n0 l^3, only the varying cubic factor on l^3 becomes the true row restriction (index,l)=1. A fixed twist at l^3 remains a common bounded coefficient. This distinction is explicit in the final text and is necessary for arbitrary fixed finite-order twists.
+
+The three row-norm terms are bounded by
+\[
+ \sqrt M\sum_l Nl^{-3/2},\qquad
+ M\sum_l Nl^{-3},\qquad
+ M\sum_l Nl^{-5/2},
+\]
+up to small powers. These sums converge, and the squared row norm is M^(2+epsilon). The derivative of L^4 merely adds common logarithmic coefficients; the usual one-variable Sobolev step therefore gives the stated height supremum with a fixed polynomial height cost.
+
+For R detected rows, Holder exponents 8, 2, and 8/3 leave the factor R^(3/8). Solving the resulting inequality gives exactly
+\[
+ R_{\rm first}\ll
+ Y^{(8a-4)/5}M^{2/5}K_3(M,X)^{4/5}V^{4/5}
+\]
+with the original inverse coefficient mass V. In particular, the finite-cutoff error is paid with V^(4/5). Replacing the selected row count by the size of the entire family at this step would lose the assertion; the proof does not do so.
+
+#### 3. Genuine higher pair-row moments and the true tail
+
+For fixed row i, the actual 0/1/2 local-state partition gives a primitive quotient conductor f and a cancellation divisor d dividing the shared divisor g. The Poisson amplitude and frequency scale are
+\[
+ A_0=(U/Nd)/\sqrt{Nf},\qquad J_0=Nf\,Nd/U,
+\]
+so that A0^(2k) J0^k=(U/Nd)^k. The constraints Nf (Ng)^2 << M^2 and d|g are used before estimating the final frequency length.
+
+The order of the norm operations is correct. First use Minkowski in the row L^(2k) norm for all actual Schwartz frequency dyads and all common Mellin integrals. On a fixed frequency dyad J, raise the common Dirichlet polynomial to the integer k-th power. Its product coefficients are still common, divisor-bounded, supported at norm O(J^k), and have squared mass O(J^k) up to small powers. Multiplicative character phases become the character of the product; the primitive root number remains a unit row factor. No fractional Dirichlet product or independently chosen row coefficient is introduced.
+
+Splitting the product column into a cube-free part and l^3 gives the same three convergent Minkowski sums as above. The local masks remain genuine. The original Schwartz weights are then summed back to J0; J0<1 is handled using their actual nonzero-frequency tail before taking the product. There is no added constant frequency and no hard truncation at a fictitious subunit length.
+
+Consequently the claimed fixed-integer row moment is valid:
+\[
+ \sum_{j\ne i}|G_{ij}(U)|^{2k}
+ \ll U^k K_3\bigl(M,\max(1,(M^2/U)^k)\bigr)
+\]
+with the stated small powers and polynomial height cost. Bounded primitive multiplicities are grouped before the off-diagonal estimate. Varying zero real parts and heights are treated by the same common parameter separation used in the actual pair-Gram identity.
+
+Holder over the off-diagonal entries of an R-by-R Gram matrix and the original Halasz--Montgomery inequality give
+\[
+ R_{\rm tail}(U)\ll U^{2a}
+ +U^{k(4a-1)}K_3\bigl(M,\max(1,(M^2/U)^k)\bigr).
+\]
+For k=3 and a=1/6, summing the real detector dyads, including the exponentially decaying far tail, gives
+\[
+ R_{\rm tail}\ll Y^{1/3}+M/X+M^6/X^4+M^{14/3}/X^3.
+\]
+The coefficient here is the literal original a_n(X), not a surrogate with a different cutoff.
+
+#### 4. The local unconditional baseline
+
+Balancing the first estimate with V=O(M^epsilon), the diagonal tail, and the last sixth-row-moment tail gives
+\[
+ x_*(a)=\frac{28}{30-49a-36a^2},\quad
+ y_*(a)=\frac{7(23-36a)}{3(30-49a-36a^2)},\quad
+ D_*(a)=\frac{14a(23-36a)}{3(30-49a-36a^2)}.
+\]
+At a=1/6 these are x=168/125, y=238/125, and D=238/375. The two other tail exponents are -43/125 and 234/375. The derivatives and all strict scale/tail inequalities were independently checked by exact rational algebra on the closed interval [1/6-1/1000,1/6+1/1000]. In particular D_*'(1/6)=67536/15625>0.
+
+The manuscript's all-integer baseline comparison is also correct within its expressly limited direct-moment family. With the eighth L-moment, the three necessary lower bounds on a candidate exponent r are
+\[
+ \frac{24+14k}{24+39k},\qquad
+ \frac{26k}{6+39k},\qquad
+ \frac{16+74k}{24+117k}.
+\]
+For k<=3 the third is at least 238/375, and for k>=4 the second is at least 52/81. This is not a claim of optimality among all analytic mechanisms.
+
+#### 5. Literal sharp cutoff and its common error
+
+The top sharp dyadic block is represented exactly as a finite Fejer polynomial plus its actual error; lower blocks remain smooth. The finite polynomial has degree H and coefficient l1 mass O(log H). On the relevant fixed annulus the pointwise error is bounded by min(1,1/(H|log(Nd/X)|)). Either convention at equality Nd=X is covered.
+
+The continuous squared mass is O(H^-1). The majorant is piecewise monotone with total variation O(1), independent of H. The Eisenstein ideal count with O(sqrt X) discrepancy thus gives
+\[
+ \sum_d |E_H(d)|^2/Nd\ll H^{-1}+X^{-1/2}.
+\]
+This proof does not hide an H-dependent smooth seminorm. It remains valid after restricting to square-free coefficients or character-unit rows. Every finite Fourier mode is a norm-height factor in the Mobius column only.
+
+#### 6. Stable rows and the finite-height reciprocal estimate
+
+An original zero rho=beta+i gamma with |gamma|<=T is kept. A row is exceptional if it has a more-right zero with real part at least b+h in the enlarged height rectangle C0(H+T+1). The unconditional baseline just proved pays for that exceptional family. Stable rows have b<=beta<b+h and a buffered zero-free rectangle to the right of b+h.
+
+On that rectangle, one first obtains log L=O(log(qH)) by Borel--Caratheodory. Interpolation of this analytic logarithm between a buffered left line and an Euler-product right line gives O((log(qH))^theta), theta<1, on b+2h in the interior height range. This proves reciprocal-L subpower bounds there. It does not assert a bound on a line through the chosen zero.
+
+Mellin inversion of a fixed smooth Mobius column can therefore be shifted to Re(s+rho)=b+2h, giving D^(2h) times arbitrarily small ambient powers. The large Mellin tails stay on the absolute line and are paid by a fixed number of derivatives chosen after eta. Fixed deleted Euler factors have no zeros in this right half-plane. No use of Q is needed.
+
+The Fejer frequency enters only this Mobius column. The original zero height gamma in the remaining Gamma kernel and m-column is unchanged. The common Mellin envelopes must be integrated with their true decay, rather than replacing all m-column heights by H. The final text makes this necessary order explicit.
+
+#### 7. Exact zero-conditioned transform and both kernel tails
+
+The primitive functional equation is used after applying Mellin inversion to the original exponentially smoothed row. Shifting through z=0 has residue L(rho)=0. This proves, with the finite original d-sum unchanged,
+\[
+ I_X(\rho,Y)=\epsilon_\chi q^{1/2-\rho}
+ \sum_{Nd\le X}\mu(d)\chi(d)(Nd)^{-\rho}
+ \sum_m\bar\chi(m)(Nm)^{\rho-1}
+ K_\rho\!\left(\frac{NmY}{qNd}\right),
+\]
+where
+\[
+ K_\rho(t)=\frac1{2\pi i}\int_{-1<c<-\beta}
+ \frac{\Gamma(z)\Gamma(1-\rho-z)}{\Gamma(\rho+z)}t^z\,dz.
+\]
+The argument contains Y/Nd, not Y alone. Contour shifts give a bounded small-t term and the actual nonzero t^-1 large-t term. All fixed logarithmic argument derivatives have the same two-tail envelope and polynomial cost in the original gamma. The Gamma quotient has the necessary exponential cancellation. No Schwartz replacement is used.
+
+For conductor block q~Q, d~D, put K0=QD/Y. The full m-column is decomposed into cube-free m0 times l^3, retaining the fixed twist as common and the varying cubic unit mask as a row restriction. Its squared norm, with the actual power m^(rho-1), is K^(2beta-1) K3(M,K), after common separation of beta and height.
+
+If K0>=1 and MX/Y<<sqrt M, the blocks K<=K0 cost M(D/Y)^(2beta-1). The true large-t blocks give
+\[
+ Q^{1-2\beta}K_0^2
+ \{M K^{2\beta-3}+K^{2\beta-2}+M^{2/3}K^{2\beta-7/3}\}.
+\]
+All three exponents are strictly negative on [b,b+h]; their norm sums are dominated by K0 and bounded by the same amount. For K0<1 the genuine first nonzero frequency gives the additional factor K0^(3-2beta)<=1. Varying beta is paid by taking the upper envelope at both endpoints before summing, then using D/Y<1. These checks give
+\[
+ \sum_{\rm stable}|I_{\rm smooth}|^2
+ \ll M X^{4h}(X/Y)^{2b-1}
+\]
+with only the stated small powers and original-height polynomial. Fixed excluded Euler factors are handled before the primitive equation as finite polynomials and fixed norm dilations; the proof does not misapply a primitive equation to an incomplete L-function.
+
+#### 8. Error allocation and final parameters
+
+The common Fejer error is returned to the original central-line Gamma integral. Applying the eighth-moment first estimate to its true mass yields the manuscript's error term with (H^-1+X^-1/2)^(4/5). This avoids an H-seminorm cost and does not estimate the reflected error by an unnecessarily weaker full-family square bound. For every stable detected row, the exact decomposition makes either the smooth or the error term exceed a fixed threshold.
+
+The parameter order is essential and is correct in the final version:
+
+1. Fix h=1/10000 and the exact positive gap
+   Delta=12061944/27909954875.
+2. Fix the exceptional-family loss epsilon_exc<=Delta/8 and then freeze its height exponent C1>=1.
+3. Choose eta>0 with eta<=1/10000 and C1 eta<=Delta/4.
+4. Set x=168/125+eta/8 and y=238/125-eta/8.
+5. Choose 0<kappa<min(eta/48,Delta/4,1/400), and only then choose all remaining small losses. The already fixed epsilon_exc is not changed.
+
+This removes the possible dependence loop between a loss parameter and the enlarged-height density constant. Exact substitution gives the eight exponents listed in section 7 of the manuscript. In particular the exceptional family has gap at least 5Delta/8; the stable smooth term has a fixed gap exceeding 1/200; the Fejer H-error saves 2eta/3; the two formerly balanced tail endpoints save eta/24 and 3eta/8. The lattice error and the other tail terms have strict fixed margins. Also M<X<Y<M^2 and MX/Y<sqrt M hold with power margins.
+
+The original detector alternative, its complete Gamma tails, and its exponential far tail therefore close the stated strict density improvement. The standard final Y^(1+epsilon) enlargement is included in the final loss selection.
+
+#### 9. Scope for publication and subsequent use
+
+The entire sections 1--8 form one self-contained analytic mechanism after the declared cubic sieve, primitive AFE/functional equation, and original genuine detector identities. The zero-conditioned kernel derivation is present in the main text, so an unpublished special-function diagnostic note is not an additional publication dependency.
+
+Approved scope: the literal sharp inverse, the fixed-data canonical cube-free cubic family, arbitrary original bounded heights with a polynomial height factor, and an unconditional existence exponent 238/375-kappa. The proof neither produces a numerical kappa nor transfers itself to every marked physical probe. Any improved physical-sector consequence still requires its own complete source, tail, and compensation argument. This report is an independent mathematical audit, not a machine-checked formal proof certificate.
+
+
+## B. A common two-sided threshold window
+
+### Referee report: a common two-sided zero-density window
+
+#### Version and verdict
+
+Part XXX B was independently read in full. The companion `check_uniform_window_ledger.py` was read and executed successfully; its exact checks supplement, rather than replace, the analytic argument.
+
+**Approved.** In exactly the fixed-data family of the reviewed sharp detector, there are common positive constants delta and kappa_u such that
+\[
+ R(M,T;b)\ll M^{D_*(1-b)-\kappa_u+\varepsilon}(1+T)^C,
+ \qquad |b-5/6|\le\delta,
+\]
+where D_*(a)=14a(23-36a)/[3(30-49a-36a^2)]. The constants and the cutoff powers can be chosen uniformly throughout this closed interval. This statement is unconditional and uses no Q.
+
+#### 1. The logical issue is correctly repaired
+
+A point theorem at b=5/6, together with monotonicity, would only control thresholds to its right. It would not justify the physical bins lying to its left. The supplement instead reruns the already reviewed proof with common fixed constants on a two-sided compact neighborhood. It does not infer that neighborhood by monotonicity.
+
+The original baseline is already uniform on I0=[1/6-1/1000,1/6+1/1000]. Reserving I1 with half that width and fixing h=1/10000 ensures both a and a-h stay inside I0. First fix the exceptional-family loss and its uniform height exponent C1; then choose eta; then freeze x=168/125+eta/8, y=238/125-eta/8 and H=ceil(M^eta(1+T)). Only afterwards shrink the final interval. This order prevents the loss/height-constant dependence loop.
+
+#### 2. Complete exponent ledger
+
+The eight entries in (L) are the exact general-a versions of the reviewed proof: exceptional rows, stable smooth square bound, both sharp error contributions, diagonal tail, and the three sixth-pair-row tail monomials. In particular the latter exponents are 1+(12a-3)x, 6+(12a-6)x and 14/3+(12a-5)x. No endpoint or far-tail term has been omitted.
+
+At a0=1/6 each gap D_*(a0)-E_j(a0) exceeds 2k0 for the stated choice k0<min(eta/48,Delta0/4,1/400). The minimum moving gap is eta/24; the exceptional gap is at least 5Delta0/8. The stable and remaining fixed gaps have the advertised strict margins.
+
+Direct differentiation gives the manuscript's formula for D_*'. The rational interval enclosure verifies 0<D_*'<5 throughout I0. The affine entries have derivative of absolute value below 24, while the exceptional entry uses D_*'(a-h); thus every gap has a common Lipschitz constant below 32. Choosing delta<=k0/64 keeps each gap above 3k0/2. Paying the remaining combined losses below k0/2 yields the claimed common kappa_u=k0. This is an existence argument, not an explicit optimized numerical window.
+
+#### 3. Uniform analytic constants
+
+The argument preserves each original selected zero with |gamma|<=T. Only the exceptional test uses the enlarged height C0(H+T+1), with real threshold b+h. The primitive Gamma kernel keeps the original gamma; the finite Fejer frequency stays in the Mobius column. The actual common cutoff error still has mass H^-1+X^-1/2 and no hidden H-seminorm cost.
+
+On I1, b+3h<7/8, the reciprocal contour stays a fixed distance h inside the zero-free region, all three true t^-1 frequency-tail powers are uniformly negative, and all three decreasing genuine-tail powers are negative. The dual-scale condition 1+x-y<1/2 is independent of a. All primitive conductor blocks, fixed Euler deletions, full cube layers and nonunit-zero masks are unchanged. The derivative order for the remote Mellin tails can be fixed after eta and used uniformly on the compact beta interval. These checks justify a common polynomial height exponent, rather than merely pointwise constants.
+
+#### 4. Legal input to continuous physical bins
+
+The exact center difference from the previously published curve Dp is
+Dp(1/6)-D_*(1/6)=43/5250. Continuity permits a nested interval |a-a0|<=2r0 on which this difference is at least 43/10500>1/1000. Thus the weaker input R<<M^(Dp(a)-1/1000+epsilon)poly(T) is valid uniformly on that interval. This fixed decrement is not a numerical assertion about the unknown strict gain relative to D_*.
+
+The bin width and contour-buffer width must be chosen after the nested intervals, so that every improved bin is wholly covered. All other bins use the prior bound. The supplement explicitly imposes that ordering and makes no physical-sector claim on its own.
+
+
+## C. The complete physical cubic consequence
+
+### Referee report: complete cubic-sector use of the uniform density gain
+
+#### Version and verdict
+
+Part XXX C was independently read together with the previously reviewed complete pair-density application and the new two-sided density supplement.
+
+**Approved, with the exact scope stated in the manuscript.** There is a fixed c>0 such that the complete previously defined nonprincipal cubic contribution satisfies
+\[
+ I_{\rm cub}(Z)\ll Z^{-271/32256-c+\varepsilon}.
+\]
+No numerical value of c is asserted. This includes the original physical windows, finite compensation, all six units and fixed rays, every physical n, the original and core markers, and both exact first flat operations, as in the prior complete cubic theorem. It remains conditional on the user's finite-order Q input in the inherited physical reciprocal-L step. The new density theorem itself is unconditional. This is not a bound for the entire probe and does not close its -3/16 target.
+
+#### 1. The density input is genuinely uniform
+
+The single threshold theorem at 5/6 is not substituted into a continuum of bins. The separately reviewed supplement proves, with common constants and fixed cutoffs, a two-sided interval bound
+R(M,T;1-a)<<M^(Dstar(a)-kappa_u+epsilon)poly(T).
+Its analytic proof retains the actual original zero, full Gamma kernel, sharp error, true frequency tails, and uniform enlarged-height baseline.
+
+At the center, Dp-Dstar=43/5250. On a sufficiently small larger interval this yields a common decrement delta0, with 0<delta0<=1/1000, from the previously used Dp. The application correctly distinguishes this baseline improvement from the additional existential zero-conditioned gain. It does not attribute the whole new physical gain to an uncomputed numerical kappa.
+
+#### 2. Actual slots and remaining row powers
+
+The original integer slot-moment choices are retained. Their statement remains normalized using D0, and is not silently rewritten with the smaller density exponent. On the high-index range M>=Z^(1/3), the actual assigned slot product Pc is at most a fixed multiple of sqrt M. The old finite set of integer moment choices, prime-square branches, repeated-prime patterns, factorized weights, common holes and zero extensions therefore remain applicable.
+
+Before the finite e sum, the two actual Holder estimates have remaining cardinality powers
+1-1/(2k) and 1-1/(2k)-1/8, at least 1/2 and 3/8 respectively. Decreasing the genuine bad-row exponent from Dp to Dp-delta0 gives a common gain M^(-3delta0/8) in both bounds. Tiny and empty slots have no smaller remaining row power. This is the correct way to recover the gain without assuming a new lossless slot theorem.
+
+The density family is still the original fixed finite-order cubic family. Moving holes and n0/g restrictions occur in the inherited common coefficients or positive row restrictions, not as an unpriced family of moving twists.
+
+#### 3. All-S and full arithmetic transfer
+
+The prior all-S estimate combines precisely these pointwise and eighth-moment alternatives, retaining the real finite e-range and using primitive Poisson on each actual row for the long-S tail before summing e. The common factor M^(-3delta0/8) therefore passes through the whole estimate. The exponent Jpair is reduced by 3delta0/8; no single favorable S block replaces the full sum.
+
+Every underlying physical identity is unchanged: n=n0 r^2, n0=F2 E4, its exact n0^(-3/2) factor, the c/s shared divisor and Ramanujan factor, the true masks, both divisibility markers, the complete frequency H=r^6 epsilon w^2(a')^6, and both external first-scale operations.
+
+The old bound Jpair>=3503/3840 remains greater than 9/10 after subtracting at most 3/8000. Independently checked rationally, the resulting lower bound is 87539/96000. Thus the a' exponent is below -27/10, and
+4-6b-3[Jpair-3delta0/8]<-1
+with a substantial uniform margin. Using b>=41/50 gives an upper bound -116979/32000. The same summability margin applies to the external flat divisor. The inherited n0 factor n0^(3/2-3b) remains nonpositive.
+
+The original compact slot ratios qD/P and their joint Gaussian/Schwartz derivatives are treated before pooling row labels. Every log-Fourier mode retains its compact c and s cutoffs. The density height constant is fixed before selecting physical detection heights and small losses. Full unbounded divisor, Gaussian and Fourier labels enter the ambient before their losses are absorbed by the strict convergent tails. These are the necessary source uniformity conditions highlighted by the user's earlier corrections, and they are preserved explicitly.
+
+#### 4. Global maximum, low-index range and buffers
+
+The old high-index exponent Epair(a) has its unique maximum E*=-271/32256 at a0=1/6. This follows from the previously verified exact one-sided rational differences and positive Bernstein coefficients, not a numerical grid. Outside the interval J=[1/8,9/50], the old upper bound is at most -4109/480000, with exact gap 3203/20160000 below E*.
+
+The added density factor changes the frequency-normalized exponent by
+-(13/32)(3delta0/8)=-(39/256)delta0.
+The original compensation parameter and remaining divisor prices retain their old nonpositive contributions.
+
+On the smaller improved neighborhood use this gain; outside it use the old bound. Compactness, the strict old one-sided inequalities and the fixed gap outside J give m0>0. Consequently the complete high-index contribution has a fixed strict gain c_high>0. This step correctly uses the larger improved neighborhood to cover the smaller one and its eventual bin buffers.
+
+The low-index proof is not modified. Its exponent -13/1440 has exact gap 101/161280 below E*. Both rational gaps and the factor 39/256 were independently recomputed. Choosing c less than one quarter of the minimum of this low-index gap and c_high leaves room for all bin displacements and final small powers.
+
+The physical bin width is selected only after the nested intervals and c. Every improved bin and its contour buffer then stays within the larger uniform interval. Outside bins use the old formula. This closes the actual continuous-bin proof, including boundary bins.
+
+#### 5. Dependencies and reporting limits
+
+The approved chain consists of the final unconditional sharp detector, its reviewed two-sided uniform supplement, and this complete transfer on top of the previously reviewed cubic sector. The former single-point density statement alone would have been insufficient; the supplement is a necessary dependency.
+
+The result is an existential strict improvement of the complete cubic-type exponent. It should be reported as -271/32256-c for some fixed c>0, not as an invented decimal or a specified numerical value. The finite-order Q input remains attributed to the user and confined to the inherited physical reciprocal step. No angular extension, altered inverse polynomial, full-probe conclusion, or RH conclusion is certified.
