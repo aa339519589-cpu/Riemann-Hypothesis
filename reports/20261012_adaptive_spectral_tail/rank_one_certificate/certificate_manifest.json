@@ -1,0 +1,31 @@
+{
+  "scope": "single fixed-depth mechanism instance; does not improve the separate 511/1024 result or establish RH",
+  "claim": "E(q) >= (7/16) Var_nu(q) on the original even form domain",
+  "parameters": {
+    "epsilon": "1/16",
+    "J": 6,
+    "N": 6,
+    "rank": 1,
+    "cells": 40000,
+    "space_endpoint": "5/2"
+  },
+  "user_method": "https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/1d739d991b6ecf52ec8998431407f30814f0654c/reports/20261012_threshold_shorted_certificates/REPORT.md",
+  "user_foundation": "https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/d50c8734afd4e7386a5e04e63c15a12f1067dfe8/reports/20261012_adaptive_spectral_tail/ORIGINAL_FORM_FOUNDATION.md",
+  "files": {
+    "check_rank_one_exterior_constants.py": "9e3239d24d0ef47355546dbc77eb8015af643c22fe564d913bc55766d1947fa9",
+    "certify_rank_one_threshold_shorting.py": "37ebe2e081a9c609297ed38184724b7c04aabb0921d35f45262f6b6294fe3702",
+    "exterior_constants.json": "cca501fde6389edd6b947126b20998e7706374c7bd6be67493625c50dcf4f7ef",
+    "interval_rank1_40000.json": "ff76a6e80a32d29de791e021cadb3be96de82e6851358ac275d425b7471ee156"
+  },
+  "proof": "../RANK_ONE_SHORTING.md",
+  "referee": "../REFEREE_RANK_ONE_SHORTING.md",
+  "environment": {
+    "Python": "3.12.14",
+    "mpmath": "1.3.0"
+  },
+  "commands": [
+    "python check_rank_one_exterior_constants.py",
+    "python certify_rank_one_threshold_shorting.py 40000"
+  ],
+  "note": "Run in this directory. The exterior program prints its JSON to stdout; the 40,000-cell program writes interval_rank1_40000.json. No generated input tables or exploratory eigenvectors are needed."
+}
