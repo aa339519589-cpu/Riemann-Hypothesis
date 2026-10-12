@@ -9179,12 +9179,12 @@ For Re s>=1/2+epsilon this last Euler product and its inverse are bounded absolu
 
 #### 6. Common moving holes
 
-Let M_0 be the radical of M away from6Lu. For multiplicative chi_0 the exact squarefree Gauss CRT gives
+Let M_0 be the radical of M away from6Lu. For multiplicative chi_0 the exact squarefree Gauss CRT gives, initially for Re s>1 and then by holomorphic continuation,
 
-    R_(u,M)(s)=sum_(d|M_0)mu(d)G(d)chi_0(d)(Nd)^(-s)
-                                                    R_(ud)(s).    (13)
+    R_(u,M)(s)=sum_(d|M_0)mu(d)G(d)chi_0(d)bar rho_u(d)
+                                  *(Nd)^(-s) R_(ud)(s).            (13)
 
-The residual bar rho_d includes precisely the required (A,d)=1 zero mask; this is the chirality for G, not bar G. Apply (1) with the squarefree moving parameter ud. On sigma>=1/2+epsilon the exact added d-weight is at most (Nd)^(1/4-sigma)<=(Nd)^(-1/4-epsilon), and its divisor sum is O_epsilon((NM)^epsilon). This proves the stated hole cost. Expand a finite lambda function before using (13), so multiplicativity is only invoked for genuine characters.
+The outside bar rho_u(d) comes from splitting the original moving factor bar rho_u(dA). The Gauss identity G(dA)=G(d)G(A)bar rho_d(A) supplies the residual factor instead; these are distinct phases. For nonsquarefree dA both sides vanish, so the original zero masks are retained. The residual bar rho_d includes precisely the required (A,d)=1 zero mask; this is the chirality for G, not bar G. Since (d,u)=1, the outside phase has modulus one. Apply (1) with the squarefree moving parameter ud. On sigma>=1/2+epsilon the exact added d-weight is at most (Nd)^(1/4-sigma)<=(Nd)^(-1/4-epsilon), and its divisor sum is O_epsilon((NM)^epsilon). This proves the stated hole cost. Expand a finite lambda function before using (13), so multiplicativity is only invoked for genuine characters. The exact phase and an admissible coefficientwise counterexample to its omission are independently checked in [REFEREE_MOVING_HOLE_PHASE.md](REFEREE_MOVING_HOLE_PHASE.md); this correction changes no absolute-value bound.
 
 #### 7. Scope and inputs
 
