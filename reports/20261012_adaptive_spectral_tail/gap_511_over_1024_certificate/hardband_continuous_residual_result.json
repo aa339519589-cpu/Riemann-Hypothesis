@@ -1,0 +1,22 @@
+{
+  "status": "Candidate complete least-residual ledger; pending whole-chain independent review",
+  "rank": 127,
+  "epsilon": "1/1024",
+  "A0_upper": "366.785654101193223402967938705",
+  "A1_upper": "18972.9297181597180695780329773",
+  "Y_HS_upper": "34.1105572505445311893153886596",
+  "source_sample_weight_upper": "0.46997922484604941084429865736",
+  "input_extension_error_upper": "0.0000000126441326549372831213408151472",
+  "synthesis_residual_upper": "0.0000000185489713308824782955234895021",
+  "b_periodization_upper": "6.09754322231497795324252343608e-12",
+  "source_alias_upper": "2.74992873425713125805823055379e-24",
+  "non_grid_band_source_alias_upper": "1.51880335841819584058256294312e-92",
+  "hardband_quadrature_error_upper": "6.51099596592252163553464883269e-68",
+  "finite_coefficient_error_upper": "0.00000227783693592737113240561474872",
+  "operator_action_error_upper": "0.00000227784303347163775703920017632",
+  "true_residual_HS_upper": "0.00000230903613745745751845606448097",
+  "least_residual_center_error_upper": "0.0000785701104245691496682001935002",
+  "quadratic_residual_Gram_error_upper": "0.00000000839483966342070211812736402437",
+  "true_Gram_norm_error_upper": "0.0000785785052642325703703183208642",
+  "elapsed_seconds": 1.7382757663726807
+}

@@ -1,0 +1,77 @@
+{
+  "epsilon": "1/1024",
+  "eta": "1/4096",
+  "N": 4,
+  "sigma": "1/100",
+  "R": "136/100",
+  "M_squared_upper": 1000,
+  "positive_frequency_width": "16.75",
+  "number_of_positive_intervals": 10,
+  "rank_upper": 127,
+  "spatial_error_upper": "0.0000891477753789484811475863701202",
+  "feature_HS_error_upper": "0.0000000046814110983442668419844096681",
+  "finite_kernel_error_upper": "0.0000269970235620500411514881035207",
+  "whole_operator_error_upper": "0.000116144798940998522299074473641",
+  "bands": [
+    {
+      "left_over_8": 0,
+      "right_over_8": 16,
+      "Taylor_remainder_order": 20,
+      "rank_upper": 10
+    },
+    {
+      "left_over_8": 33,
+      "right_over_8": 53,
+      "Taylor_remainder_order": 16,
+      "rank_upper": 16
+    },
+    {
+      "left_over_8": 69,
+      "right_over_8": 92,
+      "Taylor_remainder_order": 17,
+      "rank_upper": 17
+    },
+    {
+      "left_over_8": 131,
+      "right_over_8": 151,
+      "Taylor_remainder_order": 16,
+      "rank_upper": 16
+    },
+    {
+      "left_over_8": 215,
+      "right_over_8": 230,
+      "Taylor_remainder_order": 14,
+      "rank_upper": 14
+    },
+    {
+      "left_over_8": 281,
+      "right_over_8": 285,
+      "Taylor_remainder_order": 9,
+      "rank_upper": 9
+    },
+    {
+      "left_over_8": 357,
+      "right_over_8": 371,
+      "Taylor_remainder_order": 14,
+      "rank_upper": 14
+    },
+    {
+      "left_over_8": 500,
+      "right_over_8": 511,
+      "Taylor_remainder_order": 12,
+      "rank_upper": 12
+    },
+    {
+      "left_over_8": 726,
+      "right_over_8": 731,
+      "Taylor_remainder_order": 9,
+      "rank_upper": 9
+    },
+    {
+      "left_over_8": 867,
+      "right_over_8": 873,
+      "Taylor_remainder_order": 10,
+      "rank_upper": 10
+    }
+  ]
+}

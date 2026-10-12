@@ -1,0 +1,15 @@
+{
+  "status": "Finite exact-rational Ccert inertia component; continuous Gram and prime-matrix hypotheses must independently pass",
+  "rank": 127,
+  "G_ridge": "1/10000",
+  "D_ridge": "1/10000000000",
+  "c": "4095/4096",
+  "certified_negative_directions": 1,
+  "certified_positive_directions": 126,
+  "minimum_positive_Gershgorin_lower": "0.000064541217145654502542856117945",
+  "negative_Gershgorin_upper": "-1.00796112985057298499406957137",
+  "congruence_row_error_upper": "0.00000000297151742906285169332237062395",
+  "C_matrix_rounding_error_Frobenius_upper": "1.99588816202968602022158436472e-12",
+  "invertibility_test_upper": "7.51533522009790936217024302718e-12",
+  "elapsed_seconds": 0.015572786331176758
+}

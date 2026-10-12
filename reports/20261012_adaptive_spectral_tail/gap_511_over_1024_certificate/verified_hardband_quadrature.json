@@ -1,0 +1,14 @@
+{
+  "status": "Actual hard-band scalar quadrature and finite D components only",
+  "iv_digits": 80,
+  "quadrature_order": 128,
+  "max_conversion_errors": {
+    "weighted_quadrature": "6.84990361878556173509128588689e-18",
+    "band_cosine": "5.5511078270766647731392852557e-17",
+    "D_entry": "4.1302036186649177021260564255e-16"
+  },
+  "D_quadrature_operator_error_upper": "2.50375050174329951847274920585e-122",
+  "D_total_operator_error_upper": "3.6095570976613089442253112793e-12",
+  "D_upper_ridge_rational": "1/10000000000",
+  "elapsed_seconds": 31.55095911026001
+}

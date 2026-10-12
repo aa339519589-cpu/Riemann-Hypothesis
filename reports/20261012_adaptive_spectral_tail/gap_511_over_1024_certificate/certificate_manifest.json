@@ -1,0 +1,42 @@
+{
+  "scope": "single epsilon=1/1024; complete original even form gap 511/1024; actual rank-127 full-Gamma signed-prime resolvent certificate",
+  "exact_input_sha256": {
+    "hardband_parameters.json": "26570a1cc3687814c8702e86a2b65f852f46850836865e5077639f253c4f1027",
+    "trial_cosine_dyadic_eps1024_scaled.npz": "c34ed29a9d4beb48652b7b25a7566064bf5eb8c2c33dba41df430984f0b63c04"
+  },
+  "attached_programs_and_results_sha256": {
+    "verify_hardband_scalar_tables_scaled.py": "6dac9a93b253e2ea6cb1b4bc888367cb1bc1553b9cee8dc6cb65443ab0d41d72",
+    "verify_hardband_quadrature_tables.py": "71d2af1c106726f92a5d39d2060b460e19453bc4f2bc04bd8858846c84c8e3da",
+    "certify_hardband_continuous_residual_v4.py": "43e08e869b08f0097bd1b06721ae5e2d76a383de6b9eba026f64e449451e1312",
+    "certify_hardband_signed_inertia.py": "fb054e026aa0770e8264ae263f2f89542a1c3978418ad92c387b753cfdeb370e",
+    "verified_hardband_elementary_scaled.json": "d7b076a0313fbb2fd47d4cd0353938f5df7cf9649eebba38f7d2c33172c9cb87",
+    "verified_hardband_quadrature.json": "0b90ff16320f4931b6ee2d474fa521f979453abf8dc92cd87b5854f209c37f0d",
+    "hardband_continuous_residual_result.json": "f8450b528aafa341ae4714988520687f3b853288b7208deac739300ca495ed28",
+    "hardband_signed_finite_inertia_result.json": "651ff5f8afbdc3948c4fb925633f3f7c25fe0e809d5a0b1ee6243ea2e0053a06"
+  },
+  "regenerated_binary_artifacts_sha256": {
+    "verified_hardband_elementary_scaled.npz": "350ddb07e602d23487b5c5de53e64869aefb343649012d6fd232063b1661c2bc",
+    "verified_hardband_quadrature.npz": "5a63650e8282ed628e36ff0967c3fc181f8e8b4dfdd89861cd4cab7d73409269",
+    "verified_hardband_Q0_midpoint.npy": "1939a1e10fc8366bbac8400ad520a687a558253db3712519d45200b3bd2437c7",
+    "hardband_rational_congruence_matrix.npy": "0eb53a8c88824db5ee24e6b7b730a9120203f25fdf814e7dd8bb98f61ad03f40"
+  },
+  "reproduction": {
+    "environment": {
+      "Python": "3.12.14",
+      "NumPy": "2.3.5",
+      "SciPy": "1.17.0",
+      "mpmath": "1.3.0"
+    },
+    "variables": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "commands": [
+      "python verify_hardband_scalar_tables_scaled.py",
+      "python verify_hardband_quadrature_tables.py",
+      "python certify_hardband_continuous_residual_v4.py",
+      "python certify_hardband_signed_inertia.py"
+    ],
+    "note": "Execute in this directory. Generated binary tables are not independent inputs. Elapsed-time fields vary. Midpoint hashes record the independently reproduced backend; every directed error and inertia assertion must pass."
+  }
+}
