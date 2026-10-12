@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "rh_proved": false,
+  "scope": "Finite exact algebra only; not a proof of RH",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "P_minus_quarter_a6_factored": "3*a**2*(4*a**5 - 81*a**4 + 280*a**3 - 543*a**2 - 260*a - 75)/8",
+  "shift_24_coefficients_descending": ["3/2", "1773/8", "13875", "3805731/8", "19210629/2", "907693119/8", "718145946", "1842107832"],
+  "sinc_small_argument_constant": "2/15",
+  "sinc_used_constant": "1/10",
+  "curvature_used_constant": "1/64",
+  "fourier_lower_constant": "1/320",
+  "geometric_ratio_upper": "531441/16777216",
+  "script_sha256": "603cbe646b437b8dd420be73b019d71a904c4fff6b894ff56b7a1c00f8d27a07"
+}
