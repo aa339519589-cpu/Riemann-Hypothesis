@@ -1,0 +1,32 @@
+{
+  "status": "PASS_EXACT_RATIONAL_CONSTANTS_ONLY",
+  "python": "3.13.5",
+  "arithmetic": "fractions.Fraction; integers; no floating point",
+  "checks": {
+    "successive_theta_tail_ratio_upper": "1162261467/562949953421312",
+    "u_times_tail_bound_upper": "19683/4194304",
+    "phi_global_upper": "27/4",
+    "normalized_core_budget": "8707129344",
+    "normalized_cross_budget": "4325376",
+    "total_raw_gram_budget": "8711454765",
+    "raw_gram_error_constant": "68719476736",
+    "c0": "1/340282366920938463463374607431768211456",
+    "uniform_relative_error_beta": "1/1048576",
+    "normalization_ratio_upper": "1048577/1048575",
+    "offdiagonal_schur_row_upper": "8/341",
+    "frame_lower": "31/32",
+    "frame_upper": "33/32",
+    "gram_condition_upper": "33/31",
+    "inverse_neumann_norm_upper": "32/31",
+    "weighted_gram_row": "8/21",
+    "weighted_inverse_row": "21/13",
+    "mixed_block_row": "8/13",
+    "true_source_projection_tail": "2^(-147) * 16^(-M)",
+    "neumann_remainder_operator_bound": "2 * 32^(-L)",
+    "full_gamma_prime_tail_constant": "28832403638221253250312587928498339841/89202980794122492566142873090593446023921664",
+    "full_operator_tail": "(M+7)^2 * 16^(-M)",
+    "full_gamma_form_tail": "(M+7) * 4^(-M)"
+  },
+  "rh_proved": false,
+  "script_sha256": "664887044d5c73ac63d999d5b63b19f970b617430dfc5a700d4c04f2a3483444"
+}
