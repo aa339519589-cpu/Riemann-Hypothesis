@@ -93,3 +93,24 @@ On x_r=a+16e, w_r=1-a-6e, z_r=17/50, the unchanged -D boundary still cancels alg
 The only larger ramified entry remains the exact strict second-family term -(q-1)q^{-x-w}, with normalized slot exponent -w. Its physical n index is one, so half-damping does not alter it. For a whole distinct-label tuple, the primitive conductor bound supplies the factor product q_p^{-(j_p-1)}. Applying the primitive functional equation once to the entire tuple pays -w-(j-1)(1/2-w)<=-1/2 for every strict label j>=2. The deleted Euler factors are unchanged. This is the original conductor allocation, not repeated use of the conductor saving at individual slots.
 
 Accordingly the displayed dynamic-error bound is valid on the original dynamic region under exactly the original buffered retained-family reflected-L bound and retained-height restrictions. Neither that hypothesis nor the contour obligations have been removed. This certificate does not extend the dynamic estimate to the whole larger Euler domain, estimate the main same-row prime correlations, or bound the entire new probe. No principal/unit or residue-1 sector is supplied by this companion.
+
+## D. The actual principal-row comparison
+
+Status: approved under the stated safe reciprocal-line hypothesis.
+
+Reviewed manuscript: HALF_DAMPED_PROBE.md, Section 9.
+
+I read the entire comparison and checked the physical prefactor, original triple Mellin weight, scalar poles, slot normalizer, and residue Gaussian directly against the pinned fd4aeeb2 source's exact Poisson representation and principal-residue normalization. The premise is genuinely conditional: the reciprocal zeta function must be holomorphic and polynomially bounded on the specified safe half-strip. Half-damping alone does not give that hypothesis.
+
+The chosen x,w,z box lies strictly in the independently verified enlarged half-damped correction domain. With delta=(sigma-1/2)/2 and w0=1-d_w, x+w>=1+sigma-d_w has a positive margin. The choice of eta gives positive z throughout. The actual selected factors must be handled holomorphically. The original G expression, the explicit core second-family Pstar, and the fixed original unmarked P in the core complement are all correct. Subtracting the full first-family term gives the same core difference previously certified. In particular the proof does not divide by a local H or P that might vanish away from the residue.
+
+The two potentially large products P^x R' and P^x P^{1-x-w-6z} have the stated strict negative exponents on this box; the remaining geometric denominators are uniformly separated from zero. The bounds also hold for the core replacement. The unselected Euler product is uniformly bounded by its normally convergent defects; omitting finitely many selected factors is done within a positive product bound, not by dividing by possibly zero factors. Thus every selected G is uniformly O(1).
+
+For each positive annular slot, the ratio of its weight P^{Re z-1} to P^{-5/6} is uniformly bounded by its scale to the power Re z-1/6. Multiplying this estimate and dividing by the exact original A_T gives Z^{ell Re z}; no inverse prime-count loss remains. The normalization is valid for all sufficiently large Z, when the fixed slots have positive S_i. The empty list has A_T=1 and requires no slot-error margin.
+
+The contour sequence crosses exactly the stated scalar poles: first the safe s shift, then the w=1 pole, then the z=1/6 pole on each of the two pieces. M(z) is holomorphic for positive Re z and has arbitrary polynomial vertical decay; the original Gaussian decays in Im(s+z), and the two remaining smooth Mellin transforms decay in Im z and Im w. The invertible linear change from these three combinations controls all three independent heights. The polynomial reciprocal bound and scalar zeta growth are therefore paid without a Z-dependent height cutoff. No new selected-zero or Fejer height is substituted.
+
+After normalization, the original physical prefactor is exactly Z^{l_x/2+sigma-1+h Re z+l_y(Re w-1)}. Its value at the double residue is Z^{C(sigma)}, and the three retained pieces save l_y d_w, h eta, and their sum. The scalar Jacobian and fixed radial residues are already the original c_S. At the double residue the Gaussian is exp((s-5/6)^2), and the exact principal slot correction contributes its separately proved uniform O(Z^{-kappa_P}) error. The remaining one-variable signal is moved from 2 to sigma using the same assumed safe reciprocal strip. These steps prove (1) for any fixed positive m below the displayed minimum.
+
+Approved scope is the literal u=1 row of the new observation, for either nonflat marker and fixed data under the safe-line condition. The result does not estimate the remaining arithmetic rows or authorize moving a contour across unaccounted reciprocal poles. Principal visibility, this scalar comparison, and a complete high/low probe bound remain distinct claims.
+

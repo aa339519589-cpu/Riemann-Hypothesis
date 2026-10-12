@@ -2,7 +2,7 @@
 
 Status: independently reviewed mathematical result. This is a distinct arithmetic observation with the original physical windows and sharp inverse retained. The principal visibility and complete cubic-sector transfer below have passed source review; neither a complete low estimate nor an RH conclusion is claimed.
 
-The new observation inserts the fixed factor q_n^(-1/2) into the original physical completed-index sum. Its principal numerator is nonzero throughout Re s>1/2, including after the original or core finite compensation on each fixed buffered half-plane. Its exact correction product has a domain crossing both sides of z=1/6. The previously established Q-conditional complete cubic estimate and the six other covered nonprincipal-type bounds transfer to both nonflat markers without altering their exponents; the strongest pure-fifth bound remains attributed to the user. The original conditional dynamic error-slot estimate is retained on its original reflected region. The n=1 contribution remains unchanged; the full high/low comparison and RH remain open.
+The new observation inserts the fixed factor q_n^(-1/2) into the original physical completed-index sum. Its principal numerator is nonzero throughout Re s>1/2, including after the original or core finite compensation on each fixed buffered half-plane. Its exact correction product has a domain crossing both sides of z=1/6. The previously established Q-conditional complete cubic estimate and the six other covered nonprincipal-type bounds transfer to both nonflat markers without altering their exponents; the strongest pure-fifth bound remains attributed to the user. The original conditional dynamic error-slot estimate is retained on its original reflected region. Under the explicitly stated safe reciprocal-zeta-line condition, Section 9 also proves a power-error comparison for the actual principal u=1 row, including all three retained contour terms. The physical n=1 contribution remains unchanged; the nonprincipal high rows, full high/low comparison and RH remain open.
 
 ## 1. Exact definition and scope
 
@@ -317,7 +317,120 @@ Assume exactly the source's buffered retained-family reflected bound |L(1-w,bar 
 
 This retains the original conditional error-slot estimate on its original dynamic region. It does not assert it on the whole larger Euler domain, remove the reflected hypothesis, or bound the main prime-slot correlations over E_b. In particular neither the old completed-row R2 nor a whole-probe low/high inequality follows here.
 
-## 9. Sources and exact dependency scope
+## 9. A power-error comparison for the actual principal row
+
+### 9.1 Conditions and statement
+
+Use the exact half-damped observation, eta=1, fixed bad data, original Gaussian and radial windows, and either the original or core marker as in Sections 1--4 above. Retain the original finite prime slots, original two-term compensation and its exact normalization A_T(Z). Write the physical scales as
+
+ X=Z^(l_x), Y=Z^(l_y), P_i=Z^(ell_i), ell=sum ell_i,
+ h=1-l_x+ell>0, C(s)=s+l_x/2-1+h/6,
+ l_x,l_y>0.
+
+An empty slot list is permitted with ell=0 and A_T=1. Let P_half(Z) be the literal u=1 term in this observation's exact Poisson/high representation, not the entire probe. Define
+
+ f_half(Z)=1/(2pi i) int_(2) Z^C(s) exp((s-5/6)^2)
+                         H_(S,half)(s)/zeta_K^S(s) ds.
+
+Fix 1/2<sigma<1. Assume that the original reciprocal 1/zeta_K^S(s) is holomorphic for Re s>=sigma and has a fixed polynomial-height bound there on each closed bounded real strip. This is the same safe-line condition used for an original principal comparison; it is not inferred just from half-damping. For example it holds on a buffered line to the right of an available global zero bound. Constants below depend on that buffer and its bound.
+
+There exists m>0, fixed independently of Z and all selected target labels, such that
+
+ |P_half(Z)/(c_S A_T(Z))-f_half(Z)| << Z^(C(sigma)-m).    (1)
+
+For fixed sigma the height integrals are fully included. This does not replace the separate selected-zero height or Fejer height by a common Mellin cutoff. No sharp inverse endpoint is smoothed.
+
+### 9.2 The selected principal-row correction on the crossing box
+
+Choose delta=(sigma-1/2)/2, choose 0<d_w<=1/4, and put w0=1-d_w. Then for x_r>=sigma and w_r>=w0, x_r+w_r>=1+epsilon0 with, for example, epsilon0=sigma-d_w>0. Choose eta>0 so small that
+
+ eta<min{delta,w0/6,epsilon0/6,1/12}.
+
+By Section 6 above, the unmarked correction is holomorphic and uniformly bounded for this u=1 on the real box
+
+ x_r in [sigma,3], w_r in [w0,3], z_r in [1/6-eta,2].   (2)
+
+The same statement for every selected tuple must use its holomorphic local replacement, not a quotient by P_p. We verify the needed bound directly. At u=1 let D=P^(-x), W=P^(-w) and E=P_p^*+D. For the original marker this replacement is
+
+ G_p=[(P^x-P^(-w))(1-V)(1-W)P_p^*
+                                      -P^(-w)(1-VW)]/(1-D). (3)
+
+For the original marker the exact unramified calculation gives
+
+ |E| << |R'|+P^(1-x_r-w_r-6z_r).
+
+For the core marker its positive-index sum contains only the second even family, hence
+
+ P_p,core^*=[-D-(P-1)P^(-x-w)V/(1-V)]/(1-R'),
+ E_core=P_p,core^*+D
+       =[-D R'-(P-1)P^(-x-w)V/(1-V)]/(1-R').          (4)
+
+It satisfies the same sufficient bound. The exact core replacement is
+
+ G_p,core=[P^x(1-V)(1-W)P_p,core^*
+             -P^(-w)(1-V)(1-W)P_p,full]/(1-D),
+
+where P_p,full is the same full unmarked local sum, not the core marked sum. Equivalently G_p,core=G_p-P^x(1-V)(1-W)(P_p^*-P_p,core^*)/(1-D), and
+
+ P_p^*-P_p,core^*=R'[(1-P^(-1))/(1-V)+W]/(1-R').
+
+Thus the change also costs at most O(P^(x_r)|R'|). In (3), P^x D=1 exactly. The remaining large-looking product P^x E is harmless since on (2)
+
+ P^(x_r)|R'|=P^(3-5x_r-6z_r)
+          <=P^(-1/2-5delta+6eta),
+ P^(x_r) P^(1-x_r-w_r-6z_r)
+          <=P^(-1+d_w+6eta).
+
+Both exponents are strictly negative: eta<delta and eta<1/12 make the first at most -1/2+eta<0, and d_w<=1/4 makes the second below -1/4. All remaining factors and reciprocal local denominators are uniformly bounded. Thus G_p=O(1) for either marker, uniformly in heights and local phases on (2). The retained product over unselected primes is also O(1), by its absolutely convergent uniform defect bound. Finitely many omitted factors cause no division by a possibly vanishing H_p.
+
+Let S_i(Z)=sum_(p in P_i(Z))W_i(P/P_i)P^(-5/6), as in the original normalization. Because each W_i has fixed compact positive norm support, uniformly on (2),
+
+ sum_(p in P_i(Z))W_i(P/P_i)P^(z_r-1)
+       << S_i(Z) P_i^(z_r-1/6).
+
+It follows directly from the finite tuple definition, without raw Euler quotients, that
+
+ |mathfrak H_(1,Z,half)(x,w,z)/A_T(Z)| << Z^(ell z_r). (5)
+
+This also covers the empty list. In particular no extra inverse power of S_i or hidden prime-count cost is incurred on retained contours.
+
+### 9.3 Honest contour sequence and residues
+
+Start from the u=1 term of the original absolute (s,w,z)=(3,3,2) high identity. First move s from 3 to sigma. The assumed reciprocal strip has no pole, and the half-damped correction is holomorphic on (2). The original product Gaussian/M(z)/What_1(w) gives rapid integrated and trace decay in the three independent height variables; the fixed polynomial reciprocal growth is therefore paid without any Z-dependent truncation or lost endpoint. The horizontal joins vanish.
+
+Next move w from 3 to w0=1-d_w. The only crossed scalar pole is zeta_K^S(w) at w=1. Keep its residue and its retained w line. On BOTH resulting pieces move z from 2 to z0=1/6-eta. The only crossed scalar pole is zeta_K^S(6z) at z=1/6. Thus there are exactly four terms: the double residue, the retained w line at the z residue, the retained z line at the w residue, and the doubly retained contour. No scalar pole has been dropped. The reciprocal is independent of w,z; the correction contributes none in this box.
+
+After division by A_T, (5) and the original physical prefactor give the Z exponent
+
+ l_x/2+sigma-1+(1-l_x+ell)z_r+l_y(w_r-1)
+   =C(sigma)+h(z_r-1/6)+l_y(w_r-1).                  (6)
+
+All remaining vertical integrals are bounded constants by the same independent-height decay and polynomial scalar bounds. Therefore the three retained terms cost respectively
+
+ O(Z^(C(sigma)-l_y d_w)),
+ O(Z^(C(sigma)-h eta)),
+ O(Z^(C(sigma)-l_y d_w-h eta)).                       (7)
+
+This argument keeps the original physical X,Y,Z and actual finite prime slots; it is not a changed smooth probe chosen after a target zero.
+
+### 9.4 The double residue and the normalized signal
+
+The exact principal computation in Sections 3--4 gives the double residue, divided by c_S A_T,
+
+ 1/(2pi i) int_(sigma) Z^C(s) exp((s-5/6)^2)
+             H_(S,half)(s)[1+R_half,Z(s)]/zeta_K^S(s) ds.
+
+For any fixed 0<kappa_P<(1/2+delta) min_i ell_i its error factor is O(Z^(-kappa_P)), uniformly on the entire sigma line. If there are no slots this error is zero. The integral of that error is O(Z^(C(sigma)-kappa_P)). The error estimate is holomorphic and height-uniform because the exact rational slot formula was proved on the full closed half-plane Re s>=1/2+delta.
+
+The remaining integral is precisely f_half: its contour from 2 to sigma crosses no target zero under the stated reciprocal-line condition, and H_(S,half) is holomorphic throughout. The same Gaussian trace argument justifies this one-variable move. Combining (7) proves (1), for any fixed
+
+ 0<m<min{l_y d_w,h eta,kappa_P},
+
+with the kappa_P entry omitted in the empty-slot case.
+
+The principal multiplier is nonzero at every off-line target in Re s>1/2, but (1) estimates only the actual principal u=1 contribution. The nonprincipal row sum, including its same E_b signed correlations and all actual selected heights, is untouched. Nor does (1) assert that a single safe sigma can be moved below unaccounted target zeros. The argument separates a now-proved principal comparison from the remaining arithmetic high/low problem.
+
+## 10. Sources and exact dependency scope
 
 Primary original source: fixed fd4aeeb2 paper.tex, available at
 https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex .
