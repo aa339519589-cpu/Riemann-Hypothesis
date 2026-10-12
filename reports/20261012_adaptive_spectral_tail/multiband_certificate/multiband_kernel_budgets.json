@@ -1,0 +1,577 @@
+{
+  "status": "Outward full-norm parameter budgets only; no resolvent/inertia sign certificate",
+  "budgets": [
+    {
+      "epsilon": "1/8",
+      "eta": "1/32",
+      "N": 3,
+      "sigma": "1/100",
+      "R": "107/100",
+      "M_squared_upper": 15,
+      "positive_frequency_width": "13.75",
+      "number_of_positive_intervals": 7,
+      "rank_upper": 58,
+      "spatial_error_upper": "0.0147237038066855076248168050249",
+      "feature_HS_error_upper": "0.0000594561723854542588237312886565",
+      "finite_kernel_error_upper": "0.004924125777476151132714398768",
+      "whole_operator_error_upper": "0.0196478295841616587575312037929",
+      "bands": [
+        {
+          "left_over_8": 0,
+          "right_over_8": 19,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 7
+        },
+        {
+          "left_over_8": 37,
+          "right_over_8": 60,
+          "Taylor_remainder_order": 11,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 76,
+          "right_over_8": 97,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        },
+        {
+          "left_over_8": 129,
+          "right_over_8": 149,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        },
+        {
+          "left_over_8": 219,
+          "right_over_8": 232,
+          "Taylor_remainder_order": 8,
+          "rank_upper": 8
+        },
+        {
+          "left_over_8": 276,
+          "right_over_8": 280,
+          "Taylor_remainder_order": 5,
+          "rank_upper": 5
+        },
+        {
+          "left_over_8": 360,
+          "right_over_8": 370,
+          "Taylor_remainder_order": 7,
+          "rank_upper": 7
+        }
+      ]
+    },
+    {
+      "epsilon": "1/64",
+      "eta": "1/256",
+      "N": 3,
+      "sigma": "1/100",
+      "R": "123/100",
+      "M_squared_upper": 167,
+      "positive_frequency_width": "13.75",
+      "number_of_positive_intervals": 7,
+      "rank_upper": 77,
+      "spatial_error_upper": "0.00148294606641596871026878066597",
+      "feature_HS_error_upper": "0.000000432570561912016337050712623739",
+      "finite_kernel_error_upper": "0.000398850114035578775003962723201",
+      "whole_operator_error_upper": "0.00188179618045154748527274338917",
+      "bands": [
+        {
+          "left_over_8": 0,
+          "right_over_8": 19,
+          "Taylor_remainder_order": 18,
+          "rank_upper": 9
+        },
+        {
+          "left_over_8": 37,
+          "right_over_8": 60,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 76,
+          "right_over_8": 97,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 129,
+          "right_over_8": 149,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 219,
+          "right_over_8": 232,
+          "Taylor_remainder_order": 11,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 276,
+          "right_over_8": 280,
+          "Taylor_remainder_order": 7,
+          "rank_upper": 7
+        },
+        {
+          "left_over_8": 360,
+          "right_over_8": 370,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        }
+      ]
+    },
+    {
+      "epsilon": "1/1024",
+      "eta": "1/4096",
+      "N": 4,
+      "sigma": "1/100",
+      "R": "136/100",
+      "M_squared_upper": 1000,
+      "positive_frequency_width": "16.75",
+      "number_of_positive_intervals": 10,
+      "rank_upper": 127,
+      "spatial_error_upper": "0.0000891477753789484811475863701202",
+      "feature_HS_error_upper": "0.0000000046814110983442668419844096681",
+      "finite_kernel_error_upper": "0.0000269970235620500411514881035207",
+      "whole_operator_error_upper": "0.000116144798940998522299074473641",
+      "bands": [
+        {
+          "left_over_8": 0,
+          "right_over_8": 16,
+          "Taylor_remainder_order": 20,
+          "rank_upper": 10
+        },
+        {
+          "left_over_8": 33,
+          "right_over_8": 53,
+          "Taylor_remainder_order": 16,
+          "rank_upper": 16
+        },
+        {
+          "left_over_8": 69,
+          "right_over_8": 92,
+          "Taylor_remainder_order": 17,
+          "rank_upper": 17
+        },
+        {
+          "left_over_8": 131,
+          "right_over_8": 151,
+          "Taylor_remainder_order": 16,
+          "rank_upper": 16
+        },
+        {
+          "left_over_8": 215,
+          "right_over_8": 230,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 281,
+          "right_over_8": 285,
+          "Taylor_remainder_order": 9,
+          "rank_upper": 9
+        },
+        {
+          "left_over_8": 357,
+          "right_over_8": 371,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 500,
+          "right_over_8": 511,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 726,
+          "right_over_8": 731,
+          "Taylor_remainder_order": 9,
+          "rank_upper": 9
+        },
+        {
+          "left_over_8": 867,
+          "right_over_8": 873,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        }
+      ]
+    },
+    {
+      "epsilon": "1/1048576",
+      "eta": "1/4194304",
+      "N": 7,
+      "sigma": "1/100",
+      "R": "156/100",
+      "M_squared_upper": 4000,
+      "positive_frequency_width": "57.0",
+      "number_of_positive_intervals": 60,
+      "rank_upper": 853,
+      "spatial_error_upper": "0.0000000776905579402676425695456195563",
+      "feature_HS_error_upper": "1.11363345072309819141406802309e-12",
+      "finite_kernel_error_upper": "0.0000000298482375937925477873603344941",
+      "whole_operator_error_upper": "0.00000010753879553406019035690595405",
+      "bands": [
+        {
+          "left_over_8": 0,
+          "right_over_8": 11,
+          "Taylor_remainder_order": 22,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 23,
+          "right_over_8": 37,
+          "Taylor_remainder_order": 18,
+          "rank_upper": 18
+        },
+        {
+          "left_over_8": 47,
+          "right_over_8": 62,
+          "Taylor_remainder_order": 19,
+          "rank_upper": 19
+        },
+        {
+          "left_over_8": 69,
+          "right_over_8": 87,
+          "Taylor_remainder_order": 20,
+          "rank_upper": 20
+        },
+        {
+          "left_over_8": 91,
+          "right_over_8": 103,
+          "Taylor_remainder_order": 17,
+          "rank_upper": 17
+        },
+        {
+          "left_over_8": 124,
+          "right_over_8": 137,
+          "Taylor_remainder_order": 18,
+          "rank_upper": 18
+        },
+        {
+          "left_over_8": 146,
+          "right_over_8": 159,
+          "Taylor_remainder_order": 18,
+          "rank_upper": 18
+        },
+        {
+          "left_over_8": 177,
+          "right_over_8": 189,
+          "Taylor_remainder_order": 17,
+          "rank_upper": 17
+        },
+        {
+          "left_over_8": 211,
+          "right_over_8": 231,
+          "Taylor_remainder_order": 21,
+          "rank_upper": 21
+        },
+        {
+          "left_over_8": 276,
+          "right_over_8": 290,
+          "Taylor_remainder_order": 18,
+          "rank_upper": 18
+        },
+        {
+          "left_over_8": 308,
+          "right_over_8": 316,
+          "Taylor_remainder_order": 15,
+          "rank_upper": 15
+        },
+        {
+          "left_over_8": 358,
+          "right_over_8": 372,
+          "Taylor_remainder_order": 18,
+          "rank_upper": 18
+        },
+        {
+          "left_over_8": 407,
+          "right_over_8": 414,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 434,
+          "right_over_8": 443,
+          "Taylor_remainder_order": 15,
+          "rank_upper": 15
+        },
+        {
+          "left_over_8": 462,
+          "right_over_8": 469,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 494,
+          "right_over_8": 507,
+          "Taylor_remainder_order": 18,
+          "rank_upper": 18
+        },
+        {
+          "left_over_8": 587,
+          "right_over_8": 598,
+          "Taylor_remainder_order": 17,
+          "rank_upper": 17
+        },
+        {
+          "left_over_8": 644,
+          "right_over_8": 654,
+          "Taylor_remainder_order": 16,
+          "rank_upper": 16
+        },
+        {
+          "left_over_8": 718,
+          "right_over_8": 729,
+          "Taylor_remainder_order": 17,
+          "rank_upper": 17
+        },
+        {
+          "left_over_8": 775,
+          "right_over_8": 780,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 869,
+          "right_over_8": 880,
+          "Taylor_remainder_order": 17,
+          "rank_upper": 17
+        },
+        {
+          "left_over_8": 904,
+          "right_over_8": 908,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 1002,
+          "right_over_8": 1011,
+          "Taylor_remainder_order": 15,
+          "rank_upper": 15
+        },
+        {
+          "left_over_8": 1057,
+          "right_over_8": 1060,
+          "Taylor_remainder_order": 11,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 1085,
+          "right_over_8": 1094,
+          "Taylor_remainder_order": 15,
+          "rank_upper": 15
+        },
+        {
+          "left_over_8": 1156,
+          "right_over_8": 1161,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 1185,
+          "right_over_8": 1191,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 1238,
+          "right_over_8": 1243,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 1314,
+          "right_over_8": 1316,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        },
+        {
+          "left_over_8": 1367,
+          "right_over_8": 1378,
+          "Taylor_remainder_order": 17,
+          "rank_upper": 17
+        },
+        {
+          "left_over_8": 1524,
+          "right_over_8": 1526,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        },
+        {
+          "left_over_8": 1593,
+          "right_over_8": 1603,
+          "Taylor_remainder_order": 16,
+          "rank_upper": 16
+        },
+        {
+          "left_over_8": 1652,
+          "right_over_8": 1656,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 1780,
+          "right_over_8": 1784,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 1880,
+          "right_over_8": 1883,
+          "Taylor_remainder_order": 11,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 1960,
+          "right_over_8": 1969,
+          "Taylor_remainder_order": 15,
+          "rank_upper": 15
+        },
+        {
+          "left_over_8": 2093,
+          "right_over_8": 2098,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 2242,
+          "right_over_8": 2252,
+          "Taylor_remainder_order": 16,
+          "rank_upper": 16
+        },
+        {
+          "left_over_8": 2684,
+          "right_over_8": 2690,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 2837,
+          "right_over_8": 2842,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 2966,
+          "right_over_8": 2975,
+          "Taylor_remainder_order": 15,
+          "rank_upper": 15
+        },
+        {
+          "left_over_8": 3120,
+          "right_over_8": 3124,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 3334,
+          "right_over_8": 3339,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 3561,
+          "right_over_8": 3564,
+          "Taylor_remainder_order": 11,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 3617,
+          "right_over_8": 3622,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 3842,
+          "right_over_8": 3849,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 4208,
+          "right_over_8": 4214,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 4341,
+          "right_over_8": 4345,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 4493,
+          "right_over_8": 4496,
+          "Taylor_remainder_order": 11,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 4931,
+          "right_over_8": 4938,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 5214,
+          "right_over_8": 5221,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 5807,
+          "right_over_8": 5812,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        },
+        {
+          "left_over_8": 6091,
+          "right_over_8": 6094,
+          "Taylor_remainder_order": 11,
+          "rank_upper": 11
+        },
+        {
+          "left_over_8": 6306,
+          "right_over_8": 6308,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        },
+        {
+          "left_over_8": 7178,
+          "right_over_8": 7185,
+          "Taylor_remainder_order": 14,
+          "rank_upper": 14
+        },
+        {
+          "left_over_8": 7463,
+          "right_over_8": 7467,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 9427,
+          "right_over_8": 9431,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 10150,
+          "right_over_8": 10154,
+          "Taylor_remainder_order": 12,
+          "rank_upper": 12
+        },
+        {
+          "left_over_8": 11026,
+          "right_over_8": 11028,
+          "Taylor_remainder_order": 10,
+          "rank_upper": 10
+        },
+        {
+          "left_over_8": 12397,
+          "right_over_8": 12402,
+          "Taylor_remainder_order": 13,
+          "rank_upper": 13
+        }
+      ]
+    }
+  ]
+}

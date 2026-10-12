@@ -1,0 +1,28 @@
+{
+  "status": "Candidate complete continuous residual ledger, pending independent review",
+  "rank": 373,
+  "trial_cosine_period": 40,
+  "source_FFT_period": 48,
+  "mesh": "1/128",
+  "S0_upper": "13.1662818120256902033682392978",
+  "S1_upper": "636.672527148433212317004888175",
+  "real_coefficient_sum_upper": "78.5976731349363173009240001282",
+  "final_symmetrization_error_upper": "1.21713362916959748827722123341e-16",
+  "synth_residual_upper": "0.00000012566565840561184047675692203",
+  "b_periodization_upper": "0.00000184847115828503092455504421999",
+  "Fourier_alias_upper": "9.8988648703642155724393342803e-47",
+  "Q2_periodization_upper": "4.42806791942502266841208715056e-23",
+  "input_periodization_upper": "9.58253186371016709613673415895e-28",
+  "finite_coefficient_error_upper": "0.0000000290146232489891137544941957593",
+  "total_true_residual_upper": "0.00000200315144011985833663085433418",
+  "cross_Gram_error_upper": "0.00000000128523170314264633632244783506",
+  "true_Gram_upper_ridge_needed": "0.0000250525617388227077958913790126",
+  "chosen_Gram_upper_ridge_rational": "1/10000",
+  "elapsed_seconds": 1.1044940948486328,
+  "diagnostics": {
+    "synth_grid_residual_Frobenius": 5.652389516437184e-09,
+    "grid_evaluation_error_Frobenius": 1.1634854138235747e-09,
+    "source_coefficient_error_Frobenius": 5.225822435046453e-10,
+    "input_coefficient_error_Frobenius": 1.5798951817773161e-12
+  }
+}

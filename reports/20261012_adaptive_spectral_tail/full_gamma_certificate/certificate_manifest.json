@@ -1,0 +1,51 @@
+{
+  "scope": "epsilon=1/8; actual full-Gamma and signed-prime resolvent certificate; original mean-zero gap 3/8",
+  "exact_input_sha256": {
+    "trial_cosine_dyadic.npz": "7ed3b46532e065712bd9e2f2ad689ebe5e94b2089d72997b1065f89bbdf87e29"
+  },
+  "attached_programs_and_results_sha256": {
+    "certify_continuous_residual_components.py": "f113960822cf08b1dc5a27f9b010450f6fbda3cd95b413f9200a71bff18c4ca1",
+    "certify_signed_finite_inertia.py": "4de2d0990e32eee368ca47caa37eac6930873f83e226b07be40e7ef78b673194",
+    "check_periodization_constants.py": "516f40c331782595c115f727c4714ec55289db48e566bac9bb87eb4162b4697d",
+    "check_theta_strip_constants.py": "4f5ae8b1705c51e072bdb8c131d8c2f4e03d5763fdf0a881911eddd3f09590c4",
+    "continuous_residual_component_result.json": "bf64bf3d85aafd1181a4a3aae6e3c171a14ef1caa90f65d609ba83bb8185e208",
+    "signed_finite_inertia_result.json": "dd39f09ded9a90c29dd881e4a6a2c4ea61b598d7cf23dc76922de60b2ef4e638",
+    "verified_elementary_tables.json": "ba787b0dd152f7733c55f41230751860eeca5f6b6012653b86165a165072bf7c",
+    "verified_elementary_tables_box24.json": "d946570e9e2d5151140299b177053b36f16c61876ecae63218a92fae062d1286",
+    "verified_prime_matrix_component.json": "4a9d5684f9a70dfa253bf2744a23f8f55d8e89530f3d61e2748a5705f5d123a9",
+    "verified_rho_ehat_rows_827.json": "66e7ff6b75be8f8c8a988f0214499ced0908de9e6cb94651913ed02f20a7de8f",
+    "verified_scalar_tables.py": "0ad857c49217adfeb49f7bccbbe6af5d76315e65d84b9d8a72551562e5aff055",
+    "verify_fft_elementary_tables.py": "041b6563836eebd5a874ee10a567609a1aedde8b9aa6a44cb08a3aa78e0e9d72",
+    "verify_fft_elementary_tables_box24.py": "902012b1fc83fb46228234237a4f5a68049fbde022e3ecf14669d67f80c75144",
+    "verify_prime_polynomial_matrix_v2.py": "20e941aa93b8ff0f9ca72532d0220efa7309e317860b8779b80a915de8eeb979"
+  },
+  "regenerated_binary_artifacts_sha256": {
+    "verified_rho_ehat_rows_827.npy": "eb44eacfcab028bddbf226838b6fed4f8cce1c3c310031b6f7092d804deefbbd",
+    "verified_elementary_tables.npz": "2c7860f6492436cbbc791c949403a5f3e66baec7a93db32cca00ebeed170ee7b",
+    "verified_elementary_tables_box24.npz": "532b78fb9f53ee1662299d814369962b873b15d0f929cf4123d222f1a8ac504c",
+    "verified_prime_matrix_midpoint.npy": "f7e8244f343859779a45ecc29c7f1f25d48398272301f60c0d90ee3aec5a6d95",
+    "verified_cross_gram_midpoint.npy": "26d3d177821bca8333f32e51d932ab45cda01774a9d7c5d9175ad76319c1b10e",
+    "rational_congruence_matrix.npy": "e14e43df035b031d2880ffde4031bdedec73175b4082b90550aabcd42fc4f4f8"
+  },
+  "reproduction": {
+    "environment": {
+      "Python": "3.12.14",
+      "NumPy": "2.3.5",
+      "SciPy": "1.17.0",
+      "mpmath": "1.3.0"
+    },
+    "variables": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "commands": [
+      "python verified_scalar_tables.py 827",
+      "python verify_fft_elementary_tables.py",
+      "python verify_fft_elementary_tables_box24.py",
+      "python verify_prime_polynomial_matrix_v2.py",
+      "python certify_continuous_residual_components.py",
+      "python certify_signed_finite_inertia.py"
+    ],
+    "note": "Execute in this directory. Binary tables and the rational congruence proposal are regenerated. Elapsed-time fields vary. Midpoint hashes record the independently reproduced backend; alternate backends must still pass all directed assertions."
+  }
+}

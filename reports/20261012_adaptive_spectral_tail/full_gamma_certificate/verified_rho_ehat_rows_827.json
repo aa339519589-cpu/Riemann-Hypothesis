@@ -1,0 +1,10 @@
+{
+  "status": "Verified scalar component only; no continuous residual or spectral certificate",
+  "rows": 828,
+  "columns": 373,
+  "iv_decimal_digits": 360,
+  "max_scalar_conversion_error": "9.46678200963369174259265649609e-17",
+  "max_interval_width": "1.68106359263802544757682130896e-239",
+  "uniform_scalar_error_rational": "1/17592186044416",
+  "elapsed_seconds": 39.89664888381958
+}

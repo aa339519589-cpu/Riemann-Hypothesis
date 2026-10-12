@@ -1,0 +1,11 @@
+{
+  "status": "Signed finite prime matrix component only; no Gram or spectral certificate",
+  "rank": 373,
+  "quadrature": "Clenshaw-Curtis 2048, exact for all product polynomials",
+  "scalar_iv_digits": 500,
+  "basis_value_conversion_error_max": "1.7695132982254725386199898168e-15",
+  "weight_error_bound": 3.553363810600671e-15,
+  "Loewner_ridge_rational": "1/100000",
+  "computed_operator_error_upper_diagnostic": "0.0000000241754190736951046653417194499",
+  "elapsed_seconds": 217.10865235328674
+}
