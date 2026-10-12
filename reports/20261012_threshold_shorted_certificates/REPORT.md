@@ -265,3 +265,7 @@ The rank-k operator (12) is therefore not advertised as a final RH proof or as s
 - **NO NEW UNCONDITIONAL RH THEOREM PROVED.** The final acceptance criterion, Re(ρ)=1/2 for every nontrivial ζ zero, is not met.
 
 Provenance: source identity and genuine null modes from rounds/05/REPORT-pages-01-05.txt and rounds/05/REPORT-pages-06-10.txt; comparator and certified 1/4,3/8 finite-depth results from reports/20261012_adaptive_spectral_tail/CERTIFIED_GAP.md; uniform no-go from reports/20261012_diagonal_prime_threshold_no_go/REPORT.md. This is an analytic proof with an explicit domain-level audit; it has **not** been independently refereed, numerically certified for new depths, or checked by Lean.
+
+## Countable selected-kernel correction
+
+[COUNTABLE_CORRECTION.md](COUNTABLE_CORRECTION.md) sharpens the canonical full-prime tail allowance to obtain D>=delta_N/4. It constructs a bounded exact shorting over the specified infinite true-theta Riesz span, and gives a coupled finite-mode/prime-cutoff error <=16delta_N. The finite corrections converge strongly at fixed N; their norm error remains at least delta_N/4. Neither the countable correction nor this error bound establishes the remaining all-depth negative-index condition. The independent review is linked there.
