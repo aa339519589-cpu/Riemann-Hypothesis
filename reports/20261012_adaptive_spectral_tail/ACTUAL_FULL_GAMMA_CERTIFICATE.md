@@ -630,3 +630,7 @@ The two exact rational constant checks are `full_gamma_certificate/check_theta_s
 ## Explicit omitted-sample and remote-image allowance
 
 [FULL_GAMMA_TINY_TAIL.md](FULL_GAMMA_TINY_TAIL.md) bounds the computed periodized-input cross lattice beyond |x|=4, the input-period images beyond |x|=20, and the Q² C_N remote-output images beyond |x|=24. Their combined norm/Frobenius error is below 2^(-347)<10^(-100); the unweighted eY Gaussian tail remains separately paid by the existing program. Its independent review and exact rational constant checker are linked there. This addition changes no numerical source, data, error threshold or spectral depth.
+
+### Proof correction recorded on 2026-10-12
+
+The original proof had charged generic tiny remainders without explicitly bounding the omitted computed cross lattice, the remote input-period difference, and the remote Q² C_N images. These are required proof components. The user's correction in [commit e4326b0a](https://github.com/aa339519589-cpu/Riemann-Hypothesis/commit/e4326b0a16552c2de3024754d25721cea8ffbddf), [FULL_GAMMA_TINY_TAIL.md](FULL_GAMMA_TINY_TAIL.md), supplies all three bounds for this exact 373-column implementation. The [independent supplemental review](REFEREE_FULL_GAMMA_TINY_TAIL_INDEPENDENT.md) checks them against its actual periodic input and dyadic trial. The existing allowance suffices; no code, data, matrix, threshold or 3/8 conclusion changes. Authorship of that correction remains the user's. The different 127-column implementation has its own [explicit bounds](MULTIBAND_TINY_TAIL.md).

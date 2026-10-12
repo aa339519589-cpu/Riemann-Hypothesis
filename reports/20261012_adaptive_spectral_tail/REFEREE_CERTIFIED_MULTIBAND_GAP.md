@@ -91,3 +91,7 @@ The following four regenerated binary outputs match the author's artifacts exact
 - congruence basis: 0eb53a8c88824db5ee24e6b7b730a9120203f25fdf814e7dd8bb98f61ad03f40.
 
 No exploratory trial-proposal script is a proof dependency. The approved package uses the new 127-dimensional actual Gram, not a transferred sign from the older 373-dimensional certificate. The all-epsilon and critical-half-gap questions remain open.
+
+## Supplemental explicit-tail review, 2026-10-12
+
+Read this certificate together with [MULTIBAND_TINY_TAIL.md](MULTIBAND_TINY_TAIL.md) and its [independent supplemental review](REFEREE_MULTIBAND_TINY_TAIL.md). They expand the fixed constants for the omitted samples and images that the original proof had identified but not bounded explicitly term by term. The actual 127-column input and sharp-band operator differ from the user's [373-column correction](FULL_GAMMA_TINY_TAIL.md), so the latter is not used as a replacement proof. The independently checked bounds fit the existing 10⁻⁵⁰⁰ and 10⁻¹⁰⁰ allowances. No original numerical computation or sign threshold changes, and the conclusion remains the single-epsilon original gap 511/1024.
