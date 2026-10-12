@@ -1,0 +1,74 @@
+{
+  "status": "PASS_EXACT_CONSTANTS_AND_NUMERICAL_SANITY",
+  "rigorous_scope": "only exact SymPy constant simplifications",
+  "numeric_scope": "truncated theta and von Mangoldt sums; not a proof",
+  "exact_norm_coefficient": "3/128",
+  "exact_borderline_coefficient": "40*sqrt(2)*zeta(5)",
+  "exact_limit_mellin_pole_residue": "80*sqrt(2)*zeta(5)",
+  "rows": [
+    {
+      "x": 3,
+      "s": -3,
+      "scaled_rate": 0.5462418563363438,
+      "xi_1_plus_s": 0.5739398940467555,
+      "ratio_to_limit": 0.9517405254492463
+    },
+    {
+      "x": 3,
+      "s": 0,
+      "scaled_rate": 0.4762193622272289,
+      "xi_1_plus_s": 0.5,
+      "ratio_to_limit": 0.9524387244544578
+    },
+    {
+      "x": 3,
+      "s": 1,
+      "scaled_rate": 0.4981867662664063,
+      "xi_1_plus_s": 0.5235987755982988,
+      "ratio_to_limit": 0.9514666372111832
+    },
+    {
+      "x": 4,
+      "s": -3,
+      "scaled_rate": 0.5650837371516848,
+      "xi_1_plus_s": 0.5739398940467555,
+      "ratio_to_limit": 0.9845695394466702
+    },
+    {
+      "x": 4,
+      "s": 0,
+      "scaled_rate": 0.4910034304413059,
+      "xi_1_plus_s": 0.5,
+      "ratio_to_limit": 0.9820068608826118
+    },
+    {
+      "x": 4,
+      "s": 1,
+      "scaled_rate": 0.5143827934849496,
+      "xi_1_plus_s": 0.5235987755982988,
+      "ratio_to_limit": 0.9823987706945678
+    },
+    {
+      "x": 5,
+      "s": -3,
+      "scaled_rate": 0.5702392742256868,
+      "xi_1_plus_s": 0.5739398940467555,
+      "ratio_to_limit": 0.993552251970191
+    },
+    {
+      "x": 5,
+      "s": 0,
+      "scaled_rate": 0.4966534001325021,
+      "xi_1_plus_s": 0.5,
+      "ratio_to_limit": 0.9933068002650042
+    },
+    {
+      "x": 5,
+      "s": 1,
+      "scaled_rate": 0.5202936144224833,
+      "xi_1_plus_s": 0.5235987755982988,
+      "ratio_to_limit": 0.9936876071338425
+    }
+  ],
+  "rh_proved": false
+}
