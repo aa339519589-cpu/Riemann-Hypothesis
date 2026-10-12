@@ -1,0 +1,44 @@
+{
+  "theorem": "Original even form gap 49999/100000; H>=-1/100000 on its known-ground complement",
+  "external_complete_height": {
+    "value": "3000000000000",
+    "source": "https://arxiv.org/pdf/2004.09765",
+    "location": "Theorem 1",
+    "published_verified_height": "3000175332800"
+  },
+  "dependencies": {
+    "original_domain_and_graph_core": "https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/138d806005cf50c030a5797bb051ee107c351e1c/reports/20261012_adaptive_spectral_tail/REPORT.md",
+    "actual_band_regularity": "https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/138d806005cf50c030a5797bb051ee107c351e1c/reports/20261012_adaptive_spectral_tail/ACTUAL_NEGATIVE_BAND_COVERAGE.md",
+    "explicit_formula_normalization": "https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/a5cc93ac213383d36980fe258fe251a3b67370cc/reports/20261012_threshold_shorted_certificates/FIXED_GAMMA_FULL_KERNEL_BARRIER.md"
+  },
+  "reproduction": {
+    "command": "python certify_second_derivative_height_test.py",
+    "python_verified": "3.12.14",
+    "mpmath": "1.3.0",
+    "retained_interval_digits": 90,
+    "independent_precision_check_digits": 150,
+    "exact_margin": "C^2 W2 / kappa < 23/80"
+  },
+  "files": [
+    {
+      "path": "FINITE_HEIGHT_GAP.md",
+      "sha256": "52d9ac454645a61f01a5054ea798a38b12fd6cd341fcfe715deee68a1da04d8d",
+      "bytes": 23974
+    },
+    {
+      "path": "REFEREE_FINITE_HEIGHT_GAP.md",
+      "sha256": "1918a2baf88682517a7d2e3f903682d518b5ffc89a2e9540850f4da79277d986",
+      "bytes": 15301
+    },
+    {
+      "path": "certify_second_derivative_height_test.py",
+      "sha256": "dd0aee2951b0ee177444f274d3adb8d5b5126a086d71362eb9b8653ec3d4f4e2",
+      "bytes": 4034
+    },
+    {
+      "path": "second_derivative_height_test_result.json",
+      "sha256": "592b8f8b205d3991fca280a7b5bbb463a531b208d6b8dabe1167a4c2f2c1cfd8",
+      "bytes": 2644
+    }
+  ]
+}

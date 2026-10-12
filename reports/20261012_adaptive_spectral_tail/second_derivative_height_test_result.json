@@ -1,0 +1,46 @@
+{
+  "status": "Directed-interval scalar assertions passed; mathematical chain requires independent review",
+  "mpmath_version": "1.3.0",
+  "interval_decimal_precision": 90,
+  "complete_verified_zero_height": "3000000000000",
+  "external_height_source": "https://arxiv.org/pdf/2004.09765, Theorem 1",
+  "paired_prime_moment_constant": "800",
+  "theta_Fourier_L1_constant": "14",
+  "weighted_derivative_L2_constant": "7",
+  "prime_tail_upper": "0.0000015015685703161804629644254573415999300852166539961",
+  "finite_prime_norm_upper": "9.7536819755564870201741930341892572541383650537133",
+  "quadratic_commutator_constant_upper": "180751276.24948516666004607354080117101228201756301",
+  "low_frequency_constant_upper": "5284193201.1148396853670313468160360198236011493574",
+  "complete_zero_tail_weight_upper": "1.1481665871774811351286706578357819073261843656179E-35",
+  "tests": [
+    {
+      "kappa": "1/65536",
+      "N": 6,
+      "beta": "1/32",
+      "a_lower": "0.000013757220492183819537035574542658400069914783346003",
+      "K_second_derivative_integer_upper": "43387851099939",
+      "frequency_cutoff_upper": "17217.506682761005343954990901096429521637753836161",
+      "second_derivative_bound_branch_1_upper": "6292346535928.6476041391955118127458585530295878746",
+      "second_derivative_bound_branch_2_upper": "43387851099937.198513527348911446545359136109167553",
+      "complex_evaluation_numerator_upper": "303715326568745.33993373696021310863535285210401077",
+      "complete_zero_tail_error_upper": "0.0000010591033003343260539433699156857015627393292154539",
+      "error_over_kappa_upper": "0.069409393890710392271232690794378137615684679463981",
+      "strict_scalar_test_passed": true
+    },
+    {
+      "kappa": "1/100000",
+      "N": 6,
+      "beta": "1/32",
+      "a_lower": "0.0000084984314296838195370355745426584000699147833460039",
+      "K_second_derivative_integer_upper": "70775112944571",
+      "frequency_cutoff_upper": "17217.506682761005343954990901096429521637753836161",
+      "second_derivative_bound_branch_1_upper": "8005871111250.1519692854140710298475752200492966609",
+      "second_derivative_bound_branch_2_upper": "70775112944569.901027856649237433746298354228002826",
+      "complex_evaluation_numerator_upper": "495426261728718.47612814413215293367796437184627719",
+      "complete_zero_tail_error_upper": "0.0000028181425192351749712769572869651422842088963186779",
+      "error_over_kappa_upper": "0.28181425192351749712769572869651422842088963186779",
+      "strict_scalar_test_passed": true
+    }
+  ],
+  "script_sha256": "dd0aee2951b0ee177444f274d3adb8d5b5126a086d71362eb9b8653ec3d4f4e2"
+}
