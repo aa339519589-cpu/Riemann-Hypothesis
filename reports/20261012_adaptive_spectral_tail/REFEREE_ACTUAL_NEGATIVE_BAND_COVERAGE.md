@@ -138,3 +138,13 @@ The complete direct corollary was independently reviewed separately from its aut
 6. The finite-rank approximants TQ_kappa converge in operator norm with error at most kappa. This proves compactness of the actual negative part, rather than assuming it. The positive layer-cake identity and epsilon<a-1/2 then give the displayed finite trace of T^a. The quasi-Schatten interpretation for 1/2<a<1 and the absence of an endpoint S_(1/2) claim are accurate.
 
 No mathematical correction is required. This is a dimension/summability theorem for possible negative spectrum. It neither proves that the negative part is zero nor supplies the missing signed central matrix sign, and it changes no certified spectral-gap value.
+
+# Review of Appendix B: scope relative to the earlier adaptive theorem
+
+The fixed public [POLYNOMIAL_ACCURACY_TAIL.md, Sections 1, 5 and 7](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/bf5ee119d3b6687d34cd708f1a755aea9efd9679/reports/20261012_adaptive_spectral_tail/POLYNOMIAL_ACCURACY_TAIL.md) gives the stated positive base with the original form domain, the form lower comparison, and a finite-rank signed approximation with every prescribed polynomial accuracy. Taking epsilon=kappa/2 and eta=epsilon/4 satisfies its hypotheses and gives rank kappa^(-o(1)).
+
+The direction of the form comparison is essential and correct: a subspace on which H+epsilon is strictly negative is also strictly negative for its lower comparison. The map A_epsilon^(1/2) is defined and injective on that subspace because it lies in the common form domain and A_epsilon>=epsilon/2. A subspace of dimension greater than rank F_epsilon must then intersect ker F_epsilon after this map. There I-K_epsilon is positive by the norm error eta<1, a contradiction. This argument needs no lower bound on a Birman–Schwinger eigenvalue margin and no computed finite-matrix sign.
+
+It follows that each true Q_kappa is finite rank with the subpower upper count (B3). The exact pole correction removes only the known reducing ground; therefore T=(-Acrit)_+ has these positive spectral projections. The norm convergence TQ_kappa->T and the layer-cake integral with delta<a prove T in every S_a, a>0. Possible negative eigenvalues are not excluded.
+
+Appendix A is a correct weaker direct Sobolev corollary. Appendix B makes clear that the earlier adaptive theorem already implies the stronger count and summability. This is a scope clarification, not a correction to the validity of Parts I–III or Appendix A, and it supplies no new zero exclusion.

@@ -19,7 +19,7 @@ The fixed-error version also yields an actual spectral counting bound and summab
     dim Ran Q_kappa <= kappa^(-1/2-o(1)),
     (-Acrit)_+ belongs to S_a for every a>1/2.
 
-Here Q_kappa has its known ground removed, Acrit=H+(1/2)|e0><e0|, and S_a has its usual quasi-norm interpretation for a<1. These statements permit nonzero negative spectrum; no endpoint S_(1/2) claim is made.
+Here Q_kappa has its known ground removed, Acrit=H+(1/2)|e0><e0|, and S_a has its usual quasi-norm interpretation for a<1. These are the direct Sobolev-based consequences of Appendix A. They are not the strongest counting or summability bounds already implied by the earlier adaptive theorem: Appendix B explains its stronger subpower count and membership in every S_a, a>0. Both arguments permit nonzero negative spectrum.
 
 ## Original realization and published inputs
 
@@ -496,6 +496,8 @@ The raw central sufficient test (10), or its stronger signed Schur variant, appl
 
 # Appendix A. Actual negative-band counting and Schatten summability
 
+This is a direct consequence of the Sobolev and original-form coverage proof above. The stronger count already implied by the earlier adaptive theorem is recorded in Appendix B; the following correct weaker bound is retained with that scope.
+
 ## 1. An explicit count using fixed-error linear interpolation
 
 Use the original even Hilbert space, H=B-V, H>=-1/2, the normalized known ground e0 with He0=-e0/2, and Acrit=H+(1/2)|e0><e0|. For 0<kappa<=1/2 let Q_kappa be the spectral projection 1_[-1/2,-kappa](H) with the known ground removed. All statements are valid if Q_kappa=0.
@@ -557,3 +559,34 @@ Hence T belongs to the Schatten class S_a for every a>1/2 (with its usual quasi-
 
 These estimates permit nonzero negative spectrum and do not establish any signed central positivity. In particular they do not change the previously certified gap or prove RH.
 
+
+# Appendix B. Comparison with the earlier adaptive counting bound
+
+The earlier [POLYNOMIAL_ACCURACY_TAIL.md, Sections 1, 5 and 7](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/bf5ee119d3b6687d34cd708f1a755aea9efd9679/reports/20261012_adaptive_spectral_tail/POLYNOMIAL_ACCURACY_TAIL.md) already implies a stronger spectral counting and summability conclusion than Appendix A. The short argument below records that logical consequence of the previously proved theorem. It is not a new spectral-sign certificate. Parts I–III above separately give regularity and a concrete original-form polynomial coverage criterion for actual negative-band vectors.
+
+Fix 0<kappa<=1/2, put epsilon=kappa/2, and apply that theorem with fixed sigma in (0,1) and accuracy eta=epsilon/4. Its positive base A_epsilon has the original form domain and satisfies A_epsilon>=epsilon/2. It gives a bounded selfadjoint K_epsilon and a finite-rank map F_epsilon such that, in the original closed-form sense,
+
+    H+epsilon I >= A_epsilon^(1/2)(I-K_epsilon)A_epsilon^(1/2),
+    ||K_epsilon-F_epsilon* C_N(D) F_epsilon|| <= eta<1,
+    rank F_epsilon <= exp[O(sqrt(log(1/epsilon))loglog(1/epsilon))]
+                   =epsilon^(-o(1)).                    (B1)
+
+The finite signed multiplier C_N and the complete omitted-prime norm tail are exactly those of the cited theorem. No sign of its finite Gram matrix is needed for this counting argument.
+
+On ker F_epsilon, the second inequality gives
+
+    <w,(I-K_epsilon)w> >=(1-eta)||w||^2>0, w!=0.         (B2)
+
+Let U be any finite-dimensional subspace of the actual ground-orthogonal band Ran Q_kappa. Every vector of U belongs to the original operator domain and hence to the form domain of A_epsilon. For nonzero v in U, (H+epsilon)[v]<=-(kappa/2)||v||^2<0. The lower comparison in (B1) is therefore strictly negative on U as well. Since A_epsilon^(1/2) is injective, its image of U has the same dimension. If dim U>rank F_epsilon, that image intersects ker F_epsilon nontrivially, contradicting (B2). This proves, without assuming finite rank in advance,
+
+    dim Ran Q_kappa <= rank F_epsilon =kappa^(-o(1)).   (B3)
+
+Equivalently, for every delta>0 there is a finite C_delta such that dim Ran Q_kappa<=C_delta kappa^(-delta) on 0<kappa<=1/2. The small-depth assertion follows from (B1); the remaining compact depth interval follows by monotonicity of Q_kappa.
+
+For the actual pole-corrected negative part T=(-Acrit)_+, the same finite-rank approximation and layer-cake argument as in Appendix A now give
+
+    T is compact, and T belongs to S_a for every a>0.   (B4)
+
+Indeed 1_[kappa,1/2](T)=Q_kappa and ||T-TQ_kappa||<=kappa. For any a>0 choose 0<delta<a in (B3), and integrate a t^(a-1)rank 1_(t,infinity)(T) over 0<t<=1/2. The integral is finite. For a<1 the usual Schatten quasi-norm convention applies.
+
+Thus the weaker S_a statement with a>1/2 in Appendix A remains valid but is not an optimal summary of the previously available counting information. Neither (B3) nor (B4) proves T=0, the sign of the original central matrix, a stronger certified gap, or RH.
