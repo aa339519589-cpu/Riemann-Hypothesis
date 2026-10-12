@@ -1,0 +1,45 @@
+# Independent review: complete-Gamma, complete-edge, whole-kernel shorting obstruction
+
+The complete [mathematical proof](COMPLETE_GAMMA_FULL_KERNEL_EDGE_BARRIER.md) has been independently reviewed. Its source-current approximation, true weighted norms, dimension count, original domains, complex-coefficient identities and final comparison scope are valid. The conclusion is infinite negative index of the specified lower comparison after exact true-kernel edge shorting. Its witnesses have strictly positive original H energy; no negative H direction or zero exclusion follows.
+
+## 1. Original forms and exact division witnesses
+
+E is the bounded positive complete prime-edge operator. For any complex-linear Z contained in the actual ker H, closing E^(1/2)Z in its Hilbert image gives an orthogonal projection Pi_Z. Consequently r_Z[v]=||(I-Pi_Z)E^(1/2)v||^2 is a bounded positive quadratic form. Subtracting it from H produces a well-defined closed semibounded form on Q(B). No inverse of a singular or noncoercive kernel Gram is required. The correction is precisely E^(1/2)Pi_Z E^(1/2), so the comparison is H-E plus the exact shorting correction, without a scalar penalty.
+
+The fixed public [division-source proof, Section 3 and Appendices C–D](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/a5cc93ac213383d36980fe258fe251a3b67370cc/reports/20261012_threshold_shorted_certificates/FIXED_GAMMA_FULL_KERNEL_BARRIER.md) establishes actual w_gamma in D(H), the exact value H w_gamma=2m cos(gamma x), all selected-zero interpolation values, and ground orthogonality. The division construction assumes simplicity only of the chosen real zero. The original weighted domain is proved there using the ODE and complete theta tails, rather than assigned from a formal entire interpolant. Hence the original H Gram of any selected finite collection is exactly 2I. For every element of the entire unknown ker H, selfadjointness gives the needed selected evaluations equal to zero. Completeness of the known theta jets and simplicity of unselected zeros are not assumed.
+
+## 2. The two-prime current input and split lift
+
+The previously proved complete pure-edge evaluation theorem supplies the actual real q_gamma, circle solution j_gamma, and prime-2/prime-3 currents. Its Fourier bound is |j_k|<=(B_gamma/2)exp(-|k|/4), with B_gamma=18(exp(|gamma|/6)+1), and its real source envelope Q is independent of gamma. The two primes are used only on the dual side; the original full edge form remains on the primal right-hand side.
+
+The new split lift S is essential and legitimate. On x>=0 the forward arguments move toward positive infinity; on x<0 the backward arguments move toward negative infinity. For the zero-periodized residual r both choices agree with its genuine current, so J_gamma=(S q_gamma,0)+A j_gamma exactly. No analyticity across the artificial branch switch is assumed.
+
+For arbitrary periodic j, q3 is supported on the two intervals [0,d) and [a,a+d). The split lift S q3 vanishes for x<0 and for x>=a. Every remaining one-sided lattice sum meets each of those length-d intervals at most once. Thus its pointwise size is at most 2||j||_infinity. Its support length is below two, both weighted endpoints lie inside [0,2], and alpha2>1/4. Its squared weighted cost is at most 32||j||_infinity^2/mu(2)^2. The prime-3 component contributes at most 2||j||_infinity^2/mu(2)^2. Therefore sqrt(34)<6 proves the actual operator bound (12). This compact-support argument works for every retained Fourier feature separately.
+
+For S q_gamma, the positive tail is at most twice Q(x+d), and the negative tail at most twice Q(-x). Combining these with the true lower bounds for m at BOTH weighted endpoints gives respectively coefficients below 2800 and 1400, and exponents at least 9/2 and 9/8 as stated in (13). Integrating after t=exp(|x|) gives the coarser bound 5000exp(-exp(2R)) for R>=3. The exponentially large complex-strip B_gamma is not used in this spatial-tail estimate. Keeping the large low circle-mode coefficients as exact features is what prevents an illicit multiplication of their size by the spatial truncation error.
+
+## 3. A common actual weighted approximation space
+
+For K=ceil(4G), summing the two Fourier tails gives at most 4B_gamma exp(-K/4)<=144exp(-5G/6). Applying A yields the fourth term of delta(G), including its exact coefficient 864/mu(2). Those retained features have complex dimension at most 2K, independently of their amplitudes.
+
+For M=ceil(8G Y0), the REAL Taylor remainder for cos on |t|<=G Y0 is bounded by (eG Y0/(M+1))^(M+1)<=2^(-(M+1)). The ground scalar is retained exactly. Taylor expansion is performed in the source variable before applying S_(Y0); the lift need not be analytic across zero. Each polynomial-source feature is a genuine weighted-current vector because it is restricted to the compact interval [-R,R]. The common dimension is at most M+2+2K.
+
+On this interval alpha2 m(x)m(x+d)>=mu(R+d)^2/4. With interval length 2R the resulting sup-to-weighted-L2 factor is exactly D_R=sqrt(8R)/mu(R+d). Omitted source arguments are all beyond Y0 on one half-axis, and the monotone geometric Q bound gives 2Q(Y0). The retained count is at most A_Y=2Y0/d+2. These facts give the second and third terms of delta(G), respectively 2D_R Q(Y0) and 2D_R A_Y 2^(-(M+1)). The first term is the square root of the real-tail bound. All four errors are paid in the ACTUAL current Hilbert norm, not an unweighted substitute.
+
+Writing L=log G, exp(2R)=exp(6)L^2 and exp(2Y0)=exp(12)L^2. The positive reciprocal-weight exponent in D_R is (pi/2)4exp(6)L^2; it is strictly dominated by the negative exponent (pi/2)exp(12)L^2 in Q(Y0). The polynomial-source Taylor error has a negative exponent of order G log log G, dominating the O(L^2) reciprocal-weight cost. The other errors are exp(-cL^2) and exp(-cG). Thus delta(G)=o(G^-p) for every fixed p, while the common feature rank is O(G log log G). There is no interchange involving an uncontrolled G-dependent column coefficient.
+
+## 4. Simple-zero count, all-column error and complex coefficient space
+
+The quantitative simple-zero input is J. B. Conrey, “More than two fifths of the zeros of the Riemann zeta function are on the critical line,” J. reine angew. Math. 399 (1989), 1--26, https://aimath.org/~kaur/publications/24.pdf . Page 3 equation (8) gives the total zero asymptotic; equation (11) defines the simple critical-line count; page 4 Theorem 1 gives lower asymptotic proportion at least 0.401 for that simple count. These imply cGlog G<=N(G)<=CGlog G for all sufficiently large G. No use is made of a count with multiplicity in place of distinct simple zeros.
+
+Both column maps are complex-linear on C^N. The approximating map has rank at most D(G), so its kernel C_G has dimension at least N-D(G). On this kernel, the per-column error delta(G) gives operator error at most sqrt(N)delta(G), by l1<=sqrt(N)l2. The manuscript explicitly retains this indispensable column-number factor. Consequently the actual current Gram on C_G is at most epsilon_G I, where epsilon_G=N delta(G)^2 tends to zero. It is a restriction to a coefficient subspace, not smallness of every diagonal entry or inversion of the full dual Gram.
+
+For complex c, test w_c-z against the current sum with coefficients conjugate(c_j). The evaluation equals sum |c_j|^2. All original current columns are real, so that test current is the conjugate of T_G c and has the same weighted norm. This directly proves the Cauchy--Schwarz estimate for arbitrary complex c and arbitrary complex-linear Z; no conjugation invariance of Z is needed. This argument handles the complex form directly.
+
+## 5. Transfer and precise obstruction
+
+Every w_c is an original operator-domain, ground-perpendicular vector, with H[w_c]=2||c||^2 and selected evaluations c_j. Every z in Z has both zero ground pairing and zero selected evaluations. The complete-edge Cauchy--Schwarz inequality therefore gives r_Z[w_c]>=||c||^2/epsilon_G simultaneously for all Z contained in ker H. Once epsilon_G<1/4, L_Z is strictly negative on the entire complex subspace of dimension at least N-D(G). The coefficient map is injective by interpolation. No estimate for Xi'(gamma) or the original norm of w_gamma is needed for each finite-dimensional negative-subspace assertion.
+
+As the dimension tends to infinity, the specified comparison has infinite negative index even on the ground-perpendicular domain. Its witnesses have strictly POSITIVE original H energy. Thus the result does not create a negative H direction, disprove RH, exclude a zero, or establish a fixed positive-depth failure. It genuinely removes the earlier finite-Gamma restriction from this specific whole-kernel edge-shorting obstruction.
+
+The added finite-rank corollary is a valid dimension argument. If a bounded finite-rank selfadjoint F makes this comparison nonnegative on the height-G division-source span, its rank must be at least N-D(G); otherwise ker F meets the constructed negative subspace nontrivially. This does not constrain other comparisons or methods that retain the missing edge energy in other ways.
