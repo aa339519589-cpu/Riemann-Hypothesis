@@ -26,6 +26,8 @@ Part XXIX 在原有限阶 Q 条件下，证明真实 shifted-inverse Gauss 列 b
 
 Part XXX 对固定有限阶 twist、固定 ray 的原 canonical cube-free cubic 家族，证明无 Q 的原 sharp inverse 零密度 R(M,T;5/6)≪M^(238/375−κ+ε)(1+T)^C，κ>0 只证明存在；正文包含真实 L 八次矩、pair-row 六次矩、原零点功能方程双尾和严格 Fejér 截断误差。共同常数的两侧 β 窗口使该输入可合法用于连续物理 bins；在既有有限阶 Q 条件下，同一完整 cubic 型因而获得上述固定 c>0 的严格改善。该改善没有数值化 c，也不控制完整探针。
 
+Part XXXI 将同一原 sharp inverse 的无 Q 零密度给出显式界 R(M,T;5/6)≪M^(79/125+ε)(1+T)^C，并证明新尺度下共同常数的两侧阈值窗口。关键是保留原低高度零点行集，对每个有限 Fejér mode 分别选择局部高零点的好/坏子集，使用精确局部高度代价，保留真实 t^(−1) 核尾与 cutoff 误差。该新解析界不自动赋予新的数值物理指数；完整 cubic 仍仅保留 Part XXX C 的 −271/32256−c（c>0 未数值化）。
+
 上述完整类型估计均未覆盖 principal/unit 核及其余混合 sextic good-core，也未证明整个符号配对的目标界或 RH。
 
 Parts I–III 保留 n=1、完整平方层及尺度一致性的已证算术接口；Part IV 给出独立解析双列引理；Parts V–VI 完整证明真实公共系数还原、尾估计及精确去卷积传递。Part VII 给出依赖用户固定输入 Q 的真实 Möbius 列均值；Part VIII 给出真实 selected Euler 乘子矩。这些解析引理本身不直接给完整物理指数；Parts X–XI 将它们与真实双向高矩、全部物理除数和补偿结合，证明上述 Q 条件的 quadratic 强化。各 Part 的公式编号独立。首个 Poisson、Gauss 局部身份与原探针归用户报告及固定源稿；外部解析大筛来源分别在相关 Part 中注明。
@@ -11164,3 +11166,553 @@ entire previously defined cubic sector, including all physical n,
 all actual slots, all complete tails, and both marker/flat variants.
 
 The companion `check_uniform_window_ledger.py` uses exact rational and symbolic arithmetic (Python with SymPy) to check the displayed exponent identities, derivative enclosure, strict tail ranges and nested density decrement. It does not verify the analytic proof.
+
+
+# Part XXXI. Explicit mode-local sharp cubic density and its common threshold window
+
+For the same canonical cube-free family and fixed finite-order/ray data, this Part proves the unconditional exponent 79/125 for the original sharp inverse and preserves the selected original low-height zeros. A gives the complete center-height input; B uses exact, mode-dependent row projections; C supplies the necessary common two-sided threshold window. The original inverse, nonunit masks, complete polynomial kernel tail and exact Fejer error are retained.
+
+The unconditional moments and exact zero-conditioned transform are those in Part XXX A, published in [the preceding fixed report](https://github.com/aa339519589-cpu/Riemann-Hypothesis/blob/3f14718071ddccc1e637bd06f088f9a1f4bb97bb/reports/20261011_qrh_selection_bridge/QUADRATIC_DUAL_N1.md). All external source hypotheses and the original canonical indexing remain unchanged. No Q input is used in A–C. Reusing the established physical transfer retains its finite-order Q condition and yields only the already stated existential form −271/32256−c; no comparison of unknown physical constants or new numerical sector exponent is asserted.
+
+
+## A. Actual center-height estimates with explicit height costs
+
+### A center-height bound for the genuine cubic detector
+
+Status: independently reviewed and approved. This note supplies a height-local input, not a new complete sharp-detector improvement.
+
+#### 1. Scope and statement
+
+Use exactly the canonical cube-free Eisenstein family, fixed finite-order twist, fixed bad ideals and ray data, and bounded primitive multiplicity of the reviewed Part XXX A. Remove the principal rows. Let R_loc(M,t0;b) count rows with a zero rho satisfying Re rho >= b and |Im rho-t0| <= 1. Put H=2+|t0| and a=1-b. The height center is common; the selected zeros need not coincide.
+
+Let
+
+ I=[1/6-1/1000,1/6+1/1000],
+ D(a)=14a(23-36a)/[3(30-49a-36a^2)],
+ p(a)=12a(5-12a)/(30-49a-36a^2).
+
+For a in I and 2 <= H <= M^(1/50), the bound is
+
+ R_loc(M,t0;1-a) <<_epsilon (MH)^epsilon M^D(a) H^p(a).       (1)
+
+Constants are uniform on this closed a-interval and depend only on the fixed family data and epsilon. In particular
+
+ R_loc(M,t0;5/6) << (MH)^epsilon M^(238/375) H^(36/125).      (2)
+
+Small bounded M can be absorbed. This is unconditional. The symbol H is a height parameter, not a new modulus or a replacement for the canonical row index.
+
+#### 2. The actual local eighth moment
+
+The precise input is
+
+ sum_chi sup_(|v-t0|<=2) |L(1/2+iv,chi)|^8
+       <<_epsilon (MH)^epsilon M^2 H^4.                  (3)
+
+Here is the height accounting, rather than an unspecified polynomial in H. For a primitive row of conductor q <= C M, the analytic conductor of its degree-two L-function at height t0 is O(q H^2). An approximate functional equation for L(s,chi)^4 therefore has two columns of length O(q^2 H^4), up to small powers and ordinary rapidly decreasing tails. Its root number is a unit row scalar. After normalization by this length, Stirling's formula on |v-t0|<=2 gives uniformly bounded fixed weight seminorms, up to arbitrary logarithmic factors. The fixed lower-height regime is compact. Separating q/M and the bounded relative height v-t0 by the same Mellin/Fourier procedure as the reviewed moment argument costs only small powers and logarithms; it does not add a factor H^C.
+
+The coefficients are tau_4(n) times a common fixed finite-order character and (Nn)^(-1/2-it0). The center twist (Nn)^(-it0) is a common modulus-one column coefficient. Write n=n0 ell^3. The varying cubic factor at ell^3 is its actual unit mask; the fixed character and norm twist at ell^3 remain common bounded coefficients. If N=M^2 H^4 is the maximal column length, the three Minkowski row-norm costs from K3(M,N)=M+N+(MN)^(2/3) are
+
+ sqrt(M) sum_ell Nell^(-3/2),
+ sqrt(N) sum_ell Nell^(-3),
+ (MN)^(1/3) sum_ell Nell^(-5/2).
+
+They converge, including the real nonzero-frequency tails. Their squares are bounded by M+N+(MN)^(2/3) <= C M^2 H^4. Differentiating L(s)^4 contributes logarithms and differentiated normalized weights. One-dimensional Sobolev on the fixed-length v interval proves (3). In particular this is not a supremum over a growing interval of length H.
+
+#### 3. The genuine tail is invariant under a common height shift
+
+For every row select rho_i=beta_i+i(t0+u_i), |u_i|<=1. In the actual tail vectors, the factor (Nn)^(-it0) is common to all rows. It cancels from every pair-Gram entry. Only u_i-u_j and the compact beta parameters remain. Thus the already reviewed sixth-row-moment proof, including all actual primitive conductor blocks, fixed-prime states and true Schwartz frequency dyads, has constants independent of t0.
+
+The original central Gamma integral likewise uses a relative variable v: its Gamma weight depends on 1/2-beta_i+iv, not on t0. Applying (3) on successive bounded relative-height intervals, then retaining the exponential Gamma envelope, gives the genuine first bound
+
+ R_first << (MHXY)^epsilon
+     Y^((8a-4)/5) M^(2/5) H^(4/5) K3(M,X)^(4/5).          (4)
+
+The complete far-relative-height integral is paid by the exponential envelope against (H+|v|)^4. It is not replaced by a hard truncation.
+
+The same literal sharp inverse and its true coefficients a_n(X) have tail bound
+
+ R_tail << (MHXY)^epsilon [Y^(2a)
+       + M X^(12a-3) + M^6 X^(12a-6)
+       + M^(14/3) X^(12a-5)].                            (5)
+
+All decreasing tail powers remain decreasing on I. No shift of the row's actual zero to another zero is used. This counts rows in the specified unit-height interval; no multiplicity or unit-interval count factor H has been inserted.
+
+#### 4. Exact scaling and the residual terms
+
+Write Q(a)=30-49a-36a^2, and set
+
+ x=28/Q(a),               y=7(23-36a)/(3Q(a)),
+ xi=-12a/Q(a),           upsilon=6(5-12a)/Q(a),
+ X=M^x H^xi,             Y=M^y H^upsilon.
+
+For a in I and H<=M^(1/50), these lengths remain in the same open ranges used by the reviewed baseline: M<X<Y<M^2 and K3(M,X) << M^(2/3) X^(2/3). Balancing (4), Y^(2a), and the last term of (5) gives exactly
+
+ M^D(a) H^p(a),
+ p(a)=2a upsilon=(12a-5)xi.
+
+The other two terms must not be silently discarded. Their M-exponent margins are
+
+ D(a)-[1+(12a-3)x]
+   =(396a^2+539a-162)/[3(36a^2+49a-30)] > 9/10,
+
+ D(a)-[6+(12a-6)x]
+   =-4(36a^2+49a-9)/[3(36a^2+49a-30)] > 1/200.           (6)
+
+The second expression has derivative
+
+ 28(72a+49)/(36a^2+49a-30)^2 > 0,
+
+and its left-endpoint value is 317108/47012169 > 1/200. The first is decreasing and its right-endpoint value is 45371453/46737669 > 9/10. Also 0<-xi<1/10 throughout I.
+
+The height exponent of the M X^(12a-3) term is smaller than p(a), since p(a)-(12a-3)xi=-2xi>0. The height exponent of M^6 X^(12a-6) exceeds p(a) by -xi<1/10. Our restriction H<=M^(1/50) costs at most M^(1/500), leaving from (6) a margin greater than 3/1000. This proves (1), once (3) is established with the stated uniformity.
+
+At a=1/6 the exact parameters are
+
+ x=168/125, y=238/125, xi=-12/125, upsilon=108/125,
+ D=238/375, p=36/125.
+
+At this single a, the residual M^6 term allows H<=M^(1/9) up to the endpoint and small-power buffers, because its M gap is 4/375 and its excess height exponent is 12/125. The uniform statement (1) intentionally uses the smaller explicit range 1/50.
+
+#### 5. A longer local box
+
+For V>=1 and a center t0, cover |t-t0|<=V by O(1+V) intervals of length two. If every such center satisfies 2+|t|<=M^(1/50), positivity and (1) give
+
+ # {rows with a zero Re rho>=1-a, |Im rho-t0|<=V}
+   << (M(2+|t0|+V))^epsilon
+       (1+V) M^D(a) (2+|t0|+V)^p(a).                  (7)
+
+Counting the same row several times only increases this upper bound. Thus a box of polynomially small width V has a displayed linear V cost, rather than an unspecified V^C. This corollary does not make zero-free assumptions, does not bound an individual reciprocal L on a line through a zero, and does not by itself finish a mode-dependent sharp-cutoff argument.
+
+#### 6. The lower second-moment branch needed for a more-right box
+
+There is a useful second local-height estimate from the previously reviewed second-L-moment/second-Gram-moment detector. We state it at the particular threshold required by the prospective mode argument, without changing the stronger central baseline in section 1. Set
+
+ a0=47/300,       b0=253/300.
+
+Then for 2<=H<=M^(1/50),
+
+ R_loc(M,t0;b0) << (MH)^epsilon M^(5405/8858) H^(611/4429). (8)
+
+The exact local second moment is
+
+ sum_chi sup_(|v-t0|<=2) |L(1/2+iv,chi)|^2
+        << (MH)^epsilon M H^(2/3).                       (9)
+
+Indeed its AFE length is at most N=sqrt(M) H. The same full-column cube decomposition gives the bound K3(M,N) up to small powers. Its three terms are M, sqrt(M)H and M H^(2/3). For H<=M^(1/50) the middle term is at most the last. Normalized Stirling bounds, common center norm twist and fixed-window Sobolev are as in section 2. No growing-interval supremum is used.
+
+Thus the old first and true tail bounds, with exactly the original sharp inverse, become
+
+ R_first << (MHXY)^epsilon
+       Y^(a-1/2) M^(5/6) X^(1/3) H^(1/3),
+
+ R_tail << (MHXY)^epsilon [Y^(2a)+M X^(4a-1)
+                +M^2 X^(4a-2)+M^2 X^(4a-5/3)].       (10)
+
+In their usual valid neighborhood of a0, the balanced exponents are
+
+ D2(a)=2a(37-60a)/[3(5+2a-24a^2)],
+ x2(a)=2(3+a)/(5+2a-24a^2),       y2(a)=D2(a)/(2a),
+ p2(a)=4a(12a-5)/[3(2a-1)(12a+5)],
+ xi2(a)=p2(a)/(4a-5/3),          upsilon2(a)=p2(a)/(2a).
+
+Choose X=M^x2 H^xi2 and Y=M^y2 H^upsilon2. At a=a0 these are exactly
+
+ D2=5405/8858,          p2=611/4429,
+ x2=23675/17716,        y2=8625/4429,
+ xi2=-1175/8858,        upsilon2=1950/4429.
+
+The first, diagonal, and last-tail terms equal M^D2 H^p2. The remaining M-term has M gap 2899/26574 and a smaller height exponent, with height margin 1175/13287. The remaining M^2-term has M gap 23675/53148; its excess height exponent is 1175/26574. Even at H=M^(1/50) this costs less than 1/1000 in the M exponent, leaving a fixed margin. The chosen lengths have M<X<Y<M^2 and the required cubic-sieve cross term is dominant. This verifies every term in (10) and proves (8).
+
+Covering a longer window of radius V costs O(1+V) exactly as in section 5. Consequently
+
+ # {rows: Re rho>=253/300, |Im rho-t0|<=V}
+  << (M(2+|t0|+V))^epsilon (1+V)
+          M^(5405/8858) (2+|t0|+V)^(611/4429),           (11)
+
+provided the covered unit centers are all of height at most M^(1/50).
+
+For use in a theorem with an unrestricted original height T and a permitted polynomial factor (1+T)^C, a restriction such as this does not justify simply ignoring large T. One may explicitly split at T=M^tau, with a fixed tau>0 chosen so that every mode center and its local box stays below M^(1/50) on the first range. On the complementary range the trivial number of rows O(M^(1+epsilon)) is absorbed by a sufficiently large but fixed polynomial in T. Within the first range, factors (1+T)^A are retained as height factors; they are not silently converted into arbitrary small M powers.
+
+
+## B. Exact mode-local projections of the original sharp inverse
+
+### Local high-zero projections for the original sharp cubic detector
+
+Status: independently reviewed and approved, including the shifted-height input and complete modewise application. No physical or RH conclusion is asserted.
+
+#### 1. The strict quantitative statement
+
+For the same canonical cube-free Eisenstein cubic family with fixed
+finite-order twist and fixed excluded/ray data, let R(M,T;b) count
+primitive rows having a zero with real part at least b and height at
+most T. The conclusion is unconditional:
+
+    R(M,T;5/6) <<_epsilon M^(79/125+epsilon)(1+T)^C.      (1)
+
+The original sharp inverse M_X(s)=sum_(Nd<=X)mu(d)chi(d)(Nd)^(-s)
+and its actual coefficient a_n(X) are retained. The mechanism is a
+mode-dependent projection on the SAME original low-zero row set.
+It does not replace that set by high-height zero labels. It differs
+from discarding every row that has any more-right zero anywhere in
+the full Fourier-height box.
+
+All polynomial T factors below may be enlarged finitely. It suffices
+to prove the statement for T<=M^(1/500): for larger T the trivial row
+count O(M) is absorbed into the displayed factor, after increasing C.
+
+#### 2. Required shifted-height input, with its actual height price
+
+Write
+
+ Dp(a)=2a(37-60a)/[3(5+2a-24a^2)],
+ p(a)=4a(12a-5)/[3(2a-1)(12a+5)].                       (2)
+
+The independently reviewed analytic companion
+Part XXXI A
+proves, at a=47/300 and uniformly in
+centers |t0|<=M^(1/50), the actual unit-window bound
+
+ # {chi: exists rho, Re rho>=1-a, |Im rho-t0|<=1}
+    << M^(Dp(a)+epsilon)(1+|t0|)^(p(a)+epsilon).          (3)
+
+Fixed wider unit intervals only change constants. No unrestricted
+height-uniform moment estimate is assumed. A sketch of the intended
+source proof is included only to specify the exact input: the L
+second moment on a shifted unit interval is at most
+M(1+|t0|)^(2/3), because its AFE length is sqrt(M)(1+|t0|) and the
+same cubic sieve is used. The pair-Gram depends on differences of
+chosen heights; the common center cancels. Balancing the original
+first/second-pair detector gives (2), with norm cutoffs
+
+ x=2(3+a)/[(1-2a)(12a+5)],
+ y=(5+2x)/(3+6a),
+ X_local=M^x H^(p/(4a-5/3)),
+ Y_local=M^y H^(p/(2a)), H=1+|t0|.
+
+The companion and its independent certificate check every smaller
+tail term, actual conductor block, common coefficient and height
+seminorm on the stated domain. The present application uses that
+complete proof, not merely the preceding sketch. At a=47/300, Dp=5405/8858 and p is the positive rational number
+specified by (2), namely 611/4429.
+
+#### 3. Exact finite decomposition on the unchanged selected rows
+
+Set b=5/6 and h=1/100. First remove rows already having a zero with
+real part at least b+h and |Im|<=T. The existing global-height Dp
+bound pays these by M^(Dp(47/300)+epsilon)(1+T)^C. All remaining
+selected original zeros rho_i=beta_i+i gamma_i obey
+
+    b<=beta_i<b+h,       |gamma_i|<=T.                  (4)
+
+Keep these actual rho_i throughout the proof.
+
+Choose sharp X and exponential Y as in section 6. The top smooth
+d-dyad of the literal cutoff is exactly a finite Fejer polynomial
+plus its original error. Use order
+
+    H_F=ceil[M^eta(1+T)],
+
+and coefficients c_j with |j|<=H_F,
+|c_j|<<1/(1+|j|), sum|c_j|<<log(2H_F). The common error has its
+already verified squared coefficient mass
+
+    V_err << H_F^(-1)+X^(-1/2).                        (5)
+
+All lower d-dyads are included as unshifted modes. No alternate
+inverse polynomial is substituted for the original one.
+
+Fix a second, much smaller height scale
+
+    L=M^zeta(1+T),       0<zeta<<eta.
+
+For each finite Fourier mode nu_j=omega j, let B_j be the subset of
+(4) whose L-function has a zero with real part at least b+h and
+height within C0 L of gamma_i-nu_j. The constant C0 covers the common
+Mellin frequencies used below. G_j is its complement IN THE SAME
+row set (4). Thus 1=1_(G_j)+1_(B_j) is an exact rowwise identity for
+every mode, before any estimate.
+
+On G_j the reciprocal-L contour for the mu column is moved only to
+real part b+2h inside this LOCAL zero-free box. The same buffered
+logarithm argument as in the reviewed zero-conditioned theorem gives
+
+ |sum_d mu(d)chi_i(d)d^(-rho_i+i nu_j) W(d/D)|
+       << ambient^epsilon D^(2h).                     (6)
+
+All relevant additional common Mellin frequencies are restricted
+to O(L) here. Their remaining tails stay on the original absolute
+line and are bounded by an arbitrary power of L^(-1), after a fixed
+derivative order is selected following zeta. Fejer frequencies stay
+only in the mu column. Original gamma_i, not nu_j, is used in the
+second column. Constants may be polynomial in original T, but there
+is no gratuitous H_F-power in that second-column sieve.
+
+The local boxes have common width and margins. Borel--Caratheodory
+and interpolation from the Euler side apply uniformly at every
+center; their arithmetic size includes q_i(1+|nu_j|+T), giving only
+its arbitrary small power. The high-mode error and finite dyadic
+sums are paid after zeta is fixed. More precisely, the omitted common
+Mellin tails are retained as an additional error bounded per row by
+M^(-A)(1+T)^(C_A), with derivative order chosen after zeta. We do not
+claim this is pointwise o(1) by inserting T<=M^(1/500): C_A can grow
+with that derivative order. Instead use Markov on all O(M) original
+rows, choose fixed A>2 (or increase it for the chosen moment), and
+retain the resulting harmless negative power of M together with its
+full polynomial (1+T) factor. The final exponent C in (1) is chosen
+after all these finite derivative orders. Thus no circular choice of
+zeta or the permitted height window is made.
+
+By (3) and a covering by unit intervals, the exact bad sets satisfy
+
+ |B_j| << M^(Dp(47/300)+2zeta+epsilon)
+             (1+T)^C (1+|j|)^(p(47/300)+epsilon).       (7)
+
+The selected gamma_i may vary, but all corresponding intervals lie
+inside the fixed interval centered at -nu_j of radius T+C0L. This is
+why the covering is common. For |j| comparable to or smaller than L,
+use 1+|j|+L+T<=C(1+|j|)M^zeta(1+T). Since 1+p(47/300)<2, the covering and enlarged center
+contribute at most M^(2zeta); this constant does not depend on the
+number of weight derivatives chosen later. Thus no count over the entire
+height interval [-H_F,H_F] has been silently inserted in (7).
+
+#### 4. The good modes: full original polynomial kernel tail
+
+The reviewed exact zero transform is retained:
+
+ I_D(rho_i,Y)=epsilon_i q_i^(1/2-rho_i)
+  sum_d mu(d)chi_i(d)d^(-rho_i) W(d/D)
+  sum_m barchi_i(m)m^(rho_i-1)
+                   K_rho_i(mY/(q_i d)),
+
+with K_rho(t)<<poly(gamma) min(1,t^(-1)). Its t^(-1) tail is NOT
+removed or replaced by a Schwartz cutoff. Split actual q_i into
+dyads Q, put K0=QD/Y, and use common compact ratio separation.
+
+For any fixed positive integer k, raise only the genuinely common
+short m-column to its k-th power AFTER Minkowski over its normalized
+kernel modes. The product coefficients are divisor bounded; their
+cube-layer decomposition retains the real zero masks and has the
+same convergent powers as the reviewed higher pair moment. This
+proves the good-mode estimate
+
+ sum_i |sum_j c_j 1_(G_j)(i) I_{i,j}|^(2k)
+  << M^epsilon(1+T)^C
+      X^(4kh)(X/Y)^[k(2b-1)]
+          K3(M,max(1,(MX/Y)^k)).                       (8)
+
+All lower dyads are included in the left side. To verify the full
+frequency range: for K<=K0, the positive norm powers increase with K.
+For K>=K0, the three squared-to-k powers after multiplication by
+K0^(2k) have exponents k(2beta-3), k(2beta-2) and k(2beta-7/3).
+They are all strictly negative on (4). The whole tail is therefore
+controlled at K0. If K0<1 the real nonzero lattice starts at one and
+adds the smaller factor K0^[k(3-2beta)]. This proves the clamped
+bound without any artificial subunit main term. At the transition,
+the q_i powers cancel to (D/Y)^[k(2beta-1)]; the remaining K3 is
+increasing in actual q_i and can be bounded by q_i<=CM. Varying beta
+is handled by its compact endpoint envelopes and D/Y<1.
+
+Minkowski over the finite mode sum costs only sum|c_j|. Each G_j is
+a positive row restriction before enlargement; it is not assumed
+independent of j. The mu bound (6) supplies the common uniform row
+multiplier needed for each such restricted moment. No character
+root or new inverse is discarded.
+
+#### 5. Bad modes return to the original central integral
+
+For each mode, keep the original central-line representation of
+I_{i,j}. The L eighth moment sees only original selected heights
+|gamma_i|<=T. In the inverse polynomial, d^(i nu_j) is a COMMON
+modulus-one coefficient, so the cubic sieve introduces no nu_j
+seminorm or high-height moment. Holder on B_j gives
+
+ sum_(i in B_j)|I_{i,j}|
+   << M^epsilon(1+T)^C C_M |B_j|^(3/8),
+ C_M=Y^(1/2-b) M^(1/4) K3(M,X)^(1/2).                 (9)
+
+The remaining exponent 3/8 is kept: no detected set is solved for
+or replaced by the whole row family at this step. Applying (7) and
+|c_j|<<1/(1+|j|) gives
+
+ sum_i |sum_j c_j 1_(B_j)(i) I_{i,j}|
+  << M^(epsilon+3zeta/4)(1+T)^C
+       C_M M^[3Dp(47/300)/8] H_F^[3p(47/300)/8].        (10)
+
+This pays the LOCAL height exponent p, not an additional power from
+the number of unit intervals all the way out to H_F. The exact row
+projections are inserted before the triangle inequality. Formula
+(10) is not an assertion that a row has only one high zero.
+
+Return the common cutoff error (5) to the same original first
+integral and use the reviewed coefficient-mass eighth-moment bound:
+
+ R_err << M^epsilon(1+T)^C
+ Y^(-8/15) M^(2/5) K3(M,X)^(4/5)
+            [H_F^(-1)+X^(-1/2)]^(4/5).                (11)
+
+There is again no H_F-dependent central L height. The exact
+identity I_X=I_good+I_bad+I_err, Markov with (8), Markov with (10),
+and the unchanged original detector tail cover every selected row.
+
+#### 6. The exact rational ledger
+
+Take
+
+ x=269/200, y=1893/1000, eta=7/500, h=1/100, k=4,
+ X=M^x, Y=M^y.
+
+For T<=M^(1/500), every center needed in (7) is at most a fixed
+multiple of M^(2/125), which lies below M^(1/50) for sufficiently
+large M. Take, for example, 0<zeta<=1/100000. The explicit 3zeta/4
+cost in (10) is then much smaller than the final margin. Fix zeta
+before selecting the finite derivative orders used to pay the
+high-Mellin tails; those orders affect constants and the retained
+polynomial T exponent, not the explicit M^(3zeta/4) count. Finally
+choose the remaining epsilon losses.
+
+The positive exponents, before those final losses, are:
+
+ initial more-right low-height rows: 5405/8858;
+ good modes, the three K3 terms: -923/3750,2107/3750,2347/3750;
+ sharp error, H_F term: 1181/1875;
+ bad modes: 267955/425184;
+ original tail, Y term: 631/1000;
+ original tail, sixth-pair cross: 379/600;
+ original tail, long-column term: 31/50;
+ original tail, M/X: -69/200.
+
+The lattice error in (11) has a larger fixed saving. The largest
+listed exponent is 379/600, strictly below 79/125 by 1/3000. Thus
+zeta and all remaining losses may be chosen within this strict
+margin, proving (1). No unknown numerical kappa is inserted.
+The true exponential far tail and complete Gamma-height tails are
+retained just as in the reviewed sharp detector.
+
+#### Limits
+
+This theorem uses a new organization of the SAME literal inverse
+and SAME selected low-height rows. It does not rely on replacing
+the original t^(-1) kernel, on a continuous-model moment vanishing,
+on Q, or on infinitely iterating a local density inequality. The
+shifted-window companion and the local-mode reciprocal argument
+are essential dependencies; the numerical ledger alone proves
+nothing without them. No physical cubic exponent is asserted here.
+
+
+## C. Common two-sided uniformity for the explicit exponent
+
+### A common two-sided window for the explicit mode-local sharp density
+
+Status: independently reviewed and frozen. This is a uniformity supplement to the reviewed 79/125 theorem, without reoptimizing any constants.
+
+#### 1. Statement and exact sharp scales
+
+Use the original canonical cube-free Eisenstein family, fixed finite-order twist, fixed rays and excluded ideals, and actual nonunit-zero masks of the reviewed mode-local theorem. Its frozen source is Part XXXI B. Its local-height input is Part XXXI A.
+
+There exists a fixed delta>0 such that, uniformly for
+
+    |b-5/6|<=delta,     M>=2,     T>=0,
+
+one has the unconditional bound
+
+    R(M,T;b) <<_epsilon M^(79/125+epsilon)(1+T)^C.        (U)
+
+The implied constant and C are common to the whole closed interval. There is no use of Q. Keep exactly the same main-detector powers for every b:
+
+    x=269/200,  y=1893/1000,  X=M^x,  Y=M^y,
+    eta=7/500, h=1/100, k=4,
+    H_F=ceil[M^eta(1+T)], L=M^zeta(1+T),
+
+where one admissible 0<zeta<=1/100000 is fixed once. Thus M_X(s)=sum_(Nd<=X)mu(d)chi(d)(Nd)^(-s) is the same literal sharp cutoff and a_n(X)=sum_(d|n,Nd<=X)mu(d) is unchanged across the interval.
+
+These X,Y are the detector's norm cutoffs, not the physical X',Y' windows. The auxiliary local-height density proof has its own legal norm cutoffs depending on its height center and real-part threshold. Those auxiliary choices prove a row-count estimate only: they are never substituted into the main modewise identity or its a_n(X).
+
+A point theorem at b=5/6 cannot alone justify the left half of (U) by monotonicity. The proof below supplies an actual common neighborhood. The earlier uniform supplement for the 238/375-kappa theorem supplies the method, not the numerical ledger for these different scales.
+
+#### 2. Uniformize the actual local-height input first
+
+Write a=1-b, a0=1/6 and alpha=a-h. At the center alpha0=47/300. The reviewed local-height proof gives the rational functions
+
+    D2(alpha)=2alpha(37-60alpha)/[3(5+2alpha-24alpha^2)],
+    p2(alpha)=4alpha(12alpha-5)/[3(2alpha-1)(12alpha+5)],
+    x2(alpha)=2(3+alpha)/(5+2alpha-24alpha^2),
+    y2(alpha)=D2(alpha)/(2alpha),
+    xi2(alpha)=p2(alpha)/(4alpha-5/3),
+    upsilon2(alpha)=p2(alpha)/(2alpha).
+
+Its proof applies uniformly on a sufficiently small fixed closed interval I_h about alpha0. Here is why this is an actual uniform assertion rather than continuity of a final formula alone. If t=log H/log M ranges in [0,1/50], all needed scale conditions
+
+    1<x2+xi2 t<y2+upsilon2 t<2
+
+and the two residual-tail inequalities are strict at alpha0, uniformly in this compact t range. The residual differences are affine in t; their endpoint margins are explicitly positive in the reviewed proof. The three decreasing tail powers are also strictly negative. The local second moment uses a unit-height window and normalized Stirling weights, with fixed compact real-part parameters. The common height shift still cancels from the genuine pair Gram. Thus a smaller I_h preserves all those strict conditions, with common AFE/Gram/weight constants and the same domain H<=M^(1/50).
+
+Choose this ambient interval before selecting subsequent profile derivative orders. Shrink it, if needed, so that 0<p2(alpha)<1 throughout. The resulting common input is
+
+    R_loc(M,t0;1-alpha)
+       << (M(2+|t0|))^epsilon M^D2(alpha)(2+|t0|)^p2(alpha),
+    2+|t0|<=M^(1/50), alpha in I_h.                    (H)
+
+A longer box costs its actual factor 1+V by a covering with unit intervals. This extension does not assume that a row has only one zero, or that overlapping boxes count each row only once.
+
+#### 3. Keep the exact mode projections and height ordering
+
+Now reserve a fixed ambient closed neighborhood I of a0 with a-h in I_h, and with b+3h<7/8. Choose its other endpoints small enough to preserve the reviewed strict kernel-tail ranges. On this compact domain first fix the common structural bounds and contour margins, then fix the single zeta, then choose the finite derivative orders. The explicit local height price p2, rather than an unspecified epsilon-dependent height power, controls the mode count. Epsilon-dependent implied constants do not determine zeta or the final window; all required polynomial T powers are selected at the end. The final density window may be shrunk later within this fixed compact domain.
+
+For each b, remove the rows with an actual zero of real part at least b+h at the original height T. The remaining original selected zero stays rho_i=beta_i+i gamma_i with
+
+    b<=beta_i<b+h,  |gamma_i|<=T.
+
+For each Fejer mode j use exactly the reviewed bad set: a more-right zero in the box centered at gamma_i-omega j with radius C0 L. Apply (H) at alpha=a-h. Positivity and the actual width cost give, uniformly on I,
+
+ |B_j| << M^[D2(a-h)+2zeta+epsilon]
+                   (1+T)^C (1+|j|)^[p2(a-h)+epsilon].  (B)
+
+The power 2zeta is valid since 1+p2<2. It is independent of the derivative orders. Also p2 has a positive minimum on the fixed compact I_h, so the constants in the sum of j^(-1+3p2/8) are uniform.
+
+Good modes use the same buffered local reciprocal-L argument and the genuine fourth power of the common dual m-column. Bad modes use the original low-height eighth L moment, separately for each j before the L1 triangle inequality. Their higher zero is only a selector for B_j; it is not the evaluation point in that L moment. The mode-dependent row masks are never absorbed into common column coefficients.
+
+The high Mellin tails remain additional errors M^(-A)(1+T)^(C_A). Pay them by Markov over the entire O(M) family, choose fixed A>2, and only then fix the final height power C. No pointwise smallness is inferred from the restriction T<=M^(1/500). This whole ordering is uniform on I.
+
+#### 4. The complete continuous exponent ledger
+
+Put v=1+x-y and
+
+    F(a)=((8a-4)/5)y+2/5+(8/15)(1+x),
+    G(a)=4khx+k(1-2a)(x-y).
+
+The entire list of exponents to be compared with 79/125 is
+
+    E_init(a)=D2(a-h),
+    E_g,1(a)=G(a)+1,
+    E_g,2(a)=G(a)+k v,
+    E_g,3(a)=G(a)+(2/3)(1+k v),
+    E_err,H(a)=F(a)-4eta/5,
+    E_err,lat(a)=F(a)-2x/5,
+    E_bad(a)=(a-1/2)y+1/4+(1+x)/3
+                   +(3/8)D2(a-h)+(3eta/8)p2(a-h)+3zeta/4,
+    E_Y(a)=2a y,
+    E_tail,1(a)=1+(12a-3)x,
+    E_tail,2(a)=6+(12a-6)x,
+    E_tail,3(a)=14/3+(12a-5)x.                          (L)
+
+These are the reviewed original detector terms; no tail, cutoff error or local-box cost has been omitted. They are continuous on the fixed ambient interval. At a=a0, even with zeta=1/100000, the largest is the original tail value 379/600. Its gap below 79/125 is exactly 1/3000. All other terms have strictly larger margins, as the exact checker confirms.
+
+Choose a fixed delta>0, small enough that |a-a0|<=delta lies in I and every entry of (L) differs from its center value by less than 1/6000. The maximum is then below 79/125-1/6000 throughout this interval. Fix the combined remaining small-power losses to be smaller than that retained margin. This proves (U). The window is positive and common; its numerical optimization is neither needed nor claimed.
+
+For clarity, the analytic prerequisites have not been replaced by exponent continuity. On I the true K_rho tail is still t^(-1); all three high-moment dyadic tail powers are uniformly negative; compact beta endpoint envelopes remain legitimate; the fixed main scale v=113/250 is unchanged; and the local reciprocal contour has its fixed h buffer. The large-T range is handled exactly as in the reviewed main theorem: when T>M^(1/500), a sufficiently large final polynomial in T absorbs the trivial row count. For the complementary range, the largest mode centers remain O(M^(2/125))<M^(1/50), independently of b.
+
+#### 5. The legitimate physical use, without a new numerical claim
+
+A continuous-bin application may use (U) on an inner interval and reserve a strictly larger interval inside its validity range for the actual bin endpoint and contour buffers. Choose the physical bin width and its height exponent only after these intervals and the common C have been fixed. Outside the window retain the previously proved density curve.
+
+At the center the previously published physical curve is Dp(a0)=9/14, and
+
+    9/14-79/125=19/1750>0.
+
+By continuity, a smaller two-sided window therefore supplies a uniform positive decrement from Dp; weaken that decrement to at most 1/1000 as in the reviewed physical transfer. It can be inserted into the already reviewed complete cubic slot/row/tail transfer to recover a conclusion of the existing form
+
+    I_cub(Z) << Z^(-271/32256-c+epsilon),  some c>0.
+
+This note does not assert that c exceeds the earlier unknown c, nor does it assign a numerical physical exponent. Such a comparison would require a quantified window and the complete exterior-budget calculation. The sharp detector and all original physical coefficients, markers, flat operations and Q scope remain those of the existing proofs.
+
+Reproducibility: `check_modewise_ledger.py` uses the Python standard library to verify the exact center ledger and all kernel endpoint signs. `check_modewise_uniform_window.py` uses Python with SymPy to verify the local-height compact endpoints, eleven exponent margins and continuity prerequisites. These checks verify the displayed algebra, not the analytic theorem.

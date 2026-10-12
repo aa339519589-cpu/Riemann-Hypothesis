@@ -3035,3 +3035,242 @@ The physical bin width is selected only after the nested intervals and c. Every 
 The approved chain consists of the final unconditional sharp detector, its reviewed two-sided uniform supplement, and this complete transfer on top of the previously reviewed cubic sector. The former single-point density statement alone would have been insufficient; the supplement is a necessary dependency.
 
 The result is an existential strict improvement of the complete cubic-type exponent. It should be reported as -271/32256-c for some fixed c>0, not as an invented decimal or a specified numerical value. The finite-order Q input remains attributed to the user and confined to the inherited physical reciprocal step. No angular extension, altered inverse polynomial, full-probe conclusion, or RH conclusion is certified.
+
+
+# Review of Part XXXI
+
+The center-height proof, complete modewise detector and new common threshold window were independently reviewed as one analytic dependency chain. Their unconditional scope does not change the Q-dependent physical exponent into a new numerical claim.
+
+
+## A. Actual center-height estimates with explicit height costs
+
+### Independent referee report: explicit center-height cubic density
+
+#### Version and scope
+
+Part XXXI A was independently read in full.
+
+**Approved as a local-height input.** The theorem applies to the same fixed finite-order twist, fixed ray/bad data, canonical cube-free Eisenstein cubic family, with principal rows removed and bounded primitive multiplicity. It uses the original sharp inverse. No Q or zero-free hypothesis is assumed. It does not by itself prove a new mode-dependent sharp-detector or physical-sector improvement.
+
+The exact coefficient in the last term of (10) is M^2, as follows directly from the actual pair-Gram kernel; all subsequent scales and exponents were independently verified with that coefficient.
+
+#### 1. Unit-window eighth L-moment with displayed height cost
+
+For common center t0, H=2+|t0|, the analytic conductor of the degree-two primitive Hecke L-function is O(qH^2). The AFE for L^4 consequently has effective column length q^2 H^4, with complete rapidly decaying tails. The fixed compact low-height regime is harmless. The normalized Stirling ratios on a fixed-width interval about t0 have uniform fixed seminorms up to logarithms. Differentiation contributes logarithms from both coefficients and the unit root factor, rather than a further unspecified H-power.
+
+The common norm twist n^(-it0) is a modulus-one column coefficient. Actual q-blocks and the bounded relative height can be separated before applying the sieve; any conductor-dependent center phase in the dual root is a unit row scalar. Thus one does not require a common actual conductor or charge an extra factor H merely for a supremum over a unit interval.
+
+The full column is decomposed as n=n0 ell^3. Only the varying cubic factor on ell^3 becomes a true row-unit restriction; fixed twists remain common bounded coefficients. At maximal length N=M^2H^4 the three row norm terms are
+sqrt(M) sum ell^(-3/2), sqrt(N) sum ell^(-3), and (MN)^(1/3) sum ell^(-5/2).
+Their convergence and the original Schwartz tail sums give K3(M,N)<=constant*M^2H^4. The derivative/Sobolev argument on a fixed-width interval therefore proves (3), including its height supremum, with only (MH)^epsilon beyond M^2H^4.
+
+#### 2. Common center shift and the genuine tail
+
+Write the actual selected zero as beta_i+i(t0+u_i), |u_i|<=1. The common n^(-it0) factor cancels in every pair-Gram entry. Thus the true pair-row moment depends on bounded u_i-u_j and the compact real parts, not on the absolute center. This retains the original local state partition, primitive conductor blocks, common coefficients, zero masks and nonzero Poisson frequency tails.
+
+The central Gamma weight uses a relative height variable; it is independent of t0. Applying the local L-moment on successive unit relative-height intervals and integrating the exponential Gamma envelope gives exactly the displayed H^(4/5) first-estimate factor. The tails at large relative height are paid by that envelope against (H+|v|)^4; no hard truncation or missing full-height supremum is introduced.
+
+Accordingly, the sixth pair-row tail is independent of the common center up to small powers, and all four terms of (5) are retained. No selected zero is replaced by a different zero.
+
+#### 3. Eighth-moment branch: exact balances and residual terms
+
+The choices x,y,xi,upsilon in section 4 were independently checked by symbolic rational substitution. The first estimate, Y^(2a), and M^(14/3)X^(12a-5) all equal M^D(a)H^p(a), with
+p(a)=12a(5-12a)/(30-49a-36a^2).
+At a=1/6 this is p=36/125, with xi=-12/125 and upsilon=108/125.
+
+The two residual M-exponent gaps are the displayed rational functions. Differentiation verifies that the first decreases and the second increases on I. Their cited endpoint fractions 45371453/46737669 and 317108/47012169 are exact. The first residual term has no larger height exponent; the second has excess -xi<1/10. For H<=M^(1/50) that excess costs at most M^(1/500), leaving a strict positive gap. The same compact range preserves M<X<Y<M^2 and dominance of the sieve cross term. Thus (1) and (2) follow with common constants on I. The isolated wider height range mentioned at the center is only a boundary comparison, not used in the uniform theorem.
+
+#### 4. Second-moment branch at the more-right threshold
+
+For the local second moment the AFE length is N=sqrt(M)H. The full-column argument gives K3(M,N)=M+sqrt(M)H+M H^(2/3). Under H<=M^(1/50), the middle term is bounded by the last, giving M H^(2/3). The same normalized weight and fixed-window Sobolev argument supplies the asserted local supremum without an extra unspecified height exponent.
+
+The first estimate therefore has factor H^(1/3). The genuine k=1 pair tail is
+Y^(2a)+M X^(4a-1)+M^2 X^(4a-2)+M^2 X^(4a-5/3).
+The last coefficient is M^2 because
+U^(4a-1)(M*(M^2/U))^(2/3)=M^2 U^(4a-5/3).
+This calculation is why the corrected formula (10) is required.
+
+At a=47/300, independent exact substitution verifies all six listed scale/exponent fractions:
+D2=5405/8858, p2=611/4429,
+x2=23675/17716, y2=8625/4429,
+xi2=-1175/8858, upsilon2=1950/4429.
+The two residual M-gaps are 2899/26574 and 23675/53148, and the respective height differences are 1175/13287 in the favorable direction and 1175/26574 in the unfavorable direction. The latter costs less than 1/1000 at the stated height endpoint, leaving ample room. The original scale inequalities are preserved. This proves (8) with all tail terms, not merely the balanced three.
+
+#### 5. Longer boxes and limitations on subsequent use
+
+Covering a radius-V box by O(1+V) unit windows gives the displayed linear width cost. Repeated counting of a row is harmless for an upper bound. Every covered center must remain in the proved height range; this is explicit in (7) and (11).
+
+For an eventual theorem permitting a polynomial factor in the original height T, the proposed split at T=M^tau is legitimate: the small-T range must actually keep every relevant center and buffer below M^(1/50); on the complementary range a sufficiently large fixed T-power can absorb the trivial number of rows. Within the small-T range, previously displayed height powers must still be paid. They cannot be silently discarded or replaced by arbitrarily small M-powers.
+
+In a mode-dependent application, this input alone does not supply orthogonality between modes, suppress multiplicity of overlapping local boxes, or justify truncating a fixed smooth Mellin tail at bounded height. Those separate steps require their own common-coefficient, buffer-width and summation argument. No such application is certified by this report.
+
+
+## B. Exact mode-local projections of the original sharp inverse
+
+### Independent referee report: mode-local projections in the original sharp cubic detector
+
+#### Audited version and verdict
+
+Part XXXI B was independently read in full together with its separately reviewed center-height input, Part XXXI A.
+
+The standard-library exact checker `check_modewise_ledger.py`, SHA-256 `e4e67a7fbb6c83d084486374f59c216b64bee7b4f3ef43439dad5b31513f7db0`, was read and run successfully. The rational exponent ledger was also independently recomputed, rather than accepted solely from that checker.
+
+**Verdict: approved.** For the specified fixed-data canonical cube-free Eisenstein cubic family, with principal rows removed and bounded primitive inducing multiplicity,
+\[
+ R(M,T;5/6)\ll_\varepsilon M^{79/125+\varepsilon}(1+T)^C.
+\]
+The theorem is unconditional. The original sharp inverse and its literal coefficients a_n(X) are preserved. The result is a zero-density theorem, not a physical-sector theorem or a proof of RH. No use of Q, unspecified numerical kappa, or zero-spacing assumption occurs.
+
+#### 1. Necessary height-local input
+
+The companion proves the actual local second moment M H^(2/3), including a supremum over a fixed-width height interval. Its AFE length is sqrt(M)H; common normalized weights and their derivatives cost only small powers, and the three cubic-sieve terms are M, sqrt(M)H, and M H^(2/3). The true pair-Gram is invariant under a common height shift. This gives, at a_h=47/300,
+\[
+ R_{\rm loc}(M,t_0;253/300)
+ \ll (MH)^\varepsilon M^{5405/8858}H^{611/4429},
+ \quad H=2+|t_0|\le M^{1/50}.
+\]
+All smaller tail terms and the permissible cutoff ranges were independently checked. In particular the companion's corrected k=1 cross tail is M^2 X^(4a-5/3), not M^(4/3) times that power. Its final scales and fractions use the correct coefficient.
+
+A radius-L box costs a displayed factor O(1+L) from unit-window covering. This specific cost is necessary here; the argument does not substitute an unspecified global H^C density estimate for the local theorem.
+
+#### 2. Exact decomposition on the original selected rows
+
+First remove rows already having a more-right zero with Re rho>=b+h and |Im rho|<=T, for b=5/6 and h=1/100. The existing global Dp bound pays for those rows with exponent 5405/8858 and a retained polynomial in T. This step is necessary: zero-freeness near a shifted mode center would not by itself constrain the originally selected beta. On the remaining rows the original chosen rho_i=beta_i+i gamma_i stays in beta_i in [b,b+h), |gamma_i|<=T.
+
+The original sharp top d-block is represented by its finite Fejer polynomial plus the exact common error. Its coefficients satisfy |c_j|<<1/(1+|j|), with logarithmic l1 mass, and the true error has squared mass H_F^-1+X^-1/2. The lower d-blocks are retained as unshifted modes. No alternate inverse is introduced.
+
+For each mode j, the good and bad sets are an exact partition of this same original selected row set. The bad condition concerns a zero to the right of b+h in a radius-C0 L box centered at gamma_i-nu_j. This is a row-dependent projection made before any norm estimate. It neither changes the selected low zero nor assumes independence or orthogonality of the projections for different j.
+
+#### 3. Local reciprocal bounds, box count and remote Mellin tails
+
+On a good row, the local zero-free rectangle gives the reciprocal bound on b+2h by the same buffered logarithm argument as in the previously reviewed zero-conditioned theorem. Borel--Caratheodory and interpolation are uniform at the shifted center; their arithmetic parameter includes q_i(1+|nu_j|+T). The positive-power box width L=M^zeta(1+T) supplies the horizontal margin. The height shift nu_j remains in the Mobius column, yielding its bound D^(2h) times arbitrary small ambient powers. It does not enter the original Gamma-kernel height gamma_i or create an H_F-power in the second character-column moment.
+
+The extra common Mellin variables are restricted inside this local box. The remaining tails are not discarded: after zeta is fixed, a fixed sufficiently high derivative order gives a per-row error M^(-A)(1+T)^(C_A). It would be unjustified to call this pointwise o(1) merely from T<=M^(1/500), since C_A can depend on that derivative order. The final text correctly treats these tails as an additional error, uses Markov on at most O(M) original rows, takes fixed A sufficiently large, and retains the full polynomial in T. The final T-exponent is chosen after these derivative orders. This introduces no circular choice of zeta or of the permitted height window.
+
+For bad rows, all their variable-center boxes lie in the common box about -nu_j of radius T+C0L. Unit covering and the local input therefore give
+\[
+ |B_j|\ll M^{D_p(a_h)+2\zeta+\varepsilon}(1+T)^C
+                 (1+|j|)^{p(a_h)+\varepsilon}.
+\]
+The factor M^(2zeta) pays both width and center enlargement, because 1+p(a_h)<2. For small j, the factor L in the center is still included in this payment. The proof does not count a row as belonging to only one mode box. It does not use a global count over the whole [-H_F,H_F] height interval.
+
+#### 4. Good-mode high moments with the actual t^-1 tail
+
+The exact zero-conditioned transform retains the argument mY/(q_i d). Its kernel satisfies the actual two-tail bound min(1,t^-1) and fixed logarithmic derivative bounds polynomial in the original gamma. There is no Schwartz substitution for its large-t tail.
+
+For an actual conductor block q_i~Q and a d-block D, put K0=QD/Y. After common compact-ratio separation, the uniformly bounded Mobius column is only a row multiplier on the good set. Each positive row restriction can then be enlarged for the remaining moment.
+
+On a fixed m-frequency dyad K, raise the genuinely common m-column to the fixed integer k-th power only after Minkowski in its normalized kernel modes. The product column has length O(K^k), divisor-bounded common coefficients and squared mass O(K^k), up to small powers. Character multiplicativity sends it to the character of the product; no fractional power or separately chosen row coefficient is introduced. Its full cube layers are treated with the same convergent Minkowski sums and actual unit masks as in the reviewed pair-row argument.
+
+Including the m^(rho-1) factor gives K^{k(2beta-1)}K3(M,K^k). Multiplying the real large-t weight gives the three exponents
+k(2beta-3), k(2beta-2), k(2beta-7/3).
+All are negative on beta in [b,b+h]. The smaller-frequency exponents are positive. Thus the whole frequency norm sum is controlled at the actual transition. For K0<1, the nonzero lattice begins at one and gains K0^{k(3-2beta)}; there is no fictitious constant-frequency term.
+
+At the transition the q-powers cancel to (D/Y)^{k(2beta-1)}. The remaining K3 is increasing in the actual conductor and may be bounded using q_i<=CM, while D<=2X and D/Y<1. Compact endpoint envelopes handle the varying beta before summation. Finally Minkowski over modes costs only sum |c_j|. This proves exactly
+\[
+ \sum_i\left|\sum_jc_j1_{G_j}(i)I_{i,j}\right|^{2k}
+ \ll M^\varepsilon(1+T)^C X^{4kh}(X/Y)^{k(2b-1)}
+ K_3\bigl(M,\max(1,(MX/Y)^k)\bigr).
+\]
+No mode orthogonality is used in this estimate.
+
+#### 5. Bad modes and the common sharp error
+
+Each bad mode is returned to its original central-line Gamma representation. There the L eighth moment sees the original |gamma_i|<=T, while d^(i nu_j) is an arbitrary common modulus-one coefficient in the inverse polynomial. The sieve has no nu_j seminorm cost. Holder leaves the actual bad-row factor |B_j|^(3/8), giving the displayed C_M times that power.
+
+The subsequent aggregation is an L1 triangle inequality:
+\[
+ \sum_j |c_j|\sum_{i\in B_j}|I_{i,j}|.
+\]
+Inserting the true local box count pays M^{3zeta/4} and H_F^{3p(a_h)/8}. This is the sum of j^(-1+3p/8), not an unproved sum of j^(-2) squares. A high zero may contribute to many mode boxes, and the inequality still includes every contribution. There is no omitted number-of-modes factor from an invalid Cauchy step.
+
+The literal Fejer error, separately, is returned to the original first integral and paid using its coefficient-mass eighth-moment bound with mass exponent 4/5. The remote Mellin error from section 3 is also retained as already described. The exact decomposition plus Markov, and the unchanged original detector tail, cover all original selected rows.
+
+#### 6. Exact exponent ledger and height ordering
+
+The fixed choices are
+x=269/200, y=1893/1000, eta=7/500, h=1/100, k=4.
+At T<=M^(1/500), the largest required mode center is O(M^(2/125)), strictly within the proved M^(1/50) domain. A fixed choice 0<zeta<=1/100000 keeps both the local buffer and the explicit M^(3zeta/4) bad-set price within the margins. It is chosen before the fixed derivative orders. All their height costs remain polynomial in T.
+
+Independent rational computation verifies the complete ledger:
+
+- removed higher low-height rows: 5405/8858;
+- three good-mode terms: -923/3750, 2107/3750, 2347/3750;
+- Fejer H_F error: 1181/1875;
+- lattice error: 773/7500;
+- bad modes before the explicit buffer price: 267955/425184;
+- original tail endpoints: 631/1000, 379/600, 31/50, -69/200.
+
+After the stated zeta price, the maximum is still 379/600. Its gap below 79/125 is exactly 1/3000. The remaining small-power losses and the usual exponentially smoothed far-tail enlargement can be chosen inside that fixed margin. The full Gamma tails are retained. For T>M^(1/500), a sufficiently large fixed final power of (1+T) absorbs the trivial number of rows; no large-T range is dropped.
+
+#### 7. Conclusion and reporting boundary
+
+The local-height companion, original finite Fejer identity, exact zero-conditioned transform, genuine high moments and retained original tail together prove the stated explicit unconditional density exponent 79/125. This is a new arrangement of the same inverse and the same low-zero row set. Its local reciprocal information is used only where justified by the mode-specific zero-free rectangle; complementary rows are paid rather than assumed absent.
+
+The theorem alone gives no numerical physical-sector exponent. Any application to continuous physical bins still requires a common neighborhood and a full source/slot/tail transfer. This report certifies the analytic theorem and its displayed parameter scope, not a whole-probe or RH conclusion.
+
+#### Additional exact verification: exact mode-box frequencies and absolute tails
+
+The proof was additionally checked with an explicit three-dimensional log-ratio separation. For fixed dyadic D,K,Q, put u=m/K, v=d/D, r=q/Q and t0=KY/(QD). The profile is a compact ratio cutoff times u^(rho-1)r^(1/2-rho)K_rho(t0 u/(rv)); d^(-rho) remains in the literal Mobius Dirichlet column. The three Fourier frequencies have separate roles: t1 belongs to the common m column, t2 to the Mobius column, and t3 to a pure row factor in q. The transform's dependence on rho is bounded by one integrable envelope with a fixed polynomial in the ORIGINAL T. In particular t0 is constant on the fixed scale block, and no extra mode depending on the individual q or Fejer j enters the Mobius center.
+
+The smooth Mobius reciprocal integral has its own Mellin variable v0. Restricting |t2| and |v0| to L/4 places the true L-height gamma-nu_j-t2+v0 within L/2 of the original mode center. An outer box with any sufficiently large fixed constant, for example 8L, contains the Borel--Caratheodory and interpolation buffers. On a horizontal left line alpha+h/4 and right Euler line 2, where alpha=b+h, the target b+2h is strictly interior; at the displayed parameters its interpolation exponent is 1376/1385<1. Horizontal boundary errors on the retained central region are exponentially small in L. This verifies subpower reciprocal growth even for a zero immediately to the left of the forbidden half-strip.
+
+The discarded t2/v0 modes can be estimated without reciprocal cancellation. The complete m-sum, including the actual t^(-1) large-argument kernel tail, is bounded by K0^beta when K0=qD/Y>=1. When K0<1 it is bounded by K0 and retains the further factor K0^(1-beta). Multiplying the other absolute factors gives q^(1/2) D Y^(-beta). At the present x=269/200, y=1893/1000, b=5/6 its largest M-power is exactly 107/400. If the smooth reciprocal integral is initially kept on a fixed absolute Mellin line Re s=2, a conservative additional factor D gives the safe power 129/80. Thus choosing a fixed derivative order N after zeta with zeta N>A+129/80 proves a per-row discarded contribution M^(-A)(1+T)^(C_N).
+
+This is precisely the already retained error class. It is paid by the whole-row Markov step and by choosing the final height exponent afterward, not by pretending that all such errors are pointwise small in a preassigned polynomial-height range. No high-order-uniform-in-T claim is needed. The explicit implementation leaves the frozen proof, parameters, rational ledger, and conclusion unchanged.
+
+
+## C. Common two-sided uniformity for the explicit exponent
+
+### Referee report: a common two-sided window for the explicit mode-local bound
+
+#### Audited version and verdict
+
+Part XXXI C was independently read in full.
+The companion `check_modewise_uniform_window.py`, SHA-256 `7c42a7a9ce64aacc529ca9925fff3f634560f6288a8a0e5ae515e72b650df097`, was read and executed successfully.
+
+**Approved.** For some fixed delta>0, the reviewed mode-local theorem has the genuinely common two-sided extension
+\[
+ R(M,T;b)\ll_\varepsilon M^{79/125+\varepsilon}(1+T)^C,
+ \qquad |b-5/6|\le\delta.
+\]
+The family data, original sharp X=M^(269/200), exponential Y=M^(1893/1000), Fejer exponent, and mode-buffer exponent can be held fixed across this interval. This is unconditional. No numerical width is claimed. It is not obtained by applying monotonicity to the point theorem, and the older uniformity supplement for different X,Y is not substituted for the present proof.
+
+#### 1. First uniformize the actual auxiliary height estimate
+
+The point-centered height theorem in the preceding companion used alpha=47/300. The present note legitimately extends its proof to a compact alpha-neighborhood before using it in the moving b application.
+
+The rational functions D2,p2,x2,y2,xi2,upsilon2 have no pole at alpha=47/300. With t=log H/log M in [0,1/50], their scale conditions and residual-tail gaps are affine in t. At both endpoints the exact scale inequalities 1<x2+xi2 t<y2+upsilon2 t<2 and both residual gaps are strict, as checked by direct rational substitution. All genuine decreasing tail powers are negative. Compactness in t and continuity in alpha therefore preserve them on one common closed neighborhood. The normalized unit-window AFE weights, height-difference pair-Gram and compact real-part parameters have common constants there. This establishes the full local-height estimate on that neighborhood, not merely continuity of an unproved final bound.
+
+One can also shrink the neighborhood so 0<p2<1 with a positive lower bound. This keeps both the actual box-width price and the constants in summing j^(-1+3p2/8) uniform. The auxiliary cutoffs used to prove this row count do not replace the main sharp inverse or its coefficients.
+
+#### 2. Same selected zeros, mode projections and height order
+
+For every nearby b, first pay the original-height rows with a zero to the right of b+h. Every remaining selected zero is the same original rho_i with beta_i in [b,b+h) and |gamma_i|<=T. Each bad mode set remains the exact more-right-zero selector near gamma_i-omega j. The common-covering argument with actual width L pays M^(2zeta), uniformly because 1+p2<2. It does not assume unique zero allocation among overlapping boxes.
+
+Good modes use the same buffered local reciprocal estimate and fourth integer power of the common m-column. Bad modes retain the original low-height eighth L moment and are aggregated by the L1 triangle inequality. Their mode-dependent row masks are not converted into common column coefficients.
+
+The same remote Mellin errors M^(-A)(1+T)^(C_A) are paid separately by Markov over O(M) rows. The fixed derivative order is chosen after zeta, and the final polynomial T exponent after those orders. No pointwise smallness is inferred solely from T<=M^(1/500). These steps and their contour distances are uniform on the reserved compact interval.
+
+#### 3. All eleven exponents and the positive common window
+
+The displayed ledger (L) is the exact general-a form of the reviewed mode-local proof. It contains the initial more-right rows, all three good-mode sieve terms, both sharp cutoff errors, the full bad-mode price including 3zeta/4, the diagonal tail, and all three remaining genuine pair-tail monomials.
+
+In particular the bad-mode exponent is
+\[
+ (a-1/2)y+1/4+(1+x)/3
+ +3D_2(a-h)/8+3\eta p_2(a-h)/8+3\zeta/4,
+\]
+and the good-mode prefactor is 4khx+k(1-2a)(x-y). These retain the correct center-height input and the true remaining row powers.
+
+At a=1/6 and zeta=1/100000, all eleven rational values were verified. The maximum remains 379/600, and its gap to 79/125 is exactly 1/3000. Every rational entry is continuous on the already fixed ambient interval. Shrinking to a common interval where each changes by less than 1/6000 leaves a uniform margin exceeding 1/6000; the final combined small losses can then be paid within that margin. This proves the stated existence of delta and the common bound.
+
+The exponent continuity is used only after the analytic prerequisites are checked. All true t^-1 kernel powers stay negative, the beta endpoint envelopes remain compact, the main transition exponent v=1+x-y=113/250 is unchanged, and every local reciprocal contour retains its h buffer. Mode centers in the small-T range stay O(M^(2/125))<M^(1/50), independently of b. The large-T range is still covered by a sufficiently large fixed polynomial T factor multiplying the trivial row count.
+
+#### 4. Physical interface and its limitation
+
+A physical bin application must choose an inner window and a strictly larger valid window, then choose its bin widths, contour buffers and physical height after the common constants are fixed. Outside this window the earlier density curve remains in force.
+
+The exact center difference 9/14-79/125=19/1750 supplies a uniform positive decrement from the old physical Dp curve after further shrinking. Weakening it to at most 1/1000 allows the already reviewed complete cubic slot/tail transfer to be reused. This recovers a statement of the existing form -271/32256-c for some c>0. It does not prove that this c exceeds the earlier unknown c, and it does not supply a new numerical physical exponent. The manuscript correctly makes no such comparative claim.
+
+This note closes only the new analytic theorem's continuous-threshold interface. It adds no altered inverse, no angular extension of Q, no whole-probe estimate and no RH conclusion.
