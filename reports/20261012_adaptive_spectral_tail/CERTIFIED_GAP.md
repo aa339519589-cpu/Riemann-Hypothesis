@@ -8,6 +8,8 @@ for every even vector in the unchanged original full-theta/full-prime form domai
 
 Part A gives a three-term Gamma comparison with a trace certificate for 1/4. Part B strengthens the actual bound to 3/8 using six Gamma terms and a squared-trace certificate. Both actual interval programs and their saved outputs are included. Neither proof numerically identifies the second eigenvalue of the original operator or asserts that the separate source-resolvent Gram has passed. The original operator, its domains and the complete prime-tail proof are fixed in [REPORT.md, §1](REPORT.md#1-exact-original-operator-domains-and-complete-prime-tail).
 
+[ORIGINAL_FORM_FOUNDATION.md](ORIGINAL_FORM_FOUNDATION.md) supplies a standalone derivation of the exact source identity, normalized ground state, and equality on the complete maximal form domain, with separate analytic and domain reviews. Thus the operator realization used here need not be accepted merely as an inherited formal identity. All gap inequalities are understood as quadratic-form inequalities; membership in the form domain alone does not imply membership in the operator domain.
+
 Status: both mathematical reductions and both interval programs have undergone independent review and independent execution. The [proof review](REFEREE_CERTIFIED_GAP.md) records the verified inequalities and scope. Equations and subsection numbers are local to each part.
 
 ## Part A. One-quarter trace certificate

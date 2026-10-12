@@ -39,6 +39,8 @@ This is the original theta/Gamma/prime operator identity. The corresponding nonn
 
 Its domain is the maximal finite-energy domain in L2(nu). The original explicit-formula source identity, applied to the complete Phi, gives the displayed transformed operator; it does not require RH. The positive continuous jump kernel shows that E(q)=0 only for constant q. Thus the normalized original constant direction g0=sqrt(p) is the unique H eigenvector at −1/2. The original even mean-zero space is g0-perp. B and V separately need not preserve that space; all constructions below are on the full even space.
 
+The source identity and the complete-domain identification are derived explicitly in [ORIGINAL_FORM_FOUNDATION.md](ORIGINAL_FORM_FOUNDATION.md). Its contour proof cancels zeta-zero poles algebraically before shifting and includes the two pole residues giving cosh(x/2); its core proof starts from the maximal finite-energy domain, retains every prime power, and identifies the two closed forms on a common compact smooth core. The identity is a quadratic-form identity on the full form domain, with the ordinary operator inner product used only on D(B). Separate analytic and domain reviews are supplied there.
+
 ### 1.1 Theta and symbol bounds
 
 Put Astar=4pi²(125/121). The exact estimates needed below are
