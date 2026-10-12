@@ -1,0 +1,120 @@
+{
+  "status": "PASS_EXACT_RATIONAL_CONSTANTS_AND_ALGEBRA_ONLY",
+  "python": "3.13.5",
+  "third_party_packages": [],
+  "constants": {
+    "V_upper": "13055795757/228168250",
+    "V_upper_less_than": "64",
+    "geometric_trace_factor": "1024/943",
+    "conservative_trace_factor": "12/11",
+    "BS_constant": "144",
+    "interleaved_gram_off_row": "15/31",
+    "residual_frame_lower": "1/2",
+    "residual_frame_upper": "33/32",
+    "parameter_cases": [
+      {
+        "epsilon": "1/8",
+        "eta": "1/4",
+        "mode_count": 8,
+        "correction_rank_at_most": 16,
+        "trace_error_bound": "346275/738197504"
+      },
+      {
+        "epsilon": "1/8",
+        "eta": "1/32",
+        "mode_count": 8,
+        "correction_rank_at_most": 16,
+        "trace_error_bound": "346275/738197504"
+      },
+      {
+        "epsilon": "1/8",
+        "eta": "1/256",
+        "mode_count": 8,
+        "correction_rank_at_most": 16,
+        "trace_error_bound": "346275/738197504"
+      },
+      {
+        "epsilon": "1/1024",
+        "eta": "1/4",
+        "mode_count": 10,
+        "correction_rank_at_most": 20,
+        "trace_error_bound": "56820579/1476395008"
+      },
+      {
+        "epsilon": "1/1024",
+        "eta": "1/4096",
+        "mode_count": 14,
+        "correction_rank_at_most": 28,
+        "trace_error_bound": "86705451/96757023244288"
+      },
+      {
+        "epsilon": "1/1024",
+        "eta": "1/4194304",
+        "mode_count": 17,
+        "correction_rank_at_most": 34,
+        "trace_error_bound": "1769499/6192449487634432"
+      },
+      {
+        "epsilon": "1/1048576",
+        "eta": "1/4",
+        "mode_count": 17,
+        "correction_rank_at_most": 34,
+        "trace_error_bound": "1811939355/6047313952768"
+      },
+      {
+        "epsilon": "1/1048576",
+        "eta": "1/4194304",
+        "mode_count": 24,
+        "correction_rank_at_most": 48,
+        "trace_error_bound": "193474857795/103892062623132194701312"
+      },
+      {
+        "epsilon": "1/1048576",
+        "eta": "1/4398046511104",
+        "mode_count": 30,
+        "correction_rank_at_most": 60,
+        "trace_error_bound": "275616108555/1743019575313815427057966907392"
+      },
+      {
+        "epsilon": "1/1267650600228229401496703205376",
+        "eta": "1/4",
+        "mode_count": 70,
+        "correction_rank_at_most": 140,
+        "trace_error_bound": "131186625316419004302090821317953105/191561942608236107294793378393788647952342390272950272"
+      },
+      {
+        "epsilon": "1/1267650600228229401496703205376",
+        "eta": "1/5070602400912917605986812821504",
+        "mode_count": 104,
+        "correction_rank_at_most": 208,
+        "trace_error_bound": "2998794824719106775521448997140074595/183561385899453210205822177873945884848669919890024847417323888172222007684273797267598304346112"
+      },
+      {
+        "epsilon": "1/1267650600228229401496703205376",
+        "eta": "1/6427752177035961102167848369364650410088811975131171341205504",
+        "mode_count": 137,
+        "correction_rank_at_most": 274,
+        "trace_error_bound": "19714502134749423652076728250007795/3903918929322107322286407171273461854438503402129149737840035249505386801390320877240283963794628525961126825033656229135195614216192"
+      }
+    ]
+  },
+  "countercheck": {
+    "exact_H_preserved": true,
+    "infinite_style_two_mode_correction_rank": 4,
+    "one_mode_correction_rank": 2,
+    "epsilon": "1/128",
+    "known_block_I_minus_BS_positive": true,
+    "known_block_determinant": "1/23089",
+    "full_H_plus_epsilon_diagonal": [
+      "1/128",
+      "1/128",
+      "-63/128",
+      "-7/128",
+      "131/384"
+    ],
+    "full_negative_count": 2,
+    "purpose": "Known-kernel safety does not certify the orthogonal complement."
+  },
+  "rh_proved": false,
+  "script_sha256": "37ad4fdace36891e2e9bc65b45f603743e83628b1245234926f51a15ed152da3"
+}
