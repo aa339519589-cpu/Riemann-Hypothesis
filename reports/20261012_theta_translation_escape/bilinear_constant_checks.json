@@ -1,0 +1,15 @@
+{
+  "status": "PASS_EXACT_ALGEBRA_ONLY",
+  "sympy": "1.14.0",
+  "mixed_power_tests": [
+    -3,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "gamma_cross_coefficient": "8*sqrt(2)*theta**(5/4)/(3*(theta + 1)**2)",
+  "gamma_equal_scale": "2*sqrt(2)/3",
+  "s_minus_5_log_coefficient": "40*sqrt(2)*zeta(5)",
+  "rh_proved": false
+}
