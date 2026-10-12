@@ -41,6 +41,8 @@ Its domain is the maximal finite-energy domain in L2(nu). The original explicit-
 
 The source identity and the complete-domain identification are derived explicitly in [ORIGINAL_FORM_FOUNDATION.md](ORIGINAL_FORM_FOUNDATION.md). Its contour proof cancels zeta-zero poles algebraically before shifting and includes the two pole residues giving cosh(x/2); its core proof starts from the maximal finite-energy domain, retains every prime power, and identifies the two closed forms on a common compact smooth core. The identity is a quadratic-form identity on the full form domain, with the ordinary operator inner product used only on D(B). Separate analytic and domain reviews are supplied there.
 
+[ESSENTIAL_SPECTRUM.md](ESSENTIAL_SPECTRUM.md) proves unconditionally that the full even operators have sigma_ess(B)=sigma_ess(H)=[0,infinity) and sigma_ess(L)=[1/2,infinity), using complete-prime relative compactness and even escaping Weyl packets. This confines the remaining critical problem to discrete negative eigenvalues of H on g0-perp; it does not exclude those eigenvalues.
+
 ### 1.1 Theta and symbol bounds
 
 Put Astar=4pi²(125/121). The exact estimates needed below are
