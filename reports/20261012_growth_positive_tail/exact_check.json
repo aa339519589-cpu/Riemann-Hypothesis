@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "rh_proved": false,
+  "scope": "Exact finite algebra, not the analytic or RH claims",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "A2": "a**6 + a**4*t + 285*a**4/4 + 39*a**2*t + 225*a**2/4",
+  "B2": "15*a**5 + 6*a**3*t + 165*a**3/2",
+  "P_factorized": "a**2*(16*a**5 - 244*a**4 + 840*a**3 - 1629*a**2 - 780*a - 225)/8",
+  "R_factorized": "a**2*(4*a**3 - 25*a**2 + 150*a - 39)/2",
+  "P_shift_coefficients_descending": ["2", "275/2", "3957", "489411/8", "1077537/2", "20793231/8", "5703669", "2323566"],
+  "R_shift_coefficients_descending": ["2", "215/2", "2355", "52881/2", "152892", "365256"],
+  "P_at_12": "2323566",
+  "R_at_12": "365256",
+  "checks": ["Bessel first and second logarithmic derivatives", "all shifted polynomial coefficients strictly positive", "hyperbolic inequalities: derivative identities", "triangle-kernel Fourier normalization"],
+  "script_sha256": "cf2d6cf1ea7c0d450f12fba2bac30f8d13db99443315ef0eb8bd94c9bef5b972"
+}
