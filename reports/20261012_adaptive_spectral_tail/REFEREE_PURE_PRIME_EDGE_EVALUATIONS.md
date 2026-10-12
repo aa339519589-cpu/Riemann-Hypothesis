@@ -40,4 +40,4 @@ All kernel vectors are ground-perpendicular. Applying the proved evaluation boun
 
 Let u_gamma be the L2 ground-perpendicular projection of m cos(gamma x). Since E<=18I, the test u_gamma/(sqrt(18)||u_gamma||) gives d_E(gamma)>=||u_gamma||^2/18. Riemann–Lebesgue for the actual L1 functions m^2 and m g0 gives ||u_gamma||^2 -> ||m||^2/2. Thus liminf d_E(gamma)>=||m||^2/36>0. This lower bound is fully compatible with the finite explicit upper C_gamma and blocks a false transfer of the finite-Gamma vanishing-dual-norm argument.
 
-The correct conclusion is source-evaluation continuity and nonvanishing pure-edge residual on explicit positive-energy tests after arbitrary true-kernel shorting. A nonzero residual alone does not compare it against H strongly enough to establish negative inertia, and no such claim is approved.
+The correct conclusion is source-evaluation continuity and nonvanishing pure-edge residual on explicit ground-perpendicular finite-energy tests after arbitrary true-kernel shorting. A nonzero residual alone does not compare it against H strongly enough to establish negative inertia, and no such claim is approved.

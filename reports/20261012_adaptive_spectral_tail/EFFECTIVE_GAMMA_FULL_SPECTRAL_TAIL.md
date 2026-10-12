@@ -292,3 +292,171 @@ The independent residual after retaining the complete Gamma symbol in the full-p
                               |v(x+log n)-v(x)|^2 dx.
 
 No smallness or required sign for this prime-edge residual, or its shorting against the known or full kernel, follows from (24). Critical complementary positivity and RH remain unproved.
+
+## Appendix. A logarithmic mixed-term estimate sharpens the whole-span rate
+
+The preceding theorem and its original eta^(-5) rate remain valid. The following complete strengthening replaces the square-root loss in the mixed spectral term by K log(1/K). On exactly the same entire true nonpositive spectral subspace, it gives an explicit cutoff with
+
+    ||sqrt(beta_J)(D)mP||^2<eta,
+    log J<=C_sharp eta^(-3)(log(1/eta)+2)^4.
+
+The operator lemma, sharper exterior ledger and explicit constant are proved below. Domain invariance, weighted localization and interior regularity are the unchanged proofs in Sections 1–5 above. This improves only the sufficient Gamma approximation rate; no central sign or prime-edge residual estimate follows.
+
+### A.1. A bounded positive-operator lemma
+
+Let A and X be bounded selfadjoint operators on a Hilbert space with
+
+ 0<=A<=C I, 0<=X<=I,
+ ||[A,X]||<=K, K>0.
+
+For every unit vector v,
+
+ -Re<v,XA v><=R_C(K),
+ R_C(K)=K[2+(1/6)log(1+C/K)].                        (A.1)
+
+If K=0 the left side is nonpositive, so R_C(0)=0 is the continuous extension. This estimate concerns the negative part of the real quadratic form, not the entire Jordan product's norm.
+
+To prove it, fix tau>0, set A_tau=A+tau I and Q=sqrt(A_tau), and use the norm-convergent functional-calculus commutator integral
+
+ [X,Q]Q=(1/pi) integral_0^infinity
+        t^(1/2)(A_tau+t)^(-1)[X,A](A_tau+t)^(-1)Q dt.  (A.2)
+
+Since the spectrum of A_tau lies in [tau,C+tau], the norm of the integrand without [X,A] is bounded by
+
+ t^(1/2)/tau^(3/2),            0<t<tau,
+ 1/(2t),                       tau<=t<=C+tau,
+ sqrt(C+tau)t^(-3/2),           t>C+tau.
+
+For the middle estimate use sup_(lambda>0)sqrt(lambda)/(lambda+t)=1/(2sqrt(t)). Integrating the three ranges proves
+
+ ||[X,Q]Q||<=(K/pi)[8/3+(1/2)log(1+C/tau)].           (A.3)
+
+The identity
+
+ X A_tau=Q X Q+[X,Q]Q
+
+and positivity of QXQ imply
+
+ -Re<v,XA v><=tau+(K/pi)[8/3+(1/2)log(1+C/tau)].
+
+Take tau=K and use pi>3. This gives (A.1). When the actual commutator is smaller than the chosen explicit K, the same calculation remains valid with that upper bound. No computability or spectral gap of A is assumed, and a kernel of A causes no difficulty because the regularization is used only inside the proof.
+
+### A.2. Application on the same original domain
+
+In this appendix use the explicit upper bounds M=2 and C=41, and keep the unchanged actual P=1_(-infinity,0](H). Sections 1–2 of this report prove that A=-H restricted to range(P) is bounded in [0,C], that X=P chi^2 P lies in [0,I], and that q=chi^2 preserves D(H) with [A,X]=-P[H,q]P. Retain m_tail and mu from equation (1) of the main report, and set
+
+ c_bar(N)=8+4sqrt(N)log N,
+ delta_bar(N)=(980/9)(N+1)^2 exp[-pi(N+1)],
+ K(R,s,N)=M m_tail(R)[c_bar(N)+36/s]+2delta_bar(N),
+ h(R,s,N)=M m_tail(R)[c_bar(N)+72/s^2]+delta_bar(N),
+ L(R,s)=2C/mu(R+s)+18M/s.
+
+The original weighted commutator (main equations (9)–(11)) is bounded by this K: both theta factors, the first Gamma jump moment and the full omitted-prime norm tail remain present. The new lemma therefore gives, for every unit v in range(P),
+
+ Re<qv,Hv><=R_C(K(R,s,N)).                            (A.4)
+
+Use f=mv and g=(1-chi)f. The already proved domain-safe localization and local regularity in Section 4 give, with only its mixed term replaced,
+
+ b[chi f]<=h(R,s,N)+R_C(K(R,s,N)),                    (A.5)
+ g in D(b(D)), ||g||<=M, ||b(D)g||<=L(R,s).           (A.6)
+
+In particular, global unweighted b(D)f in L2 is not assumed: (A.6) follows from the local original equation b(D)f=m^(-1)Bv, ||Bv||<=2C, and the bounded compact-multiplier commutator. The full weighted IMS error is still 72M m_tail(R)/s^2. Section 5's exact source-frequency split now becomes
+
+ beta_J[mv]<=2M^2 beta_J(T)+2L(R,s)^2/b(T)
+                 +2h(R,s,N)+2R_C(K(R,s,N)).          (A.7)
+
+The unchanged scalar estimates are beta_J(T)<=3T^2/(8J^2), 0<=beta_J<=b and b(T)>=log(1+4T^2)/2. These statements cover all mixed spectral vectors in range(P). P is not computed or replaced.
+
+### A.3. Sharper polynomial prefactors in the exterior budget
+
+Put y=exp(2R)>=2, s=1/y, and choose an integer N with
+
+ y<=N<=y+2.
+
+Such an integer can be found by interval bounds without an exact ceiling-equality test. Since log N<=sqrt(N),
+
+ c_bar(N)<=8+4N<=4y+16<=12y.                         (A.8)
+
+Writing E_y=exp(-pi y/2), one also has
+
+ delta_bar(N)<=2y^2 E_y.                             (A.9)
+
+Indeed N+1>=y+1 and N+1<=y+3<=(5/2)y, so the ratio of the left side to y^2 E_y is at most
+
+ (6125/9)exp[-pi(y/2+1)]<2, y>=2.
+
+The last ratio decreases with y, and at y=2 the comparison follows from exp(2pi)>exp(6)>(8/3)^6>6125/18.
+
+Equations (A.8)-(A.9) give
+
+ K(R,s,N)<=676y^2E_y<700y^2E_y=:K_bar,
+ h(R,s,N)<=1008y^3E_y+170y^2E_y<=1093y^3E_y
+                                             <1100y^3E_y. (A.10)
+
+Apply the operator lemma directly with the upper commutator bound K_bar. Since K_bar>=E_y and C=41,
+
+ log(1+C/K_bar)<=log(42)+pi y/2<4+2y<=4y.
+
+Thus
+
+ R_C(K_bar)<=700y^2E_y(2+2y/3)<1200y^3E_y,
+ 2h+2R_C(K_bar)<4600y^3E_y.                         (A.11)
+
+The mixed spectral term now has the same y^3E_y scale as the weighted Gamma localization error.
+
+### A.4. Explicit joint cutoff and its improved growth order
+
+Fix 0<eta<=exp(-1), put ell=log(1/eta), and choose
+
+ y=(2/pi)[ell+3log(ell+2)+40],
+ R=(1/2)log y, s=1/y,
+ y<=N<=y+2, N an integer.                           (A.12)
+
+Then R>=1, y>=2, and
+
+ (2/pi)(ell+2)<=y<12(ell+2),
+ E_y=eta exp(-40)(ell+2)^(-3).
+
+For the upper bound use log(ell+2)<=ell+2 and
+ell+3log(ell+2)+40<=4ell+46<=17(ell+2). Therefore (A.11) gives
+
+ 2h+2R_C(K_bar)<4600*12^3exp(-40)eta<eta/3.           (A.13)
+
+The last comparison is purely elementary:
+13800*12^3=23846400<2^25<exp(40).
+
+Let L_*=L(R,s) as in (A.6), and choose
+
+ T=exp(6L_*^2/eta+1),
+ J=ceil(4T/sqrt(eta)).                               (A.14)
+
+Equivalently, choose any interval-certified integer J between 4T/sqrt(eta) and 5T/sqrt(eta); this interval is sufficiently long. The same two source estimates as before give
+
+ 2L_*^2/b(T)<eta/3,
+ 2M^2 beta_J(T)<=3eta/16<eta/3.
+
+Combining these with (A.7) and (A.13), uniformly on the entire original nonpositive spectral subspace,
+
+ ||sqrt(beta_J)(D)mP||^2<eta.                         (A.15)
+
+Finally set
+
+ K0=(8C^2/9)exp(4pi)+648M^2,
+ C_sharp=(3pi^2 K0/2)exp(80)+4.
+
+The elementary estimates exp(2/y)<=1+4/y and y^4<=exp(pi y), y>=2, imply
+
+ L_*^2<=K0 y^(-2)exp(pi y)
+      <=(K0 pi^2/4)exp(80)eta^(-2)(ell+2)^4.
+
+Since J<=5T/sqrt(eta),
+
+ log J<=C_sharp eta^(-3)(ell+2)^4.                   (A.16)
+
+Every constant is explicit; C=41 and M=2 were fixed throughout. The construction is uniform over arbitrary superpositions of distinct nonpositive spectral values and kernel vectors. It matches the eta-power and logarithmic order of the earlier individual-eigenvector bound, without computing P.
+
+### A.5. What changes, and what does not
+
+The new ingredient is (A.1), a K log(1/K) control of the unfavorable mixed spectral product. The old square-root estimate and eta^(-5) cutoff were valid but less efficient. The present result strengthens their rate without changing H, its domain, the complete prime operator, the theta multiplier, or the unknown spectral subspace.
+
+This is still only a sufficient complete-Gamma-tail cutoff. It does not construct P, prove that any comparison has the correct inertia, make the pure prime-edge shorted residual disappear, establish critical complementary positivity, or prove RH. Those separate sign questions remain open.
