@@ -475,6 +475,194 @@ Thus \(\mathcal J\) cannot have a negative leading-order upper bound, or even an
 
 The assumptions and boundaries are essential: the lowest negative state is hypothetical; \(N=e^{bU}\) with fixed \(b>1\) is frozen over the whole center interval; the source cutoff has the stated logarithmic size with a sufficiently large fixed constant; the multiplier is (11)–(13); and all comparisons use the same finite \(N\). Center-dependent truncations or other regularizations introduce different terms and are not covered by this theorem. The original coefficient-one form comparison and signed arithmetic upper bound remain open.
 
+## 11. A non-Gaussian relative estimate for a full-axis soft-center average
+
+There is a second, specifically defined average for which the mixed loss can be controlled **relative to the mass of the same finite columns**. It uses no Gaussian, no zero-free strip, and no assumption that a rightmost active zero is attained. The conclusion concerns the full-axis positive center average below; identifying it with the original CORE would require additional estimates.
+
+Keep the hypothetical lowest negative state and the coefficients \(a(n)\) of (12). Here \(\tau\ge0\) is a frozen arithmetic cutoff parameter, distinct from the eigenvector \(v\). Define
+
+\[
+\alpha_r=\sup\{\Re\rho-1/2:\ \zeta(\rho)=0,
+ \ \Re\rho>1/2,\ B(\rho)\ne0\}.
+\]
+
+The actual complete source expansion gives, for every fixed derivative order \(j\) and every \(a_r>\alpha_r\),
+\( |r^{(j)}(x)|\le C_{j,a_r}e^{a_r|x|}\).
+Indeed, in the absolutely convergent true-zero expansion of \(r\), only zeros with nonzero \(B\) occur; its coefficients, including multiplicities and every fixed frequency power, are summable by the source's strip-Schwartz estimates. This is the actual expansion recorded in [the complete-tail report, §5](../20261013_growing_rank_source_estimates/INFINITE_HIGH_TAIL.md#5-exact-missing-comparison), not a spectral-synthesis assertion for an arbitrary mean-periodic function.
+
+Since \(0<\alpha_r\le1/2\), choose an active right zero \(\rho=1/2+a+i\gamma\), a number \(0<d<a\), and \(a_r>\alpha_r\) such that \(a+d>a_r\). This is possible by choosing \(a\) sufficiently close to the supremum. Fix also
+
+\[
+2a_r<\lambda_s<2(a+d),\qquad \lambda_s<2,
+\qquad \lambda_\rho=\rho-1/2.
+\tag{32}
+\]
+
+For each frozen \(\tau\), put
+
+\[
+\mathcal A_\tau g(c)=\sum_{\log n\le\tau}a(n)n^{-1/2}g(c-\log n),
+\]
+\[
+F_\tau(c,x)=\frac{\mathcal A_\tau f(c+x)+\mathcal A_\tau f(c-x)}2,
+\qquad
+R_\tau(c,x)=\frac{\mathcal A_\tau r(c+x)+\mathcal A_\tau r(c-x)}2.
+\tag{33}
+\]
+
+These are finite original-source convolutions. In particular \(L_xF_\tau=-\kappa R_\tau\), \(mR_\tau(c)\) belongs to the original operator domain, and its ground pairing is zero for every \(c\). The discrete jumps in \(\tau\) cause no problem for the parameter integrals.
+
+For a positive buffer \(\ell\), define
+
+\[
+X(\tau)=e^{-\lambda_\rho\tau}
+ \sum_{\log n\le\tau}a(n)n^{\rho-1},
+\qquad E_X(V)=\int_0^V e^{-2d\tau}|X(\tau)|^2\,d\tau,
+\]
+\[
+W_\tau(c)=e^{-\lambda_s|c-(\tau-\ell)|},\qquad
+w(\tau)=e^{-2d(\tau-\ell)},
+\]
+\[
+\mathcal M_s(V)=\int_0^V w(\tau)\int_{\mathbb R}
+ W_\tau(c)\|mR_\tau(c)\|^2\,dc\,d\tau.
+\tag{34}
+\]
+
+All full-axis center integrals below converge because \(\lambda_s>2a_r\).
+
+### 11.1. A same-column mass lower bound
+
+Pair \(mR_\tau(c)\) with the appropriate conjugate of the genuine division column from §2. The complete source pairing and \(L_xF_\tau=-\kappa R_\tau\) give a nonzero fixed scalar times
+
+\[
+e^{-\lambda_\rho c}\sum_{\log n\le\tau}a(n)n^{\rho-1}
+ +e^{\lambda_\rho c}\sum_{\log n\le\tau}a(n)n^{-\rho}.
+\]
+
+This source integration by parts is legitimate: both translated \(f\) and the division source have every fixed exponential moment and the required Sobolev bounds, so both prime legs are absolutely summable and the Gamma pairing is continuous. It does not require or assert that \(F_\tau/m\) is a physical \(L^2\) vector. The scalar is nonzero because \(B(\rho)\ne0\). On the unit center interval about \(\tau-\ell\), the two functions \(e^{\lambda_\rho s}\) and \(e^{-\lambda_\rho s}\) have a strictly positive two-dimensional Gram matrix. Cauchy–Schwarz against the fixed division vector therefore gives, with a constant independent of \(\tau,\ell,V\),
+
+\[
+\int_{\mathbb R}W_\tau(c)\|mR_\tau(c)\|^2dc
+ \ge C_\rho e^{2a\ell}|X(\tau)|^2,
+\qquad
+\mathcal M_s(V)\ge C_\rho e^{2(a+d)\ell}E_X(V).
+\tag{35}
+\]
+
+Both reflected coefficients remain in this Gram calculation. No lower-bound subsequence for arithmetic partial sums is used.
+
+### 11.2. Abel integration controls the actual finite forcing
+
+Set \(X(t)=0\) for \(t<0\). In the Stieltjes sense,
+\(dX=-\lambda_\rho X\,dt+\sum_n a(n)n^{-1/2}\delta_{\log n}\).
+Integration by parts thus gives the exact identity, including the \(n=1\) atom,
+
+\[
+F_\tau(c,0)=X(\tau)f(c-\tau)
+ +\int_0^\tau X(t)[f'+\lambda_\rho f](c-t)dt.
+\tag{36}
+\]
+
+The boundary term has squared \(W_\tau\)-norm at most
+\(Ce^{-\lambda_s\ell}|X(\tau)|^2\), by the theta tails of \(f\). For the bulk term, weighted Young's inequality for the fixed kernel \(f'+\lambda_\rho f\) gives
+
+\[
+\int W_\tau(c)\left|\int_0^\tau
+ X(t)[f'+\lambda_\rho f](c-t)dt\right|^2dc
+ \le C\int_0^\tau |X(t)|^2e^{-\lambda_s|t-\tau+\ell|}dt.
+\]
+
+Multiply by \(w(\tau)\), exchange \(t,\tau\), and put \(\tau=t+y\). The full remaining weight is paid by
+
+\[
+\int_0^\infty e^{-2dy}e^{-\lambda_s|\ell-y|}dy
+ \le C e^{-2d\ell},
+\]
+
+since \(\lambda_s>2d\). The factor \(e^{2d\ell}\) from \(w\) cancels it. The boundary contribution is also bounded, since \(\lambda_s>2d\). Consequently
+
+\[
+\int_0^Vw(\tau)\int W_\tau(c)|F_\tau(c,0)|^2dc\,d\tau
+ \le C E_X(V).
+\tag{37}
+\]
+
+This concerns the same finite coefficients as (35), without replacing them by a full reciprocal signal or by absolute arithmetic coefficients.
+
+### 11.3. The full mixed term is a small relative error
+
+Let \(\chi_A\) be as in §5, with \(A\ge1\). Translation of the soft weight and integration in \(x\) give
+
+\[
+\int_0^Vw\int W_\tau\|\chi_A F_\tau(c)\|^2dc\,d\tau
+ \le C e^{\lambda_s A}E_X(V).
+\tag{38}
+\]
+
+For completeness, the corresponding bound for \(R\) needs no analytic approximation. If \(h=\mathcal A_\tau r\) and
+\(R(c,x)=[h(c+x)+h(c-x)]/2\), then exactly
+
+\[
+h(c)=R(c-x,x)+R(c+x,x)-R(c,2x).
+\]
+
+Integrate the squared identity over \(1/2\le x\le1\) and over \(c\) with the soft weight. Its bounded shift ratios, and the positive minimum of \(m\) on \([1/2,2]\), imply
+\(\int W_\tau|h|^2\le C\int W_\tau\|mR\|^2\).
+Shifting \(h\) again and integrating \(e^{\lambda_s|x|}\) on the cutoff window proves
+
+\[
+\int_0^Vw\int W_\tau\|\chi_A R_\tau(c)\|^2dc\,d\tau
+ \le C e^{\lambda_s A}\mathcal M_s(V).
+\tag{39}
+\]
+
+Cauchy–Schwarz, (35), (38), and (39) now yield the actual relative estimate
+
+\[
+\left|\int_0^V w\int W_\tau
+ \Re\langle\chi_A F_\tau(c),\chi_A R_\tau(c)\rangle dc\,d\tau\right|
+ \le C e^{\lambda_s A-(a+d)\ell}\mathcal M_s(V).
+\tag{40}
+\]
+
+### 11.4. Complete retained-ground deficit
+
+For every frozen \(\tau\), the translated unit-interval coercivity of §3 applies. Summing disjoint unit center intervals over the entire real axis, whose weight ratio is at most \(e^{\lambda_s}\), gives
+
+\[
+\int_0^V w\int W_\tau Q[mR_\tau(c)]dc\,d\tau
+ \ge\delta_{[0,1]}e^{-\lambda_s}\mathcal M_s(V).
+\tag{41}
+\]
+
+The same finite-column cutoff argument used in §8 gives a total cutoff difference bounded by
+\(\exp(CV+C\ell-c e^{2A})\). To see uniformity, fix one absolute convergence line in (12); its coefficient envelope bounds every finite sum by \(e^{C\tau}\). The actual \(r\)-growth bounds the center dependence by \(e^{a_r|c|}\), which is integrable against \(W_\tau\), at a cost \(e^{C V+C\ell}\). The double-theta tail pays the cutoff in physical norm and source \(H^1\). These respectively control the complete bounded physical prime potential and the full logarithmic Gamma form. The cutoff ground projection is retained and obeys the same bound.
+
+Freeze, for the whole terminal \(V\) average,
+
+\[
+A=\tfrac12\log(2+V)+C_M,
+\qquad \ell=\log(2+V)+C',
+\tag{42}
+\]
+
+where \(C_M\) is sufficiently large after the fixed coefficient line and error margin. This makes the cutoff error smaller than \(e^{-MV}\) for any fixed requested \(M\), while (32) makes the relative factor in (40) tend to zero. Also \(a(1)\ne0\): it is the nonzero constant term of the Euler product (11). Hence \(E_X(V)\) is bounded below by a fixed positive constant for \(V\ge1\), using the interval \(0\le\tau<\log2\).
+
+Combining (35), (40), and (41), for every sufficiently large \(V\),
+
+\[
+\begin{split}
+\mathcal J_s(V)&:=\int_0^V w(\tau)\int_{\mathbb R}W_\tau(c)
+ \left[Q[m\chi_A R_\tau(c)]
+ -\kappa\Re\langle\chi_A F_\tau(c),\chi_A R_\tau(c)\rangle\right]dc\,d\tau\\
+&\ge\tfrac12\delta_{[0,1]}e^{-\lambda_s}\mathcal M_s(V)>0.
+\end{split}
+\tag{43}
+\]
+
+The full Gamma form, both wings of every prime power, and the ground term are present in (43). The parameter region includes \(\tau<\ell\), with negative center \(\tau-\ell\), and the entire soft tails. Deleting these regions, making the cutoff depend on the center inside a column, or substituting a full true observation energy would require separate estimates. Thus (43) rules out a negative joint-deficit estimate for this exact positive average; it supplies no such comparison for the original CORE and no zero exclusion.
+
 ## Original-source references
 
 - [Complete theta normalization and original maximal form domain](../20261012_adaptive_spectral_tail/ORIGINAL_FORM_FOUNDATION.md).
