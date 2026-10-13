@@ -1,0 +1,23 @@
+{
+  "arithmetic": "Python Fraction; positive exponential Taylor sum and explicit geometric remainder",
+  "checks": [
+    "theta polynomial coefficient below 59",
+    "theta strip prefactor below 100",
+    "theta neighbor ratio below one quarter",
+    "exp two below nine",
+    "exp four below eighty one",
+    "exp three quarters above two",
+    "four-and-half r envelope quadratic positive",
+    "five r envelope quadratic positive",
+    "Gamma logarithm ratio quadratic positive",
+    "coarse C0 upper bound below eight",
+    "complete prime bound below two power twenty four",
+    "centered Gamma bound below two power twenty six",
+    "two kernel bounds total below two power twenty seven",
+    "multiplicity row below two power twelve",
+    "final product is two power thirty nine"
+  ],
+  "count": 15,
+  "status": "all assertions passed",
+  "scope": "Independent scalar checks only. Analytic envelopes, complete tails, original domains and operator identities require the accompanying proof."
+}
