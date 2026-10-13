@@ -1,0 +1,13 @@
+# Recalculation of endpoint prime and Gamma coefficients
+
+Date: 2026-10-13. Internal independent calculation of THEOREM_ENDPOINT_FINITE_PRIMES.md, retaining the original full theta, Gamma kernel, and all Mangoldt edges.
+
+On a smooth test bump supported in (epsilon,2epsilon), the n-th reflected prime edge has two equal contributions, one from each end of (0,log n). Their sum equals twice the integral over the bump of psi(x) psi(log n-x) |r(x)|^2. The positive forward n edge has the same factor two, with psi(log n+x). All n including prime powers are retained in the former. Uniform convergence of derivatives of the complete theta-prime series near zero permits Taylor expansion: the two rows agree at x=0 and differ first at order x. Therefore the complete forward-minus-reflected energy is O(epsilon), whereas a fixed finite forward sum has a strictly negative constant difference, equal to minus twice c J1 times the positive omitted prime tail.
+
+Independently, the Gamma kernel on 0<x<y has the exact integral representation K(x,y)=integral from y-x to y+x of -kappa'(t) dt. The Laurent coefficient kappa(t)=1/(2t)+1/4+O(t) gives K(x,y)=x/y^2+O(x^3/y^4+x) when 3epsilon<=y<=1 and epsilon<=x<=2epsilon. Since psi(y)=c*y+O(y^3), the y-integral equals c*x*log(1/epsilon)+O(x). The two ordered cross regions contribute exactly 2*c*c*J2*epsilon*log(1/epsilon). The small diagonal square contributes O(epsilon): the ratio difference cancels the singularity. The y>1 tail also contributes O(epsilon). The full Gamma coefficient and sign are thus checked without a finite Gamma truncation.
+
+The exact polar identity gives the further c*J2*epsilon/2+O(epsilon^3). These positive and negative lower-order terms cannot offset a constant loss from any fixed omitted forward-prime tail. With all forward primes restored, their leading terms cancel and the positive Gamma logarithm dominates.
+
+The energy comparison from the already checked complete-prime row lemma bounds the reflected form relative to the truncated reference. After reference-norm normalization, the shrinking bumps have norm one and converge weakly to zero: the Gamma and polar cross pairings vanish by Cauchy-Schwarz, and each fixed forward-prime cross pairing is O(epsilon). A compact reference correction therefore has zero limiting diagonal pairing. The limiting reflected/reference quotient is strictly above one for every finite M, proving the essential-spectrum and compact-correction assertions. This says nothing about the sign of the untruncated full form on arbitrary vectors.
+
+This is an internal mathematical check, not external peer review or proof-assistant certification. No unconditional RH proof has been obtained.

@@ -1,0 +1,18 @@
+{
+  "status": "EXACT_GAMMA_LIMITS_PASSED_FINITE_THETA_DIAGNOSTIC_ONLY",
+  "rigorous_checks": {
+    "u_kappa_limit": "1/2",
+    "kappa_regular_part": "1/4",
+    "negative_double_derivative_limit": "1"
+  },
+  "numerical_only": {
+    "theta_terms": 8,
+    "max_prime_power_label": 19,
+    "psi_derivative_zero": "16.73050077470325686679",
+    "A_2": "0.02737840049038769856352",
+    "A_to_19": "0.02737849129376477582208",
+    "A_to_19_over_A_2": "1.000003316606355770812"
+  },
+  "no_infinite_tail_certificate": true,
+  "rh_proved": false
+}
