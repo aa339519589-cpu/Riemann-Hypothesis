@@ -1,0 +1,21 @@
+{
+  "status": "all exact rational scalar checks passed",
+  "base_commit": "1cece5ec907004c5e1693148d223cbe75eeec1b3",
+  "method": "Fraction arithmetic; positive Taylor remainders; alternating atan bounds",
+  "pi_enclosure_verified": [
+    "314159/100000",
+    "22/7"
+  ],
+  "exp_14_over_5_enclosure_verified": [
+    "164446/10000",
+    "17"
+  ],
+  "q_derivative_coefficient_upper": "939/28",
+  "theta_weight_coefficient": 136,
+  "full_line_central_coefficient": 272,
+  "inherited_physical_tail_scalar": "< 1/1000, independently rechecked",
+  "logarithmic_source_norm_bound": "8705 + 544 log(1/delta0)",
+  "physical_norm_bound_at_green_lambda_21_over_20": "2397113/500",
+  "exclusion_margin": "102887/50000000",
+  "scope": "scalar verification only; not an operator-domain, RH, or zero-location certificate"
+}
