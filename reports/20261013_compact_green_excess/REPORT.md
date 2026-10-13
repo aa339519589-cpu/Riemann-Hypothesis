@@ -32,15 +32,15 @@ For a compact smooth core ratio, choose its centered representative
 \(r^\circ=r-\bar r_w\), and write \(g=\psi r^\circ\) on the positive
 wing. Let \(g_o\) denote its odd full-line extension. Then
 \[
-\int_0^\infty s g=0,qquad
+\int_0^\infty s g=0,\qquad
 E_W[g]:=\int_0^\infty W|g|^2=P_{\rm pole}[r]\le P[r].
 \tag{3}
 \]
 The map from a core \(P\)-gradient to this source is linear and
 well-defined. The simple zero and theta tail imply
 \[
-M:=\sup_{x>0}v(x)<\infty,qquad
-\|g\|_2^2\le M E_W[g],qquad
+M:=\sup_{x>0}v(x)<\infty,\qquad
+\|g\|_2^2\le M E_W[g],\qquad
 v(x)\le C e^{6x}e^{-\pi e^{2x}}.
 \tag{4}
 \]
@@ -51,7 +51,7 @@ from \(K_P\) into \(L^2(Wdx)\).
 
 Let \(a(t)=\Re\psi_{\rm digamma}(1/4+it/2)-\log\pi\),
 \[
-C_0=\gamma+\pi/2+3\log2+\log\pi,qquad b(t)=a(t)+C_0\ge0,
+C_0=\gamma+\pi/2+3\log2+\log\pi,\qquad b(t)=a(t)+C_0\ge0,
 \]
 and let \(q_b[f]=\langle f,b(D_F)f\rangle\) be the nonnegative closed
 Fourier form on the full line. Its symbol tends to infinity logarithmically.
@@ -126,13 +126,13 @@ bound the other factor by \(M\). The envelope in (4) is decreasing
 on the required tail. The finitely many remaining labels cause no problem.
 Since \(\alpha_n\le(\log n)/\sqrt n\),
 \[
-C_p:=\sum_{n\ge2}\alpha_n(4A_n+2B_n)<\infty,qquad
+C_p:=\sum_{n\ge2}\alpha_n(4A_n+2B_n)<\infty,\qquad
 \eta_N:=\sum_{n>N}\alpha_n(4A_n+2B_n)\longrightarrow0.
 \tag{10}
 \]
 In particular,
 \[
-|p[g]|\le C_p P[r],qquad
+|p[g]|\le C_p P[r],\qquad
 |p_{>N}[g]|\le\eta_N P[r].
 \tag{11}
 \]
@@ -210,7 +210,7 @@ ratio core.
 Set \(\mathcal A=I-T^*T\), which is bounded and selfadjoint on \(K_P\).
 Identity (5) extends from the dense core to give
 \[
-\mathcal A=\mathcal B+\mathcal C,qquad
+\mathcal A=\mathcal B+\mathcal C,\qquad
 \mathcal B[u]=q_b[(J_0u)_o]\ge0.
 \tag{17}
 \]
