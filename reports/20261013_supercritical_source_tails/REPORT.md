@@ -214,3 +214,5 @@ The boundary term satisfies $W_B(R)G(R)=O_\delta(e^{(3-B)R})\to0$. Indeed, with 
 The cutoff and tail estimates do not give endpoint regularity at zero, all-order Sobolev regularity, or an eigenvalue exclusion. They also do not by themselves establish a global translation or convolution identity for the source divergence. No Riemann-hypothesis or sign conclusion follows.
 
 The [global convolution companion](GLOBAL_MEAN_PERIODIC.md) combines this tail estimate with the inherited theta-jet orthogonality. It proves a distributional convolution identity at all real centers and a finite-part meromorphic continuation, without an eigenvalue exclusion.
+
+The [residue identity](RESIDUE_IDENTITY.md) identifies the actual Carleman poles and their source coefficients. The [signed zero-pairing theorem](SIGNED_ZERO_PAIRING.md) separately proves absolute zero-square summability and the full conjugate-pair identity. Both retain the unresolved sign comparison.

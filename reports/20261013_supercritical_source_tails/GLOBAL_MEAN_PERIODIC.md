@@ -308,3 +308,5 @@ conclusion.
 ## Scope
 
 The tail theorem supplies (1) for each fixed supercritical gap. The positive reference energy and the genuine eigenrelation supply the endpoint control and jet orthogonality. Together, they prove the weighted ratio integrability, the complete divergence in an exponential-growth distribution class, the all-real-center theta convolution identity, and the finite-part meromorphic continuation. These statements do not determine the residues of \(B/\Xi\), prove spectral synthesis in an energy norm, exclude any \(\lambda>1\), or locate any zero.
+
+The [residue identity](RESIDUE_IDENTITY.md) identifies the actual Carleman poles and their source coefficients. The [signed zero-pairing theorem](SIGNED_ZERO_PAIRING.md) separately proves absolute zero-square summability and the full conjugate-pair identity. Both retain the unresolved sign comparison.
