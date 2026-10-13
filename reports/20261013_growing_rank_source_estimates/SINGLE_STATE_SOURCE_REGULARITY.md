@@ -343,3 +343,180 @@ These estimates replace depth-dependent sampling regularity constants by uniform
 In particular, the low/high boundary residual still carries kappa^(-2); its comparison with the actual low/high source Gram or physical tail mass has not been made relative. Selecting T so that (S11) is absolutely small does not provide that missing comparison.
 
 No unweighted H^1 endpoint or fixed-strip exponential frequency decay is asserted. The constants may deteriorate as the Sobolev exponent approaches 1 or as a weight parameter increases. No new zero exclusion or RH conclusion follows.
+
+
+---
+
+The following continuation refines the same proof by shrinking the source convolution radius as the eigenvalue approaches zero. It gives a genuine relative bound for the high negative sampling squares of an actual eigenstate, while keeping the entire low-height signed comparison unresolved. Equation labels (D1)–(D19) refer only to this continuation.
+
+## 12. A depth-adapted filter and the actual all-zero tail
+
+Let Hu=-kappa u be a normalized real even original negative eigenstate, 0<kappa<=1/2. Write f=mu, B(z)=integral f(x)cos(zx)dx, and ell_kappa=log(e/kappa). For every fixed sigma>0 the conclusion is that, for
+
+ T>=C_sigma kappa^(-sigma),
+
+one has, over ALL genuine positive-height zeros and their true multiplicities,
+
+ sum_(gamma_z>=T) j_z log(2+gamma_z)|B(z)|^2
+                 <= C_sigma kappa log^4(2+T)/T^2,               (D1)
+
+ sum_(gamma_z>=T) j_z |B(z)|
+                 <= C_sigma sqrt(kappa) log^2(2+T)/sqrt(T).    (D2)
+
+The constants depend on sigma and the fixed original operator, not on kappa or u. For the ground-perpendicular state with actual expansion a_z=-2j_zB(z)/kappa these give
+
+ J_T^2 <= C_sigma kappa^(-1)log^4(2+T)/T^2,
+ M_T   <= C_sigma kappa^(-1/2)log^2(2+T)/sqrt(T).                 (D3)
+
+The inverse-depth powers improve, but do not disappear. The stated height threshold is an essential part of the claim.
+
+## 13. A sharper use of the actual kappa-weighted physical tail
+
+Use the scalar localization estimate (5) proved above, with beta=pi/(2e^2),
+
+ kappa integral_(|x|>=r)|u(x)|^2dx
+                <= C exp(3r-beta e^(2r)),       r>=2.
+
+Put q(x)=e^(2|x|) and let dnu_kappa(x)=kappa|u(x)|^2dx, of total mass kappa. Then, for Q>=e^4,
+
+ nu_kappa(q>=Q)<=min(kappa,C Q^(3/2)exp(-beta Q)).                (D4)
+
+For each fixed c>=0, if delta_kappa=delta_*/ell_kappa with delta_*>0 sufficiently small, (D4) implies
+
+ integral q^2 exp(c delta_kappa q)dnu_kappa
+                              <= C_c kappa ell_kappa^2.        (D5)
+
+A direct proof is as follows. Choose delta_* so that c delta_*<=beta/4. Set Q0=A ell_kappa+B, with fixed A>=8/beta and sufficiently large B. On q<=Q0 the integrand is at most C ell_kappa^2, so the contribution is at most C kappa ell_kappa^2. Above Q0 use layer integration and the second bound in (D4). The derivative of q^2 exp(c delta_kappa q) is at most C(q+q^2)exp(c delta_kappa q). The resulting integrand is a fixed polynomial times exp(-3beta q/4). By increasing A,B its tail is bounded by C kappa^2, which is at most C kappa ell_kappa^2. This proves (D5). The same proof with q^2 replaced by 1 gives integral exp(c delta_kappa q)dnu_kappa<=C kappa.
+
+The true theta derivative estimates
+
+ |(log m)'(x)|<=L_m q(x),  |rho''(x)|<=L_m q(x)^2 rho(x),
+ rho=m^(-2),
+
+therefore yield the improved four-point estimate
+
+ kappa integral |f(x)f(x-s-t)|
+       sup_(theta,eta in [0,1])|rho''(x-theta s-eta t)|dx
+          <=C kappa ell_kappa^2,       |s|,|t|<=delta_kappa.     (D6)
+
+Indeed the same logarithmic ratio comparison as in the fixed-radius proof in Section 3 bounds the integrand by C q(x)^2 exp(C delta_kappa q(x))|u(x)u(x-s-t)|. After Cauchy--Schwarz and shifting the second factor, the fixed small delta_* keeps the coefficient in (D5) uniformly bounded. A single choice of delta_* pays every constant in this calculation. It also gives
+
+ ||f(.-h)/m||_2<=C,                       |h|<=2delta_kappa,     (D7)
+
+by the q^0 version of (D5), after dividing the resulting bound by kappa. As before, these translation bounds pay the original physical form domains of the convolution tests.
+
+## 14. Shrinking compact convolution and a real-axis frequency estimate
+
+Fix a real even compact-frequency bandpass p, equal to 1 on 1<=|t|<=2 and supported in 1/2<|t|<3, with Schwartz convolution kernel k. Choose a fixed smooth even cutoff eta, supported in (-1,1) and equal to 1 on [-1/2,1/2]. Define
+
+ k_(N,kappa)(s)=N k(Ns)eta(s/delta_kappa),
+ C_(N,kappa)g=k_(N,kappa)*g.
+
+Uniformly in N,kappa,
+
+ ||k_(N,kappa)||_1<=C,
+ integral |s||k_(N,kappa)(s)|ds<=C/N,
+ ||chat_(N,kappa)-p(./N)||_infinity
+                    <=C_M(ell_kappa/N)^M                     (D8)
+
+for every fixed M, provided N delta_kappa>=1. In the last line chat denotes the Fourier multiplier of this kernel, not the transform of the operator.
+
+For g=C_(N,kappa)f the same exact full-source identity and (D6) give
+
+ h[g/m]+kappa||g/m||^2
+ = (kappa/2)<f,[C_(N,kappa),[rho,C_(N,kappa)]]f>
+                    <=C kappa ell_kappa^2/N^2.                (D9)
+
+All quotient domains are paid by (D7), and the complete source form commutes with the convolution exactly as in Section 5. No bounded bare full S is used.
+
+The auxiliary wider-theta weight m_a can now be chosen once for the maximum radius delta_*. Its source norm and full prime-tail constants are uniform as delta_kappa shrinks. Thus, with K=floor((log N)^2/2304), the complete high-frequency lower bound is
+
+ h[g/m]+kappa||g/m||^2
+ >=(1/2)log(N)||g||^2
+       -C_M log(N)(ell_kappa/N)^(2M)-C exp[-c(log N)^2].         (D10)
+
+Fix sigma>0. For N>=C_sigma kappa^(-sigma), one has kappa^(-1)<=C_sigma N^(1/sigma) and ell_kappa<=C_sigma log N. Choose a fixed M with 2M>3+1/sigma. Increasing C_sigma then makes both errors in (D10) at most C_sigma kappa ell_kappa^2/N^2: the first follows by comparing fixed powers of N and log N, and the Gaussian-in-log error beats every required power of N. Equations (D8)-(D10) imply
+
+ integral_(N<=|t|<=2N)|fhat(t)|^2dt/(2pi)
+       <= C_sigma kappa ell_kappa^2/(N^2 log N),
+                       N>=C_sigma kappa^(-sigma).             (D11)
+
+By dyadic summation, the same bound holds with the integration region |t|>=N, after a change of constant. There is no assertion here about the complementary lower frequencies.
+
+## 15. Finite-strip transfer with only logarithmic losses
+
+We need the estimate on |Im z|<=1, rather than just the real Fourier line. Fix a finite A>=0. For |eta|<=A, the source multiplier e^(eta x) is handled by a spatial cutoff and a Fourier low/high split, with no conjugated operator.
+
+For N above a larger constant times kappa^(-sigma), set
+
+ R=(1/2)log[D(ell_kappa+log N)],
+
+where D is a fixed sufficiently large constant, depending only on A. Let chi_R be 1 on |x|<=R, zero on |x|>=R+1, with uniformly bounded derivatives of every fixed order. The theta envelope and ||u||=1 give
+
+ ||e^(eta x)(1-chi_R)f||^2<=C_A kappa N^(-4),
+                                             |eta|<=A,        (D12)
+
+by taking D large: its upper bound is C_A exp[(4+2A)R-pi e^(2R)], and any fixed power of ell_kappa+log N can be absorbed into half of that double-exponential exponent.
+
+Put a_R(x)=e^(eta x)chi_R(x). Then
+
+ ||a_R||_infinity^2<=C_A(ell_kappa+log N)^A,
+ ||a_Rhat 1_(|xi|>=N/2)||_1
+ <=C_(A,M)(R+1)e^(A(R+1))N^(-M).                              (D13)
+
+The latter follows by integrating by parts a fixed sufficiently large number of times. All derivatives of chi_R are uniformly bounded, its support has length O(R+1), and every derivative of e^(eta x) is uniformly bounded by C_(A,M)e^(A(R+1)) there.
+
+Let P_N denote the sharp frequency projection N<=|t|<=2N. Split f at input frequency N/4. The high-input term is bounded by ||a_R||_infinity times the tail version of (D11); ensure N/4 is above its threshold by enlarging C_sigma. In the low-input term the multiplier convolution has frequency separation at least 3N/4, so (D13) and Young's inequality apply. With fixed M sufficiently large in terms of sigma and A, its square is at most C_(sigma,A)kappa N^(-2). Finally add (D12). Since ell_kappa<=C_sigma log N, the result is
+
+ ||P_N(e^(eta x)f)||^2
+ <=C_(sigma,A) kappa (log N)^(A+1)/N^2,
+ |eta|<=A,                N>=C_(sigma,A)kappa^(-sigma).         (D14)
+
+The factor (log N)^(A+1) comes from (ell_kappa+log N)^A times ell_kappa^2/log N. All source Fourier projections in this section act in unweighted L2; none is divided by m or used as an original variational test.
+
+## 16. Full genuine-zero sampling and the actual budgets
+
+Take A=1 in (D14), and integrate in eta. Since B(t+i eta)=(e^(-eta x)f)hat(t), the squared analytic area mass in an enlarged dyadic rectangle is at most C_sigma kappa(log N)^2/N^2. The fixed-disk analytic mean-value inequality and the unconditional unit-height zero count give, with true multiplicities and no separation assumption,
+
+ sum_(N<=gamma_z<2N) j_z|B(z)|^2
+       <=C_sigma kappa(log N)^3/N^2,
+                         N>=C_sigma kappa^(-sigma).            (D15)
+
+The disks about all nontrivial zeros, |Im z|<1/2, are inside |Im z|<1. Enlarging the rectangle by a fixed amount is harmless after enlarging the threshold constant.
+
+Dyadic summation of (D15), with one logarithmic factor, proves (D1). For (D2), Cauchy--Schwarz in each dyadic block uses its total zero multiplicity O(N log N): its absolute sampling sum is at most C_sigma sqrt(kappa)(log N)^2/sqrt(N). Sum the geometric tail.
+
+The centered boundary sampling budget obeys the same improved absolute bound
+
+ sum_z j_z log(2+gamma_z)|B(z)|^2 exp(-|gamma_z-T|/8)
+                  <=C_sigma kappa log^4(2+T)/T^2,              (D16)
+
+for T>=C_sigma kappa^(-sigma), with a sufficiently enlarged constant. To see this, split at gamma=T/2. Above this point use (D1); below it, the earlier depth-free global weighted sampling bound gives at most C exp(-T/16). Since kappa^(-1)<=C_sigma T^(1/sigma), that exponential remainder is absorbed into (D16).
+
+Let S_low(T) and S_high(T) be the sum on the left of (D16), restricted respectively to gamma_z<T and gamma_z>=T. For the original centered boundary residual D_T, the complete estimate from CENTERED_BOUNDARY_COUPLING.md is still
+
+ |D_T|<=C kappa^(-2)sqrt(S_low(T)S_high(T)).
+
+Using (D16) gives |D_T|<=C_sigma kappa^(-1)log^4(2+T)/T^2. This genuinely saves one inverse-depth power in the absolute residual budget, but there is still no comparison to the actual mixed source Gram or actual tail mass. In particular a normalized low/high tail can be much smaller than this absolute bound; no relative absorption follows.
+
+## 17. Relative control of the actual high negative sampling squares
+
+Assume again that u is a normalized real ground-perpendicular negative eigenstate. For each off-line pair choose z=gamma+i eta with eta>0 and write B(z)=b_z-i c_z, with real b_z,c_z. Both members of the pair have multiplicity j_z. The actual complete source expansion gives the exact signed identity
+
+ kappa+P(u)=N_low(T)+N_high(T),
+ P(u)=sum_critical 2j|B(gamma)|^2+sum_off_pairs 4j b_z^2,
+ N_low(T)=sum_(off_pairs,gamma<T)4j c_z^2,
+ N_high(T)=sum_(off_pairs,gamma>=T)4j c_z^2.                     (D17)
+
+For every pair its contribution to the full Hermitian sum is 2j(b_z^2+c_z^2). Therefore (D15) and dyadic summation give
+
+ N_high(T)<=2 sum_(all z,gamma>=T) j_z|B(z)|^2
+          <=C_sigma kappa log^3(2+T)/T^2,
+                         T>=C_sigma kappa^(-sigma).            (D18)
+
+Increasing C_sigma if necessary makes the final multiplier at most 1/2 throughout the stated range. Subtracting this tail from the exact identity, while retaining EVERY positive sampling term, gives
+
+ kappa/2+sum_critical 2j|B(gamma)|^2+sum_off_pairs 4j b_z^2
+                  <=sum_(off_pairs,gamma<T)4j c_z^2.            (D19)
+
+This is a genuine relative estimate for the high negative-square part of the actual original coupling. It is distinct from the low/high form-boundary estimate, whose source Gram comparison is still missing. Equation (D19) forces at least one active off-line pair below this depth-dependent finite height. It does not bound the remaining low-height imaginary squares by the retained positive sampling terms, and does not prove their coefficient-one comparison.
