@@ -303,3 +303,148 @@ summable over the ideal primes. This proves the required absolute H series direc
 Thus every numerator is nonzero. Expanding the reciprocal numerator gives the same summable local-defect bound for H_p^(−1)−1. Hence H and H^(−1) both have absolute Dirichlet series on every buffered half-plane Re s≥1/2+δ. The product is nowhere zero there. Any fixed finite factors from the cited convention can be retained explicitly with their own convergent geometric series; the argument requires and uses their corresponding buffered nonvanishing.
 
 It follows that H creates no extra surviving quotient poles. Weighted causal Young for H and its inverse shows E_d(G0;U) comparable to E_d(G;U), with constants independent of U, for each fixed d>0. For the canonical Gamma energy bound, apply the cited record argument directly to G0: its weighted derivative budget is that of G multiplied by Σ|h(ν)|/ν, and its left double-theta tail is preserved by positive delays. The resulting records are G0's own records; they are not presumed to equal a previously selected sequence for G. Combining that bound with the direct finite construction proves the analogue of Section 7 for the retained-factor columns, without an infinite H*r operation.
+
+
+## 9. Complete prime-density extraction and the centered transition
+
+The continuous prime density can be extracted from the complete finite-column pairing with an exact favorable sign. On the same activity records, the canonical part of the remaining centered boundary is o(UE(U)). The actual shifted finite-column difference remains in the final formula.
+
+Write F=F̃_N for the complete column constructed above, including every original coefficient and moment correction. Let G denote its canonical bare observable, or the retained-H observable G0 of Section 8, and put Δ=F−G. Use G's own activity exponent and future-envelope records:
+
+    0<d<α≤3/8,
+    E(U)=||G||_(d,U)²,
+    E(U+h)≤e^(2ah)E(U), h≥0,
+    α−d<a<1/2−d.
+
+The bound α≤3/8 and the global zero bound Re ρ≤7/8 used below are the separately attributed external inputs from the pinned quasi-Riemann theorem cited in Section 1. An activity exponent α smaller than 3/8 does not improve that global bound for the centered prime multiplier. Every statement below is for these same records and this same canonical observable.
+
+### 9.1. The entire continuous density
+
+Define, on the finite column,
+
+    C^+F(R)=∫_1^∞ t^(−1/2)F(R+log t)dt,
+    C^-F(R)=e^(−R/2)∫_(−∞)^R e^(x/2)F(x)dx.
+
+The source moment B(0)=0 gives exactly
+
+    ∫_R e^(x/2)F(x)dx=B(0)Σ_l A_l sqrt(t_l)=0.
+
+All of these integrals are paid by the finite source tails. Changing variables in C^+ therefore gives
+
+    C^+F=−C^-F.                                          (P1)
+
+Set g=e^(−dR)F, λ_c=d+1/2 and h=e^(−dR)C^-F. Then h′+λ_c h=g and h(−∞)=0. Integration by parts on the terminal interval proves
+
+    −Re〈F,C^+F〉_(d,U)
+      =Re〈F,C^-F〉_(d,U)
+      =λ_c∫_(−∞)^U |h(R)|²dR+|h(U)|²/2≥0.              (P2)
+
+Its value is at most λ_c^(−1)||F||_(d,U)². Causal Young and endpoint Cauchy give
+
+    ||C^-(F−G)||_(d,U)≤λ_c^(−1)||F−G||_(d,U),
+    |e^(−dU)C^-(F−G)(U)|≤(2λ_c)^(−1/2)||F−G||_(d,U).
+
+Thus (1), with a stronger fixed exponential budget before pairing as in Section 7, transfers (P2) to the corresponding canonical causal expression Re〈G,C^-G〉_(d,U)≥0, with arbitrarily small exponential error. This never defines C^+G by a generally divergent ordinary future integral. The favorable contribution is O(E(U)); it alone does not provide a margin η(U)UE(U) with η(U)U→∞.
+
+### 9.2. The centered finite-prime multiplier
+
+Take P to be a half-integer and set
+
+    Q_P u(R)=Σ_(j<P)Λ(j)j^(−1/2)u(R+log j)
+                −∫_1^P t^(−1/2)u(R+log t)dt.             (P3)
+
+Every rational prime power is retained. After conjugation by e^(−dR), the multiplier for the convention hat u(τ)=∫u(R)e^(iτR)dR is
+
+    M_(P,d)(τ)=Σ_(j<P)Λ(j)j^(d−1/2−iτ)
+                  −∫_1^P t^(d−1/2−iτ)dt.
+
+For a fixed sufficiently small ε>0 and |τ|≤T,
+
+    |M_(P,d)(τ)|
+      ≤C_(d,ε) P^(3/8+d+ε)log³(P+T+2).                  (P4)
+
+Here is the arithmetic proof. Put w=d−1/2−iτ and T_ζ(s)=−ζ′(s)/ζ(s). Truncated Perron on the initial line Re(z−w)=2 represents the finite sum by the integral of T_ζ(z−w)P^z/z. Move the z line to c=3/8+d+ε, with 0<ε<1/8. The line z−w has real part 7/8+ε. The only crossed pole is z=1+w: all zero poles are strictly to the left of the new line, while z=0 and the trivial-zero poles are farther left.
+
+For clarity, the needed logarithmic-derivative bound follows from the absolutely convergent Hadamard difference for ξ(s)=s(s−1)π^(−s/2)Γ(s/2)ζ(s)/2. With s0=2+i Im s,
+
+    ξ′/ξ(s)−ξ′/ξ(s0)
+      =Σ_ρ [(s−ρ)^(−1)−(s0−ρ)^(−1)],
+
+where multiplicities are retained. For 7/8+ε≤Re s≤2, zeros within unit height cost at most C_ε log(2+|Im s|) by their unit-height count and horizontal separation. Far height shells have the convergent reciprocal-square bound and the same total order. At s0 the absolutely convergent zeta derivative and the Gamma factor give O(log(2+|Im s|)). The elementary completed factors therefore give
+
+    |T_ζ(s)−(s−1)^(−1)|≤C_ε log(2+|Im s|).
+
+In particular the weaker bound C_ε log²(2+|Im(z−w)|) suffices on the new line and horizontal segments, which avoid the explicit pole at s=1. Choose Perron height H=(P+T+2)^A with a sufficiently large fixed A. Since P is a half-integer, |P−n|≥1/2 for every integer n. Splitting the truncation error into n comparable to P and the two remaining ranges pays it, as well as the horizontal integrals, by a fixed inverse power of P+T. The vertical integral is at most C P^c log³(P+T+2). The residue is P^(1+w)/(1+w); the continuous integral subtracted in M equals this residue minus 1/(1+w), whose modulus is bounded in terms of d. This proves (P4). No zero spacing or lower bound for ζ′ at a zero is used.
+
+### 9.3. The canonical components on the same record
+
+In the following application, P and Q are fixed positive multiples of U+1, with P rounded to a half-integer. Cut e^(−dR)G(R) smoothly just after U+log P. Its L² norm is at most C P^aE(U)^(1/2) by the common future envelope. The actual fixed-source Gevrey-two estimate in Section 2 of the cited canonical Gamma report, multiplied by a fixed Gevrey-two cutoff, bounds the Fourier tail beyond T=K_*(U+1)² by any prescribed exponential error after K_* is chosen sufficiently large. The Section 8 summatory coefficient estimate gives that same absolute Gevrey budget for G0.
+
+The trivial multiplier bound C P^(d+1/2) pays this discarded Fourier tail. On retained frequencies apply (P4). Terminal Cauchy gives
+
+    |Re〈G,Q_PG〉_(d,U)|
+      ≤C P^(3/8+a+d+ε)log³(U+2)E(U)+O(e^(−MU)).          (P5)
+
+The cutoff equals one through the largest shifted argument, so it changes no term in the terminal pairing. Any pairing cost against the absolute norm of G is paid by first choosing a stronger fixed exponential tail budget.
+
+Similarly set V=U+log Q, and cut the second column just after V+log P. Both Cauchy factors use the same record U, and E(V)≤Q^(2a)E(U). Consequently
+
+    |Re∫_U^V e^(−2dR)conjugate(G(R))Q_PG(R)dR|
+      ≤C Q^(2a)P^(3/8+a+d+ε)log³(U+2)E(U)
+         +O(e^(−MU)).                                    (P6)
+
+Choose d sufficiently close to α, then a sufficiently close to α−d, and ε sufficiently small, so that
+
+    θ_c=3/8+3a+d+ε<1.                                    (P7)
+
+This is possible since α≤3/8. The canonical upper-band contribution in (P6) is therefore O(U^θ_c log³(U+2)E(U))=o(UE(U)). The global 3/8 in (P4) has not been replaced by the possibly smaller activity exponent α.
+
+### 9.4. The full centered edge and its retained transition
+
+On the genuine finite column define S_c^+=S^+−C^+. The whole-minus-edge proof of (4) also applies to the continuous measure dt: its tails satisfy the same Gaussian estimates as the prime measure. Hence, with P=K1(U+1)+O(1) a half-integer,
+
+    Re〈F,S_c^+F〉_(d,U)
+      =Re∫_R e^(−2dR)conjugate(G(R))S_c^+F(R)dR
+       −Re∫_U^∞ e^(−2dR)conjugate(G(R))Q_PF(R)dR
+       +O(e^(−MU)).                                      (P8)
+
+Every whole-axis future pairing has the finite column F in its future slot. The complete finite-column moment cancellation (P1) is retained; no independent canonical future operator is introduced.
+
+To bound the upper extent, take Q=K2(U+1) and V=U+log Q, with K2 chosen after c,K0,K1 and every earlier budget. Recall
+
+    t_l≤4N,   Σ_l|A_l|sqrt(t_l)≤C N K²(5/3)^K,
+    N=floor(e^U K0 sqrt(U+1)),   K=ceil(c(U+1)).
+
+For R≥V, write Y=4Ne^(−R), which is small for sufficiently large U. Complete Chebyshev summation and elementary integration give
+
+    Σ_(j≥2)Λ(j)j^(−1/2)e^(−c(j/Y)²)
+       +∫_1^∞ t^(−1/2)e^(−c(t/Y)²)dt
+      ≤C sqrt(Y)e^(−c′/Y²).
+
+It follows that
+
+    |S_c^+F(R)|+|Q_PF(R)|
+      ≤C N K²(5/3)^K e^(−R/2)
+          exp[−c0(e^R/(4N))²].                           (P9)
+
+Multiply by |G(R)|≤Ce^(R/2) and e^(−2dR), then integrate R≥V. The result is at most
+
+    C N K²(5/3)^K e^(−2dV)
+          exp[−c1 Q²/(K0²(U+1))].
+
+Choosing K2 last makes this O(e^(−MU)). This is a bound for the actual finite-column upper edge, including every correction, rather than for an infinite canonical-canonical edge.
+
+Use F=G+Δ only on the retained finite band, and apply (P6). Then
+
+    Re∫_U^∞ e^(−2dR)conjugate(G(R))Q_PF(R)dR
+      =Re∫_U^V e^(−2dR)conjugate(G(R))Q_PΔ(R)dR
+       +O(U^θ_c log³(U+2)E(U))+O(e^(−MU)).                (P10)
+
+Equations (P1), (P2), (P8) and (P10) preserve the same finite-source equation. In particular its carrying expression is exactly
+
+    P_F+ΓF−S^+F+κR_F
+      =P_F+ΓF−S_c^+F+C^-F+κR_F.
+
+The positive causal term (P2) remains. The source-moment column P_F, full κR_F, whole centered pairing in (P8), and actual Δ transition in (P10) still require a joint signed comparison. There is no proved sign or relative bound for that complete package. The terminal approximation in (1) cannot be applied to shifted points R+log j beyond U in the transition.
+
+If the error in (P10) is absorbed separately into a proposed margin η(U)UE(U), it must be dominated at that scale, for example by η(U)U/[U^θ_c log³(U+2)]→∞. A fixed or inverse-logarithmic fractional margin suffices. The weaker condition η(U)U→∞ for an undivided full joint expression cannot be reused after discarding the larger extracted error in (P10).
