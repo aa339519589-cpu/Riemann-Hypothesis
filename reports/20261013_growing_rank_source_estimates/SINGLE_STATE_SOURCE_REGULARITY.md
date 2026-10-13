@@ -520,3 +520,244 @@ Increasing C_sigma if necessary makes the final multiplier at most 1/2 throughou
                   <=sum_(off_pairs,gamma<T)4j c_z^2.            (D19)
 
 This is a genuine relative estimate for the high negative-square part of the actual original coupling. It is distinct from the low/high form-boundary estimate, whose source Gram comparison is still missing. Equation (D19) forces at least one active off-line pair below this depth-dependent finite height. It does not bound the remaining low-height imaginary squares by the retained positive sampling terms, and does not prove their coefficient-one comparison.
+
+
+---
+
+A fixed Gevrey-two choice of the source filter makes the finite-height threshold explicit in scale. The proof below replaces the family of bounds T>=C_sigma kappa^(-sigma) by one bound T>=exp(C sqrt(log(e/kappa))). No numerical value of C or new finite-height zero verification is supplied. Equation labels (G1)–(G13) refer only to this continuation.
+
+## 18. Fixed Gevrey cutoffs, with their elementary kernel bound
+
+A compact Gevrey-2 cutoff can be constructed without any spectral assumption. For example take phi(x)=exp[-1/(1-x^2)] on |x|<1 and zero elsewhere. If d=1-|x|, Cauchy's estimate on a complex circle of radius c d, with c a sufficiently small fixed constant, gives
+
+ |phi^(n)(x)|<=n!(c d)^(-n)exp(-c'/d).
+
+Indeed the denominator 1-z^2 has size comparable to d and argument uniformly separated from +-pi/2 on that circle. Maximizing d^(-n)exp(-c'/d) and using n!>=(n/e)^n yields
+
+ ||phi^(n)||_infinity<=C^(n+1)(n!)^2.
+
+The function and all derivatives vanish at the endpoints. Integrating and normalizing phi gives a step cutoff. Translating, dilating by fixed constants and multiplying finitely many such steps gives the real even bandpass p used in the source proof, with p=1 on 1<=|t|<=2 and support in 1/2<|t|<3. Its compact support and derivative bounds give
+
+ ||p^(n)||_1<=C^(n+1)(n!)^2.
+
+If k is its inverse Fourier kernel, integration by parts and n=floor(c sqrt(|x|)) imply
+
+ |k(x)|<=C exp(-c sqrt(|x|)),
+ integral_(|x|>=R)|k(x)|dx<=C exp(-c sqrt(R)).                   (G1)
+
+The polynomial prefactor from integrating the pointwise bound is absorbed by decreasing c.
+
+Similarly choose the spatial cutoff chi_R, equal to 1 on [-R,R] and zero outside [-R-1,R+1], so that
+
+ ||chi_R^(n)||_infinity<=C^(n+1)(n!)^2
+
+with constants independent of R>=1. For a_R(x)=exp(eta x)chi_R(x), |eta|<=A fixed, Leibniz' rule gives
+
+ ||a_R^(n)||_1
+ <=C_A(R+1)exp(A(R+1))C_A^n(n!)^2.
+
+The same integration-by-parts optimization gives
+
+ ||ahat_R 1_(|xi|>=N/2)||_1
+ <=C_A(R+1)exp(A(R+1))exp(-c_A sqrt(N)).                         (G2)
+
+These are ordinary unweighted source Fourier estimates.
+
+## 19. Error absorption at a single explicit scale
+
+Retain ell=log(e/kappa), delta_kappa=delta_*/ell, and the actual four-point bound (D6) C kappa ell^2. Cut the fixed kernel in (G1) off at |s|<=delta_kappa, exactly as before. Its multiplier leakage is now
+
+ ||chat_(N,kappa)-p(./N)||_infinity
+                    <=C exp[-c sqrt(N/ell)],                  (G3)
+
+while its first absolute kernel moment remains at most C/N. The full source identity consequently still has the upper bound C kappa ell^2/N^2. The complete high-frequency lower bound has errors
+
+ C log(N)exp[-c sqrt(N/ell)] +C exp[-c_0(log N)^2].              (G4)
+
+There is a fixed C_*>0 such that both errors in (G4) are at most C kappa ell^2/N^2 for every
+
+ N>=exp(C_* sqrt(ell)).                                        (G5)
+
+For the second error, enlarge C_* so c_0(logN)^2>=ell+3logN+O(1). For the first, put X=logN. In the stated range ell<=X^2/C_*^2 and
+
+ sqrt(N/ell)>=C_* exp(X/2)/X.
+
+After enlarging C_*, this quantity times c dominates ell+3X+O(logell) for every X>=C_*sqrt(ell). The exponential dominates the required fixed polynomial uniformly after the lower X threshold is increased. This proves the first absorption as well.
+
+Hence the real-axis estimate (D11) becomes
+
+ integral_(|t|>=N)|fhat(t)|^2dt/(2pi)
+       <=C kappa ell^2/(N^2 logN),
+                      N>=exp(C_*sqrt(ell)),                    (G6)
+
+including the dyadically summed tail. The original form domains are the same as in the shrinking-radius proof; replacing a smooth bandpass by the specified smoother one changes no domain assertion.
+
+## 20. Finite-strip transfer without losing the explicit scale
+
+Choose R by exp(2R)=D(ell+logN), as in Section 15. The theta envelope gives an outside weighted-source error at most C_A kappa N^(-4). For the low-input-frequency term use (G2), rather than an unspecified fixed inverse power. In the range (G5), exp(-c_A sqrtN) dominates kappa times every fixed power of N, ell and R after increasing C_* depending on A. Thus all low-input and exterior errors can be absorbed into
+
+ C_A kappa ell^2/[N^2 logN].
+
+The high-input term is still bounded by exp(2A(R+1)) times (G6). Retaining the dependence on ell rather than replacing it by a power of logN gives
+
+ integral_(N<=|t|<=2N)|(exp(eta x)f)hat(t)|^2dt/(2pi)
+ <=C_A kappa ell^2(ell+logN)^A/[N^2 logN],
+ |eta|<=A,              N>=exp(C_A sqrt(ell)).                  (G7)
+
+A fixed enlargement of the threshold handles the input N/4 and the finitely enlarged dyadic intervals used in the sampling argument.
+
+## 21. Full actual samples and the signed reduction
+
+Take A=1 and use the same analytic disks and unconditional unit-height multiplicity count as in Section 16. The extra factor logN from the count cancels the denominator in (G7), giving
+
+ sum_(N<=gamma_z<2N)j_z|B(z)|^2
+ <=C kappa ell^2(ell+logN)/N^2,
+                         N>=exp(C sqrt(ell)).                  (G8)
+
+The sum runs over the entire genuine positive-height zero set, including both conjugate members. Consequently
+
+ sum_(gamma_z>=T)j_z|B(z)|^2
+ <=C kappa ell^2(ell+logT)/T^2,                                 (G9)
+
+ sum_(gamma_z>=T)j_z log(2+gamma_z)|B(z)|^2
+ <=C kappa ell^2(ell+logT)logT/T^2,                            (G10)
+
+ sum_(gamma_z>=T)j_z|B(z)|
+ <=C sqrt(kappa)ell sqrt((ell+logT)logT)/sqrt(T),                (G11)
+
+for T>=exp(C sqrt(ell)). The dyadic sums are geometric with only fixed polynomial/logarithmic factors.
+
+For a real ground-perpendicular negative state, the high off-line imaginary sampling squares therefore satisfy
+
+ N_high(T)<=C kappa ell^2(ell+logT)/T^2.
+
+In the range T>=exp(C sqrt(ell)), enlarging the same fixed C makes the factor multiplying kappa at most 1/2: with X=logT, ell<=X^2/C^2 and the remaining factor is bounded by a fixed polynomial in X times exp(-2X). Thus the complete actual identity gives
+
+ kappa/2+P_all(u)<=N_off,gamma<T(u),
+                   T>=exp(C sqrt(log(e/kappa))).               (G12)
+
+This is an explicit subpower height, not a fixed height independent of depth. It still leaves exactly the low-height signed comparison unresolved.
+
+A precise depth/height consequence is: if there is no off-line zero below a height G large enough for the constants, any nonground negative eigenvalue -kappa must obey
+
+ kappa<=e exp[-c(log G)^2].                                    (G13)
+
+Indeed (G12) would otherwise force an active off-line zero below G. This is only a quantitative implication; it neither supplies a zero-free height nor contradicts the possible existence of arbitrarily shallow negative eigenvalues.
+
+
+---
+
+The same depth-free source estimates also control the whole near-critical strip. Combining that bound with the high-tail reduction leaves the actual signed inequality on a finite region bounded away from the critical line by a depth-dependent distance. Equation labels (R1)–(R8) refer only to the following final continuation.
+
+## 22. Original single-state setting and inputs
+
+Let Hu=-kappa u be an original real even negative eigenstate, normalized by ||u||_2=1, with 0<kappa<=1/2 and orthogonal to the distinguished ground. Let f=mu and
+
+ B(z)=integral_R f(x)cos(zx) dx.
+
+The actual signed identity is
+
+ kappa+P_all(u)=N_off(u),
+ P_all=sum_critical 2j_z|B(gamma_z)|^2+sum_off-pair 4j_z b_z^2,
+ N_off=sum_off-pair 4j_z c_z^2,
+ B(gamma_z+i eta_z)=b_z-i c_z, 0<eta_z<1/2.
+
+There is one representative with eta_z>0 per positive-height conjugate pair, with its true multiplicity j_z. All sums retain all genuine zeros; no arbitrary interpolation family is substituted.
+
+The depth-free theorem and unit-cell interpolation in Sections 1–9 give, for every fixed A,q and s<1,
+
+ sup_(|eta|<=A)||exp(eta x)x^q f||_(H^s)<=C_(A,q,s).             (R1)
+
+The genuine unit-height zero count including multiplicity is O(log(2+gamma)). The shrinking-propagation and Gevrey theorem in Sections 12–21 gives, with ell=log(e/kappa),
+
+ sum_(all genuine z,gamma_z>=T)j_z|B(z)|^2
+ <=C kappa ell^2(ell+log T)/T^2,
+                     T>=exp(C_G sqrt(ell)).                  (R2)
+
+By enlarging the fixed C_G, the high off-pair contribution is therefore <=kappa/4. This only changes the fixed constant in the existing threshold; no dependence on the eigenstate or depth is introduced.
+
+## 23. A vertical-supremum sampling bound
+
+For every fixed 0<=t<1,
+
+ D_t(u):=sum_(off-pair reps) j_z(1+gamma_z)^(2t)
+          sup_(|eta|<=1/2)|B'(gamma_z+i eta)|^2 <=C_t.          (R3)
+
+This is slightly stronger than evaluation at the original zero points and pays the moving vertical points needed below.
+
+Choose t<s<1. Since f is real and even, B is its entire Fourier transform in the +it convention used throughout. B' is the transform of i x f. For any center gamma+i eta with |eta|<=1/2, the analytic disk mean-value inequality at fixed radius 1/4 gives
+
+ |B'(gamma+i eta)|^2
+ <=C integral_(gamma-1/4)^(gamma+1/4)
+       integral_(-3/4)^(3/4)|B'(xi+i v)|^2 dv dxi.             (R4)
+
+The right-hand side is independent of eta, so it also bounds the vertical supremum. Upon multiplying by j_z(1+gamma_z)^(2t) and summing, the genuine unit-height multiplicity count bounds the overlap at any real xi by C log(2+|xi|). On the corresponding interval, 1+gamma_z is comparable to 1+|xi|; bounded heights are covered by the same constant. Thus the left side of (R3) is at most
+
+ C integral_(-3/4)^(3/4) integral_R
+        (1+|xi|)^(2t)log(2+|xi|)|B'(xi+i v)|^2 dxi dv.
+
+The pointwise scalar bound
+
+ (1+|xi|)^(2t)log(2+|xi|)<=C_(s-t)(1+xi^2)^s
+
+and Plancherel reduce this to (R1) with q=1, A=3/4. This proves (R3). The proof makes no simplicity, spacing, or derivative-vanishing assumption. If eta=1/2 is included in the harmless supremum, the entire source transform is still defined there.
+
+## 24. True imaginary squares in a narrow or height-weighted strip
+
+Reality gives B(gamma) real. Hence, for 0<eta<=1/2,
+
+ Im B(gamma+i eta)=integral_0^eta Re B'(gamma+i v) dv,
+ |Im B(gamma+i eta)|^2
+ <=eta^2 sup_(|v|<=1/2)|B'(gamma+i v)|^2.                      (R5)
+
+For any d>0 define the actual near-line set
+
+ A_t(d)={off-pair representatives: eta_z<=d(1+gamma_z)^t}.
+
+Equations (R3)--(R5) imply the fully summed inequality
+
+ N_(A_t(d))(u):=4sum_(z in A_t(d))j_z c_z^2
+ <=4d^2 D_t(u)<=C_t d^2.                                    (R6)
+
+The definition remains valid when d(1+gamma)^t exceeds 1/2; in that region every off-line pair simply belongs to A_t(d). There is no maximum-height restriction in (R6). The unweighted case t=0 gives the simpler whole-height narrow-strip estimate N_(eta<=d)<=C d^2.
+
+Choose a fixed c_t>0 so small that C_t c_t^2<=1/4 and put
+
+ d_kappa=c_t sqrt(kappa).
+
+Then the complete near-line imaginary-square contribution is <=kappa/4.
+
+## 25. Simultaneous actual signed absorption
+
+Take
+
+ T_kappa=exp(C_*sqrt(log(e/kappa))),
+
+where the fixed C_* is large enough for the high-tail contribution in Section 22 to be <=kappa/4. Let
+
+ R_(kappa,t)={off-pair reps: gamma_z<T_kappa,
+              eta_z>c_t sqrt(kappa)(1+gamma_z)^t}.
+
+The complement of R_(kappa,t) is contained in the union of the full high tail and A_t(d_kappa). Counting an intersection twice only enlarges this nonnegative upper bound. Therefore (R2) and (R6), applied to the SAME actual eigenstate, give
+
+ kappa/2+P_all(u)
+ <=sum_(z in R_(kappa,t))4j_z c_z^2.                          (R7)
+
+Every positive square in the original identity is preserved. In particular R_(kappa,t) contains at least one genuine off-line zero with a nonzero imaginary sample.
+
+For t=0 this is the finite rectangle
+
+ 0<gamma_z<exp(C_*sqrt(log(e/kappa))),
+ c_0 sqrt(kappa)<eta_z<1/2.                                  (R8)
+
+For t>0 the stronger curved lower boundary retains the same upper height. Both constants are uniform over the normalized scalar negative eigenstates. Formula (R7) is not a uniform source estimate on mixtures of different eigenvalues; normalization and the scalar Hu=-kappa u input remain essential.
+
+## 26. Exact scope of the remaining comparison
+
+This removes two nonnegative portions of the actual negative-square sum relative to the existing kappa: the full high-height piece and the complete near-critical-line piece. It does not sign the remaining finite rectangle or control the actual low--high mixed source Gram. The original reconstruction coefficients remain a_z=-2j_z B(z)/kappa, and no inverse-depth factor has been discarded.
+
+A sufficient still-unproved comparison would be
+
+ sum_(z in R_(kappa,t))4j_z c_z^2<=P_all(u)
+
+for every such actual state; (R7) would then be contradictory. No such inequality is obtained here. The active region depends on the unknown depth. As kappa tends to zero, the excluded near-line strip becomes thinner, so the active region approaches the critical line while its upper height grows. In particular this theorem does not exclude arbitrarily shallow negative spectrum or prove RH.
