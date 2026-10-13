@@ -1,6 +1,6 @@
 # Compact smooth negative source from a supercritical Green eigen-source
 
-This note uses the completed source equation, row-tail bound, and reference estimate in the [source-tail report](../work/Riemann-Hypothesis/reports/20261013_supercritical_source_tails/REPORT.md) and [reference inverse report](../work/Riemann-Hypothesis/reports/20261013_full_prime_green_reference/REFERENCE_INVERSE.md). If an eigen-source is complex-valued, take a nonzero real or imaginary part and renormalize; the source operator has real coefficients.
+This note uses the completed source equation, row-tail bound, and reference estimate in the [source-tail report](../20261013_supercritical_source_tails/REPORT.md) and [reference inverse report](../20261013_full_prime_green_reference/REFERENCE_INVERSE.md). If an eigen-source is complex-valued, take a nonzero real or imaginary part and renormalize; the source operator has real coefficients.
 
 Date: 2026-10-13. The normalization and actual source domains are those of the [source-tail report](../20261013_supercritical_source_tails/REPORT.md); the signed source identity is in [SIGNED_ZERO_PAIRING.md](../20261013_supercritical_source_tails/SIGNED_ZERO_PAIRING.md). Every prime power is retained. The construction is conditional only on the hypothesized actual supercritical eigen-source.
 
@@ -182,3 +182,7 @@ For the weighted $H^2$ norm, $\|U_R\|_2\le B_R$ and $\operatorname{supp}G\subset
 The parameters in (16) make the dependence on $\gamma$, the normalized source norms $M,Q,B$, and the support cutoff $R$ explicit. Under $P[r]=1$, $M,Q,B$ are uniformly bounded by the cited reports. For a source with $P[r]=P_0$, first rescale it by $P_0^{-1/2}$, apply the normalized construction, and rescale the resulting $G$ by $P_0^{1/2}$; the Weil lower bound becomes $(\lambda-1)P_0/2$, while its weighted $H^2$ norm scales by $P_0$ after squaring. The stopping rule (11) uses the explicitly defined functions (1)--(10); no unspecified asymptotic constant enters that rule. Evaluating it at supplied numerical source bounds requires certified enclosures for the fixed theta integrals, suprema and complete-prime tails. Such a decimal certificate is not supplied here. The big-O radius estimate (12) is only a simpler asymptotic summary.
 
 This is a compact-source consequence of a hypothetical supercritical eigenvector. It does not rule out $\lambda>1$.
+
+## Sharper smoothing bound
+
+The [exact-symbol smoothing appendix](SYMBOL_MOLLIFICATION.md), with its [independent audit](SYMBOL_MOLLIFICATION_REFEREE.md), replaces the mollification step above by a compact signed kernel whose Fourier multiplier lies in $[0,1]$. It preserves the same negative margin and pole moments. Under $P[r]=1$, its weighted $H^2$ norm is at most $C_\theta(\lambda-1)^{-\theta}$ for every fixed $\theta>0$ near threshold; the radius rule (11) is unchanged. This is an analytic bound, not a decimal enclosure certificate or an eigenvalue exclusion.

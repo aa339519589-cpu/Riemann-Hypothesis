@@ -62,10 +62,9 @@ with \(b_n(R)=0\) if \(d_n\le R\). Define exactly as in the published tail estim
 \]
 These are nonincreasing tail functions and tend to zero. Testing the actual auxiliary eigen-equation gives the exterior weighted-variable bound
 \[
- t_R:=\|1_{x>R}v\|_2
- \le \min\left(V,\frac{V\left(D_\delta(R)+4\pi U\mu_R\right)}{2\delta}\right).
+ \|1_{x>R}v\|_2\le t_R:=\min\left(V,\frac{V\left(D_\delta(R)+4\pi U\mu_R\right)}{2\delta}\right).
 \]
-The \(4\pi U\mu_R\) term is the two-interface Carleman bound for the odd logarithmic kinetic cross term. In particular, \(\|1_{x>R}g\|_2\le U\mu_Rt_R\), and the lost full-line pole moment is bounded by
+The \(4\pi U\mu_R\) term is the two-interface Carleman bound for the odd logarithmic kinetic cross term. In particular, \(\|1_{x>R}g\|_2\le\mu_Rt_R\), and the lost full-line pole moment is bounded by
 \[
  c_R:=\ell_{\rm full}(1_{[-R,R]}g_o)\quad\text{(the signed correction coefficient)},\qquad
  m_R:=2E_Rt_R\quad\text{so }|c_R|\le m_R.
@@ -74,7 +73,7 @@ The \(4\pi U\mu_R\) term is the two-interface Carleman bound for the odd logarit
 Let \(F_R=1_{[-R,R]}g_o\). The jump-form split across the two cutoff interfaces, \(\|\mathsf C\|_{2\to2}=\pi\) for the Carleman kernel \(1/(u+v)\), and nonnegativity of the exterior kinetic form give
 \[
  q_b[F_R]\le Q_{\rm cut}(R):=
- Q+8\pi U\mu_R B t_R.
+ Q+8\pi U\mu_R V t_R.
 \]
 The constant \(8\pi\) includes the two interfaces and the factor two from polarizing the quadratic form. This is stronger than merely saying that the sharp cutoff is bounded in the form norm; it is what makes the negative margin quantitative.
 
@@ -97,7 +96,7 @@ where the explicit monotone error function is
  +2m_R\!\left(\sqrt{Q_{\rm cut}(R)Q_h}+M_0VH_v\right)
  +m_R^2\!\left(Q_h+M_0H_v^2\right).\;}
 \]
-Choose the least integer \(R\) above the support radius of \(h_o\) and the tail-estimate validity threshold for which \(\Omega(R)\le\gamma/4\). Every term is defined from \(\mu\), \(e_N\), the convergent full-prime row sums, \(C_{\rm ref}\), \(Q\), \(\lambda\), and fixed \(h_o\) data; monotone upper enclosures can therefore certify this stopping rule. The limit \(\Omega(R)\to0\) proves that the rule terminates for each \(\delta>0\). At that radius \(W[F_R^c]\le-3\gamma/4\).
+Choose the least integer \(R\ge2\), with \(h_o\) supported in \((-1,1)\), for which \(\Omega(R)\le\gamma/4\). Every term is defined from \(\mu\), \(e_N\), the convergent full-prime row sums, \(C_{\rm ref}\), \(Q\), \(\lambda\), and fixed \(h_o\) data; monotone upper enclosures can therefore certify this stopping rule. The limit \(\Omega(R)\to0\) proves that the rule terminates for each \(\delta>0\). At that radius \(W[F_R^c]\le-3\gamma/4\).
 
 ## Mollifier width, finite prime labels, and retained margin
 
@@ -167,3 +166,7 @@ Thus the norm itself is at most \(e^{R+1}B_R\sqrt{1+A_1^2\epsilon^{-2}+A_2^2\eps
 ## Referee notes
 
 The construction is nonuniform as \(\lambda\downarrow1\), because the tail radius depends on \(\delta^{-1}\) and the retained negative margin is proportional to \(\gamma\). The abstract stopping rule is explicit once exact monotone enclosures for \(D_\delta(R)\), \(\mu_R\), and \(E_R\) are provided. The published report's generic theta constants do not, on their own, give a numerical radius. This yields a regularized negative Weil-form witness conditional on the actual eigen-source; it proves no eigenvalue exclusion or RH conclusion.
+
+## Normalization clarification
+
+Here $V$ bounds $\|v\|_2$ and $B=UV$ bounds the positive-wing source norm. Accordingly, the source tail is $\mu_Rt_R$ and the kinetic cutoff error is $8\pi U\mu_R Vt_R$. An earlier version of this review included an extra $U$ in those two expressions. The primary report uses the correct bounds with the actual source norm $M$ and is unchanged by this correction. The same distinction is recorded in [the even spectral transfer, section 6](EVEN_SPECTRAL_TRANSFER.md).
