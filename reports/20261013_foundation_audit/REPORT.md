@@ -10,6 +10,9 @@ The parts have distinct scopes:
 - [Whole negative-band regularity](NEGATIVE_BAND_REGULARITY.md): full paired-prime summability, actual-domain commutators, a noncircular low-frequency bound, and the Lyapunov estimate for arbitrary mixtures in each positive-depth band.
 - [Theta strip and eigenstate tails](THETA_STRIP_AND_TAILS.md): the holomorphic square root of the actual theta multiplier, full-prime spatial localization, sharp-cutoff form domains, and fixed-order weighted derivative and Weil passages. The exact rational strip checker is replayed; the finite-height interval ledger is not.
 
+- [Fifth-round even inertia audit](ZERO_INERTIA.md): rechecks the inherited distinct-quartet count, including its exact zero-division domain argument, and gives an alternative compact-interpolation proof.
+- [Odd and Green inertia interface](ODD_GREEN_INERTIA.md): proves that the odd physical and supercritical Green total multiplicities equal the same distinct-quartet count, with [two independent checks](INERTIA_REFEREE.md). It gives no individual eigenvalue correspondence.
+
 The resulting equivalence is
 \[
 \mathrm{RH}\quad\Longleftrightarrow\quad
