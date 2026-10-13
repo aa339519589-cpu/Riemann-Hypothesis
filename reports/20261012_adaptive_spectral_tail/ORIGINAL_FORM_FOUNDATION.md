@@ -6,7 +6,7 @@ The analytic inputs are the Jacobi theta identity for the kernel below, the mero
 
 ## 1. Definitions and Fourier multiplier
 
-Use
+Use inner products conjugate-linear in the first slot and linear in the second. Use
 \[
  \widehat f(t)=\int_{\mathbb R}f(x)e^{itx}\,dx,\qquad
  f(x)=\frac1{2\pi}\int_{\mathbb R}\widehat f(t)e^{-itx}\,dt,
@@ -300,7 +300,7 @@ Since \(mh=g_0/2\), the operator in (17) satisfies
  (B-V)g_0=M_m(A-S)\Phi=-mh=-\tfrac12g_0,
  \qquad (ULU^{-1})g_0=0.                                     \tag{18}
 \]
-This is an operator identity: \(\Phi\in\mathcal S\) implies \(b(D)\Phi\in L^2\), so \(g_0\in D(B)\); the weighted prime sum is bounded by (10), and (2) makes its value on \(\Phi\) well-defined after multiplication by \(m\). Finally, \(E(q)=0\) forces the continuous positive jump integrand to vanish for almost every pair, so \(q\) is constant. Thus the zero direction is exactly the original constant, and \(\langle Uq,g_0\rangle=\int q\,d\nu\).
+This is an operator identity: \(\Phi\in\mathcal S\) implies \(b(D)\Phi\in L^2\), so \(g_0\in D(B)\); the weighted prime sum is bounded by (10), and (2) makes its value on \(\Phi\) well-defined after multiplication by \(m\). Finally, \(E(q)=0\) forces the continuous positive jump integrand to vanish for almost every pair, so \(q\) is constant. Thus the zero direction is exactly the original constant, and \(\langle g_0,Uq\rangle=\int q\,d\nu\).
 
 The formulae above concern the complete even form domain and the original full prime-power sum. They establish the unconditional foundation used by the positive-depth gap certificate; they do not prove the critical half-gap or RH.
 
