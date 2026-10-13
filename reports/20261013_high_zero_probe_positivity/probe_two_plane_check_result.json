@@ -1,0 +1,165 @@
+{
+  "type": "FLOATING_POINT_SANITY_NOT_INTERVAL_CERTIFICATE",
+  "theta_modes_truncated_to": 8,
+  "integration_cutoff": 4,
+  "proof_dependency": "original analytic theorem, not this program",
+  "rows": [
+    {
+      "eta": 0,
+      "gamma": 20,
+      "predicted_limit_eigenvalues": [
+        0.3214828459698947,
+        0.17080745687715648
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.17080745158424668,
+        0.32148284145909617
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0,
+      "gamma": 80,
+      "predicted_limit_eigenvalues": [
+        0.3214828459698947,
+        0.17080745687715648
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.1708074568771578,
+        0.3214828459698947
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0,
+      "gamma": 200,
+      "predicted_limit_eigenvalues": [
+        0.3214828459698947,
+        0.17080745687715648
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.1708074568771677,
+        0.32148284596989435
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.125,
+      "gamma": 20,
+      "predicted_limit_eigenvalues": [
+        0.32137512615484215,
+        0.17075577426265173
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.1707557687476119,
+        0.3213751216512858
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.125,
+      "gamma": 80,
+      "predicted_limit_eigenvalues": [
+        0.32137512615484215,
+        0.17075577426265173
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.17075577426265293,
+        0.3213751261548422
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.125,
+      "gamma": 200,
+      "predicted_limit_eigenvalues": [
+        0.32137512615484215,
+        0.17075577426265173
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.17075577426266297,
+        0.32137512615484176
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.375,
+      "gamma": 20,
+      "predicted_limit_eigenvalues": [
+        0.32051110227776874,
+        0.1703424090783876
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.17034240180171029,
+        0.320511097843552
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.375,
+      "gamma": 80,
+      "predicted_limit_eigenvalues": [
+        0.32051110227776874,
+        0.1703424090783876
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.1703424090783889,
+        0.32051110227776874
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.375,
+      "gamma": 200,
+      "predicted_limit_eigenvalues": [
+        0.32051110227776874,
+        0.1703424090783876
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.17034240907839932,
+        0.3205111022777683
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.5,
+      "gamma": 20,
+      "predicted_limit_eigenvalues": [
+        0.31975181196162134,
+        0.16998085716245168
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.16998084836707997,
+        0.31975180760442634
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.5,
+      "gamma": 80,
+      "predicted_limit_eigenvalues": [
+        0.31975181196162134,
+        0.16998085716245168
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.1699808571624531,
+        0.3197518119616213
+      ],
+      "positive": true
+    },
+    {
+      "eta": 0.5,
+      "gamma": 200,
+      "predicted_limit_eigenvalues": [
+        0.31975181196162134,
+        0.16998085716245168
+      ],
+      "finite_generalized_source_to_physical_eigenvalues": [
+        0.16998085716246392,
+        0.3197518119616209
+      ],
+      "positive": true
+    }
+  ],
+  "rh_proved": false
+}
