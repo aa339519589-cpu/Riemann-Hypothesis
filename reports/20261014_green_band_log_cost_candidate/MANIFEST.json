@@ -1,0 +1,21 @@
+{
+  "base_commit": "1cece5ec907004c5e1693148d223cbe75eeec1b3",
+  "last_checked_upstream_commit": "de454157629b8aa275df0bfee8cf9369a69ee54a",
+  "upstream_delta": "only REFEREE_THREE_HALVES_BOUND.md added; theorem dependencies unchanged",
+  "status": "research proof draft; independent review pending; no RH or new zeta-zero exclusion",
+  "source_git_blob_shas": {
+    "reports/20261013_full_prime_green_reference/THREE_HALVES_BOUND.md": "bf948c7ea22d94986614fe60edc7c6643f56e3a0",
+    "reports/20261013_supercritical_source_tails/REPORT.md": "04367f1d0b24f8bd6a8e9cfab205faaee11eb11a",
+    "reports/20261013_green_spectral_interfaces/REPORT.md": "ec2890099d091db9ec15d3c63776a974dd30c625",
+    "reports/20261013_compact_green_excess/REPORT.md": "1344d1442a0b9e06d5c998063e5d4f19091d73b3",
+    "reports/20261012_adaptive_spectral_tail/ORIGINAL_FORM_FOUNDATION.md": "c81e0ecc4fb8f30d2446df739888b99c7f1cfe12",
+    "reports/20261013_odd_operator_domains/REPORT.md": "497202d2a9e97dbe2bd31c8301617068ebf8d346",
+    "reports/20261013_growing_rank_source_estimates/INFINITE_HIGH_TAIL.md": "ca00a4402c088545fb30d55315bc679e49f2190a",
+    "reports/20261013_full_prime_green_reference/REFEREE_THREE_HALVES_BOUND.md": "e05d762258d598c8c1cd8d8b7c486fcd0a69efcf"
+  },
+  "files": {
+    "GREEN_BAND_LOG_COST.md": "3ad61b007cc8775c7f07613172c62ed61475dceae1fc20aebf0aab4bc424f3e2",
+    "verify_green_band.py": "3f51086a68d0e2ab432adb24997dbd4eabd860b35084916c3292b0e95dc08c77",
+    "verification.json": "496eb328c143701c288ee54353a7082503991824e039b2baba561b366a64c52e"
+  }
+}
