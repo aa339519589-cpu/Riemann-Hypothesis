@@ -1,0 +1,65 @@
+{
+  "status": "PASS_EXACT_FORMAL_JET_ALGEBRA",
+  "multiplicity_cases": [
+    {
+      "multiplicity": 1,
+      "zero_defect_jet_orders": [
+        0
+      ],
+      "first_nonzero_defect": "-1*z0**3*U/A"
+    },
+    {
+      "multiplicity": 2,
+      "zero_defect_jet_orders": [
+        0,
+        1
+      ],
+      "first_nonzero_defect": "-2*z0**3*U/A"
+    },
+    {
+      "multiplicity": 3,
+      "zero_defect_jet_orders": [
+        0,
+        1,
+        2
+      ],
+      "first_nonzero_defect": "-6*z0**3*U/A"
+    },
+    {
+      "multiplicity": 4,
+      "zero_defect_jet_orders": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "first_nonzero_defect": "-24*z0**3*U/A"
+    },
+    {
+      "multiplicity": 5,
+      "zero_defect_jet_orders": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "first_nonzero_defect": "-120*z0**3*U/A"
+    },
+    {
+      "multiplicity": 6,
+      "zero_defect_jet_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "first_nonzero_defect": "-720*z0**3*U/A"
+    }
+  ],
+  "nonzero_completed_endpoint_test": "z=i/2; Xi(z)=1/2; limit J_z(B chi_R)=i/16",
+  "analytic_tail_and_operator_domain_proved_by_script": false,
+  "rh_proved": false
+}
