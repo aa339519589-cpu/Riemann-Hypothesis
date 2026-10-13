@@ -123,3 +123,97 @@ The two pole terms vanish by the ground pairing integral cosh(x/2) f(x)dx=0, and
 Bound (8) pays the entire high-tail self-interaction in this absolute, actual coefficient norm. It needs neither finite total rank nor a false fixed analytic strip for B. It does not make the high tail nonnegative, and it does not pay mixed terms between this tail and its complement.
 
 Most importantly, (7)--(8) do not bound M_T/A_T for the actual eigenstate. They therefore do not establish the requested coefficient-one comparison, do not remove the kappa-dependent coefficient cost, and do not prove RH. A genuine eigenstate-specific relative estimate or a signed full coupling identity remains necessary.
+
+## 6. Weighted sampling-square bound for genuine zero tails
+
+For the actual zero family, the absolute l1 coefficient majorant can be replaced by a logarithmically weighted l2 sum. The new input is an upper synthesis estimate from the unconditional local zero count, with actual multiplicities retained. No lower frame bound or separation hypothesis is used.
+
+### 6.1. Assumptions and notation
+
+Let Z_T contain distinct genuine Xi zeros z=gamma_z+i eta_z with gamma_z>=T>=2, including both members of nonreal pairs if present, and |eta_z|<=1/2. Let j_z be their actual multiplicities. The unconditional unit-height count, with multiplicities, is
+
+ sum_(gamma_z in [n,n+1]) j_z <= C log(2+n).
+
+For instance this follows from the full Riemann--von Mangoldt count and its O(log T) remainder, as recorded in E. Hasanalizade, Q. Shen and P.-J. Wong, [Counting zeros of the Riemann zeta function](https://arxiv.org/abs/2107.06506), Corollary 1.2. Taking a difference across an interval of bounded length gives the displayed estimate; endpoints and small heights are absorbed in the fixed constant.
+
+Take the actual coefficient family or another family whose cosine series converges absolutely in the original H graph norm, and assume the following square budget is finite:
+
+ J_T^2=sum_(z in Z_T) (|a_z|^2/j_z) log(2+gamma_z).
+
+Put p_T(x)=sum a_z exp(izx), initially interpreted on the real axis as the local L2 limit justified below, and q_T(x)=(p_T(x)+p_T(-x))/2, v_T=mq_T, F_T=wq_T, A_T=||F_T||_2, with w=m^2 and the full original H of Sections 1–5. In the actual eigenstate expansion a_z=-2j_z B(z)/kappa, so exactly
+
+ J_T^2=(4/kappa^2)sum_(gamma_z>=T) j_z log(2+gamma_z)|B(z)|^2.             (11)
+
+The actual strip-Schwartz bound on B pays finiteness. Unlike the former M_T^2, this is a weighted sum of the actual Hermitian sampling squares, not a square of an l1 sum.
+
+### 6.2. A local upper synthesis bound with no separation hypothesis
+
+Choose a nonnegative smooth compactly supported rho with rho>=1 on [0,1] and support in [-1,2]. For a finite partial sum and any real s,
+
+ integral_s^(s+1)|p_T(x)|^2 dx
+ <=integral rho(x-s)|p_T(x)|^2 dx.
+
+The (z,w) Gram entry on the right is
+
+ exp(i(w-conjugate(z))s)
+ integral rho(y)exp(i(w-conjugate(z))y)dy.
+
+Since |eta_z+eta_w|<=1, three integrations by parts in y give the uniform absolute bound
+
+ C exp(|s|)(1+|gamma_z-gamma_w|)^(-3).                                (12)
+
+The unit-height zero count gives
+
+ sum_w j_w(1+|gamma_z-gamma_w|)^(-3)<=C log(2+gamma_z).                 (13)
+
+Indeed sum over unit-distance shells and use
+log(2+gamma_w)<=log(2+gamma_z)+log(2+|gamma_w-gamma_z|).
+
+Apply
+
+ 2|a_z a_w| <= (|a_z|^2/j_z)j_w + (|a_w|^2/j_w)j_z
+
+to the absolutely bounded Gram sum. Equations (12)--(13) yield
+
+ integral_s^(s+1)|p_T(x)|^2 dx <= C exp(|s|)J_T^2.                    (14)
+
+The constant is independent of the number of nodes, their minimum separation, total rank, and maximum height. Tails of the square budget give local L2 convergence and justify passage from finite sums. Reflection and |(p(x)+p(-x))/2|^2<=(|p(x)|^2+|p(-x)|^2)/2 give the corresponding estimate for q_T.
+
+### 6.3. Theta tails and one-sided continuation
+
+Multiplying (14) by the complete real theta envelope and summing unit intervals proves
+
+ ||1_(|x|>=R)F_T||_2 <= C J_T exp(-c exp(2R)), R>=0.                  (15)
+
+For any fixed 0<delta<pi/4, the coefficients of p_T(x+i delta) are a_z exp(-delta z), with magnitudes |a_z|exp(-delta gamma_z). Their square budget is at most exp(-2delta T)J_T^2. Apply (14) to these coefficients, then the complete shifted theta envelope, to obtain
+
+ ||w(.+i delta)p_T(.+i delta)||_(L1 and L2)
+ <=C_delta J_T exp(-delta T).                                      (16)
+
+For L1, use Cauchy--Schwarz on each unit interval and sum the theta envelope. This step does not replace the evenized source norm by the positive-frequency norm.
+
+The same separate contours as in Section 2 now yield
+
+ (1/(2pi))integral_(|t|<=T/2)|hat(F_T)(t)|^2dt
+ <=C_delta T J_T^2 exp(-delta T).                                  (17)
+
+These contours may be performed on finite sums. The local L2 estimate and the real theta envelope give convergence in source L1 and L2; (16) gives domination after shifting. Thus neither a two-sided analytic strip for q_T nor an exponential coefficient tail has been introduced.
+
+### 6.4. Complete original form and actual interface
+
+Using (15) in the exact shift-correlation split and the elementary Chebyshev estimate proved in Section 3 gives
+
+ |<F_T,SF_T>|<=C A_T^2 sqrt(log(2+J_T/A_T)).                         (18)
+
+As before A_T=0 is interpreted separately. Combining (17), the complete Gamma lower bound, both prime shifts and every prime power gives
+
+ h[v_T] >= [log T-C-C sqrt(log(2+J_T/A_T))]A_T^2
+            -C T log(T)J_T^2 exp(-delta T),                         (19)
+
+and therefore, for T>=T_* depending only on the fixed operator,
+
+ h[v_T]>=-C J_T^2 exp(-c(log T)^2).                                (20)
+
+For a real eigenstate write B(z)=b_z-i c_z with real b_z,c_z, consistently with the original full-zero identity. Then B(conjugate(z))=conjugate(B(z)). In the actual real eigenstate, a critical zero contributes j log(2+gamma)|B(gamma)|^2 to the sum in (11), and an off-line conjugate pair contributes 2j log(2+gamma)(b_z^2+c_z^2). Thus (20) retains the true sampling-square structure and every infinite internal mixed term.
+
+The factor kappa^(-2), the additional logarithmic sampling weight, and the tail--low mixed form are still present. In particular the absolute Hermitian sum b_z^2+c_z^2 has not become the signed difference b_z^2-c_z^2. No coefficient-one comparison follows from (11)--(20) alone.
