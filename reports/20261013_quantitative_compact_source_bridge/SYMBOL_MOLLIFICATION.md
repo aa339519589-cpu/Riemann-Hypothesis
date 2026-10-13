@@ -181,3 +181,25 @@ Consequently, for each fixed $\theta>0$, there is $C_\theta$ such that
 \tag{23}
 \]
 The constants and thresholds depend on $\theta$ and the fixed source-tail bounds, not on any assumed Sobolev regularity of the eigen-source. The support-based finite symbol is what permits this subpower weighted-$H^2$ loss.
+
+## Consequence for the original even negative depth
+
+Combine this construction with the [quantitative even spectral transfer](EVEN_SPECTRAL_TRANSFER.md), equations (1)--(3). Its independent [review](EVEN_TRANSFER_REFEREE.md) checks the full source pairing, finite translation and physical norm. For every fixed $\epsilon>0$ there are constants $C_\epsilon$ and $\gamma_\epsilon>0$, depending only on the fixed normalized source bounds, such that a hypothetical odd Green eigenvalue $1+\gamma$, with $0<\gamma<\gamma_\epsilon$, implies an actual ground-orthogonal even negative eigenvalue $-\kappa$ with
+\[
+ \kappa\ge \exp\!\left(-C_\epsilon\gamma^{-4/3-\epsilon}\right).
+\tag{24}
+\]
+This is a depth lower bound under the hypothetical eigenvalue, not an exclusion of it.
+
+Indeed, put $L=\log(1/\gamma)$ and use the transfer theorem's notation $D,M_*,\sigma,T_{\rm tr},X$. Equation (22) and the fixed normalization give $\log(2+D)=O(L/\log L)$, $B_R=O(1)$, and $R=O(\log L)$. Therefore $\log(16M_*/\gamma)$ and $\log(32M_*/\gamma)$ are at most $L+O(L/\log L)$. The transfer parameters consequently obey the one-sided bounds
+\[
+ \sigma^2\le(2/15+o(1))L,\qquad
+ T_{\rm tr}\le(2/3+o(1))L,\qquad X\le(2/3+o(1))L.
+\tag{25}
+\]
+The coefficient $2/3$ is $2/15+\sqrt{(2/15)^2+4/15}$; the other term $3\sigma$ is only $O(\sqrt L)$. No asymptotic equality or lower bound on $D$ is asserted. For sufficiently small $\gamma$, (25) gives $e^{2X}\le\gamma^{-4/3-\epsilon/2}$. The exact transfer bound is
+\[
+ \kappa_* =\frac{\gamma\pi^2}{8B_R^2}
+                    \exp(4X-\pi e^{2X}).
+\]
+Since $B_R$ is bounded above and $e^{4X}\ge1$, it follows that $\kappa\ge\kappa_*\ge c\gamma\exp(-\pi\gamma^{-4/3-\epsilon/2})$, which implies (24) after adjusting the constant and threshold. Numerical enclosures remain necessary only to obtain decimal values from the fixed input functions.
