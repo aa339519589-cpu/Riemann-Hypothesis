@@ -1,0 +1,93 @@
+{
+  "status": "PASS_FINITE_IDENTITY_AND_POINTWISE_SANITY",
+  "precision_digits": 90,
+  "carrier": "4",
+  "band_half_width": "1",
+  "target": "i/2",
+  "algebra": [
+    {
+      "x": "0.1",
+      "N": 8,
+      "absolute_error": "8.0608861427790407088e-88"
+    },
+    {
+      "x": "0.4",
+      "N": 8,
+      "absolute_error": "1.4554854309123641535e-87"
+    },
+    {
+      "x": "1.0",
+      "N": 8,
+      "absolute_error": "2.4362283930477718271e-87"
+    }
+  ],
+  "pointwise_convergence": [
+    {
+      "x": "0.1",
+      "N": 4,
+      "pointwise_error": "0.019202658105511925328"
+    },
+    {
+      "x": "0.1",
+      "N": 16,
+      "pointwise_error": "0.0047909191341238660673"
+    },
+    {
+      "x": "0.1",
+      "N": 64,
+      "pointwise_error": "0.0011960931071711683548"
+    },
+    {
+      "x": "0.1",
+      "N": 256,
+      "pointwise_error": "0.00029890519308251200148"
+    },
+    {
+      "x": "0.4",
+      "N": 4,
+      "pointwise_error": "0.32777383722519991328"
+    },
+    {
+      "x": "0.4",
+      "N": 16,
+      "pointwise_error": "0.080338645129465380935"
+    },
+    {
+      "x": "0.4",
+      "N": 64,
+      "pointwise_error": "0.019653286603025390284"
+    },
+    {
+      "x": "0.4",
+      "N": 256,
+      "pointwise_error": "0.0048823443852694607961"
+    },
+    {
+      "x": "1.0",
+      "N": 4,
+      "pointwise_error": "1.8208431893444203909"
+    },
+    {
+      "x": "1.0",
+      "N": 16,
+      "pointwise_error": "0.64658487518720974438"
+    },
+    {
+      "x": "1.0",
+      "N": 64,
+      "pointwise_error": "0.14201931516094202689"
+    },
+    {
+      "x": "1.0",
+      "N": 256,
+      "pointwise_error": "0.034122878208962897569"
+    }
+  ],
+  "rigorous_scope": "Exact finite binomial identity is proved analytically in the manuscript; the numerical computations here are not interval-certified.",
+  "not_verified": [
+    "full original form convergence",
+    "zero location",
+    "RH"
+  ],
+  "rh_proved": false
+}
