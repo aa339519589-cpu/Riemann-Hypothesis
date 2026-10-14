@@ -7,6 +7,10 @@ short interval at zero and intervals around the true prime-power logarithms.
 The complete pairing has a bound linear in the convolution support radius,
 after multiplication by the supercritical depth. Its sign is not determined.
 
+The [fractional origin follow-up](../20261013_supercritical_source_tails/FRACTIONAL_ORIGIN_BOUNDARY.md)
+improves this absolute bound to every fixed power \(a^{1+\theta}\),
+\(0<\theta<1/8\), with the same depth uniformity.
+
 We also construct an exactly pole-centered compact core source for which the
 same covariance defect is negative. This shows that its required positivity
 is not automatic on the core. **That source is not a Green eigen-source;
