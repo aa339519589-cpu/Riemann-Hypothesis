@@ -666,3 +666,395 @@ These estimates prove (J1).
 ### 11.5. Scope
 
 The improvement removes the artificial exponential-in-K coefficient price when the original canonical correction is tested at a fixed spectral point or fixed finite jets. It retains the N^(1-Re s) scale, gives no favorable sign, and does not compare the complete actual transition with the same-record G energy. The whole centered/P/kappa R compensation remains mandatory.
+
+
+## 12. Genuine Mertens cancellation in the prescribed canonical multiplier
+
+The original Chebyshev nodes and complete signed Möbius tail remain unchanged. A power bound for the genuine Mertens function improves the fixed-window exponent from 1−Re s in Section 10 to theta−Re s, including fixed true jets. Sections 12.1–12.6 prove this transfer. Sections 12.7–12.10 supply the standard analytic implication from the explicitly attributed external zero-free half-plane; this is not a new zero-free theorem. The whole source/prime transition still has no proved favorable joint sign or same-record relative margin.
+
+### 12.1. Hypothesis and exact objects
+
+Let 0<theta<1 and suppose the genuine rational Mertens function obeys
+
+ M(x)=sum_(n<=x)mu(n),  |M(x)|<=C_M x^theta, x>=1.         (MT1)
+
+Use the exact prescribed correction from Sections 3 and 10 of this report: a=1/16, K Chebyshev roots x_j in [a,1], Lagrange polynomials L_j,
+
+ eta_N=sum_(n>N)mu(n)n^(-3)delta_((N/n)^2),
+ w_j=integral L_j d eta_N,
+ t_j=N/sqrt(x_j), c_j=w_j t_j^(5/2).
+
+For s=σ+iτ, beta=(3-s)/2, b=Re beta, put
+
+ p_(K,s)(x)=sum_j x_j^(-beta)L_j(x).
+
+The actual multiplier is exactly
+
+ Mtilde_N(s)=M_N(s)+N^(3-s)
+                   sum_(n>N)mu(n)n^(-3)p_(K,s)((N/n)^2),
+ M_N(s)=sum_(n<=N)mu(n)n^(-s).                           (MT2)
+
+Put X=N sqrt(K). Here N>=1 and K>=2. No signed sum is replaced by a different coefficient sequence.
+
+### 12.2. Conclusions
+
+For every fixed δ>0 and finite T, uniformly on 0<=σ<=theta-δ, |τ|<=T,
+
+ |Mtilde_N(s)|<=C_(theta,delta) C_M
+                  (1+T)^3 exp(pi T/2) X^(theta-σ).        (MT3)
+
+The assertion is empty if the indicated strip is empty. At the boundary σ=theta,
+
+ |Mtilde_N(theta+iτ)|
+ <=C_(theta,T) C_M[1+log N+log K].                       (MT4)
+
+For each fixed derivative order q, the interior strip also has
+
+ |partial_s^q Mtilde_N(s)|
+ <=C_(theta,delta,T,q) C_M X^(theta-σ)
+                         [1+log N+log(K+2)]^q.            (MT5)
+
+Constants in (MT5) may depend on q. No growing-height or growing-multiplicity estimate is implied. No decay assertion for σ>theta is made: in that region an unremoved value 1/zeta(s) need not vanish.
+
+### 12.3. Localized complete root-alias and derivative estimates
+
+The elementary coefficient proof in Section 10 above gives, for 0<=σ<=1 and |τ|<=T,
+
+ x^(-beta)=sum_(n>=0)d_n T_n((32x-17)/15),
+ |d_n|<=C_T r^n(n+1)^(b-1),
+ r=3/5, C_T=C(1+T)^2 exp(pi T/2).                        (MT6)
+
+Its binomial factorization is x=(25/64)(1+r exp(iu))(1+r exp(-iu)); the full coefficient and height budget is already proved there. Here we sharpen the treatment of every alias and its x derivative.
+
+The Chebyshev-root interpolant of T_n is either zero or plus/minus T_m with 0<=m<K. Let A_K(x) denote the sum of all aliased terms n>=K. For 0<=x<=a/2 set
+
+ R(x)=exp(arccosh((17-32x)/15)).
+
+Then R(x) stays uniformly above one, R(0)=5/3, and
+
+ rR(x)<=exp(-4x).
+
+The exact hyperbolic formulas for T_m and U_(m-1), together with the bounded change-of-variable derivative, give
+
+ |T_m((32x-17)/15)|<=R(x)^m,
+ |d/dx T_m((32x-17)/15)|<=C m R(x)^m.
+
+Therefore summing all n>=K using (MT6) yields
+
+ |A_K(x)|<=C C_T K^(b-1) exp(-4Kx),
+ |A_K'(x)|<=C C_T K^b exp(-4Kx), 0<=x<=a/2.              (MT7)
+
+No alias is omitted: the uniform bounds R(x)^K and C K R(x)^K pay each of its possible degrees m<K before summing the entire geometric n tail.
+
+For a/2<=x<=1, choose the fixed R_*=R(a/2)<5/3. The elementary uniform polynomial derivative bound gives
+
+ |T_m|<=R_*^m,
+ |dT_m/dx|<=C m^2 R_*^m
+
+through this whole interval, including the points where the transformed y enters [-1,1]. Thus
+
+ |A_K(x)|<=C C_T K^(b-1)(rR_*)^K,
+ |A_K'(x)|<=C C_T K^(b+1)(rR_*)^K.                       (MT8)
+
+The unaliased sums, using (MT6) and the same split at a/2, satisfy
+
+ |sum_(n<K)d_n T_n|<=C C_T min(K^b,x^(-b)),
+ |d/dx sum_(n<K)d_n T_n|
+                     <=C C_T min(K^(b+1),x^(-b-1)).      (MT9)
+
+For example, in the first interval these are the sums of (n+1)^(b-1) exp(-4nx) and n(n+1)^(b-1) exp(-4nx). In the second interval the fixed geometric ratio rR_*<1 pays all derivatives uniformly.
+
+The localized aliases in (MT7) absorb into the respective envelopes in (MT9): split at x=1/K. For x>=1/K, the ratios to x^(-b) and x^(-b-1) are at most
+
+ C K^(-1)(Kx)^b exp(-4Kx),
+ C K^(-1)(Kx)^(b+1) exp(-4Kx),
+
+and for x<=1/K the comparison with K^b and K^(b+1) is immediate. The bounds (MT8) are uniformly bounded and the respective envelopes are at least one. We have proved the full estimates
+
+ |p_(K,s)(x)|<=C C_T min(K^b,x^(-b)),
+ |p_(K,s)'(x)|<=C C_T min(K^(b+1),x^(-b-1)), 0<=x<=1.   (MT10)
+
+At x=0 use the finite K values. In particular
+
+ |p_(K,s)(x)|+x|p_(K,s)'(x)|
+                 <=C C_T min(K^b,x^(-b)).               (MT11)
+
+It is essential to retain the localization (MT7). The old uniform alias bound K^(b-1), on its own, would leave an avoidable extra K^((1-theta)/2) in the signed Abel estimate.
+
+### 12.4. Abel summation with the genuine signed Mertens function
+
+For fixed s define H_s(t)=t^(-3)p_(K,s)((N/t)^2), t>=N. Its ordinary derivative is
+
+ H_s'(t)=-t^(-4)[3p_(K,s)(x)+2x p_(K,s)'(x)],
+ x=(N/t)^2.                                             (MT12)
+
+By (MT11),
+
+ |H_s'(t)|<=C C_T t^(-4)
+                      min(K^b,(t/N)^(2b)).              (MT13)
+
+The exact Stieltjes/Abel formula, including its N endpoint, is
+
+ sum_(n>N)mu(n)H_s(n)
+ =-M(N)H_s(N)-integral_N^infinity M(t)H_s'(t)dt.          (MT14)
+
+The upper endpoint vanishes because theta<1<3 and p is a finite polynomial. Formula (MT14) holds with the same n>N convention whether N is integral or not. Since p_(K,s)(1) is uniformly O(C_T), its endpoint costs C C_M C_T N^(theta-3).
+
+Insert (MT1) into (MT14), multiply by N^(3-σ), and split the integral at X=N sqrt(K). Recalling 2b=3-σ, the two exact powers are
+
+ N^(3-σ)N^(-2b) integral_N^X t^(theta-4+2b)dt
+ =integral_N^X t^(theta-σ-1)dt,                          (MT15)
+
+ N^(3-σ)K^b integral_X^infinity t^(theta-4)dt
+ =X^(theta-σ)/(3-theta).                                (MT16)
+
+For σ<theta, (MT15) is (X^(theta-σ)-N^(theta-σ))/(theta-σ); for σ=theta it is log(X/N)=(1/2)log K. Thus the complete signed correction has precisely the effective scale X and no extra K power.
+
+The original finite Dirichlet polynomial has the separate exact Abel formula
+
+ M_N(s)=M(N)N^(-s)+s integral_1^N M(t)t^(-s-1)dt.         (MT17)
+
+For σ<=theta-δ this is O(C_M(1+|s|/δ)N^(theta-σ)); at σ=theta it is O(C_M(1+|s|log N)). Combining (MT14)-(MT17) proves (MT3)-(MT4). The harmless factor (1+T) beyond C_T pays (MT17).
+
+### 12.5. Fixed true jets with the same signed estimate
+
+The coefficient and localized derivative proof extends to a buffered real strip -1/2<=Re s<=1-delta_0, with delta_0>0, since b stays in a fixed compact interval inside (1,7/4]. Every geometric series above remains uniformly finite there.
+
+For s in the interior strip of (MT3), take a Cauchy radius
+
+ epsilon=min(δ/4,1/4,1/log(K+2)).
+
+The enlarged points still have real part below theta-δ/2<1 and at least -1/4. Apply Cauchy separately to p_(K,s)(x) and its x derivative, using (MT10). Splitting x at 1/K shows that changing b by at most epsilon/2 multiplies either envelope by at most K^(epsilon/2)<=exp(1/2). Therefore, for each fixed j,
+
+ |partial_s^j p|+x|partial_s^j p'|
+ <=C_(theta,delta,T,j)[1+log(K+2)]^j
+                                   min(K^b,x^(-b)).      (MT18)
+
+Differentiate only this polynomial data by Cauchy. The explicit factor N^(3-s) in (MT2) is differentiated separately, so no N^epsilon loss occurs. Derivatives may pass under the absolutely convergent tail series. Apply the same Abel identity (MT14) to each derivative polynomial; (MT18) pays the derivative of H exactly as before. Leibniz adds only the displayed powers of log N and log K.
+
+For the original finite polynomial, Abel summation of (log t)^q t^(-s) pays its derivative by C_(q,delta)N^(theta-σ)[1+log N]^q; the endpoint at t=1 is harmless, including q=0. This proves (MT5).
+
+### 12.6. What a 7/8 application must say
+
+Sections 12.7–12.10 establish (MT1) from the explicitly attributed external zero-free half-plane, with theta=7/8+epsilon<1. Consequently, for every fixed 0<ε<1/8 and fixed spectral window satisfying 0<=Re s<=7/8 the value and fixed-jet bounds become
+
+ |partial_s^q Mtilde_N(s)|
+ <=C_(epsilon,T,q) (N sqrt(K))^(7/8+epsilon-Re s)
+                         [1+log N+log(K+2)]^q.            (MT19)
+
+Here δ may be chosen as epsilon. This corollary uses genuine signed Möbius cancellation; unlike the earlier absolute-coefficient theorem it depends on that Mertens input. The implication from a zero-free half-plane to (MT1) must not be justified merely by a crude fixed-polynomial reciprocal-zeta height bound. The needed subpower-height/log-zeta step is supplied in full in Sections 12.7–12.9 below.
+
+Even when (MT19) is applicable, it uses the global arithmetic exponent rather than the actual source activity, keeps exponential height constants, and supplies no one-sided estimate for the Delta/whole-centered/P/kappa R joint. It does not by itself provide a same-record relative bound, a full-height sum, or any new zero exclusion.
+
+### 12.7. Hypothesis and conclusion
+
+Assume a fixed theta_0 in (0,1) such that zeta(s) has no zero in Re s>theta_0. Then for every epsilon>0,
+
+ M(x):=sum_(n<=x) mu(n)=O_epsilon(x^(theta_0+epsilon)).       (ZF1)
+
+For the RH research application, theta_0=7/8 is supplied solely by the separately attributed external September 30 theorem, not by the original-source eigen-equation or by the new Chebyshev interpolation calculation. The pinned primary source is OpenAI, The Quasi-Riemann Hypothesis, main theorem:
+https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex#L106-L119
+The existing project audit of that external theorem is retained. Nothing here strengthens its zero-free region.
+
+### 12.8. Subpower reciprocal bounds in a strict inner half-plane
+
+Remove the pole without introducing a zero:
+
+ Z(s)=(s-1)zeta(s)/(s+1).
+
+At s=1 take the removable value 1/2. The only new possible pole is s=-1, outside the half-plane. The hypothesis makes Z holomorphic and zero-free on the simply connected half-plane Re s>theta_0. Hence it has a holomorphic logarithm F(s)=log Z(s), normalized by continuation from the real axis to the right of 1.
+
+For Re s=2, F is uniformly bounded. Indeed the absolutely convergent logarithmic Euler product gives a bounded branch of log zeta there, and log((s-1)/(s+1)) has a uniformly bounded branch on Re s>=2. Their sum agrees with F.
+
+Fix theta_0<L<sigma_*<2. Standard fixed-strip polynomial growth of zeta gives
+
+ Re F(s)=log|Z(s)|<=C log(3+|Im s|)
+
+on every fixed closed strip inside Re s>theta_0. Apply Borel--Caratheodory on disks centered at 2+it, using a radius slightly larger than 2-L but still smaller than 2-theta_0. The center value F(2+it) is bounded, and the real-part upper bound holds on each disk. This gives
+
+ |F(s)|<=C_L log(3+|Im s|),  L<=Re s<=2.                    (ZF2)
+
+The bounded-height part follows from compactness. This step bounds the actual holomorphic logarithm, not only its real part.
+
+For a fixed real t, apply the bounded-strip three-lines theorem to
+
+ F_t(s)=F(s) exp((s-it)^2),  L<=Re s<=2.
+
+On the left boundary its supremum is O_L(log(3+|t|)); on the right boundary it is O(1). The Gaussian factor makes both suprema finite and pays all distant imaginary heights. At s=sigma+it, sigma_*<=sigma<=2, three-lines therefore yields
+
+ |F(sigma+it)|<=C_(L,sigma_*) [log(3+|t|)]^a,
+ a=(2-sigma_*)/(2-L)<1.                                  (ZF3)
+
+Consequently, for every eta>0,
+
+ |1/zeta(sigma+it)|<=C_(sigma_*,eta)(3+|t|)^eta,
+ sigma_*<=sigma<=2.                                      (ZF4)
+
+The factor (s-1)/(s+1) in 1/zeta=(s-1)/((s+1)Z) is bounded on this strip; the removable zero at s=1 causes no problem. Equation (ZF4), rather than a fixed polynomial-height bound, is the input needed below.
+
+### 12.9. Truncated Perron with its full error
+
+It suffices to treat small epsilon with theta_0+epsilon<1; larger epsilon follows from |M(x)|<=x. Replace x by y=floor(x)+1/2, so M(x)=M(y) and y is at distance at least 1/2 from every integer. Take
+
+ c=1+1/log y, T=y^2,
+ sigma_*=theta_0+epsilon/2, eta=epsilon/8.
+
+For large y, c<=2. The absolutely convergent Dirichlet series 1/zeta(s)=sum mu(n)n^(-s) and the usual truncated Perron kernel give
+
+ M(y)=(1/(2pi i)) integral_(c-iT)^(c+iT) y^s/[s zeta(s)] ds
+       +O(y log y/T).                                   (ZF5)
+
+For clarity, the absolute kernel error is bounded by
+
+ sum_n (y/n)^c min(1, 1/(T |log(y/n)|)).
+
+On y/2<=n<=2y, use |log(y/n)|>=c_1|y-n|/y and |y-n|>=1/2 to obtain O(y log y/T). On either outside range, |log(y/n)| is bounded below; the elementary sums at c=1+1/log y give the same bound. Thus no cancellation or unproved short-interval estimate is hidden in (ZF5).
+
+Shift the finite rectangle to Re s=sigma_*. Its interior is zero-free for zeta and avoids s=0, while 1/zeta is holomorphic at s=1. Hence no residue is crossed. Equation (ZF4) bounds the vertical integral by
+
+ C y^(sigma_*) [1+integral_1^T t^(eta-1)dt]
+ <=C y^(sigma_*) T^eta
+ =C y^(theta_0+3epsilon/4).                              (ZF6)
+
+Each horizontal edge is at most
+
+ C y^c T^(eta-1)=O(y^(-1+epsilon/4)),                     (ZF7)
+
+since y^c=e y. The Perron error is O(log y/y). Combining (ZF5)--(ZF7) proves (ZF1), with room in the exponent.
+
+### 12.10. Permitted use in the canonical correction
+
+For any chosen theta>7/8, this supplies the genuine estimate |M(x)|<=C_theta x^theta. It can be inserted into Abel summation of the *same* true-mu canonical tail. The canonical coefficient construction remains unchanged.
+
+The interpolation proof in Sections 12.3–12.5 retains the x-localized root-alias error and controls x p'(x); replacing it by its uniform K^(b-1) bound loses an extra K^((1-theta)/2). That interpolation estimate is a distinct step from this standard dependency lemma. No original-source sign, activity-relative bound, or full P/kappa R/transition margin follows from (ZF1).
+
+### 12.11. The original retained-H columns
+
+The same signed estimate applies to the exact retained-factor columns of Section 8. Suppose theta>1/2 and (MT1) holds. For a=h*mu and c_H=-(h log)*mu, the finite convolution identities give
+
+ sum_(n<=x)a(n)=sum_(nu<=x)h(nu)M(x/nu),
+ sum_(n<=x)c_H(n)=-sum_(nu<=x)h(nu)log(nu)M(x/nu).
+
+Consequently their partial sums are bounded, respectively, by
+
+ C_M x^theta sum_nu |h(nu)|nu^(-theta),
+ C_M x^theta sum_nu |h(nu)|log(nu)nu^(-theta).
+
+Both coefficient sums are finite. Section 8 proves absolute convergence of H on every line strictly right of 1/2; choose a line strictly between 1/2 and theta to absorb the extra logarithm. Apply the same prescribed nodes and interpolation correction directly to a or c_H. The proof (MT12)–(MT18) uses only the displayed partial-sum bound and the unchanged polynomial data, so it gives the same effective power (N sqrt(K))^(theta-Re s) and fixed-jet logarithmic factors, multiplied by these fixed H-dependent constants. No infinite H*r convolution, replacement record sequence, or signed relative margin is introduced.
+
+
+## 13. Exact self-resonance at the effective scale N sqrt(K)
+
+The prescribed correction remains unchanged. This section uses only the localized all-alias interpolation estimates in Section 12.3, not the Mertens hypothesis or the external 7/8 theorem. It computes the complete regular Taylor coefficients of the local Perron kernel and its fixed genuine-zero residue block. It does not estimate the remaining contour or the whole signed source joint.
+
+### 13.1. Exact kernel and its regular Taylor coefficients
+
+Write the actual interpolant as
+
+ p_(K,s)(x)=sum_(k=0)^(K-1) p_k(s)x^k,
+ beta=(3-s)/2, b=Re beta,
+
+with the same K Chebyshev roots in [1/16,1]. For 0<=Re s<=1 and fixed |Im s|<=T, define
+
+ Q_K(s,w)=sum_(k<K) p_k(s)/(3+2k-w),
+ K_K(s,w)=1/(w-s)+Q_K(s,w).
+
+For Re w<3, the finite sum gives exactly
+
+ Q_K(s,w)=(1/2) integral_0^1 x^((1-w)/2)p_(K,s)(x)dx.      (RL1)
+
+The regular Taylor coefficient at w=s is therefore
+
+ c_(K,j)(s):=[(w-s)^j]Q_K(s,w)
+   =sum_(k<K) p_k(s)/(3+2k-s)^(j+1)
+   =[1/(2^(j+1) j!)] integral_0^1
+              x^(beta-1)(-log x)^j p_(K,s)(x)dx.          (RL2)
+
+All integrals converge because b>=1. For every fixed nonnegative integer j,
+
+ c_(K,j)(s)=( (1/2)log K )^(j+1)/(j+1)!
+                   +O_(T,j)((1+log K)^j),               (RL3)
+
+uniformly on the stated fixed strip. In particular,
+
+ Q_K(s,s)=(1/2)log K+O_T(1).                             (RL4)
+
+### 13.2. Proof with the complete alias retained
+
+Use the proved coefficient bound d_n=O_T(r^n(n+1)^(b-1)), r=3/5, and write the interpolant as its first K Chebyshev terms plus all root aliases. The following are the localized estimates already proved in Section 12.3 above:
+
+ |p_(K,s)(x)|<=C_T min(K^b,x^(-b)),                       (RL5)
+
+and, for 0<=x<=a/2, a=1/16, the complete alias A_K satisfies
+
+ |A_K(x)|<=C_T K^(b-1)exp(-4Kx).                         (RL6)
+
+On a/2<=x<=1 the alias is exponentially small in K, up to a fixed polynomial. The unaliased infinite Chebyshev series equals x^(-beta) for every 0<x<=1. This follows by analytic continuation from [a,1], since its exterior terms converge whenever rR(x)<1, where R(x)=exp(arccosh((17-32x)/15)); the only excluded real point in [0,1] is x=0.
+
+For 0<x<=a/2 the unretained series tail obeys
+
+ |sum_(n>=K)d_n T_n((32x-17)/15)|
+ <=C_T sum_(n>=K)(n+1)^(b-1)exp(-4nx)
+ <=C_T x^(-b)exp(-2Kx).                                 (RL7)
+
+The last inequality takes exp(-2Kx) out and bounds the remaining full exponential sum. On a/2<=x<=1 the series tail is exponentially small in K. Thus p-x^(-beta) is the difference of the retained full alias and the full unretained series tail, with both errors accounted for.
+
+For sufficiently large K, split (RL2) at x=1/K. The inner interval, by (RL5), has absolute value at most a constant times
+
+ K^b integral_0^(1/K) x^(b-1)|log x|^j dx
+ <=C_j(1+log K)^j.                                     (RL8)
+
+On x>=1/K, replace p by x^(-beta). The error from (RL7), after multiplication by x^(beta-1)(-log x)^j, is bounded by
+
+ C_T integral_(1/K)^(a/2) x^(-1)|log x|^j exp(-2Kx)dx
+ <=C_(T,j)(1+log K)^j.                                 (RL9)
+
+Use u=Kx to see the last bound; the exponential pays every fixed power of |log u|. The error from (RL6) is at most C_(T,j)K^(-1)(1+log K)^j, by the same substitution. The remaining interval [a/2,1] is exponentially small and harmless. The finitely many smaller K are absorbed in the constants.
+
+The surviving main integral is exact:
+
+ [1/(2^(j+1)j!)] integral_(1/K)^1 (-log x)^j dx/x
+   =((1/2)log K)^(j+1)/(j+1)!.
+
+This proves (RL3), including all aliases. No incomplete-gamma profile or asymptotic spacing of nodes is assumed.
+
+### 13.3. Exact local Perron block at a true simple zero
+
+For nonintegral N, the exact finite/tail Perron identities on 1<c<3 give
+
+ Mtilde_N(s)=Perron integral_(Re w=c)
+                 N^(w-s) K_K(s,w)/zeta(w) dw/(2pi i),   (RL10)
+
+for Re s<c. The Perron integral is taken in its usual symmetric limiting sense; it is not claimed absolutely convergent. One can instead work with any finite admissible rectangle and retain its full remainder. The nonintegral N convention avoids half-weight endpoint terms.
+
+Let rho be a fixed simple genuine zero, 0<Re rho<1. The residue of the integrand in (RL10), with s=rho, at w=rho is exactly
+
+ [log N+Q_K(rho,rho)]/zeta'(rho)
+                   -zeta''(rho)/(2 zeta'(rho)^2).       (RL11)
+
+Thus its local block is
+
+ log(N sqrt(K))/zeta'(rho)
+                   -zeta''(rho)/(2 zeta'(rho)^2)
+                   +O_rho(1).                          (RL12)
+
+The coefficient of the full resonant logarithm is one. This is not an asymptotic for the whole Mtilde_N(rho): other residues and the entire remaining contour still occur in (RL10).
+
+### 13.4. Fixed multiple-zero block
+
+More generally let rho have fixed order m, and write
+
+ 1/zeta(rho+h)=sum_(j=-m)^infinity a_j h^j,
+ L=log N, ell=(1/2)log K.
+
+Equation (RL3) says that the regular Taylor coefficients of K_K(rho,rho+h) through any fixed order agree with those of exp(ell h)/h up to O_rho((1+ell)^j) at coefficient h^j. Taking the local residue gives
+
+ Res_(w=rho) [N^(w-rho)K_K(rho,w)/zeta(w)]
+ =sum_(j=0)^m a_(-j)(L+ell)^j/j!
+       +O_rho((1+L+ell)^(m-1)).                         (RL13)
+
+Only finitely many coefficients are involved, so (RL13) is a finite Taylor calculation. Constants may depend on the fixed zero and its true multiplicity. It is not uniform in a growing cluster or in multiplicity. When the actual integrand also includes a genuine source numerator B(w), multiply its true w-Taylor jet into this local expression before taking the residue. A numerator independent of w would have a different role; no B/zero cancellation is ignored.
+
+### 13.5. Meaning for the signed program
+
+The original canonical correction creates an additional half-log K delay in the local self-resonance; it does not lower the resonant coefficient. This matches, rather than bypasses, the boundary logarithm in the Mertens transfer estimate. A proposed one-sided gain must still retain the matching future-prime, kappa R and source-derivative blocks, as well as the full same-record remainder. No such joint sign or remainder estimate is proved here.
