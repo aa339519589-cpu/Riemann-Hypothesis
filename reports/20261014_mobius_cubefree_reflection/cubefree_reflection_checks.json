@@ -1,0 +1,7 @@
+{
+  "integer_labels_checked": 500,
+  "open_divisor_cells_checked": 2690,
+  "exact_prime_log_coefficients": true,
+  "all_passed": true,
+  "scope": "Coefficient algebra only, not positivity or RH."
+}
