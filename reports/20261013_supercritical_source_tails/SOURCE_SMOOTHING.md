@@ -1,5 +1,9 @@
 # Depth-uniform Sobolev control of individual supercritical odd Green sources
 
+The later [compressed complete mixed estimate](COMPRESSED_MIXED_SMOOTHING.md)
+improves the scalar-source range proved here from \(s<1/16\) to \(s<1/8\).
+The original proof and its constants below remain unchanged.
+
 For an actual pole-centered scalar eigen-source of the complete odd Green map, normalized by ||g/mu||_(L2(0,infinity))=1, this report proves ||g_odd||_(H^s)<=C_s for every s<1/16, with constants independent of its supercritical depth. The stronger high-frequency estimate (9.10) retains the depth factor in its leading term. The proof uses a legal compact-propagation Poisson test, the complete reflected operator, the original ratio-core closure, and every prime/Gamma term.
 
 The result concerns each individual scalar eigen-source. It is not a whole-band estimate, a small covariance-defect theorem, a coefficient-one Green comparison, or an RH proof.

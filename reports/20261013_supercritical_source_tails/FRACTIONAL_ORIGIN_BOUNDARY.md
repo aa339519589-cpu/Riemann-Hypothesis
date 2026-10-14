@@ -9,6 +9,10 @@ estimate from \(O(a)\) to \(O(a^{1+2s})\), after multiplication by \(\delta\).
 This is an absolute estimate. It supplies neither a boundary trace nor the
 signed comparison needed to exclude the source. RH remains unproved.
 
+The later [complete mixed smoothing improvement](COMPRESSED_MIXED_SMOOTHING.md)
+extends the same proof to \(s<1/8\), and hence to boundary powers
+\(a^{1+\theta}\) for every fixed \(0<\theta<1/4\).
+
 ## 1. Actual source and statement
 
 Use the actual gradient completion and centered scalar eigen-source in
