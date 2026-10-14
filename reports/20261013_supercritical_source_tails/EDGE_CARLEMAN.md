@@ -7,8 +7,11 @@ previously constructed on Im z>2, therefore converges on Im z>1/2.
 All prime powers and the original source equation are retained.
 Constants are uniform in the actual source and supercritical depth after
 the displayed normalization, but may depend on C and diverge as C decreases
-to 1. This does not prove the endpoint C=1, a critical sign, zero exclusion,
-or RH.
+to 1. The argument in this note does not prove the endpoint C=1, a critical
+sign, zero exclusion, or RH. The separate signed-prime argument in
+[ENDPOINT_PRIME_PAIRING.md](ENDPOINT_PRIME_PAIRING.md) subsequently proves
+C=1 for W and the corresponding full-half-plane Hardy bound; it does not
+prove the endpoint bounds for Lr or r.
 
 The smoothing input is fixed at [ee97d88](https://github.com/aa339519589-cpu/Riemann-Hypothesis/commit/ee97d88).
 The actual weak identity is [SIGNED_ZERO_PAIRING.md, (4)--(5)](SIGNED_ZERO_PAIRING.md);
