@@ -1,0 +1,18 @@
+{
+  "status": "PASS: half-reflected storage row on [0,6]",
+  "interval_decimal_precision": 60,
+  "cells": 600,
+  "cell_width": "1/100",
+  "prime_power_cutoff": 1024,
+  "prime_powers_available": 198,
+  "V_psi_lower_enclosure": "0.647243021860369600716626392116291428807978347",
+  "V_psi_used": "3/5",
+  "certified_margin_target": "1/16",
+  "minimum_certified_margin": "0.563690579555130322515733067745646892039091914",
+  "minimum_cell_index": 158,
+  "minimum_cell_left": "1.58",
+  "minimum_cell_right": "1.59",
+  "retained_terms_in_minimum_cell": 195,
+  "analytic_tail_overlap": "log(349) < 6",
+  "scope": "No omitted prime or theta term is subtracted; no RH or full-form sign claim."
+}
