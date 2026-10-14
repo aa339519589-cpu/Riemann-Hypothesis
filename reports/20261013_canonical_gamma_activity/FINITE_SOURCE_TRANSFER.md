@@ -448,3 +448,221 @@ Equations (P1), (P2), (P8) and (P10) preserve the same finite-source equation. I
 The positive causal term (P2) remains. The source-moment column P_F, full κR_F, whole centered pairing in (P8), and actual Δ transition in (P10) still require a joint signed comparison. There is no proved sign or relative bound for that complete package. The terminal approximation in (1) cannot be applied to shifted points R+log j beyond U in the transition.
 
 If the error in (P10) is absorbed separately into a proposed margin η(U)UE(U), it must be dominated at that scale, for example by η(U)U/[U^θ_c log³(U+2)]→∞. A fixed or inverse-logarithmic fractional margin suffices. The weaker condition η(U)U→∞ for an undivided full joint expression cannot be reused after discarding the larger extracted error in (P10).
+
+
+## 10. A polynomial-in-K bound for the actual canonical correction multiplier
+
+This estimate concerns the prescribed canonical correction itself, not an alternative finite approximation. Its proof, and the fixed-jet proof in Section 11, do not use the external 7/8 input. It keeps all original signed tail data. On a fixed spectral window its polynomial K cost replaces the total-variation coefficient budget; no sign or source-relative bound for the complete transition package follows.
+
+### 10.1. Exact prescribed multiplier
+
+Use exactly the finite-source transfer construction in Section 3: a=1/16, K Chebyshev roots x_j in [a,1], Lagrange polynomials L_j, and
+
+ eta_N=sum_(n>N) mu(n)n^(-3) delta_((N/n)^2),
+ w_j=integral L_j d eta_N,
+ t_j=N/sqrt(x_j), c_j=w_j t_j^(5/2).
+
+Here mu is the genuine rational Möbius function. The real nodes and coefficients are unchanged. For s=σ+iτ let
+
+ beta=(3-s)/2, b=Re beta=(3-σ)/2,
+ p_(K,s)(x)=sum_j x_j^(-beta)L_j(x).
+
+The true corrected multiplier is exactly
+
+ Mtilde_N(s)=sum_(n<=N)mu(n)n^(-s)
+   +N^(3-s) sum_(n>N)mu(n)n^(-3)
+                                  p_(K,s)((N/n)^2).       (M1)
+
+All tail series in (M1) converge absolutely, since p is a finite polynomial. Equation (M1) follows directly from sum_j c_j t_j^(1/2-s)=sum_j w_j t_j^(3-s). It retains all signed original tail data.
+
+### 10.2. Statement
+
+For 0<=σ<=1, |τ|<=T and K>=2, put v=(1-σ)/2=b-1 and
+
+ F_v(K)=(K^v-1)/v if v>0, F_0(K)=log K.
+
+There is an explicit permissible height budget
+
+ C_T=C(1+T)^2 exp(pi T/2)                                 (M2)
+
+with an absolute C such that
+
+ |Mtilde_N(s)|
+ <=A_σ(N)+C_T N^(1-σ)[K^v+F_v(K)],                       (M3)
+
+where
+
+ A_σ(N)=1+(N^(1-σ)-1)/(1-σ) if σ<1,
+ A_1(N)=1+log N.
+
+In particular, for any fixed δ>0 and 0<=σ<=1-δ,
+
+ |Mtilde_N(σ+iτ)|<=C_δ C_T (N sqrt(K))^(1-σ).              (M4)
+
+Thus on every fixed compact height/real-part window strictly left of one the prescribed multiplier has only polynomial K cost. The former total-variation estimate exp(K log(5/3)) is unnecessary at these particular spectral evaluation points. No Möbius cancellation is used to establish (M3).
+
+### 10.3. Complete Chebyshev coefficient bound
+
+Map x=(17+15y)/32, y=cos θ. Put r=3/5. The exact factorization is
+
+ x=(25/64)(1+r exp(iθ))(1+r exp(-iθ)).
+
+For q_n=(beta)_n/n!, the absolutely convergent binomial series gives
+
+ x^(-beta)=(25/64)^(-beta)
+ [sum_(n>=0)(-1)^n q_n r^n exp(inθ)]
+ [sum_(n>=0)(-1)^n q_n r^n exp(-inθ)].                    (M5)
+
+Write its Chebyshev series as sum_(k>=0) d_k T_k(y), with the constant coefficient convention absorbed into d_0. Then
+
+ |d_k|<=C_T r^k(k+1)^(b-1), k>=0.                       (M6)
+
+Here is a direct uniform budget. Writing w=Im beta, 1<=b<=3/2,
+
+ |q_n|=[(b)_n/n!] product_(l=0)^(n-1)
+                                  sqrt(1+w²/(b+l)²).
+
+The first factor is at most C(n+1)^(b-1), uniformly in b. The sum of logarithms in the second factor is bounded by a first term plus its decreasing integral. Using integral_0^infinity log(1+w²/t²)dt=pi|w| gives
+
+ |q_n|<=C(1+|w|)exp(pi|w|/2)(n+1)^(b-1).
+
+The coefficient of exp(ikθ) in (M5) is
+
+ (25/64)^(-beta)(-1)^k r^k
+                       sum_(n>=0) q_(n+k)q_n r^(2n).
+
+Since (n+k+1)^(b-1)<=(k+1)^(b-1)(n+1)^(b-1) and 0<=2b-2<=1, the remaining r^(2n) sum is uniformly finite. As |w|=|τ|/2, this proves (M6) with (M2). The factor two for nonconstant Chebyshev coefficients is harmless.
+
+This proof does not take an unproved uniform-in-height singularity asymptotic. It supplies the displayed exponential height cost explicitly.
+
+### 10.4. Extrapolation and every root-alias term
+
+The K interpolation nodes are the zeros of T_K, so their angles are θ_j=(2j-1)pi/(2K). At these nodes every T_n aliases either to zero (when n is an odd multiple of K) or to plus/minus T_k with 0<=k<K. In particular its interpolant has degree below K and is exactly one such signed Chebyshev polynomial. The absolutely convergent expansion (M5) may be interpolated termwise.
+
+For x in [0,1], the transformed y=(32x-17)/15 lies in [-17/15,1]. Put rho=5/3. Then
+
+ |T_k(y)|<=rho^k.
+
+The sum of all aliased terms n>=K is therefore at most
+
+ C_T rho^K sum_(n>=K) r^n(n+1)^(b-1)
+ <=C C_T K^(b-1).                                      (M7)
+
+This includes every alias and every sign; none is dropped. It already suffices for its eventual weighted tail sum.
+
+For the unaliased terms k<K one has the more useful x-dependent estimate
+
+ |sum_(k<K)d_k T_k((32x-17)/15)|
+ <=C C_T min(K^b,x^(-b)),                               (M8)
+
+with the x=0 convention given by K^b. To prove it for 0<=x<=a, set
+
+ R(x)=exp(arccosh((17-32x)/15)).
+
+Then |T_k|<=R(x)^k, R(0)=rho, and
+
+ d/dx log R(x)=-32/sqrt((17-32x)^2-225)<=-4.
+
+Hence r R(x)<=exp(-4x). Summing (M6) gives (M8). For a<=x<=1, |T_k|<=1 and the r^k sum is bounded by a constant; min(K^b,x^(-b))>=1, so (M8) remains true.
+
+Combining (M7)-(M8), the full prescribed interpolant satisfies
+
+ |p_(K,s)(x)|
+ <=C C_T [min(K^b,x^(-b))+K^(b-1)], 0<=x<=1.            (M9)
+
+The endpoint x=0, which lies outside the node interval, is paid explicitly. A Lebesgue constant on [a,1] alone would not justify this estimate.
+
+### 10.5. The actual Möbius-tail summation gains one K power
+
+Insert x=(N/n)^2 into (M9). For n<=N sqrt(K) the minimum is (n/N)^(2b); for larger n it is K^b. Therefore
+
+ sum_(n>N)n^(-3) min(K^b,(n/N)^(2b))
+ <=C N^(-2)[K^(b-1)+F_(b-1)(K)].                       (M10)
+
+For b>1 this follows by summing N^(-2b)n^(2b-3) from N to N sqrt(K), and then K^b n^(-3). At b=1 the first sum is harmonic and gives log K. Integral-plus-endpoint estimates make the constant uniform for 1<=b<=3/2 and N>=1. The extra alias term in (M9) contributes only
+
+ K^(b-1) sum_(n>N)n^(-3)<=C N^(-2)K^(b-1).              (M11)
+
+Use |mu(n)|<=1 only at this final estimate. Multiplication by |N^(3-s)|=N^(3-σ) in (M1), and the elementary bound for the original partial multiplier, proves (M3). For σ<=1-δ, v>=δ/2, so F_v(K)<=2K^v/δ, and A_σ(N)<=C_δ N^(1-σ). This proves (M4).
+
+### 10.6. Consequences and strict scope
+
+For the original scales N≈exp(U)sqrt(U+1), K≈U+1, (M4) has the shape
+
+ |Mtilde_N(s)|<=C_(δ,T) [exp(U)(U+1)]^(1-Re s)           (M12)
+
+on a fixed compact spectral window left of one. All coefficients remain the actual canonical coefficients, including the complete genuine μ tail. This is a genuine improvement in the finite-window arithmetic multiplier bound.
+
+It is not a signed or source-relative estimate. The factor N^(1-Re s) remains, and no same-record bound by the actual canonical energy has been proved. The height budget (M2) is exponential in T, so a fixed-window statement cannot be substituted for a growing-height or full-zero expansion estimate. In particular it is not paid by a square-root-exponential source tail on its own. The actual Delta transition, the whole centered pairing, P and kappa R must still be retained jointly. No new zero exclusion or coefficient-one margin follows from (M3).
+
+
+## 11. Fixed true jets of the same prescribed multiplier
+
+The coefficients and nodes remain exactly those of Sections 3 and 10. The result below covers fixed derivative orders, including all jets in any fixed finite zero set; no growing multiplicity or height budget is implicit.
+
+### 11.1. Fixed derivative statement
+
+For each δ>0, T<infinity and fixed nonnegative integer q, there is a finite constant C_(δ,T,q) such that, for 0<=σ<=1-δ, |τ|<=T, N>=1 and K>=2,
+
+ |(d/ds)^q Mtilde_N(σ+iτ)|
+ <=C_(δ,T,q) (N sqrt(K))^(1-σ)
+                    [1+log N+log(K+2)]^q.               (J1)
+
+The constant may depend on q. No uniform statement for growing zero multiplicity or a growing spectral window is asserted. In particular (J1) may be used for all the finitely many true jets in a fixed finite set, but not for a full unbounded zero expansion without a new budget.
+
+### 11.2. A buffered coefficient lemma
+
+The proof of the Section 10 value theorem's Chebyshev coefficient and interpolation estimates also works uniformly on
+
+ -1/2<=Re s<=1-δ/2, |Im s|<=T+1.
+
+Indeed b=Re((3-s)/2) then lies in a fixed compact interval inside (1,7/4]. The only changed binomial sum is sum_n r^(2n)(n+1)^(2b-2), which remains uniformly finite. Its x-dependent interpolation estimate is still
+
+ |p_(K,s)(x)|<=C_(δ,T)
+                    [min(K^b,x^(-b))+K^(b-1)], 0<=x<=1. (J2)
+
+This buffer pays small Cauchy circles even at the endpoint σ=0; it is not silently assumed that such circles remain in the Section 10 theorem's [0,1] strip.
+
+### 11.3. Cauchy is applied before the N factor
+
+For a point s=σ+iτ in (J1), set
+
+ epsilon=min(δ/4,1/4,1/log(K+2)).
+
+Every point s+z with |z|<=epsilon belongs to the buffered strip. Put b=Re((3-s)/2), b'=Re((3-s-z)/2). Then |b'-b|<=epsilon/2.
+
+Split 0<=x<=1 into x<=1/K and x>=1/K. In the first interval min(K^(b'),x^(-b'))=K^(b'); in the second it equals x^(-b'). In both intervals
+
+ min(K^(b'),x^(-b'))<=K^(epsilon/2) min(K^b,x^(-b)),
+ K^(b'-1)<=K^(epsilon/2)K^(b-1),
+ K^(epsilon/2)<=exp(1/2).
+
+Cauchy's derivative estimate applied to the entire-in-s polynomial p_(K,s)(x), using (J2), consequently gives
+
+ |(d/ds)^q p_(K,s)(x)|
+ <=C_(δ,T,q)[1+log(K+2)]^q
+                    [min(K^b,x^(-b))+K^(b-1)].           (J3)
+
+The radius is never applied to the complete product N^(3-s). Doing so would introduce an unnecessary N^epsilon loss. Instead differentiate that explicit factor separately.
+
+### 11.4. The same genuine tail sum
+
+Differentiate the exact formula
+
+ Mtilde_N(s)=M_N(s)+N^(3-s)
+                 sum_(n>N)mu(n)n^(-3)p_(K,s)((N/n)^2).
+
+Every derivative may pass under this absolutely convergent series: each fixed derivative of p is still a finite polynomial in x and its node values are entire functions of s. Insert (J3) into the unchanged split at n=N sqrt(K), exactly as in Sections 10.4--10.5. It costs at most
+
+ C_(δ,T,q)N^(-2)K^((1-σ)/2)[1+log(K+2)]^q.
+
+Leibniz with N^(3-s) adds powers of log N, bounded by the bracket in (J1). The original finite Dirichlet polynomial has
+
+ |M_N^(q)(s)|<=sum_(n<=N)(log n)^q n^(-σ)
+ <=C_δ N^(1-σ)[1+log N]^q.
+
+These estimates prove (J1).
+
+### 11.5. Scope
+
+The improvement removes the artificial exponential-in-K coefficient price when the original canonical correction is tested at a fixed spectral point or fixed finite jets. It retains the N^(1-Re s) scale, gives no favorable sign, and does not compare the complete actual transition with the same-record G energy. The whole centered/P/kappa R compensation remains mandatory.
