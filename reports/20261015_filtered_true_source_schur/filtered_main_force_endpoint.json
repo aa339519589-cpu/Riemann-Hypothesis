@@ -1,0 +1,117 @@
+{
+  "scope": "complete original head mixed-force endpoint F(b) for MAIN phi, not Cphi",
+  "cells": 1113,
+  "Gamma_endpoint": [
+    -1.3036028749424737e-08,
+    -1.3036028696319868e-08
+  ],
+  "prime_endpoint": [
+    5.100682608095165e-05,
+    5.100682608095166e-05
+  ],
+  "pole_endpoint": [
+    -3.5560629819525774e-10,
+    -3.5504060745288805e-10
+  ],
+  "complete_endpoint": [
+    5.099343444590403e-05,
+    5.099343501164789e-05
+  ],
+  "Gamma_onset_error_upper": 3.460562001171379e-18,
+  "Gamma_far_error_upper": 2.451754520883443e-37,
+  "prime_reflected_tail_upper": 5.392073040586579e-34,
+  "prime_forward_tail_upper": 2.12467525159885e-55,
+  "point_rows": [
+    {
+      "orientation": "reflected",
+      "n": 5,
+      "phi": [
+        3.543309080683446e-05,
+        3.5433090806834475e-05
+      ],
+      "contribution": [
+        5.100682114593266e-05,
+        5.1006821145932676e-05
+      ]
+    },
+    {
+      "orientation": "reflected",
+      "n": 7,
+      "phi": [
+        3.3549280525945298e-12,
+        3.3549280525945306e-12
+      ],
+      "contribution": [
+        4.934997873452586e-12,
+        4.934997873452587e-12
+      ]
+    },
+    {
+      "orientation": "reflected",
+      "n": 8,
+      "phi": [
+        -4.3071555745157734e-17,
+        -4.307155574515772e-17
+      ],
+      "contribution": [
+        -2.111062163552518e-17,
+        -2.1110621635525173e-17
+      ]
+    },
+    {
+      "orientation": "reflected",
+      "n": 9,
+      "phi": [
+        1.8455010541130047e-22,
+        1.8455010541130051e-22
+      ],
+      "contribution": [
+        1.351660091198998e-22,
+        1.3516600911989984e-22
+      ]
+    },
+    {
+      "orientation": "reflected",
+      "n": 11,
+      "phi": [
+        -1.4792648640084089e-36,
+        -1.4792648640084085e-36
+      ],
+      "contribution": [
+        -2.1389951826551888e-36,
+        -2.138995182655188e-36
+      ]
+    },
+    {
+      "orientation": "forward",
+      "n": 2,
+      "phi": [
+        -4.3071555745157734e-17,
+        -4.307155574515772e-17
+      ],
+      "contribution": [
+        4.2221243271050346e-17,
+        4.222124327105036e-17
+      ]
+    },
+    {
+      "orientation": "forward",
+      "n": 3,
+      "phi": [
+        2.2496045325392765e-43,
+        2.249604532539282e-43
+      ],
+      "contribution": [
+        -2.8537767752437637e-43,
+        -2.853776775243757e-43
+      ]
+    }
+  ],
+  "input_sha256": {
+    "/tmp/audit_filtered_tv/filtered_bessel_main_cells.json": "9bb994b1ecd29806d4d28bddc08b450d3a3d022efb0ec3864e35dc04c59e64b5",
+    "/tmp/audit_filtered_tv/filtered_bessel_onset_cells.json": "2b94d589008225a7160b70fa2d4e28e0f60ebd1f3f33c1025785c110d69b3126",
+    "/tmp/audit_filtered_tv/filtered_bessel_tail_mass_enclosures.json": "cf59df43e80791ed56bc44a96a62b9426a28670d4c8381649453e5c328157708",
+    "/tmp/audit_filtered_tv/interval_array_kernel.py": "2613449122ae1474878b8c2b53979098940bb04e71e61d7613d810ef3d61cf63",
+    "/tmp/audit_filtered_tv/certify_filtered_bessel_moments.py": "9dadf03bcc3d6af1f9361a5d42861842ddc1505bb6ded9b123df64726d95ceb9"
+  }
+}

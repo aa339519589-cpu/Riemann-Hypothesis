@@ -1,0 +1,93 @@
+{
+  "FILTERED_TRUE_SOURCE_AUGMENTED_SCHUR.md": {
+    "source_sha256": "950bd5d0e8518b249d590b9344ece59a6db7205f8192c349d376aae854906000",
+    "publication_adaptation": "Flattened proof links; removed execution-only checkpoint/recovery narration. Mathematical argument and numerical conclusions unchanged."
+  },
+  "FILTERED_TRUE_SOURCE_GAMMA_LOWER_CERTIFICATE.md": {
+    "source_sha256": "39905e46031706ceee24cc7c254c86256e7a4160c786262c795b7c02e5ad017b",
+    "publication_adaptation": "Linked the exact source definition; omitted an unused complement-wide mass-projection claim; added explicit monotonic reuse of the same Fourier/mass enclosure for the uncorrected source. All component estimates unchanged."
+  },
+  "FILTERED_MIXED_COLUMNS_INTERVAL_CERTIFICATE.md": {
+    "source_sha256": "37de766220c181a921fbe81f6e7ed146c33ce6c40a6f69daa3f210cfd279fdbd"
+  },
+  "FILTERED_MAIN_FORCE_VARIATION.md": {
+    "source_sha256": "eb23a2602a586c91cc5bef2a388526a8744ca3469ac657584127b6cdb177f3c2"
+  },
+  "certify_filtered_bessel_moments.py": {
+    "source_sha256": "9dadf03bcc3d6af1f9361a5d42861842ddc1505bb6ded9b123df64726d95ceb9"
+  },
+  "certify_filtered_bessel_onset_cells.py": {
+    "source_sha256": "b8e4effeba7e6d455a891d35a5e483270e4dd05bf7853b3dabfd0c0f16af66e7"
+  },
+  "certify_filtered_main_force_variation.py": {
+    "source_sha256": "04d9b31d75327eb13250b174af27d27e91ba08b1d9a4012b0fd7595a50cc0be4"
+  },
+  "certify_filtered_mixed_columns.py": {
+    "source_sha256": "5e09cecfb1fd434a61cea26ea1545211f4e813846b06a36184f9cae357ed0bdc"
+  },
+  "certify_filtered_true_source_schur.py": {
+    "source_sha256": "06b35df3013bebebd3138b5940aa96c741b3892b7d231d46b38307d5ef3b5e51",
+    "publication_adaptation": "Default endpoint input changed to the included final endpoint filename only; interval arithmetic and summation unchanged."
+  },
+  "check_filtered_bessel_gamma_floor.py": {
+    "source_sha256": "a9f489b93ac7a3321336f17411924096eae58cfd044c9e854efe3a52c919dbcb",
+    "publication_adaptation": "Added the explicit a(24)>0 assertion and a success label for both representatives; numerical enclosure and summation unchanged."
+  },
+  "check_filtered_bessel_tail_masses.py": {
+    "source_sha256": "0ac6db3fb1f5a9e2756d2624efe48cccc2ff00fc83343864b68e4ad00b44ee0b"
+  },
+  "check_filtered_mixed_absolute_remainders.py": {
+    "source_sha256": "71b47a69ea485df64277ee6b0b28c5f3fa12697dfe0d45c8a447762837ec3f2b"
+  },
+  "interval_array_kernel.py": {
+    "source_sha256": "2613449122ae1474878b8c2b53979098940bb04e71e61d7613d810ef3d61cf63"
+  },
+  "certify_unrepaired_head_schur.py": {
+    "source_sha256": "56aee58c8d35efc69f7d09ea9fc00f7b53f50d412a665da41ff8e4ce33c2802c"
+  },
+  "certify_unrepaired_head_kernel.py": {
+    "source_sha256": "8a7e57019acb6f75c49e2f9630af25e8e1fe873226a383b9d5b62f8f3775b25a"
+  },
+  "filtered_bessel_main_cells.json": {
+    "source_sha256": "9bb994b1ecd29806d4d28bddc08b450d3a3d022efb0ec3864e35dc04c59e64b5"
+  },
+  "filtered_bessel_main_moments.json": {
+    "source_sha256": "b4b6067216ff336645ab7e9735dcfd98c56ca5267d48c555005247f6e3395dfe"
+  },
+  "filtered_bessel_onset_cells.json": {
+    "source_sha256": "2b94d589008225a7160b70fa2d4e28e0f60ebd1f3f33c1025785c110d69b3126"
+  },
+  "filtered_bessel_prefix_moments.json": {
+    "source_sha256": "56cd973d5aca9457ff5f5983d5887c58f3c6b698ae3051348b64e7d6b123398e"
+  },
+  "filtered_bessel_tail_mass_enclosures.json": {
+    "source_sha256": "cf59df43e80791ed56bc44a96a62b9426a28670d4c8381649453e5c328157708"
+  },
+  "filtered_mixed_columns_intervals.json": {
+    "source_sha256": "e33385916a9878b7f2b111c778412dc88c1361871713e7e968f9cbfd1ee61928"
+  },
+  "FILTERED_COMPLEMENT_VALIDATED_SERIES_INTERFACE.md": {
+    "source_sha256": "42e60f107bb56e5a3356fd4a0ae1fe3c3fe163a18061a3d22b03e540253ae948"
+  },
+  "FILTERED_K3_COMPLETE_PRIME_POLE_DEBIT.md": {
+    "source_sha256": "4a948e500f94f77bedcc4244c176730c465dd104c341d5e1ab289d90068a8f07"
+  },
+  "FILTERED_K3_COMPLETE_MIXED_ENDPOINT.md": {
+    "source_sha256": "8b6a3b62930bf21651f03abd5eb967d30237c596e2770d48baae262d95b589bb"
+  },
+  "check_filtered_k3_infinite_debit.py": {
+    "source_sha256": "f3f9edc0132472d30b663e22e66e32f8f805d100f2f0f3a61e16ef3a0988c8e9"
+  },
+  "certify_filtered_main_force_endpoint.py": {
+    "source_sha256": "4e20c0a1fbaed73224975b14f3371f66458b0085ac89d5aadb656f18948c3558",
+    "publication_adaptation": "Dependency directory changed to the current directory only; interval arithmetic and summation unchanged."
+  },
+  "filtered_main_force_endpoint.json": {
+    "source_sha256": "076e0f7edf1691fc82012a1de42e2ebdd0c2af5b43b4917d25ff768ffb5db3d7",
+    "scope": "final independently regenerated complete endpoint"
+  },
+  "unrepaired_head_kernel_intervals.json.gz": {
+    "uncompressed_sha256": "5b6d56a17d725aeb7fba30495032807f60facad2da84613f8403288fea87e8d9",
+    "scope": "complete head interval input; decompress before running unchanged head checker"
+  }
+}
