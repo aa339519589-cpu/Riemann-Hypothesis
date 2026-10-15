@@ -2,7 +2,7 @@
 
 Date: 2026-10-15.
 
-The two constructions were checked independently against the complete
+The first two constructions were checked independently against the complete
 positive-form kernels before preparation of this report. The publication
 review checks the written proofs, not finite numerical diagnostics.
 These are internal mathematical reviews, not formal verification or
@@ -38,6 +38,24 @@ positivity. The three-reflection sign product only excludes independent
 edge-sign gauges of that cone. The complete transfer-current operator
 remains Hilbert positive semidefinite throughout.
 
-The conclusions do not decide C<=I, do not exclude all cones or eventual
-positivity, and do not give an upper bound for the actual arithmetic
-load. No RH conclusion is asserted.
+The appended odd-semigroup result concerns the original pole-free H_o,
+not the pole-corrected A_o. It uses the same closed H_o realization
+from the published odd operator-domain report and its compact negative
+part from the published foundation audit. The domain-valid positive
+score identity excludes nonnegative eigenvectors at nonpositive
+energies. The known zero mode and compact negative part make the bottom
+an eigenvalue, and the strong spectral limit of integer semigroup powers
+excludes cone preservation at any one positive time. A fixed nonnegative
+input with a sign-changing bottom projection also excludes individual
+eventual positivity as a property for every nonnegative input. This
+argument does not require bottom isolation or a compact heat operator.
+The exact positive ground unitary and score forcing are displayed.
+
+The conclusions do not decide C<=I or give an upper bound for the actual
+arithmetic load. The last theorem concerns only the stated odd half-line
+cone, not every possible cone or the Green resolvent. No RH conclusion
+is asserted.
+
+The appended section and both earlier proofs received independent
+internal mathematical review. These are internal proof reviews, not
+external referee endorsements.

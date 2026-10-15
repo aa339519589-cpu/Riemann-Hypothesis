@@ -1,11 +1,15 @@
-# Two order-cone obstructions for the complete positive-form Green comparison
+# Order-cone obstructions for the complete Green and odd-semigroup comparisons
 
 Date: 2026-10-15.
 
 This report proves two precise limitations of order-based approaches to
-the original P/N comparison. Neither result proves or disproves P>=N.
-All Gamma terms, all von Mangoldt prime powers, and the full pole form
-are retained. No conclusion is inferred from a finite matrix inverse.
+the original P/N comparison, and a third limitation for the ordinary
+positive-half-line cone of the original odd semigroup. None proves or
+disproves P>=N.
+In the first two P/N conclusions, all Gamma terms, all von Mangoldt
+prime powers, and the full pole form are retained. The third concerns
+the original pole-free physical H_o, with all its Gamma and prime terms.
+No conclusion is inferred from a finite matrix inverse.
 
 The objects and their energy completions are those of the
 [full-prime Green construction](../20261013_full_prime_green_reference/REPORT.md).
@@ -331,6 +335,122 @@ inverse-cross signs. Changing each edge sign independently multiplies
 that product by a square, so at least one inverse cross remains negative.
 End proof.
 
+## 3. The original odd semigroup cannot preserve the half-line cone at any positive time
+
+This assertion concerns the original pole-free physical odd operator
+H_o, not the pole-corrected A_o=H_o-2|s_*><s_*|, the Green operator, or
+a new choice of cone. No semigroup-order conclusion for A_o is claimed.
+Use the same parity-preserving
+closed realization H_full and its odd restriction H_o from the published
+[odd operator-domain report](../20261013_odd_operator_domains/REPORT.md).
+Set
+
+\[
+ h(x)=\cosh(x/2),\qquad m(x)^2=\frac{\Phi(x)}{2h(x)},\qquad
+ u_*(x)=\frac{\psi(x)}{m(x)},\qquad s_*(x)=m(x)\sinh(x/2).
+\]
+
+The cited report proves the operator-domain identity
+
+\[
+ u_*\in D(H_o),\qquad H_o u_*=\tfrac12 s_* .              \tag{18}
+\]
+
+Both u_* and s_* are strictly positive on x>0, with odd full-line
+extensions. The original operator is bounded below by -1/2. Its negative
+part is compact, including on the odd restriction, by the
+[complete negative-spectrum proof](../20261013_foundation_audit/NEGATIVE_SPECTRUM.md).
+The odd-domain report also supplies the nonzero pole-free neutral vector
+
+\[
+ v_0=\frac{\Phi'''-\Phi'/4}{m}\in D(H_o),\qquad H_o v_0=0.
+                                                               \tag{19}
+\]
+
+All these statements refer to the original complete-prime realization.
+No finite-prime generator or unweighted formal source operator is
+substituted for H_o.
+
+Identify odd L2 functions with their restrictions to x>0, and call a
+vector nonnegative if that restriction is nonnegative almost everywhere.
+
+**Theorem 3.** For every t>0, exp(-t H_o) fails to preserve this ordinary
+half-line nonnegative cone. Moreover, there is a fixed nonnegative input
+whose image has a nonzero negative part for all sufficiently large t.
+
+Proof. Suppose H_o v=lambda v with lambda<=0 and v nonzero and
+nonnegative on the positive half-line. Self-adjointness and (18) give
+
+\[
+ \lambda\langle v,u_*\rangle
+       =\langle v,H_o u_*\rangle
+       =\tfrac12\langle v,s_*\rangle>0.                  \tag{20}
+\]
+
+The inner products can be taken on the full odd space or, with the same
+common factor, on the positive half-line. They are finite by their L2
+operator-domain membership. The left side is nonpositive, a
+contradiction. Thus no such eigenvector exists.
+
+Put alpha=inf spec(H_o). By (19), alpha<=0. If alpha<0, compactness of
+the negative part implies that the bottom is an eigenvalue. If alpha=0,
+(19) itself supplies a nonzero bottom eigenspace. Thus in either case
+the orthogonal spectral projection Pi_alpha is nonzero.
+
+If exp(-t0 H_o) preserved the cone at one t0>0, so would every positive
+integer power and every positive scalar multiple of those powers. The
+spectral theorem, using H_o-alpha>=0, gives the strong limit
+
+\[
+ e^{nt_0\alpha}e^{-nt_0H_o}\longrightarrow\Pi_\alpha
+                    \quad(n\to\infty).                 \tag{21}
+\]
+
+No isolation or finite multiplicity of alpha is required for (21).
+The cone is closed in L2, so Pi_alpha would be positivity preserving.
+A nonzero positive projection has a nonzero nonnegative image of some
+nonnegative input: otherwise it vanishes on all real vectors, by their
+positive/negative decomposition, and hence is zero. Its image would be
+a nonzero nonnegative eigenvector at alpha<=0, contradicting (20).
+
+For the last assertion, choose f>=0 with Pi_alpha f nonzero. Such f
+exists because the real positive cone spans the real Hilbert space.
+Equation (20) shows that Pi_alpha f has a nonzero negative part. Also
+\(\langle f,\Pi_\alpha f\rangle=\|\Pi_\alpha f\|^2>0\), so
+Pi_alpha f cannot be nonpositive either. The continuous-time strong
+limit \(e^{t\alpha}e^{-tH_o}f\to\Pi_\alpha f\) and the L2 continuity
+of taking the negative part imply a strictly positive limiting negative-
+part norm. Thus e^(-tH_o)f has a nonzero negative part for every
+sufficiently large t. End proof.
+
+For clarity, the exact Phi-ground formulation is a positive unitary
+conjugate of this same assertion. With
+
+\[
+ d\nu(x)=2\Phi(x)h(x)\,dx,\qquad
+ (Uf)(x)=\sqrt{2\Phi(x)h(x)}\,f(x)=\frac{\Phi(x)}{m(x)}f(x),
+ \qquad L_o=U^{-1}H_oU+\tfrac12 I,
+\]
+
+U preserves parity and the positive-half-line cone. Thus
+exp(-t L_o)=exp(-t/2)U^(-1)exp(-t H_o)U has both failures in Theorem 3.
+In this normalization the score has the exact identity
+
+\[
+ s_0=\frac{\psi}{\Phi}\in D(L_o),\qquad
+ (L_o-\tfrac12)s_0=\tfrac12 b,\qquad
+ b=\frac{h'}h=\tfrac12\tanh(x/2)>0\quad(x>0).             \tag{22}
+\]
+
+In particular s_0 is not an eigenfunction at 1/2. The theorem rules out
+both uniform and individual eventual positivity as properties required
+for every nonnegative input of this specified odd half-line cone. It
+does not assert that no particular input can become eventually positive,
+and it makes no assertion about other cones or shifted Green resolvents.
+It does not contradict positivity preservation of the full Phi-ground
+Markov semigroup: its ordinary full-line cone is not the cone of odd
+functions positive only on the positive half-line.
+
 ## Exact limitations
 
 The first theorem concerns order on nonnegative derivative functions for
@@ -338,7 +458,10 @@ the full variational A_P^{-1}A_N. The second concerns order on the ordinary
 oriented-edge cone for the full transfer-current operator, including the
 stated edge-sign gauges. It does not by itself test the cone obtained by
 intersecting nonnegative currents with the closed gradient space.
-Neither theorem addresses all possible cones,
-eventual positivity, or every shifted resolvent. Both leave the complete
-Hilbert threshold C<=I and the actual arithmetic upper estimate unproved.
+Theorem 3 separately excludes positivity at every positive time, and
+eventual positivity as a property for all nonnegative inputs, for the
+specified ordinary half-line cone of the original odd semigroup. These
+results do not address all possible cones or every shifted resolvent.
+They leave the complete Hilbert threshold C<=I and the actual arithmetic
+upper estimate unproved.
 They are rigorous exclusions of specified methods, not RH progress.
