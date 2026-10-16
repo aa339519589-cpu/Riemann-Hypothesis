@@ -1,5 +1,7 @@
 # Two further Heath-Brown crossing density corollaries
 
+**Comparison/provenance update (16 October 2026).** A prior primary source states a stronger actual-zeta curve on this report's interval. The result here remains a correct identified-table improvement, not a best-known or all-prior-results improvement. See the [pinned prior-source comparison and verification scope](../20261016_density_prior_source_comparison/REPORT.md). The proof and arithmetic below are unchanged.
+
 Let \(N(\sigma,T)\) count nontrivial zeta zeros \(\beta+i\gamma\), with multiplicity, satisfying \(\beta\geq\sigma\) and \(0<|\gamma|\leq T\). For each fixed \(\sigma\) in the indicated interval and every \(\varepsilon>0\), the following unconditional bounds hold:
 \[
 \boxed{N(\sigma,T)\ll_{\sigma,\varepsilon}

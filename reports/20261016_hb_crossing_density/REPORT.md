@@ -1,5 +1,7 @@
 # A Heath-Brown crossing and subdivision density corollary near sigma=.773
 
+**Comparison/provenance update (16 October 2026).** A prior primary source states a stronger actual-zeta curve on this report's interval. The result here remains a correct identified-table improvement, not a best-known or all-prior-results improvement. See the [pinned prior-source comparison and verification scope](../20261016_density_prior_source_comparison/REPORT.md). The proof and arithmetic below are unchanged.
+
 Let \(N(\sigma,T)\) count nontrivial zeros \(\beta+i\gamma\) of the Riemann zeta function, with multiplicity, such that \(\beta\geq\sigma\) and \(0<|\gamma|\leq T\).
 
 **Theorem.** For every fixed
