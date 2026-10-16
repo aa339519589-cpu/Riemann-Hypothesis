@@ -4,6 +4,10 @@
 It concerns a Hermitian count model, not actual zeta zeros, a
 positive-semidefinite Gram matrix, or a counterexample to an arithmetic statement.
 
+**Provenance correction:** the central obstruction and the negative block have
+an earlier source. See the [provenance addendum](PROVENANCE_ADDENDUM.md);
+no novelty of that obstruction is claimed. The proof below is unchanged.
+
 ## Theorem
 
 Fix real C with 1<C<2 and any finite real D. For every sufficiently large
