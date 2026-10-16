@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "finite scalar witnesses and splice inequalities; analytic proof separate",
+  "target": "20.4",
+  "precision_bits": 160,
+  "x_range": [
+    "65",
+    "1000000"
+  ],
+  "near_minimum_relative_slack": "1e-20",
+  "b_upper": "3.574410",
+  "b1_upper": "1.747088",
+  "theta_enclosure": [
+    "1.1326",
+    "1.1328"
+  ],
+  "c_bound": "c(R)<=1+10.05/R for R>=100",
+  "evaluations": 3734,
+  "cells": 1875,
+  "failed": [],
+  "script_sha256": "8dd51a87754ac1d49010ad097f4a57c6875dcc778d75aec6648ade46beb727e9",
+  "smallest_margin_lower": "[5.6155751765810217821539343467110561291190481386e-8 +/- 3.80e-55]"
+}
