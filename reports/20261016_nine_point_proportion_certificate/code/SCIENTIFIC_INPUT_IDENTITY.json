@@ -1,0 +1,23 @@
+{
+  "legacy_input_sha256": "a2f27341f89b0de26abe39b662bcebd080a39805a5c5707a2cdd00e455de048d",
+  "clean_input_sha256": "3aec299878696245945760411329dbcdfd3e49e78c01fbf6bd8b1430f01c78e9",
+  "identical_scientific_fields": [
+    "cosine_coefficients",
+    "coefficient_denominator",
+    "weight_denominator",
+    "pairs",
+    "weights",
+    "pressure",
+    "candidate_reward"
+  ],
+  "removed_fields": [
+    "current_reward",
+    "HW_lower",
+    "current_proportion",
+    "source_url",
+    "source_sha256",
+    "status",
+    "origin"
+  ],
+  "note": "Removed fields were historical proposal metadata and were not read by the kernel/jet or side-condition builders."
+}

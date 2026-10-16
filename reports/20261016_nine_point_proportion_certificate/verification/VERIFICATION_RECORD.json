@@ -1,0 +1,125 @@
+{
+  "certificate_reward": [
+    867000,
+    100000000
+  ],
+  "checker_sha256": "19f8d5fa97135fed3564b282a1c1af121bcf711e5c258cccb9a108a00b39d297",
+  "energy_floor": [
+    67212547684242257756837921426708,
+    100000000000000000000000000000000
+  ],
+  "expected_counters": {
+    "affine": 954828,
+    "basic": 87078,
+    "convex": 26942,
+    "empty": 42462,
+    "maxstack": 10750,
+    "nodes": 5324457,
+    "pressure": 780,
+    "symmetry": 959
+  },
+  "generated_scientific_files": {
+    "candidate_am_jets.i64le": {
+      "bytes": 33554432,
+      "sha256": "4227017a8bd49a500fa5a420c360308e1b202a019d172451bdf218d1749efb31"
+    },
+    "candidate_am_kernel.u32le": {
+      "bytes": 4194304,
+      "sha256": "97c3b113c7c3be7030406984972794cceb1591e533ee26a541531c2acc9850e5"
+    },
+    "expanded_partition_anchor_proposals.txt": {
+      "bytes": 3791155,
+      "sha256": "1032722f512045bba7cc4691f8d00cc178aa977ff0405033437850fa611e153c"
+    },
+    "expanded_partition_coordinate_cover.txt": {
+      "bytes": 194,
+      "sha256": "41528c1a6198fd7e2e1003067618765e96aab73dc057b44c3d9f80e693058033"
+    },
+    "verified_expanded_partition_cells.txt": {
+      "bytes": 5577544,
+      "sha256": "c4ff4ded6568430b0ede46d6308f56b2e04a66f9a8c5f3c8ddc2b6acf1361425"
+    }
+  },
+  "precision_replay": {
+    "candidate_am_jets_320.i64le": "4227017a8bd49a500fa5a420c360308e1b202a019d172451bdf218d1749efb31",
+    "candidate_am_kernel_320.u32le": "97c3b113c7c3be7030406984972794cceb1591e533ee26a541531c2acc9850e5"
+  },
+  "pressure_total": [
+    437542,
+    100000000
+  ],
+  "proportion_lower": [
+    16693751421060564439209480356677,
+    24783250000000000000000000000000
+  ],
+  "python_optimization_guard": {
+    "PYTHONOPTIMIZE_1": "Rejected with exit 1 before any builder",
+    "normal_python": "PASS"
+  },
+  "replays": [
+    {
+      "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+      "exit_code": 0,
+      "flags": "-O3 -std=c++17",
+      "label": "original",
+      "seconds": 229.402,
+      "sha256": "ae604378de1b7d87b8f0d1c386c8534057cb162fb0efc5ab74b7a0f26c74a820",
+      "terminal": "PASS reward=867000 denominator=100000000 nodes=5324457 pressure=780 basic=87078 affine=954828 convex=26942 symmetry=959 empty=42462 maxstack=10750 seconds=229.402",
+      "transcript": "original_replay.log"
+    },
+    {
+      "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+      "exit_code": 0,
+      "flags": "-O3 -std=c++17",
+      "label": "independent",
+      "seconds": 255.087,
+      "sha256": "886e059c6845e058253c15e1065b9aff4a3ed8339b5eb353815b7c426829663d",
+      "terminal": "PASS reward=867000 denominator=100000000 nodes=5324457 pressure=780 basic=87078 affine=954828 convex=26942 symmetry=959 empty=42462 maxstack=10750 seconds=255.087",
+      "transcript": "independent_replay.log"
+    },
+    {
+      "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+      "exit_code": 0,
+      "flags": "-O2 -g -std=c++17 -fsanitize=undefined,signed-integer-overflow -fno-sanitize-recover=all",
+      "label": "sanitizer",
+      "seconds": 392.102,
+      "sha256": "c074591351e46b94f072c8cde1d175ce6b1b2cdfab3fa1ea3214accc466190af",
+      "terminal": "PASS reward=867000 denominator=100000000 nodes=5324457 pressure=780 basic=87078 affine=954828 convex=26942 symmetry=959 empty=42462 maxstack=10750 seconds=392.102",
+      "transcript": "sanitizer_replay.log"
+    },
+    {
+      "checker_seconds": 254.637,
+      "command": "PYTHON=python3 CXX=g++ bash reproduce.sh",
+      "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+      "exit_code": 0,
+      "flags": "-O3 -std=c++17",
+      "label": "portable clean-input regeneration and complete replay",
+      "sha256": "8f06ec0fcaed608e1d55b05448edea6deb2daff7ea83055cef7c3b08a08fbf8b",
+      "terminal": "PASS reward=867000 denominator=100000000 nodes=5324457 pressure=780 basic=87078 affine=954828 convex=26942 symmetry=959 empty=42462 maxstack=10750 seconds=254.637",
+      "transcript": "portable_reproduction.log",
+      "wrapper_sha256": "44d96fabf2de42cd38b0cf0d60a34a17d17f96e5e08024ff83e6df1bee29d0e8"
+    }
+  ],
+  "result": "COMPLETED_COMPUTER_ASSISTED_ALL_GAP_CERTIFICATE",
+  "scientific_input_sha256": "3aec299878696245945760411329dbcdfd3e49e78c01fbf6bd8b1430f01c78e9",
+  "scope": "Computer-assisted all-gap inequality plus the analytic certificate transfer proved in REPORT.md. Not a Lean-kernel certificate and not an external leaderboard submission.",
+  "side_certificates": {
+    "side_conditions_192.json": {
+      "bytes": 1317,
+      "sha256": "ebe028c57a4ed2dbfc325df20b25265d6942d572351d9c846b72551f17291493"
+    },
+    "side_conditions_320.json": {
+      "bytes": 1317,
+      "sha256": "63cc22ccc2ca33257dbe6d0d8f521ed62c0ed3cbdb6f27f489e10451784bde62"
+    },
+    "upper_curvature.json": {
+      "bytes": 525,
+      "sha256": "0ebc131add8e161fff8a7d24af6d38e7d972b9803de5dd7fa6c68c79e517d52b"
+    }
+  },
+  "source_data_manifest_sha256": "6fc112f2096192895e686737432afd5febbde4d7f4eea3385f42f4140ede5031",
+  "table_replay_bits": [
+    160,
+    320
+  ]
+}

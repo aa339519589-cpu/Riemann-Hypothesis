@@ -1,0 +1,14 @@
+{
+  "input_sha256": "3aec299878696245945760411329dbcdfd3e49e78c01fbf6bd8b1430f01c78e9",
+  "table_sha256": "4227017a8bd49a500fa5a420c360308e1b202a019d172451bdf218d1749efb31",
+  "builder_sha256": "48363f683ffbee98cb86148baaef6017f7b501dcd6d6eaa27d7995d0ddcb3adb",
+  "bits": 160,
+  "cells": 1048576,
+  "grid": 16384,
+  "scale": 1125899906842624,
+  "correction_integer": 17111149707266,
+  "minimum_integer_slack": 65268835250,
+  "upper_formula": "row[3] + ceil(249*S/H) + 2",
+  "seconds": 63.01526600201032,
+  "result": "PASS"
+}

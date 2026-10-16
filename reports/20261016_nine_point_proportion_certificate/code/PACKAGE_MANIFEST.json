@@ -1,0 +1,77 @@
+{
+  "files": {
+    ".gitignore": {
+      "bytes": 450,
+      "sha256": "3976a528d5c82196fdf826ab370cfdb9b451251f103ce739097f7d5f2bc444b0"
+    },
+    "LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "README.md": {
+      "bytes": 2221,
+      "sha256": "f202d6b11500dc8111ec28b84048115d27e6c4b5e919e5f2dd0bacb104ae12c2"
+    },
+    "SCIENTIFIC_INPUT_IDENTITY.json": {
+      "bytes": 662,
+      "sha256": "8092a97bee00fa9aa6e10b533af625c0d5cea634503a282ee8e630fa9a030f26"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 5735,
+      "sha256": "98198f0187c075ac432dcc4826b731fc5ed18e407a19624c8adc4c1e3a7cc5f1"
+    },
+    "build_am_kernel_jets_input.py": {
+      "bytes": 2845,
+      "sha256": "d4da83a45609671ce624075ae443424adfb3263a37dd1105102f08b30e72a0cd"
+    },
+    "build_am_kernel_table_input.py": {
+      "bytes": 2484,
+      "sha256": "f0ada02fa53e1c463194715cfd61c5c433bf863ead831d9fc401d24fd41aa07b"
+    },
+    "candidate_am9_data.hpp": {
+      "bytes": 584,
+      "sha256": "3736e6e754bb7ca02a1b491139f549c07bae583c8cfb081ad1432a44d2d89024"
+    },
+    "certified_window_data.json": {
+      "bytes": 2281,
+      "sha256": "3aec299878696245945760411329dbcdfd3e49e78c01fbf6bd8b1430f01c78e9"
+    },
+    "certify_am_candidate_conditions.py": {
+      "bytes": 2641,
+      "sha256": "4f5924230f005b267e4f25e2ed7eceb2fa8ca63842319aff8d81a4684b6efe6c"
+    },
+    "certify_am_curvature_upper.py": {
+      "bytes": 2995,
+      "sha256": "48363f683ffbee98cb86148baaef6017f7b501dcd6d6eaa27d7995d0ddcb3adb"
+    },
+    "check_am9_expanded_anchors.cpp": {
+      "bytes": 19211,
+      "sha256": "19f8d5fa97135fed3564b282a1c1af121bcf711e5c258cccb9a108a00b39d297"
+    },
+    "partition_hints.json.gz": {
+      "bytes": 691737,
+      "sha256": "7e75f4b869873bc86aa410be24cbbe7d4fd7feac609dd8f3fb8917ae01af5949"
+    },
+    "prepare_geometry.py": {
+      "bytes": 1265,
+      "sha256": "c161bd7be4955dba8a7ea629774d1a89e549ce5ca3b45e03919324ac1b9d69a8"
+    },
+    "reproduce.sh": {
+      "bytes": 1305,
+      "sha256": "44d96fabf2de42cd38b0cf0d60a34a17d17f96e5e08024ff83e6df1bee29d0e8"
+    },
+    "verify_constants.py": {
+      "bytes": 1363,
+      "sha256": "185cc5d218ef731581486dcfdc64ef938d68029d246227cdb602e3a15bf11305"
+    },
+    "verify_expanded_partition_cover.py": {
+      "bytes": 2707,
+      "sha256": "ba611988a718e9d582d06f756cad93d22670fd579cda609c8a65fd6b4b2259e5"
+    },
+    "verify_generated_hashes.py": {
+      "bytes": 801,
+      "sha256": "5029990b44027bd8b4ff759e524702325e967ff6227b34acbc1c92d6ff91a2af"
+    }
+  },
+  "format": "sha256-source-data-manifest-v1"
+}

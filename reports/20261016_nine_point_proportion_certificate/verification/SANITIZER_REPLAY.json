@@ -1,0 +1,64 @@
+{
+  "result": "COMPLETE_EXHAUSTIVE_REPLAY_PASS",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "compile_command": "g++ -std=c++17 -O2 -g -fsanitize=undefined,signed-integer-overflow -fno-sanitize-recover=all check_am9_expanded_anchors.cpp -o check_am9_expanded_anchors_independent_ubsan",
+  "run_command": "./check_am9_expanded_anchors_independent_ubsan candidate_am_kernel.u32le candidate_am_jets.i64le 867000",
+  "exit_code": 0,
+  "sanitizer_diagnostics": false,
+  "terminal": "PASS reward=867000 denominator=100000000 nodes=5324457 pressure=780 basic=87078 affine=954828 convex=26942 symmetry=959 empty=42462 maxstack=10750 seconds=392.102",
+  "files": {
+    "check_am9_expanded_anchors.cpp": {
+      "sha256": "19f8d5fa97135fed3564b282a1c1af121bcf711e5c258cccb9a108a00b39d297",
+      "bytes": 19211
+    },
+    "candidate_am9_data.hpp": {
+      "sha256": "3736e6e754bb7ca02a1b491139f549c07bae583c8cfb081ad1432a44d2d89024",
+      "bytes": 584
+    },
+    "candidate_am_kernel.u32le": {
+      "sha256": "97c3b113c7c3be7030406984972794cceb1591e533ee26a541531c2acc9850e5",
+      "bytes": 4194304
+    },
+    "candidate_am_jets.i64le": {
+      "sha256": "4227017a8bd49a500fa5a420c360308e1b202a019d172451bdf218d1749efb31",
+      "bytes": 33554432
+    },
+    "attempt024_partition_expanded.trees.json": {
+      "sha256": "b34f0477ea5c93941db1f488bb606385a91e9c402aceaf1ddedf0dab314aad70",
+      "bytes": 5087812
+    },
+    "verify_expanded_partition_cover.py": {
+      "sha256": "ba611988a718e9d582d06f756cad93d22670fd579cda609c8a65fd6b4b2259e5",
+      "bytes": 2707
+    },
+    "verified_expanded_partition_cells.txt": {
+      "sha256": "c4ff4ded6568430b0ede46d6308f56b2e04a66f9a8c5f3c8ddc2b6acf1361425",
+      "bytes": 5577544
+    },
+    "expanded_partition_coordinate_cover.txt": {
+      "sha256": "41528c1a6198fd7e2e1003067618765e96aab73dc057b44c3d9f80e693058033",
+      "bytes": 194
+    },
+    "expanded_partition_anchor_proposals.txt": {
+      "sha256": "1032722f512045bba7cc4691f8d00cc178aa977ff0405033437850fa611e153c",
+      "bytes": 3791155
+    },
+    "certified_window_data.json": {
+      "sha256": "3aec299878696245945760411329dbcdfd3e49e78c01fbf6bd8b1430f01c78e9",
+      "bytes": 2281
+    },
+    "certified_window_conditions_320.json": {
+      "sha256": "63cc22ccc2ca33257dbe6d0d8f521ed62c0ed3cbdb6f27f489e10451784bde62",
+      "bytes": 1317
+    },
+    "check_am9_expanded_anchors_independent_ubsan": {
+      "sha256": "a1b7367396161dec8a5bc8a471423c4a04085f9f72b557cdea4de3d647f06676",
+      "bytes": 1313864
+    },
+    "am9_expanded_anchors_independent_ubsan.log": {
+      "sha256": "c074591351e46b94f072c8cde1d175ce6b1b2cdfab3fa1ea3214accc466190af",
+      "bytes": 4948
+    }
+  },
+  "scope": "Exhaustive finite all-gap inequality and executed arithmetic replay. Analytic zeta transfer is separately proved."
+}

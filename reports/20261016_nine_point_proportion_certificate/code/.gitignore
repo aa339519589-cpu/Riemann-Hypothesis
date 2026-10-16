@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+check_am9_expanded_anchors
+candidate_am_kernel.txt
+candidate_am_kernel.u32le
+candidate_am_kernel.json
+candidate_am_jets.i64le
+candidate_am_jets.json
+candidate_am_upper_curvature.json
+certified_window_side_conditions.json
+attempt024_partition_expanded.trees.json
+verified_expanded_partition_cells.txt
+verified_expanded_partition_cover.json
+expanded_partition_coordinate_cover.txt
+expanded_partition_anchor_proposals.txt
+replay.log

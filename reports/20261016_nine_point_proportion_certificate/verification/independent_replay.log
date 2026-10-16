@@ -1,0 +1,65 @@
+HULL_DIAGNOSTIC_PASS trials=10000
+PRECOVER coordinate=0 runs=1
+PRECOVER coordinate=1 runs=2
+PRECOVER coordinate=2 runs=3
+PRECOVER coordinate=3 runs=4
+PRECOVER coordinate=4 runs=4
+PRECOVER coordinate=5 runs=3
+PRECOVER coordinate=6 runs=2
+PRECOVER coordinate=7 runs=1
+NEW_PRECOVER_INCLUSION_PASS partition_cells=10750
+INITIAL_PARTITION_SWEEP_DONE pending=9209
+PROGRESS nodes=100000 root=44 stack=8877 affine=6365 convex=118 seconds=2.98925
+PROGRESS nodes=200000 root=43 stack=8643 affine=14578 convex=213 seconds=6.84585
+PROGRESS nodes=300000 root=42 stack=8411 affine=22887 convex=294 seconds=11.3831
+PROGRESS nodes=400000 root=41 stack=8203 affine=33300 convex=492 seconds=16.4137
+PROGRESS nodes=500000 root=41 stack=8088 affine=42630 convex=618 seconds=19.7362
+PROGRESS nodes=600000 root=40 stack=7960 affine=53127 convex=770 seconds=23.6872
+PROGRESS nodes=700000 root=38 stack=7715 affine=62613 convex=873 seconds=27.5659
+PROGRESS nodes=800000 root=38 stack=7541 affine=72249 convex=1033 seconds=31.4822
+PROGRESS nodes=900000 root=37 stack=7255 affine=80179 convex=1163 seconds=35.1098
+PROGRESS nodes=1000000 root=37 stack=7146 affine=89021 convex=1310 seconds=39.046
+PROGRESS nodes=1100000 root=37 stack=7034 affine=117490 convex=2058 seconds=43.4638
+PROGRESS nodes=1200000 root=36 stack=6790 affine=140436 convex=2642 seconds=47.5359
+PROGRESS nodes=1300000 root=36 stack=6678 affine=149199 convex=2658 seconds=51.5153
+PROGRESS nodes=1400000 root=36 stack=6377 affine=163772 convex=3089 seconds=59.5833
+PROGRESS nodes=1500000 root=35 stack=6122 affine=177369 convex=3366 seconds=64.4958
+PROGRESS nodes=1600000 root=34 stack=5891 affine=187356 convex=3452 seconds=69.4003
+PROGRESS nodes=1700000 root=34 stack=5762 affine=194921 convex=3527 seconds=74.0674
+PROGRESS nodes=1800000 root=34 stack=5635 affine=205150 convex=3582 seconds=79.0283
+PROGRESS nodes=1900000 root=34 stack=5583 affine=237227 convex=4345 seconds=84.3317
+PROGRESS nodes=2000000 root=34 stack=5452 affine=275764 convex=6424 seconds=89.8863
+PROGRESS nodes=2100000 root=34 stack=5336 affine=307750 convex=8400 seconds=96.6202
+PROGRESS nodes=2200000 root=33 stack=5240 affine=346030 convex=9691 seconds=102.516
+PROGRESS nodes=2300000 root=33 stack=5102 affine=358926 convex=9939 seconds=107.388
+PROGRESS nodes=2400000 root=32 stack=4980 affine=371146 convex=10112 seconds=111.68
+PROGRESS nodes=2500000 root=14 stack=4562 affine=380402 convex=10170 seconds=115.893
+PROGRESS nodes=2600000 root=13 stack=4288 affine=388881 convex=10313 seconds=120.576
+PROGRESS nodes=2700000 root=12 stack=4033 affine=404002 convex=10773 seconds=125.603
+PROGRESS nodes=2800000 root=12 stack=3910 affine=414606 convex=11020 seconds=129.876
+PROGRESS nodes=2900000 root=11 stack=3619 affine=433331 convex=11604 seconds=134.322
+PROGRESS nodes=3000000 root=10 stack=3326 affine=444330 convex=11816 seconds=138.5
+PROGRESS nodes=3100000 root=10 stack=3093 affine=456609 convex=11912 seconds=143.067
+PROGRESS nodes=3200000 root=10 stack=2976 affine=486496 convex=12684 seconds=148.006
+PROGRESS nodes=3300000 root=10 stack=2930 affine=531524 convex=14745 seconds=153.422
+PROGRESS nodes=3400000 root=10 stack=2934 affine=578650 convex=16703 seconds=159.444
+PROGRESS nodes=3500000 root=9 stack=2803 affine=621307 convex=17644 seconds=164.522
+PROGRESS nodes=3600000 root=9 stack=2504 affine=633171 convex=17872 seconds=168.925
+PROGRESS nodes=3700000 root=9 stack=2376 affine=648473 convex=18058 seconds=173.681
+PROGRESS nodes=3800000 root=9 stack=2321 affine=683042 convex=19017 seconds=178.585
+PROGRESS nodes=3900000 root=9 stack=2326 affine=726018 convex=21038 seconds=183.553
+PROGRESS nodes=4000000 root=8 stack=2243 affine=756402 convex=23085 seconds=188.82
+PROGRESS nodes=4100000 root=8 stack=2139 affine=769915 convex=23286 seconds=193.268
+PROGRESS nodes=4200000 root=6 stack=1800 affine=780285 convex=23423 seconds=198.565
+PROGRESS nodes=4300000 root=6 stack=1681 affine=789348 convex=23471 seconds=203.312
+PROGRESS nodes=4400000 root=5 stack=1518 affine=800977 convex=23639 seconds=207.736
+PROGRESS nodes=4500000 root=5 stack=1328 affine=813217 convex=24059 seconds=212.22
+PROGRESS nodes=4600000 root=5 stack=1220 affine=831198 convex=24215 seconds=217.475
+PROGRESS nodes=4700000 root=5 stack=1137 affine=876808 convex=26014 seconds=223.611
+PROGRESS nodes=4800000 root=4 stack=923 affine=888568 convex=26128 seconds=228.749
+PROGRESS nodes=4900000 root=4 stack=791 affine=905539 convex=26474 seconds=234.03
+PROGRESS nodes=5000000 root=3 stack=523 affine=915272 convex=26552 seconds=238.624
+PROGRESS nodes=5100000 root=2 stack=347 affine=925098 convex=26646 seconds=243.553
+PROGRESS nodes=5200000 root=2 stack=251 affine=937712 convex=26770 seconds=248.108
+PROGRESS nodes=5300000 root=1 stack=91 affine=951206 convex=26883 seconds=253.349
+PASS reward=867000 denominator=100000000 nodes=5324457 pressure=780 basic=87078 affine=954828 convex=26942 symmetry=959 empty=42462 maxstack=10750 seconds=255.087
