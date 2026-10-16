@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "scalar fixed-scale margin only; all analytic hypotheses separately required",
+  "args": {
+    "new": "4.795",
+    "old": "4.8594",
+    "prime": ".213",
+    "gain": "1.56",
+    "E2": "245",
+    "E3": "10500",
+    "reserve": "1e-6",
+    "packet": "rescaled_packet.json",
+    "lo": "28",
+    "hi": "61",
+    "prec": 160
+  },
+  "evals": 52791,
+  "cells": 26396,
+  "failed": [],
+  "script_sha256": "60cdcdff35d5bfe40f16e934a64e4071e5561ddb7f7added558858bf03b002ee",
+  "packet_sha256": "0cab19992748abf3d4c80789517b9220957f356a25847785e7f1fbbb618c0cef",
+  "crossover": "[59.84526128508876434672936995427239853909418503 +/- 1.55e-45]",
+  "smallest_cell_lower": "[2.0710090242868706569215386596574049615780733654e-8 +/- 2.39e-55]"
+}

@@ -1,0 +1,259 @@
+# A rescaled-pair classical zero-free region
+
+**Complete proof and reproducible certificate package, prepared for final review.**
+
+## 1. Claims and external inputs
+
+The unconditional result is
+
+\[
+ \zeta(\sigma+it)\ne0\quad(|t|\ge2,\quad \sigma>1-(4.84\log|t|)^{-1}). \tag{1}
+\]
+
+The external inputs are the classical region with denominator 4.896 in Bellotti–Trudgian–Yang (BTY), *Zero-free regions inspired by work of Heath-Brown*, arXiv:2603.21490v1, Theorem 1; Yang's published Littlewood region
+
+\[
+ \sigma>1-\frac{\log\log t}{21.233\log t},\qquad t\ge3; \tag{2}
+\]
+
+and Platt–Trudgian's verification of RH through \(H=3\cdot10^{12}\). We also use the compact-source explicit formula and the elementary Laplace remainder estimate recorded in BTY Lemmas 4 and 7. We do not use BTY's final numerical Lemma 14.
+
+A separate **conditional** claim replaces 4.84 by 4.795 if Yang's unpublished thesis input 19.62 is available in place of 21.233. It does not require taking BTY's conditional 4.8594 theorem as another input: (1) itself implies the weaker 4.8594 seed required below.
+
+This does not prove RH or establish a proportion of zeros on the critical line. Relative to the accepted global classical denominator 4.896, (1) increases the width of the excluded classical strip by \(4.896/4.84-1\), approximately 1.157%. An external author website claims 4.7975 with the 19.62 input, but its complete proof has not been retrieved or verified here; no priority claim relative to that work is made.
+
+## 2. Fixed weights and exact packet
+
+Throughout \(\theta=5669/5000\), \(K=16\), \(T_0=10^{10}\). Put \(a=\theta\cot\theta\), \(b=\tan\theta\), and
+
+\[
+ g(x)=\sec^2\theta\,[\cos(bx)-\cos\theta]1_{|x|\le a},\qquad w(u)=(g*g)(u)\ (u\ge0).
+\]
+
+Direct integration gives BTY Definition 1. In particular \(w\ge0\), \(w\) is nonincreasing on \([0,\infty)\), supported on \([0,2a]\), and
+
+\[
+ w_0=w(0)=\sec^2\theta(\theta\tan\theta+3\theta\cot\theta-3)=5.672787598\ldots.
+\]
+
+Monotonicity follows from the symmetric decreasing convolution rule, proved directly by the layer-cake representation of the nonnegative even decreasing function \(g\).
+
+Let \(p(X)=\sum_{m=0}^6 k_mX^m\), with the following **exact rational** coefficients:
+
+\[
+(k_0,\ldots,k_6)=\left(1,-\frac{199853557761}{200000000000},\frac{985748530219}{10^{12}},-\frac{56350063067}{62500000000},\frac{20683766371}{31250000000},-\frac{19717213639}{62500000000},\frac{34404826763}{500000000000}\right).
+\]
+
+Define
+
+\[
+ \kappa=\sum k_m=\frac{125023622879}{250000000000},\quad
+ L=\sum|k_m|=\frac{2466391461859}{500000000000},\quad
+ \ell=\kappa+2\sum mk_m=\frac{476415699}{500000000000}>0.
+\]
+
+Exact rational Sturm computations in `certify_rescaled_packet.py` establish \(p>0\) and \(p'<0\) on \([0,1]\). For \(d=2\sigma-1\) and \(\eta>0\), put
+
+\[
+ f(u)=\eta w(\eta u)p(e^{-du}),\quad
+ F(z)=\sum_{m=0}^6 k_m W((z+md)/\eta),\quad W(z)=\int_0^{2a}e^{-zu}w(u)\,du.
+\]
+
+**Normalization:** \(f(0)=\kappa\eta w_0\); the prefactor in the shifted explicit formula is \(\eta w_0\), not \(f(0)\).
+
+The nonnegative trigonometric polynomial is
+
+\[
+ P(v)=14912370^{-1}\left|\sum_{j=0}^{16}c_je^{ijv}\right|^2=\sum_{j=0}^{16}a_j\cos(jv),
+\]
+
+where
+
+\[
+ c=(4,-8,2,20,-9,-34,27,91,-27,-201,32,895,1949,2389,1896,949,239).
+\]
+
+Exact rational arithmetic gives \(a_j\ge0\), \(a_0=1\), \(a_1=865534/497079\), and \(A=\sum_{j=1}^{16}a_j=2919857/828465\).
+
+## 3. Uniform rectangle and paired-transform positivity
+
+Use the larger rectangle determined by \(A_{\max}=1/4.8594\):
+
+\[
+ 0<\eta\le\eta_0=A_{\max}/\log H<0.007163,\quad
+ \sigma\ge\sigma_0=1-A_{\max}/\log(16H+T_0),\quad \sigma\le1.
+\]
+
+Thus \(d\ge0.986935\). The proof uses a smaller rectangle in the unconditional transfer.
+
+Write \(W(z)=w_0/z+W_0(z)\). BTY Lemma 4 gives
+
+\[
+ |W_0(z)|\le C(\nu,r)|z|^{-3}\quad(\Re z\ge\nu,\ |z|\ge r), \tag{3}
+\]
+
+where
+
+\[
+ C(\nu,r)=c_0r\frac{c_2(r+1)^2(e^{-2\nu a}+1)+c_1r+c_3r^3}{(r^2-b^2)^2},
+\]
+
+\(c_0=\csc\theta\sec^2\theta\), \(c_1=(\theta-\sin\theta\cos\theta)\tan^4\theta\), \(c_2=\tan^3\theta\sin^2\theta\), \(c_3=(\theta-\sin\theta\cos\theta)\tan^2\theta\).
+
+The independently replayed analytic-constant certificate gives
+
+\[
+ d_0/\eta_0>137,\qquad \frac{\eta_0^2 C(137,137)}{d_0^2w_0}<0.000200322<\epsilon:=1/2000.
+\]
+
+Let \(b_0=k_0\), \(b_m=k_m+k_{m-1}\) for \(1\le m\le6\), and \(b_7=k_6\). On the boundary \(\Re z=0\), the nonnegative term \(\Re W(iy/\eta)\) can be discarded, and (3) yields
+
+\[
+ \frac{\Re F(iy)+\Re F(d-iy)}{d w_0\eta}
+ \ge\sum_{m=1}^7\frac{mb_m-\epsilon|b_m|/m}{d^2m^2+y^2}
+ =\frac1{d^2}\sum_{m=1}^7\frac{mb_m-\epsilon|b_m|/m}{m^2+(y/d)^2}>0. \tag{4}
+\]
+
+The final strict inequality is an exact rational Sturm certificate: the denominator has positive coefficients and the numerator has no nonnegative roots, positive value at zero, and positive leading coefficient. Its complete integer coefficients are in `rescaled_packet.json` and regenerated by `certify_rescaled_packet.py`.
+
+The common rescaling in (4) is the main new optimization. It avoids replacing the denominators of the positive and negative terms separately by different multiples of \(m^2\).
+
+For \(|y|\ge T_0\) and \(x\in[\sigma-1,\sigma]\), both \(x+md\) and \(d-x+md\) have absolute value at most 8 and are at least \(-\eta\), provided \(\sigma-1\ge-\eta\). Since \(C(-1,T_0/0.007163)<51\), \(w_0<6\), \(L<5\), (3) and subtraction of the rational leading denominator give
+
+\[
+ \Re F(x+iy)+\Re F(d-x-iy)
+ \ge\frac\eta{y^2}\left[w_0d\ell-\frac{30720}{y^2}-\frac{510\eta^2}{|y|}\right]>0. \tag{5}
+\]
+
+The bracket's uniform outward lower bound is greater than 0.00533459. The certificate is `certify_rescaled_zero_pairs.py`.
+
+Since \([0,d]\subset[\sigma-1,\sigma]\), (4), reflection symmetry, (5), and the harmonic minimum principle on arbitrarily tall rectangles prove
+
+\[
+ \Re F(z)+\Re F(d-\overline z)\ge0\quad(0\le\Re z\le d). \tag{6}
+\]
+
+Only the paired expression is asserted positive; individual \(\Re F(iy)\) need not be positive.
+
+## 4. Full finite-prime and archimedean bounds
+
+The certificate `certify_rescaled_prime_packet.py` retains only primes 2,3,5,7 and powers \(1\le m\le8\). All omitted terms are nonnegative. By monotonicity of \(w,p\), each retained coefficient is bounded below by
+
+\[
+ p^{-m}\frac{w(0.007163m\log p)}{w_0}p_{\rm poly}(p^{-0.986935m}).
+\]
+
+Outward-rounded rational lower weights followed by complete Arb phase covers certify the four cosine sums respectively above 0.210, 0.0474, 0.0072, 0.002. Their logarithm-weighted sum exceeds 0.213114903668. Consequently
+
+\[
+ \sum_n\Lambda(n)n^{-\sigma}f(\log n)P(t\log n)\ge0.213\eta w_0. \tag{7}
+\]
+
+For the Gamma terms, `certify_rescaled_archimedean.py` proves, uniformly on the rectangle and \(t\ge H\),
+
+\[
+ \sum_{k=0}^{16}a_k\sum_{m=0}^6 k_m\left[-\tfrac12\log\pi+\tfrac12\Re\psi_\Gamma((\sigma+md+ikt)/2+1)\right]
+ \le\frac{A\kappa}{2}\log t-1.56. \tag{8}
+\]
+
+For nonzero harmonics, BTY (36) gives the explicit approximation to \(\Re\psi_\Gamma\); here its error is multiplied by \(L=\sum|k_m|\), not by \(\kappa\). The full signed zero-harmonic sum is enclosed on 128 closed intervals covering \([0.9934675,1]\); the resulting worst upper constant is below \(-1.5614998975\).
+
+For clarity, the compact-source explicit-formula remainder is also revalidated rather than copied through the source's numerical slips. Put \(x_0=\sigma_0-1/2\). The independent certificate `certify_bty_analytic_constants.py` gives
+
+\[
+ C(x_0/\eta_0,x_0/\eta_0)<22,\quad
+ C(\sigma_0/\eta_0,\sigma_0/\eta_0)/x_0^3<180.
+\]
+
+With the explicit digamma majorant \(U\) in BTY (31), it certifies
+
+\[
+ \int_{\mathbb R}\frac{U(y)}{(x_0^2+y^2)^{3/2}}dy<36,
+\]
+
+not the incorrect printed upper bound 24. For \(g_\eta(u)=\eta w(\eta u)\), the shifted-source remainder is at most \(307\eta^3\) at height zero, and at most \(6\eta^2+261\eta^3\) at heights \(kt\), \(1\le k\le16\), when \(\eta\log t\le A_{\max}\). The \(\log k\) contribution is explicitly included. The looser bounds \(623\eta^3\) and \(14\eta^2+424\eta^3\) therefore safely hold.
+
+After multiplication by all signed packet coefficients and all detector coefficients,
+
+\[
+ \sum_{k=0}^{16}a_k|E_k|\le245\eta^2+10500\eta^3. \tag{9}
+\]
+
+The exact coefficient values are below 243.393 and 10444.444. The nonzero-harmonic pole terms have total absolute value below \(10^{-6}\), by (3); the outward certificate actually gives less than \(6.37\cdot10^{-25}\). The zero-harmonic pole \(F(\sigma-1)\) is retained exactly.
+
+## 5. A fixed-scale transfer without iterative domain enlargement
+
+Suppose a global classical region with coefficient \(A_o\) is known, meaning no zero has real part greater than \(1-A_o/\log t\), for \(t\ge3\). Fix \(t\ge H\), \(x=\log t\), and set
+
+\[
+ \eta=A_o/x,\qquad \sigma=1-\frac{A_o}{\log(16t+T_0)}. \tag{10}
+\]
+
+For a zero with \(|\gamma-kt|\le T_0\), \(1\le k\le16\), both it and its reflected mate have real part at most \(\sigma\), by the prior global region. At \(k=0\) such zeros lie below the verified RH height and have real part \(1/2\). All these paired terms are nonnegative by (6). Every remaining pair is nonnegative by (5). Self-pairs on the critical line are counted with the appropriate half weight. The real zero terms are absolutely summable: for fixed source parameters their leading real parts are O((1+|gamma|)^{-2}), and the standard zero-counting estimate then suffices. Hence the complete zero sums can be discarded except for an isolated hypothetical zero \(\beta+it\) and its reflected mate at harmonic \(k=1\).
+
+If \(A_o\le b=(1-\beta)x\le A_n\), the retained pair is bounded below by
+
+\[
+ F(\sigma-1+A_n/x)+F(\sigma-A_n/x). \tag{11}
+\]
+
+Indeed \(f\ge0\) implies \(F''\ge0\) on the real axis. Differentiating the pair with respect to \(b\) gives \([F'(\sigma-1+b/x)-F'(\sigma-b/x)]/x\le0\), since \(b/x\le1/2\). This is a same-pair monotonicity statement; neither root is dropped.
+
+Apply the compact-source explicit formula separately to \(g_\eta\) at each shifted argument \(s+md\), then sum with the coefficients \(k_m\), and finally sum over the nonnegative detector coefficients \(a_k\). Combining (7)–(11) forces
+
+\[
+\begin{split}
+0\ge\mathcal M(x;A_o,A_n):={}&a_1\{F(\sigma-1+A_n/x)+F(\sigma-A_n/x)\}-F(\sigma-1)\\
+&+1.773w_0\eta-245\eta^2-10500\eta^3-10^{-6}-\frac{A\kappa w_0}{2}A_o.
+\end{split} \tag{12}
+\]
+
+Here \(F\) is always built with the fixed \(\eta,\sigma\) in (10). No smoothing scale is identified with the hypothetical zero distance, and no parameter rectangle is enlarged during the transfer.
+
+## 6. Whole-continuum certificates and height splices
+
+For the unconditional tier, set \(A_o=1/4.896\), \(A_n=1/4.84\). The independently authored Arb160 verifier `certify_bty_rescaled_unconditional.py` proves
+
+\[
+ \mathcal M(x;1/4.896,1/4.84)>0\quad\text{for every }28\le x\le81.
+\]
+
+There are 27,071 accepted closed rational intervals; the smallest directed lower endpoint is greater than \(1.4544\cdot10^{-7}\). It evaluates the elementary Laplace integrals stably as
+
+\[
+ I_0(z)=2a\,{}_1F_1(1;2;-2az),\qquad
+ I_1(z)=2a^2\,{}_1F_1(2;3;-2az),
+\]
+
+and combines them using the exact formula for \(w\). It is a complete interval cover, not point sampling.
+
+Since \(28<\log H\) and
+
+\[
+ X_* =\exp(21.233/4.84)=80.397531347\ldots<81,
+\]
+
+(12) excludes hypothetical zeros from \(H\) through \(\exp(X_*)\). The verified RH range covers \(3\le t\le H\). For \(\log t\ge X_*\), (2) is at least as wide as the claimed classical region. For 2≤t<3, verified RH also applies and 1−1/(4.84 log 2)>1/2, so it excludes the claimed strip. Conjugation supplies negative heights. This proves (1).
+
+For the conditional tier, (1) supplies the weaker seed \(A_o=1/4.8594\). The verifier `certify_bty_rescaled_margin.py` certifies (12) for \(A_n=1/4.795\) on all \(28\le x\le61\), in 26,396 closed intervals. The smallest directed lower endpoint exceeds \(2.0710\cdot10^{-8}\). The conditional Littlewood crossover is
+
+\[
+ \exp(19.62/4.795)=59.845261285\ldots<61.
+\]
+
+The identical low/finite/high splice, including 2≤|t|<3, proves the stated conditional conclusion.
+
+## 7. Reproduction and audit scope
+
+The coefficient search scripts are not proof inputs. The frozen exact packet, exact Sturm tests, outward weight/Gamma/tail constants, and whole-height Arb covers are the proof inputs. Every numerical inequality stated above is regenerated from exact rational inputs rather than trusted from a decimal screen. The independent verifier's JSON records its source and packet SHA256 hashes.
+
+Run `python verify_all.py` in the packaged directory after installing the pinned requirements. It regenerates the exact packet, all outward constants, and both whole-height certificates. The complete package was replayed successfully on 2026-10-16. An independent checker also read the entire analytic chain and replayed the certificates, including the paired-zero convergence and compact-source normalization. These internal checks are not a substitute for external peer review. The 19.62 tier remains conditional.
+
+## 8. Primary references
+
+1. Chiara Bellotti, Tim Trudgian and Andrew Yang, *Zero-free regions inspired by work of Heath-Brown*, arXiv:2603.21490v1, Theorem 1 and Lemmas 4, 7: https://arxiv.org/html/2603.21490v1 .
+2. Andrew Yang, *Explicit bounds on ζ(s) in the critical strip and a zero-free region*, Journal of Mathematical Analysis and Applications 534(2), 128124 (2024), DOI 10.1016/j.jmaa.2024.128124; version-pinned preprint: https://arxiv.org/abs/2301.03165v2 ; publisher: https://www.sciencedirect.com/science/article/pii/S0022247X24000453 . The published 21.233 Littlewood constant is the unconditional high-height input.
+3. David Platt and Tim Trudgian, *The Riemann hypothesis is true up to 3·10^12*, https://arxiv.org/abs/2004.09765 .
+4. The unverified 19.62 thesis input is identified at https://doi.org/10.26190/unsworks/31825 . It is not asserted as an unconditional theorem here.
+
+The changes to the BTY proof are the common-d rescaling, the new exact rational packet and finite-prime certificate, fixed-scale transfer, and the complete constants and range revalidation above. We explicitly repair the printed intermediate integral bound and do not use the source's final Lemma 14.
