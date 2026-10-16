@@ -1,0 +1,437 @@
+{
+  "cutoff_delta": "1e-40",
+  "first_amplitude": [
+    "[-0.10000000000000000000000 +/- 1.41e-25]",
+    "[-0.700000000000000000000000 +/- 2.81e-25]",
+    "[0.07000000000000000000000 +/- 1.20e-24]"
+  ],
+  "first_inverse": [
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 1.01e-25]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 2.61e-25]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 2.79e-24]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 3,
+      "relative_error": "[+/- 1.61e-23]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 4,
+      "relative_error": "[+/- 7.79e-23]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 5,
+      "relative_error": "[+/- 3.37e-22]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 6,
+      "relative_error": "[+/- 1.36e-21]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 7,
+      "relative_error": "[+/- 5.18e-21]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 8,
+      "relative_error": "[+/- 1.92e-20]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 9,
+      "relative_error": "[+/- 6.88e-20]",
+      "x_order": 0
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 4.61e-25]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 3.19e-24]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 6.31e-23]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 3,
+      "relative_error": "[+/- 5.11e-22]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 4,
+      "relative_error": "[+/- 3.08e-21]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 5,
+      "relative_error": "[+/- 1.58e-20]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 6,
+      "relative_error": "[+/- 7.36e-20]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 7,
+      "relative_error": "[+/- 3.20e-19]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 8,
+      "relative_error": "[+/- 1.33e-18]",
+      "x_order": 1
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 1.45e-24]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 1.60e-23]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 4.13e-22]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 3,
+      "relative_error": "[+/- 4.02e-21]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 4,
+      "relative_error": "[+/- 2.82e-20]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 5,
+      "relative_error": "[+/- 1.65e-19]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 6,
+      "relative_error": "[+/- 8.58e-19]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 7,
+      "relative_error": "[+/- 4.12e-18]",
+      "x_order": 2
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 4.32e-24]",
+      "x_order": 3
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 6.38e-23]",
+      "x_order": 3
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 1.99e-21]",
+      "x_order": 3
+    },
+    {
+      "nu_order": 3,
+      "relative_error": "[+/- 2.24e-20]",
+      "x_order": 3
+    },
+    {
+      "nu_order": 4,
+      "relative_error": "[+/- 1.77e-19]",
+      "x_order": 3
+    },
+    {
+      "nu_order": 5,
+      "relative_error": "[+/- 1.15e-18]",
+      "x_order": 3
+    },
+    {
+      "nu_order": 6,
+      "relative_error": "[+/- 6.59e-18]",
+      "x_order": 3
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 1.26e-23]",
+      "x_order": 4
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 2.27e-22]",
+      "x_order": 4
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 8.18e-21]",
+      "x_order": 4
+    },
+    {
+      "nu_order": 3,
+      "relative_error": "[+/- 1.04e-19]",
+      "x_order": 4
+    },
+    {
+      "nu_order": 4,
+      "relative_error": "[+/- 9.12e-19]",
+      "x_order": 4
+    },
+    {
+      "nu_order": 5,
+      "relative_error": "[+/- 6.50e-18]",
+      "x_order": 4
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 3.53e-23]",
+      "x_order": 5
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 7.51e-22]",
+      "x_order": 5
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 3.07e-20]",
+      "x_order": 5
+    },
+    {
+      "nu_order": 3,
+      "relative_error": "[+/- 4.33e-19]",
+      "x_order": 5
+    },
+    {
+      "nu_order": 4,
+      "relative_error": "[+/- 4.16e-18]",
+      "x_order": 5
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 9.70e-23]",
+      "x_order": 6
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 2.37e-21]",
+      "x_order": 6
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 1.08e-19]",
+      "x_order": 6
+    },
+    {
+      "nu_order": 3,
+      "relative_error": "[+/- 1.67e-18]",
+      "x_order": 6
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 2.63e-22]",
+      "x_order": 7
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 7.18e-21]",
+      "x_order": 7
+    },
+    {
+      "nu_order": 2,
+      "relative_error": "[+/- 3.61e-19]",
+      "x_order": 7
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 6.98e-22]",
+      "x_order": 8
+    },
+    {
+      "nu_order": 1,
+      "relative_error": "[+/- 2.12e-20]",
+      "x_order": 8
+    },
+    {
+      "nu_order": 0,
+      "relative_error": "[+/- 1.84e-21]",
+      "x_order": 9
+    }
+  ],
+  "first_log_boundary": [
+    "[-0.500000000000000000000000 +/- 1.01e-25]",
+    "[0.500000000000000000000000 +/- 2.51e-25]",
+    "[-1.0000000000000000000000 +/- 9.76e-25]",
+    "[3.00000000000000000000000 +/- 5.14e-24]",
+    "[-12.0000000000000000000000 +/- 3.41e-23]",
+    "[60.000000000000000000000 +/- 2.72e-22]",
+    "[-360.00000000000000000000 +/- 2.53e-21]",
+    "[2520.0000000000000000000 +/- 2.70e-20]",
+    "[-20160.000000000000000000 +/- 3.23e-19]"
+  ],
+  "first_output_relative_error": "1e-14",
+  "input_relative_error": "1e-25",
+  "precision_bits": 192,
+  "second_amplitude": [
+    "[0.25000000000 +/- 2.21e-12]",
+    "[-0.91666666667 +/- 7.01e-12]",
+    "[-0.2291666667 +/- 5.92e-11]"
+  ],
+  "second_fxx_lower": "[8.2456057038529202477768150397141545188062397155452092889e-6 +/- 9.72e-62]",
+  "second_input_relative_error": "1e-12",
+  "second_inverse": [
+    {
+      "mu_order": 0,
+      "nu_order": 0,
+      "relative_error": "[+/- 1.01e-12]"
+    },
+    {
+      "mu_order": 1,
+      "nu_order": 0,
+      "relative_error": "[+/- 4.34e-12]"
+    },
+    {
+      "mu_order": 2,
+      "nu_order": 0,
+      "relative_error": "[+/- 3.31e-11]"
+    },
+    {
+      "mu_order": 3,
+      "nu_order": 0,
+      "relative_error": "[+/- 1.98e-10]"
+    },
+    {
+      "mu_order": 4,
+      "nu_order": 0,
+      "relative_error": "[+/- 1.10e-9]"
+    },
+    {
+      "mu_order": 5,
+      "nu_order": 0,
+      "relative_error": "[+/- 5.67e-9]"
+    },
+    {
+      "mu_order": 0,
+      "nu_order": 1,
+      "relative_error": "[+/- 2.01e-12]"
+    },
+    {
+      "mu_order": 1,
+      "nu_order": 1,
+      "relative_error": "[+/- 3.71e-11]"
+    },
+    {
+      "mu_order": 2,
+      "nu_order": 1,
+      "relative_error": "[+/- 4.75e-10]"
+    },
+    {
+      "mu_order": 3,
+      "nu_order": 1,
+      "relative_error": "[+/- 3.98e-9]"
+    },
+    {
+      "mu_order": 4,
+      "nu_order": 1,
+      "relative_error": "[+/- 2.76e-8]"
+    },
+    {
+      "mu_order": 5,
+      "nu_order": 1,
+      "relative_error": "[+/- 1.71e-7]"
+    },
+    {
+      "mu_order": 0,
+      "nu_order": 2,
+      "relative_error": "[+/- 1.01e-11]"
+    },
+    {
+      "mu_order": 1,
+      "nu_order": 2,
+      "relative_error": "[+/- 5.55e-10]"
+    },
+    {
+      "mu_order": 2,
+      "nu_order": 2,
+      "relative_error": "[+/- 9.86e-9]"
+    },
+    {
+      "mu_order": 3,
+      "nu_order": 2,
+      "relative_error": "[+/- 1.04e-7]"
+    },
+    {
+      "mu_order": 4,
+      "nu_order": 2,
+      "relative_error": "[+/- 8.56e-7]"
+    },
+    {
+      "mu_order": 5,
+      "nu_order": 2,
+      "relative_error": "[+/- 6.14e-6]"
+    },
+    {
+      "mu_order": 0,
+      "nu_order": 3,
+      "relative_error": "[+/- 4.93e-11]"
+    },
+    {
+      "mu_order": 1,
+      "nu_order": 3,
+      "relative_error": "[+/- 3.99e-9]"
+    },
+    {
+      "mu_order": 2,
+      "nu_order": 3,
+      "relative_error": "[+/- 8.81e-8]"
+    },
+    {
+      "mu_order": 3,
+      "nu_order": 3,
+      "relative_error": "[+/- 1.10e-6]"
+    },
+    {
+      "mu_order": 4,
+      "nu_order": 3,
+      "relative_error": "[+/- 1.05e-5]"
+    },
+    {
+      "mu_order": 5,
+      "nu_order": 3,
+      "relative_error": "[+/- 8.47e-5]"
+    }
+  ],
+  "second_output_relative_error": "1e-4",
+  "second_stationary_left": "[0.39202634084155785752832593798059508557134222407899415250 +/- 7.08e-57]",
+  "second_stationary_right": "[0.0011605484752382834345669840313412022204660779262552056381 +/- 2.39e-59]",
+  "stationary_y_lower": "[0.445650614491500838873721868035021652658973923681998965036 +/- 5.08e-58]",
+  "stationary_y_upper": "[4.70431609009869429033991125576714102685610668894792983005 +/- 9.00e-57]",
+  "status": "PASS",
+  "terminal_det_lower": "[8.143842465427865233476351818098086011144627853675478013e-8 +/- 3.36e-63]",
+  "terminal_negative_yy_lower": "[0.00011167703922995776194179579340420770179061318469289558662 +/- 3.03e-60]",
+  "terminal_xx_lower": "[0.00072923158794160175069157178224787754962945777168619797152 +/- 9.34e-60]"
+}
