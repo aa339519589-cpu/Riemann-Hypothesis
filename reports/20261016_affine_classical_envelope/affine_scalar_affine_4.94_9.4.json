@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "single-range affine scalar cover; analytic transfer separately required",
+  "near_zero_strategy": "prior near-zero enclosure throughout; established4.79 beyond the affine crossover",
+  "args": {
+    "new": "affine_4.94_9.4",
+    "old": "4.8594",
+    "prime": ".216",
+    "gain": "1.559",
+    "E2": "104",
+    "E3": "6037",
+    "reserve": "1e-6",
+    "packet": "rescaled_packet.json",
+    "lo": "28",
+    "hi": "63",
+    "prec": 160
+  },
+  "evals": 700401,
+  "cells": 350201,
+  "failed": [],
+  "script_sha256": "615bd2d883ed2ff2e2aa8d5624b204f89bd3a3a298ffde470123ce813d7c7c97",
+  "packet_sha256": "0cab19992748abf3d4c80789517b9220957f356a25847785e7f1fbbb618c0cef",
+  "detector_sha256": "5bce21a50b06a0eec005a6c58bd99a7e76f149d521a3588968afeaccce5e46e2",
+  "classical_splice": "[62.66666666666666666666666666666666666666666667 +/- 8.54e-45]",
+  "smallest_cell_lower": "[4.2621138884743691867642741373394880761221228596e-9 +/- 2.60e-56]"
+}
