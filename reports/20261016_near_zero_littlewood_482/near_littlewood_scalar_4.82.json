@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "two-part scalar cover and Littlewood-branch domain guards; analytic transfer separately required",
+  "near_zero_strategy": "prior below logt76; published21.233 Littlewood above logt76",
+  "args": {
+    "new": "4.82",
+    "old": "4.8594",
+    "prime": ".216",
+    "gain": "1.559",
+    "E2": "104",
+    "E3": "6037",
+    "reserve": "1e-6",
+    "packet": "rescaled_packet.json",
+    "lo": "28",
+    "hi": "82",
+    "prec": 160
+  },
+  "evals": 115556,
+  "cells": 57779,
+  "failed": [],
+  "script_sha256": "6625bf0dca52b05b1bcfc7115f7752ecde747c360de6b0e9f21ed6ecf50f8a56",
+  "packet_sha256": "0cab19992748abf3d4c80789517b9220957f356a25847785e7f1fbbb618c0cef",
+  "detector_sha256": "5bce21a50b06a0eec005a6c58bd99a7e76f149d521a3588968afeaccce5e46e2",
+  "crossover": "[81.87442917246075195477629704601996871010303093 +/- 5.44e-45]",
+  "smallest_cell_lower": "[3.2730292126948286770483457359371849934294819258e-9 +/- 3.14e-56]"
+}
