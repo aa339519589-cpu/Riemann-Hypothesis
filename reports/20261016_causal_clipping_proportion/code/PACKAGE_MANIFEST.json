@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "result": "P_star + 28/10^10",
+  "trust_scope": "Analytic proofs plus exact finite trigonometric Arb arithmetic; earlier exhaustive gap certificate remains a linked independently replayed dependency.",
+  "files": {
+    "FINITE_CLIPPING_INTERFACE.md": "a04e8c178928b599b0c3e98b10808e015c44c70f84fbcef8d804c5438173ccd2",
+    "REPORT.md": "03de2e0a91cdbe16bbec7b88d236b9e87b5c0c8a09597fc4c57e9a69183deebd",
+    "code/.gitignore": "05a1a4c19a9cae81301dcacdef970ebd2e30bebacb2844e187bbeb1f1ec38d45",
+    "code/README.md": "bf2e7a6939716e6b392c9ea612cdb4d8fa5a07f23c0d7b8eb683dcab7524b5f6",
+    "code/certified_window_data.json": "3aec299878696245945760411329dbcdfd3e49e78c01fbf6bd8b1430f01c78e9",
+    "code/certify_cubic_window_gain.py": "9e56ad8d5fda0936883cdd59970f879da83182842a66b48cefded0b1ead7629d",
+    "code/reproduce.sh": "dfb8cf5a2d753b115ed6630bb5c681af9cf24085a2e07e339fa44a3bb6350614",
+    "verification/scalar_256.json": "3e7e1e4dd1408da1e638109a429d7d5b4ff9cd556ce0919421367bd665c8c919",
+    "verification/scalar_320.json": "f39e04885af4d5f94a5b7fd66c88308b681bdd1c826e78cb458743600a2abb5c",
+    "verification/scalar_384.json": "f19328ee5c647329045f856966e5cbe0255fc2ba0471ce4aeac633dce4223017",
+    "verification/side_conditions_320.json": "63cc22ccc2ca33257dbe6d0d8f521ed62c0ed3cbdb6f27f489e10451784bde62"
+  }
+}
